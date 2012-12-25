@@ -1,0 +1,379 @@
+/**
+ * Dicfro
+ *
+ * @copyright 2008-2012 Michel Corne
+ * @license   http://www.opensource.org/licenses/gpl-3.0.html GNU GPL v3
+ */
+
+body
+{
+    font-family: arial;
+    font-size: .8em;
+    margin: 1.3em 1.3em 0 1em;
+}
+
+.middle
+{
+    vertical-align: middle;
+}
+
+a.gray, span.gray
+{
+    color: gray;
+    vertical-align: middle;
+}
+
+a.link
+{
+    margin-right: .3em;
+    vertical-align: middle;
+}
+
+a.logo
+{
+    font-size : 2em;
+    font-weight: bold;
+    text-decoration: none;
+    vertical-align: middle;
+}
+
+a.tab, a.tab-selected, span.identified
+{
+    color: blue;
+    font-size : 1.3em;
+    font-weight: bolder;
+    vertical-align: middle;
+}
+
+a.tab, a.tab-selected
+{
+    text-decoration: underline;
+    vertical-align: middle;
+}
+
+a.tab-selected
+{
+    color: green;
+}
+
+div.conjugation, div.no-conjugation, div.tense, div.verb
+{
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+div.no-conjugation
+{
+    margin-top: 1em;
+}
+
+div.page
+{
+    margin: 1em 8em 0 5em;
+}
+
+div.page img.picture
+{
+    border-width: 0;
+	float: right;
+    margin: 2em 0 1em 1em;
+}
+
+div.tense
+{
+    font-weight: bold;
+    margin-bottom: .5em;
+    margin-top: 1.5em;
+}
+
+div.verb
+{
+    color: green;
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-top: 1.5em;
+}
+
+hr.tabs
+{
+    border-color: lightgreen;
+    margin-top: 1em;
+    margin-bottom: .8em;
+}
+
+hr.errata
+{
+    border-color: gainsboro;
+    margin: 1em .5em .5em .5em;
+}
+
+hr.conjugation
+{
+    border-color: gainsboro;
+    margin: 1em .5em 0 .5em;
+}
+
+iframe.notice
+{
+    border-style: none;
+    height: 2200px;
+    scrolling: no;
+    width: 100%;
+}
+
+img.creative
+{
+    margin: 0 1em 0 1em;
+    vertical-align: middle;
+}
+
+img.errata
+{
+    border: 1px solid gainsboro;
+    margin-left: .5em;
+    margin-top: 10px;
+    vertical-align: top;
+}
+
+input.button, img.button
+{
+    vertical-align: middle;
+}
+
+img.button:hover
+{
+    background-color: orange;
+    border-color: darkorange;
+}
+
+input.first-word
+{
+    background-color: whitesmoke;
+    color: darkgray;
+    border-color: gainsboro;
+    border-style: solid;
+    border-width: 1px;
+    margin-right: .5em;
+    vertical-align: middle;
+    width: 11em;
+}
+
+input.page, input.volume
+{
+    margin-right: .5em;
+    text-align: center;
+    vertical-align: middle;
+    width: 2.5em;
+}
+
+input.search
+{
+    border-color: green;
+    border-style: solid;
+    border-width: 1px;
+    background-color: rgb(0, 153, 0);
+    color: white;
+    font-weight: bold;
+    font-size: 1.25em;
+}
+
+input.volume
+{
+    font-size : 90%;
+    width: 1.7em;
+}
+
+input.word
+{
+    border-color: green;
+    border-style: solid;
+    border-width: medium;
+    vertical-align: middle;
+    width: 11em;
+}
+
+input.button:hover
+{
+    background-color: orange;
+    border-color: darkorange;
+}
+
+select.identified, select.ghostwords-tab, #content-tab, #errata-tab
+{
+    margin-right: 1.5em;
+}
+
+select.dict
+{
+    margin-right: .5em;
+}
+
+select.identified, select.dict, select.ghostwords-tab, select.tome
+{
+    display: inline;
+    max-width: 20em;
+    vertical-align: middle;
+}
+
+select.identified:hover, select.dict:hover, select.ghostwords-tab:hover, select.tome:hover
+{
+    border-color: darkorange;
+}
+
+span.nowrap
+{
+    margin-right: 2em;
+    white-space: nowrap;
+}
+
+span.page-volume, span.copyright-name
+{
+    float: right;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+span.page-volume
+{
+    margin-top: .7em;
+}
+
+span.word, span.page, span.volume, span.tome
+{
+    color: green;
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+span.identified
+{
+    color: gray;
+}
+
+#lexromd-help-tab
+{
+    margin-left: 1em;
+}
+
+#tabs
+{
+    margin-top: 1.5em;
+}
+
+#middle
+{
+    border: thin solid lightgray;
+    margin: 1.5em 0 1em 0;
+    overflow: auto;
+}
+
+/* specific to information and home pages */
+
+
+a.options
+{
+    color: green;
+    font-weight: bold;
+}
+
+h1.title
+{
+    color: green;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 1.5em 0 1em 0;
+}
+
+li
+{
+    margin-bottom: .4em;
+}
+
+p.highlight
+{
+    color: green;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+p.sub-title
+{
+    color: green;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 2.5em;
+}
+
+p.tip, p.tip a
+{
+    color: green;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+table.change-log
+{
+    border-collapse: collapse;
+}
+
+table.change-log img
+{
+    border: none;
+    margin: .8em 0 .5em .5em;
+    float: right;
+    width: 200px;
+}
+
+table.change-log li
+{
+    margin-bottom: .2em;
+}
+
+table.change-log ul
+{
+    margin-top: .5em;
+}
+
+table.change-log td
+{
+    border: thin solid lightgray;
+    vertical-align: top;
+}
+
+table.options td
+{
+    vertical-align: top;
+}
+
+table.options input[type="radio"]
+{
+    margin-top: .1em;
+}
+
+table.options input[type="radio"].ie
+{
+    margin-top: -3px;
+}
+
+td.date, td.version
+{
+    padding: .5em .5em 0 .5em;
+    white-space: nowrap;
+}
+
+tr.header td
+{
+    font-weight: bold;
+    padding: .5em;
+    text-align: center;
+}
+
+ul
+{
+    padding-left: 1.5em;
+}
+
+a:hover
+{
+    color: darkorange;
+}
