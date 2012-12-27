@@ -1,0 +1,42 @@
+<?php
+
+/**
+ * Dicfro
+ *
+ * PHP 5
+ *
+ * @category   DicFro
+ * @package    View
+ * @subpackage Scripts_Interface
+ * @author     Michel Corne <mcorne@yahoo.com>
+ * @copyright  2008-2010 Michel Corne
+ * @license    http://opensource.org/licenses/gpl-3.0.html GNU GPL v3
+ */
+
+?>
+
+<span class="identified"
+      title="<?=$title;?>">
+  <?=$label;?>
+</span>
+
+<select class="identified"
+        onchange="searchWord('<?=$this->setActionUrl($this->wordLink);?>', this.value)">
+
+  <option><?=$this->verbsHelper->extractInfinitives($verbs);?></option>
+
+  <?php foreach($verbs as $infinitive => $verb):?>
+
+    <optgroup label="<?=$infinitive;?>">
+
+    <?php foreach($verb as $form):?>
+      <option value="<?=$form['value'];?>" >
+        <?=$form['text'];?>
+      </option>
+    <?php endforeach;?>
+
+    </optgroup>
+
+  <?php endforeach;?>
+
+</select>

@@ -1,0 +1,5 @@
+initial version v1
+------------------
+
+=> created and renamed mImg gif files, 50% reduction, no transparency color
+=> created database

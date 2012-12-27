@@ -1,0 +1,45 @@
+<?php
+
+/**
+ * Dicfro
+ *
+ * PHP 5
+ *
+ * @category   DicFro
+ * @package    View
+ * @subpackage Scripts_Interface
+ * @author     Michel Corne <mcorne@yahoo.com>
+ * @copyright  2008-2010 Michel Corne
+ * @license    http://opensource.org/licenses/gpl-3.0.html GNU GPL v3
+ */
+
+?>
+
+<?php if(!$this->noDictChange):?>
+<!-- bottom bar display if not called from MultiDic -->
+
+<div>
+
+  <?php require "{$this->viewsDir}/interface/links.phtml";?>
+
+  <?php if(empty($this->dictionary['internal'])):?>
+  <a class="link" target="_blank"
+     href="<?=$this->dictionary['introduction'];?>"><?=$this->dictionary['name'];?></a>
+  <?php endif;?>
+
+  <!-- copyright -->
+  <span class="copyright-name">
+
+    <a href="http://creativecommons.org/licenses/by-nc-nd/2.0/fr/" rel="license">
+      <img class="middle" alt="Creative Commons License"
+       style="border-width:0"
+       src="http://i.creativecommons.org/l/by-nc-nd/2.0/fr/80x15.png" /></a>
+
+    <span class="gray">2008-2012</span>
+    <a class="gray" href="http://www.micmap.org/">micmap.org</a>
+
+  </span>
+
+</div>
+
+<?php endif;?>

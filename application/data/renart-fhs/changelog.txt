@@ -1,0 +1,21 @@
+initial version v1
+------------------
+
+=> scanned pages 507-534 of from 
+le Roman de Renart, édité d'après les manuscrits C et M, tome 2
+par Naoyuki Fukumoto, Noboru Harano, Satoru Suzuki
+France Tosho, Tokyo, 1985
+=> output = gray, resolution = 300, medium, exposure = 250/90/2.2
+
+(with PhotoFiltre)
+=> rotated images (automatization)
+=> split double pages into single pages (manually)
+=> cropped pages 1500 X 2200 px (manually)
+=> rezided pages to 1000 px width (automatization)
+=> converted to .gif, 16 colors (automatization)
+
+(with IrfanView)
+=> renamed pages to 0000507.gif, etc...
+
+=> indexed file manually
+=> created database

@@ -1,0 +1,15 @@
+initial version v1
+------------------
+
+(need PDFill PDF Tools from http://www.pdfill.com/pdf_tools_free.html)
+
+=> downloaded Le_Roman_du_Renart.pdf
+   from http://books.google.fr/books?id=FNUTAAAAQAAJ&hl=fr&pg=PP9#v=onepage&q&f=false
+=> renamed to 0.pdf
+
+=> with PDFill PDF Tools from http://www.pdfill.com/pdf_tools_free.html
+* deleted (in split or reorder pages): pages 1-11
+* converted PDF to images: pages 463-533, resolution of 150, page numbers on 6 digits, GIF
+
+=> indexed file manually
+=> created database

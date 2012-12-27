@@ -1,0 +1,7 @@
+initial version v1
+------------------
+
+- added missing entory for letter "a", image 173
+
+=> created and renamed mImg gif files, 50% reduction, no transparency color
+=> created database

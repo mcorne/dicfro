@@ -1,0 +1,40 @@
+from v1 to v2
+-------------
+
+- no change detected by the comparison
+- 1010540.tif missing from GdfCEdic/mImg
+=> downloaded it from http://gallica.bnf.fr, converted it to 1010540.tif
+- received a scan from Hitoshi Ogurisu
+=> converted to GIF and replaced 1010540.gif
+
+- MANCEUR and MOTTER should be corrected into MANGEUR and MOTTEUX in Txt, according to Beta1.html, but there are not!
+=> changed Txt manually
+
+- CLIGNOTER has 2 entries: 0910109.tif which is wrong and 0910110.tif which is right
+=> changed CLIGNOTER into CLERTÉ for 0910109.tif, moved the line up
+
+- CHALDAIQUE is a bad entry to index the page 0910027.tif because it should be in a following page
+=> changed CHALDAIQUE into CHALASTIQUE and moved the line up
+
+=> changed COMPATRIMENT into COMPARTIMENT in 0910138.tif, moved the line up
+=> changed DICOURTOIS into DISCOURTOIS in 0910388.tif, moved the line down
+=> changed EMPEINDRE into EMPREINDRE in 0910446.tif, moved the line down
+=> changed ESTESIEN into ETESIEN in 0910572.tif, moved the line down
+=> changed INRRECONCILIABLE into IRRECONCILIABLE in 1010032.tif, moved the line down
+
+=> regenerated Gdfc
+=> all of DictionaryFolder-1/GdfCEdic can be removed
+
+
+from v2 to v3
+-------------
+
+- no changes in mImg (1010540.tif is now added)
+
+- many changes in mPimg
+=> created mPimg-3
+
+- words have been changed in Txt and a few added 
+- only words and image numbers are used in Txt, errata and ghostwords data is now ignored
+
+=> created database

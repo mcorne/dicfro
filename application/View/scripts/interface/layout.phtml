@@ -1,0 +1,65 @@
+<?php
+
+/**
+ * Dicfro
+ *
+ * PHP 5
+ *
+ * @category   DicFro
+ * @package    View
+ * @subpackage Scripts_Interface
+ * @author     Michel Corne <mcorne@yahoo.com>
+ * @copyright  2008-2012 Michel Corne
+ * @license    http://opensource.org/licenses/gpl-3.0.html GNU GPL v3
+ */
+
+?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title><?=$this->dictionariesHelper->getPageTitle();?></title>
+    <link rel="shortcut icon" href="<?=$this->setLinkUrl('img/favicon.ico');?>" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="<?=$this->setLinkUrl('interface.css');?>" />
+  </head>
+
+  <body onload="onLoad()" onresize="setDictionaryHeight()">
+
+    <?php require "{$this->viewsDir}/interface/top.phtml";?>
+    <?php require "{$this->viewsDir}/interface/tabs.phtml";?>
+    <?php require "{$this->viewsDir}/interface/middle.phtml";?>
+    <?php require "{$this->viewsDir}/interface/bottom.phtml";?>
+
+    <script type="text/javascript" src="<?=$this->setLinkUrl('interface.js');?>"></script>
+    <script type="text/javascript">
+      domainSubpath = '<?=$this->domainSubpath;?>';
+      noBottom      = '<?=$this->noDictChange;?>';
+      // set height before loading statcounter to prevent flickering
+      setDictionaryHeight();
+    </script>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=5407064;
+var sc_invisible=1;
+var sc_partition=54;
+var sc_click_stat=1;
+var sc_security="57627ab3";
+</script>
+
+<script type="text/javascript"
+src="http://www.statcounter.com/counter/counter_xhtml.js"></script><noscript><div
+class="statcounter"><a title="myspace counters"
+class="statcounter"
+href="http://www.statcounter.com/myspace/"><img
+class="statcounter"
+src="http://c.statcounter.com/5407064/0/57627ab3/1/"
+alt="myspace counters" /></a></div></noscript>
+<!-- End of StatCounter Code -->
+
+  </body>
+
+</html>

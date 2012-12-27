@@ -1,0 +1,7 @@
+ghostword list created manually from 
+http://atilf.atilf.fr/gsouvay/scripts/fantomes.exe?LETTRES_ENTREES;;ISIS=isis_fantomes.txt;MENU=menu_base;OUVRIR_MENU=2;
+click button "Tout"
+copy & paste from Firebug / network / response
+or from google chrome / right click on select box / inspect / resources
+
+created 17 july 2010

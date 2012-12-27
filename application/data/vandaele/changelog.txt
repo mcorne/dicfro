@@ -1,0 +1,35 @@
+from v1 to v2
+-------------
+
+=> saved original file names in mImg-original, pattern like VanDaele001.TIF, etc...
+=> renamed files in mImg to 0000001.gif, etc...
+=> renamed Txt to Txt-original
+=> renamed txt to Txt: changes file names from VanDaele001.TIF into 0000001.TIF, removed first 8 lines not referencing a word
+
+
+from v2 to v3
+-------------
+
+- no change in mImg-original
+- no change in Txt
+
+- correction of following top words, communicated to O.H.:
+    __BR__Image=><@_VanDaele030.TIF_>VanDaele__BR____BR__ANCEIS [verb.]
+    __BR__Image=><@_VanDaele132.TIF_>VanDaele__BR____BR__E� [verb.]
+    __BR__Image=><@_VanDaele171.TIF_>VanDaele__BR____BR__ESLIER  [verb.]
+    __BR__Image=><@_VanDaele190.TIF_>VanDaele__BR____BR__FAIS [verb.]
+    __BR__Image=><@_VanDaele273.TIF_>VanDaele__BR____BR__M1  [var.]
+    __BR__Image=><@_VanDaele297.TIF_>VanDaele__BR____BR__METZ [verb.]
+    __BR__Image=><@_VanDaele315.TIF_>VanDaele__BR____BR__NOBLECE  [subst.fem.]
+    __BR__Image=><@_VanDaele348.TIF_>VanDaele__BR____BR__PENSIF [adj.]
+    __BR__Image=><@_VanDaele349.TIF_>VanDaele__BR____BR__PERDRIET [subst.masc.]
+    
+- added * to PRENDRE in
+__BR__Image=><@_VanDaele373.TIF_>VanDaele__BR____BR__PRENDRE*
+as PRENDRE spans over a couple of pages
+
+- replacements:
+ointure -> ore  , page 323
+rien    -> riens, page 430
+
+=> created database

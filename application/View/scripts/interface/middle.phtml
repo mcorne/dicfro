@@ -1,0 +1,130 @@
+<?php
+
+/**
+ * Dicfro
+ *
+ * PHP 5
+ *
+ * @category   DicFro
+ * @package    View
+ * @subpackage Scripts_Interface
+ * @author     Michel Corne <mcorne@yahoo.com>
+ * @copyright  2008-2010 Michel Corne
+ * @license    http://opensource.org/licenses/gpl-3.0.html GNU GPL v3
+ */
+
+?>
+
+<div id="middle">
+
+<div id="content">
+
+  <?php if($this->definition):?>
+      <img src="<?=$this->setLinkUrl($this->definition);?>" />
+  <?php endif;?>
+
+  <?php if($this->vocabulary):?>
+      <img src="<?=$this->setLinkUrl($this->vocabulary);?>" />
+  <?php endif;?>
+
+  <?php if($this->externalDict):?>
+    <iframe class="notice" id="external-dict" onload="window.focus(); setDictionaryHeight(this.id)"
+            src="<?=$this->externalDict;?>"></iframe>
+  <?php endif;?>
+
+  <?php if($this->introduction):?>
+      <div class="page">
+        <a href="<?=$this->imagesHelper->getImageSourceUrl();?>">
+          <img class="picture" src="<?=$this->imagesHelper->getImageFile();?>" />
+        </a>
+        <h1 class="title"><?=$this->dictionariesHelper->getDescription();?></h1>
+        <?php include $this->viewsDir . '/' . $this->introduction;?>
+      </div>
+  <?php endif;?>
+
+  <?php if($this->information):?>
+      <div class="page">
+        <a href="<?=$this->imagesHelper->getImageSourceUrl();?>">
+          <img class="picture" src="<?=$this->imagesHelper->getImageFile();?>" />
+        </a>
+        <?php include $this->viewsDir . '/' . $this->information;?>
+      </div>
+  <?php endif;?>
+
+  <?php if($this->tcaf):?>
+
+    <?php foreach($this->verbsHelper->getConjugationTables() as $homonym => $verb):?>
+
+      <?php if(isset($firstHomonym)):?>
+        <hr class="conjugation" />
+      <?php else: $firstHomonym = true;?>
+      <?php endif;?>
+
+      <div class="verb"><?=$homonym;?></div>
+
+      <?php foreach($verb as $table):?>
+        <div class="tense"><?=$table['tense'];?></div>
+        <div class='conjugation'><?=$table['conjugation'];?></div>
+      <?php endforeach;?>
+
+    <?php endforeach;?>
+
+  <?php elseif ($this->tcaf !== null):?>
+      <div class="no-conjugation">
+        Verbe non identifié ou tableaux de conjugaison non disponible pour ce verbe.
+      </div>
+
+  <?php endif;?>
+
+</div>
+
+<div id="errata" style="display:none;">
+
+  <?php if($this->errataImages):
+    foreach($this->errataImages as $i => $image):
+
+      if($i and !($i % 2)):?><hr class="errata"/><?php endif;?>
+
+      <img class="errata" src="<?=$this->setLinkUrl($image);?>" />
+
+      <?php if($i % 2):?><br /><?php endif;
+
+    endforeach;?>
+
+  <?php elseif($this->errataText):?>
+    <div>
+      <?=str_replace('——', '<br />', $this->errataText);?>
+    </div>
+  <?php endif;?>
+
+</div>
+
+<div id="ghostwords" style="display:none;">
+
+  <?php if($this->ghostwords):?>
+    <iframe class="notice" id="ghostword-notice" name="ghostword-notice"></iframe>
+
+    <form method="post" target="ghostword-notice" id="ghostword-form" action="http://atilf.atilf.fr/gsouvay/scripts/fantomes.exe?LETTRES_ENTREES;;ISIS=isis_fantomes.txt;MENU=menu_base;OUVRIR_MENU=2;&ISIS_ACTION_ACTION1=Afficher%20l'article%20complet&ISIS_SELECT=AASAER" >
+      <input type="hidden" name="ISIS_SELECT" id="ISIS_SELECT"/>
+      <input type="hidden" name="ISIS_ACTION_ACTION1" value="Afficher+l%27article+complet"/>
+    </form>
+
+  <?php endif;?>
+
+</div>
+
+<div id="lexromd" style="display:none;">
+
+  <?php if($this->dictionary['id'] == 'lexromv'):?>
+    <img class="lexroms" id="lexromd-img" />
+  <?php endif;?>
+
+</div>
+
+<div id="lexromd-help" style="display:none;">
+  <div class="page">
+    <?php $this->dictionary['id'] == 'lexromv' and require "{$this->viewsDir}/help/lexrom.phtml";?>
+  </div>
+</div>
+
+</div>

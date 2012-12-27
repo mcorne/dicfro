@@ -1,0 +1,26 @@
+<?php
+
+/**
+ * Dicfro
+ *
+ * PHP 5
+ *
+ * @category   DicFro
+ * @package    View
+ * @subpackage Scripts_Interface
+ * @author     Michel Corne <mcorne@yahoo.com>
+ * @copyright  2008-2010 Michel Corne
+ * @license    http://opensource.org/licenses/gpl-3.0.html GNU GPL v3
+ */
+
+?>
+
+<optgroup label="<?=$label;?>">
+
+<?php foreach($forms as $word):?>
+  <option value="<?=$word['value'];?>" >
+    <?=$word['text'];?>
+  </option>
+<?php endforeach;?>
+
+</optgroup>

@@ -1,0 +1,26 @@
+<?php
+
+/**
+ * Dicfro
+ *
+ * PHP 5
+ *
+ * @category   DicFro
+ * @package    View
+ * @subpackage Scripts_Interface
+ * @author     Michel Corne <mcorne@yahoo.com>
+ * @copyright  2008-2010 Michel Corne
+ * @license    http://opensource.org/licenses/gpl-3.0.html GNU GPL v3
+ */
+
+?>
+
+<!-- links to pages: home, help, ... -->
+<span class="nowrap" >
+  <a class="link" href="<?=$this->setActionUrl($this->homeLink);?>">Accueil</a>
+  <a class="link" href="<?=$this->setActionUrl($this->introductionLink);?>">Intro</a>
+  <a class="link options" href="<?=$this->setActionUrl($this->optionsLink);?>">Options</a>
+  <a class="link" href="<?=$this->setActionUrl($this->helpLink);?>">Aide</a>
+  <a class="link" href="javascript:print()">Imprimer</a>
+  <a class="link" href="<?=$this->setActionUrl($this->aboutLink);?>">À propos</a>
+</span>

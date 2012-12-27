@@ -1,0 +1,15 @@
+initial version v1
+------------------
+
+(need PDFill PDF Tools from http://www.pdfill.com/pdf_tools_free.html)
+
+=> downloaded Le_roman_du_renart_publ_d_après_les_MSS.pdf 
+   from http://books.google.fr/books?id=WR72lYfyTP8C&hl=fr&pg=PR4-IA5#v=onepage&q&f=false
+=> renamed to 0.pdf
+
+=> with PDFill PDF Tools from http://www.pdfill.com/pdf_tools_free.html
+* deleted (in split or reorder pages): pages 1-28
+* converted PDF to images: pages 359-402, resolution of 150, page numbers on 6 digits, GIF
+
+=> indexed file manually
+=> created database

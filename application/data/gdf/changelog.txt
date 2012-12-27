@@ -1,0 +1,78 @@
+from v1 to v2
+-------------
+
+- directory tree: no change
+- Txt: corrections in the spelling of some of the entries only
+=> verified the corrections against Beta1.html
+
+- CHALEFRE is a bad entry to index the page 0200043.tif because of the typo, it should read CHALEVRE
+=> changed CHALEFRE into CHALERIE and moved the line down
+
+=> changed CHANDELEURE into CHADELEURE in 0200031.tif, moved the line up
+=> changed DERIRENTIER into DEBIRENTIER in 0200435.tif, moved the line up
+
+- for FABRISSEUR in 0300693.tif and SABOUR in 0700272.tif:
+=> renamed ATILF file to FACAUTE.html, and renamed in GdfEdic/mHtm because "�" is causing issues in the file name
+
+=> changed HELERRE into HALERRE in 0400406.tif, moved the line up
+=> changed LAIER into LAIIER in 0400702.tif, moved the line down
+=> changed PLATET into PIALET in 0600140.tif, moved the line up
+=> changed SOUVERAINET� into SOVERAINET� in 0700570.tif, moved the line down
+
+=> changed ENSUILLENTER into ENSULLENTER in 0300243.tif
+=> changed FORMELER into FOMERER in 0400054.tif, moved the line up
+=> changed FUEILLE into FUELLE in 0400173.tif, moved the line down
+
+- GARNISOISON is a bad entry to index the page 0400236.tif because it should be in a previous page
+=> changed GARNISOISON into GARNISONETE and moved the line down
+
+=> changed GERREDONABLE into GUERREDONABLE in 0400378.tif, moved the line down
+=> changed HAJOR into HAIOR in 0400401.tif, moved the line down
+=> changed HUISSURE into HUISSEURE in 0400525.tif, moved the line up
+=> changed JOLIOYER into JOLLOYER in 0400655.tif, moved the line down
+=> changed JUITEL into JUIIEL in 0400670.tif, moved the line up
+=> changed LIVRE into LIVEE in 0500005.tif, moved the line up
+=> changed LOARMIER� into LARMIER� in 0400727.tif, moved the line up
+=> changed MALATRERE into MALTRERE in 0500129.tif, moved the line down
+=> changed MASSAMER into MASAAMER in 0500192.tif, moved the line up
+=> changed NONUISANT into NONNUISANT in 0500525.tif, moved the line up
+=> changed PARFIN into PARTFIN in 0600007.tif, moved the line down
+=> changed PIN�AUT� into PRIN�AUT� in 0600408.tif, moved the line down
+=> changed MALFICIER into MALIFICIER in 0500123.tif, moved the line down
+=> changed POIGNE into POIGNER in 0600248.tif, moved the line down
+=> changed PVOISME into PAVOISME in _0600052.tif, moved the line up
+
+- RESTRAIGNAMMENT is a bad entry to index the page 0700130.tif because it should be in a previous page
+=> changed RESTRAIGNAMMENT into RESTRAINGNEMENT and moved the line down
+
+=> changed TORTIE into TORTIZ in 0700768.tif, moved the line down
+
+- USHERYE is a bad entry to index the page 0800121.tif because it should be in a following page
+=> changed USHERYE into USEL and moved the line up
+
+=> regenerated Gdf
+=> all of DictionaryFolder-1/GdfEdic can be removed, except for Txt to keep for reference
+
+
+from v2 to v3
+-------------
+
+- no change in mImg
+
+- many changes in mPimg
+=> created mPimg-3
+
+- several changes in txt
+- 2 words need correction in Txt
+=> changed LIMOGES into LIMOIGES in 0400788.tif
+=> changed JUIITEL into JUIIEL in 0400670.tif
+- only words and image numbers are used in Txt, errata and ghostwords data is now ignored
+
+=> created database
+
+
+from v3 to v4
+-------------
+
+- changed DEMIBRQUES to DEMIERQUES in 0200500.tif
+=> created database

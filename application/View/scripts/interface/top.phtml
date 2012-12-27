@@ -1,0 +1,120 @@
+<?php
+
+/**
+ * Dicfro
+ *
+ * PHP 5
+ *
+ * @category   DicFro
+ * @package    View
+ * @subpackage Scripts_Interface
+ * @author     Michel Corne <mcorne@yahoo.com>
+ * @copyright  2008-2010 Michel Corne
+ * @license    http://opensource.org/licenses/gpl-3.0.html GNU GPL v3
+ */
+
+?>
+
+<div>
+
+<!-- logo -->
+<span class="nowrap">
+
+  <a class="logo" href="<?=$this->setActionUrl($this->homeLink);?>">
+    <span style="color:blue;font-size:120%;">d</span><span style="color:green;vertical-align:-20%;">i</span><span style="color:orange;">c</span><span style="color:red;font-size:120%;">f</span><span style="color:blue;">r</span><span style="color:green;vertical-align:20%;">o</span>
+  </a>
+
+</span>
+
+<!-- search block -->
+<span class="nowrap">
+  <input type="hidden" id="action" value="<?=$this->setActionUrl($this->wordLink);?>"/>
+  <input type="hidden" id="dictionary-language" value="<?=$this->dictionary['language'];?>"/>
+
+  <input class="word" type="text" id="word"
+         title="Entrer le mot à chercher, puis appuyer sur la touche ENTRÉE, ou cliquer sur le bouton Chercher"
+         value="<?=$this->word;?>"
+         onkeypress="isEnterKey(event) && searchWord('<?=$this->setActionUrl($this->wordLink);?>');" />
+
+  <input class="button search" type="button"
+         onclick="searchWord('<?=$this->setActionUrl($this->wordLink);?>')"
+         value="Chercher" />
+
+</span>
+
+<!-- dictionary select block -->
+<?php if(!$this->noDictChange):?>
+
+<span class="nowrap" >
+
+  <select class="dict" id="dictionary"
+          onchange="openDictionary('<?=$this->setActionUrl($this->dictionaryLink);?>')">
+
+    <?php foreach($this->dictionariesHelper->getGroups() as $optgroup) :?>
+      <optgroup label="<?=$optgroup['label'];?>">
+
+        <?php foreach($optgroup['options'] as $options) :?>
+
+          <option value="<?=$options['value'];?>"
+                  title="<?=$options['title'];?>"
+                  <?php if($options['selected']):?>selected="selected"<?php endif;?> >
+            <?=$options['text'];?>
+          </option>
+
+        <?php endforeach;?>
+
+      </optgroup>
+    <?php endforeach;?>
+
+  </select>
+
+</span>
+<?php endif;?>
+
+<!-- arrows-->
+
+<?php if(!$this->externalDict and $this->dictionary['id'] != 'tcaf'):?>
+<span class="nowrap">
+
+  <img class="button" src="<?=$this->setLinkUrl('img/go-previous.png');?>"
+       title="Page précédente"
+       onclick="location.assign('<?=$this->setActionUrl($this->previousPageLink);?>');" />
+  <img class="button" src="<?=$this->setLinkUrl('img/go-next.png');?>"
+       title="Page suivante"
+       onclick="location.assign('<?=$this->setActionUrl($this->nextPageLink);?>');" />
+
+</span>
+<?php endif;?>
+
+<!-- (bottom) links when running without allowing dictionary change -->
+<?php if($this->noDictChange): require "{$this->viewsDir}/interface/links.phtml"; endif;?>
+
+<!-- page and volume block -->
+<?php if(!$this->externalDict and $this->dictionary['id'] != 'tcaf'):?>
+<span class="page-volume">
+  <input class="first-word" type="text" disabled="disabled"
+        title="Premier mot de la page. Si ce mot n'est pas pas le premier mot de la page, veuillez nous contacter pour le corriger. Merci."
+        value="<?=$this->firstWord;?>" />
+
+  <span class="page">Page</span>
+  <input class="page" type="text" id="page"
+         title="Entrer le numéro de page, puis appuyer sur la touche ENTRÉE, ou cliquer sur le bouton Afficher"
+         value="<?=$this->page;?>"
+         onkeypress="isEnterKey(event) && goPage('<?=$this->setActionUrl($this->goPageLink);?>');" />
+
+  <?php if(in_array($this->dictionary['id'], array('gdf', 'gdfc'))):?>
+    <span class="volume">Volume</span>
+    <input class="volume" type="text" id="volume"
+           title="Entrer le numéro de volume, puis appuyer sur la touche ENTRÉE, ou cliquer sur le bouton Afficher"
+           value="<?=$this->volume;?>"
+           onkeypress="isEnterKey(event) && goPage('<?=$this->setActionUrl($this->goPageLink);?>');" />
+  <?php endif;?>
+
+  <input class="button" type="button" onclick="goPage('<?=$this->setActionUrl($this->goPageLink);?>')"
+         value="Afficher" />
+
+</span>
+<?php endif;?>
+
+</div>
+

@@ -1,0 +1,72 @@
+<?php
+
+/**
+ * Dicfro
+ *
+ * PHP 5
+ *
+ * @category   DicFro
+ * @package    View
+ * @subpackage Scripts_Information
+ * @author     Michel Corne <mcorne@yahoo.com>
+ * @copyright  2008-2010 Michel Corne
+ * @license    http://opensource.org/licenses/gpl-3.0.html GNU GPL v3
+ */
+
+?>
+
+<h1 class="title">Options</h1>
+
+<p class="sub-title">Mode d'ouverture d'un dictionnaire</p>
+
+<table class="options">
+  <tr>
+    <td>
+      <input type="radio" name="open-dictionary" value=""
+             <?php if($this->isIE):?>class="ie"<?php endif;?>
+             <?php if(!$this->newTab):?>checked="checked"<?php endif;?>
+             onclick="unsetNewTab()"/>
+    </td>
+    <td class="text">La sélection d'un nouveau dictionnaire ouvrira ce dictionnaire dans l'onglet courant.</td>
+  </tr>
+  <tr>
+    <td>
+      <input type="radio" name="open-dictionary" value="1"
+             <?php if($this->isIE):?>class="ie"<?php endif;?>
+             <?php if($this->newTab):?>checked="checked"<?php endif;?>
+             onclick="setNewTab()"/>
+    </td>
+    <td class="text">
+      La sélection d'un nouveau dictionnaire ouvrira ce dictionnaire dans un nouvel onglet.<br />
+      L'ouverture de dictionnaires dans des onglets différents permet d'effectuer des recherches en parallèle.<br />
+      <i>Attention ! Si votre navigateur bloque les fenêtres contextuelles, veuillez le configurer
+      pour toujours autoriser les fenêtres contextuelles pour ce site.</i>
+    </td>
+  </tr>
+</table>
+
+<p class="sub-title">Mode de recherche d'un mot</p>
+
+<table class="options">
+  <tr>
+    <td>
+      <input type="radio" name="word-auto-search" value=""
+             <?php if($this->isIE):?>class="ie"<?php endif;?>
+             <?php if($this->autoSearch):?>checked="checked"<?php endif;?>
+             onclick="setAutoSearch()"/>
+    </td>
+    <td>
+      Le dernier mot recherché dans un dictionnaire d'une langue donnée, sera recherché automatiquement
+      quand on passe d'un onglet à un autre, lorsque les dictionnaires sont ouverts dans des onglets différents.
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <input type="radio" name="word-auto-search" value=""
+             <?php if($this->isIE):?>class="ie"<?php endif;?>
+             <?php if(!$this->autoSearch):?>checked="checked"<?php endif;?>
+             onclick="unsetAutoSearch()"/>
+    </td>
+    <td>La recherche automatique d'un mot est désactivée.</td>
+  </tr>
+</table>

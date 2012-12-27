@@ -1,0 +1,30 @@
+from v1 to v2
+-------------
+
+- file names pattern has changed from 0000001.tif to _001.tif, etc,... and 0000545.tif to ex001.tif, etc...
+=> saved original file names in mImg-original
+=> renamed files in mImg as in DictionaryFolder-1/mImg
+- file content: no change, except for _168.tif and _307.tif (0000168.tif and 0000307.tif) that are new scans
+=> converted to 0000168.tif and 0000307.tif, updated www/dictionary/GdflexEdic
+
+- Txt: files names are different, Errata's have been removed !!!, corrections in the spelling of a few entries listed in Beta1.html
+- the correction into acuellloit is actually wrong and should read acueilloit !
+=> renamed Txt to Txt-original
+=> used DictionaryFolder-1/Txt as reference and updated the few GdfLexEdic entries in Beta1.html and corrected acuellloit
+
+=> regenerated Gdf
+=> keep DictionaryFolder-1/GdfLexEdic for reference
+
+
+from v2 to v3
+-------------
+- no change in mImg-original
+- no significant change in Txt, "acueilloit" is now fixed in Txt
+(see there is no change between Txt-for-comp.txt and Txt-for-comp-from-DictionaryFolder-1.txt)
+
+- moved CHARTRÉ after CHARTRENIER
+- corrected following entries, communicated to O.H. :
+CHATRÉ__BR____BR__[IMAGE] <@__081.tif_>GdfLexEdic__BR__
+
+=> no action
+=> generated database (using database from v3 on)
