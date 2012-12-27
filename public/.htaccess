@@ -4,9 +4,6 @@ RewriteCond %{REQUEST_FILENAME} -l [OR]
 RewriteCond %{REQUEST_FILENAME} -d
 RewriteRule ^.*$ - [NC,L]
 
-# uncomment if dicfro is run as a domain subpath, eg my.domain.com/dicfro, replace domain subpath accordingly
-# SetEnv DOMAIN_SUBPATH dicfro
-# RewriteRule ^.*$ /dicfro/index.php [NC,L]
-
-# default setting
+# select rule depending if dicfro is run as a domain subpath, eg my.domain.com/dicfro or not
 RewriteRule ^.*$ /index.php [NC,L]
+# RewriteRule ^.*$ /dicfro/index.php [NC,L]

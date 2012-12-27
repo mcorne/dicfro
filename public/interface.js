@@ -444,7 +444,7 @@ function setrawcookie(name, value, expires, path, domain, secure, toEscape) {
     // name: the name of the cookie
     // value: the value of the cookie
     // expires: the expire date, default to 1 year, set to 1 (remove cookie) if the value is empty
-    // path: the path, defaults to "/dicfro/"
+    // path: the path, defaults to the domain subpath if any, eg "/dicfro/"
     // domain: the domain
     // secure: ...
     // toEscape: the value must be "escaped"
@@ -452,7 +452,7 @@ function setrawcookie(name, value, expires, path, domain, secure, toEscape) {
     // fix
     var date = new Date;
     expires || (expires = 3600 * 24 * 365);
-    // path || (path = '/dicfro/'); TODO: fix for local or prod
+    path || (path = domainSubpath);
     value === null || typeof value == 'string' || typeof value == 'number' ||
     typeof value == 'boolean' || (value = json_encode(value));
     value == '{}' && (value = '');
