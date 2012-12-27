@@ -1,0 +1,18 @@
+add an entry in the host file
+-----------------------------
+- for a windows system in C:\Windows\System32\Drivers\etc\hosts
+127.0.0.1 dicfro
+
+add an entry in httpd-vhosts.conf
+---------------------------------
+- for apache on windows in C:\Program Files (x86)\...\Apache2\conf\extra\httpd-vhosts.conf
+<VirtualHost *:80>
+    DocumentRoot "D:/Data/dicfro/public"
+    ServerName dicfro
+</VirtualHost>
+
+set the domain subpath (if applicable)
+--------------------------------------
+- set the proper RewriteRule in public/.htaccess
+- set the application path in public/index.php
+- set the domain subpath in application/config.php
