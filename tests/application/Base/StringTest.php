@@ -8,7 +8,7 @@
  * @package    DicFro
  * @subpackage Tests
  * @author     Michel Corne <mcorne@yahoo.com>
- * @copyright  2008-2010 Michel Corne
+ * @copyright  2008-2013 Michel Corne
  * @license    http://opensource.org/licenses/gpl-3.0.html GNU GPL v3
  */
 
@@ -24,7 +24,7 @@ require_once 'Base/String.php';
  * @package    DicFro
  * @subpackage Tests
  * @author     Michel Corne <mcorne@yahoo.com>
- * @copyright  2008-2010 Michel Corne
+ * @copyright  2008-2013 Michel Corne
  * @license    http://opensource.org/licenses/gpl-3.0.html GNU GPL v3
  */
 
@@ -32,7 +32,7 @@ class StringTest extends PHPUnit_Framework_TestCase
 {
     /**
      * The String class instance
-     * @var object
+     * @var Base_String
      */
     public $string;
 
@@ -220,6 +220,20 @@ class StringTest extends PHPUnit_Framework_TestCase
         $this->assertSame(
             'abcDefGhi',
             $this->string->dash2CamelCase('abc-def-ghi'),
-            'Converting to camel string');
+            'Converting to camel string default');
+
+        /**********/
+
+        $this->assertSame(
+            'abcDefGhi',
+            $this->string->dash2CamelCase('abc-def-ghi', false),
+            'Converting to camel string no uc first');
+
+        /**********/
+
+        $this->assertSame(
+            'AbcDefGhi',
+            $this->string->dash2CamelCase('abc-def-ghi', true),
+            'Converting to camel string uc first');
     }
 }

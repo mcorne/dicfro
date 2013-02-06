@@ -8,7 +8,7 @@
  * @package    DicFro
  * @subpackage Tests
  * @author     Michel Corne <mcorne@yahoo.com>
- * @copyright  2008-2010 Michel Corne
+ * @copyright  2008-2013 Michel Corne
  * @license    http://opensource.org/licenses/gpl-3.0.html GNU GPL v3
  */
 
@@ -28,7 +28,7 @@ require_once 'Controller/Interface.php';
  * @package    DicFro
  * @subpackage Tests
  * @author     Michel Corne <mcorne@yahoo.com>
- * @copyright  2008-2010 Michel Corne
+ * @copyright  2008-2013 Michel Corne
  * @license    http://opensource.org/licenses/gpl-3.0.html GNU GPL v3
  */
 
@@ -54,7 +54,7 @@ class InterfaceTest extends PHPUnit_Framework_TestCase
     public function setEngine()
     {
         $config = array(
-            'data-dir' => Test::getTempDir(),
+            'data-dir'     => Test::getTempDir(),
             'dictionaries' => array(),
         );
         $view = new Base_View($config, false);
@@ -64,8 +64,7 @@ class InterfaceTest extends PHPUnit_Framework_TestCase
 
     public function setChretienDatabase()
     {
-        $dir = Test::getTempDir() . '/chretien';
-        is_dir($dir) or mkdir($dir);
+        @mkdir(Test::getTempDir() . '/chretien');
         require_once 'Model/Search/Generic.php';
         $search = new Model_Search_Generic(Test::getTempDir(), array('dictionary' => 'chretien'));
         $pdo = new PDO($search->query->dsn);
@@ -82,8 +81,7 @@ class InterfaceTest extends PHPUnit_Framework_TestCase
 
     public function setTcafDatabase()
     {
-        $dir = Test::getTempDir() . '/tcaf';
-        is_dir($dir) or mkdir($dir);
+        @mkdir(Test::getTempDir() . '/tcaf');
         require_once 'Model/Search/Tcaf.php';
         $search = new Model_Search_Tcaf(Test::getTempDir(), array('dictionary' => 'tcaf'));
         $pdo = new PDO($search->query->dsn);
@@ -170,6 +168,32 @@ class InterfaceTest extends PHPUnit_Framework_TestCase
     }
 
     /**
+     * Tests dictionariesAction
+     */
+    public function testDictionariesAction()
+    {
+        $this->interface->dictionariesAction();
+
+        $this->assertSame(
+            array('information' => 'information/dictionaries.phtml'),
+            $this->interface->view->toArray(),
+            'processing dictionary action');
+    }
+
+    /**
+     * Tests optionsAction
+     */
+    public function testOptionsAction()
+    {
+        $this->interface->optionsAction();
+
+        $this->assertSame(
+            array('information' => 'information/options.phtml'),
+            $this->interface->view->toArray(),
+            'processing options action');
+    }
+
+    /**
      * Tests translateActions
      */
     public function testTranslateActions()
@@ -233,7 +257,11 @@ class InterfaceTest extends PHPUnit_Framework_TestCase
         $_SERVER['HTTP_USER_AGENT'] = 'xyz';
         $this->interface->front->config['domain-subpath'] = 'uvw';
 
-        $this->interface->dictionary = 'abc';
+        $this->interface->dictionary = array(
+            'id'       => 'abc',
+            'url'      => 'abc-dictionary',
+            'language' => 'en',
+        );
         $this->interface->view->word = 'def';
         $this->interface->view->page = '123';
         $this->interface->view->volume = '456';
@@ -242,57 +270,69 @@ class InterfaceTest extends PHPUnit_Framework_TestCase
 
         $this->assertSame(
             array(
-                'aboutLink' => 'a-propos',
-                'autoSearch' => false,
+                'aboutLink'        => 'a-propos',
+                'autoSearch'       => false,
                 'dictionariesLink' => 'liste-des-dictionnaires',
-                'dictionary' => 'abc',
-                'dictionaryLink' => 'chercher/%s/def',
-                'domainSubpath' => 'uvw',
-                'goPageLink' => 'aller-page/a/%s/def',
-                'helpLink' => 'aide',
-                'homeLink' => 'accueil',
-                'introductionLink' => 'introduction/a',
-                'isIE' => false,
-                'newTab' => false,
-                'nextPageLink' => 'page-suivante/a/123/456/def',
-                'optionsLink' => 'options',
-                'page' => '123',
-                'previousPageLink' => 'page-precedente/a/123/456/def',
-                'volume' => '456',
-                'word' => 'def',
-                'wordLink' => 'chercher/a/%s',
+                'dictionary'       => array (
+                    'id'       => 'abc',
+                    'url'      => 'abc-dictionary',
+                    'language' => 'en',
+                ),
+                'dictionaryLink'   => 'chercher/%s/def',
+                'domainSubpath'    => 'uvw',
+                'goPageLink'       => 'aller-page/abc-dictionary/%s/def',
+                'helpLink'         => 'aide',
+                'homeLink'         => 'accueil',
+                'introductionLink' => 'introduction/abc-dictionary',
+                'isIE'             => false,
+                'newTab'           => false,
+                'nextPageLink'     => 'page-suivante/abc-dictionary/123/456/def',
+                'optionsLink'      => 'options',
+                'page'             => '123',
+                'previousPageLink' => 'page-precedente/abc-dictionary/123/456/def',
+                'volume'           => '456',
+                'word'             => 'def',
+                'wordLink'         => 'chercher/abc-dictionary/%s',
             ),
             $this->interface->view->toArray(),
             'finishing processing');
 
         /**********/
 
-        $this->interface->view->dictionary = 'dictionnaire-godefroy';
+        $this->interface->dictionary = array(
+            'id'       => 'gdf',
+            'url'      => 'godefroy-dictionary',
+            'language' => 'fr',
+        );
         $this->interface->front->action = 'introductionAction';
 
         $this->interface->finish();
 
         $this->assertSame(
             array(
-                'aboutLink' => 'a-propos',
-                'autoSearch' => false,
-                'dictionariesLink' => 'liste-des-dictionnaires',
-                'dictionary' => 'abc',
-                'dictionaryLink' => 'introduction/%s/def',
-                'domainSubpath' => 'uvw',
-                'goPageLink' => 'aller-page/a/%s/def',
-                'helpLink' => 'aide',
-                'homeLink' => 'accueil',
-                'introductionLink' => 'introduction/a',
-                'isIE' => false,
-                'newTab' => false,
-                'nextPageLink' => 'page-suivante/a/123/456/def',
-                'optionsLink' => 'options',
-                'page' => '123',
-                'previousPageLink' => 'page-precedente/a/123/456/def',
-                'volume' => '456',
-                'word' => 'def',
-                'wordLink' => 'chercher/a/%s',
+                'aboutLink'         => 'a-propos',
+                'autoSearch'        => false,
+                'dictionariesLink'  => 'liste-des-dictionnaires',
+                'dictionary'        => array (
+                    'id'       => 'gdf',
+                    'url'      => 'godefroy-dictionary',
+                    'language' => 'fr',
+                ),
+                'dictionaryLink'   => 'introduction/%s/def',
+                'domainSubpath'    => 'uvw',
+                'goPageLink'       => 'aller-page/godefroy-dictionary/%s/%s/def',
+                'helpLink'         => 'aide',
+                'homeLink'         => 'accueil',
+                'introductionLink' => 'introduction/godefroy-dictionary',
+                'isIE'             => false,
+                'newTab'           => false,
+                'nextPageLink'     => 'page-suivante/godefroy-dictionary/123/456/def',
+                'optionsLink'      => 'options',
+                'page'             => '123',
+                'previousPageLink' => 'page-precedente/godefroy-dictionary/123/456/def',
+                'volume'           => '456',
+                'word'             => 'def',
+                'wordLink'         => 'chercher/godefroy-dictionary/%s',
             ),
             $this->interface->view->toArray(),
             'finishing processing for godefroy');
@@ -307,16 +347,16 @@ class InterfaceTest extends PHPUnit_Framework_TestCase
 
         $this->assertSame(
             array(
-                'aPropos' => 'about',
+                'aPropos'               => 'about',
                 'listeDesDictionnaires' => 'dictionaries',
-                'aide' => 'help',
-                'accueil' => 'home',
-                'introduction' => 'introduction',
-                'pageSuivante' => 'next',
-                'options' => 'options',
-                'allerPage' => 'page',
-                'pagePrecedente' => 'previous',
-                'chercher' => 'search',
+                'aide'                  => 'help',
+                'accueil'               => 'home',
+                'introduction'          => 'introduction',
+                'pageSuivante'          => 'next',
+                'options'               => 'options',
+                'allerPage'             => 'page',
+                'pagePrecedente'        => 'previous',
+                'chercher'              => 'search',
             ),
             $this->interface->actionsFlipped,
             'flipping actions');
@@ -454,9 +494,9 @@ class InterfaceTest extends PHPUnit_Framework_TestCase
 
         $this->assertSame(
             array(
-                'id' => 'cnrtl',
+                'id'           => 'cnrtl',
                 'introduction' => 'cnrtl.phtml',
-                'url' => 'cnrtl',
+                'url'          => 'cnrtl',
             ),
             $this->interface->dictionary,
             'setting external dictionary default');
@@ -470,8 +510,8 @@ class InterfaceTest extends PHPUnit_Framework_TestCase
         $this->assertSame(
             array(
                 'introduction' => 'abc.phtml',
-                'id' => 'cnrtl',
-                'url' => 'cnrtl',
+                'id'           => 'cnrtl',
+                'url'          => 'cnrtl',
             ),
             $this->interface->dictionary,
             'setting external dictionary with introduction');
@@ -485,8 +525,8 @@ class InterfaceTest extends PHPUnit_Framework_TestCase
         $this->assertSame(
             array(
                 'introduction' => 'abc.phtml',
-                'url' => 'www.abc.com',
-                'id' => 'cnrtl',
+                'url'          => 'www.abc.com',
+                'id'           => 'cnrtl',
             ),
             $this->interface->dictionary,
             'setting external dictionary with url');
@@ -500,15 +540,15 @@ class InterfaceTest extends PHPUnit_Framework_TestCase
 
         $this->assertSame(
             array(
-                'internal' => true,
-                'id' => 'gaffiot',
-                'search' => array (
+                'internal'     => true,
+                'id'           => 'gaffiot',
+                'search'       => array (
                     'properties' => array (
                         'dictionary' => 'gaffiot',
                     ),
                 ),
                 'introduction' => 'gaffiot.phtml',
-                'url' => 'gaffiot',
+                'url'          => 'gaffiot',
             ),
             $this->interface->dictionary,
             'setting internal dictionary default');
@@ -522,17 +562,17 @@ class InterfaceTest extends PHPUnit_Framework_TestCase
 
         $this->assertSame(
             array(
-                'internal' => true,
-                'search' => array (
+                'internal'     => true,
+                'search'       => array (
                     'properties' => array (
                         'dictionary' => array (
                             'needWhitaker' => true,
                         ),
                     ),
                 ),
-                'id' => 'gaffiot',
+                'id'           => 'gaffiot',
                 'introduction' => 'gaffiot.phtml',
-                'url' => 'gaffiot',
+                'url'          => 'gaffiot',
             ),
             $this->interface->dictionary,
             'setting internal dictionary with properties');
@@ -711,9 +751,9 @@ class InterfaceTest extends PHPUnit_Framework_TestCase
         $this->assertSame(
             array(
                 'noDictChange' => false,
-                'page' => '123',
-                'volume' => '456',
-                'word' => 'abc',
+                'page'         => '123',
+                'volume'       => '456',
+                'word'         => 'abc',
             ),
             $this->interface->view->toArray(),
             'initializing an action');
@@ -724,45 +764,45 @@ class InterfaceTest extends PHPUnit_Framework_TestCase
      */
     public function testSetViewElements()
     {
-        $this->interface->view->dictionary = 'abc';
+        $this->interface->dictionary['id'] = 'abc';
         $this->interface->setViewElements(array('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j'));
 
         $this->assertSame(
             array(
-                'definition' => 'a',
-                'dictionary' => 'abc',
-                'errataImages' => 'b',
-                'errataText' => 'c',
-                'firstWord' => 'j',
-                'ghostwords' => 'd',
+                'definition'           => 'a',
+                'errataImages'         => 'b',
+                'errataText'           => 'c',
+                'firstWord'            => 'j',
+                'ghostwords'           => 'd',
                 'identifiedLatinWords' => 'g',
-                'identifiedVerbs' => 'f',
-                'identifiedWords' => 'e',
-                'page' => 'i',
-                'volume' => 'h',
+                'identifiedVerbs'      => 'f',
+                'identifiedWords'      => 'e',
+                'page'                 => 'i',
+                'volume'               => 'h',
             ),
             $this->interface->view->toArray(),
             'setting view element');;
 
         /**********/
 
-        $this->interface->view->dictionary = 'lexique-roman';
+        $this->interface->dictionary['id'] = 'lexromv';
+        unset($this->interface->view->definition);
         $this->interface->setViewElements(array('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j'));
 
         $this->assertSame(
             array(
-                'dictionary' => 'lexique-roman',
-                'errataImages' => 'b',
-                'errataText' => 'c',
-                'firstWord' => 'j',
-                'ghostwords' => 'd',
+                'errataImages'         => 'b',
+                'errataText'           => 'c',
+                'firstWord'            => 'j',
+                'ghostwords'           => 'd',
                 'identifiedLatinWords' => 'g',
-                'identifiedVerbs' => 'f',
-                'identifiedWords' => 'e',
-                'page' => 'i',
-                'volume' => 'h',
+                'identifiedVerbs'      => 'f',
+                'identifiedWords'      => 'e',
+                'page'                 => 'i',
+                'vocabulary'           => 'a',
+                'volume'               => 'h',
             ),
-            $this->interface->view->toArray(false, 'definition'),
+            $this->interface->view->toArray(),
             'setting view elements for lexique-roman');
     }
 
@@ -801,8 +841,8 @@ class InterfaceTest extends PHPUnit_Framework_TestCase
         $this->assertSame(
             array(
                 'definition' => 'dictionary/chretien/mImg/0000002.gif',
-                'firstWord' => 'abc',
-                'page' => 2,
+                'firstWord'  => 'abc',
+                'page'       => 2,
             ),
             $this->interface->view->toArray(true),
             'going to page for internal dictionary');
@@ -828,8 +868,8 @@ class InterfaceTest extends PHPUnit_Framework_TestCase
         $this->assertSame(
             array(
                 'definition' => 'dictionary/chretien/mImg/0000002.gif',
-                'firstWord' => 'abc',
-                'page' => 2,
+                'firstWord'  => 'abc',
+                'page'       => 2,
             ),
             $this->interface->view->toArray(true),
             'going next page action');
@@ -855,8 +895,8 @@ class InterfaceTest extends PHPUnit_Framework_TestCase
         $this->assertSame(
             array(
                 'definition' => 'dictionary/chretien/mImg/0000002.gif',
-                'firstWord' => 'abc',
-                'page' => 2,
+                'firstWord'  => 'abc',
+                'page'       => 2,
             ),
             $this->interface->view->toArray(true),
             'going previous page action');
@@ -879,7 +919,7 @@ class InterfaceTest extends PHPUnit_Framework_TestCase
         $this->assertSame(
             array(
                 'externalDict' => 'http://www.cnrtl.fr/definition/œil',
-                'word' => 'œil',
+                'word'         => 'œil',
             ),
             $this->interface->view->toArray(true),
             'searching external dictionary');
@@ -894,7 +934,7 @@ class InterfaceTest extends PHPUnit_Framework_TestCase
         $this->assertSame(
             array(
                 'externalDict' => 'http://lysy2.archives.nd.edu/cgi-bin/words.exe?OEIL',
-                'word' => 'œil',
+                'word'         => 'œil',
             ),
             $this->interface->view->toArray(true),
             'searching ascii dictionary');
@@ -909,10 +949,41 @@ class InterfaceTest extends PHPUnit_Framework_TestCase
         $this->assertSame(
             array(
                 'externalDict' => 'http://www.prima-elementa.fr/Dico-o03.html#oeil',
-                'word' => 'œil',
+                'word'         => 'œil',
             ),
             $this->interface->view->toArray(true),
             'searching jeanneau dictionary');
+
+        /**********/
+
+        $this->interface->front->config['dictionaries']['cotgrave']['search'] = 'http://www.pbm.com/~lindahl/cotgrave/search/search_backend.cgi?query=';
+        $this->interface->front->actionParams = array('cotgrave');
+        $this->interface->setDictionary('cotgrave');
+        $this->interface->searchExternalDict();
+
+        $this->assertSame(
+            array(
+                'externalDict' => 'http://www.pbm.com/~lindahl/cotgrave/search/search_backend.cgi?query=OEIL',
+                'word'         => 'œil',
+            ),
+            $this->interface->view->toArray(true),
+            'searching cotgrave dictionary');
+
+        /**********/
+
+        $this->interface->view->word = 'a';
+        $this->interface->front->config['dictionaries']['cotgrave']['search'] = 'http://www.pbm.com/~lindahl/cotgrave/search/search_backend.cgi?query=';
+        $this->interface->front->actionParams = array('cotgrave');
+        $this->interface->setDictionary('cotgrave');
+        $this->interface->searchExternalDict();
+
+        $this->assertSame(
+            array(
+                'externalDict' => 'http://www.pbm.com/~lindahl/cotgrave/search/search_backend.cgi?query=ABB',
+                'word'         => 'a',
+            ),
+            $this->interface->view->toArray(true),
+            'searching cotgrave dictionary defaut to first page');
     }
 
     /**
@@ -934,9 +1005,9 @@ class InterfaceTest extends PHPUnit_Framework_TestCase
         $this->assertSame(
             array(
                 'definition' => 'dictionary/chretien/mImg/0000002.gif',
-                'firstWord' => 'abc',
-                'page' => 2,
-                'word' => 'abc',
+                'firstWord'  => 'abc',
+                'page'       => 2,
+                'word'       => 'abc',
             ),
             $this->interface->view->toArray(true),
             'searching internal dictionary');
@@ -955,9 +1026,9 @@ class InterfaceTest extends PHPUnit_Framework_TestCase
         $this->assertSame(
             array(
                 'tcaf' => array(array(
-                    'tense' => 'nocomp',
+                    'tense'       => 'nocomp',
                     'conjugation' => '1 ab; 2 ac',
-                    'original' => 'À',
+                    'original'    => 'À',
                 )),
                 'word' => 'ab',
             ),
@@ -985,9 +1056,9 @@ class InterfaceTest extends PHPUnit_Framework_TestCase
         $this->assertSame(
             array(
                 'definition' => 'dictionary/chretien/mImg/0000002.gif',
-                'firstWord' => 'abc',
-                'page' => 2,
-                'word' => 'abc',
+                'firstWord'  => 'abc',
+                'page'       => 2,
+                'word'       => 'abc',
             ),
             $this->interface->view->toArray(true),
             'searching internal dictionary');
@@ -1003,7 +1074,7 @@ class InterfaceTest extends PHPUnit_Framework_TestCase
         $this->assertSame(
             array(
                 'externalDict' => 'http://www.cnrtl.fr/definition/abc',
-                'word' => 'abc',
+                'word'         => 'abc',
             ),
             $this->interface->view->toArray(true, array('firstWord', 'page', 'definition')),
             'searching external dictionary');

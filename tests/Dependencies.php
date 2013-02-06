@@ -8,7 +8,7 @@
  * @package    Tests
  * @subpackage Tests
  * @author     Michel Corne <mcorne@yahoo.com>
- * @copyright  2010 Michel Corne
+ * @copyright  2010-2013 Michel Corne
  * @license    http://opensource.org/licenses/gpl-3.0.html GNU GPL v3
  */
 
@@ -17,7 +17,10 @@
  */
 
 return array(
-    // 'Base/Application.php' => array(), TODO: fix
+    'Base/Application.php' => array(
+        'Base/View.php',
+        'Controller/Front.php',
+    ),
     'Base/String.php' => array(),
     'Base/View.php' => array(
         'View/Helper/Dictionaries.php',

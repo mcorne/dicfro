@@ -8,7 +8,7 @@
  * @package    DicFro
  * @subpackage Tests
  * @author     Michel Corne <mcorne@yahoo.com>
- * @copyright  2008-2010 Michel Corne
+ * @copyright  2008-2013 Michel Corne
  * @license    http://opensource.org/licenses/gpl-3.0.html GNU GPL v3
  */
 
@@ -24,7 +24,7 @@ require_once 'Controller/Front.php';
  * @package    DicFro
  * @subpackage Tests
  * @author     Michel Corne <mcorne@yahoo.com>
- * @copyright  2008-2010 Michel Corne
+ * @copyright  2008-2013 Michel Corne
  * @license    http://opensource.org/licenses/gpl-3.0.html GNU GPL v3
  */
 
@@ -32,7 +32,7 @@ class FrontTest extends PHPUnit_Framework_TestCase
 {
     /**
      * The Front controller class instance
-     * @var object
+     * @var Controller_Front
      */
     public $front;
 
@@ -43,7 +43,7 @@ class FrontTest extends PHPUnit_Framework_TestCase
     {
         $config = array(
             'domain-subpath' => 'base',
-            'dictionaries' => array('uvw' => array('language' => 'fr')),
+            'dictionaries'   => array('uvw' => array('language' => 'fr')),
         );
 
         $view = new Base_View($config, false);
@@ -56,13 +56,13 @@ class FrontTest extends PHPUnit_Framework_TestCase
      */
     public function testSetAction()
     {
-        $this->front->actionParams = array('action', 'param');
+        $this->front->actionParams = array('the-action', 'param');
 
         $this->front->setAction();
 
         $this->assertSame(
             array(
-                'action',
+                'theAction',
                 array('param'),
             ),
             array($this->front->action, $this->front->actionParams),
@@ -104,7 +104,10 @@ class FrontTest extends PHPUnit_Framework_TestCase
                     'word',
                 ),
             ),
-            array($this->front->action, $this->front->actionParams),
+            array(
+                $this->front->action,
+                $this->front->actionParams,
+            ),
             'matching route');
 
         /**********/
@@ -118,7 +121,10 @@ class FrontTest extends PHPUnit_Framework_TestCase
                 '',
                 array(),
             ),
-            array($this->front->action, $this->front->actionParams),
+            array(
+                $this->front->action,
+                $this->front->actionParams,
+            ),
             'matching minimal route');
 
         /**********/
@@ -132,7 +138,10 @@ class FrontTest extends PHPUnit_Framework_TestCase
                 'base',
                 array(),
             ),
-            array($this->front->action, $this->front->actionParams),
+            array(
+                $this->front->action,
+                $this->front->actionParams,
+            ),
             'matching with no base URL');
     }
 

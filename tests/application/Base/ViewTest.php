@@ -8,7 +8,7 @@
  * @package    DicFro
  * @subpackage Tests
  * @author     Michel Corne <mcorne@yahoo.com>
- * @copyright  2008-2010 Michel Corne
+ * @copyright  2008-2013 Michel Corne
  * @license    http://opensource.org/licenses/gpl-3.0.html GNU GPL v3
  */
 
@@ -26,7 +26,7 @@ require_once 'Base/View.php';
  * @package    DicFro
  * @subpackage Tests
  * @author     Michel Corne <mcorne@yahoo.com>
- * @copyright  2008-2010 Michel Corne
+ * @copyright  2008-2013 Michel Corne
  * @license    http://opensource.org/licenses/gpl-3.0.html GNU GPL v3
  */
 
@@ -34,7 +34,7 @@ class ViewTest extends PHPUnit_Framework_TestCase
 {
     /**
      * The View class instance
-     * @var object
+     * @var Base_View
      */
     public $view;
 
@@ -47,9 +47,9 @@ class ViewTest extends PHPUnit_Framework_TestCase
         $_SERVER['HTTP_HOST'] = 'abc';
 
         $config = array(
-            'data-dir' => Test::getTempDir(),
+            'data-dir'       => Test::getTempDir(),
             'domain-subpath' => 'def',
-            'views-dir' => 'ghi',
+            'views-dir'      => 'ghi',
         );
 
         $this->view = new Base_View($config, false);
@@ -92,10 +92,18 @@ class ViewTest extends PHPUnit_Framework_TestCase
             array(
                 'ghi',
                 'http://abc/def',
+                'View_Helper_Dictionaries',
+                'View_Helper_Images',
+                'View_Helper_Verbs',
+                'View_Helper_Words'
             ),
             array(
                 $this->view->viewsDir,
                 $this->view->baseUrl,
+                get_class($this->view->dictionariesHelper),
+                get_class($this->view->imagesHelper),
+                get_class($this->view->verbsHelper),
+                get_class($this->view->wordsHelper),
             ),
             'initializing the view');
     }
@@ -116,7 +124,7 @@ class ViewTest extends PHPUnit_Framework_TestCase
         $this->assertSame(
             'abc',
             $content,
-            'rendering layout');
+            'default rendering');
 
         /**********/
 
@@ -191,10 +199,7 @@ class ViewTest extends PHPUnit_Framework_TestCase
 
         /**********/
 
-        $this->view->def = 'DEF';
-        $this->view->abc = 'ABC';
-
-        $this->assertSame(
+       $this->assertSame(
             array(
                 'abc' => 'ABC',
             ),

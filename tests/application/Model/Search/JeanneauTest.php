@@ -8,7 +8,7 @@
  * @package    DicFro
  * @subpackage Tests
  * @author     Michel Corne <mcorne@yahoo.com>
- * @copyright  2008-2010 Michel Corne
+ * @copyright  2008-2013 Michel Corne
  * @license    http://opensource.org/licenses/gpl-3.0.html GNU GPL v3
  */
 
@@ -24,7 +24,7 @@ require_once 'Model/Search/Jeanneau.php';
  * @package    DicFro
  * @subpackage Tests
  * @author     Michel Corne <mcorne@yahoo.com>
- * @copyright  2008-2010 Michel Corne
+ * @copyright  2008-2013 Michel Corne
  * @license    http://opensource.org/licenses/gpl-3.0.html GNU GPL v3
  */
 
@@ -32,7 +32,7 @@ class JeanneauSearchTest extends PHPUnit_Framework_TestCase
 {
     /**
      * The Search class instance
-     * @var object
+     * @var Model_Search_Jeanneau
      */
     public $search;
 

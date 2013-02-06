@@ -8,7 +8,7 @@
  * @package    DicFro
  * @subpackage Tests
  * @author     Michel Corne <mcorne@yahoo.com>
- * @copyright  2008-2010 Michel Corne
+ * @copyright  2008-2013 Michel Corne
  * @license    http://opensource.org/licenses/gpl-3.0.html GNU GPL v3
  */
 
@@ -26,7 +26,7 @@ require_once 'Base/Application.php';
  * @package    DicFro
  * @subpackage Tests
  * @author     Michel Corne <mcorne@yahoo.com>
- * @copyright  2008-2010 Michel Corne
+ * @copyright  2008-2013 Michel Corne
  * @license    http://opensource.org/licenses/gpl-3.0.html GNU GPL v3
  */
 
@@ -34,7 +34,7 @@ class ApplicationTest extends PHPUnit_Framework_TestCase
 {
     /**
      * The Application class instance
-     * @var object
+     * @var Base_Application
      */
     public $application;
 
@@ -46,12 +46,43 @@ class ApplicationTest extends PHPUnit_Framework_TestCase
         Test::createTempDir();
 
         $config = array(
-            'data-dir' => Test::getTempDir(),
-            'domain-subpath' => 'def',
-            'views-dir' => 'ghi',
+            'data-dir'  => Test::getTempDir(),
+            'dictionaries' => array(
+                'uvw' => array(
+                    'language' => 'fr',
+                ),
+            ),
+            'domain-subpath' => null,
+            'views-dir' => Test::getTempDir(),
         );
 
-        $this->application = new Base_Application($config);
+        $content = '<?php return ' . var_export($config, true) . ';';
+        $configFile = Test::getTempDir() . '/config.php';
+        file_put_contents($configFile, $content);
+
+        $this->application = new Base_Application($configFile);
     }
 
+    /**
+     * Tests run
+     */
+    public function testRun()
+    {
+        $_SERVER['HTTP_HOST'] = 'www.abc.com';
+        $_SERVER['REQUEST_URI'] = '/action/uvw/123/456/abc';
+        $_SERVER['HTTP_USER_AGENT'] = '';
+        $_GET = array(); // must empty because it is set if run within ZS in CGI mode
+
+        mkdir(Test::getTempDir() . '/interface');
+        file_put_contents(Test::getTempDir() . '/interface/layout.phtml', 'abc');
+
+        ob_start();
+        $this->application->run();
+        $content = ob_get_clean();
+
+        $this->assertSame(
+            'abc',
+            $content,
+            'running application');
+    }
 }
