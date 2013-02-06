@@ -60,14 +60,16 @@ class Model_Parser_Tcaf extends Model_Parser
             return array();
         }
 
-        // extracts word
-        preg_match(self::LINE_TPL, $line, $matches) or
-        $this->error('wrong format: ' . $this->string->utf8ToInternal($line), true, $lineNumber);
+        if (! preg_match(self::LINE_TPL, $line, $matches)) {
+            // extracts word
+            $this->error('wrong format: ' . $this->string->utf8ToInternal($line), true, $lineNumber);
+        }
+
         list(, $infinitive, $tense, $conjugation) = $matches;
 
         return array(
             'entry' => $this->setEntryData($infinitive, $tense, $conjugation, $lineNumber),
-            'word' => $this->setWordsData($infinitive, $tense, $conjugation, $lineNumber),
+            'word'  => $this->setWordsData($infinitive, $tense, $conjugation, $lineNumber),
         );
     }
 
@@ -94,11 +96,11 @@ class Model_Parser_Tcaf extends Model_Parser
     public function setEntryData($infinitive, $tense, $forms, $lineNumber)
     {
         $entryData = array(
-            'ascii' => $this->setInfinitiveAscii($infinitive),
-            'original' => $infinitive,
-            'tense' => $tense,
+            'ascii'       => $this->setInfinitiveAscii($infinitive),
+            'original'    => $infinitive,
+            'tense'       => $tense,
             'conjugation' => str_replace('__BR__   ', '<br />', $forms),
-            'line' => $lineNumber,
+            'line'        => $lineNumber,
             );
 
         ksort($entryData);
@@ -114,14 +116,14 @@ class Model_Parser_Tcaf extends Model_Parser
 
         foreach($verbs as $verb) {
             $wordData = array(
-                'ascii' => $this->string->utf8toASCII($verb),
-                'original' => $verb,
-                'person' => $person,
-                'infinitive' => $infinitive,
+                'ascii'            => $this->string->utf8toASCII($verb),
+                'original'         => $verb,
+                'person'           => $person,
+                'infinitive'       => $infinitive,
                 'infinitive_ascii' => $this->setInfinitiveAscii($infinitive),
-                'tense' => $tense,
-                'line' => $lineNumber,
-                'composed' => (int)($tense == 'comp.' and !strpos($verb, '*')),
+                'tense'            => $tense,
+                'line'             => $lineNumber,
+                'composed'         => (int)($tense == 'comp.' and !strpos($verb, '*')),
             );
 
             ksort($wordData);

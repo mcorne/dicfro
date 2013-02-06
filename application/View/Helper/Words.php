@@ -52,7 +52,11 @@ class View_Helper_Words extends View_Helper_Base
      */
     public function getLemmaAndPof($word)
     {
-        return empty($word['pof'])? $word['lemma'] : sprintf(self::LEMMA_POF_TPL, $word['lemma'], $word['pof']);
+        if (empty($word['pof'])) {
+            return $word['lemma'];
+        } else {
+            return sprintf(self::LEMMA_POF_TPL, $word['lemma'], $word['pof']);
+        }
     }
 
     /**
@@ -66,8 +70,9 @@ class View_Helper_Words extends View_Helper_Base
         $forms = array();
 
         foreach($this->view->identifiedWords as $word) {
-            empty($word[$type]) or
-            $forms = array_merge($forms, $this->getForms($word, $type));
+            if (! empty($word[$type])) {
+                $forms = array_merge($forms, $this->getForms($word, $type));
+            }
         }
 
         return $this->sortForms($forms);
@@ -83,8 +88,9 @@ class View_Helper_Words extends View_Helper_Base
         $forms = array();
 
         foreach($this->view->identifiedWords as $word) {
-            empty($word['main']) and empty($word['variants']) and
-            $forms = array_merge($forms, $this->getForms($word));
+            if (empty($word['main']) and empty($word['variants'])) {
+                $forms = array_merge($forms, $this->getForms($word));
+            }
         }
 
         return $this->sortForms($forms);
@@ -102,18 +108,24 @@ class View_Helper_Words extends View_Helper_Base
         $lemmaAndPof = $this->getLemmaAndPof($word);
 
         // extract the word forms
-        $words = $type?
-            preg_split(self::FORM_SEPARATOR, $word[$type]) :
-            array($word['lemma']);
+        if ($type) {
+            $words = preg_split(self::FORM_SEPARATOR, $word[$type]);
+        } else {
+            $words = array($word['lemma']);
+        }
 
         $forms = array();
 
         foreach($words as $form) {
+            if ($type) {
+                $text = sprintf(self::TEXT_TPL, $form, $lemmaAndPof);
+            } else {
+                $text = $lemmaAndPof;
+            }
+
             $forms[] = array(
                 'value' => $form,
-                'text' => $type?
-                    sprintf(self::TEXT_TPL, $form, $lemmaAndPof) :
-                    $lemmaAndPof,
+                'text'  => $text,
             );
         }
 

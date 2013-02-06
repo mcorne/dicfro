@@ -36,8 +36,10 @@ class Model_Parser_Vandaele extends Model_Parser_GdfLike
 
     public function extractWordAndImage($line, $lineNumber)
     {
-        preg_match($this->lineTpl, $line, $matches) or
-        $this->error('wrong format: ' . $this->string->utf8ToInternal($line), true, $lineNumber);
+        if (! preg_match($this->lineTpl, $line, $matches)) {
+            $this->error('wrong format: ' . $this->string->utf8ToInternal($line), true, $lineNumber);
+        }
+
         list(, $imageNumber, $word) = $matches;
 
         return array($word, $imageNumber);

@@ -79,10 +79,13 @@ class Model_Search_Jeanneau extends Model_Search
 
         $word = $string->utf8toASCII($word);
         $word = strtolower($word);
+
         // defaults empty word to "a"
-        $firstLetter = $word?
-            $word[0] :
-            'a';
+        if ($word) {
+            $firstLetter = $word[0];
+        } else {
+            $firstLetter = 'a';
+        }
 
         if (isset($this->map[$firstLetter])) {
             // this is a valid letter

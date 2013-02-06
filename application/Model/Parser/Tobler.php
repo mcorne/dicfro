@@ -43,41 +43,41 @@ class Model_Parser_Tobler extends Model_Parser
     public $fixPof;
 
     public $lineFormat = array(
-        'word' => self::word,
-        'main' => self::word,
-        'pof' => '([\pL .(),\d?]*)',
+        'word'     => self::word,
+        'main'     => self::word,
+        'pof'      => '([\pL .(),\d?]*)',
         'variants' => '([^;]*),?',
         );
 
     public $fix = array(
-        'conque(s)...que' => 'conque(s) que',
-        'sal geme s.m.' => 'sal geme',
-        'tipe .. tope' => 'tipe tope',
-        'vis: a vis' => 'vis a vis',
+        'conque(s)...que'                => 'conque(s) que',
+        'sal geme s.m.'                  => 'sal geme',
+        'tipe .. tope'                   => 'tipe tope',
+        'vis: a vis'                     => 'vis a vis',
         'me[r]cresdi, mercres, mescredi' => 'me(r)cresdi, mercres, mescredi',
         );
 
     public $special = array(
-        'auberc (h)aubert' => array('auberc', 'aubert', 'haubert'),
+        'auberc (h)aubert'          => array('auberc', 'aubert', 'haubert'),
         'brelle (et) melle (mesle)' => array('brelle', 'melle', 'mesle'),
-        'conque(s) que' => array('conque', 'conques', 'que'),
-        'keuve leu leu (a la)' => array('keuve', 'leu'),
-        'ma (m\')' => array('ma'),
-        'ma(n)drago(i)re' => array('madragore', 'mandragoire'),
-        'ne (non) le' => array('ne', 'non'),
-        'puet ce (cel) estre' => array('puet', 'estre'),
-        'rechigne-chat (a)' => array('rechigne', 'chat'),
-        'Ta ça, ta ça' => array('ta', 'ça'),
-        'ta ta, ta ho' => array('ta', 'ho'),
-        'wara(e)ntis(s)ement' => array('warantisement', 'waraentissement'),
+        'conque(s) que'             => array('conque', 'conques', 'que'),
+        'keuve leu leu (a la)'      => array('keuve', 'leu'),
+        'ma (m\')'                  => array('ma'),
+        'ma(n)drago(i)re'           => array('madragore', 'mandragoire'),
+        'ne (non) le'               => array('ne', 'non'),
+        'puet ce (cel) estre'       => array('puet', 'estre'),
+        'rechigne-chat (a)'         => array('rechigne', 'chat'),
+        'Ta ça, ta ça'              => array('ta', 'ça'),
+        'ta ta, ta ho'              => array('ta', 'ho'),
+        'wara(e)ntis(s)ement'       => array('warantisement', 'waraentissement'),
         );
 
     public function __construct($config, $verbose = false)
     {
         $config['dictionaries']['tobler'] = array();
-        
+
         parent::__construct($config, $verbose);
-        
+
         $this->uniquePofFile = $this->addPathName($this->uniquePofFile);
         $this->fixPofFile = $this->addPathName($this->fixPofFile);
         $this->fixPof = require $this->fixPofFile;
@@ -85,7 +85,7 @@ class Model_Parser_Tobler extends Model_Parser
         $this->lineFormat = '~^' . implode('\s*;\s*', $this->lineFormat) . ';~u';
 
         $this->fix = array(
-            'search' => array_keys($this->fix),
+            'search'  => array_keys($this->fix),
             'replace' => array_values($this->fix),
         );
     }
@@ -99,11 +99,12 @@ class Model_Parser_Tobler extends Model_Parser
         $line = trim($line);
         $line = mb_convert_encoding($line, 'UTF-8', 'ISO-8859-1');
         $line = str_replace($this->fix['search'], $this->fix['replace'], $line);
-        // extracts the word, the corresponding main word, the part of speech,
-        // the variant forms
-        preg_match($this->lineFormat, $line, $matches) or
-        $this->error('wrong format: ' . $this->string->utf8ToInternal($line),
-            true, $lineNumber);
+
+        // extracts the word, the corresponding main word, the part of speech, the variant forms
+        if (! preg_match($this->lineFormat, $line, $matches)) {
+            $this->error('wrong format: ' . $this->string->utf8ToInternal($line), true, $lineNumber);
+        }
+
         list(, $lemma, $main, $pof, $variants) = $matches;
         // removes trailing punctuation and space
         $lemma = trim($lemma, ', ');
@@ -119,18 +120,18 @@ class Model_Parser_Tobler extends Model_Parser
         $info = $this->setInfo($lemma, $main, $pof, $variants, $line, $lineNumber);
 
         $entryData = array(
-            'lemma' => $lemma,
-            'main' => $main,
-            'pof' => $pof,
+            'lemma'    => $lemma,
+            'main'     => $main,
+            'pof'      => $pof,
             'variants' => $variants,
-            'info' => $info,
-            'line' => $lineNumber,
+            'info'     => $info,
+            'line'     => $lineNumber,
             );
         ksort($entryData);
 
         return array(
             'entry' => implode('|', $entryData),
-            'word' => $wordData,
+            'word'  => $wordData,
             );
     }
 
@@ -138,8 +139,13 @@ class Model_Parser_Tobler extends Model_Parser
     {
         // captures part of speech
         $this->uniquePof[] = $pof;
+
         // fixes the part of speech if identified or removes it
-        $pof = isset($this->fixPof[$pof])? $this->fixPof[$pof] : '';
+        if (isset($this->fixPof[$pof])) {
+            $pof = $this->fixPof[$pof];
+        } else {
+            $pof = '';
+        }
 
         return $pof;
     }
@@ -213,10 +219,12 @@ class Model_Parser_Tobler extends Model_Parser
             foreach($variants as &$variant) {
                 // trims and validates the variant
                 $variant = trim($variant);
-                empty($variant) or preg_match(self::variant, $variant) or
-                $this->error('wrong format: ' . $this->string->utf8ToInternal($line),
-                    true, $lineNumber);
+
+                if (! empty($variant) and ! preg_match(self::variant, $variant)) {
+                    $this->error('wrong format: ' . $this->string->utf8ToInternal($line), true, $lineNumber);
+                }
             }
+
             // removes empty variants
             $variants = array_filter($variants);
             // concatenates the variants
@@ -236,15 +244,23 @@ class Model_Parser_Tobler extends Model_Parser
     public function setInfo($lemma, $main, $pof, $variants, $line, $lineNumber)
     {
         // checks there are not both a main word and variants
-        empty($main) or empty($variants) or
-        $this->error('not expecting both main and variants: ' . $this->string->utf8ToInternal($line),
-            true, $lineNumber);
+        if (! empty($main) and ! empty($variants)) {
+            $this->error('not expecting both main and variants: ' . $this->string->utf8ToInternal($line), true, $lineNumber);
+        }
+
         // sets the entry information with the lemma and the part of speech
         $info = "$lemma";
-        empty($pof) or $info .= ", $pof";
+
+        if (! empty($pof)) {
+            $info .= ", $pof";
+        }
+
         // adds the corresponding main entry or the variants
-        !empty($main) and $info .= " [princ.: $main]" or
-        !empty($variants) and $info .= " [variant.: $variants]";
+        if (!empty($main)) {
+            $info .= " [princ.: $main]";
+        } else if (!empty($variants)) {
+            $info .= " [variant.: $variants]";
+        }
 
         return $info;
     }
@@ -255,11 +271,11 @@ class Model_Parser_Tobler extends Model_Parser
 
         foreach($words as $word) {
             $data = array(
-                'original' => $word,
-                'ascii' => $this->string->utf8toASCII($word),
-                'line' => $lineNumber,
+                'original'  => $word,
+                'ascii'     => $this->string->utf8toASCII($word),
+                'line'      => $lineNumber,
                 'multiword' => (int)$isMultiWord,
-                );
+            );
 
             ksort($data);
             $wordsData[] = implode('|', $data);

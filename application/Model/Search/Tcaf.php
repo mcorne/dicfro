@@ -47,8 +47,9 @@ class Model_Search_Tcaf
      */
     public function searchWord($word)
     {
-        $conjugation = $this->query->searchVerbConjugation($word) or
-        $conjugation = $this->query->searchModelConjugation($word);
+        if (! $conjugation = $this->query->searchVerbConjugation($word)) {
+            $conjugation = $this->query->searchModelConjugation($word);
+        }
 
         return array(
             $conjugation,

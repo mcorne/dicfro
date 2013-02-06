@@ -48,7 +48,9 @@ abstract class Model_Parser_GdfLike extends Model_Parser
         $missingImages = '';
         list($volume, $page) = $this->search->extractVolumeAndPage($wordData['image']);
 
-        is_null($prevPage) or $prevVolume < $volume or $prevVolume == $volume and $prevPage < $page or
+        is_null($prevPage) or
+        $prevVolume < $volume or
+        $prevVolume == $volume and $prevPage < $page or
         $this->error("adding missing image: {$wordData['image']}", true);
 
         while($prevWordData !== null and $prevVolume == $volume and ++$prevPage != $page) {
@@ -65,27 +67,45 @@ abstract class Model_Parser_GdfLike extends Model_Parser
 
     public function checkNoSeparatorInData($wordData)
     {
-        strpos(implode('', $wordData), $this->separator) !== false and
-        $this->error("separator used in data: {$wordData['image']}", true);
+        if (strpos(implode('', $wordData), $this->separator) !== false) {
+            $this->error("separator used in data: {$wordData['image']}", true);
+        }
     }
 
     public function createSearchObject()
     {
         $dictionaryConfig = $this->config['dictionaries'][$this->dictionary];
-        $class = isset($dictionaryConfig['search']['class'])? $dictionaryConfig['search']['class'] : 'Model_Search_Generic';
-        $properties = isset($dictionaryConfig['search']['properties'])? $dictionaryConfig['search']['properties'] : array();
+
+        if (isset($dictionaryConfig['search']['class'])) {
+            $class = $dictionaryConfig['search']['class'];
+        } else {
+            $class = 'Model_Search_Generic';
+        }
+
+        if (isset($dictionaryConfig['search']['properties'])) {
+            $properties = $dictionaryConfig['search']['properties'];
+        } else {
+            $properties = array();
+        }
 
         $file = str_replace('_', '/', $class) . '.php';
         require_once $file;
 
-        $query = isset($dictionaryConfig['query'])? $dictionaryConfig['query'] : array();
+        if (isset($dictionaryConfig['query'])) {
+            $query = $dictionaryConfig['query'];
+        } else {
+            $query = array();
+        }
+
         $this->search = new $class($this->config['data-dir'], $properties, $query);
     }
 
     public function extractWordAndImage($line, $lineNumber)
     {
-        preg_match($this->lineTpl, $line, $matches) or
-        $this->error('wrong format: ' . $this->string->utf8ToInternal($line), true, $lineNumber);
+        if (! preg_match($this->lineTpl, $line, $matches)) {
+            $this->error('wrong format: ' . $this->string->utf8ToInternal($line), true, $lineNumber);
+        }
+
         list(, $word, $imageNumber) = $matches;
 
         return array($word, $imageNumber);
@@ -100,16 +120,18 @@ abstract class Model_Parser_GdfLike extends Model_Parser
     {
         static $endOfData = false;
 
-        // detects the end of valid data, subsequent lines will be ignored
-        $endOfData or $endOfData = substr($line, 0, 2) == 'ZZ';
+        if (! $endOfData) {
+            // detects the end of valid data, subsequent lines will be ignored
+            $endOfData = substr($line, 0, 2) == 'ZZ';
+        }
 
         return $endOfData;
     }
 
     public function parseLine($line, $lineNumber)
     {
-        static $prevLine;
-        static $prevWord;
+        static $prevLine = null;
+        static $prevWord = null;
 
         // trims the line
         $line = trim($line);
@@ -136,10 +158,10 @@ abstract class Model_Parser_GdfLike extends Model_Parser
         $imageNumber = $this->fixImageNumber($imageNumber);
 
         $wordData = array(
-            'ascii' => $word,
-            'image' => $imageNumber,
+            'ascii'    => $word,
+            'image'    => $imageNumber,
             'original' => $original,
-            'line' => $lineNumber,
+            'line'     => $lineNumber,
             'previous' => $prevWord,
         );
 

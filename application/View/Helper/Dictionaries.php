@@ -53,16 +53,23 @@ class View_Helper_Dictionaries extends View_Helper_Base
 
             foreach($group['dictionaries'] as $id) {
                 $dictionary = $dictionaries[$id];
+
+                if (isset($dictionary['url'])) {
+                    $value = $dictionary['url'];
+                } else {
+                    $value =  $id;
+                }
+
                 $options[] = array(
                     'selected' => $id == $this->view->dictionary['id'],
-                    'text' => $dictionary['name'],
-                    'title' => $dictionary['description'],
-                    'value' => isset($dictionary['url'])? $dictionary['url'] : $id,
+                    'text'     => $dictionary['name'],
+                    'title'    => $dictionary['description'],
+                    'value'    => $value,
                 );
             }
 
             $optgroups[] = array(
-                'label' => $group['name'],
+                'label'   => $group['name'],
                 'options' => $options,
             );
         }

@@ -65,8 +65,9 @@ class Model_Query_Generic extends Model_Query
     {
         $sql = "SELECT ascii, image, original {$this->extraColumns} FROM word WHERE image > :image LIMIT 2";
 
-        $result = $this->execute($sql, array(':image' => $imageNumber)) or
-        $result = $this->goToLastPage();
+        if (! $result = $this->execute($sql, array(':image' => $imageNumber))) {
+            $result = $this->goToLastPage();
+        }
 
         return $result;
     }
@@ -82,8 +83,9 @@ class Model_Query_Generic extends Model_Query
     {
         $sql = "SELECT ascii, image, original {$this->extraColumns} FROM word WHERE image >= :image LIMIT 2";
 
-        $result = $this->execute($sql, array(':image' => $imageNumber)) or
-        $result = $this->goToLastPage();
+        if (! $result = $this->execute($sql, array(':image' => $imageNumber))) {
+            $result = $this->goToLastPage();
+        }
 
         return $result;
     }
@@ -98,9 +100,11 @@ class Model_Query_Generic extends Model_Query
     {
         $sql = "SELECT ascii, image, original {$this->extraColumns} FROM word WHERE image <= :image ORDER BY image DESC LIMIT 2";
 
-        $result = array_reverse($this->execute($sql, array(':image' => $imageNumber))) and
-        count($result) >= 2 or
-        $result = $this->goToFirstPage();
+        $result = array_reverse($this->execute($sql, array(':image' => $imageNumber)));
+
+        if (empty($result) or count($result) < 2) {
+            $result = $this->goToFirstPage();
+        }
 
         return $result;
     }
@@ -121,7 +125,8 @@ class Model_Query_Generic extends Model_Query
             // found same or next word, searches previous word if different
             // note: need to find the first occurence of the previous word, ex. first page with "A"
             // note: previous is empty if this is the first page
-            $result[0]['ascii'] == $ascii or empty($result[0]['previous']) or
+            $result[0]['ascii'] == $ascii or
+            empty($result[0]['previous']) or
             $result = $this->execute($sql, array(':ascii' => $result[0]['previous']));
 
         } else {

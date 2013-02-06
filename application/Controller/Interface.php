@@ -34,16 +34,16 @@ class Controller_Interface
      * @var array
      */
     public $actions = array(
-        'about' => 'a-propos',
+        'about'        => 'a-propos',
         'dictionaries' => 'liste-des-dictionnaires',
-        'help' => 'aide',
-        'home' => 'accueil',
+        'help'         => 'aide',
+        'home'         => 'accueil',
         'introduction' => 'introduction',
-        'next' => 'page-suivante',
-        'options' => 'options',
-        'page' => 'aller-page',
-        'previous' => 'page-precedente',
-        'search' => 'chercher',
+        'next'         => 'page-suivante',
+        'options'      => 'options',
+        'page'         => 'aller-page',
+        'previous'     => 'page-precedente',
+        'search'       => 'chercher',
     );
 
     /**
@@ -126,16 +126,26 @@ class Controller_Interface
      */
     public function createSearchObject()
     {
-        $class = isset($this->dictionary['search']['class'])?
-            $this->dictionary['search']['class'] : 'Model_Search_Generic';
+        if (isset($this->dictionary['search']['class'])) {
+            $class = $this->dictionary['search']['class'];
+        } else {
+            $class = 'Model_Search_Generic';
+        }
 
-        $properties = isset($this->dictionary['search']['properties'])?
-            $this->dictionary['search']['properties'] : array();
+        if (isset($this->dictionary['search']['properties'])) {
+            $properties = $this->dictionary['search']['properties'];
+        } else {
+            $properties = array();
+        }
 
         $file = str_replace('_', '/', $class) . '.php';
         require_once $file;
 
-        $query = isset($this->dictionary['query'])? $this->dictionary['query'] : array();
+        if (isset($this->dictionary['query'])) {
+            $query = $this->dictionary['query'];
+        } else {
+            $query = array();
+        }
 
         return new $class($this->front->config['data-dir'], $properties, $query);
     }
@@ -168,8 +178,10 @@ class Controller_Interface
             }
         }
 
-        // defaults dictionary
-        isset($found) or $found = 'gdf';
+        if (! isset($found)) {
+            // defaults dictionary
+            $found = 'gdf';
+        }
 
         $dictionary = $dictionaries[$found];
         $dictionary['id'] = $found;
@@ -195,9 +207,12 @@ class Controller_Interface
 
         $this->view->wordLink = $this->setActionLink('search', $this->dictionary['url'], '%s');
 
-        $action = $this->parseActions() == 'introduction'?
-            'introduction' :
-            'search';
+        if ($this->parseActions() == 'introduction') {
+            $action = 'introduction';
+        } else {
+            $action = 'search';
+        }
+
         $this->view->dictionaryLink = $this->setActionLink($action, '%s', $this->view->word);
 
         $this->view->previousPageLink = $this->setActionLink('previous', $this->dictionary['url'],
@@ -205,9 +220,13 @@ class Controller_Interface
         $this->view->nextPageLink = $this->setActionLink('next', $this->dictionary['url'],
             $this->view->page, $this->view->volume, $this->view->word);
 
-        $needVolume = ($this->dictionary['id'] == 'gdf' or $this->dictionary['id'] == 'gdfc')? '%s' : '';
-        $this->view->goPageLink = $this->setActionLink('page', $this->dictionary['url'],
-            '%s', $needVolume, $this->view->word);
+        if (($this->dictionary['id'] == 'gdf' or $this->dictionary['id'] == 'gdfc')) {
+            $needVolume = '%s';
+        } else {
+            $needVolume = '';
+        }
+
+        $this->view->goPageLink = $this->setActionLink('page', $this->dictionary['url'], '%s', $needVolume, $this->view->word);
 
         $this->view->autoSearch = !empty($_COOKIE['auto-search']);
         $this->view->newTab = !empty($_COOKIE['new-tab']);
@@ -362,7 +381,11 @@ class Controller_Interface
      */
     public function searchAction()
     {
-        $this->isInternalDictionary()? $this->searchInternalDict() : $this->searchExternalDict();
+        if ($this->isInternalDictionary()) {
+            $this->searchInternalDict();
+        } else {
+            $this->searchExternalDict();
+        }
     }
 
     /**
@@ -392,7 +415,11 @@ class Controller_Interface
             case 'cotgrave':
                 $string = new Base_String;
                 $word = $string->utf8toASCII($word);
-                $word <= 'ABBAISSEUR' and $word = 'ABB';
+
+                if ($word <= 'ABBAISSEUR') {
+                    $word = 'ABB';
+                }
+
                 $this->view->externalDict = $this->dictionary['search'] . $word;
                 break;
 
@@ -432,7 +459,9 @@ class Controller_Interface
 
         $link = implode('/', $arguments);
 
-        $this->view->noDictChange and $link .= '?no-dict-change=1';
+        if ($this->view->noDictChange) {
+            $link .= '?no-dict-change=1';
+        }
 
         return $link;
     }
@@ -448,7 +477,12 @@ class Controller_Interface
     public function setActions()
     {
         $action = $this->parseActions();
-        $action = isset($this->actionsFlipped[$action])? $this->actionsFlipped[$action] : 'home';
+
+        if (isset($this->actionsFlipped[$action])) {
+            $action = $this->actionsFlipped[$action];
+        } else {
+            $action = 'home';
+        }
 
         return $this->front->action = $this->completeActions($action);
     }
@@ -464,11 +498,13 @@ class Controller_Interface
 
         // sets multilanguage cookie
         $cookie = 'last-word';
-        setrawcookie($cookie, $word, 0, '/' . $this->front->config['domain-subpath']);
+        // note: cannot set cookie in debug mode because PHPUnit already sent headers
+        defined('PHPUnit_MAIN_METHOD') or setrawcookie($cookie, $word, 0, '/' . $this->front->config['domain-subpath']);
 
         // sets specific language cookie
         $cookie .=  '-' . $this->dictionary['language'];
-        setrawcookie($cookie, $word, 0, '/' . $this->front->config['domain-subpath']);
+        // note: cannot set cookie in debug mode because PHPUnit already sent headers
+        defined('PHPUnit_MAIN_METHOD') or setrawcookie($cookie, $word, 0, '/' . $this->front->config['domain-subpath']);
     }
 
     /**
@@ -478,21 +514,23 @@ class Controller_Interface
      */
     public function setDictionary()
     {
-        $url = @func_get_arg(0) or // used for testing only
         $url = array_shift($this->front->actionParams);
-
         $this->dictionary = $this->findDictionary($url);
 
-        // defaults search properties
-        $this->isInternalDictionary() and
-        empty($this->dictionary['search']['properties']['dictionary']) and
-        $this->dictionary['search']['properties']['dictionary'] = $this->dictionary['id'];
+        if ($this->isInternalDictionary() and empty($this->dictionary['search']['properties']['dictionary'])) {
+            // defaults search properties
+            $this->dictionary['search']['properties']['dictionary'] = $this->dictionary['id'];
+        }
 
-        // defaults introduction
-        empty($this->dictionary['introduction']) and $this->dictionary['introduction'] = "{$this->dictionary['id']}.phtml";
+        if (empty($this->dictionary['introduction'])) {
+            // defaults introduction
+            $this->dictionary['introduction'] = "{$this->dictionary['id']}.phtml";
+        }
 
-        // defaults url
-        empty($this->dictionary['url']) and $this->dictionary['url'] = $this->dictionary['id'];
+        if (empty($this->dictionary['url'])) {
+            // defaults url
+            $this->dictionary['url'] = $this->dictionary['id'];
+        }
     }
 
     /**
@@ -598,7 +636,9 @@ class Controller_Interface
      */
     public function translateActions($action)
     {
-        isset($this->actions[$action]) and $action = $this->actions[$action];
+        if (isset($this->actions[$action])) {
+            $action = $this->actions[$action];
+        }
 
         return $action;
     }

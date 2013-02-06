@@ -35,24 +35,24 @@ class View_Helper_Images extends View_Helper_Base
     public $images = array(
         // dicfro home and default
         'default' => array(
-            'file' => 'dicfro.jpg',
+            'file'   => 'dicfro.jpg',
             'source' => 'http://farm2.static.flickr.com/1147/533118282_dcd53c68cb.jpg',
         ),
          // information pages
         'about' => array(
-            'file' => 'about.jpg',
+            'file'   => 'about.jpg',
             'source' => '',
         ),
         'dictionaries' => array(
-            'file' => 'dictionary-list.jpg',
+            'file'   => 'dictionary-list.jpg',
             'source' => '',
         ),
         'help' => array(
-            'file' => 'help.jpg',
+            'file'   => 'help.jpg',
             'source' => 'http://www.cclspompano.com/448894_82304673.jpg',
         ),
         'options' => array(
-            'file' => 'options.jpg',
+            'file'   => 'options.jpg',
             'source' => '',
         ),
     );

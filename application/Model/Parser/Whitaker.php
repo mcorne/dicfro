@@ -58,13 +58,13 @@ class Model_Parser_Whitaker extends Model_Parser
     public $emptyEntry;
     public $emptyWords;
 
-    public $abbreviations = array(// /
-        'auxiliary' => array(// /
-            'sum' => 'sum',
-            'est' => 'est',
+    public $abbreviations = array(
+        'auxiliary' => array(
+            'sum'   => 'sum',
+            'est'   => 'est',
             ),
 
-        'case' => array(// /
+        'case' => array(
             'ABL' => 'abl.',
             'ACC' => 'acc.',
             'DAT' => 'dat.',
@@ -72,10 +72,10 @@ class Model_Parser_Whitaker extends Model_Parser
             'LOC' => 'loc.',
             'NOM' => 'nom.',
             'VOC' => 'voc.',
-            'X' => '', // ignored
+            'X'   => '', // ignored
             ),
 
-        'case-plus' => array(// /
+        'case-plus' => array(
             'ABL' => '+abl.',
             'ACC' => '+acc.',
             'DAT' => '+dat.',
@@ -83,24 +83,24 @@ class Model_Parser_Whitaker extends Model_Parser
             'LOC' => '+loc.',
             'NOM' => '+nom.',
             'VOC' => '+voc.',
-            'X' => '', // ignored
+            'X'   => '', // ignored
             ),
 
-        'comparison' => array(// /
-            'COMP' => '', // unused
-            'POS' => '', // ignored
+        'comparison' => array(
+            'COMP'  => '', // unused
+            'POS'   => '', // ignored
             'SUPER' => '', // unused
-            'X' => '', // ignored
+            'X'     => '', // ignored
             ),
 
-        'conjugation' => array(// /
+        'conjugation' => array(
             '1' => '(1)',
             '2' => '(2)',
             '3' => '(3)',
             '4' => '(4)',
             ),
 
-        'declension' => array(// /
+        'declension' => array(
             '1' => '(1)',
             '2' => '(2)',
             '3' => '(3)',
@@ -108,7 +108,7 @@ class Model_Parser_Whitaker extends Model_Parser
             '5' => '(5)',
             ),
 
-        'gender' => array(// /
+        'gender' => array(
             'C' => 'm. f.',
             'F' => 'f.',
             'M' => 'm.',
@@ -116,92 +116,92 @@ class Model_Parser_Whitaker extends Model_Parser
             'X' => '', // ignored
             ),
 
-        'mood' => array(// /
+        'mood' => array(
             'IMP' => 'imper.',
             'IND' => 'ind.',
             'INF' => 'inf.',
             'PPL' => '', // unused
             'SUB' => 'subj.',
-            'X' => '', // ignored
+            'X'   => '', // ignored
             ),
 
-        'number' => array(// /
+        'number' => array(
             'P' => 'pl.',
             'S' => 'sg.',
             'X' => '', // ignored
             ),
 
-        'person' => array(// /
+        'person' => array(
             '1' => '1°',
             '2' => '2°',
             '3' => '3°',
             ),
 
-        'pof' => array(// /
-            'ADJ' => 'adj.',
-            'ADV' => 'adv.',
-            'CONJ' => 'conj.',
-            'INTERJ' => 'interj.',
-            'N' => '', // ignored, using gender is enough
-            'NUM' => 'num.',
-            'PACK' => '', // ignored
-            'PREFIX' => '', // unused
-            'PREP' => 'prep.',
-            'PRON' => 'pron.',
+        'pof' => array(
+            'ADJ'     => 'adj.',
+            'ADV'     => 'adv.',
+            'CONJ'    => 'conj.',
+            'INTERJ'  => 'interj.',
+            'N'       => '', // ignored, using gender is enough
+            'NUM'     => 'num.',
+            'PACK'    => '', // ignored
+            'PREFIX'  => '', // unused
+            'PREP'    => 'prep.',
+            'PRON'    => 'pron.',
             'SUFFIX ' => '', // unused
-            'SUPINE' => '', // unused
-            'TACKON' => '', // unused
-            'V' => 'v.',
-            'VPAR' => '', // unused
+            'SUPINE'  => '', // unused
+            'TACKON'  => '', // unused
+            'V'       => 'v.',
+            'VPAR'    => '', // unused
             ),
 
-        'pronoun' => array(// /
+        'pronoun' => array(
             'ADJECT' => 'adj.', // with PACK only
             'DEMONS' => '', // unused
-            'INDEF' => '', // unused
+            'INDEF'  => '', // unused
             'INTERR' => 'interr.', // with PACK only
-            'PERS' => 'pers.',
+            'PERS'   => 'pers.',
             'REFLEX' => 'refl.',
-            'REL' => '', // unused
-            'X' => '', // ignored
+            'REL'    => '', // unused
+            'X'      => '', // ignored
             ),
 
-        'tense' => array(// /
-            'FUT' => 'fut.',
+        'tense' => array(
+            'FUT'  => 'fut.',
             'FUTP' => '', // unused
             'IMPF' => 'impf.',
             'PERF' => '', // unused
             'PLUP' => '', // unused
             'PRES' => 'pres.',
-            'X' => '', // ignored
+            'X'    => '', // ignored
             ),
 
         'variant' => '', // ignored
-        'verb' => array(// /
-            'ABL' => '+abl.',
-            'DAT' => '+dat.',
-            'DEP' => 'dep.',
-            'GEN' => '+gen.',
-            'IMPERS' => 'impers.',
-            'INTRANS' => 'intr.',
-            'PERFDEF' => 'pf.',
-            'SEMIDEP' => 's.dep.',
-            'TO_BE' => '', // unused
+        'verb' => array(
+            'ABL'      => '+abl.',
+            'DAT'      => '+dat.',
+            'DEP'      => 'dep.',
+            'GEN'      => '+gen.',
+            'IMPERS'   => 'impers.',
+            'INTRANS'  => 'intr.',
+            'PERFDEF'  => 'pf.',
+            'SEMIDEP'  => 's.dep.',
+            'TO_BE'    => '', // unused
             'TO_BEING' => '', // unused
-            'TRANS' => 'tr.',
-            'X' => '', // ignored
+            'TRANS'    => 'tr.',
+            'X'        => '', // ignored
             ),
 
-        'voice' => array(// /
-            'ACTIVE' => 'act.',
+        'voice' => array(
+            'ACTIVE'  => 'act.',
             'PASSIVE' => 'pass.',
-            'X' => '', // ignored
+            'X'       => '', // ignored
             ),
 
         'which' => '', // ignored
         );
 
-    public $entryFields = array(// /
+    public $entryFields = array(
         // data in the Whitaker dictionary text file (sorted) excluding words
         'case',
         'comparison',
@@ -237,7 +237,7 @@ class Model_Parser_Whitaker extends Model_Parser
 
     public $lineFormat;
 
-    public $fieldOrder = array(// /
+    public $fieldOrder = array(
         'auxiliary',
 
         'pof',
@@ -264,15 +264,15 @@ class Model_Parser_Whitaker extends Model_Parser
         'which',
         );
 
-    public $detailsFix = array(// /
-        'search' => array(// /
+    public $detailsFix = array(
+        'search' => array(
             ', sum',
             ', est',
             ', (',
             ', +',
             '(GEN)',
             ),
-        'replace' => array(// /
+        'replace' => array(
             ' sum',
             ' est',
             ' (',
@@ -283,36 +283,36 @@ class Model_Parser_Whitaker extends Model_Parser
 
     public $string;
 
-    public $transition = array(// /
+    public $transition = array(
         '-' => '',
         '(gen -ius)' => '',
-        '(GEN)' => '',
-        '(gen.)' => '',
-        '(i)' => 'i',
-        '/' => '',
-        '/ii' => 'vi',
-        '/is' => 'os',
-        '-a' => array('us', '-ae'),
-        '-ae' => array('i', 'o'),
-        '-e' => array('a', 'is'),
-        '-es' => 'es',
-        '-ia' => '-es',
-        'o' => '-ae',
-        '-or' => 'or',
-        '-um' => array('a', '-a'),
-        '-us' => '-or',
+        '(GEN)'      => '',
+        '(gen.)'     => '',
+        '(i)'        => 'i',
+        '/'          => '',
+        '/ii'        => 'vi',
+        '/is'        => 'os',
+        '-a'         => array('us', '-ae'),
+        '-ae'        => array('i', 'o'),
+        '-e'         => array('a', 'is'),
+        '-es'        => 'es',
+        '-ia'        => '-es',
+        'o'          => '-ae',
+        '-or'        => 'or',
+        '-um'        => array('a', '-a'),
+        '-us'        => '-or',
         );
 
-    public $typo = array(// /
-        'search' => array(// /
-            '-or -u,', // #confidentiloquus, confidentiloqua -um, confidentiloquior -or -u, confidentiloquissimus -a  ADJ
-            'us -a -u,', // #undequinquaginta, undequinquagesimus -a -u, undequinquageni -ae -a, undequinquagie(n)s  NUM
-            'us -a -u ', // #adminiculatus, adminiculata -um, adminiculatior -or -us, adminiculatissimus -a -u  ADJ
-            'us -a - ', // #circumscriptus, circumscripta -um, circumscriptior -or -us, circumscriptissimus -a -  ADJ
-            'us -a  ', // #confidentiloquus, confidentiloqua -um, confidentiloquior -or -u, confidentiloquissimus -a  ADJ
-            '(ii)', // #adeo, adire, adivi(ii), aditus  V
+    public $typo = array(
+        'search' => array(
+            '-or -u,'   , // #confidentiloquus, confidentiloqua -um, confidentiloquior -or -u, confidentiloquissimus -a  ADJ
+            'us -a -u,' , // #undequinquaginta, undequinquagesimus -a -u, undequinquageni -ae -a, undequinquagie(n)s  NUM
+            'us -a -u ' , // #adminiculatus, adminiculata -um, adminiculatior -or -us, adminiculatissimus -a -u  ADJ
+            'us -a - '  , // #circumscriptus, circumscripta -um, circumscriptior -or -us, circumscriptissimus -a -  ADJ
+            'us -a  '   , // #confidentiloquus, confidentiloqua -um, confidentiloquior -or -u, confidentiloquissimus -a  ADJ
+            '(ii)'      , // #adeo, adire, adivi(ii), aditus  V
             ),
-        'replace' => array(// /
+        'replace' => array(
             '-or -us,',
             'us -a -um,',
             'us -a -um ',
@@ -331,7 +331,9 @@ class Model_Parser_Whitaker extends Model_Parser
         $this->emptyEntry = array_fill_keys($fields, '');
 
         foreach($this->transition as &$transition) {
-            empty($transition) or settype($transition, 'array');
+            if (! empty($transition)) {
+                settype($transition, 'array');
+            }
         }
 
         parent::__construct($config, $verbose);
@@ -345,8 +347,11 @@ class Model_Parser_Whitaker extends Model_Parser
         $pattern = "~^.+?  ($pofs) ~";
         $file = file($this->sourceFile);
         foreach($file as $line) {
-            preg_match($pattern, $line, $matches) and $distribution[next($matches)]++ or
-            $distribution['not-identified']++;
+            if (preg_match($pattern, $line, $matches)) {
+                $distribution[next($matches)]++;
+            } else {
+                $distribution['not-identified']++;
+            }
         }
 
         arsort($distribution);
@@ -382,8 +387,11 @@ class Model_Parser_Whitaker extends Model_Parser
         $pattern = "~^#([a-z]+)(?:, (-|[a-z]+))?(?:, (-|[a-z]+))?(?:, (-|[a-z]+))?\s+(?=[A-Z])~i";
         $file = file($this->sourceFile);
         foreach($file as $line) {
-            $count = preg_match($pattern, $line, $matches) and $distribution[count($matches)-1]++ or
-            $distribution['not-identified']++;
+            if ($count = preg_match($pattern, $line, $matches)) {
+                $distribution[count($matches)-1]++;
+            } else {
+                $distribution['not-identified']++;
+            }
         }
 
         arsort($distribution);
@@ -408,18 +416,20 @@ class Model_Parser_Whitaker extends Model_Parser
         foreach($details as $field => $value) {
             empty($value) or
             isset($this->abbreviations[$field]) and
-            ($this->abbreviations[$field] === '' or
-                isset($this->abbreviations[$field][$value])) or
+                ($this->abbreviations[$field] === '' or isset($this->abbreviations[$field][$value])) or
             $this->error("unknow details: $field => $value", true, $lineNumber);
 
-            empty($this->abbreviations[$field][$value]) or
-            $concatenated[$field] = $this->abbreviations[$field][$value];
+            if (! empty($this->abbreviations[$field][$value])) {
+                $concatenated[$field] = $this->abbreviations[$field][$value];
+            }
         }
 
         $sorted = array();
 
         foreach($this->fieldOrder as $field) {
-            isset($concatenated[$field]) and $sorted[$field] = $concatenated[$field];
+            if (isset($concatenated[$field])) {
+                $sorted[$field] = $concatenated[$field];
+            }
         }
 
         return implode(', ', $sorted);
@@ -427,8 +437,9 @@ class Model_Parser_Whitaker extends Model_Parser
 
     public function expandWord($toInflection, $prevWord, $lineNumber)
     {
-        isset($this->transition[$toInflection]) or
-        $this->error("unknow transition state: $toInflection", true, $lineNumber);
+        if (! isset($this->transition[$toInflection])) {
+            $this->error("unknow transition state: $toInflection", true, $lineNumber);
+        }
 
         if (empty($this->transition[$toInflection])) {
             // no transition but just information: ignored
@@ -444,8 +455,12 @@ class Model_Parser_Whitaker extends Model_Parser
 
             if ($prevInflection == $fromInflection) {
                 // the transition is identified, e.g. os -> /is
-                // extracts the stem if applicable
-                $toInflection{0} != '(' and $prevWord = substr($prevWord, 0, - $length);
+
+                if ($toInflection{0} != '(') {
+                    // extracts the stem if applicable
+                    $prevWord = substr($prevWord, 0, - $length);
+                }
+
                 // adds the inflection trimmed off non alpha characters
                 return $prevWord . trim($toInflection, '()/-');
             }
@@ -507,31 +522,49 @@ class Model_Parser_Whitaker extends Model_Parser
                         $endingValues = array_splice($matches, - count($this->endingFields));
                         $ending = array_combine($this->endingFields, $endingValues);
                         $entryData = array_merge($entryData, $ending);
-                        // extracts the words mixed with inflections if applicable
-                        $key == 'other' and
-                        list($words, $original) = $this->extractWord($subFormat['fields'], $matches, $lineNumber);
+
+                        if ($key == 'other') {
+                            // extracts the words mixed with inflections if applicable
+                            list($words, $original) = $this->extractWord($subFormat['fields'], $matches, $lineNumber);
+                        }
+
                         // extracts the rest of the entry details
                         // note: the last field may have no match if optional
-                        count($matches) == (count($subFormat['fields']) - 1) and $matches[] = '';
+                        if (count($matches) == (count($subFormat['fields']) - 1)) {
+                            $matches[] = '';
+                        }
+
                         $fields = array_combine($subFormat['fields'], $matches);
                         $entryData = array_merge($entryData, $fields);
                         // sets undeclined word and abbreviations
                         $entryData = $this->setUndeclined($entryData, $words);
+
                         // adds the concatenated words to the entry data
-                        $info = $key == 'other'? $original : implode(', ', $words);
-                        $details = $this->concatDetails($fields, $lineNumber) and
-                        $info .= ", $details";
+                        if ($key == 'other') {
+                            $info = $original;
+                        } else {
+                            $info = implode(', ', $words);
+                        }
+
+                        if ($details = $this->concatDetails($fields, $lineNumber)) {
+                            $info .= ", $details";
+                        }
+
                         $entryData['info'] = str_replace($this->detailsFix['search'],
                             $this->detailsFix['replace'], $info);
                         // adds the line number to the entry data
                         $entryData['line'] = $lineNumber;
-                        // changes the "case-plus" field to "case"
-                        isset($entryData['case-plus']) and $entryData['case'] = $entryData['case-plus'];
+
+                        if (isset($entryData['case-plus'])) {
+                            // changes the "case-plus" field to "case"
+                            $entryData['case'] = $entryData['case-plus'];
+                        }
+
                         unset($entryData['case-plus']);
 
-                        return array(// /
+                        return array(
                             'entry' => implode('|', $entryData),
-                            'word' => $this->setWordsData($words, $lineNumber),
+                            'word'  => $this->setWordsData($words, $lineNumber),
                             );
                     }
                 }
@@ -545,292 +578,295 @@ class Model_Parser_Whitaker extends Model_Parser
 
     public function setFormat()
     {
-        $this->lineFormat = array(// /
+        $this->lineFormat = array(
             // undeclined words
             // attention: must be tried before "2 words"
-            'undeclined' => array(// /
-                'words' => array(// /
+            'undeclined' => array(
+                'words' => array(
                     'pattern' => '([a-z]+), (undeclined)',
                     ),
-                'details' => array(// /
+                'details' => array(
                     // nouns
                     array(// e.g. #Abba, undeclined  N M
                         'pattern' => '(N)' . self::gender,
-                        'fields' => array('pof', 'gender'),
+                        'fields'  => array('pof', 'gender'),
                         ),
                     // adjectives
                     array(// e.g. #adinstar, undeclined  ADJ
                         'pattern' => '(ADJ)',
-                        'fields' => array('pof'),
+                        'fields'  => array('pof'),
                         ),
                     // verbs
                     array(// #effatha, undeclined  V TRANS
                         'pattern' => '(V)' . self::verb . '?',
-                        'fields' => array('pof', 'verb'),
+                        'fields'  => array('pof', 'verb'),
                         ),
                     ),
                 ),
             // 2 words
-            'wordsX2' => array(// /
-                'words' => array(// /
+            'wordsX2' => array(
+                'words' => array(
                     'pattern' => '([a-z]+), (-|[a-z]+)',
                     ),
-                'details' => array(// /
+                'details' => array(
                     // nouns
                     array(// e.g. #abrotonites, abrotonitae  N M
                         'pattern' => '(N)' . self::gender,
-                        'fields' => array('pof', 'gender'),
+                        'fields'  => array('pof', 'gender'),
                         ),
                     array(// e.g.
                         'pattern' => '(N)' . self::declension . self::gender,
-                        'fields' => array('pof', 'declension', 'gender'),
+                        'fields'  => array('pof', 'declension', 'gender'),
                         ),
                     // adjectives, averbs
                     array(// e.g. #deterius, deterrime  ADV
                         'pattern' => '(ADJ|ADV)',
-                        'fields' => array('pof'),
+                        'fields'  => array('pof'),
                         ),
                     // pronouns
                     array(// e.g. #ego, mei PRON PERS
                         'pattern' => '(PRON)' . self::pronoun,
-                        'fields' => array('pof', 'pronoun'),
+                        'fields'  => array('pof', 'pronoun'),
                         ),
                     ),
                 ),
             // 3 words
-            'wordsX3' => array(// /
-                'words' => array(// /
+            'wordsX3' => array(
+                'words' => array(
                     'pattern' => '([a-z]+), (-|[a-z]+), (-|[a-z]+)',
                     ),
-                'details' => array(// /
+                'details' => array(
                     // adjectives, adverbs, pronouns
                     array(// e.g. #abactius, abactia, abactium  ADJ
                         'pattern' => '(ADJ|ADV|PRON)',
-                        'fields' => array('pof'),
+                        'fields'  => array('pof'),
                         ),
                     // verbs
                     array(// e.g. #aio, -, -  V
                         'pattern' => '(V)' . self::verb . '?',
-                        'fields' => array('pof', 'verb'),
+                        'fields'  => array('pof', 'verb'),
                         ),
                     array(// e.g. #admoderor, admoderari, -  V (1st) DEP
                         'pattern' => '(V)' . self::conjugation . self::verb,
-                        'fields' => array('pof', 'conjugation', 'verb'),
+                        'fields'  => array('pof', 'conjugation', 'verb'),
                         ),
                     array(// e.g. #abolefio, aboleferi, abolefactus sum  V SEMIDEP
                         'pattern' => self::auxiliary . '(V)' . self::verb,
-                        'fields' => array('auxiliary', 'pof', 'verb'),
+                        'fields'  => array('auxiliary', 'pof', 'verb'),
                         ),
                     array(// e.g. #abominor, abominari, abominatus sum  V (1st) DEP
                         'pattern' => self::auxiliary . '(V)' . self::conjugation . self::verb,
-                        'fields' => array('auxiliary', 'pof', 'conjugation', 'verb'),
+                        'fields'  => array('auxiliary', 'pof', 'conjugation', 'verb'),
                         ),
                     // pack
                     array(// e.g. #quicumque, quaecumque, quodcumque  PACK
                         'pattern' => '(PACK)' . self::pronoun . '?',
-                        'fields' => array('pof', 'pronoun'),
+                        'fields'  => array('pof', 'pronoun'),
                         ),
                     ),
                 ),
             // 4 words
-            'wordsX4' => array(// /
-                'words' => array(// /
+            'wordsX4' => array(
+                'words' => array(
                     'pattern' => '([a-z]+), (-|[a-z]+), (-|[a-z]+), (-|[a-z]+)',
                     ),
-                'details' => array(// /
+                'details' => array(
                     // verbs
                     array(// e.g. #abfero, abferre, -, -  V TRANS
                         'pattern' => '(V)' . self::verb . '?',
-                        'fields' => array('pof', 'verb'),
+                        'fields'  => array('pof', 'verb'),
                         ),
                     array(// e.g. #abaestuo, abaestuare, abaestuavi, abaestuatus  V (1st) INTRANS
                         'pattern' => '(V)' . self::conjugation . self::verb . '?',
-                        'fields' => array('pof', 'conjugation', 'verb'),
+                        'fields'  => array('pof', 'conjugation', 'verb'),
                         ),
                     array(// e.g. #accidt, accidere, accidit, accisus est  V (3rd) IMPERS
                         'pattern' => self::auxiliary . '(V)' . self::conjugation . self::verb . '?',
-                        'fields' => array('auxiliary', 'pof', 'conjugation', 'verb'),
+                        'fields'  => array('auxiliary', 'pof', 'conjugation', 'verb'),
                         ),
                     array(// e.g. #interest, interesse, interfuit, interfutus est  V IMPERS
                         'pattern' => self::auxiliary . '(V)' . self::verb,
-                        'fields' => array('auxiliary', 'pof', 'verb'),
+                        'fields'  => array('auxiliary', 'pof', 'verb'),
                         ),
                     ),
                 ),
             // 1 word
-            'wordsX1' => array(// /
-                'words' => array(// /
+            'wordsX1' => array(
+                'words' => array(
                     'pattern' => '([a-z]+)',
                     ),
-                'details' => array(// /
+                'details' => array(
                     // nouns
                     array(// e.g. #bobus  N  3 1 ABL P C
                         'pattern' => '(N)' . self::which . self::variant . self::case1 . self::number . self::gender,
-                        'fields' => array('pof', 'which', 'variant', 'case', 'number', 'gender'),
+                        'fields'  => array('pof', 'which', 'variant', 'case', 'number', 'gender'),
                         ),
                     array(// e.g. #multae  N  F
                         'pattern' => '(N)' . self::gender,
-                        'fields' => array('pof', 'gender'),
+                        'fields'  => array('pof', 'gender'),
                         ),
                     // adjectives
                     array(// e.g. #exspes  ADJ 3 1 NOM S X POS
                         'pattern' => '(ADJ)' . self::which . self::variant . self::case1 . self::number . self::gender . self::comparison,
-                        'fields' => array('pof', 'which', 'variant', 'case', 'number', 'gender', 'comparison'),
+                        'fields'  => array('pof', 'which', 'variant', 'case', 'number', 'gender', 'comparison'),
                         ),
                     array(// 2 instances: #colossicon  N ADJ &  #curotrophoe F ADJ -> ignoring unexpected N|F!
                         'pattern' => '(?:F|N)\s+' . '(ADJ)',
-                        'fields' => array('pof'),
+                        'fields'  => array('pof'),
                         ),
                     // verbs
                     array(// e.g. #adesdum           V      5 1 PRES ACTIVE  IMP 2 S
                         'pattern' => '(V)' . self::which . self::variant . self::tense . self::voice . self::mood . self::person . self::number . self::verb . '?',
-                        'fields' => array('pof', 'which', 'variant', 'tense', 'voice', 'mood', 'person', 'number', 'verb'),
+                        'fields'  => array('pof', 'which', 'variant', 'tense', 'voice', 'mood', 'person', 'number', 'verb'),
                         ),
                     // adverbs, conjunctions, interjections, numerals
                     array(// e.g. #a  INTERJ
                         'pattern' => '(ADV|CONJ|INTERJ|NUM)',
-                        'fields' => array('pof'),
+                        'fields'  => array('pof'),
                         ),
                     // prepositions
                     array(// e.g. #ab  PREP  ABL
                         'pattern' => '(PREP)' . self::case1,
-                        'fields' => array('pof', 'case-plus'),
+                        'fields'  => array('pof', 'case-plus'),
                         ),
                     // pronouns
                     array(// e.g. #chodchod  PRON   1 7 ACC S N
                         'pattern' => '(PRON)' . self::which . self::variant . self::case1 . self::number . self::gender,
-                        'fields' => array('pof', 'which', 'variant', 'case', 'number', 'gender'),
+                        'fields'  => array('pof', 'which', 'variant', 'case', 'number', 'gender'),
                         ),
                     array(// e.g. #mei (GEN) PRON REFLEX
                         'pattern' => self::case2 . '(PRON)' . self::pronoun,
-                        'fields' => array('case', 'pof', 'pronoun'),
+                        'fields'  => array('case', 'pof', 'pronoun'),
                         ),
                     // pack
                     array(// e.g. #quicum  PACK
                         'pattern' => '(PACK)',
-                        'fields' => array('pof'),
+                        'fields'  => array('pof'),
                         ),
                     ),
                 ),
             // abreviations
-            'abbreviation' => array(// /
-                'words' => array(// /
+            'abbreviation' => array(
+                'words' => array(
                     'pattern' => '([a-z]+)\., (abb.)',
                     ),
-                'details' => array(// /
+                'details' => array(
                     // nouns
                     array(// e.g. #d., abb.  N C
                         'pattern' => '(N)' . self::gender,
-                        'fields' => array('pof', 'gender'),
+                        'fields'  => array('pof', 'gender'),
                         ),
                     // adjectives
                     array(// e.g. #Apr., abb.  ADJ
                         'pattern' => '(ADJ)',
-                        'fields' => array('pof'),
+                        'fields'  => array('pof'),
                         ),
                     ),
                 ),
             // words mixed with inflections
-            'other' => array(// /
-                'words' => array(// /
+            'other' => array(
+                'words' => array(
                     'pattern' => '',
                     ),
-                'details' => array(// /
+                'details' => array(
                     // nouns
                     array(// e.g. #acalanthis, acalanthidos/is  N F
                         'pattern' => '(([a-z]+), ([a-z]+)(/is))\s+(N)' . self::gender,
-                        'fields' => array(3, 'pof', 'gender'),
+                        'fields'  => array(3, 'pof', 'gender'),
                         ),
                     array(// e.g. #absinthium, absinthi(i)  N (2nd) N
                         'pattern' => '(([a-z]+), ([a-z]+)(\(i\)))\s+(N)' . self::declension . self::gender,
-                        'fields' => array(3, 'pof', 'declension', 'gender'),
+                        'fields'  => array(3, 'pof', 'declension', 'gender'),
                         ),
                     // adjective
                     array(// e.g. #caesius, caesia -um, -, caesissumus -a -um  ADJ
                         'pattern' => '(([a-z]+), ([a-z]+) (-um), (-), ([a-z]+) (-a) (-um))\s+(ADJ)',
-                        'fields' => array(7, 'pof'),
+                        'fields'  => array(7, 'pof'),
                         ),
                     array(// e.g. #abjectus, abjecta -um, abjectior -or -us, abjectissimus -a -um  ADJ
                         'pattern' => '(([a-z]+), ([a-z]+) (-um|-e), ([a-z]+) (-or) (-us), ([a-z]+) (-a) (-um))\s+(ADJ)',
-                        'fields' => array(9, 'pof'),
+                        'fields'  => array(9, 'pof'),
                         ),
                     array(// e.g. #asper, aspra -um, asprior -or -us, -  ADJ
                         'pattern' => '(([a-z]+), ([a-z]+) (-um), ([a-z]+) (-or) (-us), (-))\s+(ADJ)',
-                        'fields' => array(7, 'pof'),
+                        'fields'  => array(7, 'pof'),
                         ),
                     array(// e.g. #adspectabilis, adspectabile, adspectabilior -or -us, adspectabilissimus -a -u  ADJ
                         'pattern' => '(([a-z]+), ([a-z]+), ([a-z]+) (-or) (-us), ([a-z]+) (-a) (-um))\s+(ADJ)',
-                        'fields' => array(8, 'pof'),
+                        'fields'  => array(8, 'pof'),
                         ),
                     array(// e.g. #deterior -or -us, deterrimus -a -um  ADJ
                         'pattern' => '(([a-z]+) (-or) (-us), ([a-z]+) (-a) (-um))\s+(ADJ)',
-                        'fields' => array(6, 'pof'),
+                        'fields'  => array(6, 'pof'),
                         ),
                     array(// e.g. #absens, (gen.), absentis  ADJ
                         'pattern' => '(([a-z]+), (\(gen\.\)), (-|[a-z]+))\s+(ADJ)',
-                        'fields' => array(3, 'pof'),
+                        'fields'  => array(3, 'pof'),
                         ),
                     array(// e.g. #abstinens, abstinentis (gen.), abstinentior -or -us, abstinentissimus -a -um  ADJ
                         'pattern' => '(([a-z]+), ([a-z]+) (\(gen\.\)), ([a-z]+) (-or) (-us), ([a-z]+) (-a) (-um))\s+(ADJ)',
-                        'fields' => array(9, 'pof'),
+                        'fields'  => array(9, 'pof'),
                         ),
                     array(// e.g. #metuens, metuentis (gen.), metuentior -or -us, -  ADJ
                         'pattern' => '(([a-z]+), ([a-z]+) (\(gen\.\)), ([a-z]+) (-or) (-us), (-))\s+(ADJ)',
-                        'fields' => array(7, 'pof'),
+                        'fields'  => array(7, 'pof'),
                         ),
                     array(// e.g. #par, paris (gen.), -, parissimus -a -um  ADJ
                         'pattern' => '(([a-z]+), ([a-z]+) (\(gen\.\)), (-), ([a-z]+) (-a) (-um))\s+(ADJ)',
-                        'fields' => array(7, 'pof'),
+                        'fields'  => array(7, 'pof'),
                         ),
                     array(// e.g. #nonnullus, nonnulla, nonnullum (gen -ius)  ADJ
                         'pattern' => '(([a-z]+), ([a-z]+), ([a-z]+) (\(gen -ius\)))\s+(ADJ)',
-                        'fields' => array(4, 'pof'),
+                        'fields'  => array(4, 'pof'),
                         ),
                     // verbs
                     array(// e.g. #odeo, odire, odivi(ii), -  V TRANS
                         'pattern' => '(([a-z]+), ([a-z]+), ([a-z]+)(/ii), (-|[a-z]+))\s+(V)' . self::verb . '?',
-                        'fields' => array(5, 'pof', 'verb'),
+                        'fields'  => array(5, 'pof', 'verb'),
                         ),
                     // pronouns
                     array(// e.g. #mei (GEN) PRON REFLEX
                         'pattern' => '(([a-z]+) (\(GEN\)))\s+(PRON)' . self::pronoun,
-                        'fields' => array(2, 'pof', 'pronoun'),
+                        'fields'  => array(2, 'pof', 'pronoun'),
                         ),
                     array(// e.g. #nos, nostrum/nostri PRON PERS
                         'pattern' => '(([a-z]+), ([a-z]+)(/)([a-z]+))\s+(PRON)' . self::pronoun,
-                        'fields' => array(4, 'pof', 'pronoun'),
+                        'fields'  => array(4, 'pof', 'pronoun'),
                         ),
                     // numerals
                     array(// e.g. #quattuordecim, -, -, quatterdecie(n)s  NUM
                         'pattern' => '(([a-z]+), (-), (-), ([a-z]+)(\(n\)s))\s+(NUM)',
-                        'fields' => array(6, 'pof'),
+                        'fields'  => array(6, 'pof'),
                         ),
                     array(// e.g. #quattuor, quartus -a -um, quaterni -ae -a, -  NUM
                         'pattern' => '(([a-z]+), ([a-z]+) (-a) (-um), ([a-z]+) (-ae) (-a), (-))\s+(NUM)',
-                        'fields' => array(8, 'pof'),
+                        'fields'  => array(8, 'pof'),
                         ),
                     array(// e.g. #biscentum, biscentesimus -a -um, biscenteni -ae -a, biscentie(n)s  NUM
                         'pattern' => '(([a-z]+), ([a-z]+) (-a) (-um), ([a-z]+) (-ae) (-a), ([a-z]+)(\(n\)s))\s+(NUM)',
-                        'fields' => array(10, 'pof'),
+                        'fields'  => array(10, 'pof'),
                         ),
                     array(// e.g. #ducenti -ae -a, ducentesimus -a -um, duceni -ae -a, ducentie(n)s  NUM
                         'pattern' => '(([a-z]+) (-ae) (-a), ([a-z]+) (-a) (-um), ([a-z]+) (-ae) (-a), ([a-z]+)(\(n\)s))\s+(NUM)',
-                        'fields' => array(12, 'pof'),
+                        'fields'  => array(12, 'pof'),
                         ),
                     array(// e.g. #duo -ae o, secundus -a -um, bini -ae -a, bis  NUM
                         'pattern' => '(([a-z]+) (-ae|-es) (o), ([a-z]+) (-a) (-um), ([a-z]+) (-ae) (-a), ([a-z]+))\s+(NUM)',
-                        'fields' => array(10, 'pof'),
+                        'fields'  => array(10, 'pof'),
                         ),
                     array(// e.g. #tres -es -ia, tertius -a -um, terni -ae -a, ter  NUM
                         'pattern' => '(([a-z]+) (-es|-a) (-ia|-um), ([a-z]+) (-a) (-um), ([a-z]+) (-ae) (-a), ([a-z]+))\s+(NUM)',
-                        'fields' => array(10, 'pof'),
+                        'fields'  => array(10, 'pof'),
                         ),
                     ),
                 ),
             );
 
         foreach($this->lineFormat as &$format) {
-            $format['words']['pattern'] and $format['words']['pattern'] .= self::char;
+            if ($format['words']['pattern']) {
+                $format['words']['pattern'] .= self::char;
+            }
+
             $format['words']['pattern'] = '~^#' . $format['words']['pattern'] . self::remainder . '$~i';
 
             foreach($format['details'] as &$subFormat) {
@@ -843,11 +879,11 @@ class Model_Parser_Whitaker extends Model_Parser
     {
         foreach($words as $word) {
             if ($word != '-') {
-                $data = array(// /
+                $data = array(
                     'original' => $word,
-                    'latin' => $this->string->toLatin($word),
-                    'upper' => $this->string->toUpper($word),
-                    'line' => $lineNumber,
+                    'latin'    => $this->string->toLatin($word),
+                    'upper'    => $this->string->toUpper($word),
+                    'line'     => $lineNumber,
                     );
 
                 ksort($data);

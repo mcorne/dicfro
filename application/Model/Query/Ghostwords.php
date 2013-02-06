@@ -48,9 +48,11 @@ class Model_Query_Ghostwords extends Model_Query
      */
     public function searchWords($wordFrom, $wordTo)
     {
-        return $wordTo?
-            $this->searchWordsBetween($wordFrom, $wordTo) :
-            $this->searchWordsFrom($wordFrom);
+        if ($wordTo) {
+            return $this->searchWordsBetween($wordFrom, $wordTo);
+        } else {
+            return $this->searchWordsFrom($wordFrom);
+        }
     }
 
     /**

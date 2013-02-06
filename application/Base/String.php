@@ -28,7 +28,7 @@ class Base_String {
      *
      * @var array
      */
-    public $accentuated = array(// /
+    public $accentuated = array(
         // accentuated letters
         'search' => array(
             'Á', 'À', 'Â', 'Ä', 'Ç', 'É', 'È', 'Ê', 'Ë', 'Í', 'Ì', 'Î', 'Ï', 'Ñ', 'Ó', 'Ò', 'Ô', 'Ö', 'Ú', 'Ù', 'Û', 'Ü', 'Ÿ',
@@ -48,7 +48,7 @@ class Base_String {
      * @var array
      */
     public $utf8ToCP850 = array(// http://en.wikipedia.org/wiki/Code_page_850
-        'search' => array(// /
+        'search' => array(
             'Ç', 'ü', 'é', 'â', 'ä', 'à', 'å', 'ç', 'ê', 'ë', 'è', 'ï', 'î', 'ì', 'Ä', 'Å',
             'É', 'æ', 'Æ', 'ô', 'ö', 'ò', 'û', 'ù', 'ÿ', 'Ö', 'Ü', 'ø', '£', 'Ø', '×', 'ƒ',
             'á', 'í', 'ó', 'ú', 'ñ', 'Ñ', 'ª', 'º', '¿', '®', '¬', '½', '¼', '¡', '«', '»',
@@ -58,7 +58,7 @@ class Base_String {
             'Ó', 'ß', 'Ô', 'Ò', 'õ', 'Õ', 'µ', 'þ', 'Þ', 'Ú', 'Û', 'Ù', 'ý', 'Ý', '¯', '´',
             '', '±', '', '¾', '¶', '§', '÷', '¸', '°', '¨', '·', '¹', '³', '²', '', '',
             ),
-        'replace' => array(// /
+        'replace' => array(
             "\x80", "\x81", "\x82", "\x83", "\x84", "\x85", "\x86", "\x87", "\x88", "\x89", "\x8A", "\x8B", "\x8C", "\x8D", "\x8E", "\x8F",
             "\x90", "\x91", "\x92", "\x93", "\x94", "\x95", "\x96", "\x97", "\x99", "\x99", "\x9A", "\x9B", "\x9C", "\x9D", "\x9E", "\x9F",
             "\xA0", "\xA1", "\xA2", "\xA3", "\xA4", "\xA5", "\xA6", "\xA7", "\xAA", "\xA9", "\xAA", "\xAB", "\xAC", "\xAD", "\xAE", "\xAF",
@@ -83,14 +83,17 @@ class Base_String {
     /**
      * Converts a string with dash separated words to camel case
      *
-     * @param  array  $string the string with dash separated words
+     * @param  string $string the string with dash separated words
      * @return string the camel case string
      */
     public function dash2CamelCase($string, $ucFirst = false)
     {
         $string = str_replace('-', ' ', $string);
         $string = ucwords($string);
-        $string and !$ucFirst and $string = strtolower($string[0]) . substr($string, 1);
+
+        if ($string != '' and ! $ucFirst) {
+            $string = strtolower($string[0]) . substr($string, 1);
+        }
 
         return str_replace(' ', '', $string);
     }
@@ -113,13 +116,15 @@ class Base_String {
      * Converts a string from the internal encoding to UTF-8
      *
      * @param  string $string           the string to convert
-     * @param  string $internalEncoding the internal encoding (used for testing)
+     * @param  string $internalEncoding the internal encoding
      * @return string the converted string
      */
     public function internalToUtf8($string, $internalEncoding = null)
     {
-        // gets the internal encoding for console displaying purposes
-        $internalEncoding or $internalEncoding = mb_internal_encoding();
+        if (empty($internalEncoding)) {
+            // gets the internal encoding for console displaying purposes
+            $internalEncoding = mb_internal_encoding();
+        }
 
         return mb_convert_encoding($string, 'UTF-8', $internalEncoding);
     }
@@ -127,8 +132,8 @@ class Base_String {
     /**
      * Determines if the process is running as DOS shell
      *
-     * @param  string $os   the name of the OS (used for testing)
-     * @param  string $sapi the name of the interface (used for testing)
+     * @param  string $os   the name of the OS
+     * @param  string $sapi the name of the interface
      * @return true   if DOS shell, false otherwise
      */
     public function isDos($os = PHP_OS, $sapi = PHP_SAPI)
@@ -174,7 +179,7 @@ class Base_String {
     }
 
     /**
-     * Converts a string from UTF-8 to ASCII
+     * Converts a string from UTF-8 to ASCII uppercase
      *
      * @param  string $string the string to convert
      * @param  string $remove the characters to remove in a regex
@@ -226,21 +231,26 @@ class Base_String {
      * Converts a string from UTF-8 to the internal encoding
      *
      * @param  string  $string           the string to convert
-     * @param  string  $internalEncoding the internal encoding (used for testing)
-     * @param  boolean $isDos            null for auto-detect, true for DOS shell, false otherwise (used for testing)
+     * @param  string  $internalEncoding the internal encoding
+     * @param  boolean $isDos            null for auto-detect, true for DOS shell, false otherwise
      * @return string  the converted string
      */
     public function utf8ToInternalString($string, $internalEncoding = null, $isDos = null)
     {
-        is_null($isDos) and $isDos = $this->isDos();
+        if (is_null($isDos)) {
+            $isDos = $this->isDos();
+        }
 
         if ($isDos) {
             // the process is running as DOS shell, converts with CP850 charset
             $string = str_replace($this->utf8ToCP850['search'], $this->utf8ToCP850['replace'], $string);
 
         } else {
-            // gets the internal encoding for console displaying purposes
-            $internalEncoding or $internalEncoding = mb_internal_encoding();
+            if (empty($internalEncoding)) {
+                // gets the internal encoding for console displaying purposes
+                $internalEncoding = mb_internal_encoding();
+            }
+
             // converts to the internal encoding
             $string = mb_convert_encoding($string, $internalEncoding, 'UTF-8');
         }

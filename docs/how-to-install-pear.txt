@@ -1,0 +1,21 @@
+How to install Pear
+-------------------
+
+Note: 
+- path names with parenthesis as on windows, eg "C:\Program Files (x86)", may cause problems to install Pear
+- use a simple path instead, eg "C:\pear"
+
+
+With admin permission (start cmd with admin privileges : win + X):
+
+Run the go-pear.bat that comes with the default PHP installation. It'll installs PEAR, but it's going to generate an error when installing Structures_Graph. IMO Pear needs this package to generate the package dependency (graph), since it's missing it not allow us to install or upgrade any other package.
+
+Download and uncompress Structures_Graph from the pear.php.net website (direct link). Then copy the Structure folder into the PEAR folder. The archive has three folders: docs, Structures, tests. We only need the Structures one. Copy the Structures folder to your PHP_ROOT_DIRECTORY\PEAR directory. So if you installed PHP on C:\Web\php-5.3.5 copy the Structures folder to C:\Web\php-5.3.5\PEAR\, the result should be: C:\Web\php-5.3.5\PEAR\Structures
+
+Do pear install Structures_Graph. Even though the files are present, Structures_Graph is not really installed (we had a problem during installation). So we need to run the command above.
+
+Do pear upgrade PEAR. This upgrades PEAR itself to the current version.
+
+Do pear upgrade Console_Getopt. This upgrades Console_Getopt to the current version and now we can manage and install any pear package.
+
+Source : http://stackoverflow.com/questions/4717547/cant-install-pear-on-windows-7-structures-graph-error

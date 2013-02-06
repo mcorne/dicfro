@@ -71,16 +71,16 @@ class View_Helper_Verbs extends View_Helper_Base
      * @var array
      */
     public $tenses = array(
-        'inf.' => 'Infinitif',
-        'ind.prés.' => 'Indicatif Présent',
-        'ind.impf.' => 'Indicatif Imparfait',
+        'inf.'       => 'Infinitif',
+        'ind.prés.'  => 'Indicatif Présent',
+        'ind.impf.'  => 'Indicatif Imparfait',
         'pass.simp.' => 'Indicatif Passé simple',
         'pass.arch.' => 'Indicatif Passé archaïque',
-        'futur' => 'Indicatif Futur',
+        'futur'      => 'Indicatif Futur',
         'subj.prés.' => 'Subjonctif Présent',
         'subj.impf.' => 'Subjonctif Imparfait',
-        'cond.' => 'Conditionnel',
-        'impé.' => 'Impératif',
+        'cond.'      => 'Conditionnel',
+        'impé.'      => 'Impératif',
         'part.prés.' => 'Participe Présent',
         'part.pass.' => 'Participe Passé',
     );
@@ -106,7 +106,11 @@ class View_Helper_Verbs extends View_Helper_Base
     {
         $person .= ':';
 
-        return isset($this->person[$person])? $this->person[$person] : "(?)";
+        if (isset($this->person[$person])) {
+            return $this->person[$person];
+        } else {
+            return "(?)";
+        }
     }
 
     /**
@@ -117,7 +121,11 @@ class View_Helper_Verbs extends View_Helper_Base
      */
     public function convertTense($tense)
     {
-        return isset($this->tenses[$tense])? $this->tenses[$tense] : $tense . ' (?)';
+        if (isset($this->tenses[$tense])) {
+            return $this->tenses[$tense];
+        } else {
+            return $tense . ' (?)';
+        }
     }
 
     /**
@@ -128,7 +136,10 @@ class View_Helper_Verbs extends View_Helper_Base
      */
     public function extractComposedVerbs($isComposed)
     {
-        $this->view->composedVerbs or $this->view->composedVerbs = array();
+        if (! $this->view->composedVerbs) {
+            $this->view->composedVerbs = array();
+        }
+
         $verbs = array();
 
         foreach($this->view->composedVerbs as $verb) {
@@ -148,13 +159,16 @@ class View_Helper_Verbs extends View_Helper_Base
      */
     public function extractIdentifiedVerbs()
     {
-        $this->view->identifiedVerbs or $this->view->identifiedVerbs = array();
+        if (! $this->view->identifiedVerbs) {
+            $this->view->identifiedVerbs = array();
+        }
+
         $verbs = array();
 
         foreach($this->view->identifiedVerbs as $verb) {
             $verbs[$verb['infinitive']][] = array(
                 'value' => $verb['infinitive'],
-                'text' => $this->formatVerbForm($verb),
+                'text'  => $this->formatVerbForm($verb),
             );
         }
 
@@ -197,10 +211,13 @@ class View_Helper_Verbs extends View_Helper_Base
         foreach($this->view->tcaf as $verb) {
             // extracts homonyms, ex "NOIIER (necare)" and "NOIIER (negare)"
             $homonym = $verb['original'];
-            isset($verbs[$homonym]) or $verbs[$homonym] = $this->presetTenses();
+
+            if (! isset($verbs[$homonym])) {
+                $verbs[$homonym] = $this->presetTenses();
+            }
 
             $verbs[$homonym][$verb['tense']] = array(
-                'tense' => $this->convertTense($verb['tense']),
+                'tense'       => $this->convertTense($verb['tense']),
                 'conjugation' => $this->replacePersons($verb['conjugation']),
             );
         }

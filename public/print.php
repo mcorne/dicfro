@@ -9,8 +9,12 @@
  * @license   http://www.opensource.org/licenses/gpl-3.0.html GNU GPL v3
  */
 
-$content = empty($_GET['content'])?
-    "Il n'y a rien à imprimer!" : html_entity_decode(base64_decode($_GET['content'], true));
+if (empty($_GET['content'])) {
+    $content = "Il n'y a rien à imprimer!";
+} else {
+    $content = html_entity_decode(base64_decode($_GET['content'], true));
+}
+
 ?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">

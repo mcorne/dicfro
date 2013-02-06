@@ -35,7 +35,12 @@ if (isset($dictionaryConfig['query']['class'])) {
 $file = str_replace('_', '/', $class) . '.php';
 require_once $file;
 
-$properties = isset($dictionaryConfig['query']['properties'])? $dictionaryConfig['query']['properties'] : array();
+if (isset($dictionaryConfig['query']['properties'])) {
+    $properties = $dictionaryConfig['query']['properties'];
+} else {
+    $properties = array();
+}
+
 $query = new $class($directory, $properties);
 
 // extracts "search" and "go to page" like methods

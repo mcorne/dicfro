@@ -108,14 +108,19 @@ class Controller_Front
     /**
      * Matches the route to a controller name, action and function name
      *
-     * @return true
+     * @return void
      */
     public function matchRoute()
     {
         // format: [/domain-subpath][/action][/param1]...
         // ex. "dicfro/search/vandaele/xyz"
         // note: not capturing controller name
-        $baseUrl = empty($this->config['domain-subpath'])? '' : "/{$this->config['domain-subpath']}";
+        if (empty($this->config['domain-subpath'])) {
+            $baseUrl = '';
+        } else {
+            $baseUrl = "/{$this->config['domain-subpath']}";
+        }
+
         $routePattern = "~^$baseUrl(?:/([^/?]+))?(?:/([^/?]+))?(?:/([^/?]+))?(?:/([^/?]+))?(?:/([^/?]+))?(?:/([^/?]+))?~";
 
         if (preg_match($routePattern, $_SERVER['REQUEST_URI'], $this->actionParams)) {
@@ -124,8 +129,6 @@ class Controller_Front
         }
 
         $this->controllerName = 'interface';
-
-        return true;
     }
 
     /**
@@ -135,7 +138,7 @@ class Controller_Front
      */
     public function run()
     {
-        $this->matchRoute() and
+        $this->matchRoute();
         $this->setParams();
         $this->callController();
     }
@@ -159,6 +162,10 @@ class Controller_Front
      */
     public function setParams()
     {
-        $this->params = empty($_GET)? array() : $_GET;
+        if (empty($_GET)) {
+            $this->params = array();
+        } else {
+            $this->params = $_GET;
+        }
     }
 }

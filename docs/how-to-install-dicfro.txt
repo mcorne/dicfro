@@ -1,3 +1,7 @@
+How to install Dicfro
+---------------------
+
+
 add an entry in the host file
 -----------------------------
 - for a windows system in C:\Windows\System32\Drivers\etc\hosts

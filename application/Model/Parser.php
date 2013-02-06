@@ -66,7 +66,11 @@ abstract class Model_Parser
     public function __destruct()
     {
         if ($this->errorFile and $this->error) {
-            $error = empty($this->error)? '' : implode('', $this->error);
+            if (empty($this->error)) {
+                $error = '';
+            } else {
+                $error = implode('', $this->error);
+            }
 
             print "writing {$this->errorFile} ... ";
             @file_put_contents($this->errorFile, $error);
@@ -93,26 +97,46 @@ abstract class Model_Parser
 
     public function createBatchFile()
     {
-        $template = file_get_contents($this->batchFileTemplate) or $this->error("cannot read $this->batchFileTemplate", true);
+        if (! $template = file_get_contents($this->batchFileTemplate)) {
+            $this->error("cannot read $this->batchFileTemplate", true);
+        }
+
         $dataFile = $this->addPathName(current($this->dataFiles));
         $dataFile = str_replace('\\', '/' , $dataFile);
         $content = sprintf($template, $dataFile);
-        file_put_contents($this->batchFileTemp, $content) or $this->error("cannot write $this->batchFileTemp", true);
+
+        if (! @file_put_contents($this->batchFileTemp, $content)) {
+            $this->error("cannot write $this->batchFileTemp", true);
+        }
     }
 
     public function error($message, $isError, $lineNumber = null, $verbose = false)
     {
-        $errorType = $isError? 'Error' : 'Warning';
+        if ($isError) {
+            $errorType = 'Error';
+        } else {
+            $errorType = 'Warning';
+        }
 
         $string = "\n$errorType! ";
-        is_null($lineNumber) or $string .= "({$this->sourceFile} #$lineNumber) ";
+
+        if (! is_null($lineNumber)) {
+            $string .= "({$this->sourceFile} #$lineNumber) ";
+        }
+
         $string .= "$message\n";
 
-        ($isError or $verbose or $this->verbose) and print $string ;
+        if ($isError or $verbose or $this->verbose) {
+            echo $string ;
+        }
 
-        empty($this->errorFile) or $this->error[] = $string;
+        if (! empty($this->errorFile)) {
+            $this->error[] = $string;
+        }
 
-        $isError and exit(1);
+        if ($isError) {
+            exit(1);
+        }
     }
 
     public function import()
@@ -131,14 +155,20 @@ abstract class Model_Parser
             $command = "echo .read $name | sqlite3 {$this->dataBase}";
             $command = str_replace('\\', '/' , $command);
             $lineCount = exec($command, $ouput, $returnVar);
-            $returnVar and $this->error("cannot execute $name (error: $returnVar)", true);
 
-            is_numeric($lineCount) or
-            $this->error("cannot import via $name (error: $lineCount)", true);
+            if ($returnVar) {
+                $this->error("cannot execute $name (error: $returnVar)", true);
+            }
 
-            print "$lineCount lines imported\n";
+            if (! is_numeric($lineCount)) {
+                $this->error("cannot import via $name (error: $lineCount)", true);
+            }
 
-            $isBatchFile or unlink($this->batchFileTemp);
+            echo "$lineCount lines imported\n";
+
+            if (! $isBatchFile) {
+                unlink($this->batchFileTemp);
+            }
         }
     }
 
@@ -165,11 +195,16 @@ abstract class Model_Parser
             // settype($parsed, 'array'); always an array!
 
             foreach($parsed as $name => $string) {
-                empty($string) or $data[$name] .= $string . "\n";
+                if (! empty($string)) {
+                    $data[$name] .= $string . "\n";
+                }
             }
 
             $lineNumber++;
-            $lineNumber % 1000 or print '.';
+
+            if (! $lineNumber % 1000) {
+                echo '.';
+            }
         }
 
         print ' ' . count($lines) . " lines parsed\n";
@@ -193,12 +228,19 @@ abstract class Model_Parser
         // reads the dictionary
         print "reading {$this->sourceFile} ... ";
 
-        $lines = @file($this->sourceFile) or
-        $this->error("cannot read or empty file {$this->sourceFile}", true);
+        if (! $lines = @file($this->sourceFile)) {
+            $this->error("cannot read or empty file {$this->sourceFile}", true);
+        }
+
         print count($lines) . " lines read\n";
 
-        empty($lineStart) and $lineStart = 1;
-        empty($lineCount) and $lineCount = 99999;
+        if (empty($lineStart)) {
+            $lineStart = 1;
+        }
+
+        if (empty($lineCount)) {
+            $lineCount = 99999;
+        }
 
         if ($lineStart !== 1 or $lineCount !== 99999) {
             // slices the dictionary (used primarily for debugging purposes)
@@ -218,8 +260,9 @@ abstract class Model_Parser
 
         static $prevWord = null;
 
-        is_null($prevWord) or $prevWord <= $word or
-        $this->error("bad word order: $prevWord > $word", true, $lineNumber);
+        if (! is_null($prevWord) and $prevWord > $word) {
+            $this->error("bad word order: $prevWord > $word", true, $lineNumber);
+        }
 
         $prevWord = $word;
     }
@@ -232,8 +275,9 @@ abstract class Model_Parser
 
             print "writing data file $file ... " ;
 
-            $bytesCount = @file_put_contents($file, $string) or
-            $this->error("cannot write file $file", true);
+            if (! $bytesCount = @file_put_contents($file, $string)) {
+                $this->error("cannot write file $file", true);
+            }
 
             print "done\n";
         }

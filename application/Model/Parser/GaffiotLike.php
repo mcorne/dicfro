@@ -38,8 +38,10 @@ abstract class Model_Parser_GaffiotLike extends Model_Parser_GdfLike
     {
         static $endOfData = false;
 
-        // detects the end of valid data, subsequent lines will be ignored
-        $endOfData or $endOfData = substr($line, 0, strlen($this->endWord)) == $this->endWord;
+        if (! $endOfData) {
+            // detects the end of valid data, subsequent lines will be ignored
+            $endOfData = substr($line, 0, strlen($this->endWord)) == $this->endWord;
+        }
 
         return $endOfData;
     }

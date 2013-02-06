@@ -1,0 +1,5 @@
+Things to do
+------------
+
+- finish unit tests
+- remove no dictionary change feature

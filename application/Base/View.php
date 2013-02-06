@@ -81,7 +81,10 @@ class Base_View
     public function __construct($config, $init = true)
     {
         $this->config = $config;
-        $init and $this->init();
+
+        if ($init) {
+            $this->init();
+        }
     }
 
     /**
@@ -132,7 +135,10 @@ class Base_View
     public function setActionUrl($action = null)
     {
         $actionUrl = $this->baseUrl . '/';
-        $action and $actionUrl .= $action;
+
+        if ($action) {
+            $actionUrl .= $action;
+        }
 
         return $actionUrl;
     }
@@ -145,7 +151,10 @@ class Base_View
     public function setBaseUrl()
     {
         $this->baseUrl = 'http://' . $_SERVER['HTTP_HOST'];
-        empty($this->config['domain-subpath']) or $this->baseUrl .= '/' . $this->config['domain-subpath'];
+
+        if (! empty($this->config['domain-subpath'])) {
+            $this->baseUrl .= '/' . $this->config['domain-subpath'];
+        }
     }
 
     /**
@@ -182,8 +191,10 @@ class Base_View
             }
         }
 
-        // filters out empty properties
-        $filter and $dynamicProperties = array_filter($dynamicProperties);
+        if ($filter) {
+            // filters out empty properties
+            $dynamicProperties = array_filter($dynamicProperties);
+        }
 
         ksort($dynamicProperties);
 

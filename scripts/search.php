@@ -23,13 +23,29 @@ if (empty($dictionaryConfig['internal'])) {
     die('you may only search an internal dictionary');
 }
 
-$class = isset($dictionaryConfig['search']['class'])? $dictionaryConfig['search']['class'] : 'Model_Search_Generic';
+if (isset($dictionaryConfig['search']['class'])) {
+    $class = $dictionaryConfig['search']['class'];
+} else {
+    $class = 'Model_Search_Generic';
+}
+
 $file = str_replace('_', '/', $class) . '.php';
 require_once $file;
 
-$properties = isset($dictionaryConfig['search']['properties'])? $dictionaryConfig['search']['properties'] : array();
+if (isset($dictionaryConfig['search']['properties'])) {
+    $properties = $dictionaryConfig['search']['properties'];
+} else {
+    $properties = array();
+}
+
 $properties['dictionary'] = $dictionary;
-$query = isset($dictionaryConfig['query'])? $dictionaryConfig['query'] : array();
+
+if (isset($dictionaryConfig['query'])) {
+    $query = $dictionaryConfig['query'];
+} else {
+    $query = array();
+}
+
 $search = new $class($config['data-dir'], $properties, $query);
 
 // extracts "search" and "go to page" like methods

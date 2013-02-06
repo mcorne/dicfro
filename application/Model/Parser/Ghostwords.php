@@ -32,7 +32,7 @@ class Model_Parser_Ghostwords extends Model_Parser
 
     public $dictionary = 'ghostwords';
     public $sourceFile = 'fantomes.v1.txt';
-    
+
     public function __construct($config, $verbose = false)
     {
         $config['dictionaries']['ghostwords'] = array();
@@ -66,9 +66,11 @@ class Model_Parser_Ghostwords extends Model_Parser
             return array();
         }
 
-        // extracts word
-        preg_match(self::LINE_TPL, $line, $matches) or
-        $this->error('wrong format: ' . $this->string->utf8ToInternal($line), true, $lineNumber);
+        if (! preg_match(self::LINE_TPL, $line, $matches)) {
+            // extracts word
+            $this->error('wrong format: ' . $this->string->utf8ToInternal($line), true, $lineNumber);
+        }
+
         list(, $word) = $matches;
         $original = $word = trim($word);
 
@@ -85,8 +87,8 @@ class Model_Parser_Ghostwords extends Model_Parser
 
         foreach($words as $word) {
             $wordData = array(
-                'ascii' => $word,
-                'line' => $lineNumber,
+                'ascii'    => $word,
+                'line'     => $lineNumber,
                 'original' => $original,
             );
 

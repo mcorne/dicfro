@@ -40,7 +40,12 @@ abstract class Model_Search
             require_once $file;
 
             $directory .= '/' . $this->dictionary;
-            $properties = isset($query['properties'])? $query['properties'] : array();
+
+            if (isset($query['properties'])) {
+                $properties = $query['properties'];
+            } else {
+                $properties = array();
+            }
 
             $this->query = new $class($directory, $properties);
         }

@@ -2,7 +2,7 @@
 // SAVE as UTF-8
 // keep the entries in this order so it is easier to add new entries to fix
 // from the unique-pof.php file
-return array (// /
+return array (
     's.m.' => 'm.',
     's.f.' => 'f.',
     'v.' => 'v.',

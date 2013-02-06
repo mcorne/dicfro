@@ -118,7 +118,10 @@ class Model_Search_Generic extends Model_Search
 
     public function __construct($directory, $properties, $query = array())
     {
-        isset($query['class']) or $query['class'] = 'Model_Query_Generic';
+        if (! isset($query['class'])) {
+            $query['class'] = 'Model_Query_Generic';
+        }
+
         parent::__construct($directory, $properties, $query);
 
         $this->directory = $directory;
@@ -132,7 +135,11 @@ class Model_Search_Generic extends Model_Search
      */
     public function extractVolumeAndPage($imageNumber)
     {
-        return preg_match(self::PARSE_IMAGE_NUMBER_TPL, $imageNumber, $match)? array($match[1], $match[2]) : array();
+        if (preg_match(self::PARSE_IMAGE_NUMBER_TPL, $imageNumber, $match)) {
+            return array($match[1], $match[2]);
+        } else {
+            return array();
+        }
     }
 
     /**
@@ -305,8 +312,14 @@ class Model_Search_Generic extends Model_Search
         @list($foundWord, $nextWord) = $result;
 
         list($volume, $page) = $this->extractVolumeAndPage($foundWord['image']);
-        $volume = (int)$volume or $volume = '';
-        $page = (int)$page or $page = '';
+
+        if (! $volume = (int)$volume) {
+            $volume = '';
+        }
+
+        if (! $page = (int)$page) {
+            $page = '';
+        }
 
         return array(
             $this->setImagePath($foundWord),

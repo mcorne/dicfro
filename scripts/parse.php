@@ -17,7 +17,11 @@ require_once 'common.php';
 
 $dictionary = $string->dash2CamelCase($dictionary, true);
 $file = "Model/Parser/$dictionary.php";
-file_exists("$applicationDir/$file") or die("invalid file: $file");
+
+if (! file_exists("$applicationDir/$file")) {
+    die("invalid file: $file");
+}
+
 require $file;
 
 $class = "Model_Parser_$dictionary";
