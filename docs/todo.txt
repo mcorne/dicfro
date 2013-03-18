@@ -1,5 +1,14 @@
 Things to do
 ------------
 
+- restore subdomain auto-discovery by default
 - finish unit tests
 - remove no dictionary change feature
+- go back to previous dictionary instead of default dictionary from options page, about page etc...
+
+- Ajouter les pages notables du Lexique Roman.
+- Vérifier l'existence des pages lors de la création des dictionnaires.
+- Utiliser la liste de tous les mots possibles générés par Whitaker pour améliorer l'identification des mots déclinés et des verbes conjugués.
+- Traduire l'interface en anglais.
+- Réparer la barre de défilement vertical pour les tablettes.
+- Réparer les problèmes de mots avec accents pour IE.

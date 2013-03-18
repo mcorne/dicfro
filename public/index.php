@@ -5,11 +5,11 @@
  * PHP 5
  *
  * @author    Michel Corne <mcorne@yahoo.com>
- * @copyright 2008-2012 Michel Corne
+ * @copyright 2008-2013 Michel Corne
  * @license   http://www.opensource.org/licenses/gpl-3.0.html GNU GPL v3
  */
 
-// exit('Dicfro est en cours de maintenance - Dicfro is down for maintenance');
+//exit('Dicfro est en cours de maintenance - Dicfro is down for maintenance');
 
 // sets application path
 $applicationPath = '/../application';          // default installation

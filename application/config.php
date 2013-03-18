@@ -28,6 +28,15 @@ return array(
 
     // dictionaries details
     'dictionaries' => array(
+        'anglo-norman' => array(
+            'description'  => 'The Anglo-Norman Dictionary',
+            'introduction' => 'http://www.anglo-norman.net',
+            'language'     => 'fr',
+            'name'         => 'Anglo-Norman',
+            'search'       => 'http://www.anglo-norman.net/cgi-bin/form-s1?term1=',
+            'title'        => 'AND',
+        ),
+
         'chretien' => array(
             'description' => "Dictionnaire de l'oeuvre de Chrétien de Troyes, Wörterbuch zu Kristian von Troyes' sämtlichen Werken, Wendelin Foerster, 1914",
             'file'        => 'dictionnaire-chretien-de-troyes.jpg',
@@ -429,7 +438,6 @@ return array(
             'name' => 'Français',
             'dictionaries' => array(
                 'cnrtl',
-                'cotgrave',
                 'leconjugueur',
                 'littre',
                 'dmf',
@@ -440,8 +448,10 @@ return array(
         array(
             'name' => 'Français (ancien)',
             'dictionaries' => array(
+                'anglo-norman',
                 'roland',
                 'chretien',
+                'cotgrave',
                 'couronnement',
                 'gdf',
                 'gdfc',
