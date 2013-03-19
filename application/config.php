@@ -17,8 +17,9 @@
  */
 
 // sets domain subpath
-$domainSubpath = '';          // default installation
-// $domainSubpath = 'dicfro'; // production installation with dicfro as domain subpath
+$domainSubpath = strpos($_SERVER['REQUEST_URI'], '/dicfro') === 0? 'dicfro' : ''; // dicfro domain subpath autodetection, default is none
+// $domainSubpath = '';                                                           // installation with no domain subpath, eg local installation
+// $domainSubpath = 'xyz';                                                        // installation with "xyz" domain subpath
 
 $applicationDir = dirname(__FILE__); // global variable used by scripts
 
@@ -66,8 +67,9 @@ return array(
             'description'  => 'A Dictionarie of the French and English Tongues, Randle Cotgrave, 1611',
             'introduction' => 'http://www.pbm.com/~lindahl/cotgrave/',
             'language'     => 'fr',
-            'name'         => 'Cotgrave [Eng]',
+            'name'         => 'Cotgrave',
             'search'       => 'http://www.pbm.com/~lindahl/cotgrave/search/search_backend.cgi?query=',
+            // to: en
         ),
 
         'couronnement' => array(
@@ -96,6 +98,16 @@ return array(
             'title'        => 'DMF',
         ),
 
+        'ducange' => array(
+            'description'  => 'Du Cange, et al., Glossarium mediæ et infimæ latinitatis. Niort : L. Favre, 1883-1887',
+            'introduction' => 'http://ducange.enc.sorbonne.fr/',
+            'language'     => 'la',
+            'name'         => 'Du Cange',
+            'search'       => 'http://ducange.enc.sorbonne.fr/',
+            'title'         => 'Du Cange',
+            // to: fr, grc, la
+        ),
+
         'dvlf' => array(
             'description'  => "Dictionnaire vivant de la langue française du projet ARTFL",
             'introduction' => 'http://dvlf.uchicago.edu/',
@@ -109,13 +121,14 @@ return array(
             'file'        => 'gaffiot.jpg',
             'internal'    => true,
             'language'    => 'la',
-            'name'        => 'Gaffiot [Fra]',
+            'name'        => 'Gaffiot',
             'search'      => array(
                 'properties' => array(
                     'needWhitaker' => true,
                 )
             ),
             'source'      => 'http://multimedia.fnac.com/multimedia/images_produits/ZoomPE/6/5/6/9782011667656.jpg',
+            // to: fr
         ),
 
         'gdf' => array(
@@ -189,10 +202,11 @@ return array(
             'description'  => 'Dictionnaire français-latin de Gérard Jeanneau',
             'introduction' => 'http://www.prima-elementa.fr/Dico.htm',
             'language'     => 'la',
-            'name'         => 'Jeanneau [Fra]',
+            'name'         => 'Jeanneau',
             'search'       => array(
                 'class' => 'Model_Search_Jeanneau',
             ),
+            // to: fr
         ),
 
         'leconjugueur' => array(
@@ -393,8 +407,9 @@ return array(
             'description'  => 'Dictionnaire latin-anglais de William Whitaker',
             'introduction' => 'http://lysy2.archives.nd.edu/cgi-bin/words.exe',
             'language'     => 'la',
-            'name'         => 'Whitaker [Eng]',
+            'name'         => 'Whitaker',
             'search'       => 'http://lysy2.archives.nd.edu/cgi-bin/words.exe?',
+            // to: en
         ),
 
         'webster' => array(
@@ -471,6 +486,7 @@ return array(
         array(
             'name' => 'Latin',
             'dictionaries' => array(
+                'ducange',
                 'gaffiot',
                 'jeanneau',
                 'whitaker',

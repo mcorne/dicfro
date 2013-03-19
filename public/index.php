@@ -9,11 +9,12 @@
  * @license   http://www.opensource.org/licenses/gpl-3.0.html GNU GPL v3
  */
 
-//exit('Dicfro est en cours de maintenance - Dicfro is down for maintenance');
+// exit('Dicfro est en cours de maintenance - Dicfro is down for maintenance');
 
 // sets application path
-$applicationPath = '/../application';          // default installation
-// $applicationPath = "/../../cgi-bin/dicfro"; // production installation with dicfro as domain subpath
+$applicationPath = strpos($_SERVER['REQUEST_URI'], '/dicfro') === 0? '/../../cgi-bin/dicfro' : '/../application'; // dicfro domain subpath autodetection, default is none
+// $applicationPath = '/../application';                                                                          // installation with no domain subpath, eg local installation
+// $applicationPath = '/../../cgi-bin/xyz';                                                                       // installation with "xyz" domain subpath
 
 $applicationPath = realpath(dirname(__FILE__) . $applicationPath);
 set_include_path($applicationPath);

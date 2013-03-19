@@ -18,5 +18,5 @@ add an entry in httpd-vhosts.conf
 set the domain subpath (if applicable)
 --------------------------------------
 - set the proper RewriteRule in public/.htaccess
-- set the application path in public/index.php
-- set the domain subpath in application/config.php
+- set the application path in public/index.php if the domain subpath is different from "dicfro"
+- set the domain subpath in application/config.php if the domain subpath is different from "dicfro"

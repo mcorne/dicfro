@@ -1,10 +1,11 @@
 Things to do
 ------------
 
-- restore subdomain auto-discovery by default
+
 - finish unit tests
 - remove no dictionary change feature
-- go back to previous dictionary instead of default dictionary from options page, about page etc...
+- go back to previous dictionary instead of default dictionary from options page, about page etc..., 
+  and fix searched word that is set to "dictionnaire-godefroy"
 
 - Ajouter les pages notables du Lexique Roman.
 - Vérifier l'existence des pages lors de la création des dictionnaires.

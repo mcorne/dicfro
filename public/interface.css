@@ -1,7 +1,7 @@
 /**
  * Dicfro
  *
- * @copyright 2008-2012 Michel Corne
+ * @copyright 2008-2013 Michel Corne
  * @license   http://www.opensource.org/licenses/gpl-3.0.html GNU GPL v3
  */
 
@@ -269,6 +269,16 @@ span.identified
 
 /* specific to information and home pages */
 
+
+a.external
+{
+    color: black;
+}
+
+a.internal
+{
+    color: green;
+}
 
 a.options
 {

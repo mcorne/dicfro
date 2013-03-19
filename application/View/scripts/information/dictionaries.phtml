@@ -9,13 +9,16 @@
  * @package    View
  * @subpackage Scripts_Information
  * @author     Michel Corne <mcorne@yahoo.com>
- * @copyright  2008-2010 Michel Corne
+ * @copyright  2008-2013 Michel Corne
  * @license    http://opensource.org/licenses/gpl-3.0.html GNU GPL v3
  */
 
 ?>
 
 <h1 class="title">Liste des dictionnaires</h1>
+
+  (dictionnaires <a class="internal">internes à DicFro en vert</a>, externes en noir)
+
 
 <?php foreach($this->dictionariesHelper->getGroups() as $optgroup) :?>
   <p class="sub-title"><?=$optgroup['label'];?></p>
@@ -24,7 +27,7 @@
     <?php foreach($optgroup['options'] as $options) :?>
 
       <li>
-      <a class="link"
+      <a class="link <?php if (! empty($options['internal'])):?>internal<?php else:?>external<?php endif;?>"
       href="<?=$this->setActionUrl('introduction/' . $options['value']);?>"><?=$options['title'];?></a>
       </li>
 
