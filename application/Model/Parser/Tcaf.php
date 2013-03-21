@@ -36,9 +36,18 @@ class Model_Parser_Tcaf extends Model_Parser
     public $dictionary = 'tcaf';
     public $batchFiles = array('entry.sql', 'word.sql');
     public $dataFiles = array('entry' => 'entry.txt', 'word' => 'word.txt');
-    public $sourceFile = 'Txt.v3';
+    public $sourceFile = 'Txt';
 
-    public function parseForm($form)
+    public function checkVerbs($verbs, $lineNumber)
+    {
+        foreach($verbs as $verb) {
+            if (preg_match('~\d~', $verb)) {
+                $this->error('verb shoud not contain digits: ' . $this->string->utf8ToInternal($verb), true, $lineNumber);
+            }
+        }
+    }
+
+    public function parseForm($form, $lineNumber)
     {
         if (preg_match(self::FORM_TPL, $form, $match)) {
             list(, $person, $verbs) = $match;
@@ -47,7 +56,7 @@ class Model_Parser_Tcaf extends Model_Parser
             $verbs = $form;
         }
 
-        return array($person, $this->parseVerbs($verbs));
+        return array($person, $this->parseVerbs($verbs, $lineNumber));
     }
 
     public function parseLine($line, $lineNumber)
@@ -73,14 +82,15 @@ class Model_Parser_Tcaf extends Model_Parser
         );
     }
 
-    public function parseVerbs($verbs)
+    public function parseVerbs($verbs, $lineNumber)
     {
         // removes variants data
         $verbs = str_replace('(', ',', $verbs);
         $verbs = str_replace('VAR.', '', $verbs);
         $verbs = str_replace(')', '', $verbs);
 
-        $verbs = preg_split(self::VERB_SEPARATOR, $verbs);
+        $verbs = preg_split(self::VERB_SEPARATOR, $verbs, -1, PREG_SPLIT_NO_EMPTY);
+        $this->checkVerbs($verbs, $lineNumber);
 
         return $verbs;
     }
@@ -137,11 +147,10 @@ class Model_Parser_Tcaf extends Model_Parser
     public function setWordsData($infinitive, $tense, $conjugation, $lineNumber)
     {
         $forms = explode(self::FORM_SEPARATOR, $conjugation);
-        $forms = array_map(array($this, 'parseForm'), $forms);
-
         $wordsData = array();
 
         foreach($forms as $form) {
+            $form = $this->parseForm($form, $lineNumber);
             $wordsData = array_merge($wordsData, $this->setWordData($infinitive, $tense, $form, $lineNumber));
         }
 

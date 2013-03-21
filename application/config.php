@@ -17,9 +17,10 @@
  */
 
 // sets domain subpath
-$domainSubpath = strpos($_SERVER['REQUEST_URI'], '/dicfro') === 0? 'dicfro' : ''; // dicfro domain subpath autodetection, default is none
-// $domainSubpath = '';                                                           // installation with no domain subpath, eg local installation
-// $domainSubpath = 'xyz';                                                        // installation with "xyz" domain subpath
+// dicfro domain subpath autodetection, default is none
+$domainSubpath = (isset($_SERVER['REQUEST_URI']) and strpos($_SERVER['REQUEST_URI'], '/dicfro') === 0)? 'dicfro' : '';
+// $domainSubpath = '';    // installation with no domain subpath, eg local installation
+// $domainSubpath = 'xyz'; // installation with "xyz" domain subpath
 
 $applicationDir = dirname(__FILE__); // global variable used by scripts
 

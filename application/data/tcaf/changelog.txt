@@ -1,4 +1,12 @@
-initial version v1
-------------------
+1/1/2010
+--------
+- initial implementation
 
-=> created database
+21/3/2013
+---------
+- downloaded TCAF3.zip (2.1e édition, depuis 20/4/2012) from http://www.eonet.ne.jp/~ogurisu/Fr/TCAF.html
+- extracted Txt
+- compared with current version, validated minor changes
+- replaced current version
+- removed "2; " from "OTROIIER [pass.simp.]" line 1780
+- run "parse tcaf" to updated database

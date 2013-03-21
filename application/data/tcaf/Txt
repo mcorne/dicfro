@@ -905,30 +905,18 @@ ESCONDRE [ind.impf.]__BR____BR__   3: escondoit__BR__
 ESCONDRE [pass.simp.]__BR____BR__   6: esconstrent; escondirent__BR__
 ESCONDRE [part.pass.]__BR____BR__   escons; escondu__BR__
 ESCONDRE [comp.]__BR____BR__   abscondre (VAR. ascondre), rescondre__BR__
-ESCORRE (excutere) [inf.]__BR____BR__   escorre, escore, escourre, escoure, escurre, escure; eskeurre, eskeure, esceure__BR__
-ESCORRE (excutere) [ind.prés.]__BR____BR__   1: escoux__BR__   2: eskeus__BR__   3: escot, escout, escolt, escut; esqueut, eskeut__BR__   5: escöez__BR__   6: escöent, escouent; esqueuent; escoussent__BR__
-ESCORRE (excutere) [subj.prés.]__BR____BR__   3: escöe; esqueue__BR__
-ESCORRE (excutere) [impé.]__BR____BR__   2: escou__BR__   5: escöez__BR__
-ESCORRE (excutere) [ind.impf.]__BR____BR__   3: escöoit__BR__   6: escöoient__BR__
+ESCORRE (excutere) [inf.]__BR____BR__   escorre, escourre, escore, escoure, escurre, escure, escolre; eskeurre, eskeure, esqueurre, esceure; escoudre, escosdre__BR__
+ESCORRE (excutere) [ind.prés.]__BR____BR__   1: escoiz; esqueus; escous, escoux__BR__   2: esqueus, eskeus__BR__   3: esqueut, eskeut, esceut, esquet; escot, escout, escolt, escut__BR__   4: escöons, escuums__BR__   5: escöez, escouez, escoués__BR__   6: esqueuent; escöent, escouent; escoussent__BR__
+ESCORRE (excutere) [subj.prés.]__BR____BR__   1: esqueue__BR__   2: esqueues__BR__   3: esqueue, eskeue; escöe, escüe__BR__   4: escöons__BR__   5: escöez__BR__   6: esqueuent__BR__
+ESCORRE (excutere) [impé.]__BR____BR__   2: escou__BR__   5: escöez, escouez__BR__
+ESCORRE (excutere) [ind.impf.]__BR____BR__   3: escöoit, escouoit__BR__   6: escöoient, escouoyent__BR__
 ESCORRE (excutere) [part.prés.]__BR____BR__   escöant, escouant__BR__
 ESCORRE (excutere) [futur]__BR____BR__   1: escorrai__BR__   4: escorrons__BR__   5: escorrois__BR__
 ESCORRE (excutere) [cond.]__BR____BR__   5: escoriés__BR__
-ESCORRE (excutere) [pass.simp.]__BR____BR__   1: escous__BR__   2: escosis__BR__   3: escost, escoust, escust; esqueust; escoÿ__BR__   4: escousismes__BR__   5: escosistes, escossistes__BR__   6: escostrent, escoustrent; escourent; escouïrent__BR__
+ESCORRE (excutere) [pass.simp.]__BR____BR__   1: escos, escous; escoÿ, escouÿ; escouÿs__BR__   2: escosis__BR__   3: escost, escoust, escust, escout; esqueust; escouï, escoÿ; escouït, escouÿt; escouïst__BR__   4: escousismes__BR__   5: escosistes, escossistes__BR__   6: escostrent, escoustrent, escustrent; escoudrent; escourent; escousent; esqueutrent; escouïrent, escouÿrent__BR__
 ESCORRE (excutere) [subj.impf.]__BR____BR__   1: escousisse__BR__   3: escossist__BR__   6: escousissent, escusissent; escoüssent__BR__
 ESCORRE (excutere) [part.pass.]__BR____BR__   escos, escous, escox, escouz, escuz, escus__BR__
-ESCORRE (excutere) [comp.]__BR____BR__   rescorre__BR__
-ESCORRE (secouer) [inf.]__BR____BR__   escorre, escourre, escore, escoure, escurre, escure, escolre; eskeurre, eskeure, esqueurre, esceure; escoudre, escosdre__BR__
-ESCORRE (secouer) [ind.prés.]__BR____BR__   1: escoiz; esqueus; escous, escoux__BR__   2: esqueus, eskeus__BR__   3: esqueut, eskeut, esceut, esquet; escot, escout, escolt, escut__BR__   4: escöons, escuums__BR__   5: escöez, escouez, escoués__BR__   6: esqueuent; escöent, escouent__BR__
-ESCORRE (secouer) [subj.prés.]__BR____BR__   1: esqueue__BR__   2: esqueues__BR__   3: esqueue, eskeue; escöe, escüe__BR__   4: escöons__BR__   5: escöez__BR__   6: esqueuent__BR__
-ESCORRE (secouer) [impé.]__BR____BR__   2: escou__BR__   5: escöez, escouez__BR__
-ESCORRE (secouer) [ind.impf.]__BR____BR__   3: escöoit, escouoit__BR__   6: escöoient, escouoyent__BR__
-ESCORRE (secouer) [part.prés.]__BR____BR__   escöant, escouant__BR__
-ESCORRE (secouer) [futur]__BR____BR__   1: escorrai__BR__   5: escorrois__BR__
-ESCORRE (secouer) [cond.]__BR____BR__   5: escoriés__BR__
-ESCORRE (secouer) [pass.simp.]__BR____BR__   1: escos, escous; escoÿ, escouÿ; escouÿs__BR__   2: escosis__BR__   3: escost, escoust, escust, escout; esqueust; escouïst, escouï, escouït, escouÿt__BR__   4: escousismes__BR__   5: escosistes, escousistes, escossistes, escoussistes__BR__   6: escostrent, escoustrent, escustrent; escoudrent; escourent; escousent; esqueutrent; escouïrent, escouÿrent__BR__
-ESCORRE (secouer) [subj.impf.]__BR____BR__   1: escousisse__BR__   3: escousist, escossist__BR__   6: escousissent, escossissent, escusissent; escoüssent__BR__
-ESCORRE (secouer) [part.pass.]__BR____BR__   escos, escoz, escous, escoux, escus; esqueus, esqueux; escout__BR__
-ESCORRE (secouer) [comp.]__BR____BR__   rescorre, secorre (secouer)__BR__
+ESCORRE (excutere) [comp.]__BR____BR__   secorre (secouer); rescorre__BR__
 ESCRIRE [inf.]__BR____BR__   escrivre; escrire; escriere__BR__
 ESCRIRE [ind.prés.]__BR____BR__   1: escrif__BR__   2: escris__BR__   3: escrit, escript__BR__   4: escrivons; escrisons__BR__   5: escrivez; escrisez__BR__   6: escrivent; escrisent__BR__
 ESCRIRE [subj.prés.]__BR____BR__   1: escrive; escrise__BR__   2: escrives__BR__   3: escrive; escrise__BR__   4: escrivons, escrivions; escrisons__BR__   5: escrivez, escriviez; escrisiez__BR__
@@ -1789,7 +1777,7 @@ OTROIIER [ind.impf.]__BR____BR__   3: otreieit, otroioit, otreioit, otréoit, ot
 OTROIIER [part.prés.]__BR____BR__   otreiant, otroiant__BR__
 OTROIIER [futur]__BR____BR__   1: otroiërei__BR__   3: otroiëra__BR__   4: otroiërons; otroiërom__BR__   5: otrïerés__BR__   6: otrïeront__BR__
 OTROIIER [cond.]__BR____BR__   1: otrïeroie__BR__   3: otroiëroit; otrïereit__BR__
-OTROIIER [pass.simp.]__BR____BR__   1: otroiai; otrïai__BR__   2: 2; otroias__BR__   3: otreia, otroia; otréa; otrïa, otrïat, otrïad__BR__   5: otroiastes__BR__   6: otreierent, otroierent; otriierent__BR__
+OTROIIER [pass.simp.]__BR____BR__   1: otroiai; otrïai__BR__   2: otroias__BR__   3: otreia, otroia; otréa; otrïa, otrïat, otrïad__BR__   5: otroiastes__BR__   6: otreierent, otroierent; otriierent__BR__
 OTROIIER [subj.impf.]__BR____BR__   1: otreiasse__BR__   3: otroiast; otrïast; otréast__BR__   5: otroiësiez; otrïesoiz__BR__
 OTROIIER [part.pass.]__BR____BR__   otreié, otreyé, odtreijé, otroiié, otroié; otrïet, otrïé__BR__
 OTROIIER [comp.]__BR____BR__   broiier*, envoiier*, noiier* (necare), ploiier*, proiier*; chaploiier, donoiier, guerroiier, loiier (VAR. liier, lïer), tornoiier (VAR. torniier); desotroiier, rotroiier__BR__
@@ -2279,7 +2267,6 @@ SAVOIR [pass.arch.]__BR____BR__   1: soure__BR__
 SAVOIR [subj.impf.]__BR____BR__   1: soüsse, seüsse, seüse, seüsce, sceüsse, seüxe; saüsse; sëuisse, scëuisse; seuse; suixe__BR__   2: seüsses, seüsez__BR__   3: soüst, seüst, ceüst; saüst; seust; sceusist__BR__   4: soüsum; seüssons, seüssions; sousum__BR__   5: seüssez, seüssiez, seüsciés; saüssiez; seusez__BR__   6: soüssent, seüssent; seüssient; saüssient__BR__
 SAVOIR [part.pass.]__BR____BR__   soü, seü, seüt; saü__BR__
 SAVOIR [comp.]__BR____BR__   dessavoir, entresavoir, messavoir, parsavoir, resavoir__BR__
-SECOURRE (retrousser) [inf.]__BR____BR__   secourre__BR__
 SEMER [inf.]__BR____BR__   semer__BR__
 SEMER [ind.prés.]__BR____BR__   3: seme, semme__BR__   5: semez__BR__
 SEMER [part.prés.]__BR____BR__   semant__BR__

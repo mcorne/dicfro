@@ -26,7 +26,8 @@
   <li>En 2007, il n'y avait pas de dictionnaire d'ancien français en ligne sur Internet.
       Il existait une  solution intéressante hors ligne réalisée par Hitoshi Ogurisu, qui d'ailleurs est toujours disponible.
       L'idée était d'offrir une interface web simple pour rechercher un mot dans ce dictionnaire.
-      D'autres dictionnaires ont été ajoutés par la suite.</li>
+      D'autres dictionnaires ont été ajoutés par la suite.
+  </li>
 </ul>
 
 <p class="sub-title">
@@ -42,11 +43,18 @@
   </tr>
 
   <tr>
-    <td class="version">4.11 (r27)</td>
-    <td class="date">19 mars 2013</td>
+    <td class="version">4.11 (r26-r28)</td>
+    <td class="date">18-21 mars 2013</td>
     <td>
       <ul>
-        <li>Ajout du dictionnaire <a href="http://ducange.enc.sorbonne.fr/">Du Cange</a>.</li>
+        <li>Ajout des dictionnaires
+            <a href="http://www.anglo-norman.net/">Anglo-Norman</a> et
+            <a href="http://ducange.enc.sorbonne.fr/">Du Cange</a>.
+        </li>
+        <li>Correction d'erreurs dans le dictionnaire Van Daele.</li>
+        <li>Mise à jour des tableaux de conjugaison d'ancien français
+            (<a href="http://www.eonet.ne.jp/~ogurisu/Fr/TCAF.html">TCAF</a>).
+        </li>
         <li>Amélioration de la liste des dictionnaires.</li>
         <li>Ajout de l'autodetection du sous-chemin de domaine.</li>
       </ul>
@@ -54,20 +62,18 @@
   </tr>
 
   <tr>
-    <td class="version">4.10 (r26)</td>
-    <td class="date">18 mars 2013</td>
+    <td class="version">4.10 (r23-r25)</td>
+    <td class="date">4-6 février 2013</td>
     <td>
       <ul>
-        <li>Ajout du dictionnaire <a href="http://www.anglo-norman.net/">Anglo-Norman</a>.</li>
-        <li>Correction d'erreurs dans le dictionnaire Van Daele.</li>
         <li>Ajout des tests unitaires.</li>
       </ul>
     </td>
   </tr>
 
   <tr>
-    <td class="version">4.9 (r22)</td>
-    <td class="date">27 décembre 2012</td>
+    <td class="version">4.9 (r1-r22)</td>
+    <td class="date">26-27 décembre 2012</td>
     <td>
       <ul>
         <li>Correction d'erreurs dans le dictionnaire Van Daele.</li>
@@ -82,11 +88,10 @@
     <td class="date">3 juin 2012</td>
     <td>
       <ul>
-        <li>Ajout des dictionnaires DVLF, Webster et Wiktionary.</li>
-        <li>
+        <li>Ajout des dictionnaires
           <a href="http://dvlf.uchicago.edu/">DVLF</a>,
-          <a href="http://machaut.uchicago.edu/websters">Webster</a>,
-          <a href="http://en.wiktionary.org">Wiktionary</a>
+          <a href="http://machaut.uchicago.edu/websters">Webster</a> et
+          <a href="http://en.wiktionary.org">Wiktionary</a>.
         </li>
         <li>Correction d'erreurs dans le dictionnaire Whitaker.</li>
         <li>Ajout de la page d'options.</li>
@@ -102,13 +107,13 @@
     <td>
       <a href="<?=$this->setLinkUrl('img/interface/dicfro-4.7.gif');?>"><img class="middle" src="<?=$this->setLinkUrl('/img/interface/dicfro-4.7.gif');?>" /></a>
       <ul>
-        <li>Ajout du Wiktionnaire et du Cotgrave.</li>
-        <li>
-          <a href="http://fr.wiktionary.org">Wiktionnaire</a>,
-          <a href="http://www.pbm.com/~lindahl/cotgrave/">Cotgrave</a>
+        <li>Ajout du
+          <a href="http://fr.wiktionary.org">Wiktionnaire</a> et du
+          <a href="http://www.pbm.com/~lindahl/cotgrave/">Cotgrave</a>.
         </li>
         <li>Amélioration de la recherche automatique du dernier mot cherché parmis les dictionnaires
-            ouverts dans tous les onglets.</li>
+            ouverts dans tous les onglets.
+        </li>
         <li>Configuration centralisée des dictionnaires.</li>
         <li>Mise à jour de la page d'accueil et de la page d'aide.</li>
       </ul>
@@ -122,7 +127,8 @@
       <ul>
         <li>Ajout de l'ouverture d'un dictionnaire dans un nouvel onglet.</li>
         <li>Ajout de la recherche automatique du dernier mot cherché parmis les dictionnaires
-            ouverts dans tous les onglets.</li>
+            ouverts dans tous les onglets.
+        </li>
       </ul>
     </td>
   </tr>
@@ -156,14 +162,14 @@
     <td class="date">16 septembre 2010</td>
     <td>
       <ul>
-        <li>Ajout des dictionnaires latin externes Jeanneau et Whitaker.</li>
-        <li>
-          <a href="http://www.prima-elementa.fr/Dico.htm">Jeanneau</a>,
-          <a href="http://lysy2.archives.nd.edu/cgi-bin/words.exe">Whitaker</a>
+        <li>Ajout des dictionnaires latin externes
+          <a href="http://www.prima-elementa.fr/Dico.htm">Jeanneau</a> et
+          <a href="http://lysy2.archives.nd.edu/cgi-bin/words.exe">Whitaker</a>.
         </li>
         <li>Affichage de la page contenant la première définition d'un mot lorsque les définitions sont à cheval sur 2 pages,
             ex. "sol" dans le Van Daele. Affichage de la première page de "prendre" dans le Van Daele
-            (changement de "prendre" en "prendre*" dans l'index p. 373).</li>
+            (changement de "prendre" en "prendre*" dans l'index p. 373).
+        </li>
         <li>Conversion des caractères en Ascii pour certains dictionnaires externes.</li>
         <li>Correction de quelques entrées dans le lexique Roman.</li>
       </ul>
@@ -187,20 +193,19 @@
     <td>
       <a href="<?=$this->setLinkUrl('img/interface/dicfro-4.3.gif');?>"><img class="middle" src="<?=$this->setLinkUrl('/img/interface/dicfro-4.3.gif');?>" /></a>
       <ul>
-        <li>Ajout du dictionnaire Roman (LexRom) et des tableaux de conjugaison d'ancien français (TCAF). Ajout de glossaires d'ancien français:
+        <li>Ajout du dictionnaire Roman (<a href="http://www.eonet.ne.jp/~ogurisu/Fr/LexRom.html">LexRom</a>) et
+            des tableaux de conjugaison d'ancien français (<a href="http://www.eonet.ne.jp/~ogurisu/Fr/TCAF.html">TCAF</a>).
+            Ajout de <a href="http://www.eonet.ne.jp/~ogurisu/Fr/DicosSporadiques.html">glossaires</a> d'ancien français:
             Chanson de Roland, Chrétien de Troyes, Couronnement de Louis, Roman de la Rose, Roman de Tristan.
-            Ajout de dictionnaires externes: CNRTL, Le Conjugueur, Littré.</li>
-        <li>
-          <a href="http://www.eonet.ne.jp/~ogurisu/2french/LexiqueRoman/LexiqueRoman.html">LexRom</a>,
-          <a href="http://www.eonet.ne.jp/~ogurisu/2french/TCAF.html">TCAF</a>,
-          <a href="http://www.eonet.ne.jp/~ogurisu/2french/DicSporadique/DictionnairesSporadiques.html">Glossaires</a>,
-          <a href="http://www.cnrtl.fr/">CNRTL</a>,
-          <a href="http://www.leconjugueur.com/">Le Conjugueur</a>,
-          <a href="http://francois.gannaz.free.fr/Littre/">Littré</a>
+            Ajout de dictionnaires externes:
+            <a href="http://www.cnrtl.fr/">CNRTL</a>,
+            <a href="http://www.leconjugueur.com/">Le Conjugueur</a>,
+            Littré.
         </li>
         <li>Mise à jour des dictionnaires Godefroy, en particulier des errata.</li>
         <li>Amélioration de l'identification des mots d'ancien français. Amélioration de l'identification des mots fantômes.
-            Ajout de l'identification des verbes.</li>
+            Ajout de l'identification des verbes.
+        </li>
         <li>Restructuration de l'application en modèle-vue-contrôleur (MVC). Utilisation de SQLite pour tous les dictionnaires.</li>
         <li>Utilisation d'URL faciles à lire pour les actions de recherche, de changement de page, et d'affichage des pages d'information.</li>
         <li>Amélioration de la barre du haut.</li>
@@ -225,14 +230,12 @@
       <a href="<?=$this->setLinkUrl('img/interface/dicfro-4.2.gif');?>"><img class="middle" src="<?=$this->setLinkUrl('/img/interface/dicfro-4.2.gif');?>" /></a>
       <ul>
         <li>Ajustement automatique de la taille d'un dictionnaire à la taille de l'écran,
-            la barre du haut reste toujours visible pour faciliter la recherche de mots, et pour passer rapidement d'une page à l'autre.</li>
+            la barre du haut reste toujours visible pour faciliter la recherche de mots, et pour passer rapidement d'une page à l'autre.
+        </li>
         <li>Retouche de la page d'accueil, et déplacement dans la barre du bas. Retouche des pages d'accueil des dictionnaires.</li>
         <li>Ajout de la page d'aide. Ajout de la page à propos.</li>
         <li>Suppression des séries de dictionnaires pour recherche en parallèle. Ajout d'un lien vers MultiDic.</li>
         <li>Restructuration des répertoires côté client pour faciliter la gestion des versions.</li>
-        <li>
-          <a href="http://micmap.org/multidic/">MultiDic</a>
-        </li>
       </ul>
     </td>
   </tr>
@@ -289,24 +292,20 @@
       <ul>
         <li>Séparation en 2 composants.</li>
         <li>(1) Simplification de DicFro 3.x, seul les dictionnaires d'anciens français et le Gaffiot sont conservés. Seul la recherche de mot,
-            et le feuilletage des pages sont conservées.</li>
+            et le feuilletage des pages sont conservées.
+        </li>
         <li>(2) Création d'une application multilingue, basée sur Blogger, avec tous les dictionnaires.
             Création d'un message de blog pour chaque dictionnaire, le dictionnaire est affiché dans une iframe dans le message.
             Création d'une page pour chaque langue avec la liste des dictionnaires dans cette langue.
             Possibilité d'avoir des dictionnaires favoris. Création d'un module de traduction pour permettre aux utilisateurs
-            d'améliorer la traduction de l'interface.</li>
+            d'améliorer la traduction de l'interface.
+        </li>
         <li>Personnalisation importante de l'interface du blog avec JavaScript et CSS.</li>
         <li>Gestion des traductions hors ligne en PHP. Utilisation des sources de Google Chrome,
             et de la page Language de Blogger pour la traduction des mots simples.
-            Utilisation de Google Translate pour la traduction des autres textes.</li>
-        <li>Test avec Selenium.</li>
-        <li>
-          <a href="http://dicfro.blogspot.com/">DicFro Blogger</a>,
-          <a href="http://www.blogger.com/language.g">Blogger Language</a>,
-          <a href="http://src.chromium.org/viewvc/chrome/trunk/src/chrome/app/resources/">Google Chrome Source</a>,
-          <a href="http://translate.google.com/">Google Translate</a>,
-          <a href="http://seleniumhq.org/">Selenium</a>
+            Utilisation de Google Translate pour la traduction des autres textes.
         </li>
+        <li>Test avec Selenium.</li>
       </ul>
     </td>
   </tr>
@@ -341,12 +340,11 @@
       <ul>
         <li>Simplification de l'interface utilisateur. Implémentation des fonctions dans la barre du haut.
             Utilisation des onglets du navigateur pour la recherche en parallèle dans les dictionnaires externes. Suppression des gadgets.
-            Suppression des appels Ajax.</li>
+            Suppression des appels Ajax.
+        </li>
         <li>Ajout de quelques dictionnaires anglais et français.</li>
         <li>Traduction de l'interface utilisateur en 4 langues: espagnol, allemand, portugais, et italien,
-            réalisée par les traducteurs de Freelang.</li>
-        <li>
-          <a href="http://www.freelang.com/">Freelang</a>
+            réalisée par les traducteurs de <a href="http://www.freelang.com/">Freelang</a>.
         </li>
       </ul>
     </td>
@@ -360,7 +358,8 @@
       <ul>
         <li>Implémentation avec des panneaux: panneau supérieur pour les onglets, panneau de gauche pour la navigation,
             panneau central pour le contenu, panneau de droite pour des données supplémentaires ou des annonces, panneau du bas pour messagerie.
-            Info-bulles moins intrusives.</li>
+            Info-bulles moins intrusives.
+        </li>
         <li>Ajout de la publicité.</li>
       </ul>
     </td>
@@ -373,17 +372,17 @@
       <a href="<?=$this->setLinkUrl('img/interface/dicfro-2.0.gif');?>"><img class="middle" src="<?=$this->setLinkUrl('img/interface/dicfro-2.0.gif');?>" /></a>
       <ul>
         <li>Réorganisation du panneau de gauche. Ajout d'info-bulles. Ajout de message d'état dans la barre du bas.
-            Utilisation de bases de données SQLite (Whitaker, T&amp;L).</li>
+            Utilisation de bases de données <a href="http://www.sqlite.org/">SQLite</a> (Whitaker, T&amp;L).
+        </li>
         <li>Ajout du dictionnaire latin-français Gaffiot, et du dictionnaire d'ancien français de Van Daele.</li>
-        <li>Ajout de deux dictionnaire  externes, le dictionnaire latin-français de Jeanneau, et le dictiononarium latinogallicum de Estienne.</li>
-        <li>Identification des mots latins sans inflexion avec le dictionnaire latin-anglais de Whitaker.
-            Identification des mots d'ancien français avec le liste de mots du Tobler &amp; Lommatzsch (T&amp;L).</li>
-        <li>
-          <a href="http://www.prima-elementa.fr/Dico.htm">Jeanneau</a>,
-          <a href="http://artfl.atilf.fr/dictionnaires/ESTIENNE/index.htm">Estienne</a>,
-          <a href="http://users.erols.com/whitaker/words.htm">Whitaker</a>
-          <a href="http://www.uni-stuttgart.de/lingrom/stein/tl/">T&amp;L</a>,
-          <a href="http://www.sqlite.org/">SQLite</a>
+        <li>Ajout de deux dictionnaire  externes,
+            le dictionnaire latin-français de <a href="http://www.prima-elementa.fr/Dico.htm">Jeanneau</a>,
+            et le dictiononarium latinogallicum de <a href="http://artfl.atilf.fr/dictionnaires/ESTIENNE/index.htm">Estienne</a>.
+        </li>
+        <li>Identification des mots latins sans inflexion avec le dictionnaire latin-anglais de
+            <a href="http://archives.nd.edu/whitaker/words.htm">Whitaker</a>.
+            Identification des mots d'ancien français avec le liste de mots du Tobler &amp; Lommatzsch
+            (<a href="http://www.uni-stuttgart.de/lingrom/stein/tl/">T&amp;L</a>).
         </li>
       </ul>
     </td>
@@ -408,16 +407,19 @@
         <li>Version initiale. Recherche de mot en parallèle dans le dictionnaire, le complément du dictionnaire, et le lexique.
             Passage à la page suivante ou précédente. Affichage d'une page quelconque dans un volume donné.
             Affichage des corrections avec les définitions. Affichage des notices sur les mots fantômes.
-            Interface utilisateur en français et en anglais.</li>
-        <li>Affichage en parallèle de dictionnaires externes: le Littré, le grand dictionnaire terminologique, et le dictionnaire de moyen français.</li>
-        <li>Développement en PHP, XHTML, JavaScript, CSS. Utilisation de la technologie AJAX et la librairie Yahoo User Interface.</li>
-        <li>
-          <a href="http://francois.gannaz.free.fr/Littre/">Littré</a>,
-          <a href="http://www.olf.gouv.qc.ca/ressources/gdt.html">GDT</a>,
-          <a href="http://www.atilf.fr/dmf/">DMF</a>,
-          <a href="http://php.net/">PHP</a>,
-          <a href="http://www.w3schools.com/">W3Schools</a>,
-          <a href="http://developer.yahoo.com/yui/">YUI</a>
+            Interface utilisateur en français et en anglais.
+        </li>
+        <li>Affichage en parallèle de dictionnaires externes:
+            le Littré,
+            le grand dictionnaire terminologique (<a href="http://gdt.oqlf.gouv.qc.ca/">GDT</a>), et
+            le dictionnaire de moyen français (<a href="http://www.atilf.fr/dmf/">DMF</a>).
+        </li>
+        <li>Développement en
+            <a href="http://php.net/">PHP</a>,
+            <a href="http://www.w3schools.com/html/">XHTML</a>,
+            JavaScript, CSS.
+            Utilisation de la technologie AJAX et
+            la librairie Yahoo User Interface (<a href="http://developer.yahoo.com/yui/">YUI</a>).
         </li>
       </ul>
     </td>
@@ -438,14 +440,17 @@
     <td class="date">6 septembre 2007</td>
     <td>
       <ul>
-        <li>Création du projet DicFro. Réaliser une interface web pour chercher des mots dans le dictionnaire d'ancien français de Godefroy,
-            et feuilleter le dictionnaire.</li>
-        <li>Le dictionnaire de Godefroy est disponible en version hors ligne.
-            Il a été numérisé par l'équipe de Hitoshi Ogurisu, de l'université de Wakayama, Japon.
-            Chaque page a été indexée. Les Errata &amp; Addenda de chaque page ont été référencés.</li>
-        <li>
-          <a href="http://www.eonet.ne.jp/~ogurisu/">Hitoshi Ogurisu</a>,
-          <a href="http://www.eonet.ne.jp/~ogurisu/2french/Godefroy/ProjetGodefroy.html">Projet Godefroy</a>
+        <li>Création du projet DicFro. Réaliser une interface web pour chercher des mots
+            dans le dictionnaire d'ancien français de Godefroy,
+            et feuilleter le dictionnaire.
+        </li>
+        <li>Le dictionnaire de
+            <a href="http://www.eonet.ne.jp/~ogurisu/Fr/Godefroy.html">Godefroy</a>
+            est disponible en version hors ligne.
+            Il a été numérisé par l'équipe de
+            <a href="http://www.eonet.ne.jp/~ogurisu/">Hitoshi Ogurisu</a>,
+            de l'université de Wakayama, Japon.
+            Chaque page a été indexée. Les Errata &amp; Addenda de chaque page ont été référencés.
         </li>
       </ul>
     </td>
