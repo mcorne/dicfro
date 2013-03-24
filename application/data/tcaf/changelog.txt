@@ -1,12 +1,24 @@
-1/1/2010
---------
+version v1
+----------
+- 1/1/2010
 - initial implementation
 
-21/3/2013
----------
-- downloaded TCAF3.zip (2.1e édition, depuis 20/4/2012) from http://www.eonet.ne.jp/~ogurisu/Fr/TCAF.html
-- extracted Txt
-- compared with current version, validated minor changes
-- replaced current version
+version v2
+----------
+(no log entry)
+
+version v3
+----------
+(no log entry)
+
+version v4
+----------
+- 21/3/2013
+- downloaded TCAF3.zip (2.1e édition, depuis 20/4/2012) from http://www.eonet.ne.jp/~ogurisu/Fr/TCAF.html in sources/tcaf/v4
+- unzipped TCAF3.zip
+- updated tacf/changes/config.php
+- ran "find-changes"
+- validated minor changes in Txt
+- replaced current version of Txt
 - removed "2; " from "OTROIIER [pass.simp.]" line 1780
-- run "parse tcaf" to updated database
+- ran "parse tcaf" to update database

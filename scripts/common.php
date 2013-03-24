@@ -2,6 +2,8 @@
 /**
  * Dicfro
  *
+ * Dictionary parsing, search, and query common functions
+ *
  * PHP 5
  *
  * @author    Michel Corne <mcorne@yahoo.com>
