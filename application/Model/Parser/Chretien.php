@@ -31,5 +31,5 @@ class Model_Parser_Chretien extends Model_Parser_GaffiotLike
     public $lineTpl = '~^(.+?)__BR____BR__<@_(\d+).tif_>FoersterEdic__BR____BR__~';
 
     public $dictionary = 'chretien';
-    public $sourceFile = 'Txt.v1';
+    public $sourceFile = 'Txt';
 }

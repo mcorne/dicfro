@@ -1,5 +1,26 @@
-initial version v1
-------------------
+version v1
+----------
+- 1/8/2010
+- created and renamed mImg gif files, 50% reduction, no transparency color
+- ran "parse lexromv" to create database
 
-=> created and renamed mImg gif files, 50% reduction, no transparency color
-=> created database
+version v2
+----------
+- 24/3/2013
+- downloaded http://www.eonet.ne.jp/~ogurisu/Fr/LexRom.html in sources/lexromv
+- unzipped LexRomEdicEdic.zip
+- updated lexromv/changes/config.php
+- renamed txt
+- ran "find-changes lexromv"
+- no change in images
+- found changes in txt
+- removed numerical entries in v2/LexRomEdic/txt, eg "2=492__BR____BR__image=><@_2-492.tif_>LexRomEdic__BR____BR__"
+- removed "image=>" in each line in v2/LexRomEdic/txt
+- replaced "LexRomEdic__BR____BR__" with "LexRomVEdic__BR____BR__" in each line in v2/LexRomEdic/txt
+- found that altered v2/LexRomEdic/txt is the same as v1/LexRomEdic/LexRomVEdic/txt
+- replaced current txt with original v2/LexRomEdic/txt
+- fixed Model_Parser_Lexromv to ignore numerical entries
+- applied the previous fixes:
+  "bana__BR____BR__<@_tx104.tif_>LexRomVEdic__BR____BR__" instead of "ban"
+  "comaira__BR____BR__<@_tx149.tif_>LexRomVEdic__BR____BR__" instad of "coma"
+- ran "parse lexromv" to create database

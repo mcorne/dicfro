@@ -31,7 +31,7 @@ class Model_Parser_Couronnement extends Model_Parser_GaffiotLike
     public $lineTpl = '~^(.+?)__BR____BR__<@_tx(\d+).tif_>EGlos_CourLouisL1__BR____BR__~';
 
     public $dictionary = 'couronnement';
-    public $sourceFile = 'Txt.v1.corrected';
+    public $sourceFile = 'Txt';
 
     public function fixImageNumber($imageNumber)
     {

@@ -32,5 +32,5 @@ class Model_Parser_Tristan extends Model_Parser_GaffiotLike
     public $endWord = '_Glossaire';
 
     public $dictionary = 'tristan';
-    public $sourceFile = 'Txt.v1';
+    public $sourceFile = 'Txt';
 }

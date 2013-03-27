@@ -1,7 +1,16 @@
-initial version v1
-------------------
-
+version v1
+----------
 - added missing entory for letter "a", image 173
 
 => created and renamed mImg gif files, 50% reduction, no transparency color
 => created database
+
+version v2
+----------
+- 24/3/2013
+- downloaded FoersterEdic.zip from http://www.eonet.ne.jp/~ogurisu/Fr/DicosSporadiques.html in sources/couronnement
+- unzipped FoersterEdic.zip
+- updated couronnement/changes/config.php
+- ran "find-changes couronnement"
+- found no change
+- renamed txt

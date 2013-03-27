@@ -1,6 +1,10 @@
-from v1 to v2
--------------
+version v1
+----------
+- 14/4/2008
+(no log entry)
 
+vesion v2
+---------
 - file names pattern has changed from 0000001.tif to _001.tif, etc,... and 0000545.tif to ex001.tif, etc...
 => saved original file names in mImg-original
 => renamed files in mImg as in DictionaryFolder-1/mImg
@@ -15,16 +19,26 @@ from v1 to v2
 => regenerated Gdf
 => keep DictionaryFolder-1/GdfLexEdic for reference
 
-
-from v2 to v3
+version v3
 -------------
 - no change in mImg-original
 - no significant change in Txt, "acueilloit" is now fixed in Txt
 (see there is no change between Txt-for-comp.txt and Txt-for-comp-from-DictionaryFolder-1.txt)
 
-- moved CHARTRÉ after CHARTRENIER
+- moved CHARTRï¿½ after CHARTRENIER
 - corrected following entries, communicated to O.H. :
-CHATRÉ__BR____BR__[IMAGE] <@__081.tif_>GdfLexEdic__BR__
+CHATRï¿½__BR____BR__[IMAGE] <@__081.tif_>GdfLexEdic__BR__
 
 => no action
 => generated database (using database from v3 on)
+
+version v4
+----------
+- 24/3/2013
+- downloaded http://www.eonet.ne.jp/~ogurisu/Fr/Godefroy.html in sources/gdflex
+- unzipped GdfLexEdicEdic.zip
+- updated gdflex/changes/config.php
+- ran "find-changes gdflex"
+- no change in Txt
+- all images have changed due to the addition of a footer: "image scannÃ©e par ...", assuming images have no other change
+- renamed txt

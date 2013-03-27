@@ -1,6 +1,10 @@
-from v1 to v2
--------------
+version v1
+----------
+- 14/4/2008
+(no log entry)
 
+version v2
+----------
 - no change detected by the comparison
 - 1010540.tif missing from GdfCEdic/mImg
 => downloaded it from http://gallica.bnf.fr, converted it to 1010540.tif
@@ -11,7 +15,7 @@ from v1 to v2
 => changed Txt manually
 
 - CLIGNOTER has 2 entries: 0910109.tif which is wrong and 0910110.tif which is right
-=> changed CLIGNOTER into CLERT… for 0910109.tif, moved the line up
+=> changed CLIGNOTER into CLERTÔøΩ for 0910109.tif, moved the line up
 
 - CHALDAIQUE is a bad entry to index the page 0910027.tif because it should be in a following page
 => changed CHALDAIQUE into CHALASTIQUE and moved the line up
@@ -25,10 +29,8 @@ from v1 to v2
 => regenerated Gdfc
 => all of DictionaryFolder-1/GdfCEdic can be removed
 
-
-from v2 to v3
--------------
-
+version v3
+----------
 - no changes in mImg (1010540.tif is now added)
 
 - many changes in mPimg
@@ -38,3 +40,14 @@ from v2 to v3
 - only words and image numbers are used in Txt, errata and ghostwords data is now ignored
 
 => created database
+
+version v4
+----------
+- 24/3/2013
+- downloaded http://www.eonet.ne.jp/~ogurisu/Fr/Godefroy.html in sources/gdfc
+- unzipped GdfCEdicEdic.zip
+- updated gdfc/changes/config.php
+- ran "find-changes gdfc"
+- no change in Txt
+- all images have changed due to the addition of a footer: "image scann√©e par ...", assuming images have no other change
+- renamed txt

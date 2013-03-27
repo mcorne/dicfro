@@ -28,13 +28,19 @@ require_once 'Model/Parser/GaffiotLike.php';
 
 class Model_Parser_Lexromv extends Model_Parser_GaffiotLike
 {
-    public $lineTpl = '~^(.+?)__BR____BR__<@_tx(\d+).tif_>LexRomVEdic__BR____BR__~';
+    public $lineTpl        = '~^(.+?)__BR____BR__image=><@_tx(\d+)\.tif_>LexRomEdic__BR____BR__~';
+    public $ignoredlineTpl = '~^\d=\d+__BR____BR__image=><@_\d-\d+\.tif_>LexRomEdic__BR____BR__~';
 
     public $dictionary = 'lexromv';
-    public $sourceFile = 'txt.lexromvedic.v1';
+    public $sourceFile = 'txt';
 
     public function fixImageNumber($imageNumber)
     {
         return "0000$imageNumber";
+    }
+
+    public function isLineIgnored($line)
+    {
+        return (preg_match($this->ignoredlineTpl, $line) or parent::isLineIgnored($line));
     }
 }

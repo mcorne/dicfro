@@ -14,10 +14,10 @@ version v3
 version v4
 ----------
 - 21/3/2013
-- downloaded TCAF3.zip (2.1e édition, depuis 20/4/2012) from http://www.eonet.ne.jp/~ogurisu/Fr/TCAF.html in sources/tcaf/v4
+- downloaded TCAF3.zip (2.1e édition, depuis 20/4/2012) from http://www.eonet.ne.jp/~ogurisu/Fr/TCAF.html in sources/tcaf
 - unzipped TCAF3.zip
-- updated tacf/changes/config.php
-- ran "find-changes"
+- updated tcaf/changes/config.php
+- ran "find-changes tcaf"
 - validated minor changes in Txt
 - replaced current version of Txt
 - removed "2; " from "OTROIIER [pass.simp.]" line 1780

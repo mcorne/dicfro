@@ -13,3 +13,7 @@ Things to do
 - Traduire l'interface en anglais.
 - Réparer la barre de défilement vertical pour les tablettes.
 - Réparer les problèmes de mots avec accents pour IE.
+
+- add panoccitan.org, http://www.etymologie-occitane.fr, deaf-page.de, http://www.atilf.fr/dect/ ...
+- add lacurne etc...
+- scan/add tilander

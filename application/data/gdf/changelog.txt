@@ -1,6 +1,10 @@
-from v1 to v2
--------------
+version v1
+----------
+- 14/4/2008
+(no log entry)
 
+version v2
+----------
 - directory tree: no change
 - Txt: corrections in the spelling of some of the entries only
 => verified the corrections against Beta1.html
@@ -54,9 +58,8 @@ from v1 to v2
 => all of DictionaryFolder-1/GdfEdic can be removed, except for Txt to keep for reference
 
 
-from v2 to v3
--------------
-
+version v3
+----------
 - no change in mImg
 
 - many changes in mPimg
@@ -71,8 +74,18 @@ from v2 to v3
 => created database
 
 
-from v3 to v4
--------------
-
+version v3.1
+------------
 - changed DEMIBRQUES to DEMIERQUES in 0200500.tif
 => created database
+
+version v4
+----------
+- 24/3/2013
+- downloaded http://www.eonet.ne.jp/~ogurisu/Fr/Godefroy.html in sources/gdf
+- unzipped GdfEdicEdic.zip
+- updated gdf/changes/config.php
+- ran "find-changes gdf"
+- no change in Txt
+- all images have changed due to the addition of a footer: "image scannée par ...", assuming images have no other change
+- renamed txt

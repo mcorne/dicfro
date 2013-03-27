@@ -32,7 +32,7 @@ class Model_Parser_Gdflex extends Model_Parser_GdfLike
     public $separator = '~';
 
     public $dictionary = 'gdflex';
-    public $sourceFile = 'Txt.v3.corrected';
+    public $sourceFile = 'Txt';
 
     public function fixImageNumber($imageNumber)
     {

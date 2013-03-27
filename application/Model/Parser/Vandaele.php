@@ -32,7 +32,7 @@ class Model_Parser_Vandaele extends Model_Parser_GdfLike
     public $ignoredLineTpl = '~^__BR__Image=><@_VanDaele(\d+)\.TIF_>VanDaele__BR__$~';
 
     public $dictionary = 'vandaele';
-    public $sourceFile = 'Txt.v3.corrected';
+    public $sourceFile = 'Txt';
 
     public function extractWordAndImage($line, $lineNumber)
     {

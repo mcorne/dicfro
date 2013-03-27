@@ -31,7 +31,7 @@ class Model_Parser_Rose extends Model_Parser_GaffiotLike
     public $lineTpl = '~^(.+?)__BR____BR__<@_hm(\d+).tif_>EGlos_RoseLLangl__BR____BR__~';
 
     public $dictionary = 'rose';
-    public $sourceFile = 'Txt.v1';
+    public $sourceFile = 'Txt';
 
     public function fixImageNumber($imageNumber)
     {

@@ -7,9 +7,52 @@
  * PHP 5
  *
  * @author    Michel Corne <mcorne@yahoo.com>
- * @copyright 2008-2012 Michel Corne
+ * @copyright 2008-2013 Michel Corne
  * @license   http://www.opensource.org/licenses/gpl-3.0.html GNU GPL v3
  */
+
+function calculate_file_hash($file)
+{
+    if (! $hash = @md5_file($file)) {
+        exit("cannot hash $file");
+    }
+
+    return $hash;
+}
+
+/**
+ * Compares the files of two directories
+ *
+ * @param string $dictionary
+ * @param string $directory1
+ * @param string $directory2
+ * @return null|array
+ */
+function compare_directory_hash($dictionary, $directory1, $directory2)
+{
+    $hash1 = get_directory_hash($dictionary, $directory1);
+    $hash2 = get_directory_hash($dictionary, $directory2);
+
+    if ($hash2 == $hash1) {
+        return null;
+    }
+
+    $differences = array();
+
+    if ($added_files = array_diff_key($hash2, $hash1)) {
+        $differences['added-files'] = array_keys($added_files);
+    }
+
+    if ($removed_files = array_diff_key($hash1, $hash2)) {
+        $differences['removed-files'] = array_keys($removed_files);
+    }
+
+    if ($changed_files = array_diff_assoc(array_intersect_key($hash2, $hash1), array_intersect_key($hash1, $hash2))) {
+        $differences['changed-files'] = array_keys($changed_files);
+    }
+
+    return $differences;
+}
 
 /**
  * Compare two files
@@ -52,10 +95,21 @@ function compare_files_hash($dictionary, $file1, $file2)
  */
 function compare_txt_files($dictionary, $current_txt_file, $previous_txt_file)
 {
-    $current_txt_path  = set_data_file_path($dictionary, $current_txt_file);
-    $previous_txt_path = set_sources_file_path($dictionary, $previous_txt_file);
+    $previous_txt_hash = get_file_hash($dictionary, $previous_txt_file);
+    $current_txt_path = set_data_file_path($dictionary, $current_txt_file);
+    $current_txt_hash = calculate_file_hash($current_txt_path);
 
-    return compare_files($current_txt_path, $previous_txt_path);
+    return $current_txt_hash == $previous_txt_hash;
+}
+
+/**
+ * Displays messages
+ *
+ * @param string|array $messages
+ */
+function display_messages($messages)
+{
+    echo implode("\n", (array) $messages);
 }
 
 /**
@@ -109,6 +163,54 @@ function get_dictionaries()
 }
 
 /**
+ * Returns the hash of all source files of a directory
+ *
+ * The hash is calculated from each source file the first time and stored in the changes directory.
+ *
+ * @param string $dictionary
+ * @param string $directory
+ * @return array
+ */
+function get_directory_hash($dictionary, $directory)
+{
+    $hash_path = set_hash_file_path($dictionary, $directory) . '.php';
+
+    if (file_exists($hash_path)) {
+        $hash = require $hash_path;
+
+    } else {
+        $path = set_sources_file_path($dictionary, $directory);
+
+        if (! file_exists($path)) {
+            exit("directory missing $path");
+        }
+
+        $pattern = '*.[tT][iI][fF]*';
+        $files = array_merge(glob("$path/$pattern"), glob("$path/*/$pattern"), glob("$path/*/*/$pattern"), glob("$path/*/*/*/$pattern"));
+
+        if (empty($files)) {
+            exit("empty directory $directory");
+        }
+
+        foreach($files as $file) {
+            $basename = str_replace("$path/", '', $file);
+            $hash[$basename] = calculate_file_hash($file);
+        }
+
+        $directory = dirname($hash_path);
+        if (! file_exists($directory) and ! @mkdir($directory, 0777, true)) {
+            exit("cannot create $directory");
+        }
+
+        $content = "<?php\nreturn " . var_export($hash, true) .  ';';
+        write_file($hash_path, $content);
+    }
+
+    return $hash;
+
+}
+
+/**
  * Returns the hash of a source file
  *
  * The hash is calculated from the source file the first time and stored in the changes directory.
@@ -131,10 +233,12 @@ function get_file_hash($dictionary, $file)
             exit("file missing $path");
         }
 
-        if (! $hash = @md5_file($path)) {
-            exit("cannot hash $path");
+        $directory = dirname($hash_path);
+        if (! file_exists($directory) and ! @mkdir($directory, 0777, true)) {
+            exit("cannot create $directory");
         }
 
+        $hash = calculate_file_hash($path);
         write_file($hash_path, $hash);
     }
 

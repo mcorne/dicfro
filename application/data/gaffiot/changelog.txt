@@ -1,17 +1,25 @@
-from v1 to v2
--------------
+version v1
+----------
+- 27/6/2008
+- saved original file names in mImg-original, pattern like tx0001.tif, etc...
+- renamed files in mImg to 0000001.tif, etc...
+- in Txt: changed file names from tx001.TIF into 0000001.TIF
+- pages 0001575.tif and 0001576.tif display the wrong page, renamed 0001575.tif to 0001576.tif and 0001576.tif to 0001575.tif
 
-=> saved original file names in mImg-original, pattern like tx0001.tif, etc...
-=> renamed files in mImg to 0000001.tif, etc...
-=> in Txt: changed file names from tx001.TIF into 0000001.TIF
-
-- pages 0001575.tif and 0001576.tif display the wrong page
-=> renamed 0001575.tif to 0001576.tif and 0001576.tif to 0001575.tif
-
-from v2 to v3
--------------
-
+version v2
+----------
 - no change in Txt
 - no change in Img
+- created database
+(checked: 26/3/2013, ran "find-changes gaffiot", found no change)
 
-=> created database
+version v3
+----------
+- 24/3/2013
+- downloaded http://www.eonet.ne.jp/~ogurisu/Fr/Gaffiot.html in sources/gaffiot
+- unzipped GaffiotEdic.zip
+- updated gaffiot/changes/config.php
+- ran "find-changes gaffiot"
+- no change in Txt
+- all images have changed due to the addition of a footer: "image scannée par ...", assuming images have no other change
+- renamed txt

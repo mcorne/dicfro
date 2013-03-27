@@ -31,7 +31,7 @@ class Model_Parser_Roland extends Model_Parser_GaffiotLike
     public $lineTpl = '~^(.+?)__BR____BR__<@_tx(\d+).tif_>EGlos_RolB__BR____BR__~';
 
     public $dictionary = 'roland';
-    public $sourceFile = 'Txt.v1';
+    public $sourceFile = 'Txt';
 
     public function fixImageNumber($imageNumber)
     {

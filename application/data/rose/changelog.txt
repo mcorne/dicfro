@@ -1,5 +1,15 @@
-initial version v1
-------------------
+version v1
+----------
+- 1/1/2010
+- created and renamed mImg gif files, 50% reduction, no transparency color
+- created database
 
-=> created and renamed mImg gif files, 50% reduction, no transparency color
-=> created database
+version v2
+----------
+- 24/3/2013
+- downloaded EGlos_RoseLLangl.zip from http://www.eonet.ne.jp/~ogurisu/Fr/DicosSporadiques.html in sources/rose
+- unzipped EGlos_RoseLLangl.zip
+- updated rose/changes/config.php
+- ran "find-changes rose"
+- found no change
+- renamed txt

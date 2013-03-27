@@ -32,5 +32,5 @@ class Model_Parser_Gaffiot extends Model_Parser_GaffiotLike
     public $endWord = '_abréviations';
 
     public $dictionary = 'gaffiot';
-    public $sourceFile = 'Txt.v2';
+    public $sourceFile = 'Txt';
 }

@@ -1,0 +1,18 @@
+How to update a dictionary
+--------------------------
+
+This applies to dictionaries dowloaded from Hruodlandus et Alda, http://www.eonet.ne.jp/~ogurisu/Fr/Intro.html.
+The procedure is described for each dictionary in its change log file, eg application/data/chretien/changelog.txt.
+
+
+As an example
+-------------
+- download FoersterEdic.zip from http://www.eonet.ne.jp/~ogurisu/Fr/Foerster.html in sources/chretien/v2,
+  the sub directory v2 has a download instance number, the second downloaded "version" in this example
+- unzip FoersterEdic.zip
+- update chretien/changes/config.php to compare the txt file and the images files between the version just downloaded and the previous one
+- run "find-changes chretien" to compare both version,
+  this will calculate the hash of the new files, and compare them to the hash of the files in the previous version
+- review and process the result
+- remove the unzipped files from sources/chretien/v2
+- keep the zipped file for reference, note that sources files are not stored in SVN

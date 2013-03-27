@@ -29,5 +29,5 @@ require_once 'Model/Parser/GdfLike.php';
 class Model_Parser_Gdf extends Model_Parser_GdfLike
 {
     public $dictionary = 'gdf';
-    public $sourceFile = 'txt.v4.corrected';
+    public $sourceFile = 'txt';
 }

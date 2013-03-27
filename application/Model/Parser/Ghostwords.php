@@ -31,7 +31,7 @@ class Model_Parser_Ghostwords extends Model_Parser
     const LINE_TPL = '~value="([^"]+)"~';
 
     public $dictionary = 'ghostwords';
-    public $sourceFile = 'fantomes.v1.txt';
+    public $sourceFile = 'fantomes.txt';
 
     public function __construct($config, $verbose = false)
     {
