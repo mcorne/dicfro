@@ -94,16 +94,4 @@ class View_Helper_Images extends View_Helper_Base
 
         return $this->view->setLinkUrl("img/pages/{$image['file']}");
     }
-
-    /**
-     * Returns the image source URL
-     *
-     * @return string the image source URL
-     */
-    public function getImageSourceUrl()
-    {
-        $image = $this->getImage();
-
-        return $image['source'];
-    }
 }

@@ -85,9 +85,9 @@ abstract class Model_Parser
 
     public function create($lineStart = null, $lineCount = null)
     {
-        $this->preProcessing();
         // reads and parses the dictionary
         list($lines, $lineStart) = $this->read($lineStart, $lineCount);
+        $lines = $this->preProcessing($lines);
         $data = $this->parse($lines, $lineStart);
         $data = $this->postProcessing($data);
         // writes and imports the dictionary data files into the database
@@ -214,8 +214,9 @@ abstract class Model_Parser
 
     abstract public function parseLine($line, $lineNumber);
 
-    public function preProcessing()
+    public function preProcessing($lines)
     {
+        return $lines;
     }
 
     public function postProcessing($data)

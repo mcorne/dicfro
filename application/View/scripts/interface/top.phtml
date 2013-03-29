@@ -102,7 +102,7 @@
          value="<?=$this->page;?>"
          onkeypress="isEnterKey(event) && goPage('<?=$this->setActionUrl($this->goPageLink);?>');" />
 
-  <?php if(in_array($this->dictionary['id'], array('gdf', 'gdfc'))):?>
+  <?php if(! empty($this->dictionary['is-volumes'])):?>
     <span class="volume">Volume</span>
     <input class="volume" type="text" id="volume"
            title="Entrer le numéro de volume, puis appuyer sur la touche ENTRÉE, ou cliquer sur le bouton Afficher"

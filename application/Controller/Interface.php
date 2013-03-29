@@ -220,10 +220,10 @@ class Controller_Interface
         $this->view->nextPageLink = $this->setActionLink('next', $this->dictionary['url'],
             $this->view->page, $this->view->volume, $this->view->word);
 
-        if (($this->dictionary['id'] == 'gdf' or $this->dictionary['id'] == 'gdfc')) {
-            $needVolume = '%s';
-        } else {
+        if (empty($this->dictionary['is-volumes'])) {
             $needVolume = '';
+        } else {
+            $needVolume = '%s';
         }
 
         $this->view->goPageLink = $this->setActionLink('page', $this->dictionary['url'], '%s', $needVolume, $this->view->word);

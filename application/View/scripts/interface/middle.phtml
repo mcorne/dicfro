@@ -34,9 +34,7 @@
 
   <?php if($this->introduction):?>
       <div class="page">
-        <a href="<?=$this->imagesHelper->getImageSourceUrl();?>">
-          <img class="picture" src="<?=$this->imagesHelper->getImageFile();?>" />
-        </a>
+        <img class="picture" src="<?=$this->imagesHelper->getImageFile();?>" />
         <h1 class="title"><?=$this->dictionariesHelper->getDescription();?></h1>
         <?php include $this->viewsDir . '/' . $this->introduction;?>
       </div>
@@ -44,9 +42,7 @@
 
   <?php if($this->information):?>
       <div class="page">
-        <a href="<?=$this->imagesHelper->getImageSourceUrl();?>">
-          <img class="picture" src="<?=$this->imagesHelper->getImageFile();?>" />
-        </a>
+        <img class="picture" src="<?=$this->imagesHelper->getImageFile();?>" />
         <?php include $this->viewsDir . '/' . $this->information;?>
       </div>
   <?php endif;?>

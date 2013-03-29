@@ -89,3 +89,9 @@ version v4
 - no change in Txt
 - all images have changed due to the addition of a footer: "image scannée par ...", assuming images have no other change
 - renamed txt
+
+version v4.1
+------------
+- 27/3/2013
+- change the entry, eg replace "ENCOSTé" with "ENCOUAN" for image "@_0300120.tif" in Txt
+- ran "parse gdf" to update database

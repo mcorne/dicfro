@@ -1,0 +1,118 @@
+<?php
+
+/**
+ * Dicfro
+ *
+ * PHP 5
+ *
+ * @category   DicFro
+ * @package    View
+ * @subpackage Scripts_Introduction
+ * @author     Michel Corne <mcorne@yahoo.com>
+ * @copyright  2008-2013 Michel Corne
+ * @license    http://opensource.org/licenses/gpl-3.0.html GNU GPL v3
+ */
+
+?>
+
+<p class="sub-title">
+  <span class="middle">10 volumes, 5 600 pages, 60 000 entrées en ligne</span>
+</p>
+
+<p>Le dictionnaire historique de l'ancien langage françois contient
+   « sous un même point de vue dans l'ordre alphabétique, les vieux mots épars dans un grand nombre d'auteurs de tous les âges
+   depuis son origine jusqu'au siècle de Louis XIV ».
+   La Curne de Sainte-Palaye
+   « prend chaque mot de notre ancien français à son origine,
+   il en donne l'étymologie, l'histoire, l'explication,
+   et le fait suivre de nombreux extraits d'anciens auteurs, poètes ou prosateurs qui l'ont employé. »
+</p>
+
+<a href="http://fr.wikipedia.org/wiki/Jean-Baptiste_de_La_Curne_de_Sainte-Palaye">La Curne de Sainte-Palaye</a>
+
+<p class="sub-title">Pages notables</p>
+<ul>
+  <li>Tome 1 :
+    <a href="<?=$this->setLinkUrl('dictionary/lacurne/mImg/ex/01-ex-007.gif');?>">titre</a>
+  </li>
+  <li>Tome 2 :
+    <a href="<?=$this->setLinkUrl('dictionary/lacurne/mImg/ex/02-ex-007.gif');?>">titre</a>
+  </li>
+  <li>Tome 3 :
+    <a href="<?=$this->setLinkUrl('dictionary/lacurne/mImg/ex/03-ex-007.gif');?>">titre</a>,
+    <a href="<?=$this->setLinkUrl('dictionary/lacurne/mImg/ex/03-ex-008.gif');?>">abbréviations</a>
+    </li>
+  <li>Tome 4 :
+    <a href="<?=$this->setLinkUrl('dictionary/lacurne/mImg/ex/04-ex-007.gif');?>">titre</a>
+  </li>
+  <li>Tome 5 :
+    <a href="<?=$this->setLinkUrl('dictionary/lacurne/mImg/ex/05-ex-007.gif');?>">titre</a>,
+    <a href="<?=$this->setLinkUrl('dictionary/lacurne/mImg/ex/05-ex-008.gif');?>">abbréviations</a>
+  </li>
+  <li>Tome 6 :
+    <a href="<?=$this->setLinkUrl('dictionary/lacurne/mImg/ex/06-ex-007.gif');?>">titre</a>,
+    <a href="<?=$this->setLinkUrl('dictionary/lacurne/mImg/ex/06-ex-008.gif');?>">abbréviations</a>
+  </li>
+  <li>Tome 7 :
+    <a href="<?=$this->setLinkUrl('dictionary/lacurne/mImg/ex/07-ex-007.gif');?>">titre</a>,
+    <a href="<?=$this->setLinkUrl('dictionary/lacurne/mImg/ex/07-ex-008.gif');?>">abbréviations</a>
+  </li>
+  <li>Tome 8 :
+    <a href="<?=$this->setLinkUrl('dictionary/lacurne/mImg/ex/08-ex-007.gif');?>">titre</a>,
+    <a href="<?=$this->setLinkUrl('dictionary/lacurne/mImg/ex/08-ex-008.gif');?>">abbréviations</a>
+  </li>
+  <li>Tome 9 :
+    <a href="<?=$this->setLinkUrl('dictionary/lacurne/mImg/ex/09-ex-007.gif');?>">titre</a>,
+    <a href="<?=$this->setLinkUrl('dictionary/lacurne/mImg/ex/09-ex-008.gif');?>">abbréviations</a>
+  </li>
+  <li>Tome 10 :
+    <a href="<?=$this->setLinkUrl('dictionary/lacurne/mImg/ex/10-ex-007.gif');?>">titre</a>,
+    <a href="<?=$this->setLinkUrl('dictionary/lacurne/mImg/ex/10-ex-008.gif');?>">abbréviations</a>
+  </li>
+</ul>
+
+<p>
+  Biographie de La Curne :
+  <?php foreach(array('I'  , 'II'  , 'III'  , 'IV'  , 'V'  , 'VI'  , 'VII' , 'VIII' , 'IX' , 'X',
+                      'XI' , 'XII' , 'XIII' , 'XIV' , 'XV' , 'XVI' , 'XVII', 'XVIII', 'XIX', 'XX',
+                      'XXI', 'XXII', 'XXIII', 'XXIV', 'XXV', 'XXVI') as $number => $letter):
+        $number += 9; $number < 10 and $number = "0$number";
+  ?>
+    <a href="<?=$this->setLinkUrl("dictionary/lacurne/mImg/ex/10-ex-0$number.gif");?>"><?=$letter;?></a>
+  <?php endforeach;?>
+</p>
+
+<p>
+  La Curne et Barbazan :
+  <a href="<?=$this->setLinkUrl("dictionary/lacurne/mImg/ex/10-ex-035.gif");?>">XXVII</a>
+  <a href="<?=$this->setLinkUrl("dictionary/lacurne/mImg/ex/10-ex-036.gif");?>">XXVIII</a>
+</p>
+
+<p>
+  Notice sur Oudin :
+  <a href="<?=$this->setLinkUrl("dictionary/lacurne/mImg/ex/10-ex-037.gif");?>">XXIX</a>
+  <a href="<?=$this->setLinkUrl("dictionary/lacurne/mImg/ex/10-ex-038.gif");?>">XXX</a>
+</p>
+
+<p>
+  Liste des souscripteurs :
+  <a href="<?=$this->setLinkUrl("dictionary/lacurne/mImg/ex/10-ex-039.gif");?>">XXXI</a>
+  <a href="<?=$this->setLinkUrl("dictionary/lacurne/mImg/ex/10-ex-040.gif");?>">XXXII</a>
+</p>
+
+<p class="sub-title">Ressources</p>
+<ul>
+  <li>Ce dictionnaire a été numérisé sous la direction de Hitoshi Ogurisu de l'université de Wakayama.</li>
+  <li>Cette version numérique, réf. LacEdic, a été gracieusement mise à la disposition de DicFro pour une utilisation dans le respect des droits suivants: « Le droit d'auteur de Godefroy est déjà expiré, et tous les travaux nécessaires (enregistrement des mots vedettes, scanning etc) sont tous exécutés par nous [H.O.]. Les droits provenant de cette version nous [H.O.] appartiennent complètement, et nous [H.O.] ne les exercerons jamais pourvu que vous en fassiez un emploi strictement personnel : ce dictionnaire électronique est/sera gratuit et disponible pour tous les particuliers ».</li>
+  <li>Une version hors-ligne est aussi disponible.</li>
+  <li>Ce dictionnaire utilise la base des mots fantômes de l'Atilf. Cette base recense « les pseudo-lexèmes disposant à tort d'un statut lexicographique, les sens fantômes ainsi que les lemmatisations erronées ».</li>
+  <li>Ce dictionnnaire utilise la liste de lemmes du Tobler-Lommatzsch pour identifier les mots.</li>
+  <li>Ce dictionnnaire utilise les tableaux de conjugaison de l'ancien français de Machio Okada et Hitoshi Ogurisu pour identifier les verbes.</li>
+  <li>
+    <a href="http://www.eonet.ne.jp/~ogurisu/">Hitoshi Ogurisu</a>,
+    <a href="http://www.eonet.ne.jp/~ogurisu/Fr/Lac.html">Version hors ligne</a>,
+    <a href="http://atilf.atilf.fr/gsouvay/scripts/fantomes.exe">Mots fantômes</a>,
+    <a href="http://www.uni-stuttgart.de/lingrom/stein/tl/downloadsf.htm">Tobler-Lommatzsch</a>,
+    <a href="tableaux-de-conjugaison">Tableaux de conjugaison</a>
+  </li>
+</ul>

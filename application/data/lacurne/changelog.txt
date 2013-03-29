@@ -1,0 +1,35 @@
+version v1
+----------
+- 24/3/2013
+- downloaded http://www.eonet.ne.jp/~ogurisu/Fr/Lac.html in sources/lacurne
+- unzipped LacEdic.zip
+
+- ran irfanview:
+    * batch conversion - renamed result files
+    * output = gif
+    * bulk resize = 50%
+    * name pattern = 0100###
+    * output directory = dicfro/public/dictionary/lacurne/mImg
+    * input directory = sources/lacurne/v1/LacEdic/mImg
+    * select 01-*, sort by name, add
+    * start batch
+- repeat the process for 02, 03 etc...
+- repeat the process for ex/0, pattern = 01_page_###, start at page 1, renamed japonese for page in file name
+- repeat the process for ex/11, pattern = $N, 
+  should ideally start at page 203 with 1010### to be used as separate dictionary (curiosités) but there are page numbering issues
+
+- added "lacurne" entry in config.php, in both dictionaries and groups
+- ran "parse lacurne", fixed parser
+- fixed txt: note that the order order is not important as it is resorted by parser
+    * changed "aparition__BR____BR__image=><@_02-044.tiff_>LacEdic__BR____BR__"
+    * to      "apparition__BR____BR__image=><@_02-044.tiff_>LacEdic__BR____BR__"
+
+- added picture
+    * resized to 200px max
+    * saved into dicfro/public/img/pages/dictionnaire-lacurne.jpg
+    * updated docs/images-source.txt
+
+- added intro
+
+- updated lacurne/changes/config.php -- TODO
+- ran "init-changes lacurne"

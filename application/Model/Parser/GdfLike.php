@@ -39,7 +39,7 @@ abstract class Model_Parser_GdfLike extends Model_Parser
         $this->createSearchObject();
     }
 
-    public function addMissingImages($wordData)
+    public function addMissingImages($wordData, $noCheckOrder = false)
     {
         static $prevWordData = null;
         static $prevVolume = null;
@@ -48,6 +48,7 @@ abstract class Model_Parser_GdfLike extends Model_Parser
         $missingImages = '';
         list($volume, $page) = $this->search->extractVolumeAndPage($wordData['image']);
 
+        $noCheckOrder or
         is_null($prevPage) or
         $prevVolume < $volume or
         $prevVolume == $volume and $prevPage < $page or

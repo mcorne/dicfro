@@ -103,19 +103,4 @@ class ImagesTest extends PHPUnit_Framework_TestCase
             $this->viewHelper->getImageFile(),
              'getting dictionary image');
    }
-
-    /**
-     * Tests getImageSourceUrl
-     *
-     * @depends testGetImage
-     */
-    public function testGetImageSourceUrl()
-    {
-        $this->viewHelper->view->information = 'def.phtml';
-
-        $this->assertSame(
-            'DEF',
-            $this->viewHelper->getImageSourceUrl(),
-             'getting image source URL');
-   }
 }

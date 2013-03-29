@@ -51,7 +51,6 @@ return array(
                     'needTobler' => true,
                 )
             ),
-            'source'      => 'http://galatea.univ-tlse2.fr/pictura/UtpicturaServeur/Images/NePasOuvrir/0/A0709.jpg',
             'title'       => 'Chrétien',
             'url'         => 'glossaire-chretien-de-troyes',
         ),
@@ -85,7 +84,6 @@ return array(
                     'needTobler' => true,
                 )
             ),
-            'source'      => 'http://histoireenprimaire.free.fr/images/sacre_st_louis.jpg',
             'title'       => 'Couronnement',
             'url'         => 'glossaire-couronnement-de-louis',
         ),
@@ -128,7 +126,6 @@ return array(
                     'needWhitaker' => true,
                 )
             ),
-            'source'      => 'http://multimedia.fnac.com/multimedia/images_produits/ZoomPE/6/5/6/9782011667656.jpg',
             // to: fr
         ),
 
@@ -136,6 +133,7 @@ return array(
             'description' => "Dictionnaire de l'ancienne langue française et de tous ses dialectes du IXème au XVème siècle, Frédéric Godefroy, 1880-1895",
             'file'        => 'dictionnaire-godefroy.jpg',
             'internal'    => true,
+            'is-volumes'  => true,
             'language'    => 'fr',
             'name'        => 'Godefroy - Dictionnaire',
             'search'      => array(
@@ -148,7 +146,6 @@ return array(
                     'needTobler'       => true,
                 )
             ),
-            'source'      => 'http://upload.wikimedia.org/wikipedia/commons/a/a4/Old_book_bindings_cropped.jpg',
             'title'       => 'D. Godefroy',
             'url'         => 'dictionnaire-godefroy',
         ),
@@ -157,6 +154,7 @@ return array(
             'description' => "Complément du dictionnaire de l'ancienne langue française et de tous ses dialectes du IXème au XVème siècle, Frédéric Godefroy, 1895-1902",
             'file'        => 'complement-godefroy.jpg',
             'internal'    => true,
+            'is-volumes'  => true,
             'language'    => 'fr',
             'name'        => 'Godefroy - Complément',
             'search'      => array(
@@ -170,7 +168,6 @@ return array(
                     'needTobler'       => true,
                 )
             ),
-            'source'      => 'http://farm1.static.flickr.com/137/327471676_7557f4d649.jpg',
             'title'       => 'C. Godefroy',
             'url'         => 'complement-godefroy',
         ),
@@ -194,7 +191,6 @@ return array(
                     'needTobler'     => true,
                 )
             ),
-            'source'      => 'http://www.voilieraventures.com/photos/old%20book%206.gif',
             'title'       => 'L. Godefroy',
             'url'         => 'lexique-godefroy',
         ),
@@ -208,6 +204,23 @@ return array(
                 'class' => 'Model_Search_Jeanneau',
             ),
             // to: fr
+        ),
+
+        'lacurne' => array(
+            'description' => "Dictionnaire historique de l'ancien langage françois ou Glossaire de la langue françoise, J.B. de la Curne de Sainte-Palaye, 1875-1882",
+            'file'        => 'dictionnaire-lacurne.jpg',
+            'internal'    => true,
+            'is-volumes'  => true,
+            'language'    => 'fr',
+            'name'        => 'Lacurne - Dictionnaire',
+            'search'      => array(
+                'properties' => array(
+                    'needTcaf'   => true,
+                    'needTobler' => true,
+                )
+            ),
+            'title'       => 'D. Lacurne',
+            'url'         => 'dictionnaire-lacurne',
         ),
 
         'leconjugueur' => array(
@@ -225,7 +238,6 @@ return array(
             'introduction' => 'roman.phtml',
             'language'     => 'fr',
             'name'         => 'Lexique Roman',
-            'source'       => 'http://www.histoiredesjuifs.com/images/1230%20Susskind_von_Trimberg.jpg',
             'title'        => 'L. Roman',
             'url'          => 'lexique-roman',
         ),
@@ -250,7 +262,6 @@ return array(
                     'needTobler' => true,
                 )
             ),
-            'source'      => 'http://www.espritdepicardie.com/files/romanderenartXIIIeme_0.jpg',
             'title'       => 'Renart',
             'url'         => 'glossaire-roman-de-renart-fhs',
         ),
@@ -267,7 +278,6 @@ return array(
                     'needTobler' => true,
                 )
             ),
-            'source'      => 'http://books.google.fr/books?id=WR72lYfyTP8C&hl=fr&pg=PR4-IA4#v=onepage&q&f=false',
             'title'       => 'Méon 1',
             'url'         => 'glossaire-roman-de-renart-meon-vol1',
         ),
@@ -284,7 +294,6 @@ return array(
                     'needTobler' => true,
                 )
             ),
-            'source'      => 'http://upload.wikimedia.org/wikipedia/commons/c/c2/Roman_de_Renart.jpg',
             'title'       => 'Méon 2',
             'url'         => 'glossaire-roman-de-renart-meon-vol2',
         ),
@@ -301,7 +310,6 @@ return array(
                     'needTobler' => true,
                 )
             ),
-            'source'      => 'http://books.google.fr/books?id=OpgCAAAAYAAJ&hl=fr&pg=PP10#v=onepage&q&f=false',
             'title'       => 'Méon 3',
             'url'         => 'glossaire-roman-de-renart-meon-vol3',
         ),
@@ -318,7 +326,6 @@ return array(
                     'needTobler' => true,
                 )
             ),
-            'source'      => 'http://books.google.fr/books?id=FNUTAAAAQAAJ&hl=fr&pg=PP8#v=onepage&q&f=false',
             'title'       => 'Méon 4',
             'url'         => 'glossaire-roman-de-renart-meon-vol4',
         ),
@@ -335,7 +342,6 @@ return array(
                     'needTobler' => true,
                 )
             ),
-            'source'      => 'http://www.hs-augsburg.de/~harsch/gallica/Chronologie/11siecle/Roland/rol_pict.jpg',
             'title'       => 'Roland',
             'url'         => 'glossaire-chanson-de-roland',
         ),
@@ -352,7 +358,6 @@ return array(
                     'needTobler' => true,
                 )
             ),
-            'source'      => 'http://expositions.bnf.fr/livres/rose/index.htm',
             'title'       => 'Rose',
             'url'         => 'glossaire-roman-de-la-rose',
         ),
@@ -366,7 +371,6 @@ return array(
             'search'      => array(
                 'class' => 'Model_Search_Tcaf',
             ),
-            'source'      => 'http://ant_deus.pagesperso-orange.fr/veillesurmoi/verbes.jpg',
             'title'       => 'Conjugaisons',
             'url'         => 'tableaux-de-conjugaison',
         ),
@@ -383,7 +387,6 @@ return array(
                     'needTobler' => true,
                 )
             ),
-            'source'      => 'http://beaujarret.fiftiz.fr/blog/images/b/e/beaujarret/121896783993.jpeg',
             'title'       => 'Tristan',
             'url'         => 'glossaire-roman-de-tristan',
         ),
@@ -401,7 +404,6 @@ return array(
                     'needTobler'     => true,
                 )
             ),
-            'source'      => 'http://www.fleuron-du-cuir.com/images-ok/23-restauration-livre-ancien-03.jpg',
         ),
 
         'whitaker' => array(
@@ -472,6 +474,7 @@ return array(
                 'gdf',
                 'gdfc',
                 'gdflex',
+                'lacurne',
                 'lexromv',
                 'rose',
                 'renart-fhs',

@@ -1,9 +1,12 @@
 How to update a dictionary
 --------------------------
 
+
+1. Upgrade a dictionary
+-----------------------
+
 This applies to dictionaries dowloaded from Hruodlandus et Alda, http://www.eonet.ne.jp/~ogurisu/Fr/Intro.html.
 The procedure is described for each dictionary in its change log file, eg application/data/chretien/changelog.txt.
-
 
 As an example
 -------------
@@ -16,3 +19,17 @@ As an example
 - review and process the result
 - remove the unzipped files from sources/chretien/v2
 - keep the zipped file for reference, note that sources files are not stored in SVN
+
+
+2. Update a dictionary entry
+----------------------------
+
+This applies to internal dictionaries.
+The procedure is described for each dictionary in its change log file, eg application/data/gdf/changelog.txt.
+
+As exemple
+----------
+- open application/data/gdf/txt
+- change the entry, eg replace "ENCOSTE" with "ENCOUAN" for image "@_0300120.tif"
+- run "parse gdf" to update the database
+- add a log entry in application/data/gdf/changelog.txt 

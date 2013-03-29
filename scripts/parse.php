@@ -24,6 +24,10 @@ if (! file_exists("$applicationDir/$file")) {
 
 require $file;
 
-$class = "Model_Parser_$dictionary";
-$parser = new $class($config, $verbose);
-$parser->create($lineStart, $lineCount);
+try {
+    $class = "Model_Parser_$dictionary";
+    $parser = new $class($config, $verbose);
+    $parser->create($lineStart, $lineCount);
+} catch (Exception $e) {
+    die($e->getMessage());
+}
