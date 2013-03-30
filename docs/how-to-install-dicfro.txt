@@ -2,21 +2,29 @@ How to install Dicfro
 ---------------------
 
 
-add an entry in the host file
------------------------------
+1. Download dicfro
+------------------
+- svn checkout http://dicfro.googlecode.com/svn/trunk/ dicfro-read-only
+- note that dicfro is bigger than 3GB, you may want to checkout only some dictionaries
+
+
+2. Add an entry in the host file
+--------------------------------
 - for a windows system in C:\Windows\System32\Drivers\etc\hosts
 127.0.0.1 dicfro
 
-add an entry in httpd-vhosts.conf
----------------------------------
+
+3. Add an entry in httpd-vhosts.conf
+------------------------------------
 - for apache on windows in C:\Program Files (x86)\...\Apache2\conf\extra\httpd-vhosts.conf
 <VirtualHost *:80>
     DocumentRoot "D:/Data/dicfro/public"
     ServerName dicfro
 </VirtualHost>
 
-set the domain subpath (if applicable)
---------------------------------------
+
+4. Set the domain subpath (if applicable)
+-----------------------------------------
 - set the proper RewriteRule in public/.htaccess
 - set the application path in public/index.php if the domain subpath is different from "dicfro"
 - set the domain subpath in application/config.php if the domain subpath is different from "dicfro"

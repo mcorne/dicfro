@@ -1,0 +1,28 @@
+How to install a dictionary
+---------------------------
+
+
+1. Install an internal dictionary
+---------------------------------
+
+This applies to internal dictionaries dowloaded from Hruodlandus et Alda, http://www.eonet.ne.jp/~ogurisu/Fr/Intro.html.
+The procedure is described for each dictionary in the first entry of its change log file, eg application/data/lacurne/changelog.txt.
+
+As an example (excerpts)
+-------------
+- download LacEdic.zip from http://www.eonet.ne.jp/~ogurisu/Fr/Lac.html in sources/lacurne,
+  the sub directory v1 has a download instance number, the initial downloaded "version" in this case
+- unzip LacEdic.zip
+- run irfanview: batch conversion - renamed result files etc...
+- add "lacurne" entry in config.php, in both dictionaries and groups
+- run "parse lacurne", fix parser and txt as needed
+- add picture
+    * resize to 200px max
+    * save into dicfro/public/img/pages/dictionnaire-lacurne.jpg
+    * update docs/images-source.txt
+- add intro in application/View/scripts/introduction/lacurne.phtml
+- initialize lacurne/changes/config.php
+- run "init-changes lacurne" to create txt and img hashes
+  this will calculate the hash of the sources files, for comparison with subsquent versions
+- remove the unzipped files from sources/lacurne/v1
+- keep the zipped file for reference, note that sources files are not stored in SVN

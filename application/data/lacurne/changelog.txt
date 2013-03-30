@@ -29,7 +29,7 @@ version v1
     * saved into dicfro/public/img/pages/dictionnaire-lacurne.jpg
     * updated docs/images-source.txt
 
-- added intro
+- added intro in application/View/scripts/introduction/lacurne.phtml
 
-- updated lacurne/changes/config.php -- TODO
-- ran "init-changes lacurne"
+- initialized lacurne/changes/config.php
+- ran "init-changes lacurne" to create txt and img hashes
