@@ -59,15 +59,15 @@ return array(
     // 'Model/Parser/Whitaker.php' => array(),
 
     'Model/Query.php' => array('Base/String.php'),
-    'Model/Query/Generic.php' => array('Model/Query.php'),
+    'Model/Query/Internal.php' => array('Model/Query.php'),
     'Model/Query/Ghostwords.php' => array('Model/Query.php'),
     'Model/Query/Tcaf.php' => array('Model/Query.php'),
     'Model/Query/Tobler.php' => array('Model/Query.php'),
     'Model/Query/Whitaker.php' => array('Model/Query.php'),
 
-    'Model/Search/Generic.php' => array(
+    'Model/Search/Internal.php' => array(
         // 'Model/Search.php',
-        'Model/Query/Generic.php',
+        'Model/Query/Internal.php',
         'Model/Query/Ghostwords.php',
         'Model/Query/Tcaf.php',
         'Model/Query/Tobler.php',

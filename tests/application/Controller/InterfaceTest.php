@@ -65,8 +65,8 @@ class InterfaceTest extends PHPUnit_Framework_TestCase
     public function setChretienDatabase()
     {
         @mkdir(Test::getTempDir() . '/chretien');
-        require_once 'Model/Search/Generic.php';
-        $search = new Model_Search_Generic(Test::getTempDir(), array('dictionary' => 'chretien'));
+        require_once 'Model/Search/Internal.php';
+        $search = new Model_Search_Internal(Test::getTempDir(), array('dictionary' => 'chretien'));
         $pdo = new PDO($search->query->dsn);
 
         $pdo->query('DROP TABLE IF EXISTS word');
@@ -133,18 +133,18 @@ class InterfaceTest extends PHPUnit_Framework_TestCase
     public function testCreateSearchObject()
     {
         $this->assertInstanceOf(
-            'Model_Search_Generic',
+            'Model_Search_Internal',
             $this->interface->createSearchObject(),
             'creating default search model');
 
         /**********/
 
-        $this->dictionary['search']['class'] = 'Model_Search_Generic';
+        $this->dictionary['search']['class'] = 'Model_Search_Internal';
 
         $this->assertInstanceOf(
-            'Model_Search_Generic',
+            'Model_Search_Internal',
             $this->interface->createSearchObject(),
-            'creating generic search model');
+            'creating internal search model');
 
         /**********/
 
@@ -158,11 +158,11 @@ class InterfaceTest extends PHPUnit_Framework_TestCase
 
         /**********/
 
-        $this->interface->dictionary['query']['class'] = 'Model_Query_Generic';
+        $this->interface->dictionary['query']['class'] = 'Model_Query_Internal';
         $object = $this->interface->createSearchObject();
 
         $this->assertInstanceOf(
-            'Model_Query_Generic',
+            'Model_Query_Internal',
             $object->query,
             'passing query class');
     }
@@ -389,31 +389,11 @@ class InterfaceTest extends PHPUnit_Framework_TestCase
     }
 
     /**
-     * Tests isInternalDictionary
-     */
-    public function testIsInternalDictionary()
-    {
-        $this->interface->dictionary['internal'] = true;
-
-        $this->assertTrue(
-            $this->interface->isInternalDictionary(),
-            'checking is internal dictionary');
-
-        /**********/
-
-        $this->interface->dictionary['internal'] = false;
-
-        $this->assertFalse(
-            $this->interface->isInternalDictionary(),
-            'checking is external dictionary');
-    }
-
-    /**
      * Tests introductionAction
      */
     public function testIntroductionAction()
     {
-        $this->interface->dictionary['internal'] = true;
+        $this->interface->dictionary['type'] = 'internal';
         $this->interface->dictionary['introduction'] = 'abc';
 
         $this->interface->introductionAction();
@@ -425,7 +405,7 @@ class InterfaceTest extends PHPUnit_Framework_TestCase
 
         /**********/
 
-        $this->interface->dictionary['internal'] = false;
+        $this->interface->dictionary['type'] = 'external';
 
         $this->interface->introductionAction();
 
@@ -533,14 +513,14 @@ class InterfaceTest extends PHPUnit_Framework_TestCase
 
         /**********/
 
-        $this->interface->front->config['dictionaries']['gaffiot']['internal'] = true;
+        $this->interface->front->config['dictionaries']['gaffiot']['type'] = 'internal';
         $this->interface->front->actionParams = array('gaffiot');
 
         $this->interface->setDictionary();
 
         $this->assertSame(
             array(
-                'internal'     => true,
+                'type'         => 'internal',
                 'id'           => 'gaffiot',
                 'search'       => array (
                     'properties' => array (
@@ -562,7 +542,7 @@ class InterfaceTest extends PHPUnit_Framework_TestCase
 
         $this->assertSame(
             array(
-                'internal'     => true,
+                'type'         => 'internal',
                 'search'       => array (
                     'properties' => array (
                         'dictionary' => array (
@@ -829,7 +809,7 @@ class InterfaceTest extends PHPUnit_Framework_TestCase
 
         /**********/
 
-        $this->interface->front->config['dictionaries']['chretien']['internal'] = true;
+        $this->interface->front->config['dictionaries']['chretien']['type'] = 'internal';
         $this->interface->front->actionParams = array('chretien');
         $this->interface->view->volume = 0;
         $this->interface->view->page = 2;
@@ -856,7 +836,7 @@ class InterfaceTest extends PHPUnit_Framework_TestCase
     public function testNextAction()
     {
 
-        $this->interface->front->config['dictionaries']['chretien']['internal'] = true;
+        $this->interface->front->config['dictionaries']['chretien']['type'] = 'internal';
         $this->interface->front->actionParams = array('chretien');
         $this->interface->view->volume = 0;
         $this->interface->view->page = 1;
@@ -883,7 +863,7 @@ class InterfaceTest extends PHPUnit_Framework_TestCase
     public function testPreviousAction()
     {
 
-        $this->interface->front->config['dictionaries']['chretien']['internal'] = true;
+        $this->interface->front->config['dictionaries']['chretien']['type'] = 'internal';
         $this->interface->front->actionParams = array('chretien');
         $this->interface->view->volume = 0;
         $this->interface->view->page = 3;
@@ -995,7 +975,7 @@ class InterfaceTest extends PHPUnit_Framework_TestCase
     public function testSearchInternalDict()
     {
         $this->interface->view->word = 'abc';
-        $this->interface->front->config['dictionaries']['chretien']['internal'] = true;
+        $this->interface->front->config['dictionaries']['chretien']['type'] = 'internal';
         $this->interface->front->actionParams = array('chretien');
         $this->setChretienDatabase();
         $this->interface->setDictionary('chretien');
@@ -1015,7 +995,7 @@ class InterfaceTest extends PHPUnit_Framework_TestCase
         /**********/
 
         $this->interface->view->word = 'ab';
-        $this->interface->front->config['dictionaries']['tcaf']['internal'] = true;
+        $this->interface->front->config['dictionaries']['tcaf']['type'] = 'internal';
         $this->interface->front->config['dictionaries']['tcaf']['search']['class'] = 'Model_Search_Tcaf';
         $this->interface->front->actionParams = array('tcaf');
         $this->setTcafDatabase();
@@ -1046,7 +1026,7 @@ class InterfaceTest extends PHPUnit_Framework_TestCase
     {
         $this->interface->view->word = 'abc';
 
-        $this->interface->front->config['dictionaries']['chretien']['internal'] = true;
+        $this->interface->front->config['dictionaries']['chretien']['type'] = 'internal';
         $this->interface->front->actionParams = array('chretien');
         $this->setChretienDatabase();
         $this->interface->setDictionary('chretien');

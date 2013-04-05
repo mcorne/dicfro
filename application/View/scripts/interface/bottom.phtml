@@ -22,7 +22,7 @@
 
   <?php require "{$this->viewsDir}/interface/links.phtml";?>
 
-  <?php if(empty($this->dictionary['internal'])):?>
+  <?php if($this->dictionary['type'] != 'internal'):?>
   <a class="link" target="_blank"
      href="<?=$this->dictionary['introduction'];?>"><?=$this->dictionary['name'];?></a>
   <?php endif;?>

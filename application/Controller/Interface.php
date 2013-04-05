@@ -128,12 +128,17 @@ class Controller_Interface
     {
         if (isset($this->dictionary['search']['class'])) {
             $class = $this->dictionary['search']['class'];
-        } else {
-            $class = 'Model_Search_Generic';
+
+        } else if ($this->dictionary['type'] == 'internal') {
+            $class = 'Model_Search_Internal';
+
+        } else if ($this->dictionary['type'] == 'index') {
+            $class = 'Model_Search_Index';
         }
 
         if (isset($this->dictionary['search']['properties'])) {
             $properties = $this->dictionary['search']['properties'];
+
         } else {
             $properties = array();
         }
@@ -143,6 +148,7 @@ class Controller_Interface
 
         if (isset($this->dictionary['query'])) {
             $query = $this->dictionary['query'];
+
         } else {
             $query = array();
         }
@@ -280,7 +286,7 @@ class Controller_Interface
      */
     public function introductionAction()
     {
-        if ($this->isInternalDictionary()) {
+        if ($this->dictionary['type'] == 'internal') {
             $this->view->introduction = 'introduction/' . $this->dictionary['introduction'];
         } else {
             $this->view->externalDict = $this->dictionary['introduction'];
@@ -305,16 +311,6 @@ class Controller_Interface
     public function isIE()
     {
 	    return stripos($_SERVER['HTTP_USER_AGENT'], 'msie');
-    }
-
-    /**
-     * Checks if the dictionary is internal or external
-     *
-     * @return boolean true if internal, false if external
-     */
-    public function isInternalDictionary()
-    {
-        return !empty($this->dictionary['internal']);
     }
 
     /**
@@ -344,7 +340,7 @@ class Controller_Interface
      */
     public function pageAction($action = 'goToPage')
     {
-        if ($this->isInternalDictionary()) {
+        if ($this->dictionary['type'] == 'internal') {
             $search = $this->createSearchObject();
             $result = $search->$action($this->view->volume, $this->view->page);
             $this->setViewElements($result);
@@ -381,8 +377,15 @@ class Controller_Interface
      */
     public function searchAction()
     {
-        if ($this->isInternalDictionary()) {
+        if ($this->dictionary['type'] == 'index') { // TODO: quick fix
+            $word = $this->view->word;
+            $search = $this->createSearchObject();
+            $found = $search->searchWord($word);
+            $this->view->externalDict = $this->dictionary['search-url'] . $found['image'];
+
+        } else if ($this->dictionary['type'] == 'internal') {
             $this->searchInternalDict();
+
         } else {
             $this->searchExternalDict();
         }
@@ -517,7 +520,7 @@ class Controller_Interface
         $url = array_shift($this->front->actionParams);
         $this->dictionary = $this->findDictionary($url);
 
-        if ($this->isInternalDictionary() and empty($this->dictionary['search']['properties']['dictionary'])) {
+        if ($this->dictionary['type'] != 'external' and empty($this->dictionary['search']['properties']['dictionary'])) {
             // defaults search properties
             $this->dictionary['search']['properties']['dictionary'] = $this->dictionary['id'];
         }

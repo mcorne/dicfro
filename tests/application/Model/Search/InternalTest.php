@@ -17,11 +17,11 @@ require_once "PHPUnit/Framework/TestSuite.php";
 
 require_once 'Test.php';
 
-require_once 'Model/Query/Generic.php';
-require_once 'Model/Search/Generic.php';
+require_once 'Model/Query/Internal.php';
+require_once 'Model/Search/Internal.php';
 
 /**
- * Generic Search class tests
+ * Internal Search class tests
  *
  * @category   Application
  * @package    DicFro
@@ -31,11 +31,11 @@ require_once 'Model/Search/Generic.php';
  * @license    http://opensource.org/licenses/gpl-3.0.html GNU GPL v3
  */
 
-class GenericSearchTest extends PHPUnit_Framework_TestCase
+class InternalSearchTest extends PHPUnit_Framework_TestCase
 {
     /**
      * The Search class instance
-     * @var Model_Search_GenericExtended
+     * @var Model_Search_InternalExtended
      */
     public $search;
 
@@ -45,7 +45,7 @@ class GenericSearchTest extends PHPUnit_Framework_TestCase
     protected function setUp()
     {
         Test::createTempDir();
-        $this->search = new Model_Search_GenericExtended(Test::getTempDir());
+        $this->search = new Model_Search_InternalExtended(Test::getTempDir());
 
         $this->setErrataFiles();
         $this->setGhostwords();
@@ -154,7 +154,6 @@ class GenericSearchTest extends PHPUnit_Framework_TestCase
     {
         @mkdir(Test::getTempDir() . '/test');
         $pdo = new PDO($this->search->query->dsn);
-        $this->search->query->extraColumns = ', errata';
 
         $pdo->query('DROP TABLE IF EXISTS word');
         $pdo->query('CREATE TABLE word (ascii TEXT, image TEXT, original TEXT, previous TEXT, errata TEXT)');
@@ -558,7 +557,7 @@ class GenericSearchTest extends PHPUnit_Framework_TestCase
     }
 }
 
-class Model_Search_GenericExtended extends Model_Search_Generic
+class Model_Search_InternalExtended extends Model_Search_Internal
 {
     public $dictionary = 'test';
 
@@ -569,7 +568,7 @@ class Model_Search_GenericExtended extends Model_Search_Generic
     }
 }
 
-class Model_QueryExtendedbis extends Model_Query_Generic
+class Model_QueryExtendedbis extends Model_Query_Internal
 {
     public function __construct($directory = '.')
     {

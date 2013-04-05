@@ -17,7 +17,7 @@ require_once 'Model/Search.php';
 // query classes are included as needed
 
 /**
- * Search a generic dictionary
+ * Search an internal dictionary
  *
  * @category   DicFro
  * @package    Model
@@ -27,7 +27,7 @@ require_once 'Model/Search.php';
  * @license    http://opensource.org/licenses/gpl-3.0.html GNU GPL v3
  */
 
-class Model_Search_Generic extends Model_Search
+class Model_Search_Internal extends Model_Search
 {
     /**
      * Template to create an image number
@@ -57,12 +57,6 @@ class Model_Search_Generic extends Model_Search
     public $directory = '.';
 
     /**
-     * Name of the dictionary
-     * @var string
-     */
-    public $dictionary;
-
-    /**
      * Template of the image file names
      * @var string
      */
@@ -73,12 +67,6 @@ class Model_Search_Generic extends Model_Search
      * @var string
      */
     public $errataFiles;
-
-    /**
-     * Query object
-     * @var object
-     */
-    public $query;
 
     /**
      * Flag to search or not the text errata
@@ -119,7 +107,7 @@ class Model_Search_Generic extends Model_Search
     public function __construct($directory, $properties, $query = array())
     {
         if (! isset($query['class'])) {
-            $query['class'] = 'Model_Query_Generic';
+            $query['class'] = 'Model_Query_Internal';
         }
 
         parent::__construct($directory, $properties, $query);

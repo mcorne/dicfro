@@ -80,7 +80,7 @@ abstract class Model_Parser_GdfLike extends Model_Parser
         if (isset($dictionaryConfig['search']['class'])) {
             $class = $dictionaryConfig['search']['class'];
         } else {
-            $class = 'Model_Search_Generic';
+            $class = 'Model_Search_Internal';
         }
 
         if (isset($dictionaryConfig['search']['properties'])) {

@@ -19,14 +19,14 @@ if (! isset($config['dictionaries'][$dictionary])) {
     die('you may not search a dictionary with no config');
 }
 
-if (empty($dictionaryConfig['internal'])) {
-    die('you may only search an internal dictionary');
+if ($dictionaryConfig['type'] == 'external') {
+    die('you may only search an internal or indexed dictionary');
 }
 
 if (isset($dictionaryConfig['search']['class'])) {
     $class = $dictionaryConfig['search']['class'];
 } else {
-    $class = 'Model_Search_Generic';
+    $class = 'Model_Search_Internal';
 }
 
 $file = str_replace('_', '/', $class) . '.php';

@@ -69,7 +69,7 @@ class Model_Query_Ghostwords extends Model_Query
 
         $sql = "SELECT original FROM word WHERE ascii >= :wordFrom AND ascii < :wordTo";
 
-        return $this->execute($sql, array(':wordFrom' => $wordFrom, ':wordTo' => $wordTo), PDO::FETCH_COLUMN);
+        return $this->fetchAll($sql, array(':wordFrom' => $wordFrom, ':wordTo' => $wordTo), PDO::FETCH_COLUMN);
     }
 
     /**
@@ -84,6 +84,6 @@ class Model_Query_Ghostwords extends Model_Query
 
         $sql = "SELECT original FROM word WHERE ascii >= :wordFrom ";
 
-        return $this->execute($sql, array(':wordFrom' => $wordFrom), PDO::FETCH_COLUMN);
+        return $this->fetchAll($sql, array(':wordFrom' => $wordFrom), PDO::FETCH_COLUMN);
     }
 }

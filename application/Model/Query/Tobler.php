@@ -53,7 +53,7 @@ class Model_Query_Tobler extends Model_Query
         $query .= "WHERE ascii = :ascii AND entry.line = word.line ";
         $query .= "ORDER BY main, variants, lemma, pof";
 
-        $result = $this->execute($query, array(':ascii' => $ascii));
+        $result = $this->fetchAll($query, array(':ascii' => $ascii));
 
         return $result;
     }

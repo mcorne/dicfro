@@ -17,7 +17,10 @@
 
 <h1 class="title">Liste des dictionnaires</h1>
 
-  (dictionnaires <a class="internal">internes à DicFro en vert</a>, externes en noir)
+  (dictionnaire
+  <a class="internal">interne</a> à DicFro en vert,
+  <a class="index">indexé</a> dans DicFro en bleu,
+  <a class="external">externe</a> à DicFro en noir)
 
 
 <?php foreach($this->dictionariesHelper->getGroups() as $optgroup) :?>
@@ -27,8 +30,8 @@
     <?php foreach($optgroup['options'] as $options) :?>
 
       <li>
-      <a class="link <?php if (! empty($options['internal'])):?>internal<?php else:?>external<?php endif;?>"
-      href="<?=$this->setActionUrl('introduction/' . $options['value']);?>"><?=$options['title'];?></a>
+      <a class="link <?=$options['type'];?>"
+         href="<?=$this->setActionUrl('introduction/' . $options['value']);?>"><?=$options['title'];?></a>
       </li>
 
     <?php endforeach;?>

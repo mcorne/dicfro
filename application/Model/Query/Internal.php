@@ -16,7 +16,7 @@
 require_once 'Model/Query.php';
 
 /**
- * Queries a generic dictionary database
+ * Queries an internal dictionary database
  *
  * @category   DicFro
  * @package    Model
@@ -26,15 +26,8 @@ require_once 'Model/Query.php';
  * @license    http://opensource.org/licenses/gpl-3.0.html GNU GPL v3
  */
 
-class Model_Query_Generic extends Model_Query
+class Model_Query_Internal extends Model_Query
 {
-
-    /**
-     * List of additional columns to select, format: ", <column-name>, <column-name>, ..."
-     * @var string
-     */
-    public $extraColumns = '';
-
     /**
      * Goes to the first page of the dictionary
      *
@@ -42,7 +35,7 @@ class Model_Query_Generic extends Model_Query
      */
     public function goToFirstPage()
     {
-        return $this->execute("SELECT ascii, image, original {$this->extraColumns} FROM word ORDER BY image ASC LIMIT 2");
+        return $this->fetchAll("SELECT * FROM word ORDER BY image ASC LIMIT 2");
     }
 
     /**
@@ -52,7 +45,7 @@ class Model_Query_Generic extends Model_Query
      */
     public function goToLastPage()
     {
-        return $this->execute("SELECT ascii, image, original {$this->extraColumns} FROM word ORDER BY image DESC LIMIT 1");
+        return $this->fetchAll("SELECT * FROM word ORDER BY image DESC LIMIT 1");
     }
 
     /**
@@ -63,9 +56,9 @@ class Model_Query_Generic extends Model_Query
      */
     public function goToNextPage($imageNumber)
     {
-        $sql = "SELECT ascii, image, original {$this->extraColumns} FROM word WHERE image > :image LIMIT 2";
+        $sql = "SELECT * FROM word WHERE image > :image LIMIT 2";
 
-        if (! $result = $this->execute($sql, array(':image' => $imageNumber))) {
+        if (! $result = $this->fetchAll($sql, array(':image' => $imageNumber))) {
             $result = $this->goToLastPage();
         }
 
@@ -81,9 +74,9 @@ class Model_Query_Generic extends Model_Query
      */
     public function goToPage($imageNumber)
     {
-        $sql = "SELECT ascii, image, original {$this->extraColumns} FROM word WHERE image >= :image LIMIT 2";
+        $sql = "SELECT * FROM word WHERE image >= :image LIMIT 2";
 
-        if (! $result = $this->execute($sql, array(':image' => $imageNumber))) {
+        if (! $result = $this->fetchAll($sql, array(':image' => $imageNumber))) {
             $result = $this->goToLastPage();
         }
 
@@ -98,9 +91,9 @@ class Model_Query_Generic extends Model_Query
      */
     public function goToPreviousPage($imageNumber)
     {
-        $sql = "SELECT ascii, image, original {$this->extraColumns} FROM word WHERE image <= :image ORDER BY image DESC LIMIT 2";
+        $sql = "SELECT * FROM word WHERE image <= :image ORDER BY image DESC LIMIT 2";
 
-        $result = array_reverse($this->execute($sql, array(':image' => $imageNumber)));
+        $result = array_reverse($this->fetchAll($sql, array(':image' => $imageNumber)));
 
         if (empty($result) or count($result) < 2) {
             $result = $this->goToFirstPage();
@@ -112,22 +105,22 @@ class Model_Query_Generic extends Model_Query
     /**
      * Searches a word
      *
-     * @param  string $word the word in UTF-8
+     * @param  string $word            the word in UTF-8
      * @return array  two rows including the page where the word is or would be located
      */
     public function searchWord($word)
     {
         $ascii = $this->string->utf8toASCII($word);
 
-        $sql = "SELECT ascii, image, original, previous {$this->extraColumns} FROM word WHERE ascii >= :ascii LIMIT 2";
+        $sql = "SELECT * FROM word WHERE ascii >= :ascii LIMIT 2";
 
-        if ($result = $this->execute($sql, array(':ascii' => $ascii))) {
+        if ($result = $this->fetchAll($sql, array(':ascii' => $ascii))) {
             // found same or next word, searches previous word if different
             // note: need to find the first occurence of the previous word, ex. first page with "A"
             // note: previous is empty if this is the first page
             $result[0]['ascii'] == $ascii or
             empty($result[0]['previous']) or
-            $result = $this->execute($sql, array(':ascii' => $result[0]['previous']));
+            $result = $this->fetchAll($sql, array(':ascii' => $result[0]['previous']));
 
         } else {
             // no word found,  returns the last one

@@ -61,7 +61,7 @@ class QueryTest extends PHPUnit_Framework_TestCase
     /**
      * Tests execute
      */
-    public function testExecute()
+    public function testFetchAll()
     {
         $pdo = new PDO($this->query->dsn);
         $pdo->query('CREATE TABLE test (name)');
@@ -78,7 +78,7 @@ class QueryTest extends PHPUnit_Framework_TestCase
                 array('name' => 'def'),
                 array('name' => 'ghi'),
             ),
-            $this->query->execute($sql),
+            $this->query->fetchAll($sql),
              'selecting all rows');
 
         /**********/
@@ -89,7 +89,7 @@ class QueryTest extends PHPUnit_Framework_TestCase
                 'def',
                 'ghi',
             ),
-            $this->query->execute($sql, null, PDO::FETCH_COLUMN),
+            $this->query->fetchAll($sql, null, PDO::FETCH_COLUMN),
              'selecting all rows one column');
 
         /**********/
@@ -100,13 +100,13 @@ class QueryTest extends PHPUnit_Framework_TestCase
             array(
                 array('name' => 'abc'),
             ),
-            $this->query->execute($sql, array(':name' => 'abc')),
+            $this->query->fetchAll($sql, array(':name' => 'abc')),
              'selecting one row');
 
         /**********/
 
         try {
-            $this->query->execute('');
+            $this->query->fetchAll('');
             $result = 'should not get here - should have caught exception';
         } catch (Exception $e) {
             $result = $e->getMessage();

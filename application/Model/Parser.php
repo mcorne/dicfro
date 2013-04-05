@@ -192,7 +192,6 @@ abstract class Model_Parser
         foreach($lines as $line) {
             // parses the line, adds the lines to the data
             $parsed = $this->parseLine($line, $lineNumber);
-            // settype($parsed, 'array'); always an array!
 
             foreach($parsed as $name => $string) {
                 if (! empty($string)) {

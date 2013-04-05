@@ -64,8 +64,8 @@ class View_Helper_Dictionaries extends View_Helper_Base
                     'selected' => $id == $this->view->dictionary['id'],
                     'text'     => $dictionary['name'],
                     'title'    => $dictionary['description'],
+                    'type'     => $dictionary['type'],
                     'value'    => $value,
-                    'internal' => ! empty($dictionary['internal']),
                 );
             }
 

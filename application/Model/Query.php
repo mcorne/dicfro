@@ -75,7 +75,7 @@ abstract class Model_Query
     }
 
     /**
-     * Prepares and executes a query and fetches the result
+     * Prepares and executes a query and fetches the first row
      *
      * @param  string    $query      the SQL query
      * @param  array     $parameter  the list of parameters, format: array(<key> => <value>,...)
@@ -83,7 +83,30 @@ abstract class Model_Query
      * @return mixed     the result of the query
      * @throws Exception if no result is returned
      */
-    public function execute($query, $parameter = array(), $fetchStyle = PDO::FETCH_ASSOC)
+    public function fetch($query, $parameter = array(), $fetchStyle = PDO::FETCH_ASSOC)
+    {
+        $pdo = new PDO($this->dsn) and
+        $statement = $pdo->prepare($query) and
+        $statement->execute($parameter) and
+        $result = $statement->fetch($fetchStyle);
+
+        if (!isset($result)) {
+            throw new Exception('query-error');
+        }
+
+        return $result;
+    }
+
+    /**
+     * Prepares and executes a query and fetches all rows
+     *
+     * @param  string    $query      the SQL query
+     * @param  array     $parameter  the list of parameters, format: array(<key> => <value>,...)
+     * @param  string    $fetchStyle the fetch style
+     * @return mixed     the result of the query
+     * @throws Exception if no result is returned
+     */
+    public function fetchAll($query, $parameter = array(), $fetchStyle = PDO::FETCH_ASSOC)
     {
         $pdo = new PDO($this->dsn) and
         $statement = $pdo->prepare($query) and

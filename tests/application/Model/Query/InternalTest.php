@@ -17,10 +17,10 @@ require_once "PHPUnit/Framework/TestSuite.php";
 
 require_once 'Test.php';
 
-require_once 'Model/Query/Generic.php';
+require_once 'Model/Query/Internal.php';
 
 /**
- * Generic Query class tests
+ * Internal Query class tests
  *
  * @category   Application
  * @package    DicFro
@@ -30,11 +30,11 @@ require_once 'Model/Query/Generic.php';
  * @license    http://opensource.org/licenses/gpl-3.0.html GNU GPL v3
  */
 
-class GenericTest extends PHPUnit_Framework_TestCase
+class InternalTest extends PHPUnit_Framework_TestCase
 {
     /**
      * The Query class instance
-     * @var Model_Query_GenericExtended
+     * @var Model_Query_InternalExtended
      */
     public $query;
 
@@ -44,7 +44,7 @@ class GenericTest extends PHPUnit_Framework_TestCase
     protected function setUp()
     {
         Test::createTempDir();
-        $this->query = new Model_Query_GenericExtended(Test::getTempDir());
+        $this->query = new Model_Query_InternalExtended(Test::getTempDir());
         $this->setDatabase();
     }
 
@@ -126,18 +126,6 @@ class GenericTest extends PHPUnit_Framework_TestCase
             ),
             $this->query->goToPage('9'),
              'trying to go to beyond last page, getting to last page instead');
-
-        /**********/
-
-        $this->query->extraColumns = ', extra';
-
-        $this->assertSame(
-            array(
-                array('ascii' => 'ABC', 'image' => '1', 'original' => 'abc', 'extra' => '1'),
-                array('ascii' => 'ADE', 'image' => '2', 'original' => 'ade', 'extra' => '2'),
-            ),
-            $this->query->goToFirstPage(),
-             'going to first page with extra column');
     }
 
     /**
@@ -264,6 +252,6 @@ class GenericTest extends PHPUnit_Framework_TestCase
     }
 }
 
-class Model_Query_GenericExtended extends Model_Query_Generic
+class Model_Query_InternalExtended extends Model_Query_Internal
 {
 }

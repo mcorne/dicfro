@@ -28,6 +28,18 @@
 
 abstract class Model_Search
 {
+    /**
+     * Name of the dictionary
+     * @var string
+     */
+    public $dictionary;
+
+    /**
+     * Query object
+     * @var object
+     */
+    public $query;
+
     public function __construct($directory, $properties = array(), $query = array())
     {
         foreach($properties as $property => $value) {

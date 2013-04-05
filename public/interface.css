@@ -275,6 +275,11 @@ a.external
     color: black;
 }
 
+a.index
+{
+    color: blue;
+}
+
 a.internal
 {
     color: green;

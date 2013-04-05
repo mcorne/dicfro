@@ -27,8 +27,15 @@ if (isset($dictionaryConfig['query']['class'])) {
 
     if (! file_exists($file)) {
         // there is no specific class for this dictionary
-        $class = 'Model_Query_Generic';
         $directory .= '/' . $dictionary;
+
+        if ($dictionaryConfig['type'] == 'internal') {
+            $class = 'Model_Query_Internal';
+        } else if ($dictionaryConfig['type'] == 'index') {
+            $class = 'Model_Query_Index';
+        } else {
+            die('missing query class');
+        }
     }
 }
 

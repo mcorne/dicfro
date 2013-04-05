@@ -54,7 +54,7 @@ class Model_Query_Whitaker extends Model_Query
         $query .= "WHERE latin = :latin AND entry.line = word.line ";
         $query .= "ORDER BY frequency, info";
 
-        $result = $this->execute($query, array(':latin' => $latin), PDO::FETCH_COLUMN | PDO::FETCH_UNIQUE);
+        $result = $this->fetchAll($query, array(':latin' => $latin), PDO::FETCH_COLUMN | PDO::FETCH_UNIQUE);
 
         return array_keys($result);
     }
