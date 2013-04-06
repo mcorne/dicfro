@@ -23,7 +23,7 @@ require_once 'Model/Search.php';
  * @package    Model
  * @subpackage Search
  * @author     Michel Corne <mcorne@yahoo.com>
- * @copyright  2008-2010 Michel Corne
+ * @copyright  2008-2013 Michel Corne
  * @license    http://opensource.org/licenses/gpl-3.0.html GNU GPL v3
  */
 
@@ -40,6 +40,28 @@ class Model_Search_Index extends Model_Search
 
     public function __call($name, $arguments)
     {
-        return call_user_func_array(array($this->query, $name), $arguments);
+        if (! method_exists($this->query, $name)) {
+            throw new Exception('invalid method');
+        }
+
+        $result = call_user_func_array(array($this->query, $name), $arguments);
+
+        $data =  array(
+            'externalDict' => $this->url . $result['image'],
+            'page'         => $result['page'],
+            'volume'       => $result['volume'],
+        );
+
+        if (empty($this->entries)) {
+            $data['firstWord'] = $result['original'];
+        } else {
+            $data['entries'] = array(
+                'current'  => $result,
+                'previous' => $this->query->searchPreviousEntries($result['volume'], $result['page']),
+                'next'     => $this->query->searchNextEntries($result['volume'], $result['page']),
+            );
+        }
+
+        return $data;
     }
 }

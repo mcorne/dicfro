@@ -1,11 +1,13 @@
 Things to do
 ------------
 
-
 - finish unit tests
-- remove no dictionary change feature
 - go back to previous dictionary instead of default dictionary from options page, about page etc..., 
   and fix searched word that is set to "dictionnaire-godefroy"
+
+- process volumes for indexed dictionary query
+- move volume to search properties
+- optimize/remove parser classes with the use of config properties
 
 - Ajouter les pages notables du Lexique Roman.
 - Vérifier l'existence des pages lors de la création des dictionnaires.
@@ -17,5 +19,5 @@ Things to do
 - add panoccitan.org, http://www.etymologie-occitane.fr, deaf-page.de, http://www.atilf.fr/dect/ ...
 - add lacurne supplement, curiosités etc...
 - scan/add tilander
-- fix/add littre
+- add littre
 - index some galica/archive dictionaries

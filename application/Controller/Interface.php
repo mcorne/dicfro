@@ -8,7 +8,7 @@
  * @category  DicFro
  * @package   Controller
  * @author    Michel Corne <mcorne@yahoo.com>
- * @copyright 2008-2012 Michel Corne
+ * @copyright 2008-2013 Michel Corne
  * @license   http://opensource.org/licenses/gpl-3.0.html GNU GPL v3
  */
 
@@ -23,7 +23,7 @@ require_once 'Controller/Front.php';
  * @category  DicFro
  * @package   Controller
  * @author    Michel Corne <mcorne@yahoo.com>
- * @copyright 2008-2012 Michel Corne
+ * @copyright 2008-2013 Michel Corne
  * @license   http://opensource.org/licenses/gpl-3.0.html GNU GPL v3
  */
 
@@ -106,20 +106,6 @@ class Controller_Interface
     }
 
     /**
-     * Complete an action method name
-     *
-     * Note: the name of this method must not finish with "Action"
-     * so it is not mistaken with a proper action
-     *
-     * @param  string $action the name of the action
-     * @return string the method name
-     */
-    public function completeActions($action)
-    {
-        return $action . 'Action';
-    }
-
-    /**
      * Creates the a dictionary search object
      *
      * @return object the dictionary search object
@@ -128,32 +114,14 @@ class Controller_Interface
     {
         if (isset($this->dictionary['search']['class'])) {
             $class = $this->dictionary['search']['class'];
-
-        } else if ($this->dictionary['type'] == 'internal') {
-            $class = 'Model_Search_Internal';
-
-        } else if ($this->dictionary['type'] == 'index') {
-            $class = 'Model_Search_Index';
-        }
-
-        if (isset($this->dictionary['search']['properties'])) {
-            $properties = $this->dictionary['search']['properties'];
-
         } else {
-            $properties = array();
+            $class = 'Model_Search_' . ucfirst($this->dictionary['type']);
         }
 
         $file = str_replace('_', '/', $class) . '.php';
         require_once $file;
 
-        if (isset($this->dictionary['query'])) {
-            $query = $this->dictionary['query'];
-
-        } else {
-            $query = array();
-        }
-
-        return new $class($this->front->config['data-dir'], $properties, $query);
+        return new $class($this->front->config['data-dir'], $this->dictionary['search']['properties'], $this->dictionary['query']);
     }
 
     /**
@@ -218,21 +186,23 @@ class Controller_Interface
         } else {
             $action = 'search';
         }
-
         $this->view->dictionaryLink = $this->setActionLink($action, '%s', $this->view->word);
 
-        $this->view->previousPageLink = $this->setActionLink('previous', $this->dictionary['url'],
-            $this->view->page, $this->view->volume, $this->view->word);
-        $this->view->nextPageLink = $this->setActionLink('next', $this->dictionary['url'],
-            $this->view->page, $this->view->volume, $this->view->word);
+        if (isset($this->view->page)) {
+            $this->view->previousPageLink = $this->setActionLink('previous', $this->dictionary['url'],
+                $this->view->page, $this->view->volume, $this->view->word);
+            $this->view->nextPageLink = $this->setActionLink('next', $this->dictionary['url'],
+                $this->view->page, $this->view->volume, $this->view->word);
 
-        if (empty($this->dictionary['is-volumes'])) {
-            $needVolume = '';
-        } else {
-            $needVolume = '%s';
+            if (empty($this->dictionary['volume'])) {
+                $needVolume = '';
+            } else {
+                $needVolume = '%s';
+            }
+
+            // go to page link template used by js
+            $this->view->goPageLink = $this->setActionLink('page', $this->dictionary['url'], '%s', $needVolume, $this->view->word);
         }
-
-        $this->view->goPageLink = $this->setActionLink('page', $this->dictionary['url'], '%s', $needVolume, $this->view->word);
 
         $this->view->autoSearch = !empty($_COOKIE['auto-search']);
         $this->view->newTab = !empty($_COOKIE['new-tab']);
@@ -286,10 +256,14 @@ class Controller_Interface
      */
     public function introductionAction()
     {
-        if ($this->dictionary['type'] == 'internal') {
-            $this->view->introduction = 'introduction/' . $this->dictionary['introduction'];
-        } else {
+        if (! isset($this->dictionary['introduction'])) {
+            $this->homeAction();
+
+        } else if (strpos($this->dictionary['introduction'], 'http') !== false) {
             $this->view->externalDict = $this->dictionary['introduction'];
+
+        } else {
+            $this->view->introduction = 'introduction/' . $this->dictionary['introduction'];
         }
     }
 
@@ -305,7 +279,6 @@ class Controller_Interface
         $this->setWord();
         $this->setPage();
         $this->setVolume();
-        $this->setNoDictChange();
     }
 
     public function isIE()
@@ -340,10 +313,10 @@ class Controller_Interface
      */
     public function pageAction($action = 'goToPage')
     {
-        if ($this->dictionary['type'] == 'internal') {
+        if ($this->dictionary['type'] != 'external') {
             $search = $this->createSearchObject();
             $result = $search->$action($this->view->volume, $this->view->page);
-            $this->setViewElements($result);
+            $this->view->assign($result);
         }
     }
 
@@ -377,75 +350,9 @@ class Controller_Interface
      */
     public function searchAction()
     {
-        if ($this->dictionary['type'] == 'index') { // TODO: quick fix
-            $word = $this->view->word;
-            $search = $this->createSearchObject();
-            $found = $search->searchWord($word);
-            $this->view->externalDict = $this->dictionary['search-url'] . $found['image'];
-
-        } else if ($this->dictionary['type'] == 'internal') {
-            $this->searchInternalDict();
-
-        } else {
-            $this->searchExternalDict();
-        }
-    }
-
-    /**
-     * Searches an external dictionary
-     *
-     * @return void
-     * @TODO use dedicated search classes for each dictionary instead of switch()
-     */
-    public function searchExternalDict()
-    {
-        $word = $this->view->word;
-
-        switch($this->dictionary['id']) {
-            case 'jeanneau':
-                $search = $this->createSearchObject();
-                $this->view->externalDict = $search->searchWord($word);
-                break;
-
-            case 'leconjugueur':
-            case 'littre':
-            case 'whitaker':
-                $string = new Base_String;
-                $word = $string->utf8toASCII($word);
-                $this->view->externalDict = $this->dictionary['search'] . $word;
-                break;
-
-            case 'cotgrave':
-                $string = new Base_String;
-                $word = $string->utf8toASCII($word);
-
-                if ($word <= 'ABBAISSEUR') {
-                    $word = 'ABB';
-                }
-
-                $this->view->externalDict = $this->dictionary['search'] . $word;
-                break;
-
-            default:
-                $this->view->externalDict = $this->dictionary['search'] . $word;
-        }
-    }
-
-    /**
-     * Searches an internal dictionary
-     *
-     * @return void
-     */
-    public function searchInternalDict()
-    {
         $search = $this->createSearchObject();
         $result = $search->searchWord($this->view->word);
-
-        if ($this->dictionary['id'] == 'tcaf') {
-            list($this->view->tcaf, $this->view->composedVerbs) = $result;
-        } else {
-            $this->setViewElements($result);
-        }
+        $this->view->assign($result);
     }
 
     /**
@@ -461,10 +368,6 @@ class Controller_Interface
         $arguments[0] = $this->translateActions($arguments[0]);
 
         $link = implode('/', $arguments);
-
-        if ($this->view->noDictChange) {
-            $link .= '?no-dict-change=1';
-        }
 
         return $link;
     }
@@ -487,7 +390,7 @@ class Controller_Interface
             $action = 'home';
         }
 
-        return $this->front->action = $this->completeActions($action);
+        return $this->front->action = $action . 'Action';
     }
 
     /**
@@ -520,33 +423,27 @@ class Controller_Interface
         $url = array_shift($this->front->actionParams);
         $this->dictionary = $this->findDictionary($url);
 
-        if ($this->dictionary['type'] != 'external' and empty($this->dictionary['search']['properties']['dictionary'])) {
-            // defaults search properties
+        if (! isset($this->dictionary['query'])) {
+            $this->dictionary['query'] = array();
+        }
+
+        if (! isset($this->dictionary['search'])) {
+            $this->dictionary['search'] = array();
+        } else if (is_string($this->dictionary['search'])) {
+            $this->dictionary['search'] = array('properties' => array('url' => $this->dictionary['search']));
+        }
+
+        if (! isset($this->dictionary['search']['properties']['dictionary'])) {
             $this->dictionary['search']['properties']['dictionary'] = $this->dictionary['id'];
         }
 
-        if (empty($this->dictionary['introduction'])) {
-            // defaults introduction
+        if ($this->dictionary['type'] == 'internal' and empty($this->dictionary['introduction'])) {
             $this->dictionary['introduction'] = "{$this->dictionary['id']}.phtml";
         }
 
         if (empty($this->dictionary['url'])) {
-            // defaults url
             $this->dictionary['url'] = $this->dictionary['id'];
         }
-    }
-
-    /**
-     * Freezes the dictionary if requested
-     *
-     * For example, when DicFro is called from MultiDic, the select box to change
-     * dictionaries is disabled
-     *
-     * @return void
-     */
-    public function setNoDictChange()
-    {
-        $this->view->noDictChange = !empty($this->front->params['no-dict-change']);
     }
 
     /**
@@ -562,32 +459,6 @@ class Controller_Interface
                 unset($this->front->actionParams[$idx]);
                 break;
             }
-        }
-    }
-
-    /**
-     * Sets view elements
-     *
-     * @param  array $elements the elements coming from a model
-     * @return void
-     */
-    public function setViewElements($elements)
-    {
-        list($content,
-            $this->view->errataImages,
-            $this->view->errataText,
-            $this->view->ghostwords,
-            $this->view->identifiedWords,
-            $this->view->identifiedVerbs,
-            $this->view->identifiedLatinWords,
-            $this->view->volume,
-            $this->view->page,
-            $this->view->firstWord) = $elements;
-
-        if ($this->dictionary['id'] == 'lexromv') {
-            $this->view->vocabulary = $content;
-        } else {
-            $this->view->definition = $content;
         }
     }
 

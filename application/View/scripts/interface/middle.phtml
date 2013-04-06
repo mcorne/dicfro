@@ -95,32 +95,28 @@
 
 </div>
 
-<div id="ghostwords" style="display:none;">
-
-  <?php if($this->ghostwords):?>
+<?php if($this->ghostwords):?>
+  <div id="ghostwords" style="display:none;">
     <iframe class="notice" id="ghostword-notice" name="ghostword-notice"></iframe>
 
     <form method="post" target="ghostword-notice" id="ghostword-form" action="http://atilf.atilf.fr/gsouvay/scripts/fantomes.exe?LETTRES_ENTREES;;ISIS=isis_fantomes.txt;MENU=menu_base;OUVRIR_MENU=2;&ISIS_ACTION_ACTION1=Afficher%20l'article%20complet&ISIS_SELECT=AASAER" >
       <input type="hidden" name="ISIS_SELECT" id="ISIS_SELECT"/>
       <input type="hidden" name="ISIS_ACTION_ACTION1" value="Afficher+l%27article+complet"/>
     </form>
-
-  <?php endif;?>
-
-</div>
-
-<div id="lexromd" style="display:none;">
-
-  <?php if($this->dictionary['id'] == 'lexromv'):?>
-    <img class="lexroms" id="lexromd-img" />
-  <?php endif;?>
-
-</div>
-
-<div id="lexromd-help" style="display:none;">
-  <div class="page">
-    <?php $this->dictionary['id'] == 'lexromv' and require "{$this->viewsDir}/help/lexrom.phtml";?>
   </div>
-</div>
+<?php endif;?>
+
+<?php if($this->dictionary['id'] == 'lexromv'):?>
+  <div id="lexromd" style="display:none;">
+    <img class="lexroms" id="lexromd-img" />
+
+  </div>
+
+  <div id="lexromd-help" style="display:none;">
+    <div class="page">
+      <?php require "{$this->viewsDir}/help/lexrom.phtml";?>
+    </div>
+  </div>
+<?php endif;?>
 
 </div>

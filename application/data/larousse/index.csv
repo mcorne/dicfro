@@ -87,10 +87,10 @@ page	entries	image	path	volume
 88		93	bpt6k1200512k	1
 89		94	bpt6k1200512k	1
 90		95	bpt6k1200512k	1
-91	achondroplasie; acide[s]; acide[s]-alcool[s]	96	bpt6k1200512k	1
-92	acide[s]-aminé[s]	97	bpt6k1200512k	1
-93	acide[s] carboxylique[s]; acide[s] cétonique[s]	98	bpt6k1200512k	1
-94	acide[s]-phénol[s]	99	bpt6k1200512k	1
+91	achondroplasie; acide[s]; acides-alcools	96	bpt6k1200512k	1
+92	acides-aminés	97	bpt6k1200512k	1
+93	acides carboxyliques; acides cétoniques	98	bpt6k1200512k	1
+94	acides-phénols	99	bpt6k1200512k	1
 95	acidité; acido-basique (équilibre); acier	100	bpt6k1200512k	1
 96		101	bpt6k1200512k	1
 97		102	bpt6k1200512k	1
@@ -301,7 +301,7 @@ page	entries	image	path	volume
 302		307	bpt6k1200512k	1
 303		308	bpt6k1200512k	1
 304	Alcuin; Alcyne[s]	309	bpt6k1200512k	1
-305	aldéhyde[s]; aldéhyde[s]-phénol[s]	310	bpt6k1200512k	1
+305	aldéhyde[s]; aldéhydes-phénols	310	bpt6k1200512k	1
 306	aléatoire (musique); aléatoire (variable)	311	bpt6k1200512k	1
 307		312	bpt6k1200512k	1
 308	Aleijadinho (Antonio Francisco Lisboa, dit l'); Alemán (Mateo); Alembert (Jean le Rond d')	313	bpt6k1200512k	1

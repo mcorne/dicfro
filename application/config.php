@@ -70,7 +70,12 @@ return array(
             'introduction' => 'http://www.pbm.com/~lindahl/cotgrave/',
             'language'     => 'fr',
             'name'         => 'Cotgrave',
-            'search'       => 'http://www.pbm.com/~lindahl/cotgrave/search/search_backend.cgi?query=',
+            'search'       => array(
+                'class' => 'Model_Search_Cotgrave',
+                'properties' => array(
+                    'url' => 'http://www.pbm.com/~lindahl/cotgrave/search/search_backend.cgi?query=',
+                ),
+            ),
             'type'         => 'external',
         ),
 
@@ -135,7 +140,6 @@ return array(
         'gdf' => array(
             'description' => "Dictionnaire de l'ancienne langue française et de tous ses dialectes du IXème au XVème siècle, Frédéric Godefroy, 1880-1895",
             'file'        => 'dictionnaire-godefroy.jpg',
-            'is-volumes'  => true,
             'language'    => 'fr',
             'name'        => 'Godefroy - Dictionnaire',
             'search'      => array(
@@ -151,12 +155,12 @@ return array(
             'title'       => 'D. Godefroy',
             'type'        => 'internal',
             'url'         => 'dictionnaire-godefroy',
+            'volume'      => 'input',
         ),
 
         'gdfc' => array(
             'description' => "Complément du dictionnaire de l'ancienne langue française et de tous ses dialectes du IXème au XVème siècle, Frédéric Godefroy, 1895-1902",
             'file'        => 'complement-godefroy.jpg',
-            'is-volumes'  => true,
             'language'    => 'fr',
             'name'        => 'Godefroy - Complément',
             'search'      => array(
@@ -173,6 +177,7 @@ return array(
             'title'       => 'C. Godefroy',
             'type'        => 'internal',
             'url'         => 'complement-godefroy',
+            'volume'      => 'input',
         ),
 
         'gdflex' => array(
@@ -200,6 +205,9 @@ return array(
             'name'         => 'Jeanneau',
             'search'       => array(
                 'class' => 'Model_Search_Jeanneau',
+                'properties' => array(
+                    'url' => 'http://www.prima-elementa.fr/',
+                ),
             ),
             'type'         => 'external',
         ),
@@ -207,7 +215,6 @@ return array(
         'lacurne' => array(
             'description' => "Dictionnaire historique de l'ancien langage françois ou Glossaire de la langue françoise, J.B. de la Curne de Sainte-Palaye, 1875-1882",
             'file'        => 'dictionnaire-lacurne.jpg',
-            'is-volumes'  => true,
             'language'    => 'fr',
             'name'        => 'Lacurne - Dictionnaire',
             'search'      => array(
@@ -219,6 +226,7 @@ return array(
             'title'       => 'D. Lacurne',
             'type'        => 'internal',
             'url'         => 'dictionnaire-lacurne',
+            'volume'      => 'input',
         ),
 
         'larousse' => array(
@@ -226,10 +234,16 @@ return array(
             'introduction' => 'http://gallica.bnf.fr/ark:/12148/bpt6k1200512k/f1.image',
             'language'     => 'fr',
             'name'         => 'Encyclopédie Larousse (Aa-Am)',
+            'search'      => array(
+                'properties' => array(
+                    'entries' => true,
+                    'url'     => 'http://gallica.bnf.fr/ark:/12148/',
+                )
+            ),
             'title'        => 'E. Larousse',
             'type'         => 'index',
-            'search-url'   => 'http://gallica.bnf.fr/ark:/12148/', // TODO: quick fix
-            'url'          => '',  // TODO: quick fix
+            'url'         => 'encyclopedie-larousse',
+            'volume'       => 'readonly',
         ),
 
         'leconjugueur' => array(
@@ -237,7 +251,12 @@ return array(
             'introduction' => 'http://www.leconjugueur.com/',
             'language'     => 'fr',
             'name'         => 'Le conjugueur',
-            'search'       => 'http://www.leconjugueur.com/php5/index.php?v=',
+            'search'       => array(
+                'properties' => array(
+                    'convert' => 'utf8toASCII',
+                    'url'     => 'http://www.leconjugueur.com/php5/index.php?v=',
+                ),
+            ),
             'type'         => 'external',
         ),
 
@@ -247,8 +266,11 @@ return array(
             'introduction' => 'roman.phtml',
             'language'     => 'fr',
             'name'         => 'Lexique Roman',
+            'search'      => array(
+                'class' => 'Model_Search_Lexromv',
+            ),
             'title'        => 'L. Roman',
-            'type'        => 'internal',
+            'type'         => 'internal',
             'url'          => 'lexique-roman',
         ),
 
@@ -257,7 +279,7 @@ return array(
             'introduction' => 'http://francois.gannaz.free.fr/Littre/',
             'language'     => 'fr',
             'name'         => 'Littré',
-            'search'       => 'http://francois.gannaz.free.fr/Littre/xmlittre.php?requete=',
+            'search'       => 'http://littre.reverso.net/dictionnaire-francais/definition/',
             'type'         => 'external',
         ),
 
@@ -422,7 +444,12 @@ return array(
             'introduction' => 'http://lysy2.archives.nd.edu/cgi-bin/words.exe',
             'language'     => 'la',
             'name'         => 'Whitaker',
-            'search'       => 'http://lysy2.archives.nd.edu/cgi-bin/words.exe?',
+            'search'       => array(
+                'properties' => array(
+                    'convert' => 'utf8toASCII',
+                    'url'     => 'http://lysy2.archives.nd.edu/cgi-bin/words.exe?',
+                ),
+            ),
             'type'         => 'external',
         ),
 

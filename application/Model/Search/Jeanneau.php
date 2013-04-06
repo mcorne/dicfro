@@ -9,12 +9,12 @@
  * @package    Model
  * @subpackage Search
  * @author     Michel Corne <mcorne@yahoo.com>
- * @copyright  2008-2010 Michel Corne
+ * @copyright  2008-2013 Michel Corne
  * @license    http://opensource.org/licenses/gpl-3.0.html GNU GPL v3
  */
 
 require_once 'Base/String.php';
-require_once 'Model/Search.php';
+require_once 'Model/Search/External.php';
 
 /**
  * Search the Jeanneau dictionary
@@ -23,17 +23,17 @@ require_once 'Model/Search.php';
  * @package    Model
  * @subpackage Search
  * @author     Michel Corne <mcorne@yahoo.com>
- * @copyright  2008-2010 Michel Corne
+ * @copyright  2008-2013 Michel Corne
  * @license    http://opensource.org/licenses/gpl-3.0.html GNU GPL v3
  */
 
-class Model_Search_Jeanneau extends Model_Search
+class Model_Search_Jeanneau extends Model_Search_External
 {
     /**
      * Template of a page URL
      */
-    const URL_MULTI_PAGE = 'http://www.prima-elementa.fr/Dico-%s%02s.html#%s';
-    const URL_SINGLE_PAGE = 'http://www.prima-elementa.fr/Dico-%s.htm#%s';
+    const URL_MULTI_PAGE = 'Dico-%s%02s.html#%s';
+    const URL_SINGLE_PAGE = 'Dico-%s.htm#%s';
 
     /**
      * Mapping of the first letters of the top word of the pages
@@ -110,7 +110,6 @@ class Model_Search_Jeanneau extends Model_Search
             $location = sprintf(self::URL_MULTI_PAGE, 'a', 1, '');
         }
 
-        return $location;
+        return parent::searchWord($location);
     }
 }
-

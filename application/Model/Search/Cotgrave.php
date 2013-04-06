@@ -13,10 +13,11 @@
  * @license    http://opensource.org/licenses/gpl-3.0.html GNU GPL v3
  */
 
-require_once 'Model/Query/Tcaf.php';
+require_once 'Base/String.php';
+require_once 'Model/Search/External.php';
 
 /**
- * Search the Conjugation tables dictionary
+ * Search the Cotgrave dictionary
  *
  * @category   DicFro
  * @package    Model
@@ -26,19 +27,8 @@ require_once 'Model/Query/Tcaf.php';
  * @license    http://opensource.org/licenses/gpl-3.0.html GNU GPL v3
  */
 
-class Model_Search_Tcaf
+class Model_Search_Cotgrave extends Model_Search_External
 {
-    /**
-     * Construtor
-     *
-     * @param  string $directory  the dictionaries directory
-     * @return void
-     */
-    public function __construct($directory)
-    {
-        $this->query = new Model_Query_Tcaf($directory);
-    }
-
     /**
      * Searches a word in the dictionary
      *
@@ -47,13 +37,13 @@ class Model_Search_Tcaf
      */
     public function searchWord($word)
     {
-        if (! $conjugation = $this->query->searchVerbConjugation($word)) {
-            $conjugation = $this->query->searchModelConjugation($word);
+        $string = new Base_String;
+        $word = $string->utf8toASCII($word);
+
+        if ($word <= 'ABBAISSEUR') {
+            $word = 'ABB';
         }
 
-        return array(
-            'tcaf'          => $conjugation,
-            'composedVerbs' => $this->query->searchComposedVerbs($word),
-        );
+        return parent::searchWord($word);
     }
 }

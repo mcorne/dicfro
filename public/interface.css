@@ -208,6 +208,12 @@ select.dict
     margin-right: .5em;
 }
 
+select.entries
+{
+    vertical-align: middle;
+    width: 11em;
+}
+
 select.identified, select.dict, select.ghostwords-tab, select.tome
 {
     display: inline;
@@ -215,7 +221,7 @@ select.identified, select.dict, select.ghostwords-tab, select.tome
     vertical-align: middle;
 }
 
-select.identified:hover, select.dict:hover, select.ghostwords-tab:hover, select.tome:hover
+select.dict:hover, select.entries:hover, select.ghostwords-tab:hover, select.identified:hover, select.tome:hover
 {
     border-color: darkorange;
 }

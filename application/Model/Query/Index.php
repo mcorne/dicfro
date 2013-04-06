@@ -26,6 +26,8 @@ require_once 'Model/Query.php';
  * @license    http://opensource.org/licenses/gpl-3.0.html GNU GPL v3
  */
 
+ // TODO: process volume for all, to use optionally depending if absolute page numbering (readonly volume)
+
 class Model_Query_Index extends Model_Query
 {
     /**
@@ -52,9 +54,10 @@ class Model_Query_Index extends Model_Query
      * Goes to the next page or the last one if none
      *
      * @param  numeric $page the page from where to go next
+     * @param  numeric $page the page from where to go next
      * @return array
      */
-    public function goToNextPage($page)
+    public function goToNextPage($volume, $page)
     {
         $sql = "SELECT * FROM word WHERE page > :page LIMIT 1";
 
@@ -71,7 +74,7 @@ class Model_Query_Index extends Model_Query
      * @param  numeric $page the page to go to
      * @return array
      */
-    public function goToPage($page)
+    public function goToPage($volume, $page)
     {
         $sql = "SELECT * FROM word WHERE page >= :page LIMIT 1";
 
@@ -88,7 +91,7 @@ class Model_Query_Index extends Model_Query
      * @param  numeric $page the page from where to go
      * @return array
      */
-    public function goToPreviousPage($page)
+    public function goToPreviousPage($volume, $page)
     {
         $sql = "SELECT * FROM word WHERE page < :page ORDER BY page DESC LIMIT 1";
 
@@ -97,6 +100,34 @@ class Model_Query_Index extends Model_Query
         }
 
         return $result;
+    }
+
+    /**
+     * Searches words before a word
+     *
+     * @param  int $volume
+     * @param  int $page
+     * @return array
+     */
+    public function searchPreviousEntries($volume, $page)
+    {
+        $sql = "SELECT * FROM word WHERE page < :page AND original != '' ORDER BY page DESC LIMIT 7";
+
+        return array_reverse($this->fetchAll($sql, array(':page' => $page)));
+    }
+
+    /**
+     * Searches words after a word
+     *
+     * @param  int $volume
+     * @param  int $page
+     * @return array
+     */
+    public function searchNextEntries($volume, $page)
+    {
+        $sql = "SELECT * FROM word WHERE page > :page AND original != '' LIMIT 7";
+
+        return $this->fetchAll($sql, array(':page' => $page));
     }
 
     /**

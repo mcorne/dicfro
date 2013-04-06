@@ -256,7 +256,11 @@ class Model_Search_Internal extends Model_Search
     {
         $result = $this->query->searchWord($word);
 
-        return $this->updateResult($result, $word);
+        return $this->updateResult($result) + array(
+            'identifiedWords'      => $this->needTobler   ? $this->searchTobler($word)   : null,
+            'identifiedVerbs'      => $this->needTcaf     ? $this->searchTcaf($word)     : null,
+            'identifiedLatinWords' => $this->needWhitaker ? $this->searchWhitaker($word) : null,
+        );;
     }
 
     /**
@@ -289,13 +293,12 @@ class Model_Search_Internal extends Model_Search
     }
 
     /**
-     * Updates the result or the word search or page change
+     * Updates the result of a word search or page change
      *
      * @param  array  $result the result set
-     * @param  string $word   the word to search
      * @return array  the updated result set
      */
-    public function updateResult($result, $word = null)
+    public function updateResult($result)
     {
         @list($foundWord, $nextWord) = $result;
 
@@ -310,16 +313,13 @@ class Model_Search_Internal extends Model_Search
         }
 
         return array(
-            $this->setImagePath($foundWord),
-            $this->needErrataImages? $this->searchErrata($foundWord['image']) : null,
-            $this->needErrataText? $foundWord['errata'] : null,
-            $this->needGhostwords? $this->searchGhostwords($foundWord, $nextWord) : null,
-            ($word and $this->needTobler)? $this->searchTobler($word) : null,
-            ($word and $this->needTcaf)? $this->searchTcaf($word) : null,
-            ($word and $this->needWhitaker)? $this->searchWhitaker($word) : null,
-            $volume,
-            $page,
-            $foundWord['original'],
+            'definition'           => $this->setImagePath($foundWord),
+            'errataImages'         => $this->needErrataImages? $this->searchErrata($foundWord['image']) : null,
+            'errataText'           => $this->needErrataText? $foundWord['errata'] : null,
+            'ghostwords'           => $this->needGhostwords? $this->searchGhostwords($foundWord, $nextWord) : null,
+            'volume'               => $volume,
+            'page'                 => $page,
+            'firstWord'            => $foundWord['original'],
         );
     }
 }

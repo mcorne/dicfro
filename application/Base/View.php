@@ -8,11 +8,12 @@
  * @category  DicFro
  * @package   Base
  * @author    Michel Corne <mcorne@yahoo.com>
- * @copyright 2008-2012 Michel Corne
+ * @copyright 2008-2013 Michel Corne
  * @license   http://opensource.org/licenses/gpl-3.0.html GNU GPL v3
  */
 
 require_once 'View/Helper/Dictionaries.php';
+require_once 'View/Helper/Entries.php';
 require_once 'View/Helper/Images.php';
 require_once 'View/Helper/Verbs.php';
 require_once 'View/Helper/Words.php';
@@ -23,7 +24,7 @@ require_once 'View/Helper/Words.php';
  * @category  DicFro
  * @package   Base
  * @author    Michel Corne <mcorne@yahoo.com>
- * @copyright 2008-2012 Michel Corne
+ * @copyright 2008-2013 Michel Corne
  * @license   http://opensource.org/licenses/gpl-3.0.html GNU GPL v3
  */
 
@@ -99,6 +100,18 @@ class Base_View
     }
 
     /**
+     * Assigns data to view properties
+     *
+     * @param array $data
+     */
+    public function assign($data)
+    {
+        foreach ($data as $key => $val) {
+            $this->$key = $val;
+        }
+    }
+
+    /**
      * Sets resources used by the view
      *
      * @return void
@@ -108,9 +121,10 @@ class Base_View
         $this->viewsDir = $this->config['views-dir'];
 
         $this->dictionariesHelper = new View_Helper_Dictionaries($this);
-        $this->imagesHelper = new View_Helper_Images($this);
-        $this->verbsHelper = new View_Helper_Verbs($this);
-        $this->wordsHelper = new View_Helper_Words($this);
+        $this->entriesHelper      = new View_Helper_Entries($this);
+        $this->imagesHelper       = new View_Helper_Images($this);
+        $this->verbsHelper        = new View_Helper_Verbs($this);
+        $this->wordsHelper        = new View_Helper_Words($this);
 
         $this->setBaseUrl();
     }

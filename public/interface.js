@@ -7,7 +7,6 @@
 
 var
 domainSubpath,
-noBottom,
 prevDictionary;
 
 function autoSearchLastWord()
@@ -139,6 +138,18 @@ function getWindowHeight()
     }
 
     return height;
+}
+
+function goEntry(action)
+{
+    var 
+    entry = document.getElementById('entries'),
+    pageVolume = entry.value.split('/');
+    
+    action = action.replace('%s', pageVolume[0]);
+    action = action.replace('%s', pageVolume[1]);
+    
+    location.assign(action);
 }
 
 function goPage(action)
@@ -416,7 +427,7 @@ function setDictionaryHeight(id)
 {
     var
     height = getWindowHeight(),
-    bottomMargin = noBottom? 20 : 50,
+    bottomMargin = 50,
     middle;
 
     if (id ) {

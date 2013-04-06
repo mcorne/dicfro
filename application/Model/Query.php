@@ -91,7 +91,7 @@ abstract class Model_Query
         $result = $statement->fetch($fetchStyle);
 
         if (!isset($result)) {
-            throw new Exception('query-error');
+            throw new Exception('unexpected query error');
         }
 
         return $result;
@@ -114,7 +114,7 @@ abstract class Model_Query
         $result = $statement->fetchAll($fetchStyle);
 
         if (!isset($result)) {
-            throw new Exception('query-error');
+            throw new Exception('unexpected query error');
         }
 
         return $result;

@@ -43,7 +43,6 @@
 </span>
 
 <!-- dictionary select block -->
-<?php if(!$this->noDictChange):?>
 
 <span class="nowrap" >
 
@@ -53,12 +52,12 @@
     <?php foreach($this->dictionariesHelper->getGroups() as $optgroup) :?>
       <optgroup label="<?=$optgroup['label'];?>">
 
-        <?php foreach($optgroup['options'] as $options) :?>
+        <?php foreach($optgroup['options'] as $option) :?>
 
-          <option value="<?=$options['value'];?>"
-                  title="<?=$options['title'];?>"
-                  <?php if($options['selected']):?>selected="selected"<?php endif;?> >
-            <?=$options['text'];?>
+          <option value="<?=$option['value'];?>"
+                  title="<?=$option['title'];?>"
+                  <?php if($option['selected']):?>selected="selected"<?php endif;?> >
+            <?=$option['text'];?>
           </option>
 
         <?php endforeach;?>
@@ -69,11 +68,11 @@
   </select>
 
 </span>
-<?php endif;?>
 
 <!-- arrows-->
 
-<?php if(!$this->externalDict and $this->dictionary['id'] != 'tcaf'):?>
+<?php if(isset($this->page)):?>
+
 <span class="nowrap">
 
   <img class="button" src="<?=$this->setLinkUrl('img/go-previous.png');?>"
@@ -84,17 +83,28 @@
        onclick="location.assign('<?=$this->setActionUrl($this->nextPageLink);?>');" />
 
 </span>
-<?php endif;?>
-
-<!-- (bottom) links when running without allowing dictionary change -->
-<?php if($this->noDictChange): require "{$this->viewsDir}/interface/links.phtml"; endif;?>
 
 <!-- page and volume block -->
-<?php if(!$this->externalDict and $this->dictionary['id'] != 'tcaf'):?>
 <span class="page-volume">
-  <input class="first-word" type="text" disabled="disabled"
-        title="Premier mot de la page. Si ce mot n'est pas pas le premier mot de la page, veuillez nous contacter pour le corriger. Merci."
-        value="<?=$this->firstWord;?>" />
+
+  <?php if (isset($this->entries)):?>
+    <select class="entries" id="entries"
+            onchange="goEntry('<?=$this->setActionUrl($this->goPageLink);?>')">
+
+      <?php foreach($this->entriesHelper->getEntries() as $option) :?>
+        <option value="<?=$option['value'];?>"
+                <?php if($option['selected']):?>selected="selected"<?php endif;?> >
+           <?=$option['text'];?>
+        </option>
+      <?php endforeach;?>
+
+    </select>
+
+  <?php else:?>
+    <input class="first-word" type="text" disabled="disabled"
+           title="Premier mot de la page. Si ce mot n'est pas pas le premier mot de la page, veuillez nous contacter pour le corriger. Merci."
+           value="<?=$this->firstWord;?>" />
+  <?php endif;?>
 
   <span class="page">Page</span>
   <input class="page" type="text" id="page"
@@ -102,10 +112,14 @@
          value="<?=$this->page;?>"
          onkeypress="isEnterKey(event) && goPage('<?=$this->setActionUrl($this->goPageLink);?>');" />
 
-  <?php if(! empty($this->dictionary['is-volumes'])):?>
+  <?php if(! empty($this->dictionary['volume'])):?>
     <span class="volume">Volume</span>
     <input class="volume" type="text" id="volume"
-           title="Entrer le numéro de volume, puis appuyer sur la touche ENTRÉE, ou cliquer sur le bouton Afficher"
+           <?php if ($this->dictionary['volume'] == 'readonly'):?>
+             disabled=disabled
+           <?php else:?>
+             title="Entrer le numéro de volume, puis appuyer sur la touche ENTRÉE, ou cliquer sur le bouton Afficher"
+           <?php endif;?>
            value="<?=$this->volume;?>"
            onkeypress="isEnterKey(event) && goPage('<?=$this->setActionUrl($this->goPageLink);?>');" />
   <?php endif;?>
@@ -114,6 +128,7 @@
          value="Afficher" />
 
 </span>
+
 <?php endif;?>
 
 </div>

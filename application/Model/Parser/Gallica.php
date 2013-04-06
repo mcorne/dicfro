@@ -43,7 +43,7 @@ abstract class Model_Parser_Gallica extends Model_Parser
         $line = trim($line);
         $cells = explode("\t", $line);
         $cells = array_map('trim', $cells);
-        @list($page, $entries, $imageNumber, $path, $volume, $debug) = $cells; // TODO: remove debug
+        @list($page, $entries, $imageNumber, $path, $volume) = $cells;
 
         $entries = explode(';', $entries);
         $entries = array_map('trim', $entries);
@@ -71,7 +71,7 @@ abstract class Model_Parser_Gallica extends Model_Parser
                 'ascii'    => $word,
                 'image'    => sprintf('%s/f%s.image', $path, $imageNumber),
                 'line'     => $lineNumber,
-                'original' => str_replace(array('(', '[', ']'), '', $entry),
+                'original' => str_replace(array('[', ']'), '', $entry),
                 'page'     => $page,
                 'previous' => $prevWord,
                 'volume'   => $volume,
