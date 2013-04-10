@@ -29,29 +29,32 @@ require_once 'Base/String.php';
 abstract class Model_Parser
 {
 
-    public $batchFiles = 'word.sql';
-    public $batchFileTemp = 'temp.sql';
+    public $batchFiles        = 'word.sql';
+    public $batchFileTemp     = 'temp.sql';
     public $batchFileTemplate = 'word.sql';
-    public $config;
-    public $dataBase = 'dictionary.sqlite';
-    public $dataFiles = 'word.txt';
+    public $dataBase          = 'dictionary.sqlite';
+    public $dataFiles         = 'word.txt';
     public $dictionary;
+    public $dictionaryConfig;
+    public $directory;
     public $error;
-    public $errorFile = 'error.txt';
-    public $sourceFile;
+    public $errorFile         = 'error.txt';
+    public $sourceFile        = 'index.txt';
+    public $search;
     public $string;
     public $verbose;
 
-    public function __construct($config, $verbose = false)
+    public function __construct($directory, $properties = array(), $dictionaryConfig = array(), $verbose = false)
     {
-        $this->config = $config;
-        $this->verbose = (bool)$verbose;
+        $this->directory        = $directory;
+        $this->dictionaryConfig = $dictionaryConfig;
+        $this->verbose          = (bool)$verbose;
 
-        if (! isset($config['dictionaries'][$this->dictionary])) {
-            throw new Exception('missing entry in configuration file');
+        foreach($properties as $property => $value) {
+            $this->$property = $value;
         }
 
-        $this->batchFileTemplate = $config['data-dir'] . '/' . $this->batchFileTemplate;
+        $this->batchFileTemplate = $directory . '/' . $this->batchFileTemplate;
         $this->batchFileTemp     = $this->addPathName($this->batchFileTemp);
         $this->dataBase          = $this->addPathName($this->dataBase);
         $this->errorFile         = $this->addPathName($this->errorFile);
@@ -80,7 +83,7 @@ abstract class Model_Parser
 
     public function addPathName($basename)
     {
-        return $this->config['data-dir'] . '/' . $this->dictionary . '/' . $basename;
+        return $this->directory . '/' . $this->dictionary . '/' . $basename;
     }
 
     public function create($lineStart = null, $lineCount = null)
@@ -107,6 +110,43 @@ abstract class Model_Parser
 
         if (! @file_put_contents($this->batchFileTemp, $content)) {
             $this->error("cannot write $this->batchFileTemp", true);
+        }
+    }
+
+    /**
+     * @see Controller_Interface::createSearchObject()
+     */
+    public function createSearchObject()
+    {
+        if (isset($this->dictionaryConfig['search']['class'])) {
+            $class = $this->dictionaryConfig['search']['class'];
+        } else {
+            $class = 'Model_Search_' . ucfirst($this->dictionaryConfig['type']);
+        }
+
+        $file = str_replace('_', '/', $class) . '.php';
+        require_once $file;
+
+        $this->search = new $class($this->directory, $this->dictionaryConfig['search']['properties'], $this->dictionaryConfig['query']);
+    }
+
+    /**
+     * @see Controller_Interface::setDictionary()
+     */
+    public function setDictionary()
+    {
+        if (! isset($this->dictionaryConfig['query'])) {
+            $this->dictionaryConfig['query'] = array();
+        }
+
+        if (! isset($this->dictionaryConfig['search'])) {
+            $this->dictionaryConfig['search'] = array();
+        } else if (is_string($this->dictionaryConfig['search'])) {
+            $this->dictionaryConfig['search'] = array('properties' => array('url' => $this->dictionaryConfig['search']));
+        }
+
+        if (! isset($this->dictionaryConfig['search']['properties']['dictionary'])) {
+            $this->dictionaryConfig['search']['properties']['dictionary'] = $this->dictionary;
         }
     }
 

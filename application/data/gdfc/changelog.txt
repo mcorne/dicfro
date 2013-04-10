@@ -50,4 +50,4 @@ version v4
 - ran "find-changes gdfc"
 - no change in Txt
 - all images have changed due to the addition of a footer: "image scannée par ...", assuming images have no other change
-- renamed txt
+- renamed txt to index.txt

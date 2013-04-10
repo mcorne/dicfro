@@ -33,3 +33,4 @@ version v1
 
 - initialized lacurne/changes/config.php
 - ran "init-changes lacurne" to create txt and img hashes
+- renamed txt to index.txt

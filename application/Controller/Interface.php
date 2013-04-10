@@ -109,6 +109,7 @@ class Controller_Interface
      * Creates the a dictionary search object
      *
      * @return object the dictionary search object
+     * @see Model_Parser::createSearchObject()
      */
     public function createSearchObject()
     {
@@ -417,11 +418,17 @@ class Controller_Interface
      * Validates and sets the dictionary
      *
      * @return void
+     * @see Model_Parser::setDictionary()
      */
     public function setDictionary()
     {
         $url = array_shift($this->front->actionParams);
         $this->dictionary = $this->findDictionary($url);
+
+        if (! isset($this->dictionary['type'])) {
+            // ghostwords for example is not meant to be called via HTTP
+            throw new Exception('invalid dictionary');
+        }
 
         if (! isset($this->dictionary['query'])) {
             $this->dictionary['query'] = array();

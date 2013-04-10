@@ -13,4 +13,4 @@ version v2
 - updated couronnement/changes/config.php
 - ran "find-changes couronnement"
 - found no change
-- renamed txt
+- renamed txt to index.txt

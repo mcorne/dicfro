@@ -9,7 +9,7 @@
  * @package    Model
  * @subpackage Parser
  * @author     Michel Corne <mcorne@yahoo.com>
- * @copyright  2008-2010 Michel Corne
+ * @copyright  2008-2013 Michel Corne
  * @license    http://opensource.org/licenses/gpl-3.0.html GNU GPL v3
  */
 
@@ -22,17 +22,15 @@ require_once 'Model/Parser/GdfLike.php';
  * @package    Model
  * @subpackage Parser
  * @author     Michel Corne <mcorne@yahoo.com>
- * @copyright  2008-2010 Michel Corne
+ * @copyright  2008-2013 Michel Corne
  * @license    http://opensource.org/licenses/gpl-3.0.html GNU GPL v3
  */
 
 class Model_Parser_Vandaele extends Model_Parser_GdfLike
 {
+    public $imageNumberTpl = '0000%s';
     public $lineTpl = '~^__BR__Image=><@_VanDaele(\d+)\.TIF_>VanDaele__BR____BR__(.+?) +\[~';
     public $ignoredLineTpl = '~^__BR__Image=><@_VanDaele(\d+)\.TIF_>VanDaele__BR__$~';
-
-    public $dictionary = 'vandaele';
-    public $sourceFile = 'Txt';
 
     public function extractWordAndImage($line, $lineNumber)
     {
@@ -43,11 +41,6 @@ class Model_Parser_Vandaele extends Model_Parser_GdfLike
         list(, $imageNumber, $word) = $matches;
 
         return array($word, $imageNumber);
-    }
-
-    public function fixImageNumber($imageNumber)
-    {
-        return "0000$imageNumber";
     }
 
     public function isLineIgnored($line)

@@ -9,7 +9,7 @@
  * @package    Model
  * @subpackage Parser
  * @author     Michel Corne <mcorne@yahoo.com>
- * @copyright  2008-2010 Michel Corne
+ * @copyright  2008-2013 Michel Corne
  * @license    http://opensource.org/licenses/gpl-3.0.html GNU GPL v3
  */
 
@@ -22,20 +22,21 @@ require_once 'Model/Parser.php';
  * @package    Model
  * @subpackage Parser
  * @author     Michel Corne <mcorne@yahoo.com>
- * @copyright  2008-2010 Michel Corne
+ * @copyright  2008-2013 Michel Corne
  * @license    http://opensource.org/licenses/gpl-3.0.html GNU GPL v3
  */
 
-abstract class Model_Parser_GdfLike extends Model_Parser
+class Model_Parser_GdfLike extends Model_Parser
 {
+    public $imageNumberTpl;
     public $lineTpl = '~^(.+?)(?:➣|\[|_]).+?<@_(\d+).tif_>.+$~';
 
-    public $search;
     public $separator = '|';
 
-    public function __construct($config, $verbose = false)
+    public function __construct($directory, $properties = array(), $dictionaryConfig = array(), $verbose = false)
     {
-        parent::__construct($config, $verbose);
+        parent::__construct($directory, $properties, $dictionaryConfig, $verbose);
+        $this->setDictionary();
         $this->createSearchObject();
     }
 
@@ -73,34 +74,6 @@ abstract class Model_Parser_GdfLike extends Model_Parser
         }
     }
 
-    public function createSearchObject()
-    {
-        $dictionaryConfig = $this->config['dictionaries'][$this->dictionary];
-
-        if (isset($dictionaryConfig['search']['class'])) {
-            $class = $dictionaryConfig['search']['class'];
-        } else {
-            $class = 'Model_Search_Internal';
-        }
-
-        if (isset($dictionaryConfig['search']['properties'])) {
-            $properties = $dictionaryConfig['search']['properties'];
-        } else {
-            $properties = array();
-        }
-
-        $file = str_replace('_', '/', $class) . '.php';
-        require_once $file;
-
-        if (isset($dictionaryConfig['query'])) {
-            $query = $dictionaryConfig['query'];
-        } else {
-            $query = array();
-        }
-
-        $this->search = new $class($this->config['data-dir'], $properties, $query);
-    }
-
     public function extractWordAndImage($line, $lineNumber)
     {
         if (! preg_match($this->lineTpl, $line, $matches)) {
@@ -114,6 +87,10 @@ abstract class Model_Parser_GdfLike extends Model_Parser
 
     public function fixImageNumber($imageNumber)
     {
+        if (isset($this->imageNumberTpl)) {
+            $imageNumber = sprintf($this->imageNumberTpl, $imageNumber);
+        }
+
         return $imageNumber;
     }
 

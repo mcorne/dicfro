@@ -12,4 +12,4 @@ version v2
 - updated chretien/changes/config.php
 - ran "find-changes chretien"
 - found no change
-- renamed txt
+- renamed txt to index.txt

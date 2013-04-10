@@ -45,6 +45,12 @@ return array(
             'file'        => 'dictionnaire-chretien-de-troyes.jpg',
             'language'    => 'fr',
             'name'        => 'Chrétien de Troyes',
+            'parser'      => array(
+                'class'      => 'Model_Parser_GaffiotLike',
+                'properties' => array(
+                    'lineTpl'    => '~^(.+?)__BR____BR__<@_(\d+).tif_>FoersterEdic__BR____BR__~',
+                )
+            ),
             'search'      => array(
                 'properties' => array(
                     'needTcaf'   => true,
@@ -84,6 +90,13 @@ return array(
             'file'        => 'glossaire-couronnement-de-louis.jpg',
             'language'    => 'fr',
             'name'        => 'Couronnement de Louis',
+            'parser'      => array(
+                'class'      => 'Model_Parser_GaffiotLike',
+                'properties' => array(
+                    'imageNumberTpl' => '0000%s',
+                    'lineTpl'        => '~^(.+?)__BR____BR__<@_tx(\d+).tif_>EGlos_CourLouisL1__BR____BR__~',
+                )
+            ),
             'search'      => array(
                 'properties' => array(
                     'needTcaf'   => true,
@@ -103,6 +116,24 @@ return array(
             'search'       => 'http://www.atilf.fr/dmf/definition/',
             'title'        => 'DMF',
             'type'         => 'external',
+        ),
+
+        'encyclopedie-larousse' => array(
+            'description'  => "La Grande encyclopédie Larousse, 1971-1976",
+            'introduction' => 'http://gallica.bnf.fr/ark:/12148/bpt6k1200512k/f1.image',
+            'language'     => 'fr',
+            'name'         => 'Encyclopédie Larousse (Aa-Am)',
+            'search'      => array(
+                'properties' => array(
+                    'entries' => true,
+                    'url'     => array(
+                        1 => 'http://gallica.bnf.fr/ark:/12148/bpt6k1200512k/f%u.highres',
+                    ),
+                )
+            ),
+            'title'        => 'E. Larousse',
+            'type'         => 'index',
+            'volume'       => 'readonly',
         ),
 
         'ducange' => array(
@@ -129,6 +160,13 @@ return array(
             'file'        => 'gaffiot.jpg',
             'language'    => 'la',
             'name'        => 'Gaffiot',
+            'parser'      => array(
+                'class'      => 'Model_Parser_GaffiotLike',
+                'properties' => array(
+                    'endWord' => '_abréviations',
+                    'lineTpl' => '~^(.+?)__BR____BR__<@_tx(\d+).tif_>GaffiotEdic__BR____BR__~',
+                )
+            ),
             'search'      => array(
                 'properties' => array(
                     'needWhitaker' => true,
@@ -142,6 +180,7 @@ return array(
             'file'        => 'dictionnaire-godefroy.jpg',
             'language'    => 'fr',
             'name'        => 'Godefroy - Dictionnaire',
+            'parser'      => 'Model_Parser_GdfLike',
             'search'      => array(
                 'properties' => array(
                     'errataFiles'      => 'dictionary/gdf/mPimg-3/%s-%s[a-z]*/*.gif',
@@ -163,6 +202,7 @@ return array(
             'file'        => 'complement-godefroy.jpg',
             'language'    => 'fr',
             'name'        => 'Godefroy - Complément',
+            'parser'      => 'Model_Parser_GdfLike',
             'search'      => array(
                 'properties' => array(
                     'digit'            => 1,
@@ -229,23 +269,6 @@ return array(
             'volume'      => 'input',
         ),
 
-        'larousse' => array(
-            'description'  => "La Grande encyclopédie Larousse, 1971-1976",
-            'introduction' => 'http://gallica.bnf.fr/ark:/12148/bpt6k1200512k/f1.image',
-            'language'     => 'fr',
-            'name'         => 'Encyclopédie Larousse (Aa-Am)',
-            'search'      => array(
-                'properties' => array(
-                    'entries' => true,
-                    'url'     => 'http://gallica.bnf.fr/ark:/12148/',
-                )
-            ),
-            'title'        => 'E. Larousse',
-            'type'         => 'index',
-            'url'         => 'encyclopedie-larousse',
-            'volume'       => 'readonly',
-        ),
-
         'leconjugueur' => array(
             'description'  => 'La conjugaison française par le Conjugueur',
             'introduction' => 'http://www.leconjugueur.com/',
@@ -283,11 +306,38 @@ return array(
             'type'         => 'external',
         ),
 
+        'petit-larousse' => array(
+            'description'  => "Petit Larousse illustré, nouveau dictionnaire encyclopédique (5e édition), publié sous la direction de Claude Augé, 1906",
+            'introduction' => 'http://archive.org/stream/PetitLarousse19061/larousse_petit_1906_a#page/n7/mode/2up',
+            'language'     => 'fr',
+            'name'         => 'Petit Larousse',
+            'search'       => array(
+                'properties' => array(
+                    'url'     => array(
+                        1 => 'http://ia700503.us.archive.org/BookReader/BookReaderImages.php?zip=/8/items/PetitLarousse19061/larousse_petit_1906_a_jp2.zip&file=larousse_petit_1906_a_jp2/larousse_petit_1906_a_0%03u.jp2&scale=3&rotate=0',
+                        2 => 'http://ia700507.us.archive.org/BookReader/BookReaderImages.php?zip=/6/items/PetitLarousse19062/larousse_petit_1906_b_jp2.zip&file=larousse_petit_1906_b_jp2/larousse_petit_1906_b_0%03u.jp2&scale=3&rotate=0',
+                        3 => 'http://ia600503.us.archive.org/BookReader/BookReaderImages.php?zip=/22/items/PetitLarousse19063/larousse_petit_1906_c_jp2.zip&file=larousse_petit_1906_c_jp2/larousse_petit_1906_c_0%03u.jp2&scale=3&rotate=0',
+                        4 => 'http://ia700507.us.archive.org/BookReader/BookReaderImages.php?zip=/5/items/PetitLarousse19064/larousse_petit_1906_d_jp2.zip&file=larousse_petit_1906_d_jp2/larousse_petit_1906_d_0%03u.jp2&scale=3&rotate=0',
+                    ),
+                )
+            ),
+            'title'        => 'P. Larousse',
+            'type'         => 'index',
+            'volume'       => 'readonly',
+        ),
+
         'renart-fhs' => array(
             'description' => 'Glossaire du Roman de Renart, N. Fukumoto, N. Harano et S. Suzuki, 1985',
             'file'        => 'glossaire-roman-de-renart-fhs.jpg',
             'language'    => 'fr',
             'name'        => 'Roman de Renart / FHS',
+            'parser'      => array(
+                'class'      => 'Model_Parser_GaffiotLike',
+                'properties' => array(
+                    'imageNumberTpl' => '0000%s',
+                    'lineTpl'        => '~^(.+?);(\d+)~',
+                )
+            ),
             'search'      => array(
                 'properties' => array(
                     'needTcaf'   => true,
@@ -304,6 +354,13 @@ return array(
             'file'        => 'glossaire-roman-de-renart-meon-vol1.jpg',
             'language'    => 'fr',
             'name'        => 'Roman de Renart / Méon v.1',
+            'parser'      => array(
+                'class'      => 'Model_Parser_GaffiotLike',
+                'properties' => array(
+                    'imageNumberTpl' => '0000%s',
+                    'lineTpl'        => '~^(.+?);(\d+)~',
+                )
+            ),
             'search'      => array(
                 'properties' => array(
                     'needTcaf'   => true,
@@ -320,6 +377,13 @@ return array(
             'file'        => 'glossaire-roman-de-renart-meon-vol2.jpg',
             'language'    => 'fr',
             'name'        => 'Roman de Renart / Méon v.2',
+            'parser'      => array(
+                'class'      => 'Model_Parser_GaffiotLike',
+                'properties' => array(
+                    'imageNumberTpl' => '0000%s',
+                    'lineTpl'        => '~^(.+?);(\d+)~',
+                )
+            ),
             'search'      => array(
                 'properties' => array(
                     'needTcaf'   => true,
@@ -336,6 +400,13 @@ return array(
             'file'        => 'glossaire-roman-de-renart-meon-vol3.jpg',
             'language'    => 'fr',
             'name'        => 'Roman de Renart / Méon v.3',
+            'parser'      => array(
+                'class'      => 'Model_Parser_GaffiotLike',
+                'properties' => array(
+                    'imageNumberTpl' => '0000%s',
+                    'lineTpl'        => '~^(.+?);(\d+)~',
+                )
+            ),
             'search'      => array(
                 'properties' => array(
                     'needTcaf'   => true,
@@ -352,6 +423,13 @@ return array(
             'file'        => 'glossaire-roman-de-renart-meon-vol4.jpg',
             'language'    => 'fr',
             'name'        => 'Roman de Renart / Méon v.4',
+            'parser'      => array(
+                'class'      => 'Model_Parser_GaffiotLike',
+                'properties' => array(
+                    'imageNumberTpl' => '0000%s',
+                    'lineTpl'        => '~^(.+?);(\d+)~',
+                )
+            ),
             'search'      => array(
                 'properties' => array(
                     'needTcaf'   => true,
@@ -368,6 +446,13 @@ return array(
             'file'        => 'glossaire-chanson-de-roland.jpg',
             'language'    => 'fr',
             'name'        => 'Chanson de Roland',
+            'parser'      => array(
+                'class'      => 'Model_Parser_GaffiotLike',
+                'properties' => array(
+                    'imageNumberTpl' => '0000%s',
+                    'lineTpl'        => '~^(.+?)__BR____BR__<@_tx(\d+).tif_>EGlos_RolB__BR____BR__~',
+                )
+            ),
             'search'      => array(
                 'properties' => array(
                     'needTcaf'   => true,
@@ -384,6 +469,13 @@ return array(
             'file'        => 'glossaire-roman-de-la-rose.jpg',
             'language'    => 'fr',
             'name'        => 'Roman de la Rose',
+            'parser'      => array(
+                'class'      => 'Model_Parser_GaffiotLike',
+                'properties' => array(
+                    'imageNumberTpl' => '0000%s',
+                    'lineTpl'        => '~^(.+?)__BR____BR__<@_hm(\d+).tif_>EGlos_RoseLLangl__BR____BR__~',
+                )
+            ),
             'search'      => array(
                 'properties' => array(
                     'needTcaf'   => true,
@@ -413,6 +505,13 @@ return array(
             'file'        => 'glossaire-roman-de-tristan.jpg',
             'language'    => 'fr',
             'name'        => 'Roman de Tristan',
+            'parser'      => array(
+                'class'      => 'Model_Parser_GaffiotLike',
+                'properties' => array(
+                    'endWord' => '_Glossaire',
+                    'lineTpl' => '~^(.+?)__BR____BR__<@_tx(\d+).tif_>EGlos_TristBerM1__BR____BR__~',
+                )
+            ),
             'search'      => array(
                 'properties' => array(
                     'needTcaf'   => true,
@@ -497,11 +596,12 @@ return array(
             'name' => 'Français',
             'dictionaries' => array(
                 'cnrtl',
-                'larousse',
+                'encyclopedie-larousse',
                 'leconjugueur',
                 'littre',
                 'dmf',
                 'dvlf',
+                'petit-larousse',
                 'wiktionnaire',
             ),
         ),

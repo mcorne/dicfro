@@ -9,7 +9,7 @@
  * @package    Model
  * @subpackage Parser
  * @author     Michel Corne <mcorne@yahoo.com>
- * @copyright  2008-2010 Michel Corne
+ * @copyright  2008-2013 Michel Corne
  * @license    http://opensource.org/licenses/gpl-3.0.html GNU GPL v3
  */
 
@@ -22,7 +22,7 @@ require_once 'Model/Parser.php';
  * @package    Model
  * @subpackage Parser
  * @author     Michel Corne <mcorne@yahoo.com>
- * @copyright  2008-2010 Michel Corne
+ * @copyright  2008-2013 Michel Corne
  * @license    http://opensource.org/licenses/gpl-3.0.html GNU GPL v3
  */
 
@@ -33,10 +33,8 @@ class Model_Parser_Tcaf extends Model_Parser
     const FORM_TPL = '~^(\d): (.+)$~';
     const VERB_SEPARATOR = ' *[,;] *';
 
-    public $dictionary = 'tcaf';
     public $batchFiles = array('entry.sql', 'word.sql');
     public $dataFiles = array('entry' => 'entry.txt', 'word' => 'word.txt');
-    public $sourceFile = 'Txt';
 
     public function checkVerbs($verbs, $lineNumber)
     {

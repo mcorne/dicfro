@@ -9,7 +9,7 @@
  * @package    Model
  * @subpackage Parser
  * @author     Michel Corne <mcorne@yahoo.com>
- * @copyright  2008-2010 Michel Corne
+ * @copyright  2008-2013 Michel Corne
  * @license    http://opensource.org/licenses/gpl-3.0.html GNU GPL v3
  */
 
@@ -22,22 +22,15 @@ require_once 'Model/Parser/GdfLike.php';
  * @package    Model
  * @subpackage Parser
  * @author     Michel Corne <mcorne@yahoo.com>
- * @copyright  2008-2010 Michel Corne
+ * @copyright  2008-2013 Michel Corne
  * @license    http://opensource.org/licenses/gpl-3.0.html GNU GPL v3
  */
 
 class Model_Parser_Gdflex extends Model_Parser_GdfLike
 {
+    public $imageNumberTpl = '0000%s';
     public $lineTpl = '~^(.+?)(?:➣|\[|_]).+?<@__(\d+).tif_>.+$~';
     public $separator = '~';
-
-    public $dictionary = 'gdflex';
-    public $sourceFile = 'Txt';
-
-    public function fixImageNumber($imageNumber)
-    {
-        return "0000$imageNumber";
-    }
 
     public function postParseLine($wordData, $line)
     {

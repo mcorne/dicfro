@@ -46,8 +46,14 @@ class Model_Search_Index extends Model_Search
 
         $result = call_user_func_array(array($this->query, $name), $arguments);
 
+        if (is_array($this->url)) {
+            $url = $this->url[$result['volume']];
+        } else {
+            $url = $this->url;
+        }
+
         $data =  array(
-            'externalDict' => $this->url . $result['image'],
+            'externalDict' => sprintf($url, $result['image']),
             'page'         => $result['page'],
             'volume'       => $result['volume'],
         );

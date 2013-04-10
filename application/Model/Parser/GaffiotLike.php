@@ -8,7 +8,7 @@
  * @package    Model
  * @subpackage Parser
  * @author     Michel Corne <mcorne@yahoo.com>
- * @copyright  2008-2010 Michel Corne
+ * @copyright  2008-2013 Michel Corne
  * @license    http://opensource.org/licenses/gpl-3.0.html GNU GPL v3
  */
 
@@ -21,18 +21,14 @@ require_once 'Model/Parser/GdfLike.php';
  * @package    Model
  * @subpackage Parser
  * @author     Michel Corne <mcorne@yahoo.com>
- * @copyright  2008-2010 Michel Corne
+ * @copyright  2008-2013 Michel Corne
  * @license    http://opensource.org/licenses/gpl-3.0.html GNU GPL v3
  */
 
-abstract class Model_Parser_GaffiotLike extends Model_Parser_GdfLike
+class Model_Parser_GaffiotLike extends Model_Parser_GdfLike
 {
     public $endWord = 'zz';
-
-    public function fixImageNumber($imageNumber)
-    {
-        return "000$imageNumber";
-    }
+    public $imageNumberTpl = '000%s';
 
     public function isEndOfData($line)
     {

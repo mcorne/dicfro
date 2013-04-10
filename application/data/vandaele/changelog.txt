@@ -37,4 +37,4 @@ version v3
 - updated vandaele/changes/config.php
 - ran "find-changes vandaele"
 - found no change
-- renamed txt
+- renamed txt to index.txt

@@ -9,7 +9,7 @@
  * @package    Model
  * @subpackage Parser
  * @author     Michel Corne <mcorne@yahoo.com>
- * @copyright  2008-2010 Michel Corne
+ * @copyright  2008-2013 Michel Corne
  * @license    http://opensource.org/licenses/gpl-3.0.html GNU GPL v3
  */
 
@@ -22,7 +22,7 @@ require_once 'Model/Parser/GaffiotLike.php';
  * @package    Model
  * @subpackage Parser
  * @author     Michel Corne <mcorne@yahoo.com>
- * @copyright  2008-2010 Michel Corne
+ * @copyright  2008-2013 Michel Corne
  * @license    http://opensource.org/licenses/gpl-3.0.html GNU GPL v3
  */
 
@@ -30,9 +30,6 @@ class Model_Parser_Lacurne extends Model_Parser_GaffiotLike
 {
     public $lineTpl = '~^(.+?)__BR____BR__image=><@_(\d\d-\d\d\d).tiff_>LacEdic__BR____BR__~';
     public $endWord = 'zzz';
-
-    public $dictionary = 'lacurne';
-    public $sourceFile = 'txt';
 
     public function addMissingImages($wordData, $noCheckOrder = false)
     {

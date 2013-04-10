@@ -24,3 +24,4 @@ version v2
   "bana__BR____BR__<@_tx104.tif_>LexRomVEdic__BR____BR__" instead of "ban"
   "comaira__BR____BR__<@_tx149.tif_>LexRomVEdic__BR____BR__" instad of "coma"
 - ran "parse lexromv" to create database
+- renamed txt to index.txt

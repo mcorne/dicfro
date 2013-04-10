@@ -1,0 +1,9 @@
+initial version v1
+------------------
+
+- 9/4/2013
+- downloaded Téléchargement en mode texte.htm from http://gallica.bnf.fr/ark:/12148/bpt6k5762365b
+- extracted first words and pages with "extract-first-words.php"
+- verified/fixed all pages
+- linked index to http://archive.org/stream/PetitLarousse19061/larousse_petit_1906_a#page/n7/mode/2up
+  instead of gallica for better quality

@@ -15,18 +15,41 @@
 
 require_once 'common.php';
 
-$dictionary = $string->dash2CamelCase($dictionary, true);
-$file = "Model/Parser/$dictionary.php";
+if (! empty($dictionaryConfig['parser']) and is_string($dictionaryConfig['parser'])) {
+    $dictionaryConfig['parser'] = array('class' => $dictionaryConfig['parser']);
+}
 
-if (! file_exists("$applicationDir/$file")) {
-    die("invalid file: $file");
+if (isset($dictionaryConfig['parser']['class'])) {
+    // the parser is specified in the dictionary config
+    $class = $dictionaryConfig['parser']['class'];
+    $file = str_replace('_', '/', $class) . '.php';
+
+} else {
+    $sufix = $string->dash2CamelCase($dictionary, true);
+    $file = "Model/Parser/$sufix.php";
+
+    if (file_exists("$applicationDir/$file")) {
+        // there is a specific parser named after the dictionary
+        $class = "Model_Parser_$sufix";
+
+    } else if (isset($dictionaryConfig['type'])) {
+        // defaults to the generic parser for this dictionary type
+        $class = 'Model_Parser_' . ucfirst($dictionaryConfig['type']);
+        $file = str_replace('_', '/', $class) . '.php';
+
+    } else {
+        throw new Exception('missing dictionary type');
+    }
+}
+
+if (! isset($dictionaryConfig['parser']['properties']['dictionary'])) {
+    $dictionaryConfig['parser']['properties']['dictionary'] = $dictionary;
 }
 
 require $file;
 
 try {
-    $class = "Model_Parser_$dictionary";
-    $parser = new $class($config, $verbose);
+    $parser = new $class($config['data-dir'], $dictionaryConfig['parser']['properties'], $dictionaryConfig, $verbose);
     $parser->create($lineStart, $lineCount);
 } catch (Exception $e) {
     die($e->getMessage());

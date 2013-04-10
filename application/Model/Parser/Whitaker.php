@@ -9,7 +9,7 @@
  * @package    Model
  * @subpackage Parser
  * @author     Michel Corne <mcorne@yahoo.com>
- * @copyright  2008-2010 Michel Corne
+ * @copyright  2008-2013 Michel Corne
  * @license    http://opensource.org/licenses/gpl-3.0.html GNU GPL v3
  */
 
@@ -22,7 +22,7 @@ require_once 'Model/Parser.php';
  * @package    Model
  * @subpackage Parser
  * @author     Michel Corne <mcorne@yahoo.com>
- * @copyright  2008-2010 Michel Corne
+ * @copyright  2008-2013 Michel Corne
  * @license    http://opensource.org/licenses/gpl-3.0.html GNU GPL v3
  */
 
@@ -50,7 +50,6 @@ class Model_Parser_Whitaker extends Model_Parser
     const voice = '\s+(ACTIVE|PASSIVE|X)';
     const which = '\s+(\d)';
 
-    public $dictionary = 'whitaker';
     public $batchFiles = array('entry.sql', 'word.sql');
     public $dataFiles = array('entry' => 'entry.txt', 'word' => 'word.txt');
     public $sourceFile = 'DICTPAGE.v2.RAW';
@@ -322,7 +321,7 @@ class Model_Parser_Whitaker extends Model_Parser
             ),
         );
 
-    public function __construct($config, $verbose = false)
+    public function __construct($directory, $properties = array(), $dictionaryConfig = array(), $verbose = false)
     {
         $this->setFormat();
 
@@ -336,7 +335,7 @@ class Model_Parser_Whitaker extends Model_Parser
             }
         }
 
-        parent::__construct($config, $verbose);
+        parent::__construct($directory, $properties, $dictionaryConfig, $verbose);
     }
 
     public function calcPofDistrib()

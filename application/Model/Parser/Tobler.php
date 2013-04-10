@@ -9,7 +9,7 @@
  * @package    Model
  * @subpackage Parser
  * @author     Michel Corne <mcorne@yahoo.com>
- * @copyright  2008-2010 Michel Corne
+ * @copyright  2008-2013 Michel Corne
  * @license    http://opensource.org/licenses/gpl-3.0.html GNU GPL v3
  */
 
@@ -22,7 +22,7 @@ require_once 'Model/Parser.php';
  * @package    Model
  * @subpackage Parser
  * @author     Michel Corne <mcorne@yahoo.com>
- * @copyright  2008-2010 Michel Corne
+ * @copyright  2008-2013 Michel Corne
  * @license    http://opensource.org/licenses/gpl-3.0.html GNU GPL v3
  */
 
@@ -72,11 +72,9 @@ class Model_Parser_Tobler extends Model_Parser
         'wara(e)ntis(s)ement'       => array('warantisement', 'waraentissement'),
         );
 
-    public function __construct($config, $verbose = false)
+    public function __construct($directory, $properties = array(), $dictionaryConfig = array(), $verbose = false)
     {
-        $config['dictionaries']['tobler'] = array();
-
-        parent::__construct($config, $verbose);
+        parent::__construct($directory, $properties, $dictionaryConfig, $verbose);
 
         $this->uniquePofFile = $this->addPathName($this->uniquePofFile);
         $this->fixPofFile = $this->addPathName($this->fixPofFile);

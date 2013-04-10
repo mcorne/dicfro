@@ -12,4 +12,4 @@ version v2
 - updated rose/changes/config.php
 - ran "find-changes rose"
 - found no change
-- renamed txt
+- renamed txt to index.txt

@@ -22,4 +22,4 @@ version v3
 - ran "find-changes gaffiot"
 - no change in Txt
 - all images have changed due to the addition of a footer: "image scannée par ...", assuming images have no other change
-- renamed txt
+- renamed txt to index.txt
