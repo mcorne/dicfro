@@ -31,4 +31,23 @@
   </li>
 </ul>
 
-<a href="<?=$this->setActionUrl($this->dictionariesLink);?>">Liste des dictionnaires</a>
+<?php if ($newDictionaries = $this->dictionariesHelper->getNewDictionaries()):?>
+  <p class="sub-title" title="Nouveautés des 30 derniers jours">
+    <?php if (count($newDictionaries) == 1):?>
+      Nouveau
+   <?php else:?>
+      Nouveautés
+   <?php endif;?>
+  </p>
+
+  <ul>
+    <?php foreach($newDictionaries as $option) :?>
+      <li>
+        <a class="link <?=$option['type'];?>"
+           href="<?=$this->setActionUrl('introduction/' . $option['value']);?>"><?=$option['title'];?></a>
+     </li>
+    <?php endforeach;?>
+  </ul>
+<?php endif;?>
+
+<a href="<?=$this->setActionUrl($this->dictionariesLink);?>">Liste de tous les dictionnaires</a>

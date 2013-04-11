@@ -39,6 +39,38 @@ class View_Helper_Dictionaries extends View_Helper_Base
     }
 
     /**
+     * Returns the recently added dictionaries
+     *
+     * @return array
+     */
+    public function getNewDictionaries()
+    {
+        $options = array();
+
+        foreach($this->view->config['dictionaries'] as $id => $dictionary) {
+            list($year, $month, $day) = explode('-', $dictionary['created']);
+            $time = time() - 30 * 24 * 3600;
+
+            if (mktime(0, 0, 0, $month, $day, $year) >= $time) {
+                // dictionary was added less than 30 days ago
+                if (isset($dictionary['url'])) {
+                    $value = $dictionary['url'];
+                } else {
+                    $value =  $id;
+                }
+
+                $options[] = array(
+                    'text'     => $dictionary['name'],
+                    'title'    => $dictionary['description'],
+                    'value'    => $value,
+                );
+            }
+        }
+
+        return $options;
+    }
+
+    /**
      * Returns the groups of dictionaries for use in a select box
      *
      * @return array the groups of dictionaries

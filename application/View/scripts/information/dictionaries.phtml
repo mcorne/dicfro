@@ -17,12 +17,6 @@
 
 <h1 class="title">Liste des dictionnaires</h1>
 
-  (dictionnaire
-  <a class="internal">interne</a> à DicFro en vert,
-  <a class="index">indexé</a> dans DicFro en bleu,
-  <a class="external">externe</a> à DicFro en noir)
-
-
 <?php foreach($this->dictionariesHelper->getGroups() as $optgroup) :?>
   <p class="sub-title"><?=$optgroup['label'];?></p>
 
@@ -38,3 +32,15 @@
     </ul>
 
 <?php endforeach;?>
+
+<p class="sub-title">DicFro propose 3 types de dictionnaire</p>
+<ul>
+  <li><a class="internal">Dictionnaire interne :</a> les pages du dictionnaire et l'index des pages sont stockés dans DicFro.</li>
+  <li><a class="index">Dictionnaire indexé :</a> les pages du dictionnaire sont stockées hors de DicFro,
+      l'index des pages est stocké dans DicFro. DicFro effectue la recherche d'un mot dans l'index,
+      et affiche la page correspondante du dictionnaire, comme pour un dictionnaire interne.
+  </li>
+  <li><a class="external">Dictionnaire externe :</a> les pages du dictionnaire sont sockées hors de DicFro.
+      DicFro passe le mot recherché au dictionnaire qui effectue la recherche et affiche la page du mot.
+  </li>
+</ul>

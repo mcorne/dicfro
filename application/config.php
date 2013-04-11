@@ -31,6 +31,7 @@ return array(
     // dictionaries details
     'dictionaries' => array(
         'anglo-norman' => array(
+            'created'      => '2013-03-18',
             'description'  => 'The Anglo-Norman Dictionary',
             'introduction' => 'http://www.anglo-norman.net',
             'language'     => 'fr',
@@ -41,6 +42,7 @@ return array(
         ),
 
         'chretien' => array(
+            'created'      => '2010-08-01',
             'description' => "Dictionnaire de l'oeuvre de Chrétien de Troyes, Wörterbuch zu Kristian von Troyes' sämtlichen Werken, Wendelin Foerster, 1914",
             'file'        => 'dictionnaire-chretien-de-troyes.jpg',
             'language'    => 'fr',
@@ -63,6 +65,7 @@ return array(
         ),
 
         'cnrtl' => array(
+            'created'      => '2010-08-01',
             'description'  => 'Dictionnaire du Centre National de Ressources Textuelles et Lexicales',
             'introduction' => 'http://www.cnrtl.fr/definition/',
             'language'     => 'fr',
@@ -72,6 +75,7 @@ return array(
         ),
 
         'cotgrave' => array(
+            'created'      => '2012-03-11',
             'description'  => 'A Dictionarie of the French and English Tongues, Randle Cotgrave, 1611',
             'introduction' => 'http://www.pbm.com/~lindahl/cotgrave/',
             'language'     => 'fr',
@@ -86,6 +90,7 @@ return array(
         ),
 
         'couronnement' => array(
+            'created'      => '2010-08-01',
             'description' => 'Glossaire du Couronnement de Louis, Ernest Langlois, 1888',
             'file'        => 'glossaire-couronnement-de-louis.jpg',
             'language'    => 'fr',
@@ -109,6 +114,7 @@ return array(
         ),
 
         'dmf' => array(
+            'created'      => '2008-04-14',
             'description'  => "Dictionnaire du Moyen Français par l'Atilf",
             'introduction' => 'http://www.atilf.fr/dmf/',
             'language'     => 'fr',
@@ -119,6 +125,7 @@ return array(
         ),
 
         'encyclopedie-larousse' => array(
+            'created'      => '2013-04-03',
             'description'  => "La Grande encyclopédie Larousse, 1971-1976",
             'introduction' => 'http://gallica.bnf.fr/ark:/12148/bpt6k1200512k/f1.image',
             'language'     => 'fr',
@@ -137,6 +144,7 @@ return array(
         ),
 
         'ducange' => array(
+            'created'      => '2013-03-19',
             'description'  => 'Du Cange, et al., Glossarium mediæ et infimæ latinitatis. Niort : L. Favre, 1883-1887',
             'introduction' => 'http://ducange.enc.sorbonne.fr/',
             'language'     => 'la',
@@ -147,6 +155,7 @@ return array(
         ),
 
         'dvlf' => array(
+            'created'      => '2012-06-03',
             'description'  => "Dictionnaire vivant de la langue française du projet ARTFL",
             'introduction' => 'http://dvlf.uchicago.edu/',
             'language'     => 'fr',
@@ -156,6 +165,7 @@ return array(
         ),
 
         'gaffiot' => array(
+            'created'      => '2008-06-27',
             'description' => 'Dictionnaire Latin-Français, Félix Gaffiot, 1934',
             'file'        => 'gaffiot.jpg',
             'language'    => 'la',
@@ -176,6 +186,7 @@ return array(
         ),
 
         'gdf' => array(
+            'created'      => '2008-04-14',
             'description' => "Dictionnaire de l'ancienne langue française et de tous ses dialectes du IXème au XVème siècle, Frédéric Godefroy, 1880-1895",
             'file'        => 'dictionnaire-godefroy.jpg',
             'language'    => 'fr',
@@ -198,6 +209,7 @@ return array(
         ),
 
         'gdfc' => array(
+            'created'      => '2008-04-14',
             'description' => "Complément du dictionnaire de l'ancienne langue française et de tous ses dialectes du IXème au XVème siècle, Frédéric Godefroy, 1895-1902",
             'file'        => 'complement-godefroy.jpg',
             'language'    => 'fr',
@@ -221,6 +233,7 @@ return array(
         ),
 
         'gdflex' => array(
+            'created'      => '2008-04-14',
             'description' => "Lexique de l'ancien français, Frédéric Godefroy, 1901",
             'file'        => 'lexique-godefroy.jpg',
             'language'    => 'fr',
@@ -239,6 +252,7 @@ return array(
         ),
 
         'jeanneau' => array(
+            'created'      => '2008-06-27',
             'description'  => 'Dictionnaire français-latin de Gérard Jeanneau',
             'introduction' => 'http://www.prima-elementa.fr/Dico.htm',
             'language'     => 'la',
@@ -253,6 +267,7 @@ return array(
         ),
 
         'lacurne' => array(
+            'created'      => '2013-03-29',
             'description' => "Dictionnaire historique de l'ancien langage françois ou Glossaire de la langue françoise, J.B. de la Curne de Sainte-Palaye, 1875-1882",
             'file'        => 'dictionnaire-lacurne.jpg',
             'language'    => 'fr',
@@ -270,6 +285,7 @@ return array(
         ),
 
         'leconjugueur' => array(
+            'created'      => '2010-08-01',
             'description'  => 'La conjugaison française par le Conjugueur',
             'introduction' => 'http://www.leconjugueur.com/',
             'language'     => 'fr',
@@ -284,6 +300,7 @@ return array(
         ),
 
         'lexromv' => array(
+            'created'      => '2010-08-01',
             'description'  => "Lexique Roman ou dictionnaire de la langue des troubadours comparée avec les autres langues de l'Europe latine, François J. M. Raynouard, 1844",
             'file'         => 'lexique-roman.jpg',
             'introduction' => 'roman.phtml',
@@ -298,8 +315,9 @@ return array(
         ),
 
         'littre' => array(
+            'created'      => '2010-08-01',
             'description'  => "Dictionnaire de la langue française d'Émile Littré, 1872-1877",
-            'introduction' => 'http://francois.gannaz.free.fr/Littre/',
+            'introduction' => 'http://littre.reverso.net/dictionnaire-francais',
             'language'     => 'fr',
             'name'         => 'Littré',
             'search'       => 'http://littre.reverso.net/dictionnaire-francais/definition/',
@@ -307,6 +325,7 @@ return array(
         ),
 
         'petit-larousse' => array(
+            'created'      => '2013-04-10',
             'description'  => "Petit Larousse illustré, nouveau dictionnaire encyclopédique (5e édition), publié sous la direction de Claude Augé, 1906",
             'introduction' => 'http://archive.org/stream/PetitLarousse19061/larousse_petit_1906_a#page/n7/mode/2up',
             'language'     => 'fr',
@@ -327,6 +346,7 @@ return array(
         ),
 
         'renart-fhs' => array(
+            'created'      => '2012-01-07',
             'description' => 'Glossaire du Roman de Renart, N. Fukumoto, N. Harano et S. Suzuki, 1985',
             'file'        => 'glossaire-roman-de-renart-fhs.jpg',
             'language'    => 'fr',
@@ -350,6 +370,7 @@ return array(
         ),
 
         'renart-meon-1' => array(
+            'created'      => '2012-01-07',
             'description' => 'Glossaire du Roman de Renart, volume 1, M. D. M. Méon, 1826',
             'file'        => 'glossaire-roman-de-renart-meon-vol1.jpg',
             'language'    => 'fr',
@@ -373,6 +394,7 @@ return array(
         ),
 
         'renart-meon-2' => array(
+            'created'      => '2012-01-07',
             'description' => 'Glossaire du Roman de Renart, volume 2, M. D. M. Méon, 1826',
             'file'        => 'glossaire-roman-de-renart-meon-vol2.jpg',
             'language'    => 'fr',
@@ -396,6 +418,7 @@ return array(
         ),
 
         'renart-meon-3' => array(
+            'created'      => '2012-01-07',
             'description' => 'Glossaire du Roman de Renart, volume 3, M. D. M. Méon, 1826',
             'file'        => 'glossaire-roman-de-renart-meon-vol3.jpg',
             'language'    => 'fr',
@@ -419,6 +442,7 @@ return array(
         ),
 
         'renart-meon-4' => array(
+            'created'      => '2012-01-07',
             'description' => 'Glossaire du Roman de Renart, volume 4, M. D. M. Méon, 1826',
             'file'        => 'glossaire-roman-de-renart-meon-vol4.jpg',
             'language'    => 'fr',
@@ -442,6 +466,7 @@ return array(
         ),
 
         'roland' => array(
+            'created'      => '2010-08-01',
             'description' => 'Glossaire de la Chanson de Roland, Joseph Bédier, 1927',
             'file'        => 'glossaire-chanson-de-roland.jpg',
             'language'    => 'fr',
@@ -465,6 +490,7 @@ return array(
         ),
 
         'rose' => array(
+            'created'      => '2010-08-01',
             'description' => 'Glossaire du Roman de la Rose, Ernest Langlois, 1914-1924',
             'file'        => 'glossaire-roman-de-la-rose.jpg',
             'language'    => 'fr',
@@ -488,6 +514,7 @@ return array(
         ),
 
         'tcaf' => array(
+            'created'      => '2010-08-01',
             'description' => "Tableaux de conjugaison de l'ancien français, Machio Okada et Hitoshi Ogurisu, 2007-2011",
             'file'        => 'tableaux-de-conjugaison.jpg',
             'language'    => 'fr',
@@ -501,6 +528,7 @@ return array(
         ),
 
         'tristan' => array(
+            'created'      => '2010-08-01',
             'description' => 'Glossaire du Roman de Tristan par Béroul, Ernest Muret, 1903',
             'file'        => 'glossaire-roman-de-tristan.jpg',
             'language'    => 'fr',
@@ -524,6 +552,7 @@ return array(
         ),
 
         'vandaele' => array(
+            'created'      => '2008-06-27',
             'description' => "Petit dictionnaire de l'ancien français, Hilaire Van Daele, 1901",
             'file'        => 'vandaele.jpg',
             'language'    => 'fr',
@@ -539,6 +568,7 @@ return array(
         ),
 
         'whitaker' => array(
+            'created'      => '2010-09-16',
             'description'  => 'Dictionnaire latin-anglais de William Whitaker',
             'introduction' => 'http://lysy2.archives.nd.edu/cgi-bin/words.exe',
             'language'     => 'la',
@@ -553,6 +583,7 @@ return array(
         ),
 
         'webster' => array(
+            'created'      => '2012-06-03',
             'description'  => "Webster's Revised Unabridged Dictionary (1913, 1828) of the ARTFL project",
             'introduction' => 'http://machaut.uchicago.edu/websters',
             'language'     => 'en',
@@ -562,6 +593,7 @@ return array(
         ),
 
         'wiktionary' => array(
+            'created'      => '2012-06-03',
             'description'  => 'Wiktionnaire, le dictionnaire libre by wiktionary.org',
             'introduction' => 'http://en.wiktionary.org',
             'language'     => 'en',
@@ -571,6 +603,7 @@ return array(
         ),
 
         'wiktionnaire' => array(
+            'created'      => '2012-03-11',
             'description'  => 'Wiktionary, the free dictionary de wiktionary.org',
             'introduction' => 'http://fr.wiktionary.org',
             'language'     => 'fr',
