@@ -112,6 +112,24 @@ class Base_View
     }
 
     /**
+     * Displays time rounded to the most significant digit
+     *
+     * @param number $time
+     * @return number
+     */
+    public function displayTime($time)
+    {
+        $rounded = (float)round($time, 1) or
+        $rounded = (float)round($time, 2) or
+        $rounded = (float)round($time, 3) or
+        $rounded = (float)round($time, 4) or
+        $rounded = (float)round($time, 5) or
+        $rounded = (float)round($time, 6);
+
+       return $rounded;
+    }
+
+    /**
      * Sets resources used by the view
      *
      * @return void

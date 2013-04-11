@@ -27,6 +27,11 @@
   <!-- copyright -->
   <span class="copyright-name">
 
+   <span class="gray">
+     Powered by PHP <?=PHP_VERSION;?>
+     (<?=$this->displayTime((microtime(true) - $GLOBALS['_time']));?> s)
+   </span>
+
     <a href="http://creativecommons.org/licenses/by-nc-nd/2.0/fr/" rel="license">
       <img class="middle" alt="Creative Commons License"
        style="border-width:0"
