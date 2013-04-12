@@ -129,12 +129,13 @@ return array(
             'description'  => "La Grande encyclopédie Larousse, 1971-1976",
             'introduction' => 'http://gallica.bnf.fr/ark:/12148/bpt6k1200512k/f1.image',
             'language'     => 'fr',
-            'name'         => 'Encyclopédie Larousse (Aa-Am)',
+            'name'         => 'Encyclopédie Larousse (Aa-Au)',
             'search'      => array(
                 'properties' => array(
                     'entries' => true,
                     'url'     => array(
                         1 => 'http://gallica.bnf.fr/ark:/12148/bpt6k1200512k/f%u.highres',
+                        2 => 'http://gallica.bnf.fr/ark:/12148/bpt6k12005130/f%u.highres',
                     ),
                 )
             ),
