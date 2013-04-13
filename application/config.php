@@ -327,10 +327,10 @@ return array(
 
         'petit-larousse' => array(
             'created'      => '2013-04-10',
-            'description'  => "Petit Larousse illustré, nouveau dictionnaire encyclopédique (5e édition), publié sous la direction de Claude Augé, 1906",
+            'description'  => "Petit Larousse illustré (noms communs), nouveau dictionnaire encyclopédique (5e édition), publié sous la direction de Claude Augé, 1906",
             'introduction' => 'http://archive.org/stream/PetitLarousse19061/larousse_petit_1906_a#page/n7/mode/2up',
             'language'     => 'fr',
-            'name'         => 'Petit Larousse',
+            'name'         => 'Petit Larousse (N.c.)',
             'search'       => array(
                 'properties' => array(
                     'url'     => array(
@@ -341,7 +341,26 @@ return array(
                     ),
                 )
             ),
-            'title'        => 'P. Larousse',
+            'title'        => 'N.c. Larousse',
+            'type'         => 'index',
+            'volume'       => 'readonly',
+        ),
+
+        'petit-larousse-np' => array(
+            'created'      => '2013-04-13',
+            'description'  => "Petit Larousse illustré (noms propres), nouveau dictionnaire encyclopédique (5e édition), publié sous la direction de Claude Augé, 1906",
+            'introduction' => 'http://archive.org/stream/PetitLarousse19065/larousse_petit_1906_e#page/n0/mode/2up',
+            'language'     => 'fr',
+            'name'         => 'Petit Larousse (N.p.)',
+            'search'       => array(
+                'properties' => array(
+                    'url'     => array(
+                        5 => 'http://ia600501.us.archive.org/BookReader/BookReaderImages.php?zip=/19/items/PetitLarousse19065/larousse_petit_1906_e_jp2.zip&file=larousse_petit_1906_e_jp2/larousse_petit_1906_e_0%03u.jp2&scale=3&rotate=0',
+                        6 => 'http://ia700503.us.archive.org/BookReader/BookReaderImages.php?zip=/10/items/PetitLarousse19066/larousse_petit_1906_f_jp2.zip&file=larousse_petit_1906_f_jp2/larousse_petit_1906_f_0%03u.jp2&scale=3&rotate=0',
+                    ),
+                )
+            ),
+            'title'        => 'N.p. Larousse',
             'type'         => 'index',
             'volume'       => 'readonly',
         ),
@@ -636,6 +655,7 @@ return array(
                 'dmf',
                 'dvlf',
                 'petit-larousse',
+                'petit-larousse-np',
                 'wiktionnaire',
             ),
         ),

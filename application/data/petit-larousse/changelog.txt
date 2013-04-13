@@ -7,3 +7,4 @@ initial version v1
 - verified/fixed all pages
 - linked index to http://archive.org/stream/PetitLarousse19061/larousse_petit_1906_a#page/n7/mode/2up
   instead of gallica for better quality
+- ran "parse petut-larousse" to create database
