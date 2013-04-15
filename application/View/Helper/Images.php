@@ -34,27 +34,13 @@ class View_Helper_Images extends View_Helper_Base
      */
     public $images = array(
         // dicfro home and default
-        'default' => array(
-            'file'   => 'dicfro.jpg',
-            'source' => 'http://farm2.static.flickr.com/1147/533118282_dcd53c68cb.jpg',
-        ),
+        'default'      => 'dicfro.jpg',
          // information pages
-        'about' => array(
-            'file'   => 'about.jpg',
-            'source' => '',
-        ),
-        'dictionaries' => array(
-            'file'   => 'dictionary-list.jpg',
-            'source' => '',
-        ),
-        'help' => array(
-            'file'   => 'help.jpg',
-            'source' => 'http://www.cclspompano.com/448894_82304673.jpg',
-        ),
-        'options' => array(
-            'file'   => 'options.jpg',
-            'source' => '',
-        ),
+        'about'        => 'about.jpg',
+        'archives'     => 'archives.jpg',
+        'dictionaries' => 'dictionary-list.jpg',
+        'help'         => 'help.jpg',
+        'options'      => 'options.jpg',
     );
 
     /**
@@ -73,8 +59,8 @@ class View_Helper_Images extends View_Helper_Base
             }
 
         } else {
-            if (isset($this->view->dictionary['file'])) {
-                $image = $this->view->dictionary;
+            if (isset($this->view->dictionary['image'])) {
+                $image = $this->view->dictionary['image'];
             } else {
                 $image = $this->images['default'];
             }
@@ -92,6 +78,6 @@ class View_Helper_Images extends View_Helper_Base
     {
         $image = $this->getImage();
 
-        return $this->view->setLinkUrl("img/pages/{$image['file']}");
+        return $this->view->setLinkUrl("img/pages/$image");
     }
 }

@@ -33,9 +33,9 @@ class Model_Parser_GdfLike extends Model_Parser
 
     public $separator = '|';
 
-    public function __construct($directory, $properties = array(), $dictionaryConfig = array(), $verbose = false)
+    public function __construct($directory, $properties = array(), $dictionaryConfig = array(), $noExitOnEror = false, $verbose = false)
     {
-        parent::__construct($directory, $properties, $dictionaryConfig, $verbose);
+        parent::__construct($directory, $properties, $dictionaryConfig, $noExitOnEror, $verbose);
         $this->setDictionary();
         $this->createSearchObject();
     }

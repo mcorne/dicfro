@@ -321,7 +321,7 @@ class Model_Parser_Whitaker extends Model_Parser
             ),
         );
 
-    public function __construct($directory, $properties = array(), $dictionaryConfig = array(), $verbose = false)
+    public function __construct($directory, $properties = array(), $dictionaryConfig = array(), $noExitOnEror = false, $verbose = false)
     {
         $this->setFormat();
 
@@ -335,7 +335,7 @@ class Model_Parser_Whitaker extends Model_Parser
             }
         }
 
-        parent::__construct($directory, $properties, $dictionaryConfig, $verbose);
+        parent::__construct($directory, $properties, $dictionaryConfig, $noExitOnEror, $verbose);
     }
 
     public function calcPofDistrib()

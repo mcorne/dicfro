@@ -11,7 +11,7 @@
  * @license   http://www.opensource.org/licenses/gpl-3.0.html GNU GPL v3
  */
 
-@list(, $dictionary, $verbose, $lineStart, $lineCount) = $argv;
+@list(, $dictionary, $noExitOnError, $verbose, $lineStart, $lineCount) = $argv;
 
 require_once 'common.php';
 
@@ -49,7 +49,7 @@ if (! isset($dictionaryConfig['parser']['properties']['dictionary'])) {
 require $file;
 
 try {
-    $parser = new $class($config['data-dir'], $dictionaryConfig['parser']['properties'], $dictionaryConfig, $verbose);
+    $parser = new $class($config['data-dir'], $dictionaryConfig['parser']['properties'], $dictionaryConfig, $noExitOnError, $verbose);
     $parser->create($lineStart, $lineCount);
 } catch (Exception $e) {
     die($e->getMessage());

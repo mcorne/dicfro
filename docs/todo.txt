@@ -15,6 +15,6 @@ Things to do
 - Réparer les problèmes de mots avec accents pour IE.
 
 - add panoccitan.org, http://www.etymologie-occitane.fr, deaf-page.de, http://www.atilf.fr/dect/ ...
-- add lacurne supplement, curiosités etc...
+- add lacurne supplement, curiosités etc..., grand larousse
 - scan/add tilander
 - add littre

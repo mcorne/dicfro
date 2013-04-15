@@ -72,9 +72,9 @@ class Model_Parser_Tobler extends Model_Parser
         'wara(e)ntis(s)ement'       => array('warantisement', 'waraentissement'),
         );
 
-    public function __construct($directory, $properties = array(), $dictionaryConfig = array(), $verbose = false)
+    public function __construct($directory, $properties = array(), $dictionaryConfig = array(), $noExitOnEror = false, $verbose = false)
     {
-        parent::__construct($directory, $properties, $dictionaryConfig, $verbose);
+        parent::__construct($directory, $properties, $dictionaryConfig, $noExitOnEror, $verbose);
 
         $this->uniquePofFile = $this->addPathName($this->uniquePofFile);
         $this->fixPofFile = $this->addPathName($this->fixPofFile);

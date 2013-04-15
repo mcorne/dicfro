@@ -1,5 +1,6 @@
 chretien          => http://galatea.univ-tlse2.fr/pictura/UtpicturaServeur/Images/NePasOuvrir/0/A0709.jpg
 couronnement      => http://histoireenprimaire.free.fr/images/sacre_st_louis.jpg
+dicfro            => http://farm2.static.flickr.com/1147/533118282_dcd53c68cb.jpg
 gaffiot           => http://multimedia.fnac.com/multimedia/images_produits/ZoomPE/6/5/6/9782011667656.jpg
 gdf               => http://upload.wikimedia.org/wikipedia/commons/a/a4/Old_book_bindings_cropped.jpg
 gdfc              => http://farm1.static.flickr.com/137/327471676_7557f4d649.jpg

@@ -39,15 +39,17 @@ abstract class Model_Parser
     public $directory;
     public $error;
     public $errorFile         = 'error.txt';
+    public $noExitOnEror;
     public $sourceFile        = 'index.txt';
     public $search;
     public $string;
     public $verbose;
 
-    public function __construct($directory, $properties = array(), $dictionaryConfig = array(), $verbose = false)
+    public function __construct($directory, $properties = array(), $dictionaryConfig = array(), $noExitOnEror = false, $verbose = false)
     {
         $this->directory        = $directory;
         $this->dictionaryConfig = $dictionaryConfig;
+        $this->noExitOnEror     = $noExitOnEror;
         $this->verbose          = (bool)$verbose;
 
         foreach($properties as $property => $value) {
@@ -174,7 +176,7 @@ abstract class Model_Parser
             $this->error[] = $string;
         }
 
-        if ($isError) {
+        if ($isError and ! $this->noExitOnEror) {
             exit(1);
         }
     }

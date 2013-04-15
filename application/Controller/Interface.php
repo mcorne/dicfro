@@ -35,6 +35,7 @@ class Controller_Interface
      */
     public $actions = array(
         'about'        => 'a-propos',
+        'archives'     => 'archives',
         'dictionaries' => 'liste-des-dictionnaires',
         'help'         => 'aide',
         'home'         => 'accueil',
@@ -103,6 +104,16 @@ class Controller_Interface
     public function aboutAction()
     {
         $this->view->information = 'information/about.phtml';
+    }
+
+    /**
+     * Processes the action to display the "archives" page
+     *
+     * @return void
+     */
+    public function archivesAction()
+    {
+        $this->view->information = 'information/archives.phtml';
     }
 
     /**

@@ -19,10 +19,13 @@
 
   <?php require "{$this->viewsDir}/interface/links.phtml";?>
 
-  <?php if($this->dictionary['type'] != 'internal'):?>
-  <a class="link" target="_blank"
-     href="<?=$this->dictionary['introduction'];?>"><?=$this->dictionary['name'];?></a>
-  <?php endif;?>
+  <a class="link"
+     title="<?=$this->dictionary['description'];?>"
+    <?php if($this->dictionary['type'] != 'internal'):?>
+      target="_blank"
+      href="<?=$this->dictionary['introduction'];?>"
+    <?php endif;?>
+  ><?=$this->dictionary['name'];?></a>
 
   <!-- copyright -->
   <span class="copyright-name">

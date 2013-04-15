@@ -16,4 +16,4 @@
 @rem from a given line : search vandaele 0 10
 @rem line count        : search vandaele 0 10 50
 
-@php parse.php %1 %2 %3 %4 %5
+@php parse.php %1 %2 %3 %4 %5 %6
