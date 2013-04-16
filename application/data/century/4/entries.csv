@@ -1,0 +1,895 @@
+page	entries	image	volume	frequency	check	books	accuracy	centurydictio04whit_djvu.csv	frequency	image	centurydictiona04whit_djvu.csv	frequency	image	centurydictionar04whit_djvu.csv	frequency	image	centurydictionar04whituoft_djvu.csv	frequency	image	centurydictionary04whit_djvu.csv	frequency	image	cu31924091890610_djvu.csv	frequency	image
+2671	The	13	4	6		centurydictio04whit_djvu.csv	4174	The	6	13	The	6	13	The	6	13	The	6	15	The	6	13	The	6	12
+2672	habeas	14	4	5		centurydictiona04whit_djvu.csv	4148	habeas	5	14	habeas	5	14	HAbAas	1	14	habeas	5	16	habeas	5	14	habeas	5	13
+2673	liability	15	4	2	tie	centurydictionar04whit_djvu.csv	3543	Lability	1	15	hability	2	15	habiUty	1	15	liability	2	17	liability	2	15	hability	2	14
+2674	habitual	16	4	6		centurydictionar04whituoft_djvu.csv	4187	habitual	6	16	habitual	6	16	habitual	6	16	habitual	6	18	habitual	6	16	habitual	6	15
+2675	hack	17	4	6		centurydictionary04whit_djvu.csv	4102	hack	6	17	hack	6	17	hack	6	17	hack	6	19	hack	6	17	hack	6	16
+2676	hacking	18	4	6		cu31924091890610_djvu.csv	4014	hacking	6	18	hacking	6	18	hacking	6	18	hacking	6	20	hacking	6	18	hacking	6	17
+2677	haddie	19	4	6		centurydictionar04whituoft_djvu.csv	top accuracy	haddie	6	19	haddie	6	19	haddie	6	19	haddie	6	21	haddie	6	19	haddie	6	18
+2678	Hsemaria	20	4	2	weak	centurydictio04whit_djvu.csv	best images	Hsemaria	2	20	Haemarla	1	20	ai	1	20	Haemaria	1	22	Hffimaria	1	20	Hsemaria	2	19
+2679	haft	21	4	5				haft	5	21	haffc	1	21	haft	5	21	haft	5	23	haft	5	21	haft	5	20
+2680	naggadistic	22	4	2	weak			liaggadistic	1	22	naggadistic	2	22	hagKadistic	1	22	naggadistic	2	24	haggadistic	1	22	Iiaggadistic	1	21
+2681	hag-seed	23	4	6				hag-seed	6	23	hag-seed	6	23	hag-seed	6	23	hag-seed	6	25	hag-seed	6	23	hag-seed	6	22
+2682	hailstone	24	4	4				hailstone	4	24	I	1	24	hailstone	4	24	hailstone	4	26	hailstone	4	24	liailstone	1	23
+2683	hair	25	4	6				hair	6	25	hair	6	25	hair	6	25	hair	6	27	hair	6	25	hair	6	24
+2684	hairtail	26	4	3	weak			lialrtail	1	26	hairtall	1	26	hairtaU	1	26	hairtail	3	28	hairtail	3	26	hairtail	3	25
+2685	German	27	4	3	weak			German	3	27	German	3	27	Gcmuui	1	27	German	3	29	halberd	2	27	halberd	2	26
+2686	halecine	28	4	3	weak			balecine	1	28	halecine	3	28	baleclne	1	28	halecine	3	30	halecine	3	28	Flowers	1	27
+2687	half-box	29	4	6				half-box	6	29	half-box	6	29	half-box	6	29	half-box	6	31	half-box	6	29	half-box	6	28
+2688	half-hitch	30	4	5				half-Mtch	1	30	half-hitch	5	30	half-hitch	5	30	half-hitch	5	32	half-hitch	5	30	half-hitch	5	29
+2689	half-spade	31	4	6				half-spade	6	31	half-spade	6	31	half-spade	6	31	half-spade	6	33	half-spade	6	31	half-spade	6	30
+2690	halidom	32	4	6				halidom	6	32	halidom	6	32	halidom	6	32	halidom	6	34	halidom	6	32	halidom	6	31
+2691	hall	33	4	6				hall	6	33	hall	6	33	hall	6	33	hall	6	35	hall	6	33	hall	6	32
+2692	hallo	34	4	6				hallo	6	34	hallo	6	34	hallo	6	34	hallo	6	36	hallo	6	34	hallo	6	33
+2693	halmalille	35	4	5				halmalille	5	35	halmalille	5	35	halmalille	5	35	halmalille	5	37	halmalille	5	35	balmalille	1	34
+2694	halse	36	4	5				balse	1	36	halse	5	36	halse	5	36	halse	5	38	halse	5	36	halse	5	35
+2695	halve	37	4	6				halve	6	37	halve	6	37	halve	6	37	halve	6	39	halve	6	37	halve	6	36
+2696	hamate	38	4	6				hamate	6	38	hamate	6	38	hamate	6	38	hamate	6	40	hamate	6	38	hamate	6	37
+2697	hamlet	39	4	6				hamlet	6	39	hamlet	6	39	hamlet	6	39	hamlet	6	41	hamlet	6	39	hamlet	6	38
+2698	hammer-beam	40	4	5				hammer-beam	5	40	hammer-'beam	1	40	hammer-beam	5	40	hammer-beam	5	42	hammer-beam	5	40	hammer-beam	5	39
+2699	hamper	41	4	5				bamper	1	41	hamper	5	41	hamper	5	41	hamper	5	43	hamper	5	41	hamper	5	40
+2700	hand	42	4	3	weak			haud	1	42	hand	3	42	hand	3	42	Bones	2	44	Bones	2	42	hand	3	41
+2701	hand	43	4	6				hand	6	43	hand	6	43	hand	6	43	hand	6	45	hand	6	43	hand	6	42
+2702	hand	44	4	6				hand	6	44	hand	6	44	hand	6	44	hand	6	46	hand	6	44	hand	6	43
+2703	handcops	45	4	5				handcops	5	45	handcops	5	45	handcops	5	45	bandcops	1	47	handcops	5	45	handcops	5	44
+2704	hand-grip	46	4	5				hand-grip	5	46	hand-grip	5	46	Ttio	1	46	hand-grip	5	48	hand-grip	5	46	hand-grip	5	45
+2705	handle	47	4	5				handle	5	47	handle	5	47	handle	5	47	was	1	49	handle	5	47	handle	5	46
+2706	hand-mill	48	4	5				hand-mill	5	48	hand-mill	5	48	hand-miU	1	48	hand-mill	5	50	hand-mill	5	48	hand-mill	5	47
+2707	handsome	49	4	6				handsome	6	49	handsome	6	49	handsome	6	49	handsome	6	51	handsome	6	49	handsome	6	48
+2708	handybook	50	4	4				handybook	4	50	handybook	4	50	bandy	1	50	handybook	4	52	handy	1	50	handybook	4	49
+2709	hang	51	4	6				hang	6	51	hang	6	51	hang	6	51	hang	6	53	hang	6	51	hang	6	50
+2710	hanging	52	4	5				hanging	5	52	hanging	5	52	I	1	52	hanging	5	54	hanging	5	52	hanging	5	51
+2711	Hanoverian	53	4	6				Hanoverian	6	53	Hanoverian	6	53	Hanoverian	6	53	Hanoverian	6	55	Hanoverian	6	53	Hanoverian	6	52
+2712	haplite	54	4	6				haplite	6	54	haplite	6	54	haplite	6	54	haplite	6	56	haplite	6	54	haplite	6	53
+2713	haply	55	4	5				haply	5	55	haply	5	55	haply	5	55	haply	5	57	liaply	1	55	haply	5	54
+2714	happy-go-lucky	56	4	5				happy-go-lucky	5	56	tappy-go-lucky	1	56	happy-go-lucky	5	56	happy-go-lucky	5	58	happy-go-lucky	5	56	happy-go-lucky	5	55
+2715	harbor	57	4	6				harbor	6	57	harbor	6	57	harbor	6	57	harbor	6	59	harbor	6	57	harbor	6	56
+2716	hard	58	4	5				hard	5	58	hard	5	58	bard	1	58	hard	5	60	hard	5	58	hard	5	57
+2717	hard	59	4	5				hard	5	59	hard	5	59	ililv	1	59	hard	5	61	hard	5	59	hard	5	58
+2718	Hardhead	60	4	3	weak			Hardhcid	1	60	Hardhead	3	60	hardhead	2	60	hardhead	2	62	Hardhead	3	60	Hardhead	3	59
+2719	hardness	61	4	3	weak			Hard	2	61	HanUreatment	1	61	hardness	3	61	hardness	3	63	Hard	2	61	hardness	3	60
+2720	hare	62	4	5				hare	5	62	hare	5	62	hare	5	62	hare	5	64	or	1	62	hare	5	61
+2721	Haricot	63	4	6				Haricot	6	63	Haricot	6	63	Haricot	6	63	Haricot	6	65	Haricot	6	63	Haricot	6	62
+2722	harlequin	64	4	5				harlequin	5	64	harlequin	5	64	harlequin	5	64	harlequin	5	66	harleqviin	1	64	harlequin	5	63
+2723	harmonic	65	4	5				harmonic	5	65	harmonic	5	65	harmonic	5	65	harmonic	5	67	harmonic	5	65	barmonic	1	64
+2724	harmonious	66	4	4				harmonious	4	66	harmonious	4	66	harmonions	1	66	harmonious	4	68	harmonious	4	66	harmonioas	1	65
+2725	harmony	67	4	6				harmony	6	67	harmony	6	67	harmony	6	67	harmony	6	69	harmony	6	67	harmony	6	66
+2726	harp	68	4	6				harp	6	68	harp	6	68	harp	6	68	harp	6	70	harp	6	68	harp	6	67
+2727	harping	69	4	6				harping	6	69	harping	6	69	harping	6	69	harping	6	71	harping	6	69	harping	6	68
+2728	Harpulliese	70	4	3	weak			Harpullieae	2	70	Harpulliese	3	70	Harpulliex	1	70	Harpulliese	3	72	Harpullieae	2	70	Harpulliese	3	69
+2729	Common	71	4	4				Common	4	71	Harrington	2	71	Common	4	71	Harrington	2	73	Common	4	71	Common	4	70
+2730	harshly	72	4	6				harshly	6	72	harshly	6	72	harshly	6	72	harshly	6	74	harshly	6	72	harshly	6	71
+2731	harvest	73	4	6				harvest	6	73	harvest	6	73	harvest	6	73	harvest	6	75	harvest	6	73	harvest	6	72
+2732	hash	74	4	5				hash	5	74	Icannatliole	1	74	hash	5	74	hash	5	76	hash	5	74	hash	5	73
+2733	hasteler	75	4	6				hasteler	6	75	hasteler	6	75	hasteler	6	75	hasteler	6	77	hasteler	6	75	hasteler	6	74
+2734	hat	76	4	6				hat	6	76	hat	6	76	hat	6	76	hat	6	78	hat	6	76	hat	6	75
+2735	hatch	77	4	6				hatch	6	77	hatch	6	77	hatch	6	77	hatch	6	79	hatch	6	77	hatch	6	76
+2736	hate	78	4	6				hate	6	78	hate	6	78	hate	6	78	hate	6	80	hate	6	78	hate	6	77
+2737	haubergeon	79	4	2	tie			haubergeon	2	79	and	2	79	m-	1	79	xath	1	81	and	2	79	haubergeon	2	78
+2738	Haunches	80	4	4				Haunches	4	80	Haunches	4	80	hault	1	80	Haunches	4	82	Haunches	4	80	hamt	1	79
+2739	haustellum	81	4	6				haustellum	6	81	haustellum	6	81	haustellum	6	81	haustellum	6	83	haustellum	6	81	haustellum	6	80
+2740	have	82	4	6				have	6	82	have	6	82	have	6	82	have	6	84	have	6	82	have	6	81
+2741	haven	83	4	5				haven	5	83	baven	1	83	haven	5	83	haven	5	85	haven	5	83	haven	5	82
+2742	haw	84	4	4				haw	4	84	haw	4	84	of	1	84	haw	4	86	haw	4	84	baw	1	83
+2743	hawk-billed	85	4	6				hawk-billed	6	85	hawk-billed	6	85	hawk-billed	6	85	hawk-billed	6	87	hawk-billed	6	85	hawk-billed	6	84
+2744	hawse-bag	86	4	6				hawse-bag	6	86	hawse-bag	6	86	hawse-bag	6	86	hawse-bag	6	88	hawse-bag	6	86	hawse-bag	6	85
+2745	haydenite	87	4	5				haydenite	5	87	haydenite	5	87	le	1	87	haydenite	5	89	haydenite	5	87	haydenite	5	86
+2746	hazard	88	4	4				liazard	1	88	hazard	4	88	hazard	4	88	hazard	4	90	To	1	88	hazard	4	87
+2747	hazelnut	89	4	6				hazelnut	6	89	hazelnut	6	89	hazelnut	6	89	hazelnut	6	91	hazelnut	6	89	hazelnut	6	88
+2748	he	90	4	6				he	6	90	he	6	90	he	6	90	he	6	92	he	6	90	he	6	89
+2749	head	91	4	6				head	6	91	head	6	91	head	6	91	head	6	93	head	6	91	head	6	90
+2750	head	92	4	6				head	6	92	head	6	92	head	6	92	head	6	94	head	6	92	head	6	91
+2751	headily	93	4	6				headily	6	93	headily	6	93	headily	6	93	headily	6	95	headily	6	93	headily	6	92
+2752	head-molding	94	4	6				head-molding	6	94	head-molding	6	94	head-molding	6	94	head-molding	6	96	head-molding	6	94	head-molding	6	93
+2753	head-word	95	4	5				head-word	5	95	head-word	5	95	head-word	5	95	head-	1	97	head-word	5	95	head-word	5	94
+2754	health	96	4	6				health	6	96	health	6	96	health	6	96	health	6	98	health	6	96	health	6	95
+2755	hear	97	4	6				hear	6	97	hear	6	97	hear	6	97	hear	6	99	hear	6	97	hear	6	96
+2756	heart	98	4	3	weak			beart	1	98	heart	3	98	bliMMl	1	98	heart	3	100	heart	3	98	lieart	1	97
+2757	heart	99	4	4				heart	4	99	heart	4	99	heart	4	99	heart	4	101	heart'	1	99	beart	1	98
+2758	hearth	100	4	6				hearth	6	100	hearth	6	100	hearth	6	100	hearth	6	102	hearth	6	100	hearth	6	99
+2759	heart-shaped	101	4	4				heart-shaped	4	101	Heart-shaped	2	101	heart-shaped	4	101	heart-shaped	4	103	heart-shaped	4	101	Heart-shaped	2	100
+2760	heat	102	4	6				heat	6	102	heat	6	102	heat	6	102	heat	6	104	heat	6	102	heat	6	101
+2761	heathen	103	4	6				heathen	6	103	heathen	6	103	heathen	6	103	heathen	6	105	heathen	6	103	heathen	6	102
+2762	heating	104	4	6				heating	6	104	heating	6	104	heating	6	104	heating	6	106	heating	6	104	heating	6	103
+2763	heave	105	4	6				heave	6	105	heave	6	105	heave	6	105	heave	6	107	heave	6	105	heave	6	104
+2764	heaves	106	4	6				heaves	6	106	heaves	6	106	heaves	6	106	heaves	6	108	heaves	6	106	heaves	6	105
+2765	hebdomad	107	4	6				hebdomad	6	107	hebdomad	6	107	hebdomad	6	107	hebdomad	6	109	hebdomad	6	107	hebdomad	6	106
+2766	Hebraize	108	4	6				Hebraize	6	108	Hebraize	6	108	Hebraize	6	108	Hebraize	6	110	Hebraize	6	108	Hebraize	6	107
+2767	heckle	109	4	6				heckle	6	109	heckle	6	109	heckle	6	109	heckle	6	111	heckle	6	109	heckle	6	108
+2768	Hedera	110	4	6				Hedera	6	110	Hedera	6	110	Hedera	6	110	Hedera	6	112	Hedera	6	110	Hedera	6	109
+2769	hedgehog-grass	111	4	6				hedgehog-grass	6	111	hedgehog-grass	6	111	hedgehog-grass	6	111	hedgehog-grass	6	113	hedgehog-grass	6	111	hedgehog-grass	6	110
+2770	Hedycarya	112	4	6				Hedycarya	6	112	Hedycarya	6	112	Hedycarya	6	112	Hedycarya	6	114	Hedycarya	6	112	Hedycarya	6	111
+2771	heel	113	4	4				heel	4	113	beel	1	113	heel	4	113	heel	4	115	heel	4	113	Heel	1	112
+2772	heel-seat	114	4	6				heel-seat	6	114	heel-seat	6	114	heel-seat	6	114	heel-seat	6	116	heel-seat	6	114	heel-seat	6	113
+2773	heigh	115	4	6				heigh	6	115	heigh	6	115	heigh	6	115	heigh	6	117	heigh	6	115	heigh	6	114
+2774	heir	116	4	6				heir	6	116	heir	6	116	heir	6	116	heir	6	118	heir	6	116	heir	6	115
+2775	helianthin	117	4	5				helianthin	5	117	helianthin	5	117	helianthin	5	117	helianthin	5	119	helianthin	5	117	heliauthin	1	116
+2776	Heliconiinse	118	4	2	weak			Heliconiinx	1	118	Heliconiinse	2	118	Heliconiinn	1	118	Heliconiinae	1	120	Heliconiinse	2	118	Heliconiinee	1	117
+2777	Heliophila	119	4	2	weak			Eeliophila	1	119	HeliopUla	1	119	HeliopMIa	1	119	Heliophila	2	121	Heliophila	2	119	HeliopMla	1	118
+2778	heliotropism	120	4	5				heliotropism	5	120	heliotropism	5	120	heliotropiHin	1	120	heliotropism	5	122	heliotropism	5	120	heliotropism	5	119
+2779	hell-bale	121	4	6				hell-bale	6	121	hell-bale	6	121	hell-bale	6	121	hell-bale	6	123	hell-bale	6	121	hell-bale	6	120
+2780	Hellenist	122	4	6				Hellenist	6	122	Hellenist	6	122	Hellenist	6	122	Hellenist	6	124	Hellenist	6	122	Hellenist	6	121
+2781	helm	123	4	6				helm	6	123	helm	6	123	helm	6	123	helm	6	125	helm	6	123	helm	6	122
+2782	helminthic	124	4	5				helminthic	5	124	helminthic	5	124	helminthic	5	124	helminthic	5	126	helmintliic	1	124	helminthic	5	123
+2783	Helostoma	125	4	6				Helostoma	6	125	Helostoma	6	125	Helostoma	6	125	Helostoma	6	127	Helostoma	6	125	Helostoma	6	124
+2784	helpful	126	4	6				helpful	6	126	helpful	6	126	helpful	6	126	helpful	6	128	helpful	6	126	helpful	6	125
+2785	hem	127	4	6				hem	6	127	hem	6	127	hem	6	127	hem	6	129	hem	6	127	hem	6	126
+2786	hematite	128	4	6				hematite	6	128	hematite	6	128	hematite	6	128	hematite	6	130	hematite	6	128	hematite	6	127
+2787	Hemerobiidae	129	4	4				Hemerobiidae	4	129	Hemerobiidse	2	129	Hemerobiidae	4	129	Hemerobiidae	4	131	Hemerobiidae	4	129	Hemerobiidse	2	128
+2788	Hemidactylus	130	4	5				Hemidactylus	5	130	Hemidactylus	5	130	Hemidactylus	5	130	j	1	132	Hemidactylus	5	130	Hemidactylus	5	129
+2789	hemiolia	131	4	5				hemiolia	5	131	hemiolia	5	131	henuolia	1	131	hemiolia	5	133	hemiolia	5	131	hemiolia	5	130
+2790	hemisphere	132	4	4				hemisphere	4	132	bemiBphere	1	132	taemisphere	1	132	hemisphere	4	134	hemisphere	4	132	hemisphere	4	131
+2791	hemoglobinemia	133	4	6				hemoglobinemia	6	133	hemoglobinemia	6	133	hemoglobinemia	6	133	hemoglobinemia	6	135	hemoglobinemia	6	133	hemoglobinemia	6	132
+2792	hemp-resin	134	4	4				hemp-resin	4	134	hemp-resin	4	134	hemp-resLn	1	134	hemp-resin	4	136	hemp-resln	1	134	hemp-resin	4	133
+2793	henceforward	135	4	6				henceforward	6	135	henceforward	6	135	henceforward	6	135	henceforward	6	137	henceforward	6	135	henceforward	6	134
+2794	bendy	136	4	5				bendy	5	136	bendy	5	136	bendy	5	136	hendy	1	138	bendy	5	136	bendy	5	135
+2795	Henslowieae	137	4	4				Henslowiese	1	137	Henslowieae	4	137	Henslowieae	4	137	Henslowieae	4	139	Henslowieae	4	137	Henslo'wiese	1	136
+2796	hepatorrhea	138	4	3	weak			heptaspermous	1	138	hepatorrhea	3	138	hepatorrhea	3	138	hepatorrhea	3	140	tho	1	138	as	1	137
+2797	heptastich	139	4	6				heptastich	6	139	heptastich	6	139	heptastich	6	139	heptastich	6	141	heptastich	6	139	heptastich	6	138
+2798	herald	140	4	6				herald	6	140	herald	6	140	herald	6	140	herald	6	142	herald	6	140	herald	6	139
+2799	herbary	141	4	6				herbary	6	141	herbary	6	141	herbary	6	141	herbary	6	143	herbary	6	141	herbary	6	140
+2800	herby	142	4	3	weak			herty	2	142	herby	3	142	IVr-	1	142	herby	3	144	herby	3	142	herty	2	141
+2801	herd	143	4	6				herd	6	143	herd	6	143	herd	6	143	herd	6	145	herd	6	143	herd	6	142
+2802	hereafter	144	4	5				hereafter	5	144	hereafter	5	144	An	1	144	hereafter	5	146	hereafter	5	144	hereafter	5	143
+2803	herein	145	4	6				herein	6	145	herein	6	145	herein	6	145	herein	6	147	herein	6	145	herein	6	144
+2804	heretofom	146	4	3	weak			heretofom	3	146	heretofom	3	146	heretoforn	2	146	heretoforn	2	148	heretofom	3	146	beretoforn	1	145
+2805	hermandad	147	4	5				hermandad	5	147	hermandad	5	147	hermandad	5	147	hermandad	5	149	hennandad	1	147	hermandad	5	146
+2806	Hermetic	148	4	5				Hermetic	5	148	Hermetic	5	148	BteBMtle	1	148	Hermetic	5	150	Hermetic	5	148	Hermetic	5	147
+2807	Hernandia	149	4	3	weak			Hernandia	3	149	Hernandia	3	149	Hemandla	1	149	Hernandia	3	151	Eernandia	1	149	Hernaudia	1	148
+2808	heroic	150	4	6				heroic	6	150	heroic	6	150	heroic	6	150	heroic	6	152	heroic	6	150	heroic	6	149
+2809	Herpestinse	151	4	4				Herpestinse	4	151	Herpestinae	2	151	Herpestinse	4	151	Herpestinae	2	153	Herpestinse	4	151	Herpestinse	4	150
+2810	herring-buss	152	4	4				herring-buss	4	152	herring-buss	4	152	henlng-buM	1	152	herring-buss	4	154	berring-buss	1	152	herring-buss	4	151
+2811	hesitant	153	4	5				hesitant	5	153	hesitant	5	153	hesitant	5	153	hesitant	5	155	hesitant	5	153	liesitant	1	152
+2812	Hesperus	154	4	5				Hesperus	5	154	Hesperus	5	154	HMpenii	1	154	Hesperus	5	156	Hesperus	5	154	Hesperus	5	153
+2813	hetero-	155	4	6				hetero-	6	155	hetero-	6	155	hetero-	6	155	hetero-	6	157	hetero-	6	155	hetero-	6	154
+2814	Heterodon	156	4	4				Heterodon	4	156	Eeterodon	1	156	a-	1	156	Heterodon	4	158	Heterodon	4	156	Heterodon	4	155
+2815	heterogenous	157	4	3	tie			heterogenous	3	157	heterogonous	3	157	heterogonous	3	157	heterogenous	3	159	heterogenous	3	157	heterogonous	3	156
+2816	heteronomic	158	4	5				heteronomic	5	158	heteronomic	5	158	heteroptics	1	158	heteronomic	5	160	heteronomic	5	158	heteronomic	5	157
+2817	heteroptoton	159	4	6				heteroptoton	6	159	heteroptoton	6	159	heteroptoton	6	159	heteroptoton	6	161	heteroptoton	6	159	heteroptoton	6	158
+2818	heterotrophy	160	4	3	weak			heterotropliy	1	160	heterotrophy	3	160	heterotropby	1	160	heterotrophy	3	162	ilcr	1	160	heterotrophy	3	159
+2819	hewgag	161	4	6				hewgag	6	161	hewgag	6	161	hewgag	6	161	hewgag	6	163	hewgag	6	161	hewgag	6	160
+2820	hexakisoctahedron	162	4	4				hexakisoctahedron	4	162	hexakisoctahedron	4	162	hexakisoctahedron	4	162	hexakisoctahedron	4	164	hezakisoctahedron	2	162	hezakisoctahedron	2	161
+2821	hexastyle	163	4	3	weak			hexastyle	3	163	hexastyle	3	163	Hexastyle	1	163	hexastyle	3	165	t-	1	163	liezastyle	1	162
+2822	hibernaculum	164	4	3	weak			lubernaculum	1	164	hibernaculum	3	164	hltMmarulum	1	164	hibernaculum	3	166	hibernaculum	3	164	Mbernaculum	1	163
+2823	Branch	165	4	2	weak			Branch	2	165	Branch	2	165	hickock	1	165	Flowering	1	167	FIowerinE	1	165	Mckock	1	164
+2824	hide	166	4	3	weak			bide	1	166	Iiide	1	166	hide	3	166	hide	3	168	Ude	1	166	hide	3	165
+2825	hiemation	167	4	4				hiemation	4	167	hiemation	4	167	hiemation	4	167	hiemation	4	169	and	1	167	bien	1	166
+2826	from	168	4	2	weak			from	2	168	Cfi	1	168	hlerocracy	1	168	en	1	170	from	2	168	L'f	1	167
+2827	hierurgy	169	4	5				hierurgy	5	169	hierurgy	5	169	hierurgy	5	169	hierurgy	5	171	hierurgy	5	169	Merurgy	1	168
+2828	high	170	4	5				high	5	170	high	5	170	high	5	170	high	5	172	high	5	170	higli	1	169
+2829	highfalutin	171	4	6				highfalutin	6	171	highfalutin	6	171	highfalutin	6	171	highfalutin	6	173	highfalutin	6	171	highfalutin	6	170
+2830	high-placed	172	4	5				high-placed	5	172	high-placed	5	172	high-pUced	1	172	high-placed	5	174	high-placed	5	172	high-placed	5	171
+2831	hilarious	173	4	3	weak			Ularious	1	173	Mlarious	1	173	hilarious	3	173	hilarious	3	175	hilarious	3	173	order	1	172
+2832	hillier	174	4	4				hillier	4	174	hillier	4	174	hilUer	1	174	hillier	4	176	hillier	4	174	Mllier	1	173
+2833	himpne	175	4	6				himpne	6	175	himpne	6	175	himpne	6	175	himpne	6	177	himpne	6	175	himpne	6	174
+2834	hindhead	176	4	4				hindhead	4	176	hindhead	4	176	ir	1	176	hindhead	4	178	hindhead	4	176	Mndhead	1	175
+2835	hinoid	177	4	6				hinoid	6	177	hinoid	6	177	hinoid	6	177	hinoid	6	179	hinoid	6	177	hinoid	6	176
+2836	Hippeastnim	178	4	2	tie			Hippeastrum	2	178	Hippeastrmn	1	178	HippeMtnim	1	178	Hippeastnim	2	180	Hippeastrum	2	178	Hippeastnim	2	177
+2837	Hippocratic	179	4	5				Hippocratic	5	179	Hippocratic	5	179	Hippocratic	5	179	Hippocratic	5	181	Hlppocratlc	1	179	Hippocratic	5	178
+2838	hippophile	180	4	5				hippophile	5	180	hippophile	5	180	hippophile	5	180	hippophile	5	182	hlppophlle	1	180	hippophile	5	179
+2839	hip-shot	181	4	6				hip-shot	6	181	hip-shot	6	181	hip-shot	6	181	hip-shot	6	183	hip-shot	6	181	hip-shot	6	180
+2840	hirmologion	182	4	2	weak			hirniologion	1	182	birmologion	1	182	hinnologion	1	182	hirmologion	2	184	hirmologion	2	182	hinuologion	1	181
+2841	Hispinse	183	4	2	tie			Hispinx	1	183	Hispinse	2	183	Hispins	2	183	Hispinse	2	185	Hispinae	1	183	Hispins	2	182
+2842	histomorphology	184	4	3	weak			histomorphology	3	184	Mstomorphology	2	184	Uftomorphology	1	184	histomorphology	3	186	Mstomorphology	2	184	histomorphology	3	183
+2843	history	185	4	5				history-	1	185	history	5	185	history	5	185	history	5	187	history	5	185	history	5	184
+2844	hit	186	4	6				hit	6	186	hit	6	186	hit	6	186	hit	6	188	hit	6	186	hit	6	185
+2845	hitherward	187	4	6				hitherward	6	187	hitherward	6	187	hitherward	6	187	hitherward	6	189	hitherward	6	187	hitherward	6	186
+2846	hoar	188	4	5				boar	1	188	hoar	5	188	hoar	5	188	hoar	5	190	hoar	5	188	hoar	5	187
+2847	hoary	189	4	6				hoary	6	189	hoary	6	189	hoary	6	189	hoary	6	191	hoary	6	189	hoary	6	188
+2848	hobbler	190	4	6				hobbler	6	190	hobbler	6	190	hobbler	6	190	hobbler	6	192	hobbler	6	190	hobbler	6	189
+2849	hock	191	4	4				hock	4	191	Jilt	1	191	hock	4	191	Front	1	193	hock	4	191	hock	4	190
+2850	hodden	192	4	6				hodden	6	192	hodden	6	192	hodden	6	192	hodden	6	194	hodden	6	192	hodden	6	191
+2851	Hoffmannite	193	4	4				Hoffmannite	4	193	Hoffmannite	4	193	HoSmannite	1	193	Hoffmannite	4	195	Hofimannite	1	193	Hoffmannite	4	192
+2852	hogger	194	4	4				ers	1	194	hogger	4	194	hogger	4	194	hogger	4	196	Logger	1	194	hogger	4	193
+2853	hogshead	195	4	6				hogshead	6	195	hogshead	6	195	hogshead	6	195	hogshead	6	197	hogshead	6	195	hogshead	6	194
+2854	holaspidean	196	4	3	weak			holaspidean	3	196	liolaspidean	1	196	holaspidean	3	196	iiolaspidean	1	198	holaspidean	3	196	bolaspidean	1	195
+2855	hold	197	4	5				hold	5	197	hold	5	197	hold	5	197	hold	5	199	bold	1	197	hold	5	196
+2856	holde	198	4	4				holde	4	198	holde	4	198	bolde	1	198	holde	4	200	holdc	1	198	holde	4	197
+2857	holethnos	199	4	6				holethnos	6	199	holethnos	6	199	holethnos	6	199	holethnos	6	201	holethnos	6	199	holethnos	6	198
+2858	hollo	200	4	5				hollo	5	200	hollo	5	200	hollo	5	200	hollo	5	202	bollo	1	200	hollo	5	199
+2859	holly	201	4	6				holly	6	201	holly	6	201	holly	6	201	holly	6	203	holly	6	201	holly	6	200
+2860	holograph	202	4	4				hologiaph	1	202	holograph	4	202	-0	1	202	holograph	4	204	holograph	4	202	holograph	4	201
+2861	Holosteum	203	4	4				Holosteum	4	203	Holosteuin	2	203	Holosteum	4	203	Holosteum	4	205	Holosteum	4	203	Holosteuin	2	202
+2862	holus-bolus	204	4	4				holus-bolus	4	204	holus-bolus	4	204	holas-boltu	1	204	holus-bolus	4	206	bolus-bolus	1	204	holus-bolus	4	203
+2863	Homalium	205	4	3	weak			Homalium	3	205	Homaliunt	1	205	MamatiufH	1	205	Homalium	3	207	Homalium	3	205	ffomalium	1	204
+2864	home	206	4	6				home	6	206	home	6	206	home	6	206	home	6	208	home	6	206	home	6	205
+2865	homer	207	4	5				liomer	1	207	homer	5	207	homer	5	207	homer	5	209	homer	5	207	homer	5	206
+2866	homiculture	208	4	5				homiculture	5	208	homiculture	5	208	homicnltore	1	208	homiculture	5	210	homiculture	5	208	homiculture	5	207
+2867	Homochelae	209	4	4				Homochelae	4	209	Homochelje	1	209	Homochelse	1	209	Homochelae	4	211	Homochelae	4	209	Homochelae	4	208
+2868	Homogenea	210	4	6				Homogenea	6	210	Homogenea	6	210	Homogenea	6	210	Homogenea	6	212	Homogenea	6	210	Homogenea	6	209
+2869	homologue	211	4	4				homologue	4	211	homologue	4	211	homologue	4	211	homologue	4	213	homoloffue	1	211	boniologne	1	210
+2870	homophone	212	4	6				homophone	6	212	homophone	6	212	homophone	6	212	homophone	6	214	homophone	6	212	homophone	6	211
+2871	homotypal	213	4	2	tie			homotjrpal	2	213	I	1	213	homotypal	2	213	homotypal	2	215	homotjrpal	2	213	bomotypal	1	212
+2872	honesty	214	4	6				honesty	6	214	honesty	6	214	honesty	6	214	honesty	6	216	honesty	6	214	honesty	6	213
+2873	honeycomb	215	4	6				honeycomb	6	215	honeycomb	6	215	honeycomb	6	215	honeycomb	6	217	honeycomb	6	215	honeycomb	6	214
+2874	honeysuckle	216	4	6				honeysuckle	6	216	honeysuckle	6	216	honeysuckle	6	216	honeysuckle	6	218	honeysuckle	6	216	honeysuckle	6	215
+2875	honor	217	4	4				honor	4	217	honor	4	217	lionor	2	217	honor	4	219	lionor	2	217	honor	4	216
+2876	honorific	218	4	5				honorific	5	218	bonorific	1	218	honorific	5	218	honorific	5	220	honorific	5	218	honorific	5	217
+2877	hoodoo	219	4	6				hoodoo	6	219	hoodoo	6	219	hoodoo	6	219	hoodoo	6	221	hoodoo	6	219	hoodoo	6	218
+2878	hook	220	4	3	weak			Hooka	1	220	hook	3	220	l	1	220	simple	1	222	hook	3	220	hook	3	219
+2879	hooly	221	4	6				hooly	6	221	hooly	6	221	hooly	6	221	hooly	6	223	hooly	6	221	hooly	6	220
+2880	hoop-tree	222	4	5				hoop-tree	5	222	hoop-tree	5	222	taoop-tree	1	222	hoop-tree	5	224	hoop-tree	5	222	hoop-tree	5	221
+2881	hope	223	4	5				hope	5	223	hope	5	223	hope	5	223	hope	5	225	hope	5	223	bope	1	222
+2882	Hoplegnathus	224	4	4				Hoplegnathus	4	224	Hoplegnathus	4	224	HoplegnathuB	1	224	Hoptegnathus	1	226	Hoplegnathus	4	224	Hoplegnathus	4	223
+2883	hopping-dick	225	4	5				hopping-dick	5	225	hopping-dick	5	225	hopping-dick	5	225	hopping-dick	5	227	hopping-dick	5	225	hopping-diok	1	224
+2884	horizon	226	4	6				horizon	6	226	horizon	6	226	horizon	6	226	horizon	6	228	horizon	6	226	horizon	6	225
+2885	horn	227	4	6				horn	6	227	horn	6	227	horn	6	227	horn	6	229	horn	6	227	horn	6	226
+2886	horn-core	228	4	6				horn-core	6	228	horn-core	6	228	horn-core	6	228	horn-core	6	230	horn-core	6	228	horn-core	6	227
+2887	hornotine	229	4	3	weak			hornotine	3	229	hornotine	3	229	homotine	2	229	hornotlne	1	231	homotine	2	229	hornotine	3	228
+2888	horologue	230	4	5				horologue	5	230	horologue	5	230	told	1	230	horologue	5	232	horologue	5	230	horologue	5	229
+2889	horror	231	4	6				horror	6	231	horror	6	231	horror	6	231	horror	6	233	horror	6	231	horror	6	230
+2890	horse	232	4	4				borse	2	232	horse	4	232	horse	4	232	horse	4	234	horse	4	232	borse	2	231
+2891	horse-coursing	233	4	6				horse-coursing	6	233	horse-coursing	6	233	horse-coursing	6	233	horse-coursing	6	235	horse-coursing	6	233	horse-coursing	6	232
+2892	horse-leech	234	4	6				horse-leech	6	234	horse-leech	6	234	horse-leech	6	234	horse-leech	6	236	horse-leech	6	234	horse-leech	6	233
+2893	horse-radish	235	4	6				horse-radish	6	235	horse-radish	6	235	horse-radish	6	235	horse-radish	6	237	horse-radish	6	235	horse-radish	6	234
+2894	horsewell-grass	236	4	3	weak			horsewell-grass	3	236	hoTsewell-grass	2	236	horMweU-grass	1	236	horsewell-grass	3	238	horsewell-grass	3	236	hoTsewell-grass	2	235
+2895	hose	237	4	5				bose	1	237	hose	5	237	hose	5	237	hose	5	239	hose	5	237	hose	5	236
+2896	hospital	238	4	5				hospital	5	238	hospital	5	240	hospital	5	238	SSI	1	240	hospital	5	238	hospital	5	237
+2897	host	239	4	6				host	6	239	host	6	241	host	6	239	host	6	241	host	6	239	host	6	238
+2898	hosting	240	4	4				bosting	2	240	hosting	4	242	hosting	4	240	hosting	4	242	hosting	4	240	bosting	2	239
+2899	hotel-car	241	4	6				hotel-car	6	241	hotel-car	6	243	hotel-car	6	241	hotel-car	6	243	hotel-car	6	241	hotel-car	6	240
+2900	Wagon	242	4	3	weak			hound	1	242	Wagon	3	244	n	1	242	Wagon	3	244	liotinds	1	242	Wagon	3	241
+2901	hourly	243	4	5				hourly	5	243	hourly	5	245	hotirly	1	243	hourly	5	245	hourly	5	243	hourly	5	242
+2902	house	244	4	4				house	4	244	honse	1	246	hOUM	1	244	house	4	246	house	4	244	house	4	243
+2903	housekeeper	245	4	6				housekeeper	6	245	housekeeper	6	247	housekeeper	6	245	housekeeper	6	247	housekeeper	6	245	housekeeper	6	244
+2904	housewarm	246	4	3	weak			housewarm	3	246	housewarm	3	248	bonsewann	1	246	housewarm	3	248	liousewarm	1	246	bousewarm	1	245
+2905	hove-dance	247	4	6				hove-dance	6	247	hove-dance	6	249	hove-dance	6	247	hove-dance	6	249	hove-dance	6	247	hove-dance	6	246
+2906	how	248	4	6				how	6	248	how	6	250	how	6	248	how	6	250	how	6	248	how	6	247
+2907	howitzer	249	4	5				howitzer	5	249	Brass	1	251	howitzer	5	249	howitzer	5	251	howitzer	5	249	howitzer	5	248
+2908	An	250	4	3	weak			An	3	250	An	3	252	K	1	250	An	3	252	hub	2	250	hub	2	249
+2909	huckleberry	251	4	6				huckleberry	6	251	huckleberry	6	253	huckleberry	6	251	huckleberry	6	253	huckleberry	6	251	huckleberry	6	250
+2910	hue	252	4	6				hue	6	252	hue	6	254	hue	6	252	hue	6	254	hue	6	252	hue	6	251
+2911	hug	253	4	5				hug	5	253	hug	5	255	hug	5	253	hag	1	255	hug	5	253	hug	5	252
+2912	hulk	254	4	5				hulk	5	254	hulk	5	256	hnlic	1	254	hulk	5	256	hulk	5	254	hulk	5	253
+2913	hum	255	4	3	weak			htun	1	255	lium	1	257	hum	3	255	hum	3	257	hum	3	255	bum	1	254
+2914	humanitarian	256	4	4				humanitarian	4	256	liiiinamtarian	1	258	homanitarian	1	256	humanitarian	4	258	humanitarian	4	256	humanitarian	4	255
+2915	humble	257	4	6				humble	6	257	humble	6	259	humble	6	257	humble	6	259	humble	6	257	humble	6	256
+2916	humectation	258	4	3	weak			hnmectation	1	258	humectation	3	260	or	1	258	humectation	3	260	humectation	3	258	htunectation	1	257
+2917	humin	259	4	2	weak			h	1	259	humin	2	261	humin	2	259	humiii	1	261	hmnln	1	259	hiimin	1	258
+2918	humor	260	4	3	weak			tiumoT	1	260	humor	3	262	humor	3	260	tumor	1	262	humor	3	260	bumor	1	259
+2919	humpback	261	4	6				humpback	6	261	humpback	6	263	humpback	6	261	humpback	6	263	humpback	6	261	humpback	6	260
+2920	hundred	262	4	5				hundred	5	262	hundred	5	264	taimdred	1	262	hundred	5	264	hundred	5	262	hundred	5	261
+2921	hungry	263	4	6				hungry	6	263	hungry	6	265	hungry	6	263	hungry	6	265	hungry	6	263	hungry	6	262
+2922	hunt	264	4	4				One	1	264	hunt	4	266	hunt	4	264	hunt	4	266	hnnt	1	264	hunt	4	263
+2923	hurde	265	4	6				hurde	6	265	hurde	6	267	hurde	6	265	hurde	6	267	hurde	6	265	hurde	6	264
+2924	hurlbat	266	4	4				hurlbat	4	266	hurlbat	4	268	horlbat	1	266	hurlbat	4	268	hurlbat	4	266	iurlbat	1	265
+2925	hurry-burry	267	4	5				hurry-burry	5	267	hurry-burry	5	269	hurry-burry	5	267	hurry-burry	5	269	hurry-burry	5	267	tilrry-burry	1	266
+2926	husband	268	4	6				husband	6	268	husband	6	270	husband	6	268	husband	6	270	husband	6	268	husband	6	267
+2927	hushaby	269	4	6				hushaby	6	269	hushaby	6	271	hushaby	6	269	hushaby	6	271	hushaby	6	269	hushaby	6	268
+2928	hussif	270	4	3	weak			hussif	3	270	hassif	1	272	liiualf	1	270	hussif	3	272	hussif	3	270	bussif	1	269
+2929	Hutchinsia	271	4	4				HutcMnsia	1	271	Hutchinsia	4	273	Hutchlnsia	1	271	Hutchinsia	4	273	Hutchinsia	4	271	Hutchinsia	4	270
+2930	Hyaenidae	272	4	1	tie			Hysenlass	1	272	Hysenidae	1	274	Hyaenidse	1	272	Hyaenidae	1	274	Hysenids	1	272	HysenidsB	1	271
+2931	hybrid	273	4	6				hybrid	6	273	hybrid	6	275	hybrid	6	273	hybrid	6	275	hybrid	6	273	hybrid	6	272
+2932	hydra	274	4	4				hydra	4	274	hydra	4	276	poHod	1	274	hydra	4	276	hydra	4	274	liydra	1	273
+2933	Hydraspididae	275	4	3	weak			Hydraspididse	2	275	Hydraspididse	2	277	Hydraspididae	3	275	Hydraspididae	3	277	Hydraspididae	3	275	HydraspididsB	1	274
+2934	in	276	4	3	weak			hydrencephalus	2	276	in	3	278	hydrencephalos	1	276	hydrencephalus	2	278	in	3	276	in	3	275
+2935	hydrocerusite	277	4	5				hydrocerusite	5	277	hydrocerusite	5	279	hydrocerusite	5	277	hydrocerusite	5	279	hydrocemsite	1	277	hydrocerusite	5	276
+2936	hydrodynamometer	278	4	5				hydrodynamometer	5	278	hydrodynainoineter	1	280	hydrodynamometer	5	278	hydrodynamometer	5	280	hydrodynamometer	5	278	hydrodynamometer	5	277
+2937	Hydroidea	279	4	6				Hydroidea	6	279	Hydroidea	6	281	Hydroidea	6	279	Hydroidea	6	281	Hydroidea	6	279	Hydroidea	6	278
+2938	hydromicaceous	280	4	3	weak			hydromicaceous	3	280	hydromicaceous	3	282	bydromicaceons	1	280	hydromicaceous	3	282	hydromicaceons	2	280	hydromicaceons	2	279
+2939	Detached	281	4	3	tie			Hydrophyllaceae	3	281	Detached	3	283	Hydrophyllaceae	3	281	Detached	3	283	Hydrophyllaceae	3	281	Detached	3	280
+2940	Hydrosaurus	282	4	3	weak			Hydrosaurus	3	282	Hydrosaurus	3	284	Hydrosannu	1	282	Hydrosaums	1	284	Hydrosaunis	1	282	Hydrosaurus	3	281
+2941	hydroxid	283	4	5				hydroxid	5	283	hydroxid	5	285	hydroxid	5	283	hydroxid	5	285	hydroxid	5	283	hydrozid	1	282
+2942	Hygeian	284	4	4				Eygeian	1	284	Hygeian	4	286	or	1	284	Hygeian	4	286	Hygeian	4	284	Hygeian	4	283
+2943	Hyla	285	4	5				of	1	285	Hyla	5	287	Hyla	5	285	Hyla	5	287	Hyla	5	285	Hyla	5	284
+2944	Hymen	286	4	5				Hymen	5	286	Hymen	5	288	HTmen	1	286	Hymen	5	288	Hymen	5	286	Hymen	5	285
+2945	Hymenoptera	287	4	6				Hymenoptera	6	287	Hymenoptera	6	289	Hymenoptera	6	287	Hymenoptera	6	289	Hymenoptera	6	287	Hymenoptera	6	286
+2946	Hyoganoidei	288	4	6				Hyoganoidei	6	288	Hyoganoidei	6	290	Hyoganoidei	6	288	Hyoganoidei	6	290	Hyoganoidei	6	288	Hyoganoidei	6	287
+2947	Lumbar	289	4	3	tie			Hypapante	3	289	Hypapante	3	291	Lumbar	3	289	Lumbar	3	291	Lumbar	3	289	Hypapante	3	288
+2948	hyperbola	290	4	6				hyperbola	6	290	hyperbola	6	292	hyperbola	6	290	hyperbola	6	292	hyperbola	6	290	hyperbola	6	289
+2949	hypercriticize	291	4	6				hypercriticize	6	291	hypercriticize	6	293	hypercriticize	6	291	hypercriticize	6	293	hypercriticize	6	291	hypercriticize	6	290
+2950	hyperlydian	292	4	4				hyperlydian	4	292	hyperlydian	4	294	hyperphysical	1	292	hyperlydian	4	294	hyperlydian	4	292	opposite	1	291
+2951	hyperphysics	293	4	5				hyperphysics	5	293	hyperphysics	5	295	hypersthenic-	1	293	hyperphysics	5	295	hyperphysics	5	293	hyperphysics	5	292
+2952	Hyphantria	294	4	6				Hyphantria	6	294	Hyphantria	6	296	Hyphantria	6	294	Hyphantria	6	296	Hyphantria	6	294	Hyphantria	6	293
+2953	hypnosporic	295	4	4				hypnosporic	4	295	hypnosporic	4	297	typnosporic	1	295	hypnosporic	4	297	hypnosporic	4	295	liypnosporic	1	294
+2954	Hypochoeris	296	4	5				Hypochoeris	5	296	Hypochoeris	5	298	HypochcBris	1	296	Hypochoeris	5	298	Hypochoeris	5	296	Hypochoeris	5	295
+2955	hypoderma	297	4	6				hypoderma	6	297	hypoderma	6	299	hypoderma	6	297	hypoderma	6	299	hypoderma	6	297	hypoderma	6	296
+2956	hypognathous	298	4	3	weak			bypognatlious	1	298	hypognathous	3	300	lllllll	1	298	hypognathous	3	300	hypognathous	3	298	liypognatlious	1	297
+2957	hypopselaphesia	299	4	6				hypopselaphesia	6	299	hypopselaphesia	6	301	hypopselaphesia	6	299	hypopselaphesia	6	301	hypopselaphesia	6	299	hypopselaphesia	6	298
+2958	hypostatical	300	4	5				hypostatical	5	300	hypostatical	5	302	liTPOftatieal	1	300	hypostatical	5	302	hypostatical	5	300	hypostatical	5	299
+2959	hypothecation	301	4	6				hypothecation	6	301	hypothecation	6	303	hypothecation	6	301	hypothecation	6	303	hypothecation	6	301	hypothecation	6	300
+2960	Hypotriorchis	302	4	5				Hypotriorchis	5	302	Hypotriorchis	5	304	Hypotriorchls	1	302	Hypotriorchis	5	304	Hypotriorchis	5	302	Hypotriorchis	5	301
+2961	hypsometry	303	4	6				hypsometry	6	303	hypsometry	6	305	hypsometry	6	303	hypsometry	6	305	hypsometry	6	303	hypsometry	6	302
+2962	hysteric	304	4	6				hysteric	6	304	hysteric	6	306	hysteric	6	304	hysteric	6	306	hysteric	6	304	hysteric	6	303
+2963	The	305	4	5				The	5	305	The	5	307	l	1	305	The	5	307	The	5	305	The	5	304
+2964	iambical	306	4	6				iambical	6	306	iambical	6	308	iambical	6	306	iambical	6	308	iambical	6	306	iambical	6	305
+2965	ibex	307	4	2	weak			iljex	1	307	Tiewed	1	309	Ibex	1	307	ibex	2	309	iliex	1	307	ibex	2	306
+2966	ice	308	4	4				ice	4	308	Ice	1	310	lee	1	308	ice	4	310	ice	4	308	ice	4	307
+2967	ice-elevator	309	4	6				ice-elevator	6	309	ice-elevator	6	311	ice-elevator	6	309	ice-elevator	6	311	ice-elevator	6	309	ice-elevator	6	308
+2968	plow	310	4	3	weak			plow	3	310	ice-plow	2	312	Ice-plow	1	310	plow	3	312	plow	3	310	ice-plow	2	309
+2969	ichnology	311	4	4				ichnology	4	311	ichnology	4	313	see	1	311	ichnology	4	313	iclinology	1	311	ichnology	4	310
+2970	Ichthyornis	312	4	4				Ichthyornis	4	312	Ichthyornis	4	314	Ichthyomis	1	312	Ichthyornis	4	314	Ichthyornis	4	312	Iclithyornis	1	311
+2971	icon	313	4	6				icon	6	313	icon	6	315	icon	6	313	icon	6	315	icon	6	313	icon	6	312
+2972	Great	314	4	3	weak			Great	3	314	Great	3	316	IcoMLhedral	1	314	Regular	2	316	Great	3	314	Regular	2	313
+2973	ictus	315	4	6				ictus	6	315	ictus	6	317	ictus	6	315	ictus	6	317	ictus	6	315	ictus	6	314
+2974	ideal	316	4	6				ideal	6	316	ideal	6	318	ideal	6	316	ideal	6	318	ideal	6	316	ideal	6	315
+2975	idempotent	317	4	6				idempotent	6	317	idempotent	6	319	idempotent	6	317	idempotent	6	319	idempotent	6	317	idempotent	6	316
+2976	idiasm	318	4	5				idiasm	5	318	idiasm	5	320	Idlasm	1	318	idiasm	5	320	idiasm	5	318	idiasm	5	317
+2977	idiosyncrasy	319	4	6				idiosyncrasy	6	319	idiosyncrasy	6	321	idiosyncrasy	6	319	idiosyncrasy	6	321	idiosyncrasy	6	319	idiosyncrasy	6	318
+2978	idle	320	4	5				idle	5	320	idle	5	322	Idle	1	320	idle	5	322	idle	5	320	idle	5	319
+2979	idolatrous	321	4	6				idolatrous	6	321	idolatrous	6	323	idolatrous	6	321	idolatrous	6	323	idolatrous	6	321	idolatrous	6	320
+2980	idyl	322	4	6				idyl	6	322	idyl	6	324	idyl	6	322	idyl	6	324	idyl	6	322	idyl	6	321
+2981	ignify	323	4	6				ignify	6	323	ignify	6	325	ignify	6	323	ignify	6	325	ignify	6	323	ignify	6	322
+2982	Ignorance	324	4	3	weak			iguorance	1	324	Ignorance	3	326	Ignorance	3	324	ignorance	2	326	ignorance	2	324	Ignorance	3	323
+2983	ihleite	325	4	6				ihleite	6	325	ihleite	6	327	ihleite	6	325	ihleite	6	327	ihleite	6	325	ihleite	6	324
+2984	iliac	326	4	4				iliac	4	326	lUac	1	328	Uiac	1	326	iliac	4	328	iliac	4	326	iliac	4	325
+2985	ilkon	327	4	3	weak			llkon	2	327	llkon	2	329	ilkon	3	327	ilkon	3	329	ilkon	3	327	Ukon	1	326
+2986	iUative	328	4	3	weak			iUative	3	328	iUative	3	330	lUatlve	1	328	Illative	1	330	illative	1	328	iUative	3	327
+2987	ill-fated	329	4	6				ill-fated	6	329	ill-fated	6	331	ill-fated	6	329	ill-fated	6	331	ill-fated	6	329	ill-fated	6	328
+2988	illiteracy	330	4	5				illiteracy	5	330	illiteracy	5	332	illiteracy	5	330	Illiteracy	1	332	illiteracy	5	330	illiteracy	5	329
+2989	illude	331	4	4				illude	4	331	illude	4	333	iUude	1	331	illude	4	333	illude	4	331		1	330
+2990	ilhiminism	332	4	1	tie			illuminism	1	332	iUuminism	1	334	UlaminiBm	1	332	ilhiminism	1	334	illmninism	1	332	illnminism	1	331
+2991	illustriousness	333	4	3	weak			lllustriousness	1	333	illustriousness	3	335	illustriousness	3	333	illustriousness	3	335	black	1	333	iUustriousness	1	332
+2992	imagery	334	4	5				imagery	5	334	imagery	5	336	Imagery	1	334	imagery	5	336	imagery	5	334	imagery	5	333
+2993	imagine	335	4	4				imagine	4	335	will	1	337	imagine	4	335	The	1	337	imagine	4	335	imagine	4	334
+2994	imblazon	336	4	5				imblazon	5	336	imblazon	5	338	imblazon	5	336	imblazon	5	338	imblazon	5	336	Imblazon	1	335
+2995	imide	337	4	3	weak			imide	3	337	imlde	2	339	imide	3	337	Imlde	1	339	imlde	2	337	imide	3	336
+2996	immanent	338	4	5				immanent	5	338	immanent	5	340	immanent	5	338	immanent	5	340	immanent	5	338	Immanent	1	337
+2997	immediacy	339	4	5				immediacy	5	339	immediacy	5	341	immediacy	5	339	immediacy	5	341	Immediacy	1	339	immediacy	5	338
+2998	immerited	340	4	4				immerited	4	340	immerited	4	342	Immerited	1	340	immerited	4	342	immerited	4	340	unmerited	1	339
+2999	immitigably	341	4	3	weak			imimtigably	1	341	inunltlgably	2	343	immitigably	3	341	immitigably	3	343	inunltlgably	2	341	immitigably	3	340
+3000	immortality	342	4	6				immortality	6	342	immortality	6	344	immortality	6	342	immortality	6	344	immortality	6	342	immortality	6	341
+3001	im	343	4	1	tie			inmiutation	1	343	immutatlon	1	345	iminutation	1	343	im	1	345	Immutatlon	1	343	immutation	1	342
+3002	impalement	344	4	4				impalement	4	344	impalement	4	346	Impalement	2	344	impalement	4	346	Impalement	2	344	impalement	4	343
+3003	impart	345	4	5				impart	5	345	impart	5	347	impart	5	345	impart	5	347	impart	5	345	Impart	1	344
+3004	impatible	346	4	6				impatible	6	346	impatible	6	348	impatible	6	346	impatible	6	348	impatible	6	346	impatible	6	345
+3005	impeachment	347	4	4				impeachment	4	347	impeachment	4	349	impeacliment	1	347	impeachment	4	349	impeaclunent	1	347	impeachment	4	346
+3006	impenetrable	348	4	5				impenetrable	5	348	impenetrable	5	350	Impenetrable	1	348	impenetrable	5	350	impenetrable	5	348	impenetrable	5	347
+3007	imperceptible	349	4	6				imperceptible	6	349	imperceptible	6	351	imperceptible	6	349	imperceptible	6	351	imperceptible	6	349	imperceptible	6	348
+3008	imperialism	350	4	6				imperialism	6	350	imperialism	6	352	imperialism	6	350	imperialism	6	352	imperialism	6	350	imperialism	6	349
+3009	impersonality	351	4	4				impersonality	4	351	impersonality	4	353	impersonality	4	351	Impersonality	2	353	Impersonality	2	351	impersonality	4	350
+3010	impetrate	352	4	6				impetrate	6	352	impetrate	6	354	impetrate	6	352	impetrate	6	354	impetrate	6	352	impetrate	6	351
+3011	impious	353	4	3	weak			impious	3	353	Impious	2	355	Impions	1	353	impious	3	355	Impious	2	353	impious	3	352
+3012	impliable	354	4	3	weak			impllable	1	354	impliable	3	356	Impliable	1	354	impliable	3	356	Impllable	1	354	impliable	3	353
+3013	imply	355	4	4				imply	4	355	Imply	2	357	imply	4	355	imply	4	357	Imply	2	355	imply	4	354
+3014	importable	356	4	6				importable	6	356	importable	6	358	importable	6	356	importable	6	358	importable	6	356	importable	6	355
+3015	importunity	357	4	5				importunity	5	357	importunity	5	359	importunity	5	357	importunity	5	359	importunity	5	357	importimity	1	356
+3016	impost	358	4	6				impost	6	358	impost	6	360	impost	6	358	impost	6	360	impost	6	358	impost	6	357
+3017	impoverish	359	4	4				impoverish	4	359	impoverisli	1	361	impoverish	4	359	impoverish	4	361	impoTerish	1	359	impoverish	4	358
+3018	imprescribable	360	4	4				imprescribable	4	360	imprescribable	4	362	imprescribable	4	360	imprescribable	4	362	Imprescribable	2	360	Imprescribable	2	359
+3019	impressionable	361	4	5				impressionable	5	361	impressionable	5	363	impressionable	5	361	impressionable	5	363	impressionable	5	361	Impressionable	1	360
+3020	imprisoner	362	4	3	weak			imprisoner	3	362	imprisoner	3	364	imprlBoner	1	362	One	1	364	uuprisoner	1	362	imprisoner	3	361
+3021	impropriation	363	4	6				impropriation	6	363	impropriation	6	365	impropriation	6	363	impropriation	6	365	impropriation	6	363	impropriation	6	362
+3022	improvident	364	4	6				improvident	6	364	improvident	6	366	improvident	6	364	improvident	6	366	improvident	6	364	improvident	6	363
+3023	impugnation	365	4	5				impugnation	5	365	impugnation	5	367	impugnation	5	365	impulsio	1	367	impugnation	5	365	impugnation	5	364
+3024	impurity	366	4	5				impurity	5	366	impurity	5	368	Impurity	1	366	impurity	5	368	impurity	5	366	impurity	5	365
+3025	in	367	4	6				in	6	367	in	6	369	in	6	367	in	6	369	in	6	367	in	6	366
+3026	-in	368	4	3	weak			a	1	368	-in	3	370	-in	3	368	-in	3	370	-In	1	368	-m	1	367
+3027	inadequation	369	4	3	weak			inadecLuatlon	1	369	inadecLuation	1	371	inadequation	3	369	inadequation	3	371	inadequation	3	369	inadeciuatlon	1	368
+3028	inanimate	370	4	4				inanimate	4	370	inanimate	4	372	inanimate	4	370	inanimate	4	372	Inanimate	1	370	an	1	369
+3029	inaquate	371	4	4				inaquate	4	371	inaquate	4	373	inaquate	4	371	magnate	1	373	InacLuate	1	371	inaquate	4	370
+3030	inauguratory	372	4	5				inauguratory	5	372	inauguratory	5	374	Inaugnratory	1	372	inauguratory	5	374	inauguratory	5	372	inauguratory	5	371
+3031	incalculable	373	4	6				incalculable	6	373	incalculable	6	375	incalculable	6	373	incalculable	6	375	incalculable	6	373	incalculable	6	372
+3032	incapsulate	374	4	4				Incapsulate	1	374	incapsulate	4	376	incapsolate	1	374	incapsulate	4	376	incapsulate	4	374	incapsulate	4	373
+3033	incautious	375	4	6				incautious	6	375	incautious	6	377	incautious	6	375	incautious	6	377	incautious	6	375	incautious	6	374
+3034	incensive	376	4	4				incensive	4	376	incensive	4	378	incensive	4	376	incensive	4	378	Incensive	1	376	mcensive	1	375
+3035	incest	377	4	6				incest	6	377	incest	6	379	incest	6	377	incest	6	379	incest	6	377	incest	6	376
+3036	incidence	378	4	5				incidence	5	378	incidence	5	380	incidence	5	378	incidence	5	380	Incidencd	1	378	incidence	5	377
+3037	incisive	379	4	5				incisive	5	379	incisive	5	381	incisive	5	379	incisive	5	381	incisive	5	379	incislTe	1	378
+3038	inclination	380	4	3	weak			inclination	3	380	inclination	3	382	u	1	380	inclination	3	382	Inclination	1	380	inclmation	1	379
+3039	Sections	381	4	5				inclusion	1	381	Sections	5	383	Sections	5	381	Sections	5	383	Sections	5	381	Sections	5	380
+3040	incombustible	382	4	4				incombustible	4	382	incombustible	4	384	Incombustible	2	382	Incombustible	2	384	incombustible	4	382	incombustible	4	381
+3041	incommunicating	383	4	3	weak			incommunicating	3	383	incommuuicating	1	385	inconununicating	1	383	incommunicating	3	385	incommunicating	3	383	inconrmunicating	1	382
+3042	incomportable	384	4	6				incomportable	6	384	incomportable	6	386	incomportable	6	384	incomportable	6	386	incomportable	6	384	incomportable	6	383
+3043	inconcinnous	385	4	2	weak			mconcinnous	1	385	inconcinnoas	1	387	inconciimous	1	385	inconcinnous	2	387	inconcinnons	1	385	inconcinnous	2	384
+3044	inconsecutive	386	4	5				inconsecutive	5	386	inconsecutive	5	388	inconsecutive	5	386	Inconsecutive	1	388	inconsecutive	5	386	inconsecutive	5	385
+3045	inconstance	387	4	6				inconstance	6	387	inconstance	6	389	inconstance	6	387	inconstance	6	389	inconstance	6	387	inconstance	6	386
+3046	inconvenient	388	4	6				inconvenient	6	388	inconvenient	6	390	inconvenient	6	388	inconvenient	6	390	inconvenient	6	388	inconvenient	6	387
+3047	incorporeal	389	4	6				incorporeal	6	389	incorporeal	6	391	incorporeal	6	389	incorporeal	6	391	incorporeal	6	389	incorporeal	6	388
+3048	increase	390	4	6				increase	6	390	increase	6	392	increase	6	390	increase	6	392	increase	6	390	increase	6	389
+3049	merest	391	4	2	tie			increst	2	391	Increst	2	393	merest	2	391	merest	2	393	increst	2	391	Increst	2	390
+3050	incubiture	392	4	3	weak			incublture	2	392	incubittire	1	394	incublture	2	392	incubiture	3	394	incubiture	3	392	incubiture	3	391
+3051	incur	393	4	4				incur	4	393	incur	4	395	incur	4	393	incur	4	395	incnr	1	393	mcur	1	392
+3052	inde	394	4	6				inde	6	394	inde	6	396	inde	6	394	inde	6	396	inde	6	394	inde	6	393
+3053	indefectible	395	4	6				indefectible	6	395	indefectible	6	397	indefectible	6	395	indefectible	6	397	indefectible	6	395	indefectible	6	394
+3054	indemnity	396	4	6				indemnity	6	396	indemnity	6	398	indemnity	6	396	indemnity	6	398	indemnity	6	396	indemnity	6	395
+3055	indenture	397	4	4				indenture	4	397	indenttire	1	399	Indenture	1	397	indenture	4	399	indenture	4	397	indenture	4	396
+3056	indesert	398	4	6				indesert	6	398	indesert	6	400	indesert	6	398	indesert	6	400	indesert	6	398	indesert	6	397
+3057	index	399	4	5				index	5	399	index	5	401	index	5	399	index	5	401	index	5	399	Index	1	398
+3058	Indian	400	4	6				Indian	6	400	Indian	6	402	Indian	6	400	Indian	6	402	Indian	6	400	Indian	6	399
+3059	indicative	401	4	5				indicative	5	401	indicative	5	403	indicative	5	401	indicative	5	403	indicative	5	401	Indicative	1	400
+3060	indifference	402	4	6				indifference	6	402	indifference	6	404	indifference	6	402	indifference	6	404	indifference	6	402	indifference	6	401
+3061	indigestion	403	4	6				indigestion	6	403	indigestion	6	405	indigestion	6	403	indigestion	6	405	indigestion	6	403	indigestion	6	402
+3062	Indigo-plant	404	4	5				Indigo-plant	5	404	InJigo-plant	1	406	Indigo-plant	5	404	Indigo-plant	5	406	Indigo-plant	5	404	Indigo-plant	5	403
+3063	indiscreet	405	4	6				indiscreet	6	405	indiscreet	6	407	indiscreet	6	405	indiscreet	6	407	indiscreet	6	405	indiscreet	6	404
+3064	indissolvable	406	4	4				indissolvable	4	406	indissolvable	4	408	As	1	406	indlssolvable	1	408	indissolvable	4	406	indissolvable	4	405
+3065	Individualism	407	4	3	weak			Individualism	3	407	individualism	1	409	indiTidualism	1	407	Individualism	3	409	Individualism	3	407	IndiTidualism	1	406
+3066	indivulsively	408	4	4				indivulsively	4	408	indivulsively	4	410	Indivulsively	1	408	indlvulsively	1	410	indivulsively	4	408	indivulsively	4	407
+3067	indorse	409	4	6				indorse	6	409	indorse	6	411	indorse	6	409	indorse	6	411	indorse	6	409	indorse	6	408
+3068	induce	410	4	6				induce	6	410	induce	6	412	induce	6	410	induce	6	412	induce	6	410	induce	6	409
+3069	induction	411	4	5				induction	5	411	Induction	1	413	induction	5	411	induction	5	413	induction	5	411	induction	5	410
+3070	indulge	412	4	6				indulge	6	412	indulge	6	414	indulge	6	412	indulge	6	414	indulge	6	412	indulge	6	411
+3071	part	413	4	5				indusium	1	413	part	5	415	part	5	413	part	5	415	part	5	413	part	5	412
+3072	inebriate	414	4	6				inebriate	6	414	inebriate	6	416	inebriate	6	414	inebriate	6	416	inebriate	6	414	inebriate	6	413
+3073	inelegant	415	4	6				inelegant	6	415	inelegant	6	417	inelegant	6	415	inelegant	6	417	inelegant	6	415	inelegant	6	414
+3074	Inequitelse	416	4	2	tie			Inequitelx	2	416	Inequitelae	1	418	Inequitelx	2	416	Inequitelse	2	418	Inequitelse	2	416	InecLuitels	1	415
+3075	inessential	417	4	3	tie			inessential	3	417	Inessential	3	419	Inessential	3	417	inessential	3	419	inessential	3	417	Inessential	3	416
+3076	inexorable	418	4	6				inexorable	6	418	inexorable	6	420	inexorable	6	418	inexorable	6	420	inexorable	6	418	inexorable	6	417
+3077	inexpressible	419	4	4				inexpressible	4	419	inexpressible	4	421	Inexpressible	2	419	inexpressible	4	421	Inexpressible	2	419	inexpressible	4	418
+3078	infame	420	4	6				infame	6	420	infame	6	422	infame	6	420	infame	6	422	infame	6	420	infame	6	419
+3079	infantry	421	4	5				infantry	5	421	infantry	5	423	infantry	5	421	infantry	5	423	infantry	5	421	Infantry	1	420
+3080	infection	422	4	6				infection	6	422	infection	6	424	infection	6	422	infection	6	424	infection	6	422	infection	6	421
+3081	inference	423	4	5				inference	5	423	inference	5	425	inference	5	423	inference	5	425	inference	5	423	Inference	1	422
+3082	infernal	424	4	5				infernal	5	424	infernal	5	426	infernal	5	424	infernal	5	426	Infernal	1	424	infernal	5	423
+3083	infidel	425	4	6				infidel	6	425	infidel	6	427	infidel	6	425	infidel	6	427	infidel	6	425	infidel	6	424
+3084	infinite	426	4	5				infinite	5	426	infinite	5	428	Infinite	1	426	infinite	5	428	infinite	5	426	infinite	5	425
+3085	infirmary	427	4	4				infirmary-	1	427	infirmary	4	429	infirmary	4	427	infirmary	4	429	infirmary	4	427	mfirmary	1	426
+3086	inflated	428	4	6				inflated	6	428	inflated	6	430	inflated	6	428	inflated	6	430	inflated	6	428	inflated	6	427
+3087	inflicter	429	4	5				inflicter	5	429	infiicter	1	431	inflicter	5	429	inflicter	5	431	inflicter	5	429	inflicter	5	428
+3088	influx	430	4	3	weak			influx	3	430	influx	3	432	Influx	1	430	influx	3	432	infinx	1	430	itifl	1	429
+3089	informative	431	4	5				informative	5	431	informative	5	433	informative	5	431	informative	5	433	mformative	1	431	informative	5	430
+3090	infrahyoid	432	4	2	tie			inftahyoid	1	432	infrahyoid	2	434	Infrahyoid	2	432	infrahyoid	2	434	Infrahyoid	2	432	InArahyoid	1	431
+3091	infringe	433	4	4				infringe	4	433	infringe	4	435	infringe	4	433	infringe	4	435	Infringe	1	433	InfHnge	1	432
+3092	infuser	434	4	3	weak			infuser	3	434	infuser	3	436	infasor	1	434	infuser	3	436	iufuser	1	434	infnser	1	433
+3093	Flowering	435	4	3	weak			Flowering	3	435	Flowering	3	437	Flowering	3	435	Inga	2	437	Ftuwcring	1	435	Inga	2	434
+3094	ingeniousness	436	4	4				ingeniousness	4	436	ingeniousness	4	438	ingeniousness	4	436	ingeniousness	4	438	Ingenlousness	1	436	ingemousnesB	1	435
+3095	ingloriously	437	4	5				ingloriously	5	437	ingloriously	5	439	ingloriously	5	437	ingloriously	5	439	ingloriously	5	437	inglorlously	1	436
+3096	ingrave	438	4	2	tie			ingrave	2	438	rngrave	1	440	apnuiueth	1	438	ingrave	2	440	mgrave	2	438	mgrave	2	437
+3097	inhabitance	439	4	6				inhabitance	6	439	inhabitance	6	441	inhabitance	6	439	inhabitance	6	441	inhabitance	6	439	inhabitance	6	438
+3098	inherit	440	4	6				inherit	6	440	inherit	6	442	inherit	6	440	inherit	6	442	inherit	6	440	inherit	6	439
+3099	inhold	441	4	3	weak			iuhold	1	441	inhold	3	443	Inhold	1	441	inhold	3	443	ishold	1	441	inhold	3	440
+3100	iniquitous	442	4	4				iniquitous	4	442	iniquitous	4	444	Iniquitous	1	442	iniquitous	4	444	iniquitous	4	442	Iniqnitous	1	441
+3101	injealous	443	4	5				injealous	5	443	injealous	5	445	injealous	5	443	injealous	5	445	injealous	5	443	InjealouB	1	442
+3102	injunction	444	4	4				injunction	4	444	injunction	4	446	Injunction	2	444	injunction	4	446	Injunction	2	444	injunction	4	443
+3103	ink	445	4	6				ink	6	445	ink	6	447	ink	6	445	ink	6	447	ink	6	445	ink	6	444
+3104	ink-writer	446	4	5				ink-writer	5	446	ink-writer	5	448	Ink-writer	1	446	ink-writer	5	448	ink-writer	5	446	ink-writer	5	445
+3105	inly	447	4	4				inlyt	1	447	inly	4	449	whatever	1	447	inly	4	449	inly	4	447	inly	4	446
+3106	innated	448	4	5				iunated	1	448	innated	5	450	innated	5	448	innated	5	450	innated	5	448	innated	5	447
+3107	innocence	449	4	3	tie			innocence	3	449	Innocence	3	451	Innocence	3	449	innocence	3	451	Innocence	3	449	innocence	3	448
+3108	innovation	450	4	4				Innovation	2	450	innovation	4	452	innovation	4	450	innovation	4	452	innovation	4	450	Innovation	2	449
+3109	inoculate	451	4	5				inoculate	5	451	inoculate	5	453	inoculate	5	451	Inoculate	1	453	inoculate	5	451	inoculate	5	450
+3110	inorganic	452	4	5				inorganic	5	452	inquest	1	454	inorganic	5	452	inorganic	5	454	inorganic	5	452	inorganic	5	451
+3111	inquest	453	4	4				inquest	4	453	inquest	4	455	inquest	4	453	inquest	4	455	And	1	453	inciuest	1	452
+3112	inquisition	454	4	6				inquisition	6	454	inquisition	6	456	inquisition	6	454	inquisition	6	456	inquisition	6	454	inquisition	6	453
+3113	insane	455	4	6				insane	6	455	insane	6	457	insane	6	455	insane	6	457	insane	6	455	insane	6	454
+3114	insatisfaction	456	4	5				Insatisf	1	456	insatisfaction	5	458	insatisfaction	5	456	insatisfaction	5	458	insatisfaction	5	456	insatisfaction	5	455
+3115	Insecta	457	4	6				Insecta	6	457	Insecta	6	459	Insecta	6	457	Insecta	6	459	Insecta	6	457	Insecta	6	456
+3116	insecurity	458	4	6				insecurity	6	458	insecurity	6	460	insecurity	6	458	insecurity	6	460	insecurity	6	458	insecurity	6	457
+3117	insert	459	4	6				insert	6	459	insert	6	461	insert	6	459	insert	6	461	insert	6	459	insert	6	458
+3118	insidious	460	4	6				insidious	6	460	insidious	6	462	insidious	6	460	insidious	6	462	insidious	6	460	insidious	6	459
+3119	insinuator	461	4	4				He	1	461	insinuator	4	463	insinuator	4	461	insinuator	4	463	Insinuator	1	461	insinuator	4	460
+3120	insolent	462	4	5				insolent	5	462	insolent	5	464	insolent	5	462	Insolent	1	464	insolent	5	462	insolent	5	461
+3121	inspector	463	4	6				inspector	6	463	inspector	6	465	inspector	6	463	inspector	6	465	inspector	6	463	inspector	6	462
+3122	An	464	4	6				An	6	464	An	6	466	An	6	464	An	6	466	An	6	464	An	6	463
+3123	instanter	465	4	6				instanter	6	465	instanter	6	467	instanter	6	465	instanter	6	467	instanter	6	465	instanter	6	464
+3124	instinct	466	4	6				instinct	6	466	instinct	6	468	instinct	6	466	instinct	6	468	instinct	6	466	instinct	6	465
+3125	institution	467	4	6				institution	6	467	institution	6	469	institution	6	467	institution	6	469	institution	6	467	institution	6	466
+3126	instrument	468	4	4				instrument	4	468	instrument	4	470	instniment	1	468	instrument	4	470	instrument	4	468	instrtiment	1	467
+3127	insubordination	469	4	6				insubordination	6	469	insubordination	6	471	insubordination	6	469	insubordination	6	471	insubordination	6	469	insubordination	6	468
+3128	insulate	470	4	5				insulate	5	470	insulate	5	472	iiunilate	1	470	insulate	5	472	insulate	5	470	insulate	5	469
+3129	insurance	471	4	6				insurance	6	471	insurance	6	473	insurance	6	471	insurance	6	473	insurance	6	471	insurance	6	470
+3130	insusceptive	472	4	5				insusceptive	5	472	insusceptive	5	474	insnsceptive	1	472	insusceptive	5	474	insusceptive	5	472	insusceptive	5	471
+3131	integral	473	4	6				integral	6	473	integral	6	475	integral	6	473	integral	6	475	integral	6	473	integral	6	472
+3132	intellect	474	4	6				intellect	6	474	intellect	6	476	intellect	6	474	intellect	6	476	intellect	6	474	intellect	6	473
+3133	intelligence	475	4	5				intelligence	5	475	intelligence	5	477	That	1	475	intelligence	5	477	intelligence	5	475	intelligence	5	474
+3134	intemperature	476	4	3	weak			intemperature	3	476	To	1	478	Intemperatnre	1	476	inteniperature	1	478	intemperature	3	476	intemperature	3	475
+3135	inteneration	477	4	6				inteneration	6	477	inteneration	6	479	inteneration	6	477	inteneration	6	479	inteneration	6	477	inteneration	6	476
+3136	intent	478	4	6				intent	6	478	intent	6	480	intent	6	478	intent	6	480	intent	6	478	intent	6	477
+3137	inter-	479	4	6				inter-	6	479	inter-	6	481	inter-	6	479	inter-	6	481	inter-	6	479	inter-	6	478
+3138	intercalation	480	4	6				intercalation	6	480	intercalation	6	482	intercalation	6	480	intercalation	6	482	intercalation	6	480	intercalation	6	479
+3139	interchange	481	4	5				interchange	5	481	Interchange	1	483	interchange	5	481	interchange	5	483	interchange	5	481	interchange	5	480
+3140	intercommon	482	4	5				intercommon	5	482	intercommon	5	484	til	1	482	intercommon	5	484	intercommon	5	482	intercommon	5	481
+3141	intercultural	483	4	5				intercultural	5	483	intercultural	5	485	intercultural	5	483	intercultural	5	485	intercultural	5	483	Intercnltural	1	482
+3142	interduce	484	4	4				interduce	4	484	interduce	4	486	Interdnce	1	484	interduce	4	486	in'terdace	1	484	interduce	4	483
+3143	interfere	485	4	6				interfere	6	485	interfere	6	487	interfere	6	485	interfere	6	487	interfere	6	485	interfere	6	484
+3144	intergrade	486	4	4				intergrade	4	486	intergrade	4	488	tntergiaAe	1	486	intergrade	4	488	Intergrade	1	486	intergrade	4	485
+3145	interjectural	487	4	6				interjectural	6	487	interjectural	6	489	interjectural	6	487	interjectural	6	489	interjectural	6	487	interjectural	6	486
+3146	interlock	488	4	6				interlock	6	488	interlock	6	490	interlock	6	488	interlock	6	490	interlock	6	488	interlock	6	487
+3147	intermaxillary	489	4	5				intermaxillary	5	489	intermaxillary	5	491	intermaxillary	5	489	intermaxillary	5	491	interm	1	489	intermaxillary	5	488
+3148	intermezzo	490	4	5				intermezzo	5	490	intermezzo	5	492	intrrwl	1	490	intermezzo	5	492	intermezzo	5	490	intermezzo	5	489
+3149	intermixtion	491	4	3	weak			intermixtion	3	491	intermixtion	3	493	intermiztion	1	491	mtermixtion	1	493	intermixtion	3	491	Intermiztion	1	490
+3150	international	492	4	6				international	6	492	international	6	494	international	6	492	international	6	494	international	6	492	international	6	491
+3151	interosseus	493	4	4				interosseus	4	493	interosseus	4	495	Interosseus	1	493	interosseus	4	495	interosseus	4	493	interossens	1	492
+3152	interpolate	494	4	4				interpolate	4	494	interpolate	4	496	Interpolate	1	494	Lop	1	496	interpolate	4	494	interpolate	4	493
+3153	interpretate	495	4	6				interpretate	6	495	interpretate	6	497	interpretate	6	495	interpretate	6	497	interpretate	6	495	interpretate	6	494
+3154	interrogation-point	496	4	6				interrogation-point	6	496	interrogation-point	6	498	interrogation-point	6	496	interrogation-point	6	498	interrogation-point	6	496	interrogation-point	6	495
+3155	intersegmental	497	4	6				intersegmental	6	497	intersegmental	6	499	intersegmental	6	497	intersegmental	6	499	intersegmental	6	497	intersegmental	6	496
+3156	interstratify	498	4	4				interstratify	4	498	By	1	500	Willi	1	498	interstratify	4	500	interstratify	4	498	interstratify	4	497
+3157	interval	499	4	6				interval	6	499	interval	6	501	interval	6	499	interval	6	501	interval	6	499	interval	6	498
+3158	interviewing	500	4	6				interviewing	6	500	interviewing	6	502	interviewing	6	500	interviewing	6	502	interviewing	6	500	interviewing	6	499
+3159	intestine	501	4	6				intestine	6	501	intestine	6	503	intestine	6	501	intestine	6	503	intestine	6	501	intestine	6	500
+3160	intinction	502	4	6				intinction	6	502	intinction	6	504	intinction	6	502	intinction	6	504	intinction	6	502	intinction	6	501
+3161	intort	503	4	5				intort	5	503	intort	5	505	Intort	1	503	intort	5	505	intort	5	503	intort	5	502
+3162	intramandibular	504	4	1	tie			iatramandibular	1	504	Situated	1	506	Intramandibalar	1	504	intramandibular	1	506	Intramandlbular	1	504	intramandibulax	1	503
+3163	intratelluric	505	4	6				intratelluric	6	505	intratelluric	6	507	intratelluric	6	505	intratelluric	6	507	intratelluric	6	505	intratelluric	6	504
+3164	intrigue	506	4	6				intrigue	6	506	intrigue	6	508	intrigue	6	506	intrigue	6	508	intrigue	6	506	intrigue	6	505
+3165	introduction	507	4	6				introduction	6	507	introduction	6	509	introduction	6	507	introduction	6	509	introduction	6	507	introduction	6	506
+3166	introversion	508	4	5				introversion	5	508	iBtroversion	1	510	introversion	5	508	introversion	5	510	introversion	5	508	introversion	5	507
+3167	intuition	509	4	6				intuition	6	509	intuition	6	511	intuition	6	509	intuition	6	511	intuition	6	509	intuition	6	508
+3168	inunction	510	4	5				inunction	5	510	inunction	5	512	n	1	510	inunction	5	512	inunction	5	510	inunction	5	509
+3169	invaginate	511	4	5				invaginate	5	511	invaginate	5	513	invaginate	5	511	invaginate	5	513	iuvaginate	1	511	invaginate	5	510
+3170	A	512	4	5				AChief	1	512	A	5	514	A	5	512	A	5	514	A	5	512	A	5	511
+3171	inventive	513	4	6				inventive	6	513	inventive	6	515	inventive	6	513	inventive	6	515	inventive	6	513	inventive	6	512
+3172	displayed	514	4	3	weak			Inverted	1	514	displayed	3	516	hirrr-	1	514	Eagle	1	516	displayed	3	514	displayed	3	513
+3173	investiture	515	4	4				investiture	4	515	investiture	4	517	investiture	4	515	investiture	4	517	Investiture	2	515	Investiture	2	514
+3174	inviolability	516	4	5				inviolability	5	516	inviolability	5	518	InTiolabillty	1	516	inviolability	5	518	inviolability	5	516	inviolability	5	515
+3175	invite	517	4	5				invite	5	517	invite	5	519	invite	5	517	Invite	1	519	invite	5	517	invite	5	516
+3176	involucrum	518	4	3	weak			involucnim	1	518	involucrum	3	520	crt'	1	518	involucrum	3	520	involucnun	1	518	involucrum	3	517
+3177	invulnerable	519	4	4				inTulnerable	1	519	invulnerable	4	521	Invnlnerable	1	519	invulnerable	4	521	invulnerable	4	519	invulnerable	4	518
+3178	in	520	4	3	weak			in	3	520	in	3	522	In	1	520	is	1	522	in	3	520	inwreathe	1	519
+3179	Ionic	521	4	6				Ionic	6	521	Ionic	6	523	Ionic	6	521	Ionic	6	523	Ionic	6	521	Ionic	6	520
+3180	ipse	522	4	6				ipse	6	522	ipse	6	524	ipse	6	522	ipse	6	524	ipse	6	522	ipse	6	521
+3181	Iresine	523	4	6				Iresine	6	523	Iresine	6	525	Iresine	6	523	Iresine	6	525	Iresine	6	523	Iresine	6	522
+3182	Epidermis	524	4	3	weak			Epidermis	3	524	Epidermis	3	526	iris	1	524	Epidermis	3	526	Epidcnnis	1	524	Blue	1	523
+3183	iron	525	4	3	weak			Iron	2	525	-ci'n	1	527	iron	3	525	iron	3	527	iron	3	525	Iron	2	524
+3184	iron-bound	526	4	6				iron-bound	6	526	iron-bound	6	528	iron-bound	6	526	iron-bound	6	528	iron-bound	6	526	iron-bound	6	525
+3185	ironwood	527	4	6				ironwood	6	527	ironwood	6	529	ironwood	6	527	ironwood	6	529	ironwood	6	527	ironwood	6	526
+3186	irrationality	528	4	6				irrationality	6	528	irrationality	6	530	irrationality	6	528	irrationality	6	530	irrationality	6	528	irrationality	6	527
+3187	irreducible	529	4	5				irreducible	5	529	irreducible	5	531	irreducible	5	529	irreducible	5	531	irreducible	5	529	Irreducible	1	528
+3188	irrelative	530	4	5				irrelative	5	530	irrelative	5	532	IrrelatlTe	1	530	irrelative	5	532	irrelative	5	530	irrelative	5	529
+3189	irreprehensibly	531	4	6				irreprehensibly	6	531	irreprehensibly	6	533	irreprehensibly	6	531	irreprehensibly	6	533	irreprehensibly	6	531	irreprehensibly	6	530
+3190	irretrievability	532	4	5				irretrievability	5	532	irretrievability	5	534	Irretrievability	1	532	irretrievability	5	534	irretrievability	5	532	irretrievability	5	531
+3191	irritable	533	4	6				irritable	6	533	irritable	6	535	irritable	6	533	irritable	6	535	irritable	6	533	irritable	6	532
+3192	Isaac	534	4	5				Isaac	5	534	Isaac	5	536	Isaac	5	534	isaac	1	536	Isaac	5	534	Isaac	5	533
+3193	ischiopubic	535	4	6				ischiopubic	6	535	ischiopubic	6	537	ischiopubic	6	535	ischiopubic	6	537	ischiopubic	6	535	ischiopubic	6	534
+3194	isinglass	536	4	5				isinglass	5	536	isinglass	5	538	Isinglass	1	536	isinglass	5	538	isinglass	5	536	isinglass	5	535
+3195	-ism	537	4	4				isoclinal	1	537	-ism	4	539	isobarism	1	537	-ism	4	539	-ism	4	537	-ism	4	536
+3196	isoclinal	538	4	5				isoclinal	5	538	isoclinal	5	540	iaocUiud	1	538	isoclinal	5	540	isoclinal	5	538	isoclinal	5	537
+3197	isogoniostat	539	4	5				isogoniostat	5	539	Magnetic	1	541	isogoniostat	5	539	isogoniostat	5	541	isogoniostat	5	539	isogoniostat	5	538
+3198	isomorphous	540	4	5				isomorphous	5	540	isomorphous	5	542	isomorphons	1	540	isomorphous	5	542	isomorphous	5	540	isomorphous	5	539
+3199	Isosoma	541	4	5				Isosoma	5	541	Isosoma	5	543	Isosoma	5	541	Isosoma	5	543	Isosoma	5	541	ure	1	540
+3200	issuance	542	4	5				issuance	5	542	issuance	5	544	issuance	5	542	issuance	5	544	issuance	5	542	Lion	1	541
+3201	isthmian	543	4	6				isthmian	6	543	isthmian	6	545	isthmian	6	543	isthmian	6	545	isthmian	6	543	isthmian	6	542
+3202	Italian	544	4	6				Italian	6	544	Italian	6	546	Italian	6	544	Italian	6	546	Italian	6	544	Italian	6	543
+3203	-ite	545	4	5				-ite	5	545	-ite	5	547	-ite	5	545	-ite	5	547	-ite	5	545	-Ite	1	544
+3204	Ithuriel's-spear	546	4	5				Ithuriel's-spear	5	546	Ithuriel's-spear	5	548	Itburiel's-spear	1	546	Ithuriel's-spear	5	548	Ithuriel's-spear	5	546	Ithuriel's-spear	5	545
+3205	-ive	547	4	4				-ive	4	547	-ive	4	549	-itive	1	547	-lve	1	549	-ive	4	547	-ive	4	546
+3206	ivy-leaf	548	4	5				ivy-leaf	5	548	ivy-leaf	5	550	Ivy-leaf	1	548	ivy-leaf	5	550	ivy-leaf	5	548	ivy-leaf	5	547
+3207	The	549	4	5				The	5	549	T	1	551	The	5	549	The	5	551	The	5	549	The	5	548
+3208	jacana	550	4	6				jacana	6	550	jacana	6	552	jacana	6	550	jacana	6	552	jacana	6	550	jacana	6	549
+3209	jack	551	4	6				jack	6	551	jack	6	553	jack	6	551	jack	6	553	jack	6	551	jack	6	550
+3210	jack-at-the-hedge	552	4	5				jack-at-the-hedge	5	552	jack-at-the-hedge	5	554	Jack-at-the-hedge	1	552	jack-at-the-hedge	5	554	jack-at-the-hedge	5	552	jack-at-the-hedge	5	551
+3211	jack-knife	553	4	3	weak			Jack-lamp	2	553	Jack-lamp	2	555	Jack-lainp	1	553	jack-knife	3	555	jack-knife	3	553	jack-knife	3	552
+3212	jackstraw	554	4	6				jackstraw	6	554	jackstraw	6	556	jackstraw	6	554	jackstraw	6	556	jackstraw	6	554	jackstraw	6	553
+3213	Jacob's-ladder	555	4	3	weak			Jacob's-ladder	3	555	Jacob's-ladtler	1	557	Jacob's-ladder	3	555	Jacob's-	1	557	Jacob's-ladder	3	555	Jacob's-Iadder	1	554
+3214	jade	556	4	5				jade	5	556	jade	5	558	Jade	1	556	jade	5	558	jade	5	556	jade	5	555
+3215	jaggy	557	4	5				jaggy	5	557	jaggy	5	559	Jaggy	1	557	jaggy	5	559	jaggy	5	557	jaggy	5	556
+3216	Jakes	558	4	5				Jakes	5	558	Jakes	5	560	Jakes	5	558	jakes	1	560	Jakes	5	558	Jakes	5	557
+3217	jamb-post	559	4	6				jamb-post	6	559	jamb-post	6	561	jamb-post	6	559	jamb-post	6	561	jamb-post	6	559	jamb-post	6	558
+3218	Jansenism	560	4	6				Jansenism	6	560	Jansenism	6	562	Jansenism	6	560	Jansenism	6	562	Jansenism	6	560	Jansenism	6	559
+3219	jape	561	4	6				jape	6	561	jape	6	563	jape	6	561	jape	6	563	jape	6	561	jape	6	560
+3220	jargon	562	4	5				jargon	5	562	it	1	564	jargon	5	562	jargon	5	564	jargon	5	562	jargon	5	561
+3221	jaspery	563	4	6				jaspery	6	563	jaspery	6	565	jaspery	6	563	jaspery	6	565	jaspery	6	563	jaspery	6	562
+3222	jaup	564	4	5				jaup	5	564	jaup	5	566	jaup	5	564	janp	1	566	jaup	5	564	jaup	5	563
+3223	jaw-tooth	565	4	6				jaw-tooth	6	565	jaw-tooth	6	567	jaw-tooth	6	565	jaw-tooth	6	567	jaw-tooth	6	565	jaw-tooth	6	564
+3224	jee	566	4	5				jee	5	566	jee	5	568	I	1	566	jee	5	568	jee	5	566	jee	5	565
+3225	jellify	567	4	4				jellify	4	567	jellify	4	569	jellify	4	567	jellify	4	569	jelUfy	2	567	jelUfy	2	566
+3226	jeopardy	568	4	5				jeopardy	5	568	jeopardy	5	570	Jeopardy	1	568	jeopardy	5	570	jeopardy	5	568	jeopardy	5	567
+3227	Jerkin-head	569	4	3	weak			Jerkin-head	3	569	jerkin-head	2	571	jerkin-head	2	569	Jerkin-bead	1	571	Jerkin-head	3	569	Jerkin-head	3	568
+3228	jest	570	4	6				jest	6	570	jest	6	572	jest	6	570	jest	6	572	jest	6	570	jest	6	569
+3229	jet	571	4	6				jet	6	571	jet	6	573	jet	6	571	jet	6	573	jet	6	571	jet	6	570
+3230	jettyhead	572	4	6				jettyhead	6	572	jettyhead	6	574	jettyhead	6	572	jettyhead	6	574	jettyhead	6	572	jettyhead	6	571
+3231	jewel-weed	573	4	6				jewel-weed	6	573	jewel-weed	6	575	jewel-weed	6	573	jewel-weed	6	575	jewel-weed	6	573	jewel-weed	6	572
+3232	jibe	574	4	5				jibe	5	574	jibe	5	576	Jibe	1	574	jibe	5	576	jibe	5	574	jibe	5	573
+3233	jiggered	575	4	6				jiggered	6	575	jiggered	6	577	jiggered	6	575	jiggered	6	577	jiggered	6	575	jiggered	6	574
+3234	jingle	576	4	5				jingle	5	576	jingle	5	578	I	1	576	jingle	5	578	jingle	5	576	jingle	5	575
+3235	Joannlte	577	4	3	tie			Joannite	3	577	Joannite	3	579	Joannlte	3	577	Joannlte	3	579	Joannlte	3	577	Joannite	3	576
+3236	jockey	578	4	5				jockey	5	578	jockey	5	580	jockey	5	578	jockey	5	580	joctey	1	578	jockey	5	577
+3237	Joe-Millerism	579	4	5				Joe-Millerism	5	579	Joe-Millerism	5	581	Joe-Millerism	5	579	Joe-Millerism	5	581	Joe-Millerism	5	579	Joe-MilleriBm	1	578
+3238	Johnanapes	580	4	5				Johnanapes	5	580	Johnanapes	5	582	Johnanapea	1	580	Johnanapes	5	582	Johnanapes	5	580	Johnanapes	5	579
+3239	joinder	581	4	6				joinder	6	581	joinder	6	583	joinder	6	581	joinder	6	583	joinder	6	581	joinder	6	580
+3240	joint-grass	582	4	4				joint-grass	4	582	the	1	584	Jolnt-grau	1	582	joint-grass	4	584	joint-grass	4	582	joint-grass	4	581
+3241	jolliment	583	4	5				jolliment	5	583	jolliment	5	585	joUiment	1	583	jolliment	5	585	jolliment	5	583	jolliment	5	582
+3242	Joseph	584	4	5				Joseph	5	584	Joseph	5	586	JoMpb	1	584	Joseph	5	586	Joseph	5	584	Joseph	5	583
+3243	cap	585	4	5				cap	5	585	cap	5	587	cap	5	585	cap	5	587	pillow	1	585	cap	5	584
+3244	Jovial	586	4	5				Jovial	5	586	Jovial	5	588	JotIaI	1	586	Jovial	5	588	Jovial	5	586	Jovial	5	585
+3245	joyless	587	4	6				joyless	6	587	joyless	6	589	joyless	6	587	joyless	6	589	joyless	6	587	joyless	6	586
+3246	juchten	588	4	5				juchten	5	588	juchten	5	590	Jnchten	1	588	juchten	5	590	juchten	5	588	juchten	5	587
+3247	judge	589	4	6				judge	6	589	judge	6	591	judge	6	589	judge	6	591	judge	6	589	judge	6	588
+3248	judgment	590	4	5				judgment	5	590	judgment	5	592	Judgment	1	590	judgment	5	592	judgment	5	590	judgment	5	589
+3249	judiciary	591	4	6				judiciary	6	591	judiciary	6	593	judiciary	6	591	judiciary	6	593	judiciary	6	591	judiciary	6	590
+3250	jugglery	592	4	5				jugglery	5	592	jugglery	5	594	Jugglery	1	592	jugglery	5	594	jugglery	5	592	jugglery	5	591
+3251	Juliflorae	593	4	3	weak			Juliflorae	3	593	JulifloraB	1	595	JuliflorsB	1	593	Juliflorae	3	595	Jnliflorse	1	593	Juliflorae	3	592
+3252	jump	594	4	4				jump	4	594	jump	4	596	Jnmp	1	594	jump	4	596	jnmp	1	594	jump	4	593
+3253	Juncus	595	4	6				Juncus	6	595	Juncus	6	597	Juncus	6	595	Juncus	6	597	Juncus	6	595	Juncus	6	594
+3254	Juniper	596	4	4				Juniper	4	596	Juniper	4	598	uf	1	596	juniper	1	598	Juniper	4	596	Juniper	4	595
+3255	Juno	597	4	5				Juno	5	597	Juno	5	599	Juno	5	597	Juno	5	599	Juno	5	597	Jnno	1	596
+3256	juratory	598	4	6				juratory	6	598	juratory	6	600	juratory	6	598	juratory	6	600	juratory	6	598	juratory	6	597
+3257	jury	599	4	5				jury	5	599	jury	5	601	jury	5	599	jury	5	601	jnry	1	599	jury	5	598
+3258	just	600	4	5				just	5	600	just	5	602	jUBt	1	600	just	5	602	just	5	600	just	5	599
+3259	justiciary	601	4	6				justiciary	6	601	justiciary	6	603	justiciary	6	601	justiciary	6	603	justiciary	6	601	justiciary	6	600
+3260	jut	602	4	6				jut	6	602	jut	6	604	jut	6	602	jut	6	604	jut	6	602	jut	6	601
+3261	The	603	4	5				The	5	603	The	5	605	The	5	603	The	5	605	uuil	1	603	The	5	602
+3262	kafiz	604	4	4				kafiz	4	604	kafiz	4	606	kaflz	1	604	kail	1	606	kafiz	4	604	kafiz	4	603
+3263	kale	605	4	6				kale	6	605	kale	6	607	kale	6	605	kale	6	607	kale	6	605	kale	6	604
+3264	kalpa	606	4	5				kalpa	5	606	kalpa	5	608	kaliM	1	606	kalpa	5	608	kalpa	5	606	kalpa	5	605
+3265	kangaroo	607	4	6				kangaroo	6	607	kangaroo	6	609	kangaroo	6	607	kangaroo	6	609	kangaroo	6	607	kangaroo	6	606
+3266	Kapitia	608	4	2	tie			Kapitia	2	608	Kapitia	2	610	kapitU	1	608	the	1	610	kapitia	2	608	kapitia	2	607
+3267	Broad-	609	4	2	weak			Broad-	2	609	A	1	611	Broad-wiDged	1	609	Broad-	2	611	inged	1	609	katipo	1	608
+3268	keckle	610	4	5				keckle	5	610	keckle	5	612	kecUe	1	610	keckle	5	612	keckle	5	610	keckle	5	609
+3269	keeled	611	4	6				keeled	6	611	keeled	6	613	keeled	6	611	keeled	6	613	keeled	6	611	keeled	6	610
+3270	keep	612	4	6				keep	6	612	keep	6	614	keep	6	612	keep	6	614	keep	6	612	keep	6	611
+3271	keep	613	4	6				keep	6	613	keep	6	615	keep	6	613	keep	6	615	keep	6	613	keep	6	612
+3272	keeping	614	4	4				keeping	4	614	the	1	616	kMping	1	614	keeping	4	616	keeping	4	614	keeping	4	613
+3273	kelp	615	4	6				kelp	6	615	kelp	6	617	kelp	6	615	kelp	6	617	kelp	6	615	kelp	6	614
+3274	ken	616	4	4				ken	4	616	Let	1	618	kan	1	616	ken	4	618	ken	4	616	ken	4	615
+3275	kent	617	4	6				kent	6	617	kent	6	619	kent	6	617	kent	6	619	kent	6	617	kent	6	616
+3276	kerite	618	4	5				kerite	5	618	kerite	5	620	I	1	618	kerite	5	620	kerite	5	618	kerite	5	617
+3277	Kerria	619	4	4				Kerria	4	619	Kerria	4	621	Eerria	2	619	Kerria	4	621	Kerria	4	619	Eerria	2	618
+3278	kettledrum	620	4	5				kettledrum	5	620	kettledrum	5	622	TV-	1	620	kettledrum	5	622	kettledrum	5	620	kettledrum	5	619
+3279	key	621	4	6				key	6	621	key	6	623	key	6	621	key	6	623	key	6	621	key	6	620
+3280	keyboard	622	4	5				keyboard	5	622	keyboard	5	624		1	622	keyboard	5	624	keyboard	5	622	keyboard	5	621
+3281	keyway	623	4	5				kesrway	1	623	keyway	5	625	keyway	5	623	keyway	5	625	keyway	5	623	keyway	5	622
+3282	kibbler	624	4	5				kibbler	5	624	kibbler	5	626	I	1	624	kibbler	5	626	kibbler	5	624	kibbler	5	623
+3283	kickup	625	4	5				kickup	5	625	kickup	5	627	kickup	5	625	kickup	5	627	kickup	5	625	Mckup	1	624
+3284	kidney-cotton	626	4	2	weak			Leaf	1	626	Same	1	628	kidney-cotton	2	626	laped	1	628	Kidney-slmpcd	1	626	kidney-cotton	2	625
+3285	kill	627	4	5				kill	5	627	kill	5	629	kiU	1	627	kill	5	629	kill	5	627	kill	5	626
+3286	kiln	628	4	5				kiln	5	628	kiln	5	630	Vrllr	1	628	kiln	5	630	kiln	5	628	kiln	5	627
+3287	kin	629	4	6				kin	6	629	kin	6	631	kin	6	629	kin	6	631	kin	6	629	kin	6	628
+3288	kind	630	4	6				kind	6	630	kind	6	632	kind	6	630	kind	6	632	kind	6	630	kind	6	629
+3289	kindness	631	4	6				kindness	6	631	kindness	6	633	kindness	6	631	kindness	6	633	kindness	6	631	kindness	6	630
+3290	king	632	4	4				king	4	632	king	4	634	kins	1	632	of	1	634	king	4	632	king	4	631
+3291	kingfish	633	4	5				kingfish	5	633	kingfish	5	635	kingfish	5	633	kingfish	5	635	kmgfish	1	633	kingfish	5	632
+3292	king's-hood	634	4	3	weak			king's-hood	3	634	king's-hood	3	636	klng's-hood	1	634	king's-hood	3	636	liis	1	634	king's-liood	1	633
+3293	kinswoman	635	4	6				kinswoman	6	635	kinswoman	6	637	kinswoman	6	635	kinswoman	6	637	kinswoman	6	635	kinswoman	6	634
+3294	kirtle	636	4	4				kirtle	4	636	kirtle	4	638	klrtle	1	636	kirtle	4	638	kirtle	4	636	the	1	635
+3295	kit	637	4	6				kit	6	637	kit	6	639	kit	6	637	kit	6	639	kit	6	637	kit	6	636
+3296	kite	638	4	5				kite	5	638	kite	5	640	fIV	1	638	kite	5	640	kite	5	638	kite	5	637
+3297	kittle	639	4	6				kittle	6	639	kittle	6	641	kittle	6	639	kittle	6	641	kittle	6	639	kittle	6	638
+3298	knack	640	4	5				knack	5	640	knack	5	642	kxuek	1	640	knack	5	642	knack	5	640	knack	5	639
+3299	Knapweed	641	4	4				Knapweed	4	641	a	1	643	Knapweed	4	641	Knapweed	4	643	Knapweed	4	641	knapweed	1	640
+3300	knee	642	4	5				knee	5	642	knee	5	644	knM	1	642	knee	5	644	knee	5	642	knee	5	641
+3301	kneestead	643	4	6				kneestead	6	643	kneestead	6	645	kneestead	6	643	kneestead	6	645	kneestead	6	643	kneestead	6	642
+3302	knife-edge	644	4	5				knife-edge	5	644	knife-edge	5	646	Un	1	644	knife-edge	5	646	knife-edge	5	644	knife-edge	5	643
+3303	knight-head	645	4	6				knight-head	6	645	knight-head	6	647	knight-head	6	645	knight-head	6	647	knight-head	6	645	knight-head	6	644
+3304	knitting-machine	646	4	4				knitting-macliiiie	1	646	knitting-machine	4	648	t	1	646	knitting-machine	4	648	knitting-machine	4	646	knitting-machine	4	645
+3305	knock	647	4	5				knock	5	647	knock	5	649	parisshe	1	647	knock	5	649	knock	5	647	knock	5	646
+3306	knot	648	4	6				knot	6	648	knot	6	650	knot	6	648	knot	6	650	knot	6	648	knot	6	647
+3307	knot-grass	649	4	6				knot-grass	6	649	knot-grass	6	651	knot-grass	6	649	knot-grass	6	651	knot-grass	6	649	knot-grass	6	648
+3308	know	650	4	5				know	5	650	know	5	652	kBOW	1	650	know	5	652	know	5	650	know	5	649
+3309	knowledgeable	651	4	6				knowledgeable	6	651	knowledgeable	6	653	knowledgeable	6	651	knowledgeable	6	653	knowledgeable	6	651	knowledgeable	6	650
+3310	knurned	652	4	3	weak			knnmed	2	652	knurned	3	654	knnrned	1	652	knurned	3	654	knurned	3	652	knnmed	2	651
+3311	Eogia	653	4	4				Eogia	4	653	Eogia	4	655	Kogia	2	653	Kogia	2	655	Eogia	4	653	Eogia	4	652
+3312	kosmic	654	4	5				kosmic	5	654	kosmic	5	656	kotmle	1	654	kosmic	5	656	kosmic	5	654	kosmic	5	653
+3313	Krishna	655	4	5				Krishna	5	655	Erislina	1	657	Krishna	5	655	Krishna	5	657	Krishna	5	655	Krishna	5	654
+3314	Kurdish	656	4	6				Kurdish	6	656	Kurdish	6	658	Kurdish	6	656	Kurdish	6	658	Kurdish	6	656	Kurdish	6	655
+3315	The	657	4	5				The	5	657	The	5	659	Tho	1	657	The	5	659	The	5	657	The	5	656
+3316	label	658	4	2	weak			label	2	658	znsis	1	660	hAt	1	658	label	2	660	iniTj	1	658	Label	1	657
+3317	labiose	659	4	6				labiose	6	659	labiose	6	661	labiose	6	659	labiose	6	661	labiose	6	659	labiose	6	658
+3318	laboratory-furnace	660	4	3	weak			IK-	1	660	laboroust	1	662	fnr	1	660	laboratory-furnace	3	662	laboratory-furnace	3	660	laboratory-furnace	3	659
+3319	laburnine	661	4	3	weak			laburnine	3	661	laburnine	3	663	laburnine	3	661	labuntine	1	663	labumine	2	661	labumine	2	660
+3320	lac	662	4	4				lac	4	662	P'	1	664	A	1	662	lac	4	664	lac	4	662	lac	4	661
+3321	lace	663	4	6				lace	6	663	lace	6	665	lace	6	663	lace	6	665	lace	6	663	lace	6	662
+3322	laceration	664	4	5				laceration	5	664	laceration	5	666	lAcention	1	664	laceration	5	666	laceration	5	664	laceration	5	663
+3323	Laciniate	665	4	5				Laciniate	5	665	Laciniate	5	667	Laciniate	5	665	Laciniate	5	667	Laciniate	5	665	lacinia	1	664
+3324	lack-thought	666	4	5				lack-thought	5	666	lack-thought	5	668	Uck-thoogbt	1	666	lack-thought	5	668	lack-thought	5	666	lack-thought	5	665
+3325	lacrymal	667	4	2	weak			I	1	667	ZG	1	669	lacrymal	2	667	LG	1	669	Lacrymal	1	667	lacrymal	2	666
+3326	lactocrite	668	4	5				lactocrite	5	668	lactocrite	5	670	lion	1	668	lactocrite	5	670	lactocrite	5	668	lactocrite	5	667
+3327	lad	669	4	6				lad	6	669	lad	6	671	lad	6	669	lad	6	671	lad	6	669	lad	6	668
+3328	ladle	670	4	4				ladle	4	670	ladle	4	672	Udle	1	670	y	1	672	ladle	4	670	ladle	4	669
+3329	lady-hen	671	4	6				lady-hen	6	671	lady-hen	6	673	lady-hen	6	671	lady-hen	6	673	lady-hen	6	671	lady-hen	6	670
+3330	lafayette	672	4	5				lafayette	5	672	lafayette	5	674	Ui	1	672	lafayette	5	674	lafayette	5	672	lafayette	5	671
+3331	laggen	673	4	6				laggen	6	673	laggen	6	675	laggen	6	673	laggen	6	675	laggen	6	673	laggen	6	672
+3332	Lagotis	674	4	4				Lagotis	4	674	Lagotis	4	676	Lafotlfl	1	674	Lagotis	4	676	laic	1	674	Lagotis	4	673
+3333	laits	675	4	5				laits	5	675	laits	5	677	laits	5	675	laits	5	677	laits	5	675	laitB	1	674
+3334	lakin	676	4	5				lakin	5	676	lakin	5	678	Ill	1	676	lakin	5	678	lakin	5	676	lakin	5	675
+3335	lambeauxed	677	4	5				lambeauxed	5	677	lambeauxed	5	679	lambeauxed	5	677	lambeauxed	5	679	lambeauxed	5	677	lambeauzed	1	676
+3336	Lamellibranchiata	678	4	4				Lamellibranchiata	4	678	Lamellibranchiata	4	680	Lamellibranchlata	1	678	Lamellibranchiata	4	680	Lamellibrancliiata	1	678	Lamellibranchiata	4	677
+3337	Lamiales	679	4	6				Lamiales	6	679	Lamiales	6	681	Lamiales	6	679	Lamiales	6	681	Lamiales	6	679	Lamiales	6	678
+3338	lamiter	680	4	5				lamiter	5	680	lamiter	5	682	mad	1	680	lamiter	5	682	lamiter	5	680	lamiter	5	679
+3339	lampas	681	4	6				lampas	6	681	lampas	6	683	lampas	6	681	lampas	6	683	lampas	6	681	lampas	6	680
+3340	lamprey	682	4	5				lamprey	5	682	lamprey	5	684	tin-	1	682	lamprey	5	684	lamprey	5	682	lamprey	5	681
+3341	lance	683	4	6				lance	6	683	lance	6	685	lance	6	683	lance	6	685	lance	6	683	lance	6	682
+3342	lance-throw	684	4	2	weak			Eiigla	1	684	Vork	1	686	lance-throw	2	684	The	1	686	lance-throw	2	684	lance-tlurow	1	683
+3343	land-bank	685	4	6				land-bank	6	685	land-bank	6	687	land-bank	6	685	land-bank	6	687	land-bank	6	685	land-bank	6	684
+3344	landlady	686	4	6				landlady	6	686	landlady	6	688	landlady	6	686	landlady	6	688	landlady	6	686	landlady	6	685
+3345	landscape	687	4	6				landscape	6	687	landscape	6	689	landscape	6	687	landscape	6	689	landscape	6	687	landscape	6	686
+3346	lane	688	4	5				lane	5	688	lane	5	690	Una	1	688	lane	5	690	lane	5	688	lane	5	687
+3347	language	689	4	6				language	6	689	language	6	691	language	6	689	language	6	691	language	6	689	language	6	688
+3348	langnlshness	690	4	2	weak			langnlsliness	1	690	langnlshness	2	692	lanKnlshness	1	690	languishness	1	692	lanKulslmess	1	690	langnlshness	2	689
+3349	lanneret	691	4	6				lanneret	6	691	lanneret	6	693	lanneret	6	691	lanneret	6	693	lanneret	6	691	lanneret	6	690
+3350	lantern	692	4	6				lantern	6	692	lantern	6	694	lantern	6	692	lantern	6	694	lantern	6	692	lantern	6	691
+3351	lap	693	4	5				lap-	1	693	lap	5	695	lap	5	693	lap	5	695	lap	5	693	lap	5	692
+3352	Laphygma	694	4	6				Laphygma	6	694	Laphygma	6	696	Laphygma	6	694	Laphygma	6	696	Laphygma	6	694	Laphygma	6	693
+3353	Lapithae	695	4	4				Lapiths	1	695	Lapithae	4	697	Laplths	1	695	Lapithae	4	697	Lapithae	4	695	Lapithae	4	694
+3354	lapse	696	4	5				lapse	5	696	lapse	5	698	A	1	696	lapse	5	698	lapse	5	696	lapse	5	695
+3355	larcenous	697	4	6				larcenous	6	697	larcenous	6	699	larcenous	6	697	larcenous	6	699	larcenous	6	697	larcenous	6	696
+3356	lareover	698	4	6				lareover	6	698	lareover	6	700	lareover	6	698	lareover	6	700	lareover	6	698	lareover	6	697
+3357	largition	699	4	5				largition	5	699	largition	5	701	largltion	1	699	largition	5	701	largition	5	699	largition	5	698
+3358	larrick	700	4	5				larrick	5	700	larrick	5	702	larrick	5	700	larrick	5	702	eal	1	700	larrick	5	699
+3359	internally	701	4	2	tie			internally	2	701	illy	1	703	laryngotraclieotomy	1	701	internally	2	703	I	2	701	I	2	700
+3360	lash	702	4	4				lasli	1	702	lash	4	704	I	1	702	lash	4	704	lash	4	702	lash	4	701
+3361	last	703	4	6				last	6	703	last	6	705	last	6	703	last	6	705	last	6	703	last	6	702
+3362	laster	704	4	5				laster	5	704	laster	5	706	laster	5	704	aster	1	706	laster	5	704	laster	5	703
+3363	latch	705	4	6				latch	6	705	latch	6	707	latch	6	705	latch	6	707	latch	6	705	latch	6	704
+3364	latent	706	4	6				latent	6	706	latent	6	708	latent	6	706	latent	6	708	latent	6	706	latent	6	705
+3365	latescence	707	4	6				latescence	6	707	latescence	6	709	latescence	6	707	latescence	6	709	latescence	6	707	latescence	6	706
+3366	lathe	708	4	4				lathe	4	708	lathe	4	710	or	1	708	lathe	4	710	lathe	4	708	latbe	1	707
+3367	latialite	709	4	6				latialite	6	709	latialite	6	711	latialite	6	709	latialite	6	711	latialite	6	709	latialite	6	708
+3368	Latiner	710	4	5				Latiner	5	710	Latlner	1	712	Latiner	5	710	Latiner	5	712	Latiner	5	710	Latiner	5	709
+3369	latitude	711	4	6				latitude	6	711	latitude	6	713	latitude	6	711	latitude	6	713	latitude	6	711	latitude	6	710
+3370	lattermore	712	4	4				lattennore	2	712	lattermore	4	714	lattermore	4	712	lattermore	4	714	lattennore	2	712	lattermore	4	711
+3371	lauder	713	4	5				lauder	5	713	lauder	5	715	lauder	5	713	lander	1	715	lauder	5	713	lauder	5	712
+3372	launch	714	4	4				lannch	1	714	launch	4	716	launch	4	714	launch	4	716	launch	4	714	lanncli	1	713
+3373	Branch	715	4	4				Branch	4	715	laurel	2	717	Branch	4	715	laurel	2	717	Branch	4	715	Branch	4	714
+3374	lavage	716	4	5				lavage	5	716	lavage	5	718	n	1	716	lavage	5	718	lavage	5	716	lavage	5	715
+3375	lavender	717	4	6				lavender	6	717	lavender	6	719	lavender	6	717	lavender	6	719	lavender	6	717	lavender	6	716
+3376	law	718	4	6				law	6	718	law	6	720	law	6	718	law	6	720	law	6	718	law	6	717
+3377	law	719	4	6				law	6	719	law	6	721	law	6	719	law	6	721	law	6	719	law	6	718
+3378	la	720	4	3	weak			la	3	720	of	1	722	la	3	720	lawing	2	722	lawing	2	720	la	3	719
+3379	law-officer	721	4	6				law-officer	6	721	law-officer	6	723	law-officer	6	721	law-officer	6	723	law-officer	6	721	law-officer	6	720
+3380	lay	722	4	6				lay	6	722	lay	6	724	lay	6	722	lay	6	724	lay	6	722	lay	6	721
+3381	lay	723	4	6				lay	6	723	lay	6	725	lay	6	723	lay	6	725	lay	6	723	lay	6	722
+3382	layer-on	724	4	5				layer-on	5	724	layer-on	5	726	Isyer-on	1	724	layer-on	5	726	layer-on	5	724	layer-on	5	723
+3383	lazy	725	4	5				lazy	5	725	A	1	727	lazy	5	725	lazy	5	727	lazy	5	725	lazy	5	724
+3384	lead	726	4	6				lead	6	726	lead	6	728	lead	6	726	lead	6	728	lead	6	726	lead	6	725
+3385	lead	727	4	6				lead	6	727	lead	6	729	lead	6	727	lead	6	729	lead	6	727	lead	6	726
+3386	leading	728	4	6				leading	6	728	leading	6	730	leading	6	728	leading	6	730	leading	6	728	leading	6	727
+3387	leaf	729	4	6				leaf	6	729	leaf	6	731	leaf	6	729	leaf	6	731	leaf	6	729	leaf	6	728
+3388	leaful	730	4	4				leaful	4	730	leaful	4	732	leafol	2	730	leaful	4	732	leafol	2	730	leaful	4	729
+3389	leaky	731	4	5				leaky	5	731	leaky	5	733	leaky	5	731	leaky	5	733	leaky	5	731	leally	1	730
+3390	leap	732	4	5				leap	5	732	leap	5	734	leap	5	732	Be	1	734	leap	5	732	leap	5	731
+3391	lease	733	4	6				lease	6	733	lease	6	735	lease	6	733	lease	6	735	lease	6	733	lease	6	732
+3392	leat	734	4	5				leat	5	734	leat	5	736	leat	5	734	f	1	736	leat	5	734	leat	5	733
+3393	leather-lap	735	4	6				leather-lap	6	735	leather-lap	6	737	leather-lap	6	735	leather-lap	6	737	leather-lap	6	735	leather-lap	6	734
+3394	leave	736	4	5				leave	5	736	leave	5	738	If	1	736	leave	5	738	leave	5	736	leave	5	735
+3395	lech	737	4	6				lech	6	737	lech	6	739	lech	6	737	lech	6	739	lech	6	737	lech	6	736
+3396	lecturer	738	4	6				lecturer	6	738	lecturer	6	740	lecturer	6	738	lecturer	6	740	lecturer	6	738	lecturer	6	737
+3397	ledger	739	4	6				ledger	6	739	ledger	6	741	ledger	6	739	ledger	6	741	ledger	6	739	ledger	6	738
+3398	leech-gaiters	740	4	5				leech-gaiters	5	740	leech-gaiters	5	742	leech-gaitei	1	740	leech-gaiters	5	742	leech-gaiters	5	740	leech-gaiters	5	739
+3399	leet	741	4	6				leet	6	741	leet	6	743	leet	6	741	leet	6	743	leet	6	741	leet	6	740
+3400	leg	742	4	6				leg	6	742	leg	6	744	leg	6	742	leg	6	744	leg	6	742	leg	6	741
+3401	legate	743	4	6				legate	6	743	legate	6	745	legate	6	743	legate	6	745	legate	6	743	legate	6	742
+3402	leger	744	4	4				leger	4	744	leger	4	746	legordemain	1	744	leger	4	746	Aral	1	744	leger	4	743
+3403	legislative	745	4	6				legislative	6	745	legislative	6	747	legislative	6	745	legislative	6	747	legislative	6	745	legislative	6	744
+3404	leg-muff	746	4	4				leg-muff	4	746	leg-muff	4	748	leg-muff	4	746	leg-muff	4	748	of	1	746	leg-mnff	1	745
+3405	leisurely	747	4	5				leisurely	5	747	leisurely	5	749	Chap-	1	747	leisurely	5	749	leisurely	5	747	leisurely	5	746
+3406	lemniscate	748	4	5				lemniscate	5	748	lemniscate	5	750	II	1	748	lemniscate	5	750	lemniscate	5	748	lemniscate	5	747
+3407	Lemuria	749	4	5				Lemuria	5	749	Lemuria	5	751	Lemuria	5	749	Lemnria	1	751	Lemuria	5	749	Lemuria	5	748
+3408	length	750	4	5				length	5	750	length	5	752	Tffn	1	750	length	5	752	length	5	750	length	5	749
+3409	lens	751	4	5				lens	5	751	lens	5	753	Lens	1	751	lens	5	753	lens	5	751	lens	5	750
+3410	lenticular	752	4	6				lenticular	6	752	lenticular	6	754	lenticular	6	752	lenticular	6	754	lenticular	6	752	lenticular	6	751
+3411	leonine	753	4	6				leonine	6	753	leonine	6	755	leonine	6	753	leonine	6	755	leonine	6	753	leonine	6	752
+3412	lepadoid	754	4	5				lepadoid	5	754	lepadoid	5	756	lepadoid	5	754	per-	1	756	lepadoid	5	754	lepadoid	5	753
+3413	Lepidosauria	755	4	3	weak			Lepidosauria	3	755	Lepidosauria	3	757	Lepidosauria	3	755	A	1	757	Lepidosanrla	1	755	Mn	1	754
+3414	lepra	756	4	6				lepra	6	756	lepra	6	758	lepra	6	756	lepra	6	758	lepra	6	756	lepra	6	755
+3415	Leptoceridae	757	4	2	tie			Leptoceridse	2	757	Leptoceridas	1	759	Leptocerids	1	757	Leptoceridae	2	759	Leptoceridae	2	757	Leptoceridse	2	756
+3416	Leptoptilus	758	4	4				Leptoptilua	1	758	Leptoptilus	4	760	I	1	758	Leptoptilus	4	760	Leptoptilus	4	758	Leptoptilus	4	757
+3417	Lerva	759	4	4				Lerra	2	759	Lerra	2	761	Lerva	4	759	Lerva	4	761	Lerva	4	759	Lerva	4	758
+3418	lessee	760	4	5				lessee	5	760	lessee	5	762	person	1	760	lessee	5	762	lessee	5	760	lessee	5	759
+3419	let	761	4	6				let	6	761	let	6	763	let	6	761	let	6	763	let	6	761	let	6	760
+3420	lethal	762	4	6				lethal	6	762	lethal	6	764	lethal	6	762	lethal	6	764	lethal	6	762	lethal	6	761
+3421	letter	763	4	6				letter	6	763	letter	6	765	letter	6	763	letter	6	765	letter	6	763	letter	6	762
+3422	lettering-tool	764	4	6				lettering-tool	6	764	lettering-tool	6	766	lettering-tool	6	764	lettering-tool	6	766	lettering-tool	6	764	lettering-tool	6	763
+3423	leucaniline	765	4	5				leucaniline	5	765	leucaniline	5	767	lencaniline	1	765	leucaniline	5	767	leucaniline	5	765	leucaniline	5	764
+3424	leucophlegmatic	766	4	2	weak			leucostine	1	766	I'KOf	1	768	loucopbyl	1	766	leucophlegmatic	2	768	leucopUegmatic	1	766	leucophlegmatic	2	765
+3425	levator	767	4	6				levator	6	767	levator	6	769	levator	6	767	levator	6	769	levator	6	767	levator	6	766
+3426	level	768	4	6				level	6	768	level	6	770	level	6	768	level	6	770	level	6	768	level	6	767
+3427	leven	769	4	6				leven	6	769	leven	6	771	leven	6	769	leven	6	771	leven	6	769	leven	6	768
+3428	levigate	770	4	6				levigate	6	770	levigate	6	772	levigate	6	770	levigate	6	772	levigate	6	770	levigate	6	769
+3429	levy	771	4	6				levy	6	771	levy	6	773	levy	6	771	levy	6	773	levy	6	771	levy	6	770
+3430	lexicography	772	4	5				lexicography	5	772	lexicography	5	774	lexicoRTaphy	1	772	lexicography	5	774	lexicography	5	772	lexicography	5	771
+3431	liar's-bench	773	4	6				liar's-bench	6	773	liar's-bench	6	775	liar's-bench	6	773	liar's-bench	6	775	liar's-bench	6	773	liar's-bench	6	772
+3432	Libellulins	774	4	2	tie			Libellulinse	2	774	Libellulinse	2	776	Libellalina	1	774	Libellulins	2	776	Libellulins	2	774	Libellnlina	1	773
+3433	liberate	775	4	6				liberate	6	775	liberate	6	777	liberate	6	775	liberate	6	777	liberate	6	775	liberate	6	774
+3434	liberty	776	4	6				liberty	6	776	liberty	6	778	liberty	6	776	liberty	6	778	liberty	6	776	liberty	6	775
+3435	libration	777	4	5				libration	5	777	libration	5	779	libratlon	1	777	libration	5	779	libration	5	777	libration	5	776
+3436	licentiation	778	4	6				licentiation	6	778	licentiation	6	780	licentiation	6	778	licentiation	6	780	licentiation	6	778	licentiation	6	777
+3437	lichi	779	4	4				lichi	4	779	lichi	4	781	Uchi	1	779	lichi	4	781	licM	1	779	lichi	4	778
+3438	lickety-cut	780	4	4				licorice-paste	1	780	lickety-cut	4	782	lickety-cut	4	780	So	1	782	lickety-cut	4	780	lickety-cut	4	779
+3439	lie	781	4	5				lie	5	781	lie	5	783	lie	5	781	lie	5	783	lie	5	781	Ue	1	780
+3440	lie	782	4	4				lie	4	782	lie	4	784	acrnr	1	782	lie	4	784	lie	4	782	Ue	1	781
+3441	lientery	783	4	6				lientery	6	783	lientery	6	785	lientery	6	783	lientery	6	785	lientery	6	783	lientery	6	782
+3442	life	784	4	4				life	4	784	life	4	788	Ufe	2	784	life	4	786	Ufe	2	784	life	4	783
+3443	A	785	4	4				A	4	785	A	4	789	Life-preserver	1	785	A	4	787	A	4	785	life-preserver	1	784
+3444	lift	786	4	6				lift	6	786	lift	6	790	lift	6	786	lift	6	788	lift	6	786	lift	6	785
+3445	ligamentous	787	4	4				I	1	787	ligamentous	4	791	ligamentous	4	787	ligamentous	4	789	ligamentous	4	787	ligamentons	1	786
+3446	Ught	788	4	4				Ught	4	788	Ught	4	792	brine	1	788	light	1	790	Ught	4	788	Ught	4	787
+3447	light	789	4	6				light	6	789	light	6	793	light	6	789	light	6	791	light	6	789	light	6	788
+3448	lighten	790	4	5				lighten	5	790	lighten	5	794	lighten	5	790	lighthouseman	1	792	lighten	5	790	lighten	5	789
+3449	lighting	791	4	6				lighting	6	791	lighting	6	795	lighting	6	791	lighting	6	793	lighting	6	791	lighting	6	790
+3450	lightning-print	792	4	5				lightning-print	5	792	lightning-print	5	796	llghtninr	1	792	lightning-print	5	794	lightning-print	5	792	lightning-print	5	791
+3451	lignitize	793	4	6				lignitize	6	793	lignitize	6	797	lignitize	6	793	lignitize	6	795	lignitize	6	793	lignitize	6	792
+3452	like	794	4	5				like	5	794	Hke	1	798	like	5	794	like	5	796	like	5	794	like	5	793
+3453	likelihood	795	4	5				likelihood	5	795	likeliliood	1	799	likelihood	5	795	likelihood	5	797	likelihood	5	795	likelihood	5	794
+3454	lilac-rust	796	4	3	weak			lilac-rust	3	796	lilac-mst	1	800	lilac-nist	1	796	lilac-rnst	1	798	lilac-rust	3	796	lilac-rust	3	795
+3455	Lima	797	4	6				Lima	6	797	Lima	6	801	Lima	6	797	Lima	6	799	Lima	6	797	Lima	6	796
+3456	limbec	798	4	6				limbec	6	798	limbec	6	802	limbec	6	798	limbec	6	800	limbec	6	798	limbec	6	797
+3457	lime	799	4	6				lime	6	799	lime	6	803	lime	6	799	lime	6	801	lime	6	799	lime	6	798
+3458	Limicolae	800	4	2	tie			Limicolse	2	800	Limicolse	2	804	Limicolae	2	800	Limicolae	2	802	Limicolx	1	800	Limicols	1	799
+3459	limitation	801	4	6				limitation	6	801	limitation	6	805	limitation	6	801	limitation	6	803	limitation	6	801	limitation	6	800
+3460	limner	802	4	6				limner	6	802	limner	6	806	limner	6	802	limner	6	804	limner	6	802	limner	6	801
+3461	limp	803	4	5				limp	5	803	limp	5	807	limp	5	803	limp	5	805	Ump	1	803	limp	5	802
+3462	linch-hoop	804	4	5				linch-hoop	5	804	linch-hoop	5	808	Ilnch-hoc'	1	804	linch-hoop	5	806	linch-hoop	5	804	linch-hoop	5	803
+3463	line	805	4	6				line	6	805	line	6	809	line	6	805	line	6	807	line	6	805	line	6	804
+3464	line	806	4	4				line	4	806	line	4	810	J	1	806	the	1	808	line	4	806	line	4	805
+3465	lineate	807	4	4				llneate	1	807	I	1	811	lineate	4	807	lineate	4	809	lineate	4	807	lineate	4	806
+3466	linesman	808	4	4				linesman	4	808	linesinan	1	812	If	1	808	linesman	4	810	linesman	4	808	linesman	4	807
+3467	lingual	809	4	6				lingual	6	809	lingual	6	813	lingual	6	809	lingual	6	811	lingual	6	809	lingual	6	808
+3468	link	810	4	6				link	6	810	link	6	814	link	6	810	link	6	812	link	6	810	link	6	809
+3469	linoleic	811	4	5				linoleic	5	811	linoleic	5	815	linoleic	5	811	linoleic	5	813	linoleic	5	811	linsey-woolsey	1	810
+3470	Liodon	812	4	6				Liodon	6	812	Liodon	6	816	Liodon	6	812	Liodon	6	814	Liodon	6	812	Liodon	6	811
+3471	lionize	813	4	5				lionize	5	813	I	1	817	lionize	5	813	lionize	5	815	lionize	5	813	lionize	5	812
+3472	Lipariese	814	4	2	weak			Liparieje	1	814	Liparieae	1	818	Lipariea	1	814	Lipariese	2	816	Llpoptera	1	814	Lipariese	2	813
+3473	Lipoptera	815	4	5				Lipoptera	5	815	Lipoptera	5	819	Lipoptera	5	815	Lipoptera	5	817	Llpoptera	1	815	Lipoptera	5	814
+3474	liquefaction	816	4	4				liquefaction	4	816	liquefaction	4	820	liquefactive	2	816	liquefaction	4	818	liquefactive	2	816	liquefaction	4	815
+3475	liquor	817	4	6				liquor	6	817	liquor	6	821	liquor	6	817	liquor	6	819	liquor	6	817	liquor	6	816
+3476	Lisbon	818	4	6				Lisbon	6	818	Lisbon	6	822	Lisbon	6	818	Lisbon	6	820	Lisbon	6	818	Lisbon	6	817
+3477	list	819	4	3	weak			list	3	819	I	1	823	Ust	2	819	list	3	821	Ust	2	819	list	3	818
+3478	lister	820	4	5				lister	5	820	lister	5	824	ol	1	820	lister	5	822	lister	5	820	lister	5	819
+3479	lite	821	4	3	tie			Ute	3	821	lite	3	825	Ute	3	821	lite	3	823	lite	3	821	Ute	3	820
+3480	literature	822	4	6				literature	6	822	literature	6	826	literature	6	822	literature	6	824	literature	6	822	literature	6	821
+3481	lithic	823	4	2	weak			lithic	2	823	litbic	1	827	litMc	1	823	lithic	2	825	Utliic	1	823	UthbgrapMc	1	822
+3482	lithographic	824	4	5				lithographic	5	824	lithographic	5	828	thograplilc	1	824	lithographic	5	826	lithographic	5	824	lithographic	5	823
+3483	Lithospermum	825	4	6				Lithospermum	6	825	Lithospermum	6	829	Lithospermum	6	825	Lithospermum	6	827	Lithospermum	6	825	Lithospermum	6	824
+3484	litmus	826	4	5				litmus	5	826	litmus	5	830	litmus	5	826	litmus	5	828	litmus	5	826	litmns	1	825
+3485	little	827	4	4				little	4	827	little	4	831	little	4	827	little	4	829	Uttle	2	827	Uttle	2	826
+3486	liturgy	828	4	6				liturgy	6	828	liturgy	6	832	liturgy	6	828	liturgy	6	830	liturgy	6	828	liturgy	6	827
+3487	live	829	4	6				live	6	829	live	6	833	live	6	829	live	6	831	live	6	829	live	6	828
+3488	liver	830	4	5				liver	5	830	liver	5	834	I	1	830	liver	5	832	liver	5	830	liver	5	829
+3489	livery-office	831	4	5				livery-office	5	831	I	1	835	livery-office	5	831	livery-office	5	833	livery-office	5	831	livery-office	5	830
+3490	lizard	832	4	6				lizard	6	832	lizard	6	836	lizard	6	832	lizard	6	834	lizard	6	832	lizard	6	831
+3491	load	833	4	6				load	6	833	load	6	837	load	6	833	load	6	835	load	6	833	load	6	832
+3492	loafer	834	4	6				loafer	6	834	loafer	6	838	loafer	6	834	loafer	6	836	loafer	6	834	loafer	6	833
+3493	loathe	835	4	6				loathe	6	835	loathe	6	839	loathe	6	835	loathe	6	837	loathe	6	835	loathe	6	834
+3494	lobe	836	4	5				lobe	5	836	lobe	5	840	tt	1	836	lobe	5	838	lobe	5	836	lobe	5	835
+3495	Lobotidae	837	4	4				Lobotidae	4	837	Lobotidae	4	841	Lobotidae	4	837	Lobotidae	4	839	Lobotidse	2	837	Lobotidse	2	836
+3496	local	838	4	5				local	5	838	local	5	842	liciani	1	838	local	5	840	local	5	838	local	5	837
+3497	locator	839	4	5				locator	5	839	locator	5	843	locator	5	839		1	841	locator	5	839	locator	5	838
+3498	lock	840	4	5				lock	5	840	lock	5	844	The	1	840	lock	5	842	lock	5	840	lock	5	839
+3499	lock-pulley	841	4	6				lock-pulley	6	841	lock-pulley	6	845	lock-pulley	6	841	lock-pulley	6	843	lock-pulley	6	841	lock-pulley	6	840
+3500	locomotive	842	4	6				locomotive	6	842	locomotive	6	846	locomotive	6	842	locomotive	6	844	locomotive	6	842	locomotive	6	841
+3501	locust	843	4	6				locust	6	843	locust	6	847	locust	6	843	locust	6	845	locust	6	843	locust	6	842
+3502	lodge	844	4	5				lodge	5	844	lodge	5	848	water	1	844	lodge	5	846	lodge	5	844	lodge	5	843
+3503	log	845	4	6				log	6	845	log	6	849	log	6	845	log	6	847	log	6	845	log	6	844
+3504	logarithm	846	4	4				Logarithmic	2	846	logarithm	4	850	logarithm	4	846	Logarithmic	2	848	logarithm	4	846	logarithm	4	845
+3505	logic	847	4	6				logic	6	847	logic	6	851	logic	6	847	logic	6	849	logic	6	847	logic	6	846
+3506	logographically	848	4	5				logographically	5	848	logographically	5	852	loBographi	1	848	logographically	5	850	logographically	5	848	logographically	5	847
+3507	Loiseleuria	849	4	5				Loiseleuria	5	849	Loiseleuria	5	853	In	1	849	Loiseleuria	5	851	Loiseleuria	5	849	Loiseleuria	5	848
+3508	lollypop	850	4	3	tie			lollypop	3	850	lollypop	3	854	loUypop	3	850	lollypop	3	852	loUypop	3	850	loUypop	3	849
+3509	An	851	4	6				An	6	851	An	6	855	An	6	851	An	6	853	An	6	851	An	6	850
+3510	long	852	4	6				long	6	852	long	6	856	long	6	852	long	6	854	long	6	852	long	6	851
+3511	longanimous	853	4	4				longanimous	4	853	longanimous	4	857	longanimous	4	853	longanimous	4	855	longanimons	1	853	longanimouB	1	852
+3512	longiperoneus	854	4	4				longiperoneus	4	854	longiperoneus	4	858	loi	1	854	longiperoneus	4	856	longiperoneus	4	854	longlperoneus	1	853
+3513	longspur	855	4	4				longspuT	1	855	longspur	4	859	longspur	4	855	longspur	4	857	longspur	4	855	longBpur	1	854
+3514	look	856	4	6				look	6	856	look	6	860	look	6	856	look	6	858	look	6	856	look	6	855
+3515	lookout	857	4	6				lookout	6	857	lookout	6	861	lookout	6	857	lookout	6	859	lookout	6	857	lookout	6	856
+3516	loon	858	4	6				loon	6	858	loon	6	862	loon	6	858	loon	6	860	loon	6	858	loon	6	857
+3517	loose	859	4	6				loose	6	859	loose	6	863	loose	6	859	loose	6	861	loose	6	859	loose	6	858
+3518	lop	860	4	6				lop	6	860	lop	6	864	lop	6	860	lop	6	862	lop	6	860	lop	6	859
+3519	lophophore	861	4	5				lophophore	5	861	lophophore	5	865	lophophore	5	861	with	1	863	lophophore	5	861	lophophore	5	860
+3520	Loranthaceae	862	4	3	weak			Itoranthacese	1	862	Loranthaceae	3	866	Tioranthacea	1	862	Loranthaceae	3	864	Loranthaceae	3	862	Iioranthacese	1	861
+3521	lordless	863	4	6				lordless	6	863	lordless	6	867	lordless	6	863	lordless	6	865	lordless	6	863	lordless	6	862
+3522	loricate	864	4	5				loricate	5	864	loricate	5	868	A	1	864	loricate	5	866	loricate	5	864	loricate	5	863
+3523	lose	865	4	6				lose	6	865	lose	6	869	lose	6	865	lose	6	867	lose	6	865	lose	6	864
+3524	lot	866	4	6				lot	6	866	lot	6	870	lot	6	866	lot	6	868	lot	6	866	lot	6	865
+3525	lotto	867	4	6				lotto	6	867	lotto	6	871	lotto	6	867	lotto	6	869	lotto	6	867	lotto	6	866
+3526	louk	868	4	4				louk	4	868	louk	4	872	look	2	868	look	2	870	louk	4	868	louk	4	867
+3527	lout	869	4	6				lout	6	869	lout	6	873	lout	6	869	lout	6	871	lout	6	869	lout	6	868
+3528	love	870	4	5				love	5	870	love	5	874	lore	1	870	love	5	872	love	5	870	love	5	869
+3529	love-lies-bleeding	871	4	6				love-lies-bleeding	6	871	love-lies-bleeding	6	875	love-lies-bleeding	6	871	love-lies-bleeding	6	873	love-lies-bleeding	6	871	love-lies-bleeding	6	870
+3530	low	872	4	6				low	6	872	low	6	876	low	6	872	low	6	874	low	6	872	low	6	871
+3531	Low-churchman	873	4	6				Low-churchman	6	873	Low-churchman	6	877	Low-churchman	6	873	Low-churchman	6	875	Low-churchman	6	873	Low-churchman	6	872
+3532	loxarthrus	874	4	5				loxarthrus	5	874	loxarthrus	5	878		1	874	loxarthrus	5	876	loxarthrus	5	874	loxarthrus	5	873
+3533	lozengewise	875	4	6				lozengewise	6	875	lozengewise	6	879	lozengewise	6	875	lozengewise	6	877	lozengewise	6	875	lozengewise	6	874
+3534	Lucanus	876	4	4				Lucanus	4	876	Lucanus	4	880	Lncanas	1	876	band	1	878	Lucanus	4	876	Lucanus	4	875
+3535	Lucifer	877	4	6				Lucifer	6	877	Lucifer	6	881	Lucifer	6	877	Lucifer	6	879	Lucifer	6	877	Lucifer	6	876
+3536	lucky	878	4	5				lucky	5	878	lucky	5	882	W	1	878	lucky	5	880	lucky	5	878	lucky	5	877
+3537	ludicrous	879	4	6				ludicrous	6	879	ludicrous	6	883	ludicrous	6	879	ludicrous	6	881	ludicrous	6	879	ludicrous	6	878
+3538	lug	880	4	5				lug	5	880	lug	5	884	log	1	880	lug	5	882	lug	5	880	lug	5	879
+3539	Lullist	881	4	4				Lullist	4	881	LulUst	1	885	Lullist	4	881	Lullist	4	883	Lullist	4	881	Imllist	1	880
+3540	lumbric	882	4	4				lumbrlc	1	882	lumbric	4	886	lombiic	1	882	lumbric	4	884	lumbric	4	882	lumbric	4	881
+3541	lump	883	4	6				lump	6	883	lump	6	887	lump	6	883	lump	6	885	lump	6	883	lump	6	882
+3542	lunarium	884	4	4				lunarium	4	884	lunarium	4	888	lonnrii	1	884	tamtam	1	886	lunarium	4	884	lunarium	4	883
+3543	lunette	885	4	4				Itmette	1	885	lunette	4	889	I	1	885	lunette	4	887	lunette	4	885	lunette	4	884
+3544	lunitidal	886	4	5				lunitidal	5	886	lunitidal	5	890	Ituiitidal	1	886	lunitidal	5	888	lunitidal	5	886	lunitidal	5	885
+3545	lurch	887	4	6				lurch	6	887	lurch	6	891	lurch	6	887	lurch	6	889	lurch	6	887	lurch	6	886
+3546	luridly	888	4	5				luridly	5	888	luridly	5	892	luridly	5	888	luridly	5	890	lia-iirioiis	1	888	luridly	5	887
+3547	lust	889	4	6				lust	6	889	lust	6	893	lust	6	889	lust	6	891	lust	6	889	lust	6	888
+3548	lustrate	890	4	5				lustrate	5	890	lustrate	5	894	Instrate	1	890	lustrate	5	892	lustrate	5	890	lustrate	5	889
+3549	Lutetia	891	4	6				Lutetia	6	891	Lutetia	6	895	Lutetia	6	891	Lutetia	6	893	Lutetia	6	891	Lutetia	6	890
+3550	luxuriant	892	4	5				luxuriant	5	892	luxuriant	5	896	Inznriant	1	892	luxuriant	5	894	luxuriant	5	892	luxuriant	5	891
+3551	lycanthropy	893	4	4				lycanthropy	4	893	the	1	897	lytanthropy	1	893	lycanthropy	4	895	lycanthropy	4	893	lycanthropy	4	892
+3552	Lycodontidae	894	4	2	weak			widely	1	894	Lycodontidse	1	898	Lycodontidae	2	894	Lycodontidas	1	896	Lycodontidae	2	894	Lycodontida	1	893
+3553	lyed	895	4	2	weak			natural	1	895	Lygaus	1	899	ymX	1	895	The	1	897	lyed	2	895	lyed	2	894
+3554	lymphatic	896	4	5				lymphatio	1	896	lymphatic	5	900	lymphatic	5	896	lymphatic	5	898	lymphatic	5	896	lymphatic	5	895
+3555	Lyperanthus	897	4	3	tie			Lyperanthus	3	897	The	3	901	The	3	897	Lyperanthus	3	899	Lyperanthus	3	897	The	3	896
+3556	lysigenous	898	4	3	weak			lysigenons	2	898	lysigenous	3	902	lysiKenons	1	898	lysigenous	3	900	lysigenous	3	898	lysigenons	2	897
+3557		899	4	6					6	899		6	903		6	899		6	901		6	899		6	898
+3558		900	4	6					6	900		6	904		6	900		6	902		6	900		6	899
+3559		901	4	6					6	901		6	905		6	901		6	903		6	901		6	900
+3560		902	4	5					5	902	mtf	1	906		5	902		5	904		5	902		5	901
+3561		903	4	3	weak			v	1	903	mi	1	907	LIBRARY	1	903		3	905		3	903		3	902
+3562		904	4	5					5	904		5	908		5	904		5	906		5	904	ItmiilK	1	903
+3563	viliw		4	1													viliw	1	907						
+3564			4	1														1	908						

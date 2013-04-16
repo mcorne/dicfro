@@ -15,6 +15,7 @@ $volumes_first_page = array(
     1 => 1,
     2 => 881,
     3 => 1777,
+    4 => 2671,
 );
 
 function calculate_first_word_frequency($entry)
@@ -31,10 +32,15 @@ function calculate_first_word_frequency($entry)
     return $first_word_frequency;
 }
 
-function compare_first_words($volume, $first_page)
+function compare_first_words($volume, $first_page, $image_book)
 {
     $books_entries = read_files($volume);
     $books = array_keys($books_entries);
+
+    if (! empty($image_book) and ! in_array($image_book, $books)) {
+        die('invalid book to display images');
+    }
+
     $entries = merge_entries($books_entries);
 
     $books_accurary = array_fill_keys($books, 0);
@@ -45,9 +51,7 @@ function compare_first_words($volume, $first_page)
         $books_accurary = update_books_accuracy($books_accurary, $entry, $first_words_frequency[$number]);
     }
 
-    arsort($books_accurary);
-
-    write_file($volume, $first_page, $books, $entries, $first_words_frequency, $books_accurary);
+    write_file($volume, $first_page, $books, $entries, $first_words_frequency, $books_accurary, $image_book);
 }
 
 function extract_volumes()
@@ -160,21 +164,39 @@ function update_books_accuracy($books_accurary, $entry, $first_word_frequency)
     return $books_accurary;
 }
 
-function write_file($volume, $page, $books, $entries, $first_words_frequency, $books_accurary)
+function select_book($books_accurary)
+{
+    arsort($books_accurary);
+
+    return key($books_accurary);
+}
+
+
+function write_file($volume, $page, $books, $entries, $first_words_frequency, $books_accurary, $image_book)
 {
     $books_count = count($books);
     $lines[] = write_headers($books);
-    $selected_book = key($books_accurary);
+    $selected_book = select_book($books_accurary);
+
+    if (empty($image_book)) {
+        $image_book = $selected_book;
+    }
 
     foreach ($entries as $number => $entry) {
         if ($number < $books_count) {
             list($book, $accuracy) = each($books_accurary);
+        } else if ($number == $books_count) {
+            $book = $selected_book;
+            $accuracy = 'top accuracy';
+        } else if ($number == $books_count + 1) {
+            $book = $image_book;
+            $accuracy = 'best images';
         } else {
             $book = null;
             $accuracy = null;
         }
 
-        $lines[] = write_line($volume, $page++, $books, $entry, $first_words_frequency[$number], $book, $accuracy, $selected_book);
+        $lines[] = write_line($volume, $page++, $books, $entry, $first_words_frequency[$number], $book, $accuracy, $selected_book, $image_book);
     }
 
     $content = implode("\n", $lines);
@@ -203,10 +225,10 @@ function write_headers($books)
     return implode("\t", $cells);
 }
 
-function write_line($volume, $page, $books, $entry, $first_word_frequency, $book_name, $accuracy, $selected_book)
+function write_line($volume, $page, $books, $entry, $first_word_frequency, $book_name, $accuracy, $selected_book, $image_book)
 {
     list($first_word, $frequency, $check) = set_check($books, $entry, $first_word_frequency, $selected_book);
-    $image = set_image($entry, $selected_book);
+    $image = set_image($entry, $image_book);
 
     $cells[] = $page;
     $cells[] = $first_word;
@@ -236,7 +258,7 @@ function write_line($volume, $page, $books, $entry, $first_word_frequency, $book
     return implode("\t", $cells);
 }
 
-@list(, $volume) = $argv;
+@list(, $volume, $image_book) = $argv;
 
 $volumes = extract_volumes();
 
@@ -249,4 +271,4 @@ if (! isset($volumes_first_page[$volume])) {
     die('first page not set');
 }
 
-compare_first_words($volume, $volumes_first_page[$volume]);
+compare_first_words($volume, $volumes_first_page[$volume], $image_book);

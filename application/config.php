@@ -46,13 +46,14 @@ return array(
             'description'  => "The Century dictionary an encyclopedic lexicon of the English language prepared under the superintendence of William Dwight Whitney, 1895",
             'introduction' => 'http://archive.org/stream/centurydict01whit#page/n5/mode/2up',
             'language'     => 'en',
-            'name'         => 'Century (A-Gy)',
+            'name'         => 'Century (A-Ly)',
             'search'       => array(
                 'properties' => array(
                     'url'     => array(
                         1 => 'http://ia600305.us.archive.org/BookReader/BookReaderImages.php?zip=/29/items/centurydict01whit/centurydict01whit_jp2.zip&file=centurydict01whit_jp2/centurydict01whit_0%03u.jp2&scale=3&rotate=0',
                         2 => 'http://ia700300.us.archive.org/BookReader/BookReaderImages.php?zip=/21/items/centurydiction02whit/centurydiction02whit_jp2.zip&file=centurydiction02whit_jp2/centurydiction02whit_0%03u.jp2&scale=3&rotate=0',
                         3 => 'http://ia700200.us.archive.org/BookReader/BookReaderImages.php?zip=/7/items/centurydictionar03whit/centurydictionar03whit_jp2.zip&file=centurydictionar03whit_jp2/centurydictionar03whit_0%03u.jp2&scale=3&rotate=0',
+                        4 => 'http://ia700304.us.archive.org/BookReader/BookReaderImages.php?zip=/1/items/centurydictio04whit/centurydictio04whit_jp2.zip&file=centurydictio04whit_jp2/centurydictio04whit_0%03u.jp2&scale=3&rotate=0',
                     ),
                 )
             ),

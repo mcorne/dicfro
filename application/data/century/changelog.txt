@@ -1,0 +1,19 @@
+initial version v1
+------------------
+
+- 14/4/2013
+- searched for "the century dictionary and cyclopedia" or "the century dictionary" at archive.org
+for each volume, ex volume 4 :
+- downloaded all versions/books of volume 4
+- ran "extract-first-words.php 4"
+- for each 4/*.csv file, removed the first lines down to the first entry
+- updated the first page number in "compare-first-words.php"
+- ran "php compare-first-words.php 4 centurydictio04whit_djvu.csv"
+  note that the selected book for display passed as a second parameter is optional, default is the select book for accuracy
+- opened 4/entries.php, verified the alignement of the first entry accross the books, same for the last entry
+- copied and pasted the lines between the first and last entries to the end of index.csv 
+- added dictionaries/century/search/properties/url/4 in config.php to point to a page/image
+- ran "parse century 1", ignored errors, this is just to create the database, and go to page below for fixing purposes
+- fixed entries to check (tie or low accuracy), via dicfro using go to page
+- ran "parse century 1", fixed errors
+- verify the initial letters, eg "K", have an entry
