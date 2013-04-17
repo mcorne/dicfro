@@ -11,12 +11,7 @@
  * @license   http://www.opensource.org/licenses/gpl-3.0.html GNU GPL v3
  */
 
-$volumes_first_page = array(
-    1 => 1,
-    2 => 881,
-    3 => 1777,
-    4 => 2671,
-);
+$volumes_first_page = require 'first-pages.php';
 
 function calculate_first_word_frequency($entry)
 {
@@ -211,6 +206,7 @@ function write_headers($books)
     $cells[] = 'entries';
     $cells[] = 'image';
     $cells[] = 'volume';
+    $cells[] = 'fix';
     $cells[] = 'frequency';
     $cells[] = 'check';
     $cells[] = 'books';
@@ -234,6 +230,7 @@ function write_line($volume, $page, $books, $entry, $first_word_frequency, $book
     $cells[] = $first_word;
     $cells[] = $image;
     $cells[] = $volume;
+    $cells[] = null; // fix for missing or bad page
     $cells[] = $frequency;
     $cells[] = $check;
     $cells[] = $book_name;

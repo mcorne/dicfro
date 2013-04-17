@@ -3,12 +3,13 @@ initial version v1
 
 - 14/4/2013
 - searched for "the century dictionary and cyclopedia" or "the century dictionary" at archive.org
+- added the first page number of each volume in "first-pages.php"
+
 for each volume, ex volume 4 :
 - downloaded all versions/books of volume 4
 - ran "extract-first-words.php 4"
 - for each 4/*.csv file, removed the first lines down to the first entry
-- updated the first page number in "compare-first-words.php"
-- ran "php compare-first-words.php 4 centurydictio04whit_djvu.csv"
+- ran "php compare-first-words.php 4 cu31924091890610_djvu.csv"
   note that the selected book for display passed as a second parameter is optional, default is the select book for accuracy
 - opened 4/entries.php, verified the alignement of the first entry accross the books, same for the last entry
 - copied and pasted the lines between the first and last entries to the end of index.csv 
@@ -16,4 +17,9 @@ for each volume, ex volume 4 :
 - ran "parse century 1", ignored errors, this is just to create the database, and go to page below for fixing purposes
 - fixed entries to check (tie or low accuracy), via dicfro using go to page
 - ran "parse century 1", fixed errors
-- verify the initial letters, eg "K", have an entry
+- searched for the word "missing" as in "Missing page" with XML Copy Editor in the cu31924091890628_djvu.xml (volume 5 in this case)
+- added a direct link to an exiting page in another version/book for each missing page 
+
+- moved "410  needle" down one line in cu31924091890628_djvu.csv (volume 5) because missing page was overlooked by the scan
+
+- verified each single letter has an entry

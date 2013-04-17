@@ -1,0 +1,889 @@
+page	entries	image	volume	fix	frequency	check	books	accuracy	centurydictionar05whit_djvu.csv	frequency	image	centurydictionar05whituoft_djvu.csv	frequency	image	centurydictionary05whit_djvu.csv	frequency	image	cu31924091890628_djvu.csv	frequency	image
+3557	The	12	5		2	weak	centurydictionar05whit_djvu.csv	2953	w	1	13	contraction	1	15	The	2	13	The	2	12
+3558	macaque	13	5		3		centurydictionar05whituoft_djvu.csv	2817	macaque	3	14	macaqne	1	16	macaque	3	14	macaque	3	13
+3559	mace	14	5		3		centurydictionary05whit_djvu.csv	2921	mace	3	15	mace	3	17	mace	3	15	Missing	1	14
+3560	machicolation	15	5		4		cu31924091890628_djvu.csv	2795	machicolation	4	16	machicolation	4	18	machicolation	4	16	machicolation	4	15
+3561	machine-gun	16	5		1	tie	centurydictionar05whit_djvu.csv	top accuracy	machine-gun	1	17	machine-gnn	1	19	macMne-gun	1	17	machlne-gnn	1	16
+3562	mackerel	17	5		4		cu31924091890628_djvu.csv	best images	mackerel	4	18	mackerel	4	20	mackerel	4	18	mackerel	4	17
+3563	macrauchene	18	5		3				macrauchene	3	19	macrauchene	3	21	macrauchene	3	19	macranchene	1	18
+3564	Macrodactyla	19	5		4				Macrodactyla	4	20	Macrodactyla	4	22	Macrodactyla	4	20	Macrodactyla	4	19
+3565	Macropodidse	20	5		2	weak			Macropodidse	2	21	Macropodidse	2	23	Macropodids	1	21	macrotarsian	1	20
+3566	Macrotarsius	21	5		3				Macrotarsius	3	22	Macrotarsios	1	24	Macrotarsius	3	22	Macrotarsius	3	21
+3567	mad	22	5		3				mad	3	23	I	1	25	mad	3	23	mad	3	22
+3568	madder	23	5		4				madder	4	24	madder	4	26	madder	4	24	madder	4	23
+3569	madid	24	5		4				madid	4	25	madid	4	27	madid	4	25	madid	4	24
+3570	madrono	25	5		4				madrono	4	26	madrono	4	28	madrono	4	26	madrono	4	25
+3571	magas	26	5		4				magas	4	27	magas	4	29	magas	4	27	magas	4	26
+3572	magic	27	5		4				magic	4	28	magic	4	30	magic	4	28	magic	4	27
+3573	magistery	28	5		4				magistery	4	29	magistery	4	31	magistery	4	29	magistery	4	28
+3574	magne-crystallic	29	5		4				magne-crystallic	4	30	magne-crystallic	4	32	magne-crystallic	4	30	magne-crystallic	4	29
+3575	magnetic	30	5		4				magnetic	4	31	magnetic	4	33	magnetic	4	31	magnetic	4	30
+3576	magneto-electric	31	5		4				magneto-electric	4	32	magneto-electric	4	34	magneto-electric	4	32	magneto-electric	4	31
+3577	magnify	32	5		4				magnify	4	33	magnify	4	35	magnify	4	33	magnify	4	32
+3578	Magosphsera	33	5		3				Magosphsera	3	34	Magosphsera	3	36	Magosphxra	1	34	Magosphsera	3	33
+3579	mahlstick	34	5		2	weak			mahlstick	2	35	mahlstlck	1	37	mahlstick	2	35	HpV	1	34
+3580	ringl	35	5		1	tie			ringl	1	36	Flowering	1	38	Plant	1	36	Maianthemiun	1	35
+3581	maiden-nut	36	5		2	weak			maiden-nut	2	37	m	1	39	maiden-nut	2	37	maiden-nat	1	36
+3582	mailaid	37	5		4				mailaid	4	38	mailaid	4	40	mailaid	4	38	mailaid	4	37
+3583	mam	38	5		3				mam	3	39	main	1	41	mam	3	39	mam	3	38
+3584	mainspnng	39	5		2	weak			mainspnng	2	40	mainspring	1	42	mainspnng	2	40	mamspring	1	39
+3585	maize-eater	40	5		3				maize-eater	3	41	I	1	43	maize-eater	3	41	maize-eater	3	40
+3586	majoration	41	5		2	weak			maj	1	42	But	1	44	majoration	2	42	majoration	2	41
+3587	make	42	5		4				make	4	43	make	4	45	make	4	43	make	4	42
+3588	make	43	5		4				make	4	44	make	4	46	make	4	44	make	4	43
+3589	make-sport	44	5		4				make-sport	4	45	make-sport	4	47	make-sport	4	45	make-sport	4	44
+3590	malaconotine	45	5		4				malaconotine	4	46	malaconotine	4	48	malaconotine	4	46	malaconotine	4	45
+3591	malaprop	46	5		3				malaprop	3	47	the	1	49	malaprop	3	47	malaprop	3	46
+3592	malconstruction	47	5		4				malconstruction	4	48	malconstruction	4	50	malconstruction	4	48	malconstruction	4	47
+3593	malefic	48	5		4				malefic	4	49	malefic	4	51	malefic	4	49	malefic	4	48
+3594	malice	49	5		4				malice	4	50	malice	4	52	malice	4	50	malice	4	49
+3595	malingerer	50	5		4				malingerer	4	51	malingerer	4	53	malingerer	4	51	malingerer	4	50
+3596	Malleifera	51	5		4				Malleifera	4	52	Malleifera	4	54	Malleifera	4	52	Malleifera	4	51
+3597	malm	52	5		4				malm	4	53	malm	4	55	malm	4	53	malm	4	52
+3598	malt	53	5		4				malt	4	54	malt	4	56	malt	4	54	malt	4	53
+3599	malulella	54	5		2	weak			malulella	2	55	I	1	57	malulella	2	55	malnlffHa	1	54
+3600	belnR	55	5		1	tie			belnR	1	56	being	1	58	beinpr	1	56	niciiniiiei	1	55
+3601	mammilloid	56	5		1	tie			mammilloid	1	57	jnammilloid	1	59	manunilloid	1	57	mammllloid	1	56
+3602	man	57	5		4				man	4	58	man	4	60	man	4	58	man	4	57
+3603	manacle	58	5		2	weak			manacle	2	59	r	1	61	manacle	2	59	Toeonfine	1	58
+3604	managerial	59	5		4				managerial	4	60	managerial	4	62	managerial	4	60	managerial	4	59
+3605	mancipation	60	5		2	weak			mancipation	2	61	I	1	63	mancipation	2	61	mancipatioii	1	60
+3606	mandator	61	5		4				mandator	4	62	mandator	4	64	mandator	4	62	mandator	4	61
+3607	Plant	62	5		2	weak			mandrake	1	63	Plant	2	65	Flowering	1	63	Plant	2	62
+3608	man-engine	63	5		4				man-engine	4	64	man-engine	4	66	man-engine	4	64	man-engine	4	63
+3609	manganous	64	5		3				manganous	3	65	manganous	3	67	manganous	3	65	manganons	1	64
+3610	mangonel	65	5		4				mangonel	4	66	mangonel	4	68	mangonel	4	66	mangonel	4	65
+3611	mania	66	5		3				mania	3	67	mania	3	69	mama	1	67	mania	3	66
+3612	manifold	67	5		4				manifold	4	68	manifold	4	70	manifold	4	68	manifold	4	67
+3613	manipulate	68	5		3				manipulate	3	69	I	1	71	manipulate	3	69	manipulate	3	68
+3614	man-midwife	69	5		4				man-midwife	4	70	man-midwife	4	72	man-midwife	4	70	man-midwife	4	69
+3615	mannerist	70	5		4				mannerist	4	71	mannerist	4	73	mannerist	4	71	mannerist	4	70
+3616	manometric	71	5		4				manometric	4	72	manometric	4	74	manometric	4	72	manometric	4	71
+3617	manslaughter	72	5		4				manslaughter	4	73	manslaughter	4	75	manslaughter	4	73	manslaughter	4	72
+3618	manticore	73	5		4				manticore	4	74	manticore	4	76	manticore	4	74	manticore	4	73
+3619	mantled	74	5		4				mantled	4	75	mantled	4	77	mantled	4	75	mantled	4	74
+3620	manucode	75	5		4				manucode	4	76	manucode	4	78	manucode	4	76	manucode	4	75
+3621	manure	76	5		3				manure	3	77	manure	3	79	manure	3	77	maanre	1	76
+3622	many	77	5		4				many	4	78	many	4	80	many	4	78	many	4	77
+3623	maple	78	5		4				maple	4	79	maple	4	81	maple	4	79	maple	4	78
+3624	Marathonian	79	5		4				Marathonian	4	80	Marathonian	4	82	Marathonian	4	80	Marathonian	4	79
+3625	marble	80	5		2	weak			marble	2	81	I	1	83	Marcgravia	1	81	marble	2	80
+3626	Marcgravia	81	5		3				Marcgravia	3	82	MarcgraTia	1	84	Marcgravia	3	82	Marcgravia	3	81
+3627	marchet	82	5		4				marchet	4	83	marchet	4	85	marchet	4	83	marchet	4	82
+3628	Flowering	83	5		4				Flowering	4	84	Flowering	4	86	Flowering	4	84	Flowering	4	83
+3629	margin	84	5		3				margin	3	85	margin	3	87	margin	3	85	Tnargm	1	84
+3630	Marianism	85	5		4				Marianism	4	86	Marianism	4	88	Marianism	4	86	Marianism	4	85
+3631	Mariolatry	86	5		4				Mariolatry	4	87	Mariolatry	4	89	Mariolatry	4	87	Mariolatry	4	86
+3632	mark	87	5		4				mark	4	88	mark	4	90	mark	4	88	mark	4	87
+3633	mark	88	5		4				mark	4	89	mark	4	91	mark	4	89	mark	4	88
+3634	Royat	89	5		3				In	1	90	Royat	3	92	Royat	3	90	Royat	3	89
+3635	marl	90	5		4				marl	4	91	marl	4	93	marl	4	91	marl	4	90
+3636	marmortinto	91	5		3				marmortinto	3	92	mannortinto	1	94	marmortinto	3	92	marmortinto	3	91
+3637	marquee	92	5		2	weak			marquee	2	93	marauee	1	95	marciuee	1	93	marquee	2	92
+3638	marrow	93	5		4				marrow	4	94	marrow	4	96	marrow	4	94	marrow	4	93
+3639	Marsdenia	94	5		2	weak			Marsdenia	2	95	Marsdenia	2	97	Marsdenla	1	95	Harsdenia	1	94
+3640	marshalship	95	5		3				marshalship	3	96	marshalship	3	98	marshalship	3	96	A	1	95
+3641	Marsileacese	96	5		1	tie			Marsileacese	1	97	MarsileacesB	1	99	Marsileaceae	1	97	Marsileaces	1	96
+3642	marten	97	5		4				marten	4	98	marten	4	100	marten	4	98	marten	4	97
+3643	martingale	98	5		3				martingale	3	99	martingale	3	101	martingale	3	99	martiiigale	1	98
+3644	martyre	99	5		4				martyre	4	100	martyre	4	102	martyre	4	100	martyre	4	99
+3645	mascaron	100	5		2	weak			large	1	101	mascaron	2	103	mascaron	2	101	handle	1	100
+3646	mash	101	5		4				mash	4	102	mash	4	104	mash	4	102	mash	4	101
+3647	maskalonge	102	5		3				maskalonge	3	103	maskalonge	3	105	maskalonge	3	103	maakalonge	1	102
+3648	masoola-boat	103	5		4				masoola-boat	4	104	masoola-boat	4	106	masoola-boat	4	104	masoola-boat	4	103
+3649	mass	104	5		4				mass	4	105	mass	4	107	mass	4	105	mass	4	104
+3650	massive	105	5		3				massive	3	106	massiTe	1	108	massive	3	106	massive	3	105
+3651	master	106	5		4				master	4	107	master	4	109	master	4	107	master	4	106
+3652	masterhood	107	5		4				masterhood	4	108	masterhood	4	110	masterhood	4	108	masterhood	4	107
+3653	mastic	108	5		3				food	1	109	mastic	3	111	mastic	3	109	mastic	3	108
+3654	mastodon	109	5		4				mastodon	4	110	mastodon	4	112	mastodon	4	110	mastodon	4	109
+3655	matachin	110	5		3				matachin	3	111	matachin	3	113	matacMn	1	111	matachin	3	110
+3656	matchable	111	5		4				matchable	4	112	matchable	4	114	matchable	4	112	matchable	4	111
+3657	mate	112	5		4				mate	4	113	mate	4	115	mate	4	113	mate	4	112
+3658	material	113	5		4				material	4	114	material	4	116	material	4	114	material	4	113
+3659	math	114	5		3				math	3	115	math	3	117	math	3	115	matli	1	114
+3660	matire	115	5		4				matire	4	116	matire	4	118	matire	4	116	matire	4	115
+3661	matrimony	116	5		3				matrimony	3	117	matrimony	3	119	ict	1	117	matrimony	3	116
+3662	matter	117	5		4				matter	4	118	matter	4	120	matter	4	118	matter	4	117
+3663	matterful	118	5		2	weak			matterful	2	119	matterfal	1	121	matterful	2	119	matterfdl	1	118
+3664	mature	119	5		4				mature	4	120	mature	4	122	mature	4	120	mature	4	119
+3665	maumetry	120	5		4				maumetry	4	121	maumetry	4	123	maumetry	4	121	maumetry	4	120
+3666	mausoleum	121	5		3				mausoleum	3	122	mansoleum	1	124	mausoleum	3	122	mausoleum	3	121
+3667	maxillary	122	5		3				maxillary	3	123	maxillary	3	125	syraphysi	1	123	maxillary	3	122
+3668	may	123	5		4				may	4	124	may	4	126	may	4	124	may	4	123
+3669	May-bird	124	5		4				May-bird	4	125	May-bird	4	127	May-bird	4	125	May-bird	4	124
+3670	mayorlet	125	5		4				mayorlet	4	126	mayorlet	4	128	mayorlet	4	126	mayorlet	4	125
+3671	mazer-tree	126	5		4				mazer-tree	4	127	mazer-tree	4	129	mazer-tree	4	127	mazer-tree	4	126
+3672	meadow-land	127	5		4				meadow-land	4	128	meadow-land	4	130	meadow-land	4	128	meadow-land	4	127
+3673	A	128	5		1	tie			A	1	129	Meat-beetle	1	131	Meal-beetle	1	129	meal	1	128
+3674	mean	129	5		4				mean	4	130	mean	4	132	mean	4	130	mean	4	129
+3675	meander	130	5		4				meander	4	131	meander	4	133	meander	4	131	meander	4	130
+3676	measles	131	5		4				measles	4	132	measles	4	134	measles	4	132	measles	4	131
+3677	measure	132	5		3				measure	3	133	I	1	135	measure	3	133	measure	3	132
+3678	measuring-faucet	133	5		3				measuring-faucet	3	134	measturing-faucet	1	136	measuring-faucet	3	134	measuring-faucet	3	133
+3679	mechanic	134	5		4				mechanic	4	135	mechanic	4	137	mechanic	4	135	mechanic	4	134
+3680	mechanist	135	5		3				mechanist	3	136	meclianist	1	138	mechanist	3	136	mechanist	3	135
+3681	medallic	136	5		4				medallic	4	137	medallic	4	139	medallic	4	137	medallic	4	136
+3682	median	137	5		4				median	4	138	median	4	140	median	4	138	median	4	137
+3683	mediation	138	5		4				mediation	4	139	mediation	4	141	mediation	4	139	mediation	4	138
+3684	Medicean	139	5		4				Medicean	4	140	Medicean	4	142	Medicean	4	140	Medicean	4	139
+3685	medieval	140	5		4				medieval	4	141	medieval	4	143	medieval	4	141	medieval	4	140
+3686	mediscalenus	141	5		3				mediscalenus	3	142	mediscalenns	1	144	mediscalenus	3	142	mediscalenus	3	141
+3687	medium	142	5		4				medium	4	143	medium	4	145	medium	4	143	medium	4	142
+3688	Medusa	143	5		3				Mednsa	1	144	Medusa	3	146	Medusa	3	144	Medusa	3	143
+3689	meet	144	5		4				meet	4	145	meet	4	147	meet	4	145	meet	4	144
+3690	Megachile	145	5		2	weak			Megachile	2	146	Megachlle	1	148	Megachile	2	146	MegacMle	1	145
+3691	Megalops	146	5		2	weak			Megalopa	1	147	Megalops	2	149	Megalops	2	147	Hegalops	1	146
+3692	megasclere	147	5		3				megasclere	3	148	megasclere	3	150	tnegasclere	1	148	megasclere	3	147
+3693	meistersanger	148	5		2	weak			meistersanger	2	149	A	1	151	meistersanger	2	149	meistersHnger	1	148
+3694	melancholily	149	5		4				melancholily	4	150	melancholily	4	152	melancholily	4	150	melancholily	4	149
+3695	melaniline	150	5		3				melaniline	3	151	melanlline	1	153	melaniline	3	151	melaniline	3	150
+3696	Melanotus	151	5		4				Melanotus	4	152	Melanotus	4	154	Melanotus	4	152	Melanotus	4	151
+3697	Melia	152	5		3				Melia	3	153	Mella	1	155	Melia	3	153	Melia	3	152
+3698	meliorist	153	5		4				meliorist	4	154	meliorist	4	156	meliorist	4	154	meliorist	4	153
+3699	mell	154	5		4				mell	4	155	mell	4	157	mell	4	155	mell	4	154
+3700	mellow	155	5		4				mellow	4	156	mellow	4	158	mellow	4	156	mellow	4	155
+3701	melody	156	5		4				melody	4	157	melody	4	159	melody	4	157	melody	4	156
+3702	melopoeia	157	5		4				melopoeia	4	158	melopoeia	4	160	melopoeia	4	158	melopoeia	4	157
+3703	melvie	158	5		4				melvie	4	159	melvie	4	161	melvie	4	159	melvie	4	158
+3704	membrane	159	5		4				membrane	4	160	membrane	4	162	membrane	4	160	membrane	4	159
+3705	memorandum	160	5		3				memorandum	3	161	memorandum	3	163	memorandum	3	161	memorandnm	1	160
+3706	memory	161	5		4				memory	4	162	memory	4	164	memory	4	162	memory	4	161
+3707	mend	162	5		4				mend	4	163	mend	4	165	mend	4	163	mend	4	162
+3708	Menidse	163	5		1	tie			Menidse	1	164	Menlds	1	166	MenidaB	1	164	Menids	1	163
+3709	menology	164	5		4				menology	4	165	menology	4	167	menology	4	165	menology	4	164
+3710	mensurable	165	5		4				mensurable	4	166	mensurable	4	168	mensurable	4	166	mensurable	4	165
+3711	mention	166	5		3				close	1	167	mention	3	169	mention	3	167	mention	3	166
+3712	mercantile	167	5		3				ThiB	1	168	mercantile	3	170	mercantile	3	168	mercantile	3	167
+3713	merchandise	168	5		4				merchandise	4	169	merchandise	4	171	merchandise	4	169	merchandise	4	168
+3714	merciless	169	5		4				merciless	4	170	merciless	4	172	merciless	4	170	merciless	4	169
+3715	Mercury	170	5		4				Mercury	4	171	Mercury	4	173	Mercury	4	171	Mercury	4	170
+3716	mere	171	5		4				mere	4	172	mere	4	174	mere	4	172	mere	4	171
+3717	Meriania	172	5		4				Meriania	4	173	Meriania	4	175	Meriania	4	173	Meriania	4	172
+3718	meristem	173	5		4				meristem	4	174	meristem	4	176	meristem	4	174	meristem	4	173
+3719	merling	174	5		3				merling	3	175	merling	3	177	merling	3	175	menuaid's-head	1	174
+3720	Merops	175	5		4				Merops	4	176	Merops	4	178	Merops	4	176	Merops	4	175
+3721	merrymeeting	176	5		3				merrymeeting	3	177	menTrmeeting	1	179	merrymeeting	3	177	merrymeeting	3	176
+3722	mesel	177	5		4				mesel	4	178	mesel	4	180	mesel	4	178	mesel	4	177
+3723	meshing-net	178	5		3				meshing-net	3	179	meshing-net	3	181	meshing-net	3	179	meshlng-net	1	178
+3724	Mesocarpaceae	179	5		2	tie			Mesocarpaceae	2	180	Mesocarpacese	2	182	Mesocarpacese	2	180	Mesocarpaceae	2	179
+3725	mesolabe	180	5		3				mesolabe	3	181	mesolabe	3	183	mesopleura	1	181	mesolabe	3	180
+3726	mesopterygium	181	5		4				mesopterygium	4	182	mesopterygium	4	184	mesopterygium	4	182	mesopterygium	4	181
+3727	mesotsmipanic	182	5		1	tie			mesotsmipanic	1	183	mesotjnnpanic	1	185	mesotympanic	1	183	midst	1	182
+3728	message	183	5		4				message	4	184	message	4	186	message	4	184	message	4	183
+3729	mesuage	184	5		3				mesuage	3	185	mesuage	3	187	mesuage	3	185	mesnage	1	184
+3730	metacoelian	185	5		3				metacoelian	3	186	metacoelian	3	188	metacoelian	3	186	metaccelian	1	185
+3731	metal	186	5		4				metal	4	187	metal	4	189	metal	4	187	metal	4	186
+3732	metalliferous	187	5		3				metalliferous	3	188	metalliferous	3	190	metalllferoas	1	188	metalliferous	3	187
+3733	metamorphism	188	5		2	weak			metamorphism	2	189	metamorphism	2	191	znetamorphism	1	189	metamorpUsm	1	188
+3734	metaphor	189	5		4				metaphor	4	190	metaphor	4	192	metaphor	4	190	metaphor	4	189
+3735	metaplasm	190	5		3				metaplasm	3	191	metaplasm	3	193	metapiaem	1	191	metaplasm	3	190
+3736	metastoma	191	5		3				metastoma	3	192	metastoma	3	194	metatarsus	1	192	metastoma	3	191
+3737	mete	192	5		4				mete	4	193	mete	4	195	mete	4	193	mete	4	192
+3738	meteoric	193	5		4				meteoric	4	194	meteoric	4	196	meteoric	4	194	meteoric	4	193
+3739	meteoroscope	194	5		4				meteoroscope	4	195	meteoroscope	4	197	meteoroscope	4	195	meteoroscope	4	194
+3740	meth	195	5		3				meth	3	196	meth	3	198	metta	1	196	meth	3	195
+3741	Methodist	196	5		4				Methodist	4	197	Methodist	4	199	Methodist	4	197	Methodist	4	196
+3742	Metis	197	5		4				Metis	4	198	Metis	4	200	Metis	4	198	Metis	4	197
+3743	metricist	198	5		4				metricist	4	199	metricist	4	201	metricist	4	199	metricist	4	198
+3744	metropolitan	199	5		4				metropolitan	4	200	metropolitan	4	202	metropolitan	4	200	metropolitan	4	199
+3745	mew	200	5		2	weak			also	1	201	mew	2	203	mew-	1	201	mew	2	200
+3746	mezzotint	201	5		4				mezzotint	4	202	mezzotint	4	204	mezzotint	4	202	mezzotint	4	201
+3747	Michaelmas	202	5		4				Michaelmas	4	203	Michaelmas	4	205	Michaelmas	4	203	Michaelmas	4	202
+3748	micro-	203	5		2	weak			micro-	2	204	Micrococcus	1	206	micro-	2	204	nucro-	1	203
+3749	Micrococcus	204	5		2	weak			Micrococcus	2	205	Micrococcus	2	207	and	1	205	Micrvvwvnis	1	204
+3750	microgonidium	205	5		4				microgonidium	4	206	microgonidium	4	208	microgonidium	4	206	microgonidium	4	205
+3751	micrometry	206	5		3				micrometry	3	207	micrometry	3	209	micrometry	3	207	Blicrametry	1	206
+3752	Micropuccinia	207	5		2	weak			Micropuccinia	2	208	Micropuccinia	2	210	Slicropuccinia	1	208	IVIicropuccmia	1	207
+3753	microseismometry	208	5		4				microseismometry	4	209	microseismometry	4	211	microseismometry	4	209	microseismometry	4	208
+3754	microzoan	209	5		3				microzoan	3	210	mlcrozoan	1	212	microzoan	3	210	microzoan	3	209
+3755	middle	210	5		3				middle	3	211	middle	3	213	middle	3	211	Missing	1	210
+3756	middlingness	211	5		3				middlingness	3	212	middlingness	3	214	middlingness	3	212	middlingneBB	1	211
+3757	midshipman	212	5		2	weak			midshipman	2	213	midshipman	2	215	midsMpinan	1	213	Missing	1	212
+3758	miff	213	5		4				miff	4	214	miff	4	216	miff	4	214	miff	4	213
+3759	migration	214	5		3				migration	3	215	I	1	217	migration	3	215	migration	3	214
+3760	The	215	5		3				The	3	216	The	3	218	The	3	216	mildew	1	215
+3761	militancy	216	5		4				militancy	4	217	militancy	4	219	militancy	4	217	militancy	4	216
+3762	milk	217	5		3				milk	3	218	mlllE	1	220	milk	3	218	milk	3	217
+3763	milk-molar	218	5		4				milk-molar	4	219	milk-molar	4	221	milk-molar	4	219	milk-molar	4	218
+3764	mill	219	5		3				mill	3	220	miU	1	222	mill	3	220	mill	3	219
+3765	millenarism	220	5		3				millenarism	3	221	millenarism	3	223	millenarism	3	221	millenaxism	1	220
+3766	mill-gang	221	5		4				mill-gang	4	222	mill-gang	4	224	mill-gang	4	222	mill-gang	4	221
+3767	millionnaire	222	5		3				millionnaire	3	223	millionnaire	3	225	millionnaire	3	223	millioimaire	1	222
+3768	Milreis	223	5		3				Milreis	3	224	Milreis	3	226	Reverse-	1	224	Milreis	3	223
+3769	mimetic	224	5		3				mimetic	3	225	k	1	227	mimetic	3	225	mimetic	3	224
+3770	Mimusops	225	5		4				Mimusops	4	226	Mimusops	4	228	Mimusops	4	226	Mimusops	4	225
+3771	mincing	226	5		3				mincing	3	227	mincing	3	229	mincing	3	227	minciiig	1	226
+3772	mind	227	5		4				mind	4	228	mind	4	230	mind	4	228	mind	4	227
+3773	mine	228	5		4				mine	4	229	mine	4	231	mine	4	229	mine	4	228
+3774	mineral	229	5		4				mineral	4	230	mineral	4	232	mineral	4	230	mineral	4	229
+3775	mingle	230	5		4				mingle	4	231	mingle	4	233	mingle	4	231	mingle	4	230
+3776	minimus	231	5		3				minimus	3	232	minimus	3	234	minimus	3	232	miniiQiis	1	231
+3777	minister	232	5		4				minister	4	233	minister	4	235	minister	4	233	minister	4	232
+3778	mink	233	5		2	weak			mink	2	234	on	1	236	mlnlr	1	234	mink	2	233
+3779	minoration	234	5		2	tie			minoration	2	235	mlnoration	2	237	minoration	2	235	mlnoration	2	234
+3780	mint	235	5		4				mint	4	236	mint	4	238	mint	4	236	mint	4	235
+3781	minute	236	5		4				minute	4	237	minute	4	239	minute	4	237	minute	4	236
+3782	Mirabilis	237	5		2	weak			Mirabilis	2	238	MlrabiUs	1	240	Mirabilis	2	238	MirabiUs	1	237
+3783	miriness	238	5		4				miriness	4	239	miriness	4	241	miriness	4	239	miriness	4	238
+3784	mis-	239	5		4				mis-	4	240	mis-	4	242	mis-	4	240	mis-	4	239
+3785	misascribe	240	5		4				misascribe	4	241	misascribe	4	243	misascribe	4	241	misascribe	4	240
+3786	miscarry	241	5		4				miscarry	4	242	miscarry	4	244	miscarry	4	242	miscarry	4	241
+3787	mischievous	242	5		1	tie			mischievous	1	243	miscliievons	1	245	miscliievous	1	243	znischievous	1	242
+3788	miscount	243	5		4				miscount	4	244	miscount	4	246	miscount	4	244	miscount	4	243
+3789	misdistinguish	244	5		2	weak			misdistinguish	2	245	misdistingnish	1	247	misdistinguish	2	245	misdistingulsh	1	244
+3790	miserable	245	5		4				miserable	4	246	miserable	4	248	miserable	4	246	miserable	4	245
+3791	misfeat	246	5		3				misfeat	3	247	mlsfeat	1	249	misfeat	3	247	misfeat	3	246
+3792	mishallowed	247	5		4				mishallowed	4	248	mishallowed	4	250	mishallowed	4	248	mishallowed	4	247
+3793	misken	248	5		4				misken	4	249	misken	4	251	misken	4	249	misken	4	248
+3794	mismanagement	249	5		4				mismanagement	4	250	mismanagement	4	252	mismanagement	4	250	mismanagement	4	249
+3795	misplay	250	5		3				A	1	251	misplay	3	253	misplay	3	251	misplay	3	250
+3796	misrepeat	251	5		4				misrepeat	4	252	misrepeat	4	254	misrepeat	4	252	misrepeat	4	251
+3797	miss	252	5		4				miss	4	253	miss	4	255	miss	4	253	miss	4	252
+3798	missing	253	5		4				missing	4	254	missing	4	256	missing	4	254	missing	4	253
+3799	misspeak	254	5		4				misspeak	4	255	misspeak	4	257	misspeak	4	255	misspeak	4	254
+3800	mistaken	255	5		4				mistaken	4	256	mistaken	4	258	mistaken	4	256	mistaken	4	255
+3801	mistle	256	5		4				mistle	4	257	mistle	4	259	mistle	4	257	mistle	4	256
+3802	mistrial	257	5		4				mistrial	4	258	mistrial	4	260	mistrial	4	258	mistrial	4	257
+3803	nusween	258	5		1	tie			nusween	1	259	mlsween	1	261	Fnll	1	259	misween	1	258
+3804	miter	259	5		4				miter	4	260	miter	4	262	miter	4	260	miter	4	259
+3805	mitigate	260	5		4				mitigate	4	261	mitigate	4	263	mitigate	4	261	mitigate	4	260
+3806	mitten	261	5		4				mitten	4	262	mitten	4	264	mitten	4	262	mitten	4	261
+3807	mizon	262	5		2	weak			mizon	2	263	mtzon	1	265	mixon	1	263	mizon	2	262
+3808	Mniotilta	263	5		3				Mniotilta	3	264	Mniotilta	3	266	Msiotilta	1	264	Mniotilta	3	263
+3809	mobbish	264	5		4				mobbish	4	265	mobbish	4	267	mobbish	4	265	mobbish	4	264
+3810	moccasin	265	5		4				moccasin	4	266	moccasin	4	268	moccasin	4	266	moccasin	4	265
+3811	mocking-bird	266	5		4				mocking-bird	4	267	mocking-bird	4	269	mocking-bird	4	267	mocking-bird	4	266
+3812	mode	267	5		4				mode	4	268	mode	4	270	mode	4	268	mode	4	267
+3813	modeling	268	5		4				modeling	4	269	modeling	4	271	modeling	4	269	modeling	4	268
+3814	moderator	269	5		4				moderator	4	270	moderator	4	272	moderator	4	270	moderator	4	269
+3815	modesty-bit	270	5		4				modesty-bit	4	271	modesty-bit	4	273	modesty-bit	4	271	modesty-bit	4	270
+3816	modulant	271	5		3				modulant	3	272	modulant	3	274	modnlant	1	272	modulant	3	271
+3817	modulus	272	5		3				modulus	3	273	modulus	3	275	modulus	3	273	modnlns	1	272
+3818	Mohammedan	273	5		4				Mohammedan	4	274	Mohammedan	4	276	Mohammedan	4	274	Mohammedan	4	273
+3819	moirologist	274	5		3				moirologist	3	275	moirologist	3	277	moirologlst	1	275	moirologist	3	274
+3820	mold	275	5		4				mold	4	276	mold	4	278	mold	4	276	mold	4	275
+3821	mold-box	276	5		2	weak			mold-box	2	277	of	1	279	mold-box	2	277	mold-boz	1	276
+3822	mold-stone	277	5		4				mold-stone	4	278	mold-stone	4	280	mold-stone	4	278	mold-stone	4	277
+3823	molecule	278	5		3				molecule	3	279	molecule	3	281	molecule	3	279	molectue	1	278
+3824	moUa	279	5		3				molla	1	280	moUa	3	282	moUa	3	280	moUa	3	279
+3825	Mollusca	280	5		2	weak			Mollusca	2	281	MoUusca	1	283	Mollusca	2	281	Mollnsca	1	280
+3826	Molothnis	281	5		2	weak			Molothrus	1	282	Molothms	1	284	Molothnis	2	282	Molothnis	2	281
+3827	moment	282	5		4				moment	4	283	moment	4	285	moment	4	283	moment	4	282
+3828	Momotus	283	5		2	weak			Momotus	2	284	Momotos	1	286	Momotns	1	284	Momotus	2	283
+3829	nionadifonii	284	5		1	tie			nionadifonii	1	285	roonadiform	1	287	monadiform	1	285	ibe	1	284
+3830	monarchy	285	5		4				monarchy	4	286	monarchy	4	288	monarchy	4	286	monarchy	4	285
+3831	monaulos	286	5		3				monaulos	3	287	monaulos	3	289	monaulos	3	287	monanlos	1	286
+3832	money	287	5		4				money	4	288	money	4	290	money	4	288	money	4	287
+3833	moneyless	288	5		4				moneyless	4	289	moneyless	4	291	moneyless	4	289	moneyless	4	288
+3834	Monilicornes	289	5		3				Monilicornes	3	290	Monilicornes	3	292	Monilicornes	3	290	Monilicomes	1	289
+3835	monitor	290	5		4				monitor	4	291	monitor	4	293	monitor	4	291	monitor	4	290
+3836	monkey	291	5		4				monkey	4	292	monkey	4	294	monkey	4	292	monkey	4	291
+3837	monobrachius	292	5		2	weak			monobrachius	2	293	monobracliius	1	295	monobrachius	2	293	monobracMns	1	292
+3838	monoclinometric	293	5		4				monoclinometric	4	294	monoclinometric	4	296	monoclinometric	4	294	monoclinometric	4	293
+3839	Monodonta	294	5		4				Monodonta	4	295	Monodonta	4	297	Monodonta	4	295	Monodonta	4	294
+3840	monogeny	295	5		4				monogeny	4	296	monogeny	4	298	monogeny	4	296	monogeny	4	295
+3841	monomachy	296	5		4				monomachy	4	297	monomachy	4	299	monomachy	4	297	monomachy	4	296
+3842	monopetalous	297	5		4				monopetalous	4	298	monopetalous	4	300	monopetalous	4	298	monopetalous	4	297
+3843	monopolical	298	5		3				monopolical	3	299	monopolical	3	301	jnonopolical	1	299	monopolical	3	298
+3844	monorhine	299	5		4				monorhine	4	300	monorhine	4	302	monorhine	4	300	monorhine	4	299
+3845	monotheism	300	5		3				monotheism	3	301	monotheism	3	303	monotheism	3	301	monotlieisiii	1	300
+3846	Flowering	301	5		1	tie			Flowering	1	302	monotrocMan	1	304	monotrochlan	1	302	monotrochian	1	301
+3847	monster	302	5		4				monster	4	303	monster	4	305	monster	4	303	monster	4	302
+3848	Montanistical	303	5		4				Montanistical	4	304	Montanistical	4	306	Montanistical	4	304	Montanistical	4	303
+3849	monthly	304	5		4				monthly	4	305	monthly	4	307	monthly	4	305	monthly	4	304
+3850	mood	305	5		4				mood	4	306	mood	4	308	mood	4	306	mood	4	305
+3851	moon	306	5		3				in	1	307	moon	3	309	moon	3	307	moon	3	306
+3852	moonshine	307	5		4				moonshine	4	308	moonshine	4	310	moonshine	4	308	moonshine	4	307
+3853	mooring-bend	308	5		4				mooring-bend	4	309	mooring-bend	4	311	mooring-bend	4	309	mooring-bend	4	308
+3854	moot	309	5		4				moot	4	310	moot	4	312	moot	4	310	moot	4	309
+3855	-mor	310	5		3				-mor	3	311	and	1	313	-mor	3	311	-mor	3	310
+3856	morale	311	5		4				morale	4	312	morale	4	314	morale	4	312	morale	4	311
+3857	morass	312	5		4				morass	4	313	morass	4	315	morass	4	313	morass	4	312
+3858	as	313	5		3				as	3	314	as	3	316	as	3	314	Mordella	1	313
+3859	moreen	314	5		4				moreen	4	315	moreen	4	317	moreen	4	315	moreen	4	314
+3860	moril	315	5		4				moril	4	316	moril	4	318	moril	4	316	moril	4	315
+3861	Mormon	316	5		3				Mormon	3	317	Mormon	3	319	Mormon	3	317	Uormon	1	316
+3862	momspeecli	317	5		2	weak			mornspeecb	1	318	momspeecli	2	320	mornspeech	1	318	momspeecli	2	317
+3863	morphographer	318	5		4				morphographer	4	319	morphographer	4	321	morphographer	4	319	morphographer	4	318
+3864	morsbunker	319	5		3				morsbunker	3	320	morsbmiker	1	322	morsbunker	3	320	morsbunker	3	319
+3865	mortally	320	5		3				mortally	3	321	mortally	3	323	Diamond	1	321	mortally	3	320
+3866	ciie	321	5		1	tie			ciie	1	322	Mortier-ii-cire	1	324	Morticr-i-cirepf	1	322	mortgagee	1	321
+3867	mortmain	322	5		4				mortmain	4	323	mortmain	4	325	mortmain	4	323	mortmain	4	322
+3868	mosaicist	323	5		4				mosaicist	4	324	mosaicist	4	326	mosaicist	4	324	mosaicist	4	323
+3869	mosquito-canopy	324	5		3				mosquito-canopy	3	325	mosquito-canopy	3	327	mosquito-canopy	3	325	moscLuito-canopy	1	324
+3870	moss-pink	325	5		4				moss-pink	4	326	moss-pink	4	328	moss-pink	4	326	moss-pink	4	325
+3871	mote	326	5		4				mote	4	327	mote	4	329	mote	4	327	mote	4	326
+3872	mother-land	327	5		4				mother-land	4	328	mother-land	4	330	mother-land	4	328	mother-land	4	327
+3873	motion	328	5		4				motion	4	329	motion	4	331	motion	4	329	motion	4	328
+3874	motive	329	5		4				motive	4	330	motive	4	332	motive	4	330	motive	4	329
+3875	mottle	330	5		4				mottle	4	331	mottle	4	333	mottle	4	331	mottle	4	330
+3876	mound	331	5		4				mound	4	332	mound	4	334	mound	4	332	mound	4	331
+3877	mountain	332	5		3				mountain	3	333	mountain	3	335	mountain	3	333	moantain	1	332
+3878	mountain-tobacco	333	5		4				mountain-tobacco	4	334	mountain-tobacco	4	336	mountain-tobacco	4	334	mountain-tobacco	4	333
+3879	mourn	334	5		3				mourn	3	335	mourn	3	337	mourn	3	335	monm	1	334
+3880	mouse	335	5		3				mouse	3	336	monse	1	338	mouse	3	336	mouse	3	335
+3881	mouth	336	5		2	tie			mouth	2	337	mouth	2	339	month	2	337	month	2	336
+3882	movabled	337	5		4				movabled	4	338	movabled	4	340	movabled	4	338	movabled	4	337
+3883	movement	338	5		4				movement	4	339	movement	4	341	movement	4	339	movement	4	338
+3884	moya	339	5		4				moya	4	340	moya	4	342	moya	4	340	moya	4	339
+3885	mucic	340	5		3				mucic	3	341	mncic	1	343	mucic	3	341	mucic	3	340
+3886	mucoid	341	5		4				mucoid	4	342	mucoid	4	344	mucoid	4	342	mucoid	4	341
+3887	muddle	342	5		4				muddle	4	343	muddle	4	345	muddle	4	343	muddle	4	342
+3888	muezzm	343	5		2	tie			muezzm	2	344	muezzin	2	346	muezzin	2	344	muezzm	2	343
+3889	mug	344	5		4				mug	4	345	mug	4	347	mug	4	345	mug	4	344
+3890	mulberry	345	5		4				mulberry	4	346	mulberry	4	348	mulberry	4	346	mulberry	4	345
+3891	mulier	346	5		2	tie			mulier	2	347	mnlier	2	349	mulier	2	347	mnlier	2	346
+3892	mullet	347	5		3				mullet	3	348	mullet	3	350	mullet	3	348	The	1	347
+3893	multidigitate	348	5		3				multidigitate	3	349	multidigitate	3	351	multidigitate	3	349	mnltidigitate	1	348
+3894	multipartite	349	5		3				multipartite	3	350	multipartite	3	352	multipartite	3	350	mtiltipartite	1	349
+3895	multiply	350	5		4				multiply	4	351	multiply	4	353	multiply	4	351	multiply	4	350
+3896	multivocal	351	5		4				multivocal	4	352	multivocal	4	354	multivocal	4	352	multivocal	4	351
+3897	mummery	352	5		3				mummery	3	353	mummery	3	355	mummery	3	353	nrammery	1	352
+3898	mumper	353	5		4				mumper	4	354	mumper	4	356	mumper	4	354	mumper	4	353
+3899	mungo	354	5		3				mungo	3	355	mango	1	357	mungo	3	355	mungo	3	354
+3900	mur	355	5		2	weak			muT	1	356	mnr	1	358	mur	2	356	mur	2	355
+3901	mure	356	5		2	weak			mure	2	357	by	1	359	mure	2	357	Missing	1	356
+3902	murk	357	5		4				murk	4	358	murk	4	360	murk	4	358	murk	4	357
+3903	murrelet	358	5		2	tie			murrelet	2	359	mnrrelet	2	361	murrelet	2	359	mnrrelet	2	358
+3904	muschelkalk	359	5		4				muschelkalk	4	360	muschelkalk	4	362	muschelkalk	4	360	muschelkalk	4	359
+3905	muscle	360	5		4				muscle	4	361	muscle	4	363	muscle	4	361	muscle	4	360
+3906	musculation	361	5		3				muscnlation	1	362	musculation	3	364	musculation	3	362	musculation	3	361
+3907	museography	362	5		4				museography	4	363	museography	4	365	museography	4	363	museography	4	362
+3908	music	363	5		4				music	4	364	music	4	366	music	4	364	music	4	363
+3909	musive	364	5		2	weak			musive	2	365	mnsive	1	367	musive	2	365	mosive	1	364
+3910	musk-ox	365	5		3				musk-ox	3	366	musk-ox	3	368	musk-oz	1	366	musk-ox	3	365
+3911	mussacus	366	5		3				mussacus	3	367	mussacus	3	369	mussacus	3	367	mnssacns	1	366
+3912	mustachial	367	5		3				mustacMal	1	368	mustachial	3	370	mustachial	3	368	mustachial	3	367
+3913	muster	368	5		3				muster	3	369	muster	3	371	muster	3	369	Missing	1	368
+3914	mute	369	5		4				mute	4	370	mute	4	372	mute	4	370	mute	4	369
+3915	Mutilla	370	5		3				Mutilla	3	371	Mntilla	1	373	Mutilla	3	371	Mutilla	3	370
+3916	mutton	371	5		3				mutton	3	372	inntton	1	374	mutton	3	372	mutton	3	371
+3917	muzzle	372	5		3				muzzle	3	373	k	1	375	muzzle	3	373	muzzle	3	372
+3918	Mycetozoa	373	5		4				Mycetozoa	4	374	Mycetozoa	4	376	Mycetozoa	4	374	Mycetozoa	4	373
+3919	Myiagrinae	374	5		2	weak			Myiagrinse	1	375	Myiagrinae	2	377	Myiagrinae	2	375	Myiagrinx	1	374
+3920	myodynamics	375	5		3				myodynamics	3	376	myodynamics	3	378	mil	1	376	myodynamics	3	375
+3921	myosin	376	5		4				myosin	4	377	myosin	4	379	myosin	4	377	myosin	4	376
+3922	Myriolepidinse	377	5		3				Myriolepidinae	1	378	Myriolepidinse	3	380	Myriolepidinse	3	378	Myriolepidinse	3	377
+3923	myrobalan	378	5		3				msnrobalan	1	379	myrobalan	3	381	myrobalan	3	379	myrobalan	3	378
+3924	myself	379	5		4				myself	4	380	myself	4	382	myself	4	380	myself	4	379
+3925	mysticism	380	5		3				mysticism	3	381	mysticism	3	383	mysticism	3	381	Missing	1	380
+3926	Mytilacea	381	5		4				Mytilacea	4	382	Mytilacea	4	384	Mytilacea	4	382	Mytilacea	4	381
+3927	Tlie	382	5		1	tie			Tlie	1	383	The	1	385	n	1	383	Missing	1	382
+3928	naevose	383	5		2	weak			naevose	2	384	nsevose	1	386	nxvose	1	384	naevose	2	383
+3929	nail	384	5		3				nail	3	385	nail	3	387	nail	3	385	Missing	1	384
+3930	naivete	385	5		3				naivete	3	386	nalveti	1	388	naivete	3	386	naivete	3	385
+3931	name	386	5		3				the	1	387	name	3	389	name	3	387	name	3	386
+3932	nanander	387	5		4				nanander	4	388	nanander	4	390	nanander	4	388	nanander	4	387
+3933	nape	388	5		4				nape	4	389	nape	4	391	nape	4	389	nape	4	388
+3934	napping-machine	389	5		2	tie			napping-machine	2	390	napplng-machine	2	392	napping-machine	2	390	napplng-machine	2	389
+3935	narrable	390	5		4				narrable	4	391	narrable	4	393	narrable	4	391	narrable	4	390
+3936	narrowness	391	5		4				narrowness	4	392	narrowness	4	394	narrowness	4	392	narrowness	4	391
+3937	nasi	392	5		3				nasi	3	393	i	1	395	nasi	3	393	nasi	3	392
+3938	nasty	393	5		4				nasty	4	394	nasty	4	396	nasty	4	394	nasty	4	393
+3939	sci	394	5		1	tie			sci	1	395	NatKH	1	397	Natua	1	395	Natica	1	394
+3940	nationalize	395	5		4				nationalize	4	396	nationalize	4	398	nationalize	4	396	nationalize	4	395
+3941	natrolite	396	5		4				natrolite	4	397	natrolite	4	399	natrolite	4	397	natrolite	4	396
+3942	natural	397	5		4				natural	4	398	natural	4	400	natural	4	398	natural	4	397
+3943	naturalize	398	5		3				naturalize	3	399	naturalize	3	401	naturalize	3	399	Batnralize	1	398
+3944	nature	399	5		3				nature	3	400	nature	3	402	natnre	1	400	nature	3	399
+3945	naughtily	400	5		3				naughtily	3	401	naughtily	3	403	naughtily	3	401	nanglitily	1	400
+3946	nautiloid	401	5		4				nautiloid	4	402	nautiloid	4	404	nautiloid	4	402	nautiloid	4	401
+3947	Navicella	402	5		3				Navicella	3	403	Navlcella	1	405	Navicella	3	403	Navicella	3	402
+3948	navy-agent	403	5		4				navy-agent	4	404	navy-agent	4	406	navy-agent	4	404	navy-agent	4	403
+3949	near	404	5		3				near	3	405	near	3	407	near	3	405	nager	1	404
+3950	neat	405	5		4				neat	4	406	neat	4	408	neat	4	406	neat	4	405
+3951	necess	406	5		3				necess	3	407	necess	3	409	necess	3	407	qecess	1	406
+3952	necessity	407	5		3				necessity	3	408	necessity	3	410	necessity	3	408	Wherever	1	407
+3953	neckerchief	408	5		3				neckerchief	3	409	neckerchief	3	411	neckerchief	3	409	Missing	1	408
+3954	necromant	409	5		4				necromant	4	410	necromant	4	412	necromant	4	410	necromant	4	409
+3955	nectarotheca		5		3				nectarotheca	3	411	nectarotheca	3	413	nectarotheca	3	411		1	
+3956	needle	410	5		4				needle	4	412	needle	4	414	needle	4	412	needle	4	410
+3957	needless	411	5		3				needless	3	413	Is	1	415	needless	3	413	needless	3	411
+3958	nefandous	412	5		3				nefandous	3	414	nefandoas	1	416	nefandous	3	414	nefandous	3	412
+3959	negator	413	5		4				negator	4	415	negator	4	417	negator	4	415	negator	4	413
+3960	negligent	414	5		4				negligent	4	416	negligent	4	418	negligent	4	416	negligent	4	414
+3961	negroSid	415	5		2	weak			negroold	1	417	negroSid	2	419	negrooid	1	417	negroSid	2	415
+3962	neighborhood	416	5		4				neighborhood	4	418	neighborhood	4	420	neighborhood	4	418	neighborhood	4	416
+3963	nemathelminth	417	5		2	weak			nemathelmlnth	1	419	nemathelminth	2	421	nemathelminth	2	419	iiematlielmintli	1	417
+3964	Nematopoda	418	5		4				Nematopoda	4	420	Nematopoda	4	422	Nematopoda	4	420	Nematopoda	4	418
+3965	nente	419	5		3				nente	3	421	nente	3	423	An	1	421	nente	3	419
+3966	neomenla	420	5		2	tie			neomenla	2	422	neomenla	2	424	neomenia	2	422	neomenia	2	420
+3967	Neotoma	421	5		4				Neotoma	4	423	Neotoma	4	425	Neotoma	4	423	Neotoma	4	421
+3968	Nephelococcygia	422	5		4				Nephelococcygia	4	424	Nephelococcygia	4	426	Nephelococcygia	4	424	Nephelococcygia	4	422
+3969	nephrorrhagia	423	5		4				nephrorrhagia	4	425	nephrorrhagia	4	427	nephrorrhagia	4	425	nephrorrhagia	4	423
+3970	Nerita	424	5		2	weak			Nerita	2	426	Nereocystis	1	428	Xcrita	1	426	Nerita	2	424
+3971	nerve	425	5		4				nerve	4	427	nerve	4	429	nerve	4	427	nerve	4	425
+3972	nerve-tissue	426	5		3				nerve-tissue	3	428	nerve-tissue	3	430	nerve-tisBue	1	428	nerve-tissue	3	426
+3973	nesiote	427	5		4				nesiote	4	429	nesiote	4	431	nesiote	4	429	nesiote	4	427
+3974	nestling	428	5		4				nestling	4	430	nestling	4	432	nestling	4	430	nestling	4	428
+3975	net	429	5		4				net	4	431	net	4	433	net	4	431	net	4	429
+3976	netted	430	5		4				netted	4	432	netted	4	434	netted	4	432	netted	4	430
+3977	neume	431	5		3				neume	3	433	nenme	1	435	neume	3	433	neume	3	431
+3978	neurohypnology	432	5		3				neurohypnology	3	434	nenrohypnology	1	436	neurohypnology	3	434	neurohypnology	3	432
+3979	neuroskeleton	433	5		4				neuroskeleton	4	435	neuroskeleton	4	437	neuroskeleton	4	435	neuroskeleton	4	433
+3980	neutralization	434	5		4				neutralization	4	436	neutralization	4	438	neutralization	4	436	neutralization	4	434
+3981	new	435	5		4				new	4	437	new	4	439	new	4	437	new	4	435
+3982	newfangled	436	5		4				newfangled	4	438	newfangled	4	440	newfangled	4	438	newfangled	4	436
+3983	newsless	437	5		4				newsless	4	439	newsless	4	441	newsless	4	439	newsless	4	437
+3984	next	438	5		4				next	4	440	next	4	442	next	4	440	next	4	438
+3985	nice	439	5		4				nice	4	441	nice	4	443	nice	4	441	nice	4	439
+3986	nick	440	5		4				nick	4	442	nick	4	444	nick	4	442	nick	4	440
+3987	nicker	441	5		4				nicker	4	443	nicker	4	445	nicker	4	443	nicker	4	441
+3988	nidder	442	5		3				nidder	3	444	nldder	1	446	nidder	3	444	nidder	3	442
+3989	niello	443	5		4				niello	4	445	niello	4	447	niello	4	445	niello	4	443
+3990	nigger	444	5		4				nigger	4	446	nigger	4	448	nigger	4	446	nigger	4	444
+3991	night	445	5		4				night	4	447	night	4	449	night	4	447	night	4	445
+3992	night-hawk	446	5		4				night-hawk	4	448	night-hawk	4	450	night-hawk	4	448	night-hawk	4	446
+3993	nightmare	447	5		3				nightmare	3	449	nightmare	3	451	ny	1	449	nightmare	3	447
+3994	nightward	448	5		3				nightward	3	450	nightward	3	452	nightward	3	450	niglitward	1	448
+3995	nilgau	449	5		3				nilgau	3	451	nilgau	3	453	nilgan	1	451	nilgau	3	449
+3996	nimbus	450	5		4				nimbus	4	452	nimbus	4	454	nimbus	4	452	nimbus	4	450
+3997	Nineveh	451	5		4				Nineveh	4	453	Nineveh	4	455	Nineveh	4	453	Nineveh	4	451
+3998	nip	452	5		4				nip	4	454	nip	4	456	nip	4	454	nip	4	452
+3999	Nirvana	453	5		3				Nirvana	3	455	Nirraiia	1	457	Nirvana	3	455	Nirvana	3	453
+4000	Nitraria	454	5		3				Nitraria	3	456	Nitrarla	1	458	Nitraria	3	456	Nitraria	3	454
+4001	nitrous	455	5		3				nitrous	3	457	nitrous	3	459	nitrous	3	457	nitrons	1	455
+4002	no	456	5		4				no	4	458	no	4	460	no	4	458	no	4	456
+4003	noble	457	5		4				noble	4	459	noble	4	461	noble	4	459	noble	4	457
+4004	nocerine	458	5		2	tie			nocerine	2	460	nocerine	2	462	nocenne	2	460	nocenne	2	458
+4005	nocturn	459	5		2	weak			nocturn	2	461	noctnm	1	463	nocturn	2	461	noctom	1	459
+4006	noddle	460	5		4				noddle	4	462	noddle	4	464	noddle	4	462	noddle	4	460
+4007	noduli	461	5		2	weak			noduli	2	463	noduli	2	465	niidii-	1	463	nodnli	1	461
+4008	noise	462	5		4				noise	4	464	noise	4	466	noise	4	464	noise	4	462
+4009	nomadism	463	5		4				nomadism	4	465	nomadism	4	467	nomadism	4	465	nomadism	4	463
+4010	nominalism	464	5		4				nominalism	4	466	nominalism	4	468	nominalism	4	466	nominalism	4	464
+4011	nomophylax	465	5		2	weak			nomopbylaz	1	467	nomophylax	2	469	nomophylax	2	467	nomophylaz	1	465
+4012	non	466	5		4				non	4	468	non	4	470	non	4	468	non	4	466
+4013	non-egoistical	467	5		3				non-egoistical	3	469	a	1	471	non-egoistical	3	469	non-egoistical	3	467
+4014	nonnat	468	5		4				nonnat	4	470	nonnat	4	472	nonnat	4	470	nonnat	4	468
+4015	nonsense-name	469	5		4				nonsense-name	4	471	nonsense-name	4	473	nonsense-name	4	471	nonsense-name	4	469
+4016	noon-mark	470	5		3				noon-mark	3	472	noon-mark	3	474	boon-mark	1	472	noon-mark	3	470
+4017	norm	471	5		4				norm	4	473	norm	4	475	norm	4	473	norm	4	471
+4018	north	472	5		4				north	4	474	north	4	476	north	4	474	north	4	472
+4019	Northumbrian	473	5		2	tie			Northumbrian	2	475	Northnmbrian	2	477	Northumbrian	2	475	Northnmbrian	2	473
+4020	nose	474	5		4				nose	4	476	nose	4	478	nose	4	476	nose	4	474
+4021	nosophobia	475	5		4				nosophobia	4	477	nosophobia	4	479	nosophobia	4	477	nosophobia	4	475
+4022	notability	476	5		4				notability	4	478	notability	4	480	notability	4	478	notability	4	476
+4023	notation	477	5		4				notation	4	479	notation	4	481	notation	4	479	notation	4	477
+4024	note	478	5		4				note	4	480	note	4	482	note	4	480	note	4	478
+4025	note	479	5		4				note	4	481	note	4	483	note	4	481	note	4	479
+4026	nothing	480	5		4				nothing	4	482	nothing	4	484	nothing	4	482	nothing	4	480
+4027	Notidanidse	481	5		2	weak			Notidanidae	1	483	Kotidanidse	1	485	Notidanidse	2	483	Notidanidse	2	481
+4028	notobranchiate	482	5		2	weak			notobranchiate	2	484	notobranchiate	2	486	ITaviiig	1	484	notobranchlate	1	482
+4029	Nototheniidae	483	5		2	weak			Nototheniidae	2	485	Nototheniidse	1	487	Nototheniidae	2	485	Nototheniids	1	483
+4030	nourish	484	5		3				nourish	3	486	nourish	3	488	tonism	1	486	nourish	3	484
+4031	novel	485	5		4				novel	4	487	novel	4	489	novel	4	487	novel	4	485
+4032	noverint	486	5		3				noverint	3	488	noverint	3	490		1	488	noverint	3	486
+4033	Nowel	487	5		4				Nowel	4	489	Nowel	4	491	Nowel	4	489	Nowel	4	487
+4034	nubble	488	5		4				nubble	4	490	nubble	4	492	nubble	4	490	nubble	4	488
+4035	nucleolus	489	5		2	weak			nucleolus	2	491	nacleolns	1	493	nucleolus	2	491	nncleolus	1	489
+4036	nude	490	5		4				nude	4	492	nude	4	494	nude	4	492	nude	4	490
+4037	nuisancer	491	5		3				nuisancer	3	493	numb	1	495	nuisancer	3	493	nuisancer	3	491
+4038	numbedness	492	5		3				numbedness	3	494	numbedness	3	496	nmnbedness	1	494	numbedness	3	492
+4039	numb-fish	493	5		1	tie			numb-fish	1	495	nomb-flsh	1	497	niunb-fish	1	495	nnmb-flsli	1	493
+4040	numerous	494	5		4				numerous	4	496	numerous	4	498	numerous	4	496	numerous	4	494
+4041	nun	495	5		3				nun	3	497	nun	3	499	A	1	497	nun	3	495
+4042	nunnish	496	5		3				nunnish	3	498	nniuiish	1	500	nunnish	3	498	nunnish	3	496
+4043	nurse-child	497	5		2	weak			nurse-child	2	499	nurse-child	2	501	nurse-cUld	1	499	nnrse-child	1	497
+4044	nutant	498	5		4				nutant	4	500	nutant	4	502	nutant	4	500	nutant	4	498
+4045	nutria	499	5		4				nutria	4	501	nutria	4	503	nutria	4	501	nutria	4	499
+4046	nuzzle	500	5		3				nuzzle	3	502	nnzzle	1	504	nuzzle	3	502	nuzzle	3	500
+4047	Nyctipithecinse	501	5		2	weak			Nyctipithecina	1	503	Nyctipithecinse	2	505	Nyctipithecinae	1	503	Nyctipithecinse	2	501
+4048	nympholepsy	502	5		4				nympholepsy	4	504	nympholepsy	4	506	nympholepsy	4	504	nympholepsy	4	502
+4049	The	503	5		3				f	1	505	The	3	507	The	3	505	The	3	503
+4050	oak	504	5		4				oak	4	506	oak	4	508	oak	4	506	oak	4	504
+4051	oakum	505	5		3				oakum	3	507	oaknm	1	509	oakum	3	507	oakum	3	505
+4052	oat	506	5		4				oat	4	508	oat	4	510	oat	4	508	oat	4	506
+4053	Obcordate	507	5		2	weak			ohconic	1	509	Obcordate	2	511	Obcordate	2	509	Obcardate	1	507
+4054	obedient	508	5		4				obedient	4	510	obedient	4	512	obedient	4	510	obedient	4	508
+4055	obesity	509	5		4				obesity	4	511	obesity	4	513	obesity	4	511	obesity	4	509
+4056	An	510	5		3				An	3	512	An	3	514	All	1	512	An	3	510
+4057	objection	511	5		3				objection	3	513	k	1	515	objection	3	513	objection	3	511
+4058	objector	512	5		4				objector	4	514	objector	4	516	objector	4	514	objector	4	512
+4059	obligate	513	5		4				obligate	4	515	obligate	4	517	obligate	4	515	obligate	4	513
+4060	oblique	514	5		4				oblique	4	516	oblique	4	518	oblique	4	516	oblique	4	514
+4061	oblivion	515	5		1	tie			oblivion	1	517	L	1	519	obUriou	1	517	obllTion	1	515
+4062	obol	516	5		3				Flowering	1	518	obol	3	520	obol	3	518	obol	3	516
+4063	obscure	517	5		3				obscure	3	519	obscure	3	521	obscure	3	519	obscnre	1	517
+4064	observable	518	5		4				observable	4	520	observable	4	522	observable	4	520	observable	4	518
+4065	observationally	519	5		2	weak			observationally	2	521	L	1	523	observatlonally	1	521	observationally	2	519
+4066	obsignation	520	5		3				obsignation	3	522	obsignation	3	524	oDsfgnation	1	522	obsignation	3	520
+4067	obstinate	521	5		3				obstinate	3	523	obstinate	3	525	obstinate	3	523	obstmate	1	521
+4068	obstupefaction	522	5		3				obstupefaction	3	524	obstnpef	1	526	obstupefaction	3	524	obstupefaction	3	522
+4069	obtruncate	523	5		3				obtruncate	3	525	obtruncate	3	527	obtruncate	3	525	obtmncate	1	523
+4070	obverse	524	5		4				obverse	4	526	obverse	4	528	obverse	4	526	obverse	4	524
+4071	occasion	525	5		4				occasion	4	527	occasion	4	529	occasion	4	527	occasion	4	525
+4072	occidentalize	526	5		4				occidentalize	4	528	occidentalize	4	530	occidentalize	4	528	occidentalize	4	526
+4073	occlusion	527	5		3				occlusion	3	529	occlusion	3	531	occlusion	3	529	occlnsioii	1	527
+4074	occupier	528	5		4				occupier	4	530	occupier	4	532	occupier	4	530	occupier	4	528
+4075	ocean	529	5		4				ocean	4	531	ocean	4	533	ocean	4	531	ocean	4	529
+4076	ocher	530	5		3				ocher	3	532	ocher	3	534	Occiot	1	532	ocher	3	530
+4077	ocivity	531	5		2	weak			ocivity	2	533	OcTca	1	535	ocivity	2	533	odvity	1	531
+4078	octarchy	532	5		4				octarchy	4	534	octarchy	4	536	octarchy	4	534	octarchy	4	532
+4079	octillion	533	5		3				octillion	3	535	octillion	3	537	octillion	3	535	OBtJTKfin	1	533
+4080	Octopodidse	534	5		2	tie			Octopodidse	2	536	Octopodids	2	538	Octopodids	2	536	Octopodidse	2	534
+4081	Ocyphaps	535	5		2	weak			Ocyphaps	2	537	Ocypbaps	1	539	Ocyphaps	2	537	Ocypliaps	1	535
+4082	odds	536	5		4				odds	4	538	odds	4	540	odds	4	538	odds	4	536
+4083	odlze	537	5		2	tie			odlze	2	539	odlze	2	541	odize	2	539	odize	2	537
+4084	odontophoran	538	5		4				odontophoran	4	540	odontophoran	4	542	odontophoran	4	540	odontophoran	4	538
+4085	ods-pitikins	539	5		3				ods-pitikins	3	541	ods-pitikins	3	543	ods-pitikins	3	541	ods-pitikms	1	539
+4086	CEnanthe	540	5		1	tie			CEnanthe	1	542	especially	1	544	and	1	542	CEnauthe	1	540
+4087	of	541	5		4				of	4	543	of	4	545	of	4	543	of	4	541
+4088	of	542	5		4				of	4	544	of	4	546	of	4	544	of	4	542
+4089	off	543	5		4				off	4	545	off	4	547	off	4	545	off	4	543
+4090	offender	544	5		4				offender	4	546	offender	4	548	offender	4	546	offender	4	544
+4091	offering	545	5		4				offering	4	547	offering	4	549	offering	4	547	offering	4	545
+4092	officer	546	5		3				officer	3	548	officer	3	550	I	1	548	officer	3	546
+4093	offing	547	5		3				offing	3	549	offing	3	551	oflng	1	549	offing	3	547
+4094	ofseek	548	5		4				ofseek	4	550	ofseek	4	552	ofseek	4	550	ofseek	4	548
+4095	oghamic	549	5		3				oghamic	3	551	oghamlc	1	553	oghamic	3	551	oghamic	3	549
+4096	oil	550	5		4				oil	4	552	oil	4	554	oil	4	552	oil	4	550
+4097	oil-bush	551	5		3				oil-bush	3	553	oil-bush	3	555	oil-bush	3	553	oU-busIi	1	551
+4098	oil-ring	552	5		2	weak			boxes	1	554	oil-ring	2	556	oil-ring	2	554	the	1	552
+4099	ointment	553	5		3				ointment	3	555	ointment	3	557	ointment	3	555	otatment	1	553
+4100	old	554	5		3				or	1	556	old	3	558	old	3	556	old	3	554
+4101	Olea	555	5		4				Olea	4	557	Olea	4	559	Olea	4	557	Olea	4	555
+4102	olfactive	556	5		4				olfactive	4	558	olfactive	4	560	olfactive	4	558	olfactive	4	556
+4103	oligostemonous	557	5		3				oligostemonous	3	559	oligostemonoas	1	561	oligostemonous	3	559	oligostemonous	3	557
+4104	Olive-shell	558	5		1	tie			Olive-shell	1	560	Oliver	1	562	any	1	560	OUve-shell	1	558
+4105	Olympic	559	5		3				Olympic	3	561	numerous	1	563	Olympic	3	561	Olympic	3	559
+4106	ominousness	560	5		3				ominousness	3	562	ominousness	3	564	ominousness	3	562	onunousness	1	560
+4107	omnipresence	561	5		3				omnipresence	3	563	omnipresence	3	565	omnipresence	3	563	onmlpresence	1	561
+4108	omphalitis	562	5		4				omphalitis	4	564	omphalitis	4	566	omphalitis	4	564	omphalitis	4	562
+4109	on	563	5		4				on	4	565	on	4	567	on	4	565	on	4	563
+4110	on	564	5		4				on	4	566	on	4	568	on	4	566	on	4	564
+4111	onde	565	5		4				onde	4	567	onde	4	569	onde	4	567	onde	4	565
+4112	one-cross	566	5		4				one-cross	4	568	one-cross	4	570	one-cross	4	568	one-cross	4	566
+4113	onion-eyed	567	5		4				onion-eyed	4	569	onion-eyed	4	571	onion-eyed	4	569	onion-eyed	4	567
+4114	onofrite	568	5		4				onofrite	4	570	onofrite	4	572	onofrite	4	570	onofrite	4	568
+4115	onto	569	5		4				onto	4	571	onto	4	573	onto	4	571	onto	4	569
+4116	onyx	570	5		4				onyx	4	572	onyx	4	574	onyx	4	572	onyx	4	570
+4117	oone	571	5		3				oone	3	573	oorle	1	575	oone	3	573	oone	3	571
+4118	opal	572	5		4				opal	4	574	opal	4	576	opal	4	574	opal	4	572
+4119	open	573	5		4				open	4	575	open	4	577	open	4	575	open	4	573
+4120	open-handedness	574	5		4				open-handedness	4	576	open-handedness	4	578	open-handedness	4	576	open-handedness	4	574
+4121	operameter	575	5		4				operameter	4	577	operameter	4	579	operameter	4	577	operameter	4	575
+4122	operation	576	5		4				operation	4	578	operation	4	580	operation	4	578	operation	4	576
+4123	opercular	577	5		3				opercular	3	579	Opereu-	1	581	opercular	3	579	opercular	3	577
+4124	Ophidium	578	5		3				Ophidium	3	580	Ophldinm	1	582	Ophidium	3	580	Ophidium	3	578
+4125	Ophiorhiza	579	5		3				Ophiorhiza	3	581	Ophiorhlza	1	583	Ophiorhiza	3	581	Ophiorhiza	3	579
+4126	ophthalmite	580	5		3				ophthalmite	3	582	ophthalmite	3	584	ophthalmite	3	582	ophthalmlte	1	580
+4127	opinator	581	5		4				opinator	4	583	opinator	4	585	opinator	4	583	opinator	4	581
+4128	opiparous	582	5		4				opiparous	4	584	opiparous	4	586	opiparous	4	584	opiparous	4	582
+4129	opisthotic	583	5		4				opisthotic	4	585	opisthotic	4	587	opisthotic	4	585	opisthotic	4	583
+4130	oppilative	584	5		4				oppilative	4	586	oppilative	4	588	oppilative	4	586	oppilative	4	584
+4131	oppose	585	5		4				oppose	4	587	oppose	4	589	oppose	4	587	oppose	4	585
+4132	oppression	586	5		4				oppression	4	588	oppression	4	590	oppression	4	588	oppression	4	586
+4133	optic	587	5		4				optic	4	589	optic	4	591	optic	4	589	optic	4	587
+4134	option	588	5		4				option	4	590	option	4	592	option	4	590	option	4	588
+4135	or	589	5		4				or	4	591	or	4	593	or	4	591	or	4	589
+4136	oracle	590	5		4				oracle	4	592	oracle	4	594	oracle	4	592	oracle	4	590
+4137	orange-blossom	591	5		4				orange-blossom	4	593	orange-blossom	4	595	orange-blossom	4	593	orange-blossom	4	591
+4138	oration	592	5		4				oration	4	594	oration	4	596	oration	4	594	oration	4	592
+4139	orb	593	5		4				orb	4	595	orb	4	597	orb	4	595	orb	4	593
+4140	Orbitelariae	594	5		2	tie			Orbitelariae	2	596	Orbitelarise	2	598	Orbitelarise	2	596	Orbitelariae	2	594
+4141	orchestra	595	5		4				orchestra	4	597	orchestra	4	599	orchestra	4	597	orchestra	4	595
+4142	ordain	596	5		4				ordain	4	598	ordain	4	600	ordain	4	598	ordain	4	596
+4143	order	597	5		4				order	4	599	order	4	601	order	4	599	order	4	597
+4144	order	598	5		4				order	4	600	order	4	602	order	4	600	order	4	598
+4145	order	599	5		4				order	4	601	order	4	603	order	4	601	order	4	599
+4146	ordinance	600	5		4				ordinance	4	602	ordinance	4	604	ordinance	4	602	ordinance	4	600
+4147	ordinary	601	5		4				ordinary	4	603	ordinary	4	605	ordinary	4	603	ordinary	4	601
+4148	ore	602	5		2	weak			ora	1	604	on	1	606	ore	2	604	ore	2	602
+4149	orfgild	603	5		4				orfgild	4	605	orfgild	4	607	orfgild	4	605	orfgild	4	603
+4150	organ	604	5		4				organ	4	606	organ	4	608	organ	4	606	organ	4	604
+4151	organist	605	5		4				organist	4	607	organist	4	609	organist	4	607	organist	4	605
+4152	organoplastic	606	5		4				organoplastic	4	608	organoplastic	4	610	organoplastic	4	608	organoplastic	4	606
+4153	orgyia	607	5		4				orgyia	4	609	orgyia	4	611	orgyia	4	609	orgyia	4	607
+4154	orientalism	608	5		4				orientalism	4	610	orientalism	4	612	orientalism	4	610	orientalism	4	608
+4155	origin	609	5		4				origin	4	611	origin	4	613	origin	4	611	origin	4	609
+4156	oriole	610	5		4				oriole	4	612	oriole	4	614	oriole	4	612	oriole	4	610
+4157	om	611	5		3				om	3	613	om	3	615	orn	1	613	om	3	611
+4158	Flowering	612	5		3				Flowering	3	614	Flowering	3	616	Flowering	3	614	Ornithogalum	1	612
+4159	Flowering	613	5		2	weak			FIowcrinR	1	615	Orobanchaces	1	617	Flowering	2	615	Flowering	2	613
+4160	Orphic	614	5		3				OrpMc	1	616	Orphic	3	618	Orphic	3	616	Orphic	3	614
+4161	ortho-axis	615	5		4				ortho-axis	4	617	ortho-axis	4	619	ortho-axis	4	617	ortho-axis	4	615
+4162	orthognathous	616	5		2	tie			orthognathous	2	618	orthognathons	2	620	orthognathons	2	618	orthognathous	2	616
+4163	orthopterology	617	5		4				orthopterology	4	619	orthopterology	4	621	orthopterology	4	619	orthopterology	4	617
+4164	orthros	618	5		4				orthros	4	620	orthros	4	622	orthros	4	620	orthros	4	618
+4165	Oryzoryctes	619	5		3				Oryzoryctes	3	621	Oryzoryctes	3	623	Oryzoryctes	3	621	OrTzoryctes	1	619
+4166	oscitation	620	5		3				OBcitation	1	622	oscitation	3	624	oscitation	3	622	oscitation	3	620
+4167	Osmanthus	621	5		2	weak			Osmanthus	2	623	Osmantlins	1	625	Osmanthus	2	623	OsmanthTis	1	621
+4168	osprey	622	5		4				osprey	4	624	osprey	4	626	osprey	4	624	osprey	4	622
+4169	Ostariophysi	623	5		3				Ostariophysi	3	625	Ostariophysi	3	627	Ostariophysi	3	625	Ostariopliysi	1	623
+4170	ostentful	624	5		3				ostentful	3	626	ostentfal	1	628	ostentful	3	626	ostentful	3	624
+4171	osteoporosis	625	5		3				osteoporosis	3	627	osteoporosis	3	629	Osteoporosis	1	627	osteoporosis	3	625
+4172	Ostracodermi	626	5		4				Ostracodermi	4	628	Ostracodermi	4	630	Ostracodermi	4	628	Ostracodermi	4	626
+4173	Osyris	627	5		4				Osyris	4	629	Osyris	4	631	Osyris	4	629	Osyris	4	627
+4174	other	628	5		4				other	4	630	other	4	632	other	4	630	other	4	628
+4175	Otidse	629	5		2	tie			Otidse	2	631	Otidse	2	633	Otidae	2	631	Otidae	2	629
+4176	otomy	630	5		4				otomy	4	632	otomy	4	634	otomy	4	632	otomy	4	630
+4177	Otus	631	5		3				Otus	3	633	Otus	3	635	Otus	3	633	Otns	1	631
+4178	ounce	632	5		3				ounce	3	634	onnce	1	636	ounce	3	634	ounce	3	632
+4179	out	633	5		4				out	4	635	out	4	637	out	4	635	out	4	633
+4180	out	634	5		4				out	4	636	out	4	638	out	4	636	out	4	634
+4181	oat	635	5		1	tie			oat	1	637	ont	1	639	only	1	637	out	1	635
+4182	outbrest	636	5		3				outbrest	3	638	ontbrest	1	640	outbrest	3	638	outbrest	3	636
+4183	outdistance	637	5		4				outdistance	4	639	outdistance	4	641	outdistance	4	639	outdistance	4	637
+4184	outgoer	638	5		4				outgoer	4	640	outgoer	4	642	outgoer	4	640	outgoer	4	638
+4185	outlawry	639	5		3				outlawry	3	641	outlawry	3	643	outlawry	3	641	aeemsto	1	639
+4186	outmarch	640	5		4				outmarch	4	642	outmarch	4	644	outmarch	4	642	outmarch	4	640
+4187	outrage	641	5		3				outrage	3	643	outrage	3	645	outrage	3	643	St	1	641
+4188	outrigger	642	5		3				outrigger	3	644	Outrigger	1	646	outrigger	3	644	outrigger	3	642
+4189	outside	643	5		3				outside	3	645	outside	3	647	outside	3	645	ontside	1	643
+4190	outstay	644	5		4				outstay	4	646	outstay	4	648	outstay	4	646	outstay	4	644
+4191	outward	645	5		3				outward	3	647	outward	3	649	outward	3	647	outwaxd	1	645
+4192	outwork	646	5		4				outwork	4	648	outwork	4	650	outwork	4	648	outwork	4	646
+4193	with	647	5		2	weak			the	1	649	with	2	651	with	2	649	witb	1	647
+4194	over	648	5		4				over	4	650	over	4	652	over	4	650	over	4	648
+4195	over	649	5		3				At	1	651	over	3	653	over	3	651	over	3	649
+4196	overblown	650	5		4				overblown	4	652	overblown	4	654	overblown	4	652	overblown	4	650
+4197	overcloud	651	5		4				overcloud	4	653	overcloud	4	655	overcloud	4	653	overcloud	4	651
+4198	over-dreep	652	5		4				over-dreep	4	654	over-dreep	4	656	over-dreep	4	654	over-dreep	4	652
+4199	overflow	653	5		4				overflow	4	655	overflow	4	657	overflow	4	655	overflow	4	653
+4200	overgreatness	654	5		3				overgreatness	3	656	overgreathess	1	658	overgreatness	3	656	overgreatness	3	654
+4201	over-king	655	5		4				over-king	4	657	over-king	4	659	over-king	4	657	over-king	4	655
+4202	overlook	656	5		4				overlook	4	658	overlook	4	660	overlook	4	658	overlook	4	656
+4203	overname	657	5		3				overname	3	659	overname	3	661	overname	3	659	ovemame	1	657
+4204	over-rake	658	5		3				over-rake	3	660	over-rako	1	662	over-rake	3	660	over-rake	3	658
+4205	overseaming	659	5		3				overseaming	3	661	overseaming	3	663	overseaming	3	661	overseanung	1	659
+4206	overside	660	5		4				overside	4	662	overside	4	664	overside	4	662	overside	4	660
+4207	overstring	661	5		3				overstring	3	663	overstrlng	1	665	overstring	3	663	overstring	3	661
+4208	overthwart	662	5		4				overthwart	4	664	overthwart	4	666	overthwart	4	664	overthwart	4	662
+4209	overturn	663	5		4				overturn	4	665	overturn	4	667	overturn	4	665	overturn	4	663
+4210	overwind	664	5		4				overwind	4	666	overwind	4	668	overwind	4	666	overwind	4	664
+4211	ovine	665	5		2	weak			ovine	2	667	ovine	2	669	ovme	1	667	OTine	1	665
+4212	ovule	666	5		3				ovule	3	668	ovule	3	670	ovale	1	668	ovule	3	666
+4213	owl	667	5		4				owl	4	669	owl	4	671	owl	4	669	owl	4	667
+4214	own	668	5		4				own	4	670	own	4	672	own	4	670	own	4	668
+4215	Ozalis	669	5		2	weak			Ozalls	1	671	Oxalis	1	673	Ozalis	2	671	Ozalis	2	669
+4216	for	670	5		4				for	4	672	for	4	674	for	4	672	for	4	670
+4217	oxygenate	671	5		3				oxygenate	3	673	oxygenate	3	675	oxygenate	3	673	perozid	1	671
+4218	oxystomatous	672	5		3				oxystomatous	3	674	ozystomatous	1	676	oxystomatous	3	674	oxystomatous	3	672
+4219	oyster	673	5		4				oyster	4	675	oyster	4	677	oyster	4	675	oyster	4	673
+4220	An	674	5		4				An	4	676	An	4	678	An	4	676	An	4	674
+4221	The	675	5		3				Tlio	1	677	The	3	679	The	3	677	The	3	675
+4222	pace	676	5		4				pace	4	678	pace	4	680	pace	4	678	pace	4	676
+4223	pachydermatous	677	5		4				pachydermatous	4	679	pachydermatous	4	681	pachydermatous	4	679	pachydermatous	4	677
+4224	pacification	678	5		4				pacification	4	680	pacification	4	682	pacification	4	680	pacification	4	678
+4225	pack	679	5		3				pack	3	681	pack	3	683	pack	3	681	pacK	1	679
+4226	packing-penny	680	5		4				packing-penny	4	682	packing-penny	4	684	packing-penny	4	682	packing-penny	4	680
+4227	pad	681	5		4				pad	4	683	pad	4	685	pad	4	683	pad	4	681
+4228	paddle-end	682	5		4				paddle-end	4	684	paddle-end	4	686	paddle-end	4	684	paddle-end	4	682
+4229	padlette	683	5		4				padlette	4	685	padlette	4	687	padlette	4	685	padlette	4	683
+4230	Faeonieae	684	5		1	tie			Faeonieae	1	686	Fseonieae	1	688	Psonieae	1	686	Pseoniese	1	684
+4231	pageantry	685	5		4				pageantry	4	687	pageantry	4	689	pageantry	4	687	pageantry	4	685
+4232	Paguridae	686	5		2	weak			Paguridae	2	688	Faguridae	1	690	Paguridae	2	688	Paguridse	1	686
+4233	pain	687	5		4				pain	4	689	pain	4	691	pain	4	689	pain	4	687
+4234	paint	688	5		4				paint	4	690	paint	4	692	paint	4	690	paint	4	688
+4235	pair	689	5		4				pair	4	691	pair	4	693	pair	4	691	pair	4	689
+4236	pakald	690	5		4				pakald	4	692	pakald	4	694	pakald	4	692	pakald	4	690
+4237	Palseophis	691	5		1	tie			Palseophis	1	693	Falxophis	1	695	Palseopliis	1	693	Palsophis	1	691
+4238	Palamedeidse	692	5		2	tie			Palamedeidse	2	694	Falamedeidae	2	696	Falamedeidae	2	694	Palamedeidse	2	692
+4239	palatic	693	5		4				palatic	4	695	palatic	4	697	palatic	4	695	palatic	4	693
+4240	palay	694	5		4				palay	4	696	palay	4	698	palay	4	696	palay	4	694
+4241	paleis	695	5		4				paleis	4	697	paleis	4	699	paleis	4	697	paleis	4	695
+4242	Palermitan	696	5		2	tie			Palermitan	2	698	Falennitan	2	700	Palermitan	2	698	Falennitan	2	696
+4243	paling	697	5		4				paling	4	699	paling	4	701	paling	4	699	paling	4	697
+4244	pall	698	5		3				pall	3	700	paU	1	702	pall	3	700	pall	3	698
+4245	pallah	699	5		4				pallah	4	701	pallah	4	703	pallah	4	701	pallah	4	699
+4246	palliative	700	5		4				palliative	4	702	palliative	4	704	palliative	4	702	palliative	4	700
+4247	palm	701	5		4				palm	4	703	palm	4	705	palm	4	703	palm	4	701
+4248	palmate	702	5		4				palmate	4	704	palmate	4	706	palmate	4	704	palmate	4	702
+4249	palmetto	703	5		4				palmetto	4	705	palmetto	4	707	palmetto	4	705	palmetto	4	703
+4250	palmy	704	5		4				palmy	4	706	palmy	4	708	palmy	4	706	palmy	4	704
+4251	palpitate	705	5		4				palpitate	4	707	palpitate	4	709	palpitate	4	707	palpitate	4	705
+4252	Statue	706	5		3				paludamentum	1	708	Statue	3	710	Statue	3	708	Statue	3	706
+4253	pamper	707	5		4				pamper	4	709	pamper	4	711	pamper	4	709	pamper	4	707
+4254	pan	708	5		3				pan	3	710	I	1	712	pan	3	710	pan	3	708
+4255	Panax	709	5		4				Panax	4	711	Panax	4	713	Panax	4	711	Panax	4	709
+4256	pandan	710	5		4				pandan	4	712	pandan	4	714	pandan	4	712	pandan	4	710
+4257	Pandoridse	711	5		1	tie			Pandoridse	1	713	Fandoridse	1	715	Pandoridae	1	713	Fandorids	1	711
+4258	paneity	712	5		4				paneity	4	714	paneity	4	716	paneity	4	714	paneity	4	712
+4259	pangenetic	713	5		2	tie			pangenetic	2	715	pangenetlc	2	717	pangenetic	2	715	pangenetlc	2	713
+4260	Fanisc	714	5		3				Fanisc	3	716	Panisc	1	718	Fanisc	3	716	Fanisc	3	714
+4261	panomphean	715	5		4				panomphean	4	717	panomphean	4	719	panomphean	4	717	panomphean	4	715
+4262	pansy	716	5		3				pansy	3	718	A	1	720	pansy	3	718	pansy	3	716
+4263	pantellerite	717	5		4				pantellerite	4	719	pantellerite	4	721	pantellerite	4	719	pantellerite	4	717
+4264	pantler	718	5		4				pantler	4	720	pantler	4	722	pantler	4	720	pantler	4	718
+4265	pantry	719	5		4				pantry	4	721	pantry	4	723	pantry	4	721	pantry	4	719
+4266	papal	720	5		3				papal	3	722	papal	3	724	papal	3	722	pa	1	720
+4267	paper	721	5		4				paper	4	723	paper	4	725	paper	4	723	paper	4	721
+4268	paper	722	5		4				paper	4	724	paper	4	726	paper	4	724	paper	4	722
+4269	papeterie	723	5		3				papeterie	3	725	papeterle	1	727	papeterie	3	725	papeterie	3	723
+4270	papillitis	724	5		3				papillitis	3	726	papiUltis	1	728	papillitis	3	726	papillitis	3	724
+4271	papyrean	725	5		4				papyrean	4	727	papyrean	4	729	papyrean	4	727	papyrean	4	725
+4272	parablast	726	5		4				parablast	4	728	parablast	4	730	parablast	4	728	parablast	4	726
+4273	parachordal	727	5		3				parachordal	3	729	parachordal	3	731	parachordal	3	729	paracbordal	1	727
+4274	parade-ground	728	5		4				parade-ground	4	730	parade-ground	4	732	parade-ground	4	730	parade-ground	4	728
+4275	paradox	729	5		4				paradox	4	731	paradox	4	733	paradox	4	731	paradox	4	729
+4276	parage	730	5		4				parage	4	732	parage	4	734	parage	4	732	parage	4	730
+4277	paragraphist	731	5		3				paragraphist	3	733	paragraphist	3	735	paragraphist	3	733	paxagraphlst	1	731
+4278	parallel	732	5		4				parallel	4	734	parallel	4	736	parallel	4	734	parallel	4	732
+4279	parallelogrammical	733	5		2	weak			parallelogrammical	2	735	paxallelogrammical	1	737	parallelogrammical	2	735	paiallelogranmiical	1	733
+4280	Paramecium	734	5		4				Paramecium	4	736	Paramecium	4	738	Paramecium	4	736	Paramecium	4	734
+4281	paramour	735	5		4				paramour	4	737	paramour	4	739	paramour	4	737	paramour	4	735
+4282	paraphernalia	736	5		3				paraphernalia	3	738	parapbemalia	1	740	paraphernalia	3	738	paraphernalia	3	736
+4283	parapsis	737	5		4				parapsis	4	739	parapsis	4	741	parapsis	4	739	parapsis	4	737
+4284	parasitic	738	5		4				parasitic	4	740	parasitic	4	742	parasitic	4	740	parasitic	4	738
+4285	paratactical	739	5		3					1	741	paratactical	3	743	paratactical	3	741	paratactical	3	739
+4286	parcel	740	5		4				parcel	4	742	parcel	4	744	parcel	4	742	parcel	4	740
+4287	parchment	741	5		4				parchment	4	743	parchment	4	745	parchment	4	743	parchment	4	741
+4288	paxdoner	742	5		2	tie			paxdoner	2	744	pardoner	2	746	pardoner	2	744	paxdoner	2	742
+4289	parenchymatous	743	5		4				parenchymatous	4	745	parenchymatous	4	747	parenchymatous	4	745	parenchymatous	4	743
+4290	parepididymal	744	5		4				parepididymal	4	746	parepididymal	4	748	parepididymal	4	746	parepididymal	4	744
+4291	parhomoeon	745	5		2	weak			parhomoeon	2	747	parhomoeon	2	749	parhomceon	1	747	parhomcBon	1	745
+4292	parietovisceral	746	5		4				parietovisceral	4	748	parietovisceral	4	750	parietovisceral	4	748	parietovisceral	4	746
+4293	parishen	747	5		4				parishen	4	749	parishen	4	751	parishen	4	749	parishen	4	747
+4294	Farkinsonia	748	5		2	weak			Parklnsonia	1	750	Farkinsonia	2	752	Parkin	1	750	Farkinsonia	2	748
+4295	parliament	749	5		4				parliament	4	751	parliament	4	753	parliament	4	751	parliament	4	749
+4296	parlously	750	5		3				parlously	3	752	parlously	3	754	parlously	3	752	parlonsly	1	750
+4297	parochial	751	5		4				parochial	4	753	parochial	4	755	parochial	4	753	parochial	4	751
+4298	paronomastic	752	5		4				paronomastic	4	754	paronomastic	4	756	paronomastic	4	754	paronomastic	4	752
+4299	parotid	753	5		4				parotid	4	755	parotid	4	757	parotid	4	755	parotid	4	753
+4300	par-rational	754	5		3				par-rational	3	756	par-rational	3	758	par-rational	3	756	I	1	754
+4301	parrot's-bill	755	5		3				parrot's-bill	3	757	parrot'	1	759	parrot's-bill	3	757	parrot's-bill	3	755
+4302	parson	756	5		4				parson	4	758	parson	4	760	parson	4	758	parson	4	756
+4303	part	757	5		4				part	4	759	part	4	761	part	4	759	part	4	757
+4304	partake	758	5		4				partake	4	760	partake	4	762	partake	4	760	partake	4	758
+4305	partial	759	5		4				partial	4	761	partial	4	763	partial	4	761	partial	4	759
+4306	participle	760	5		4				participle	4	762	participle	4	764	participle	4	762	participle	4	760
+4307	particularism	761	5		3				particularism	3	763	particnlarism	1	765	particularism	3	763	particularism	3	761
+4308	parting-line	762	5		4				parting-line	4	764	parting-line	4	766	parting-line	4	764	parting-line	4	762
+4309	partner	763	5		2	tie			partner	2	765	partner	2	767	paxtner	2	765	paxtner	2	763
+4310	party	764	5		4				party	4	766	party	4	768	party	4	766	party	4	764
+4311	parvanimity	765	5		3				parvanlmity	1	767	parvanimity	3	769	parvanimity	3	767	parvanimity	3	765
+4312	Pasitelean	766	5		2	tie			Pasitelean	2	768	Fasitelean	2	770	Fasitelean	2	768	Pasitelean	2	766
+4313	pass	767	5		4				pass	4	769	pass	4	771	pass	4	769	pass	4	767
+4314	pass	768	5		4				pass	4	770	pass	4	772	pass	4	770	pass	4	768
+4315	passage	769	5		4				passage	4	771	passage	4	773	passage	4	771	passage	4	769
+4316	passement	770	5		4				passement	4	772	passement	4	774	passement	4	772	passement	4	770
+4317	Passeres	771	5		3				PasBeres	1	773	Passeres	3	775	Passeres	3	773	Passeres	3	771
+4318	passing	772	5		3				passing	3	774	passing	3	776	passing	3	774	mg	1	772
+4319	passionate	773	5		4				passionate	4	775	passionate	4	777	passionate	4	775	passionate	4	773
+4320	passport	774	5		4				passport	4	776	passport	4	778	passport	4	776	passport	4	774
+4321	paste	775	5		4				paste	4	777	paste	4	779	paste	4	777	paste	4	775
+4322	pastine	776	5		4				pastine	4	778	pastine	4	780	pastine	4	778	pastine	4	776
+4323	pasture	777	5		4				pasture	4	779	pasture	4	781	pasture	4	779	pasture	4	777
+4324	patamar	778	5		3				patamar	3	780	patamar	3	782	patamar	3	780	patamax	1	778
+4325	patchwork	779	5		4				patchwork	4	781	patchwork	4	783	patchwork	4	781	patchwork	4	779
+4326	patent	780	5		4				patent	4	782	patent	4	784	patent	4	782	patent	4	780
+4327	paternoster	781	5		4				paternoster	4	783	paternoster	4	785	paternoster	4	783	paternoster	4	781
+4328	pathology	782	5		4				pathology	4	784	pathology	4	786	pathology	4	784	pathology	4	782
+4329	patine	783	5		3				patine	3	785	patine	3	787	patine	3	785	patlne	1	783
+4330	patriarchism	784	5		4				patriarchism	4	786	patriarchism	4	788	patriarchism	4	786	patriarchism	4	784
+4331	patrol	785	5		4				patrol	4	787	patrol	4	789	patrol	4	787	patrol	4	785
+4332	patronizer	786	5		4				patronizer	4	788	patronizer	4	790	patronizer	4	788	patronizer	4	786
+4333	pattern	787	5		4				pattern	4	789	pattern	4	791	pattern	4	789	pattern	4	787
+4334	Paulician	788	5		3				Paulician	3	790	Fanlician	1	792	Paulician	3	790	Paulician	3	788
+4335	pause	789	5		4				pause	4	791	pause	4	793	pause	4	791	pause	4	789
+4336	pavement	790	5		4				pavement	4	792	pavement	4	794	pavement	4	792	pavement	4	790
+4337	Pavoncella	791	5		4				Pavoncella	4	793	Pavoncella	4	795	Pavoncella	4	793	Pavoncella	4	791
+4338	pawn	792	5		4				pawn	4	794	pawn	4	796	pawn	4	794	pawn	4	792
+4339	pay	793	5		4				pay	4	795	pay	4	797	pay	4	795	pay	4	793
+4340	paytamine	794	5		4				paytamine	4	796	paytamine	4	798	paytamine	4	796	paytamine	4	794
+4341	peace-breaker	795	5		4				peace-breaker	4	797	peace-breaker	4	799	peace-breaker	4	797	peace-breaker	4	795
+4342	peachy	796	5		4				peachy	4	798	peachy	4	800	peachy	4	798	peachy	4	796
+4343	peak	797	5		3				peak	3	799	pealc	1	801	peak	3	799	peak	3	797
+4344	pearl	798	5		4				pearl	4	800	pearl	4	802	pearl	4	800	pearl	4	798
+4345	pearlin	799	5		2	weak			pearlin	2	801	pearlin	2	803	I	1	801	seems	1	799
+4346	peasantry	800	5		4				peasantry	4	802	peasantry	4	804	peasantry	4	802	peasantry	4	800
+4347	peba	801	5		4				peba	4	803	peba	4	805	peba	4	803	peba	4	801
+4348	peccation	802	5		4				peccation	4	804	peccation	4	806	peccation	4	804	peccation	4	802
+4349	pectinalis	803	5		4				pectinalis	4	805	pectinalis	4	807	pectinalis	4	805	pectinalis	4	803
+4350	pectoralis	804	5		4				pectoralis	4	806	pectoralis	4	808	pectoralis	4	806	pectoralis	4	804
+4351	pecunial	805	5		2	weak			pecunial	2	807	pecunlal	1	809	pecunial	2	807	pecimlal	1	805
+4352	pedal	806	5		4				pedal	4	808	pedal	4	810	pedal	4	808	pedal	4	806
+4353	peddle	807	5		4				peddle	4	809	peddle	4	811	peddle	4	809	peddle	4	807
+4354	Raceme	808	5		2	weak			Raceme	2	810	Raceme	2	812	Kaceme	1	810	pedicel	1	808
+4355	pedigree	809	5		4				pedigree	4	811	pedigree	4	813	pedigree	4	811	pedigree	4	809
+4356	pedipalpous	810	5		3				pedipalpous	3	812	pedipalpous	3	814	pedipalpous	3	812	pedipalpons	1	810
+4357	peel	811	5		4				peel	4	813	peel	4	815	peel	4	813	peel	4	811
+4358	peep	812	5		4				peep	4	814	peep	4	816	peep	4	814	peep	4	812
+4359	WW	813	5		1	tie			WW	1	815	Shoemakers'	1	817	nam	1	815	asm	1	813
+4360	peggy	814	5		2	weak			Same	1	816	one	1	818	peggy	2	816	peggy	2	814
+4361	Pelagosaurus	815	5		2	tie			Pelagosaurus	2	817	Pelagosanms	2	819	Pelagosaurus	2	817	Pelagosanms	2	815
+4362	pelf	816	5		4				pelf	4	818	pelf	4	820	pelf	4	818	pelf	4	816
+4363	pelitic	817	5		4				pelitic	4	819	pelitic	4	821	pelitic	4	819	pelitic	4	817
+4364	pelma	818	5		4				pelma	4	820	pelma	4	822	pelma	4	820	pelma	4	818
+4365	pelta	819	5		4				pelta	4	821	pelta	4	823	pelta	4	821	pelta	4	819
+4366	pelu	820	5		3				pelu	3	822	peln	1	824	pelu	3	822	pelu	3	820
+4367	Pempheris	821	5		3				Pempheris	3	823	Pempheris	3	825	Pempheris	3	823	Fempheiis	1	821
+4368	pen	822	5		4				pen	4	824	pen	4	826	pen	4	824	pen	4	822
+4369	penang-lawyer	823	5		4				penang-lawyer	4	825	penang-lawyer	4	827	penang-lawyer	4	825	penang-lawyer	4	823
+4370	pencil-vase	824	5		4				pencil-vase	4	826	pencil-vase	4	828	pencil-vase	4	826	pencil-vase	4	824
+4371	pendicle	825	5		4				pendicle	4	827	pendicle	4	829	pendicle	4	827	pendicle	4	825
+4372	pendulum	826	5		4				pendulum	4	828	pendulum	4	830	pendulum	4	828	pendulum	4	826
+4373	penetrative	827	5		4				penetrative	4	829	penetrative	4	831	penetrative	4	829	penetrative	4	827
+4374	peninsularity	828	5		4				peninsularity	4	830	peninsularity	4	832	peninsularity	4	830	peninsularity	4	828
+4375	pen-maker	829	5		4				pen-maker	4	831	pen-maker	4	833	pen-maker	4	831	pen-maker	4	829
+4376	Medieval	830	5		2	weak			Medieval	2	832	Medieval	2	834	Pennisetum	1	832	Pennisetiun	1	830
+4377	penny-flower	831	5		4				penny-flower	4	833	penny-flower	4	835	penny-flower	4	833	penny-flower	4	831
+4378	pensioner	832	5		4				pensioner	4	834	pensioner	4	836	pensioner	4	834	pensioner	4	832
+4379	pentad	833	5		3				pentad	3	835	pentfid	1	837	pentad	3	835	pentad	3	833
+4380	pentaphyllous	834	5		4				pentaphyllous	4	836	pentaphyllous	4	838	pentaphyllous	4	836	pentaphyllous	4	834
+4381	Pentecostal	835	5		4				Pentecostal	4	837	Pentecostal	4	839	Pentecostal	4	837	Pentecostal	4	835
+4382	penumbral	836	5		4				penumbral	4	838	penumbral	4	840	penumbral	4	838	penumbral	4	836
+4383	peoplish	837	5		2	weak			peoplish	2	839	peoplish	2	841	peoplisb	1	839	peopliah	1	837
+4384	pepper-and-salt	838	5		4				pepper-and-salt	4	840	pepper-and-salt	4	842	pepper-and-salt	4	840	pepper-and-salt	4	838
+4385	peptone	839	5		4				peptone	4	841	peptone	4	843	peptone	4	841	peptone	4	839
+4386	Perca	840	5		3				Perca	3	842	Perca	3	844	Perca	3	842	Ferca	1	840
+4387	perception	841	5		4				perception	4	843	perception	4	845	perception	4	843	perception	4	841
+4388	perch-loop	842	5		4				perch-loop	4	844	perch-loop	4	846	perch-loop	4	844	perch-loop	4	842
+4389	Percopsis	843	5		3				Percopsis	3	845	Percopsis	3	847	Percopsis	3	845	Ttoat-pesch	1	843
+4390	perditionable	844	5		4				perditionable	4	846	perditionable	4	848	perditionable	4	846	perditionable	4	844
+4391	perelle	845	5		4				perelle	4	847	perelle	4	849	perelle	4	847	perelle	4	845
+4392	perfect	846	5		3				perfect	3	848	of	1	850	perfect	3	848	perfect	3	846
+4393	perfectly	847	5		4				perfectly	4	849	perfectly	4	851	perfectly	4	849	perfectly	4	847
+4394	perforator	848	5		4				perforator	4	850	perforator	4	852	perforator	4	850	perforator	4	848
+4395	perfuse	849	5		3				perfuse	3	851	perfuse	3	853	perfuse	3	851	perfase	1	849
+4396	peribolos	850	5		4				peribolos	4	852	peribolos	4	854	peribolos	4	852	peribolos	4	850
+4397	pericline	851	5		4				pericline	4	853	pericline	4	855	pericline	4	853	pericline	4	851
+4398	pener	852	5		2	weak			pener	2	854	perler	1	856	pener	2	854	perier	1	852
+4399	peril	853	5		4				peril	4	855	peril	4	857	peril	4	855	peril	4	853
+4400	perineurial	854	5		3				perineurial	3	856	perineurial	3	858	perineurial	3	856	ing	1	854
+4401	periosteal	855	5		4				periosteal	4	857	periosteal	4	859	periosteal	4	857	periosteal	4	855
+4402	periphrasis	856	5		4				periphrasis	4	858	periphrasis	4	860	periphrasis	4	858	periphrasis	4	856
+4403	perish	857	5		4				perish	4	859	perish	4	861	perish	4	859	perish	4	857
+4404	peristaltic	858	5		4				peristaltic	4	860	peristaltic	4	862	peristaltic	4	860	peristaltic	4	858
+4405	peritoneum	859	5		3				peritoneum	3	861	peritoneum	3	863	peritoneum	3	861	peritonexun	1	859
+4406	perjuration	860	5		3				perjuration	3	862	perjnration	1	864	perjuration	3	862	perjuration	3	860
+4407	permanent	861	5		4				permanent	4	863	permanent	4	865	permanent	4	863	permanent	4	861
+4408	permittance	862	5		4				permittance	4	864	permittance	4	866	permittance	4	864	permittance	4	862
+4409	Pocket-mouse	863	5		2	weak			perochirus	1	865	Pocket-mouse	2	867	Pockel-raouse	1	865	Pocket-mouse	2	863
+4410	perpendicle	864	5		3				perpendicle	3	866	perpendiculo	1	868	perpendicle	3	866	perpendicle	3	864
+4411	perpetuity	865	5		4				perpetuity	4	867	perpetuity	4	869	perpetuity	4	867	perpetuity	4	865
+4412	perron	866	5		3				perron	3	868	tterron	1	870	perron	3	868	perron	3	866
+4413	The	867	5		2	weak			The	2	869	The	2	871	sea	1	869	Perseus	1	867
+4414	persistence	868	5		4				persistence	4	870	persistence	4	872	persistence	4	870	persistence	4	868
+4415	personage	869	5		4				personage	4	871	personage	4	873	personage	4	871	personage	4	869
+4416	personalty	870	5		3				personalty	3	872	See	1	874	personalty	3	872	personalty	3	870
+4417	perspective	871	5		4				perspective	4	873	perspective	4	875	perspective	4	873	perspective	4	871
+4418	perspiration	872	5		4				perspiration	4	874	perspiration	4	876	perspiration	4	874	perspiration	4	872
+4419	persuasively	873	5		4				persuasively	4	875	persuasively	4	877	persuasively	4	875	persuasively	4	873
+4420	pertly	874	5		4				pertly	4	876	pertly	4	878	pertly	4	876	pertly	4	874
+4421	peruse	875	5		3				peruse	3	877	peruse	3	879	peruse	3	877	pemse	1	875
+4422	pervious	876	5		2	weak			pervious	2	878	oj	1	880	pennous	1	878	pervious	2	876
+4423	pest	877	5		4				pest	4	879	pest	4	881	pest	4	879	pest	4	877
+4424	pet	878	5		4				pet	4	880	pet	4	882	pet	4	880	pet	4	878
+4425	Petasites	879	5		4				Petasites	4	881	Petasites	4	883	Petasites	4	881	Petasites	4	879
+4426	petiole	880	5		4				petiole	4	882	petiole	4	884	petiole	4	882	petiole	4	880
+4427	petrel	881	5		4				petrel	4	883	petrel	4	885	petrel	4	883	petrel	4	881
+4428	petrographer	882	5		2	weak			petrographer	2	884	petrograplier	1	886	petrographer	2	884	petrograpber	1	882
+4429	Petromyzontidae	883	5		2	weak			A	1	885	Fetromyzontidae	1	887	Petromyzontidae	2	885	Petromyzontidae	2	883
+4430	petti-fog	884	5		4				petti-fog	4	886	petti-fog	4	888	petti-fog	4	886	petti-fog	4	884
+4431	Peutingerian	885	5		3				Peutingerian	3	887	Peutingerian	3	889	Peutingerian	3	887	Featingerian	1	885
+4432	ph	886	5		2	weak			or	1	888	Ph	1	890	ph	2	888	ph	2	886
+4433	phaeton	887	5		2	weak			phaeton	2	889	pliaSton	1	891	phaeton	2	889	pliaeton	1	887
+4434	phalangiform	888	5		3				phalangiform	3	890	phalangiform	3	892	phalangiform	3	890	phalangifonn	1	888
+4435	Fhalaropus	889	5		1	tie			Fhalaropus	1	891	Phalaropns	1	893	outward	1	891	Phalaropos	1	889
+4436	phantasmatic	890	5		2	tie			phantasmatic	2	892	pbantasmatic	2	894	phantasmatic	2	892	pbantasmatic	2	890
+4437		891	5		4					4	893		4	895		4	893		4	891
+4438		892	5		4					4	894		4	896		4	894		4	892
+4439		893	5		4					4	895		4	897		4	895		4	893
+4440		894	5		4					4	896		4	898		4	896		4	894
+4441		895	5		2	weak			fovtaninv	1	897		2	899	-'T	1	897		2	895
+4442		896	5		4					4	898		4	900		4	898		4	896
+4443	PE		5		1							PE	1	901						
+4444			5		1								1	902						

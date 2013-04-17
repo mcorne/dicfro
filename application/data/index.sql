@@ -7,6 +7,7 @@ VACUUM;
 /* leave columns in alpabetical order */
 CREATE TABLE word (  
     ascii    TEXT    NOT NULL,
+    fix      TEXT    NOT NULL,
     image    TEXT    NOT NULL,
     line     INTEGER NOT NULL,
     original TEXT    NOT NULL,

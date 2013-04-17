@@ -46,14 +46,18 @@ return array(
             'description'  => "The Century dictionary an encyclopedic lexicon of the English language prepared under the superintendence of William Dwight Whitney, 1895",
             'introduction' => 'http://archive.org/stream/centurydict01whit#page/n5/mode/2up',
             'language'     => 'en',
-            'name'         => 'Century (A-Ly)',
+            'name'         => 'Century',
             'search'       => array(
                 'properties' => array(
                     'url'     => array(
                         1 => 'http://ia600305.us.archive.org/BookReader/BookReaderImages.php?zip=/29/items/centurydict01whit/centurydict01whit_jp2.zip&file=centurydict01whit_jp2/centurydict01whit_0%03u.jp2&scale=3&rotate=0',
-                        2 => 'http://ia700300.us.archive.org/BookReader/BookReaderImages.php?zip=/21/items/centurydiction02whit/centurydiction02whit_jp2.zip&file=centurydiction02whit_jp2/centurydiction02whit_0%03u.jp2&scale=3&rotate=0',
-                        3 => 'http://ia700200.us.archive.org/BookReader/BookReaderImages.php?zip=/7/items/centurydictionar03whit/centurydictionar03whit_jp2.zip&file=centurydictionar03whit_jp2/centurydictionar03whit_0%03u.jp2&scale=3&rotate=0',
-                        4 => 'http://ia700304.us.archive.org/BookReader/BookReaderImages.php?zip=/1/items/centurydictio04whit/centurydictio04whit_jp2.zip&file=centurydictio04whit_jp2/centurydictio04whit_0%03u.jp2&scale=3&rotate=0',
+                        2 => 'http://ia700400.us.archive.org/BookReader/BookReaderImages.php?zip=/1/items/cu31924091890594/cu31924091890594_jp2.zip&file=cu31924091890594_jp2/cu31924091890594_0%03u.jp2&scale=3&rotate=0',
+                        3 => 'http://ia700406.us.archive.org/BookReader/BookReaderImages.php?zip=/21/items/cu31924091890602/cu31924091890602_jp2.zip&file=cu31924091890602_jp2/cu31924091890602_0%03u.jp2&scale=3&rotate=0',
+                        4 => 'http://ia700406.us.archive.org/BookReader/BookReaderImages.php?zip=/3/items/cu31924091890610/cu31924091890610_jp2.zip&file=cu31924091890610_jp2/cu31924091890610_0%03u.jp2&scale=3&rotate=0',
+                        5 => 'http://ia600406.us.archive.org/BookReader/BookReaderImages.php?zip=/2/items/cu31924091890628/cu31924091890628_jp2.zip&file=cu31924091890628_jp2/cu31924091890628_0%03u.jp2&scale=3&rotate=0',
+                        6 => 'http://ia700402.us.archive.org/BookReader/BookReaderImages.php?zip=/35/items/cu31924091890636/cu31924091890636_jp2.zip&file=cu31924091890636_jp2/cu31924091890636_0%03u.jp2&scale=3&rotate=0',
+                        7 => 'http://ia600407.us.archive.org/BookReader/BookReaderImages.php?zip=/8/items/cu31924091890644/cu31924091890644_jp2.zip&file=cu31924091890644_jp2/cu31924091890644_0%03u.jp2&scale=3&rotate=0',
+                        8 => 'http://ia600407.us.archive.org/BookReader/BookReaderImages.php?zip=/17/items/cu31924091890651/cu31924091890651_jp2.zip&file=cu31924091890651_jp2/cu31924091890651_0%03u.jp2&scale=3&rotate=0',
                     ),
                 )
             ),

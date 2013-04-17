@@ -47,13 +47,23 @@ class Model_Search_Index extends Model_Search
         $result = call_user_func_array(array($this->query, $name), $arguments);
 
         if (is_array($this->url)) {
+            // selects the volume url
             $url = $this->url[$result['volume']];
         } else {
+            // selects the dictionary url
             $url = $this->url;
         }
 
+        if (! empty($result['fix'])) {
+            // selects the page url, eg page missing in current volume, url points to this page in another volume as a fix
+            $externalDict = $result['fix'];
+        } else {
+            // builds the page url
+            $externalDict = sprintf($url, $result['image']);
+        }
+
         $data =  array(
-            'externalDict' => sprintf($url, $result['image']),
+            'externalDict' => $externalDict,
             'page'         => $result['page'],
             'volume'       => $result['volume'],
         );

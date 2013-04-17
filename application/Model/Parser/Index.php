@@ -43,7 +43,7 @@ class Model_Parser_Index extends Model_Parser
         $line = trim($line);
         $cells = explode("\t", $line);
         $cells = array_map('trim', $cells);
-        @list($page, $entries, $imageNumber, $volume) = $cells;
+        @list($page, $entries, $imageNumber, $volume, $fix) = $cells;
 
         $entries = explode(';', $entries);
         $entries = array_map('trim', $entries);
@@ -69,6 +69,7 @@ class Model_Parser_Index extends Model_Parser
 
             $wordData = array(
                 'ascii'    => $word,
+                'fix'      => $fix,
                 'image'    => $imageNumber,
                 'line'     => $lineNumber,
                 'original' => str_replace(array('[', ']'), '', $entry),

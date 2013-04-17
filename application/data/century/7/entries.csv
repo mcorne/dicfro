@@ -1,0 +1,901 @@
+page	entries	image	volume	fix	frequency	check	books	accuracy	centurydiction07whit_djvu.csv	frequency	image	centurydictiona07whit_djvu.csv	frequency	image	centurydictionar07whit_djvu.csv	frequency	image	centurydictionar07whituoft_djvu.csv	frequency	image	centurydictionary07whit_djvu.csv	frequency	image	cu31924091890644_djvu.csv	frequency	image
+5317	Prickly	12	7		5		centurydiction07whit_djvu.csv	4126	Prickly	5	13	prickly	1	13	Prickly	5	15	Prickly	5	15	Prickly	5	13	Prickly	5	12
+5318	salt	13	7		5		centurydictiona07whit_djvu.csv	4294	salt	5	14	salt	5	14	salt	5	16	salt	5	16	to	1	14	salt	5	13
+5319	salt-cellar	14	7		6		centurydictionar07whit_djvu.csv	4180	salt-cellar	6	15	salt-cellar	6	15	salt-cellar	6	17	salt-cellar	6	17	salt-cellar	6	15	salt-cellar	6	14
+5320	salt-marsh	15	7		6		centurydictionar07whituoft_djvu.csv	3945	salt-marsh	6	16	salt-marsh	6	16	salt-marsh	6	18	salt-marsh	6	18	salt-marsh	6	16	salt-marsh	6	15
+5321	salutatory	16	7		6		centurydictionary07whit_djvu.csv	4098	salutatory	6	17	salutatory	6	17	salutatory	6	19	salutatory	6	19	salutatory	6	17	salutatory	6	16
+5322	salvation	17	7		5		cu31924091890644_djvu.csv	4177	salvation	5	18	salvation	5	18	salvation	5	20	salvation	5	20	fuilvation	1	18	salvation	5	17
+5323	sam	18	7		6		centurydictiona07whit_djvu.csv	top accuracy	sam	6	19	sam	6	19	sam	6	21	sam	6	21	sam	6	19	sam	6	18
+5324	same	19	7		4		cu31924091890644_djvu.csv	best images	same	4	22	same	4	20	game	1	22	same	4	22	whoae	1	20	same	4	19
+5325	Upper	20	7		4				Upper	4	23	Upper	4	21	UpperPartof	1	23	Upper	4	23	Upper	4	21	pir	1	20
+5326	SamydacesB	21	7		2	tie			Samydaces	1	24	Samydaceae	1	22	Samydacese	2	24	SamydacesB	2	24	SamydacesB	2	22	Samydacese	2	21
+5327	sanctimoniously	22	7		6				sanctimoniously	6	25	sanctimoniously	6	23	sanctimoniously	6	25	sanctimoniously	6	25	sanctimoniously	6	23	sanctimoniously	6	22
+5328	sanctuary	23	7		4				sanctnary	1	26	sanctuary	4	24	sanctuary	4	26	sanctuary	4	26	sanctnarr	1	24	sanctuary	4	23
+5329	sandalwood	24	7		5				I	1	27	sandalwood	5	25	sandalwood	5	27	sandalwood	5	27	sandalwood	5	25	sandalwood	5	24
+5330	sanded	25	7		6				sanded	6	28	sanded	6	26	sanded	6	28	sanded	6	28	sanded	6	26	sanded	6	25
+5331	sanding-plate	26	7		6				sanding-plate	6	29	sanding-plate	6	27	sanding-plate	6	29	sanding-plate	6	29	sanding-plate	6	27	sanding-plate	6	26
+5332	sandpiper	27	7		5				sandpiper	5	30	sandpiper	5	28	sandpiper	5	30	sandpiper	5	30	I'	1	28	sandpiper	5	27
+5333	sandstone	28	7		3	weak			sandstone	3	31	Sand	1	29	Sand-trap	2	31	sandstone	3	31	Sand-trap	2	29	sandstone	3	28
+5334	sangsue	29	7		3	tie			sangsue	3	32	sangsue	3	30	sangsne	3	32	sangsne	3	32	sangsne	3	30	sangsue	3	29
+5335	sanguinous	30	7		4				sanguinoas	1	33	sanguinous	4	31	sanguinous	4	33	sanguinous	4	33	sanguinous	4	31	sangiunous	1	30
+5336	sanjakate	31	7		5				sanjakate	5	34	sanjakate	5	32	sanjakate	5	34	sanjakate	5	34	sanjakate	5	32	saojakate	1	31
+5337	Santenot	32	7		4				after	1	35	Santenot	4	33	Santenot	4	35	From	1	35	Santenot	4	33	Santenot	4	32
+5338	Saperda	33	7		6				Saperda	6	36	Saperda	6	34	Saperda	6	36	Saperda	6	36	Saperda	6	34	Saperda	6	33
+5339	Sapium	34	7		4				Sapium	4	37	Sapium	4	35	Sapium	4	37	Sapitun	1	37	of	1	35	Sapium	4	34
+5340	sapphire	35	7		6				sapphire	6	38	sapphire	6	36	sapphire	6	38	sapphire	6	38	sapphire	6	36	sapphire	6	35
+5341	Sarabaite	36	7		5				Sarabaite	5	39	Sarabaite	5	37	Sarabaite	5	39	if	1	39	Sarabaite	5	37	Sarabaite	5	36
+5342	sarcitis	37	7		5				sarcitis	5	40	sarcitis	5	38	sarcitis	5	40	sarcitis	5	40	sarcltiB	1	38	sarcitis	5	37
+5343	sarcome	38	7		4				sarcome	4	41	sarcome	4	39	sarcome	4	41	sarcome	4	41	saxcomet	1	39	saxcome	1	38
+5344	sarcotheca	39	7		5				sarcotbeca	1	42	sarcotheca	5	40	sarcotheca	5	42	sarcotheca	5	42	sarcotheca	5	40	sarcotheca	5	39
+5345	sari	40	7		3	weak			h	1	43	san	1	41	sari	3	43	aarl	1	43	sari	3	41	sari	3	40
+5346	sarsaparilla	41	7		4				sarsaparilla	4	44	sarsaparilla	4	42	sarsaparilla	4	44	sarsaparilla	4	44	a	1	42	See	1	41
+5347	saslne	42	7		4				saslne	4	45	sasine	2	43	saslne	4	45	saslne	4	45	sasine	2	43	saslne	4	42
+5348	satchel	43	7		5				satchel	5	46	satchel	5	44	satchel	5	46	satchel	5	46	S	1	44	satchel	5	43
+5349	satin-de-laine	44	7		6				satin-de-laine	6	47	satin-de-laine	6	45	satin-de-laine	6	47	satin-de-laine	6	47	satin-de-laine	6	45	satin-de-laine	6	44
+5350	satirist	45	7		5				satirist	5	48	satirist	5	46	satirist	5	48	satirist	5	48	Batirist	1	46	satirist	5	45
+5351	satle	46	7		6				satle	6	49	satle	6	47	satle	6	49	satle	6	49	satle	6	47	satle	6	46
+5352	Saturn	47	7		6				Saturn	6	50	Saturn	6	48	Saturn	6	50	Saturn	6	50	Saturn	6	48	Saturn	6	47
+5353	Satyri	48	7		5				Satyri	5	51	Satyri	5	49	Satyri	5	51	i	1	51	Satyri	5	49	Satyri	5	48
+5354	saucy	49	7		6				saucy	6	52	saucy	6	50	saucy	6	52	saucy	6	52	saucy	6	50	saucy	6	49
+5355	Sauriclitliyidae	50	7		1	tie			Saurichtliyidae	1	53	Sauriclitliyidae	1	51	Saurichthyidae	1	53	Saarichthyidae	1	53	Saurichthyidx	1	51	SaurichthyidsB	1	50
+5356	Saururse	51	7		1	tie			Saunirse	1	54	Saururse	1	52	Saororae	1	54	Sanmrs	1	54	Rem	1	52	Saururs	1	51
+5357	savage	52	7		6				savage	6	55	savage	6	53	savage	6	55	savage	6	55	savage	6	53	savage	6	52
+5358	save	53	7		6				save	6	56	save	6	54	save	6	56	save	6	56	save	6	54	save	6	53
+5359	savior	54	7		6				savior	6	57	savior	6	55	savior	6	57	savior	6	57	savior	6	55	savior	6	54
+5360	savory	55	7		6				savory	6	58	savory	6	56	savory	6	58	savory	6	58	savory	6	56	savory	6	55
+5361	sawbelly	56	7		6				sawbelly	6	59	sawbelly	6	57	sawbelly	6	59	sawbelly	6	59	sawbelly	6	57	sawbelly	6	56
+5362	saw-table	57	7		5				saw-table	5	60	saw-table	5	58	saw-table	5	60	A	1	60	saw-table	5	58	saw-table	5	57
+5363	Flowering	58	7		4				Flowering	4	61	Flowering	4	59	Flowering	4	61	Floweriiv	1	61	Flowering	4	59	Flowerine	1	58
+5364	say	59	7		5				say	5	62	say	5	60	say	5	62	say	5	62	WImI	1	60	say	5	59
+5365	Sayornis	60	7		4				Sayornis	4	63	Sayornis	4	61	Sayomis	2	63	Sayornis	4	63	Sayornis	4	61	Sayomis	2	60
+5366	scabious	61	7		6				scabious	6	64	scabious	6	62	scabious	6	64	scabious	6	64	scabious	6	62	scabious	6	61
+5367	scagliola	62	7		3	weak			scagliola	3	65	A	1	63	gcagliola	1	65	scagliola	3	65	scagliola	3	63	Bcagliola	1	62
+5368	scald-head	63	7		6				scald-head	6	66	scald-head	6	64	scald-head	6	66	scald-head	6	66	scald-head	6	64	scald-head	6	63
+5369	scale	64	7		6				scale	6	67	scale	6	65	scale	6	67	scale	6	67	scale	6	65	scale	6	64
+5370	scale	65	7		4				scale	4	68	Middle	1	66	scale	4	68	scale	4	68	scale	4	66	Scale-armor	1	65
+5371	scaling	66	7		5				I	1	69	scaling	5	67	scaling	5	69	scaling	5	69	scaling	5	67	scaling	5	66
+5372	scalp	67	7		6				scalp	6	70	scalp	6	68	scalp	6	70	scalp	6	70	scalp	6	68	scalp	6	67
+5373	scammonia	68	7		2	weak			scanunonia	1	71	see	1	69	scammonia	2	71	scammoiua	1	71	scammonia	2	69	Scammony	1	68
+5374	scandalize	69	7		6				scandalize	6	72	scandalize	6	70	scandalize	6	72	scandalize	6	72	scandalize	6	70	scandalize	6	69
+5375	scant	70	7		6				scant	6	73	scant	6	71	scant	6	73	scant	6	73	scant	6	71	scant	6	70
+5376	scapel	71	7		3	weak			scapel	3	74	scapel	3	72	scapel	3	74	scapelt	1	74	Bcapel	2	72	Bcapel	2	71
+5377	scaphopodous	72	7		3	weak			scaphopodous	3	75	scaphopodous	3	73	scaphopodous	3	75	scaphopodoos	1	75	scapuloradial	1	73	Bcaphopodous	1	72
+5378	scapuloradial	73	7		4				scapuloradial	4	76	scapnloradial	1	74	scapuloradial	4	76	scapuloradlal	1	76	scapuloradial	4	74	scapuloradial	4	73
+5379	scarce	74	7		6				scarce	6	77	scarce	6	75	scarce	6	77	scarce	6	77	scarce	6	75	scarce	6	74
+5380	scarecrow	75	7		6				scarecrow	6	78	scarecrow	6	76	scarecrow	6	78	scarecrow	6	78	scarecrow	6	76	scarecrow	6	75
+5381	scarify	76	7		5				J	1	79	scarify	5	77	scarify	5	79	scarify	5	79	scarify	5	77	scarify	5	76
+5382	scart	77	7		6				scart	6	80	scart	6	78	scart	6	80	scart	6	80	scart	6	78	scart	6	77
+5383	Scatophagoidea	78	7		6				Scatophagoidea	6	81	Scatophagoidea	6	79	Scatophagoidea	6	81	Scatophagoidea	6	81	Scatophagoidea	6	79	Scatophagoidea	6	78
+5384	scavenge	79	7		6				scavenge	6	82	scavenge	6	80	scavenge	6	82	scavenge	6	82	scavenge	6	80	scavenge	6	79
+5385	scene	80	7		2	weak			I	1	83	scene	2	81	ticene	1	83	Giddy	1	83	scene	2	81	ucene	1	80
+5386	scent	81	7		6				scent	6	84	scent	6	82	scent	6	84	scent	6	84	scent	6	82	scent	6	81
+5387	schalstein	82	7		5				schalstein	5	85	schalstein	5	83	schalstein	5	85	schalstein	5	85	schalstein	5	83	Bcbalgtein	1	82
+5388	scheme	83	7		6				scheme	6	86	scheme	6	84	scheme	6	86	scheme	6	86	scheme	6	84	scheme	6	83
+5389	Schinus	84	7		4				Schinos	1	87	Schinus	4	85	Schinus	4	87	Schinus	4	87	Schinus	4	85	Schinns	1	84
+5390	schistothoraz	85	7		2	weak			schistothoraz	2	88	schistotliorax	1	86	schistothorax	1	88	schlstothorax	1	88	Bchistothorax	1	86	schistothoraz	2	85
+5391	Schizonemertina	86	7		3	weak			Schizonemertina	3	89	Schizonemertina	3	87	ScMzonemertma	1	89	ScMzonemertina	1	89	Schizonemertina	3	87	Schlzonemertina	1	86
+5392	schmelze	87	7		5				schmelze	5	90	schinelze	1	88	schmelze	5	90	schmelze	5	90	schmelze	5	88	schmelze	5	87
+5393	scholasticism	88	7		5				n	1	91	scholasticism	5	89	scholasticism	5	91	scholasticism	5	91	scholasticism	5	89	scholasticism	5	88
+5394	school	89	7		5				school	5	92	school	5	90	school	5	92	school	5	92	riiti'	1	90	school	5	89
+5395	school-pence	90	7		5				school-pence	5	93	school-pence	5	91	school-pence	5	93	school-pence	5	93	school-pence	5	91	Bchool-pence	1	90
+5396	Schwenkfeldian	91	7		6				Schwenkfeldian	6	94	Schwenkfeldian	6	92	Schwenkfeldian	6	94	Schwenkfeldian	6	94	Schwenkfeldian	6	92	Schwenkfeldian	6	91
+5397	science	92	7		6				science	6	95	science	6	93	science	6	95	science	6	95	science	6	93	science	6	92
+5398	Scilla	93	7		6				Scilla	6	96	Scilla	6	94	Scilla	6	96	Scilla	6	96	Scilla	6	94	Scilla	6	93
+5399	scioptic	94	7		4				scioptic	4	97	scioptic	4	95	scioptic	4	97	scioptic	4	97	scioptlc	2	95	scioptlc	2	94
+5400	scissors	95	7		6				scissors	6	98	scissors	6	96	scissors	6	98	scissors	6	98	scissors	6	96	scissors	6	95
+5401	sclere	96	7		5				sclere	5	99	sclere	5	97	Bclere	1	99	sclere	5	99	sclere	5	97	sclere	5	96
+5402	sclerosed	97	7		5				sclerosed	5	100	sclerosed	5	98	sclerosed	5	100	sclerosed	5	100	a	1	98	sclerosed	5	97
+5403	scoffer	98	7		5				n	1	101	scoffer	5	99	scoffer	5	101	scoffer	5	101	scoffer	5	99	scoffer	5	98
+5404	Scolopacids	99	7		2	tie			Scolopacidae	2	102	Scolopacids	2	100	Scolopacids	2	102	Scolopacidae	2	102	Scolopacida	1	100	Scolopacidse	1	99
+5405	Scombridse	100	7		3	weak			Scombridx	1	103	Scombridse	3	101	Scombridae	2	103	Scombridae	2	103	Scombridse	3	101	Scombridse	3	100
+5406	scone	101	7		6				scone	6	104	scone	6	102	scone	6	104	scone	6	104	scone	6	102	scone	6	101
+5407	Scopelidse	102	7		3	weak			Scopelidae	2	105	Scopelidae	2	103	Scopelidse	3	105	Scopelidse	3	105	Scopelidse	3	103	ScopelidsB	1	102
+5408	scorch	103	7		5				scorch	5	106	scorch	5	104	scorch	5	106	scorch	5	106	a	1	104	scorch	5	103
+5409	scorer	104	7		6				scorer	6	107	scorer	6	105	scorer	6	107	scorer	6	107	scorer	6	105	scorer	6	104
+5410	scorodite	105	7		5				scorodite	5	108	scorodite	5	106	scorodite	5	108	scorodite	5	108	Bcorodite	1	106	scorodite	5	105
+5411	scorpion	106	7		6				scorpion	6	109	scorpion	6	107	scorpion	6	109	scorpion	6	109	scorpion	6	107	scorpion	6	106
+5412	scot	107	7		6				scot	6	110	scot	6	108	scot	6	110	scot	6	110	scot	6	108	scot	6	107
+5413	Scotist	108	7		5				I	1	111	Scotist	5	109	Scotist	5	111	Scotist	5	111	Scotist	5	109	Scotist	5	108
+5414	SCOUT	109	7		4				SCOUT	4	112	SCOUT	4	110	scour	2	112	SCOUT	4	112	SCOUT	4	110	scour	2	109
+5415	scout	110	7		6				scout	6	113	scout	6	111	scout	6	113	scout	6	113	scout	6	111	scout	6	110
+5416	scragged	111	7		4				scragged	4	114	scragged	4	112	With	2	114	scragged	4	114	scragged	4	112	With	2	111
+5417	scrape	112	7		5				r	1	115	scrape	5	113	scrape	5	115	scrape	5	115	scrape	5	113	scrape	5	112
+5418	scrat	113	7		4				scrat	4	116	scrat	4	114	scrat	4	116	Bcrat	2	116	scrat	4	114	Bcrat	2	113
+5419	scrawl	114	7		4				A	1	117	I	1	115	scrawl	4	117	scrawl	4	117	scrawl	4	115	scrawl	4	114
+5420	screen	115	7		5				screen	5	118	screen	5	116	other	1	118	screen	5	118	screen	5	116	screen	5	115
+5421	screw	116	7		5				y	1	119	screw	5	117	screw	5	119	screw	5	119	screw	5	117	screw	5	116
+5422	screw-fish	117	7		4				screw-fish	4	120	screw-fish	4	118	screw-fish	4	120	screw-flsh	1	120	Bcrew-flsh	1	118	screw-fish	4	117
+5423	scribacious	118	7		4				scribacious	4	121	scribacious	4	119	scribaciouB	1	121	scribacioos	1	121	scribacious	4	119	scribacious	4	118
+5424	scrimer	119	7		4				scrimer	4	122	scnmer	1	120	scrimer	4	122	scrimer	4	122	scrlmer	1	120	scrimer	4	119
+5425	scripturalism	120	7		4				scripturalism	4	123	I	1	121	scripturalism	4	123	scripturalism	4	123	scrlpturalism	1	121	scripturalism	4	120
+5426	scrofula	121	7		5				scrofula	5	124	scrofula	5	122	V	1	124	scrofula	5	124	scrofula	5	122	scrofula	5	121
+5427	Scrophularineae	122	7		3	weak			ScrophularinesB	1	125	Scrophularineae	3	123	Scrophularineae	3	125	Scrophularineae	3	125	Scrophularlneae	1	123	Sciophularinese	1	122
+5428	scmff	123	7		4				scruff	2	126	scruff	2	124	scmff	4	126	scmff	4	126	scmff	4	124	scmff	4	123
+5429	scTutine	124	7		1	tie			scrutine	1	127	scTutine	1	125	scnitine	1	127	scmtine	1	127	Bcrutine	1	125	scmtiiie	1	124
+5430	scuff	125	7		4				scuff	4	128	scuff	4	126	scoff	1	128	scuS	1	128	scuff	4	126	scuff	4	125
+5431	sculpin	126	7		6				sculpin	6	129	sculpin	6	127	sculpin	6	129	sculpin	6	129	sculpin	6	127	sculpin	6	126
+5432	scumber	127	7		4				scumber	4	130	scumber	4	128	scumber	4	130	BCtunber	1	130	scTunber	1	128	scumber	4	127
+5433	scurfy	128	7		5				scurfy	5	131	scurfy	5	129	scurfy	5	131	I	1	131	scurfy	5	129	scurfy	5	128
+5434	scutcher	129	7		1	tie			noting	1	132	scutcher	1	130	iV	1	132	iiiid	1	132	y	1	130	Scutchiog-sword	1	129
+5435	scutlped	130	7		2	weak			i	1	133	scutiped	1	131	scutlped	2	133	sctitiped	1	133	scutlped	2	131	scuttped	1	130
+5436	Scyllarus	131	7		4				Scyllarus	4	134	Scyllarus	4	132	Scyllarus	4	134	Scyllams	2	134	Scyllarus	4	132	Scyllams	2	131
+5437	scythe	132	7		5				scythe	5	135	scythe	5	133	scythe	5	135	scythe	5	135	curving	1	133	scythe	5	132
+5438	sea	133	7		5				sea	5	136	sea	5	134	sea	5	136	the	1	136	sea	5	134	sea	5	133
+5439	sea-bream	134	7		6				sea-bream	6	137	sea-bream	6	135	sea-bream	6	137	sea-bream	6	137	sea-bream	6	135	sea-bream	6	134
+5440	sea-dog	135	7		6				sea-dog	6	138	sea-dog	6	136	sea-dog	6	138	sea-dog	6	138	sea-dog	6	136	sea-dog	6	135
+5441	sea-gull	136	7		4				sea-gull	4	139	reniform	1	137	sea-gull	4	139	sea-gull	4	139	sea-gull	4	137	sea-gtdl	1	136
+5442	seal	137	7		5				seal	5	140	seal	5	138	seal	5	140	seal	5	140	seal	5	138	It	1	137
+5443	sea-leopard	138	7		6				sea-leopard	6	141	sea-leopard	6	139	sea-leopard	6	141	sea-leopard	6	141	sea-leopard	6	139	sea-leopard	6	138
+5444	seam	139	7		6				seam	6	142	seam	6	140	seam	6	142	seam	6	142	seam	6	140	seam	6	139
+5445	sea-mussel	140	7		6				sea-mussel	6	143	sea-mussel	6	141	sea-mussel	6	143	sea-mussel	6	143	sea-mussel	6	141	sea-mussel	6	140
+5446	sear	141	7		5				sear	5	144	sear	5	142	seax	1	144	sear	5	144	sear	5	142	sear	5	141
+5447	search-light	142	7		6				search-light	6	145	search-light	6	143	search-light	6	145	search-light	6	145	search-light	6	143	search-light	6	142
+5448	season	143	7		6				season	6	146	season	6	144	season	6	146	season	6	146	season	6	144	season	6	143
+5449	sea-swine	144	7		5				sea-swine	5	147	sea-swine	5	145	sea-swine	5	147	sea-swine	5	147	sea-swme	1	145	sea-swine	5	144
+5450	sea-turtle	145	7		4				sea-turtle	4	148	sea-turtle	4	146	sea-turtle	4	148	sea-ttirtle-	1	148	seavy	1	146	sea-turtle	4	145
+5451	sebaceous	146	7		6				sebaceous	6	149	sebaceous	6	147	sebaceous	6	149	sebaceous	6	149	sebaceous	6	147	sebaceous	6	146
+5452	secern	147	7		4				secern	4	150	secern	4	148	In	1	150	secern	4	150	secern	4	148	is	1	147
+5453	Two-handed	148	7		3	weak			second	2	151	Two-handed	3	149	Two-handed	3	151	I	1	151	second	2	149	Two-handed	3	148
+5454	secondary	149	7		5				Item	1	152	secondary	5	150	secondary	5	152	secondary	5	152	secondary	5	150	secondary	5	149
+5455	secret	150	7		6				secret	6	153	secret	6	151	secret	6	153	secret	6	153	secret	6	151	secret	6	150
+5456	secretary-bird	151	7		5				secretary-bird	5	154	secretary-bird	5	152	secretary-bird	5	154	the	1	154	secretary-bird	5	152	secretary-bird	5	151
+5457	sect	152	7		6				sect	6	155	sect	6	153	sect	6	155	sect	6	155	sect	6	153	sect	6	152
+5458	sectionality	153	7		5				sectionality	5	156	sectionality	5	154	sectionality	5	156	sectionality	5	156	sectionallty	1	154	sectionality	5	153
+5459	secularism	154	7		4				secularism	4	157	secularism	4	155	Becnlarism	1	157	secularism	4	157	secolarisin	1	155	secularism	4	154
+5460	securely	155	7		6				securely	6	158	securely	6	156	securely	6	158	securely	6	158	securely	6	156	securely	6	155
+5461	sedateness	156	7		6				sedateness	6	159	sedateness	6	157	sedateness	6	159	sedateness	6	159	sedateness	6	157	sedateness	6	156
+5462	sediment	157	7		6				sediment	6	160	sediment	6	158	sediment	6	160	sediment	6	160	sediment	6	158	sediment	6	157
+5463	Sedum	158	7		6				Sedum	6	161	Sedum	6	159	Sedum	6	161	Sedum	6	161	Sedum	6	159	Sedum	6	158
+5464	see	159	7		6				see	6	162	see	6	160	see	6	162	see	6	162	see	6	160	see	6	159
+5465	seeding-machine	160	7		6				seeding-machine	6	163	seeding-machine	6	161	seeding-machine	6	163	seeding-machine	6	163	seeding-machine	6	161	seeding-machine	6	160
+5466	seeker	161	7		6				seeker	6	164	seeker	6	162	seeker	6	164	seeker	6	164	seeker	6	162	seeker	6	161
+5467	seeming	162	7		5				seeming	5	165	seenung	1	163	seeming	5	165	seeming	5	165	seeming	5	163	seeming	5	162
+5468	seethe	163	7		6				seethe	6	166	seethe	6	164	seethe	6	166	seethe	6	166	seethe	6	164	seethe	6	163
+5469	segregant	164	7		6				segregant	6	167	segregant	6	165	segregant	6	167	segregant	6	167	segregant	6	165	segregant	6	164
+5470	seine	165	7		4				seine	4	168	seme	2	166	seme	2	168	seine	4	168	seine	4	166	seine	4	165
+5471	Seisura	166	7		5				Seisura	5	169	Seisura	5	167	Seisura	5	169	Seisura	5	169	Seisnra	1	167	Seisura	5	166
+5472	A	167	7		2	tie			sekere	2	170	A	2	168	t	1	170	I	1	170	A	2	168	sekere	2	167
+5473	seldom	168	7		6				seldom	6	171	seldom	6	169	seldom	6	171	seldom	6	171	seldom	6	169	seldom	6	168
+5474	selector	169	7		6				selector	6	172	selector	6	170	selector	6	172	selector	6	172	selector	6	170	selector	6	169
+5475	self	170	7		5				m	1	173	self	5	171	self	5	173	self	5	173	self	5	171	self	5	170
+5476	self-command	171	7		6				self-command	6	174	self-command	6	172	self-command	6	174	self-command	6	174	self-command	6	172	self-command	6	171
+5477	self-denying	172	7		6				self-denying	6	175	self-denying	6	173	self-denying	6	175	self-denying	6	175	self-denying	6	173	self-denying	6	172
+5478	self-importance	173	7		6				self-importance	6	176	self-importance	6	174	self-importance	6	176	self-importance	6	176	self-importance	6	174	self-importance	6	173
+5479	self-perplexed	174	7		6				self-perplexed	6	177	self-perplexed	6	175	self-perplexed	6	177	self-perplexed	6	177	self-perplexed	6	175	self-perplexed	6	174
+5480	self-sterile	175	7		6				self-sterile	6	178	self-sterile	6	176	self-sterile	6	178	self-sterile	6	178	self-sterile	6	176	self-sterile	6	175
+5481	sell	176	7		5				sell	5	179	sell	5	177	sell	5	179	seU	1	179	sell	5	177	sell	5	176
+5482	semblable	177	7		6				semblable	6	180	semblable	6	178	semblable	6	180	semblable	6	180	semblable	6	178	semblable	6	177
+5483	semiaquatic	178	7		3	weak			semiaquatic	3	181	semiaquatic	3	179	semlaquatic	1	181	senuacLuatic	1	181	semiaquatic	3	179	semlaauatic	1	178
+5484	semi	179	7		2	tie			semidiaphaneity	2	182	semi	2	180	semi	2	182	semidiaphaneity	2	182	semldiaphaneity	1	180	senudiaphaneity	1	179
+5485	semi-menstmal	180	7		4				semi-menstmal	4	183	semi-menstrual	2	181	semi-menstmal	4	183	semi-menstmal	4	183	semi-menstrual	2	181	semi-menstmal	4	180
+5486	semiology	181	7		6				semiology	6	184	semiology	6	182	semiology	6	184	semiology	6	184	semiology	6	182	semiology	6	181
+5487	Seniisagit-	182	7		1	tie			Puddled	1	185	Seniisagit-	1	183	Scmisagit-	1	185	Early	1	185	tate	1	183	semi-regular	1	182
+5488	semi-uncial	183	7		3	weak			semi-uncial	3	186	semi-uncial	3	184	semi-uncial-	1	186	semi-imclal	1	186	One	1	184	semi-uncial	3	183
+5489	sen	184	7		6				sen	6	187	sen	6	185	sen	6	187	sen	6	187	sen	6	185	sen	6	184
+5490	send	185	7		5				send	5	188	send	5	186	send	5	188	Bend	1	188	send	5	186	send	5	185
+5491	seneschal	186	7		6				seneschal	6	189	seneschal	6	187	seneschal	6	189	seneschal	6	189	seneschal	6	187	seneschal	6	186
+5492	sefior	187	7		3	weak			sefior	3	190	senor	2	188	senoT	1	190	sefior	3	190	sefior	3	188	senor	2	187
+5493	sense	188	7		5				sense	5	191	sense	5	189	sense	5	191	I	1	191	sense	5	189	sense	5	188
+5494	sense-rhythm	189	7		6				sense-rhythm	6	192	sense-rhythm	6	190	sense-rhythm	6	192	sense-rhythm	6	192	sense-rhythm	6	190	sense-rhythm	6	189
+5495	sensitive	190	7		3	weak			f	1	193	sensitive	3	191	sensitiye	1	193	I	1	193	sensitive	3	191	sensitive	3	190
+5496	sensualist	191	7		6				sensualist	6	194	sensualist	6	192	sensualist	6	194	sensualist	6	194	sensualist	6	192	sensualist	6	191
+5497	sententiously	192	7		5				sententiously	5	195	sententiously	5	193	sententiously	5	195	sententionsly	1	195	sententiously	5	193	sententiously	5	192
+5498	sentinel	193	7		6				sentinel	6	196	sentinel	6	194	sentinel	6	196	sentinel	6	196	sentinel	6	194	sentinel	6	193
+5499	separation	194	7		5				separation	5	197	separation	5	195	separation	5	197	I	1	197	separation	5	195	separation	5	194
+5500	of	195	7		3	weak			Sepidse	1	198	dim	1	196	of	3	198	of	3	198	Sepidae	1	196	of	3	195
+5501	Septembrist	196	7		5				r	1	199	Septembrist	5	197	Septembrist	5	199	Septembrist	5	199	Septembrist	5	197	Septembrist	5	196
+5502	septile	197	7		5				septile	5	200	septile	5	198	septile	5	200	septile	5	200	septlle	1	198	septile	5	197
+5503	sepulcher	198	7		4				sepulcher	4	201	sepulcher	4	199	Bepulcher	1	201	sepulcher	4	201	sepulcher	4	199	sepnlcher	1	198
+5504	sequent	199	7		5				sequent	5	202	sequent	5	200	sequent	5	202	seauent	1	202	sequent	5	200	sequent	5	199
+5505	Sequoia	200	7		4				It'f	1	203	SecLUoia	1	201	Sequoia	4	203	Sequoia	4	203	Sequoia	4	201	Sequoia	4	200
+5506	Serapias	201	7		6				Serapias	6	204	Serapias	6	202	Serapias	6	204	Serapias	6	204	Serapias	6	202	Serapias	6	201
+5507	sereneness	202	7		6				sereneness	6	205	sereneness	6	203	sereneness	6	205	sereneness	6	205	sereneness	6	203	sereneness	6	202
+5508	sergeant	203	7		6				sergeant	6	206	sergeant	6	204	sergeant	6	206	sergeant	6	206	sergeant	6	204	sergeant	6	203
+5509	Seriema	204	7		2	weak			the	1	207	Sericma	1	205	Scrictna	1	207	Seriema	2	207	senema	1	205	Seriema	2	204
+5510	seringa	205	7		5				sennga	1	208	seringa	5	206	seringa	5	208	seringa	5	208	seringa	5	206	seringa	5	205
+5511	sermoning	206	7		5				sermoning	5	209	sermoning	5	207	sermoning	5	209	I	1	209	sermoning	5	207	sermoning	5	206
+5512	serpentaria	207	7		6				serpentaria	6	210	serpentaria	6	208	serpentaria	6	210	serpentaria	6	210	serpentaria	6	208	serpentaria	6	207
+5513	serpentinize	208	7		4				serpentinize	4	211	serpentinize	4	209	serpentinlze	1	211	serpentinize	4	211	serpentinize	4	209	Berpentinize	1	208
+5514	Serrate	209	7		4				Serrasalmoninae	1	212	Serrate	4	210	Serrate	4	212	Serrate	4	212	Serr	1	210	Serrate	4	209
+5515	serum	210	7		5				serum	5	213	serum	5	211	sertun	1	213	serum	5	213	serum	5	211	serum	5	210
+5516	serve	211	7		6				serve	6	214	serve	6	212	serve	6	214	serve	6	214	serve	6	212	serve	6	211
+5517	server	212	7		4				i	1	215	server	4	213	server	4	215	t	1	215	server	4	213	server	4	212
+5518	serviceable	213	7		5					1	216	serviceable	5	214	serviceable	5	216	serviceable	5	216	serviceable	5	214	serviceable	5	213
+5519	serving-man	214	7		4				Sesamlun	1	217	serving-man	4	215	serving-man	4	217	serving-man	4	217	serving-mail	1	215	serving-man	4	214
+5520	Sesame	215	7		3	weak			Sesamum	1	218	Sesame	3	216	Sesame	3	218	an	1	218	t	1	216	Sesame	3	215
+5521	sesquisulphid	216	7		5				sesquisulphid	5	219	sesquisulphid	5	217	sesquisulphid	5	219	sesquisulphid	5	219	sesquisulpUd	1	217	sesquisulphid	5	216
+5522	sestina	217	7		5				Ml	1	220	sestina	5	218	sestina	5	220	sestina	5	220	sestina	5	218	sestina	5	217
+5523	set	218	7		6				set	6	221	set	6	219	set	6	221	set	6	221	set	6	219	set	6	218
+5524	set	219	7		6				set	6	222	set	6	220	set	6	222	set	6	222	set	6	220	set	6	219
+5525	set	220	7		5				set	5	223	set	5	221	set	5	223	u	1	223	set	5	221	set	5	220
+5526	set	221	7		6				set	6	224	set	6	222	set	6	224	set	6	224	set	6	222	set	6	221
+5527	Sethi	222	7		3	weak			SetUte	1	225	Sethi	3	223	Sethi	3	225	Sethite	2	225	Sethi	3	223	Sethite	2	222
+5528	settee	223	7		6				settee	6	226	settee	6	224	settee	6	226	settee	6	226	settee	6	224	settee	6	223
+5529	settle	224	7		4				I	1	227	settle	4	225	nettle	1	227	settle	4	227	settle	4	225	settle	4	224
+5530	settled	225	7		6				settled	6	228	settled	6	226	settled	6	228	settled	6	228	settled	6	226	settled	6	225
+5531	seven	226	7		5				seven	5	229	seven	5	227	seven	5	229	seven	5	229	seveneyes	1	227	seven	5	226
+5532	seven-thirty	227	7		6				seven-thirty	6	230	seven-thirty	6	228	seven-thirty	6	230	seven-thirty	6	230	seven-thirty	6	228	seven-thirty	6	227
+5533	severalty	228	7		5				Tf	1	231	severalty	5	229	severalty	5	231	severalty	5	231	severalty	5	229	severalty	5	228
+5534	sew	229	7		5				sew	5	232	sew	5	230	sew	5	232	In	1	232	sew	5	230	sew	5	229
+5535	sewing-machine	230	7		5				sewing-machine	5	233	sewing-machine	5	231	sewing-machine	5	233	sewing-machine	5	233	sewing-machine	5	231	sewing-macliine	1	230
+5536	sexagene	231	7		4				sexagene	4	234	sezagene	2	232	sexagene	4	234	sexagene	4	234	sezagene	2	232	sexagene	4	231
+5537	sextant	232	7		6				sextant	6	235	sextant	6	233	sextant	6	235	sextant	6	235	sextant	6	233	sextant	6	232
+5538	sexual	233	7		3	weak			sexnal	1	238	sexual	3	234	-v	1	236	seznal	1	236	sexual	3	234	sexual	3	233
+5539	shack	234	7		4				shack	4	239	shack	4	235	Shack	2	237	shack	4	237	shack	4	235	Shack	2	234
+5540	Leaf	235	7		4				Leaf	4	240	of	2	236	Leaf	4	238	Leaf	4	238	of	2	236	Leaf	4	235
+5541	shadow	236	7		6				shadow	6	241	shadow	6	237	shadow	6	239	shadow	6	239	shadow	6	237	shadow	6	236
+5542	shad-spirit	237	7		6				shad-spirit	6	242	shad-spirit	6	238	shad-spirit	6	240	shad-spirit	6	240	shad-spirit	6	238	shad-spirit	6	237
+5543	shafting-box	238	7		4				shafting-box	4	243	snafting-box	1	239	shafting-box	4	241	shafting-box	4	241	shafting-box	4	239	sbafting-box	1	238
+5544	shake	239	7		6				shake	6	244	shake	6	240	shake	6	242	shake	6	242	shake	6	240	shake	6	239
+5545	shaker	240	7		6				shaker	6	245	shaker	6	241	shaker	6	243	shaker	6	243	shaker	6	241	shaker	6	240
+5546	shall	241	7		6				shall	6	246	shall	6	242	shall	6	244	shall	6	244	shall	6	242	shall	6	241
+5547	shallow	242	7		6				shallow	6	247	shallow	6	243	shallow	6	245	shallow	6	245	shallow	6	243	shallow	6	242
+5548	shame	243	7		5				shame	5	248	shame	5	244	-v	1	246	shame	5	246	shame	5	244	shame	5	243
+5549	shammy	244	7		6				shammy	6	249	shammy	6	245	shammy	6	247	shammy	6	247	shammy	6	245	shammy	6	244
+5550	shank-spring	245	7		6				shank-spring	6	250	shank-spring	6	246	shank-spring	6	248	shank-spring	6	248	shank-spring	6	246	shank-spring	6	245
+5551	shapeless	246	7		4				shapeless	4	251	sbapeless	1	247	share	1	249	shapeless	4	249	shapeless	4	247	shapeless	4	246
+5552	share	247	7		2	weak			sliare	1	252	share	2	248	-V	1	250	sHare	1	250	Share	1	248	share	2	247
+5553	shaxnbod	248	7		2	weak			shambod	1	253	Bharnbod	1	249	shaxnbod	2	251	shaxnbod	2	251	sharnbod	1	249	Bhambod	1	248
+5554	sharp	249	7		6				sharp	6	254	sharp	6	250	sharp	6	252	sharp	6	252	sharp	6	250	sharp	6	249
+5555	shaup	250	7		4				shaup	4	255	shaup	4	251	shaup	4	253	shaup	4	253	sbaup	1	251	form	1	250
+5556	shawl-waistcoat	251	7		6				shawl-waistcoat	6	256	shawl-waistcoat	6	252	shawl-waistcoat	6	254	shawl-waistcoat	6	254	shawl-waistcoat	6	252	shawl-waistcoat	6	251
+5557	shear	252	7		6				shear	6	257	shear	6	253	shear	6	255	shear	6	255	shear	6	253	shear	6	252
+5558	sheartail	253	7		6				sheartail	6	260	sheartail	6	254	sheartail	6	256	sheartail	6	256	sheartail	6	254	sheartail	6	253
+5559	sheave	254	7		6				sheave	6	261	sheave	6	255	sheave	6	257	sheave	6	257	sheave	6	255	sheave	6	254
+5560	shedding-motion	255	7		6				shedding-motion	6	262	shedding-motion	6	256	shedding-motion	6	258	shedding-motion	6	258	shedding-motion	6	256	shedding-motion	6	255
+5561	sheepish	256	7		6				sheepish	6	263	sheepish	6	257	sheepish	6	259	sheepish	6	259	sheepish	6	257	sheepish	6	256
+5562	sheep-tick	257	7		6				sheep-tick	6	264	sheep-tick	6	258	sheep-tick	6	260	sheep-tick	6	260	sheep-tick	6	258	sheep-tick	6	257
+5563	sheet	258	7		5				sheet	5	265	sheet	5	259	sheet	5	261	sheet	5	261	foMan	1	259	sheet	5	258
+5564	shekel	259	7		5				shekel	5	266	shekel	5	260	shekel	5	262	shekel	5	262	shekel	5	260	sbekel	1	259
+5565	shell	260	7		5				sliell	1	267	shell	5	261	shell	5	263	shell	5	263	shell	5	261	shell	5	260
+5566	Shelley's	261	7		5				sheltron	1	268	Shelley's	5	262	Shelley's	5	264	Shelley's	5	264	Shelley's	5	262	Shelley's	5	261
+5567	sheltron	262	7		6				sheltron	6	269	sheltron	6	263	sheltron	6	265	sheltron	6	265	sheltron	6	263	sheltron	6	262
+5568	shepherd	263	7		6				shepherd	6	270	shepherd	6	264	shepherd	6	266	shepherd	6	266	shepherd	6	264	shepherd	6	263
+5569	sheriffalty	264	7		5				they	1	271	sheriffalty	5	265	sheriffalty	5	267	sheriffalty	5	267	sheriffalty	5	265	sheriffalty	5	264
+5570	shield	265	7		5				sUeld	1	272	shield	5	266	shield	5	268	shield	5	268	shield	5	266	shield	5	265
+5571	shield-urchin	266	7		4				shield-urchin	4	273	shield-urchin	4	267	shield-urchin	4	269	sbleld-nrchln	1	269	shield-urchin	4	267	sMeld-urchin	1	266
+5572	shifting-boards	267	7		5				shifting-boards	5	274	shifting-boards	5	268	shifting-boards	5	270	shifting-boaxds	1	270	shifting-boards	5	268	shifting-boards	5	267
+5573	shimmer	268	7		5				sMmmer	1	275	shimmer	5	269	shimmer	5	271	shimmer	5	271	shimmer	5	269	shimmer	5	268
+5574	shine	269	7		5				shine	5	276	shine	5	270	-v	1	272	shine	5	272	shine	5	270	shine	5	269
+5575	shinny	270	7		4				shinny	4	277	shinny	4	271	shinny	4	273	sliiimy	1	273	Bblnny	1	271	shinny	4	270
+5576	ship	271	7		3	weak			sUp	1	278	ship	3	272	oar	1	274	ship	3	274	ship	3	272	sliip	1	271
+5577	ship-money	272	7		6				ship-money	6	279	ship-money	6	273	ship-money	6	275	ship-money	6	275	ship-money	6	273	ship-money	6	272
+5578	shire	273	7		6				shire	6	280	shire	6	274	shire	6	276	shire	6	276	shire	6	274	shire	6	273
+5579	shirt-front	274	7		5				shirt-front	5	281	sMrt-front	1	275	shirt-front	5	277	shirt-front	5	277	shirt-front	5	275	shirt-front	5	274
+5580	shivery	275	7		5				shivery	5	282	shivery	5	276	sMvery	1	278	shivery	5	278	shivery	5	276	shivery	5	275
+5581	shock	276	7		5				shock	5	283	shock	5	277	shock	5	279	I	1	279	shock	5	277	shock	5	276
+5582	shoe	277	7		4				shoe	4	284	shoe	4	278	slioe	2	280	shoe	4	280	shoe	4	278	slioe	2	277
+5583	shofar	278	7		5				shofar	5	285	shofar	5	279	shofar	5	281	shofar	5	281	shofar	5	279	See	1	278
+5584	shoot	279	7		6				shoot	6	286	shoot	6	280	shoot	6	282	shoot	6	282	shoot	6	280	shoot	6	279
+5585	shooting	280	7		6				shooting	6	287	shooting	6	281	shooting	6	283	shooting	6	283	shooting	6	281	shooting	6	280
+5586	shopmate	281	7		5				shopmate	5	288	shopmate	5	282	shopmate	5	284	ahopmate	1	284	shopmate	5	282	shopmate	5	281
+5587	shoreweed	282	7		6				shoreweed	6	289	shoreweed	6	283	shoreweed	6	285	shoreweed	6	285	shoreweed	6	283	shoreweed	6	282
+5588	short	283	7		4				short	4	290	short	4	284	-v	1	286	short	4	286	short	4	284	sliort	1	283
+5589	shorthand	284	7		5				shorthand	5	291	shorthand	5	285	shorthand	5	287	shorthand	5	287	are	1	285	shorthand	5	284
+5590	short-toed	285	7		3	weak			short-toed	3	292	is	1	286	sliort-taed	1	288	short-toed	3	288	short-tood	1	286	short-toed	3	285
+5591	shot-cartridge	286	7		5				shot-cartridge	5	293	shot-cartridge	5	287	shot-cartridge	5	289	shot-cartridge	5	289	shot-cartridge	5	287	Bhot-cartridge	1	286
+5592	shoulder	287	7		6				shoulder	6	294	shoulder	6	288	shoulder	6	290	shoulder	6	290	shoulder	6	288	shoulder	6	287
+5593	shouldering-file	288	7		4				shouldering-file	4	295	shouldering-file	4	289	shouldering-file	4	291	shouldering-file	4	291	Bhouldering-flle	1	289	Bhonldering-file	1	288
+5594	shove	289	7		6				shove	6	296	shove	6	290	shove	6	292	shove	6	292	shove	6	290	shove	6	289
+5595	show	290	7		6				show	6	297	show	6	291	show	6	293	show	6	293	show	6	291	show	6	290
+5596	shower	291	7		6				shower	6	298	shower	6	292	shower	6	294	shower	6	294	shower	6	292	shower	6	291
+5597	shrapnel	292	7		5				shrapoel	1	299	shrapnel	5	293	shrapnel	5	295	shrapnel	5	295	shrapnel	5	293	shrapnel	5	292
+5598	shrewd	293	7		6				shrewd	6	300	shrewd	6	294	shrewd	6	296	shrewd	6	296	shrewd	6	294	shrewd	6	293
+5599	shright	294	7		6				shright	6	301	shright	6	295	shright	6	297	shright	6	297	shright	6	295	shright	6	294
+5600	shrine	295	7		5				shrine	5	302	shrine	5	296	shrine	5	298	shrine	5	298	Shritic	1	296	shrine	5	295
+5601	shrive	296	7		5				shrive	5	303	shrive	5	297	shrive	5	299	I	1	299	shrive	5	297	shrive	5	296
+5602	shroud	297	7		5				shroud	5	304	Shroud	1	298	shroud	5	300	shroud	5	300	shroud	5	298	shroud	5	297
+5603	shrug	298	7		5				shrug	5	305	shrug	5	299	shrug	5	301	shmg	1	301	shrug	5	299	shrug	5	298
+5604	shuffle	299	7		4				shnffle	1	306	shuffle	4	300	shuffle	4	302	shuffle	4	302	shuiBe	1	300	shuffle	4	299
+5605	shunt	300	7		5				shunt	5	307	shunt	5	301	shunt	5	303	ahnnt	1	303	shunt	5	301	shunt	5	300
+5606	shut	301	7		5				shut	5	308	shut	5	302	shut	5	304	abut	1	304	shut	5	302	shut	5	301
+5607	shuttlecock	302	7		6				shuttlecock	6	309	shuttlecock	6	303	shuttlecock	6	305	shuttlecock	6	305	shuttlecock	6	303	shuttlecock	6	302
+5608	to	303	7		3	weak			A	1	310	SI	1	304	to	3	306	to	3	306	si	1	304	to	3	303
+5609	Siberian	304	7		6				Siberian	6	311	Siberian	6	305	Siberian	6	307	Siberian	6	307	Siberian	6	305	Siberian	6	304
+5610	siccative	305	7		5				siccative	5	312	siccative	5	306	siccative	5	308	siccatiTe	1	308	siccative	5	306	siccative	5	305
+5611	sick-bay	306	7		6				sick-bay	6	313	sick-bay	6	307	sick-bay	6	309	sick-bay	6	309	sick-bay	6	307	sick-bay	6	306
+5612	sickless	307	7		6				sickless	6	314	sickless	6	308	sickless	6	310	sickless	6	310	sickless	6	308	sickless	6	307
+5613	side	308	7		6				side	6	315	side	6	309	side	6	311	side	6	311	side	6	309	side	6	308
+5614	side	309	7		5				side	5	316	side	5	310	law	1	312	side	5	312	side	5	310	side	5	309
+5615	side-cutting	310	7		6				side-cutting	6	317	side-cutting	6	311	side-cutting	6	313	side-cutting	6	313	side-cutting	6	311	side-cutting	6	310
+5616	sidereal	311	7		6				sidereal	6	318	sidereal	6	312	sidereal	6	314	sidereal	6	314	sidereal	6	312	sidereal	6	311
+5617	side-slip	312	7		6				side-slip	6	319	side-slip	6	313	side-slip	6	315	side-slip	6	315	side-slip	6	313	side-slip	6	312
+5618	siding-hook	313	7		5				siding-hook	5	320	siding-hook	5	314	sidmg-hook	1	316	siding-hook	5	316	siding-hook	5	314	siding-hook	5	313
+5619	siesta	314	7		6				siesta	6	321	siesta	6	315	siesta	6	317	siesta	6	317	siesta	6	315	siesta	6	314
+5620	Sigalphus	315	7		5				Sigalphus	5	322	Sigalphus	5	316	Sigalphus	5	318	Sigalphus	5	318	Sigalphos	1	316	Sigalphus	5	315
+5621	sight	316	7		5				sight	5	323	sight	5	317	sight	5	319	Bight	1	319	sight	5	317	sight	5	316
+5622	Sigillaria	317	7		6				Sigillaria	6	324	Sigillaria	6	318	Sigillaria	6	320	Sigillaria	6	320	Sigillaria	6	318	Sigillaria	6	317
+5623	sign	318	7		6				sign	6	325	sign	6	319	sign	6	321	sign	6	321	sign	6	319	sign	6	318
+5624	signa	319	7		6				signa	6	326	signa	6	320	signa	6	322	signa	6	322	signa	6	320	signa	6	319
+5625	signal-service	320	7		6				signal-service	6	327	signal-service	6	321	signal-service	6	323	signal-service	6	323	signal-service	6	321	signal-service	6	320
+5626	signiflcancy	321	7		3	weak			signiflcancy	3	328	signiflcancy	3	322	slgnificancy	2	324	significancy	1	324	signiflcancy	3	322	slgnificancy	2	321
+5627	sike	322	7		3	weak			sike	3	329	sike	3	323	slke	1	325	site	1	325	sike	3	323	Bike	1	322
+5628	silent	323	7		5				silent	5	330	silent	5	324	silent	5	326	significancy	1	326	silent	5	324	silent	5	323
+5629	silicify	324	7		3	weak			sillcify	1	331	silicify	3	325	silicify	3	327	Biiicify	1	327	silicify	3	325	sUiclfy	1	324
+5630	silk	325	7		5				silk	5	332	silk	5	326	silk	5	328	Bilk	1	328	silk	5	326	silk	5	325
+5631	silkworm	326	7		6				silkworm	6	333	silkworm	6	327	silkworm	6	329	silkworm	6	329	silkworm	6	327	silkworm	6	326
+5632	silly	327	7		4				BiUy	1	334	silly	4	328	silly	4	330	aiUy	1	330	silly	4	328	silly	4	327
+5633	Silvanus	328	7		2	weak			SitvaMus	1	335	Silvattus	1	329	Silvanus	2	331	Sitvanus	1	331	SilvauHS	1	329	Silvanus	2	328
+5634	silver-barred	329	7		5				silver-barred	5	336	silver-barred	5	330	silver-barred	5	332	silver-barred	5	332	Bllver-barred	1	330	silver-barred	5	329
+5635	silver-print	330	7		6				silver-print	6	337	silver-print	6	331	silver-print	6	333	silver-print	6	333	silver-print	6	331	silver-print	6	330
+5636	simblot	331	7		5				simblot	5	338	simblot	5	332	simblot	5	334	simblot	5	334	Bimblot	1	332	simblot	5	331
+5637	similitude	332	7		4				similitude	4	339	similitude	4	333	similitude	4	335	similitnde	1	335	similitude	4	333	similitttde	1	332
+5638	Simonianism	333	7		5				Simonianism	5	340	Simonianism	5	334	Simonianism	5	336	Simonianism	5	336	Simomanism	1	334	Simonianism	5	333
+5639	simple	334	7		6				simple	6	341	simple	6	335	simple	6	337	simple	6	337	simple	6	335	simple	6	334
+5640	simplician	335	7		5				simplician	5	342	simplician	5	336	simplician	5	338	simplician	5	338	simpliclan	1	336	simplician	5	335
+5641	simulant	336	7		4				simulant	4	343	simulant	4	337	simulant	4	339	stmnlant	1	339	simulant	4	337	Blmnlant	1	336
+5642	sin	337	7		3	weak			sin	3	344	Bin	1	338	sm	2	340	sin	3	340	sm	2	338	sin	3	337
+5643	sincerity	338	7		5				sincerity	5	345	sincerity	5	339	sincerity	5	341	sincerity	5	341	sincerity	5	339	nei	1	338
+5644	sinew	339	7		5				sinew	5	346	sinew	5	340	smew	1	342	sinew	5	342	sinew	5	340	sinew	5	339
+5645	sing	340	7		4				Bing	2	347	sing	4	341	sing	4	343	sing	4	343	sing	4	341	Bing	2	340
+5646	single	341	7		6				single	6	348	single	6	342	single	6	344	single	6	344	single	6	342	single	6	341
+5647	single-lunged	342	7		3	weak			single-lunged	3	349	single-lunged	3	343	slngle-lunged	1	345	single-lnnged	2	345	single-lunged	3	343	single-lnnged	2	342
+5648	singular	343	7		5				singular	5	352	singular	5	344	singular	5	346	singular	5	346	singnlar	1	344	singular	5	343
+5649	sinister	344	7		5				sinister	5	353	sinister	5	345	sinister	5	347	sinister	5	347	sinister	5	345	siniBter	1	344
+5650	sink	345	7		6				sink	6	354	sink	6	346	sink	6	348	sink	6	348	sink	6	346	sink	6	345
+5651	sinologue	346	7		6				sinologue	6	355	sinologue	6	347	sinologue	6	349	sinologue	6	349	sinologue	6	347	sinologue	6	346
+5652	sinus	347	7		4				sinus	4	356	sinus	4	348	sinus	4	350	sums	1	350	smus	1	348	sinus	4	347
+5653	siphon	348	7		6				siphon	6	357	siphon	6	349	siphon	6	351	siphon	6	351	siphon	6	349	siphon	6	348
+5654	Siphonophora	349	7		6				Siphonophora	6	358	Siphonophora	6	350	Siphonophora	6	352	Siphonophora	6	352	Siphonophora	6	350	Siphonophora	6	349
+5655	sipylite	350	7		6				sipylite	6	359	sipylite	6	351	sipylite	6	353	sipylite	6	353	sipylite	6	351	sipylite	6	350
+5656	siren	351	7		5				siren	5	360	siren	5	352	with	1	354	siren	5	354	siren	5	352	siren	5	351
+5657	sirocco	352	7		5				sirocco	5	361	sirocco	5	353	sirocco	5	355	sirocco	5	355	siiocco	1	353	sirocco	5	352
+5658	sist	353	7		3	weak			sist	3	362	slst	1	354	BlSt	1	356	sfst	1	356	sist	3	354	sist	3	353
+5659	sit	354	7		5				sit	5	363	sit	5	355	Bit	1	357	sit	5	357	sit	5	355	sit	5	354
+5660	Sitaris	355	7		6				Sitaris	6	364	Sitaris	6	356	Sitaris	6	358	Sitaris	6	358	Sitaris	6	356	Sitaris	6	355
+5661	sitte	356	7		6				sitte	6	365	sitte	6	357	sitte	6	359	sitte	6	359	sitte	6	357	sitte	6	356
+5662	Sivaite	357	7		6				Sivaite	6	366	Sivaite	6	358	Sivaite	6	360	Sivaite	6	360	Sivaite	6	358	Sivaite	6	357
+5663	sixteenth	358	7		5				sixteenth	5	367	sixteenth	5	359	sixteenth	5	361	sixteenth	5	361	sixteenth	5	359	sizteenth	1	358
+5664	size	359	7		6				size	6	368	size	6	360	size	6	362	size	6	362	size	6	360	size	6	359
+5665	skate	360	7		6				skate	6	369	skate	6	361	skate	6	363	skate	6	363	skate	6	361	skate	6	360
+5666	skeer-devil	361	7		5				skeer-devil	5	370	skeer-devil	5	362	skeer-devil	5	364	skeer-devil	5	364	gkeer-devil	1	362	skeer-devil	5	361
+5667	skeleton	362	7		5				skeleton	5	371	skeleton	5	363		1	365	skeleton	5	365	skeleton	5	363	skeleton	5	362
+5668	Skene	363	7		6				Skene	6	372	Skene	6	364	Skene	6	366	Skene	6	366	Skene	6	364	Skene	6	363
+5669	sketch	364	7		6				sketch	6	373	sketch	6	365	sketch	6	367	sketch	6	367	sketch	6	365	sketch	6	364
+5670	skewer	365	7		6				skewer	6	374	skewer	6	366	skewer	6	368	skewer	6	368	skewer	6	366	skewer	6	365
+5671	skill	366	7		4				skill	4	375	skill	4	367	In	2	369	skill	4	369	In	2	367	skill	4	366
+5672	skimmer	367	7		6				skimmer	6	376	skimmer	6	368	skimmer	6	370	skimmer	6	370	skimmer	6	368	skimmer	6	367
+5673	skin	368	7		6				skin	6	377	skin	6	369	skin	6	371	skin	6	371	skin	6	369	skin	6	368
+5674	skinner	369	7		4				skinnei'	2	378	skinner	4	370	skinner	4	372	skinnei'	2	372	skinner	4	370	skinner	4	369
+5675	skipper	370	7		6				skipper	6	379	skipper	6	371	skipper	6	373	skipper	6	373	skipper	6	371	skipper	6	370
+5676	sklrret	371	7		3	weak			sklrret	3	380	skirret	2	372	skirret	2	374	sklrret	3	374	sUrret	1	372	sklrret	3	371
+5677	skittle	372	7		6				skittle	6	381	skittle	6	373	skittle	6	375	skittle	6	375	skittle	6	373	skittle	6	372
+5678	skulk	373	7		6				skulk	6	382	skulk	6	374	skulk	6	376	skulk	6	376	skulk	6	374	skulk	6	373
+5679	skullcap	374	7		6				skullcap	6	383	skullcap	6	375	skullcap	6	377	skullcap	6	377	skullcap	6	375	skullcap	6	374
+5680	sky-gazer	375	7		6				sky-gazer	6	384	sky-gazer	6	376	sky-gazer	6	378	sky-gazer	6	378	sky-gazer	6	376	sky-gazer	6	375
+5681	slab-line	376	7		6				slab-line	6	385	slab-line	6	377	slab-line	6	379	slab-line	6	379	slab-line	6	377	slab-line	6	376
+5682	slaer	377	7		6				slaer	6	386	slaer	6	378	slaer	6	380	slaer	6	380	slaer	6	378	slaer	6	377
+5683	slander	378	7		6				slander	6	387	slander	6	379	slander	6	381	slander	6	381	slander	6	379	slander	6	378
+5684	slang-whanger	379	7		5				slang-whanger	5	388	slang-whanger	5	380	slang-whanger	5	382	slang-whanger	5	382	Blang-whanger	1	380	slang-whanger	5	379
+5685	slash	380	7		5				slash	5	389	slash	5	381	slash	5	383	slasb	1	383	slash	5	381	slash	5	380
+5686	slate	381	7		5				slate	5	390	slate	5	382	slate	5	384	slate	5	384	i	1	382	slate	5	381
+5687	Slav	382	7		6				Slav	6	391	Slav	6	383	Slav	6	385	Slav	6	385	Slav	6	383	Slav	6	382
+5688	slavish	383	7		5				slavish	5	392	slavisli	1	384	slavish	5	386	slavish	5	386	slavish	5	384	slavish	5	383
+5689	sled	384	7		5				sled	5	393	sled	5	385	sled	5	387	sled	5	387	I	1	385	sled	5	384
+5690	sleeking	385	7		6				sleeking	6	394	sleeking	6	386	sleeking	6	388	sleeking	6	388	sleeking	6	386	sleeking	6	385
+5691	sleeper	386	7		6				sleeper	6	395	sleeper	6	387	sleeper	6	389	sleeper	6	389	sleeper	6	387	sleeper	6	386
+5692	sleeve	387	7		6				sleeve	6	396	sleeve	6	388	sleeve	6	390	sleeve	6	390	sleeve	6	388	sleeve	6	387
+5693	slender	388	7		6				slender	6	397	slender	6	389	slender	6	391	slender	6	391	slender	6	389	slender	6	388
+5694	slidable	389	7		5				slUUkr	1	398	slidable	5	390	slidable	5	392	slidable	5	392	slidable	5	390	slidable	5	389
+5695	slider	390	7		6				slider	6	399	slider	6	391	slider	6	393	slider	6	393	slider	6	391	slider	6	390
+5696	slight	391	7		6				slight	6	400	slight	6	392	slight	6	394	slight	6	394	slight	6	392	slight	6	391
+5697	sling	392	7		6				sling	6	401	sling	6	393	sling	6	395	sling	6	395	sling	6	393	sling	6	392
+5698	sUp	393	7		2	tie			sUp	2	402	sUp	2	394	slip	2	396	aUp	1	396	Ai	1	394	slip	2	393
+5699	slip-board	394	7		5				slip-board	5	403	slip-board	5	395	slip-board	5	397	slip-board	5	397	slip-board	5	395	Blip-board	1	394
+5700	slipslop	395	7		6				slipslop	6	404	slipslop	6	396	slipslop	6	398	slipslop	6	398	slipslop	6	396	slipslop	6	395
+5701	sliver	396	7		5				sliver	5	405	sliver	5	397	sliver	5	399	I	1	399	sliver	5	397	sliver	5	396
+5702	sloke	397	7		6				sloke	6	408	sloke	6	398	sloke	6	400	sloke	6	400	sloke	6	398	sloke	6	397
+5703	slopely	398	7		5				slopely	5	409	slopely	5	399	slopely	5	401	slopely	5	401	slopely	5	399	Blopely	1	398
+5704	Blotter	399	7		5				Blotter	5	410	Blotter	5	400	Blotter	5	402	Blotter	5	402	Knil	1	400	Blotter	5	399
+5705	slovenous	400	7		6				slovenous	6	411	slovenous	6	401	slovenous	6	403	slovenous	6	403	slovenous	6	401	slovenous	6	400
+5706	slubber	401	7		5				slnbber	1	412	slubber	5	402	slubber	5	404	slubber	5	404	slubber	5	402	slubber	5	401
+5707	sluggard	402	7		6				sluggard	6	413	sluggard	6	403	sluggard	6	405	sluggard	6	405	sluggard	6	403	sluggard	6	402
+5708	slumber	403	7		3	weak			slmuber	1	414	slmnber	1	404	slumber	3	406	slumber	3	406	slnmber	1	404	slumber	3	403
+5709	slur	404	7		5				and	1	415	slur	5	405	slur	5	407	slur	5	407	slur	5	405	slur	5	404
+5710	slype	405	7		5				slype	5	418	Blype	1	406	slype	5	408	slype	5	408	slype	5	406	slype	5	405
+5711	small	406	7		6				small	6	419	small	6	407	small	6	409	small	6	409	small	6	407	small	6	406
+5712	smaragd	407	7		6				smaragd	6	420	smaragd	6	408	smaragd	6	410	smaragd	6	410	smaragd	6	408	smaragd	6	407
+5713	smash	408	7		6				smash	6	421	smash	6	409	smash	6	411	smash	6	411	smash	6	409	smash	6	408
+5714	smede	409	7		6				smede	6	422	smede	6	410	smede	6	412	smede	6	412	smede	6	410	smede	6	409
+5715	smelt	410	7		6				smelt	6	423	smelt	6	411	smelt	6	413	smelt	6	413	smelt	6	411	smelt	6	410
+5716	Smilax	411	7		5				Smilaz	1	424	Smilax	5	412	Smilax	5	414	Smilax	5	414	Smilax	5	412	Smilax	5	411
+5717	smitch	412	7		4				smitch	4	425	smitch	4	413	smitch	4	415	amitcli	1	415	smltch	1	413	smitch	4	412
+5718	smock	413	7		5				smock	5	426	smock	5	414	smock	5	416	smock	5	416	gtnockt	1	414	smock	5	413
+5719	smoke-dry	414	7		4				smoke-dry	4	427	the	1	415	smoke-dry	4	417	contracted	1	417	smoke-dry	4	415	smoke-dry	4	414
+5720	smolder	415	7		6				smolder	6	428	smolder	6	416	smolder	6	418	smolder	6	418	smolder	6	416	smolder	6	415
+5721	smoother	416	7		5				smoother	5	429	smoother	5	417	smoother	5	419	smoother	5	419	smoother	5	417	Bmoother	1	416
+5722	smudge	417	7		6				smudge	6	430	smudge	6	418	smudge	6	420	smudge	6	420	smudge	6	418	smudge	6	417
+5723	smutch	418	7		5				smutch	5	431	smutch	5	419	smutch	5	421	smutch	5	421	smntch	1	419	smutch	5	418
+5724	snaggy	419	7		6				snaggy	6	432	snaggy	6	420	snaggy	6	422	snaggy	6	422	snaggy	6	420	snaggy	6	419
+5725	snake	420	7		6				snake	6	433	snake	6	421	snake	6	423	snake	6	423	snake	6	421	snake	6	420
+5726	Snakestonc	421	7		1	tie			Snakcstone	1	434	Snakestonc	1	422	Snakestone	1	424	snako's-head	1	424	Siiakcstonc	1	422	Snakeatone	1	421
+5727	snap-back	422	7		6				snap-back	6	435	snap-back	6	423	snap-back	6	425	snap-back	6	425	snap-back	6	423	snap-back	6	422
+5728	snare	423	7		5				snare	5	436	snare	5	424	tsnare	1	426	snare	5	426	snare	5	424	snare	5	423
+5729	snatching-roUer	424	7		3	weak			snatching-roUer	3	437	snatcMng-roller	1	425	snatching-roller	1	427	snatcMng-roUer	1	427	snatching-roUer	3	425	snatching-roUer	3	424
+5730	sneer	425	7		6				sneer	6	438	sneer	6	426	sneer	6	428	sneer	6	428	sneer	6	426	sneer	6	425
+5731	sniff	426	7		6				sniff	6	439	sniff	6	427	sniff	6	429	sniff	6	429	sniff	6	427	sniff	6	426
+5732	snipe	427	7		4				smpe	2	440	snipe	4	428	smpe	2	430	snipe	4	430	snipe	4	428	snipe	4	427
+5733	snobbism	428	7		6				snobbism	6	441	snobbism	6	429	snobbism	6	431	snobbism	6	431	snobbism	6	429	snobbism	6	428
+5734	Snotter	429	7		4				Snotter	4	442	snotter	1	430	Snotter	4	432	Snotter	4	432	Snolter	1	430	Snotter	4	429
+5735	snowbird	430	7		3	weak			Snowbird	2	443	snowbird	3	431	snowbird	3	433	snowbird	3	433	Snowbirvl	1	431	Snowbird	2	430
+5736	snowlike	431	7		4				snowlike	4	444	snowlike	4	432	Re-	1	434	snowlike	4	434	BnowUke	1	432	snowlike	4	431
+5737	snub	432	7		6				snub	6	445	snub	6	433	snub	6	435	snub	6	435	snub	6	433	snub	6	432
+5738	snuff	433	7		6				snuff	6	446	snuff	6	434	snuff	6	436	snuff	6	436	snuff	6	434	snuff	6	433
+5739	snuggle	434	7		5				snuggle	5	447	snuggle	5	435	snuggle	5	437	snuggle	5	437	I	1	435	snuggle	5	434
+5740	so	435	7		2	tie			Tbou	2	448	BO	1	436	Tbou	2	438	so	2	438	Thou	1	436	so	2	435
+5741	soap	436	7		6				soap	6	449	soap	6	437	soap	6	439	soap	6	439	soap	6	437	soap	6	436
+5742	soaproot	437	7		5				A	1	450	soaproot	5	438	soaproot	5	440	soaproot	5	440	soaproot	5	438	soaproot	5	437
+5743	sober	438	7		6				sober	6	451	sober	6	439	sober	6	441	sober	6	441	sober	6	439	sober	6	438
+5744	sociable	439	7		6				sociable	6	452	sociable	6	440	sociable	6	442	sociable	6	442	sociable	6	440	sociable	6	439
+5745	society	440	7		6				society	6	453	society	6	441	society	6	443	society	6	443	society	6	441	society	6	440
+5746	socket	441	7		6				socket	6	454	socket	6	442	socket	6	444	socket	6	444	socket	6	442	socket	6	441
+5747	soda-alum	442	7		4				soda-alum	4	455	soda-alum	4	443	soda-almn	1	445	soda-alum	4	445	soda-alum	4	443	soda-almu	1	442
+5748	sofa	443	7		4				sofa	4	456	sofa	4	444	Soffits	1	446	BOfit	1	446	sofa	4	444	sofa	4	443
+5749	softener	444	7		6				softener	6	457	softener	6	445	softener	6	447	softener	6	447	softener	6	445	softener	6	444
+5750	soil	445	7		5				soil	5	458	soil	5	446	soil	5	448	soil	5	448	BOU	1	446	soil	5	445
+5751	sol	446	7		5				sol	5	459	sol	5	447	sol	5	449	Ml	1	449	sol	5	447	sol	5	446
+5752	Solanum	447	7		3	weak			Solanum	3	460	Solanum	3	448	Solanum	3	450	Solanmn	1	450	Solan	1	448	Solannm	1	447
+5753	Sun-Star	448	7		3	weak			Suii'Star	1	461	Sun-Star	3	449	solary	2	451	Sun-Star	3	451	solary	2	449	Sun-Star	3	448
+5754	soldier	449	7		6				soldier	6	462	soldier	6	450	soldier	6	452	soldier	6	452	soldier	6	450	soldier	6	449
+5755	sole	450	7		6				sole	6	463	sole	6	451	sole	6	453	sole	6	453	sole	6	451	sole	6	450
+5756	solemn	451	7		6				solemn	6	464	solemn	6	452	solemn	6	454	solemn	6	454	solemn	6	452	solemn	6	451
+5757	Solenoglypha	452	7		5				Solenoglypha	5	465	Solenoglyplia	1	453	Solenoglypha	5	455	Solenoglypha	5	455	Solenoglypha	5	453	Solenoglypha	5	452
+5758	solicit	453	7		6				solicit	6	466	solicit	6	454	solicit	6	456	solicit	6	456	solicit	6	454	solicit	6	453
+5759	solid	454	7		5				solid	5	467	solid	5	455	solid	5	457	BoUd	1	457	solid	5	455	solid	5	454
+5760	Solidago	455	7		6				Solidago	6	468	Solidago	6	456	Solidago	6	458	Solidago	6	458	Solidago	6	456	Solidago	6	455
+5761	soliloquize	456	7		3	weak			solilocLnize	1	469	solilocLuize	1	457	soliloquize	3	459	soliloaaize	1	459	soliloquize	3	457	soliloquize	3	456
+5762	solitude	457	7		5				solitude	5	470	solitude	5	458	solitude	5	460	solitude	5	460	I	1	458	solitude	5	457
+5763	solsticion	458	7		4				solsticioii	1	471	solsticion	4	459	solsticion	4	461	solsticion	4	461	solsticion	4	459	Bolsticion	1	458
+5764	solutive	459	7		4				solutive	4	472	solutive	4	460	solutive	4	462	solutive	4	462	BOlutlve	1	460	Bolutive	1	459
+5765	somatome	460	7		6				somatome	6	473	somatome	6	461	somatome	6	463	somatome	6	463	somatome	6	461	somatome	6	460
+5766	some	461	7		5				some	5	474	some	5	462	u	1	464	some	5	464	some	5	462	some	5	461
+5767	somewhither	462	7		6				somewhither	6	475	somewhither	6	463	somewhither	6	465	somewhither	6	465	somewhither	6	463	somewhither	6	462
+5768	somonannce	463	7		2	tie			somonaonce	1	476	somonattnce	1	464	somonaunce	2	466	somonannce	2	466	somonannce	2	464	somonaunce	2	463
+5769	song	464	7		5				song	5	477	song	5	465	song	5	467	Bong	1	467	song	5	465	song	5	464
+5770	sonometer	465	7		5				sonometer	5	478	sonometer	5	466	u	1	468	sonometer	5	468	sonometer	5	466	sonometer	5	465
+5771	sooth	466	7		6				sooth	6	479	sooth	6	467	sooth	6	469	sooth	6	469	sooth	6	467	sooth	6	466
+5772	soothsayer	467	7		6				soothsayer	6	480	soothsayer	6	468	soothsayer	6	470	soothsayer	6	470	soothsayer	6	468	soothsayer	6	467
+5773	sophister	468	7		6				sophister	6	481	sophister	6	469	sophister	6	471	sophister	6	471	sophister	6	469	sophister	6	468
+5774	Sophora	469	7		5				Sopbora	1	482	Sophora	5	470	Sophora	5	472	Sophora	5	472	Sophora	5	470	Sophora	5	469
+5775	sorbition	470	7		4				sorbition	4	483	sorbition	4	471	a	1	473	sorbitdon	1	473	sorbition	4	471	sorbition	4	470
+5776	sore	471	7		6				sore	6	484	sore	6	472	sore	6	474	sore	6	474	sore	6	472	sore	6	471
+5777	Soricidse	472	7		2	tie			Soricidae	2	485	Soricident	1	473	Soricidse	2	475	Soricidse	2	475	Soricidx	1	473	Soricidae	2	472
+5778	sorrow	473	7		6				sorrow	6	486	sorrow	6	474	sorrow	6	476	sorrow	6	476	sorrow	6	474	sorrow	6	473
+5779	sort	474	7		6				sort	6	487	sort	6	475	sort	6	477	sort	6	477	sort	6	475	sort	6	474
+5780	soss	475	7		2	tie			To	2	488	soss	2	476	A	1	478	To	2	478	BOSS	1	476	soss	2	475
+5781	souder	476	7		3	tie			souder	3	489	souder	3	477	sonder	3	479	sonder	3	479	souder	3	477	sonder	3	476
+5782	Soulamea	477	7		6				Soulamea	6	490	Soulamea	6	478	Soulamea	6	480	Soulamea	6	480	Soulamea	6	478	Soulamea	6	477
+5783	sound	478	7		6				sound	6	491	sound	6	479	sound	6	481	sound	6	481	sound	6	479	sound	6	478
+5784	sound	479	7		4				sotuid	1	492	sound	4	480	sound	4	482	sound	4	482	To	1	480	sound	4	479
+5785	soup	480	7		4				sonp	1	493	soup	4	481	soup	4	483	soap	1	483	soup	4	481	soup	4	480
+5786	sous	481	7		6				sous	6	494	sous	6	482	sous	6	484	sous	6	484	sous	6	482	sous	6	481
+5787	South	482	7		5				South	5	495	South	5	483	South	5	485	South	5	485	South	5	483	more	1	482
+5788	southwardly	483	7		6				southwardly	6	496	southwardly	6	484	southwardly	6	486	southwardly	6	486	southwardly	6	484	southwardly	6	483
+5789	sovereignty	484	7		6				sovereignty	6	497	sovereignty	6	485	sovereignty	6	487	sovereignty	6	487	sovereignty	6	485	sovereignty	6	484
+5790	sow-thistle	485	7		3	weak			Sow-lhistle	1	498	Sow-thistle	2	486	sow-thistle	3	488	Sow-thistle	2	488	sow-thistle	3	486	sow-thistle	3	485
+5791	space	486	7		5				space	5	499	On	1	487	space	5	489	space	5	489	space	5	487	space	5	486
+5792	spade-guinea	487	7		3	weak			spade-gviinea	1	500	spade-gtiinea	1	488	spade-guinea	3	490	spade-gninea	1	490	spade-guinea	3	488	spade-guinea	3	487
+5793	spale	488	7		6				spale	6	501	spale	6	489	spale	6	491	spale	6	491	spale	6	489	spale	6	488
+5794	spane	489	7		5				spane	5	502	spane	5	490	spane	5	492	Spanish	1	492	spane	5	490	spane	5	489
+5795	Spanish	490	7		6				Spanish	6	503	Spanish	6	491	Spanish	6	493	Spanish	6	493	Spanish	6	491	Spanish	6	490
+5796	spar	491	7		6				spar	6	504	spar	6	492	spar	6	494	spar	6	494	spar	6	492	spar	6	491
+5797	Sparganium	492	7		4				Sparganium	4	505	Sparganium	4	493	Sparganium	4	495	Sparganium	4	495	Spaxganium	2	493	Spaxganium	2	492
+5798	sparkle	493	7		6				sparkle	6	506	sparkle	6	494	sparkle	6	496	sparkle	6	496	sparkle	6	494	sparkle	6	493
+5799	sparrow-hawk	494	7		6				sparrow-hawk	6	507	sparrow-hawk	6	495	sparrow-hawk	6	497	sparrow-hawk	6	497	sparrow-hawk	6	495	sparrow-hawk	6	494
+5800	spasm	495	7		5				spasm	5	508	spasm	5	496	spasm	5	498	spasm	5	498	spate-bone	1	496	spasm	5	495
+5801	spatha	496	7		6				spatha	6	509	spatha	6	497	spatha	6	499	spatha	6	499	spatha	6	497	spatha	6	496
+5802	spatulamancy	497	7		4				spatulamancy	4	510	spatulamancy	4	498	spatulamancy	4	500	spatnlamancy	2	500	spatnlamancy	2	498	spatulamancy	4	497
+5803	spawning-screen	498	7		6				spawning-screen	6	511	spawning-screen	6	499	spawning-screen	6	501	spawning-screen	6	501	spawning-screen	6	499	spawning-screen	6	498
+5804	speaker	499	7		6				speaker	6	512	speaker	6	500	speaker	6	502	speaker	6	502	speaker	6	500	speaker	6	499
+5805	spearmint	500	7		4				speanuint	1	513	spearmint	4	501	speannlnt	1	503	spearmint	4	503	spearmint	4	501	spearmint	4	500
+5806	specialize	501	7		6				specialize	6	514	specialize	6	502	specialize	6	504	specialize	6	504	specialize	6	502	specialize	6	501
+5807	species	502	7		6				species	6	515	species	6	503	species	6	505	species	6	505	species	6	503	species	6	502
+5808	specify	503	7		6				specify	6	516	specify	6	504	specify	6	506	specify	6	506	specify	6	504	specify	6	503
+5809	speckless	504	7		6				speckless	6	517	speckless	6	505	speckless	6	507	speckless	6	507	speckless	6	505	speckless	6	504
+5810	spectatorial	505	7		6				spectatorial	6	518	spectatorial	6	506	spectatorial	6	508	spectatorial	6	508	spectatorial	6	506	spectatorial	6	505
+5811	spectroscope	506	7		6				spectroscope	6	519	spectroscope	6	507	spectroscope	6	509	spectroscope	6	509	spectroscope	6	507	spectroscope	6	506
+5812	specular	507	7		6				specular	6	520	specular	6	508	specular	6	510	specular	6	510	specular	6	508	specular	6	507
+5813	speculum	508	7		5				speculum	5	521	speculum	5	509	speculum	5	511	speculum	5	511	speculnin	1	509	speculum	5	508
+5814	speed	509	7		2	weak			Hart	1	522	speed-	1	510	speed	2	512	ilart	1	512	at	1	510	speed	2	509
+5815	speer	510	7		6				speer	6	523	speer	6	511	speer	6	513	speer	6	513	speer	6	511	speer	6	510
+5816	spell	511	7		6				spell	6	524	spell	6	512	spell	6	514	spell	6	514	spell	6	512	spell	6	511
+5817	spency	512	7		5				The	1	525	spency	5	513	spency	5	515	spency	5	515	spency	5	513	spency	5	512
+5818	Spergularia	513	7		5				Spergularia	5	526	SpergTilaria	1	514	Spergularia	5	516	Spergularia	5	516	Spergularia	5	514	Spergularia	5	513
+5819	spermatogemma	514	7		3	weak			spermatogenmia	1	527	spermatogemma	3	515	spermatogenuna	1	517	spermatogemma	3	517	spermatogeiuma	1	515	spermatogemma	3	514
+5820	sperm-momla	515	7		3	weak			sperm-momla	3	528	sperm-momla	3	516	sperm-morula	1	518	sperm-morala	1	518	Bperm-momla	1	516	sperm-momla	3	515
+5821	spermule	516	7		4				spermule	4	529	spermule	4	517	spermule	4	519	spermnle	1	519	spermale	1	517	spermule	4	516
+5822	sphaeridium	517	7		2	weak			sphaeridium	2	530	sphaeridium	2	518	sphsTidium	1	520	sphxridinin	1	520	sphxridium	1	518	Bphsridium	1	517
+5823	Sphecius	518	7		4				Sphecius	4	531	Sphecius	4	519	Sphecius	4	521	Sphecins	1	521	SpheciuB	1	519	Sphecius	4	518
+5824	Human	519	7		3	weak			froir	1	532	Human	3	520	sphenographist	1	522	Human	3	522	Muiiwin	1	520	Human	3	519
+5825	Sphenozamites	520	7		6				Sphenozamites	6	533	Sphenozamites	6	521	Sphenozamites	6	523	Sphenozamites	6	523	Sphenozamites	6	521	Sphenozamites	6	520
+5826	spherical	521	7		6				spherical	6	534	spherical	6	522	spherical	6	524	spherical	6	524	spherical	6	522	spherical	6	521
+5827	Sphindus	522	7		5				SpUndns	1	535	Sphindus	5	523	Sphindus	5	525	Sphindus	5	525	Sphindus	5	523	Sphindus	5	522
+5828	sphygmograph	523	7		4				sphygmograph	4	536	sphygmograph	4	524	sphygmograph	4	526	spliygmograph	1	526	spbygmograpb	1	524	sphygmograph	4	523
+5829	spiced	524	7		6				spiced	6	537	spiced	6	525	spiced	6	527	spiced	6	527	spiced	6	525	spiced	6	524
+5830	spicy	525	7		6				spicy	6	538	spicy	6	526	spicy	6	528	spicy	6	528	spicy	6	526	spicy	6	525
+5831	spider-wasp	526	7		6				spider-wasp	6	539	spider-wasp	6	527	spider-wasp	6	529	spider-wasp	6	529	spider-wasp	6	527	spider-wasp	6	526
+5832	Spikenard	527	7		4				spikenard	2	540	Spikenard	4	528	Spikenard	4	530	Spikenard	4	530	spikenard	2	528	Spikenard	4	527
+5833	spiller	528	7		5				spiller	5	541	spiller	5	529	spiller	5	531	LilUe	1	531	spiller	5	529	spiller	5	528
+5834	spin	529	7		6				spin	6	542	spin	6	530	spin	6	532	spin	6	532	spin	6	530	spin	6	529
+5835	Spinas	530	7		2	tie			Spinax	2	543	Spinas	2	531	Spinas	2	533	Spinaz	2	533	Spinax	2	531	Spinaz	2	530
+5836	spine	531	7		5				spine	5	544	spine	5	532	Palatine	1	534	spine	5	534	spine	5	532	spine	5	531
+5837	spinner	532	7		6				spinner	6	545	spinner	6	533	spinner	6	535	spinner	6	535	spinner	6	533	spinner	6	532
+5838	spinster	533	7		6				spinster	6	546	spinster	6	534	spinster	6	536	spinster	6	536	spinster	6	534	spinster	6	533
+5839	Flat	534	7		5				Spiral	1	547	Flat	5	535	Flat	5	537	Flat	5	537	Flat	5	535	Flat	5	534
+5840	spire	535	7		3	tie			Spire	3	548	spire	3	536	spire	3	538	Spire	3	538	spire	3	536	Spire	3	535
+5841	spirit	536	7		6				spirit	6	549	spirit	6	537	spirit	6	539	spirit	6	539	spirit	6	537	spirit	6	536
+5842	spiritless	537	7		6				spiritless	6	550	spiritless	6	538	spiritless	6	540	spiritless	6	540	spiritless	6	538	spiritless	6	537
+5843	spirituous	538	7		3	weak			spirituous	3	551	spirituous	3	539	spirltuoos	1	541	spintuoos	1	541	nnil	1	539	spirituous	3	538
+5844	spit	539	7		6				spit	6	552	spit	6	540	spit	6	542	spit	6	542	spit	6	540	spit	6	539
+5845	spitted	540	7		5				spitted	5	553	spitted	5	541	spitted	5	543	spitted	5	543	spitted	5	541	spilited	1	540
+5846	splash	541	7		6				splash	6	556	splash	6	542	splash	6	544	splash	6	544	splash	6	542	splash	6	541
+5847	spleenwort	542	7		6				spleenwort	6	557	spleenwort	6	543	spleenwort	6	545	spleenwort	6	545	spleenwort	6	543	spleenwort	6	542
+5848	splenological	543	7		6				splenological	6	558	splenological	6	544	splenological	6	546	splenological	6	546	splenological	6	544	splenological	6	543
+5849	split	544	7		6				split	6	559	split	6	545	split	6	547	split	6	547	split	6	545	split	6	544
+5850	spodomantic	545	7		5				spodomantic	5	562	spodomantlc	1	546	spodomantic	5	548	spodomantic	5	548	spodomantic	5	546	spodomantic	5	545
+5851	spoke-shave	546	7		5				spoke-shave	5	563	spoke-shave	5	547	spoke-shave	5	549	spoke-	1	549	spoke-shave	5	547	spoke-shave	5	546
+5852	Spondylus	547	7		3	weak			Spondylus	3	564	Spondylus	3	548	Spondylus	3	550	SpondyliLS	1	550	WW'	1	548	Spondylns	1	547
+5853	sponge-spicule	548	7		4				sponge-spicnle	1	565	sponge-spicule	4	549	Bponge-spicule	1	551	sponge-spicule	4	551	sponge-spicule	4	549	sponge-spicule	4	548
+5854	spongy	549	7		6				spongy	6	566	spongy	6	550	spongy	6	552	spongy	6	552	spongy	6	550	spongy	6	549
+5855	spoon	550	7		4				spoon	4	567	spoon	4	551	spoon	4	553	The	2	553	spoon	4	551	The	2	550
+5856	Of	551	7		5				Of	5	568	Of	5	552	sporation	1	554	Of	5	554	Of	5	552	Of	5	551
+5857	sporophydium	552	7		2	tie			sporopbydium	2	569	sporophydium	2	553	spoiophydium	1	555	sporophydium	2	555	sporopbydium	2	553	sporophyditim	1	552
+5858	sportive	553	7		6				sportive	6	570	sportive	6	554	sportive	6	556	sportive	6	556	sportive	6	554	sportive	6	553
+5859	spotted	554	7		5				spotted	5	571	i	1	555	spotted	5	557	spotted	5	557	spotted	5	555	spotted	5	554
+5860	spradde	555	7		5				spradde	5	572	spradde	5	556	Bpradde	1	558	spradde	5	558	spradde	5	556	spradde	5	555
+5861	sprayer	556	7		6				sprayer	6	573	sprayer	6	557	sprayer	6	559	sprayer	6	559	sprayer	6	557	sprayer	6	556
+5862	spreader	557	7		5				spreader	5	574	spreader	5	558	cause	1	560	spreader	5	560	spreader	5	558	spreader	5	557
+5863	spring	558	7		5				sprmg	1	575	spring	5	559	spring	5	561	spring	5	561	spring	5	559	spring	5	558
+5864	spring	559	7		5				spnng	1	576	spring	5	560	spring	5	562	spring	5	562	spring	5	560	spring	5	559
+5865	springe	560	7		6				springe	6	577	springe	6	561	springe	6	563	springe	6	563	springe	6	561	springe	6	560
+5866	Degteria	561	7		2	weak			spring-stud	1	578	Dfgeeria	1	562	Degteria	2	564	Degteria	2	564	Dfgttria	1	562	a	1	561
+5867	sprite	562	7		6				sprite	6	579	sprite	6	563	sprite	6	565	sprite	6	565	sprite	6	563	sprite	6	562
+5868	with	563	7		3	weak			with	3	580	or	1	564	spruce	1	566	with	3	566	spmce	1	564	with	3	563
+5869	spuilzie	564	7		4				spnilzie	1	581	spuilzie	4	565	spuilzie	4	567	spoilzie	1	567	spuilzie	4	565	spuilzie	4	564
+5870	spur	565	7		5				spur	5	582	spur	5	566	spur	5	568	spur	5	568	spnr	1	566	spur	5	565
+5871	spurn	566	7		6				spurn	6	583	spurn	6	567	spurn	6	569	spurn	6	569	spurn	6	567	spurn	6	566
+5872	spur-winged	567	7		5				spur-winged	5	584	spur-winged	5	568	spur-winged	5	570	spur-winged	5	570	spur-wlnKed	1	568	spur-winged	5	567
+5873	squab	568	7		4				squab	4	585	squab	4	569	squab	4	571	aqnab	1	571	squab	4	569	SQuab	1	568
+5874	squalid	569	7		2	weak			sqaalid	1	586	a	1	570	squalid	2	572	SQualid	1	572	squalid	2	570	or	1	569
+5875	Squamipinnes	570	7		4				Squamipinnes	4	587	Squamipinnes	4	571	Squamipinnes	4	573	Sqaamipinnes	1	573	Squamipinnes	4	571	Sauamipinnes	1	570
+5876	square	571	7		4				square	4	588	square	4	572	square	4	574	BQTiare	1	574	square	4	572	scLuare	1	571
+5877	square	572	7		6				square	6	589	square	6	573	square	6	575	square	6	575	square	6	573	square	6	572
+5878	squash	573	7		3	weak			squash	3	590	squash	3	574	sctuash	1	576	sduasli	1	576	squash	3	574	coactare	1	573
+5879	squattocracy	574	7		5				squattocracy	5	591	sctuattocracy	1	575	squattocracy	5	577	squattocracy	5	577	squattocracy	5	575	squattocracy	5	574
+5880	squeeze	575	7		5				squeeze	5	592	squeeze	5	576	squeeze	5	578	squeeze	5	578	squeeze	5	576	scLueeze	1	575
+5881	squid	576	7		3	weak			sqnid	1	593	SQUid	1	577	squid	3	579	BQUid	1	579	squid	3	577	squid	3	576
+5882	squint	577	7		5				squint	5	594	squint	5	578	squint	5	580	saoint	1	580	squint	5	578	squint	5	577
+5883	Same	578	7		2	weak			S'	1	595	Same	2	579	Squirrel-ha	1	581	SquuTCl	1	581	Squirrel	1	579	Same	2	578
+5884	stabilitate	579	7		6				stabilitate	6	596	stabilitate	6	580	stabilitate	6	582	stabilitate	6	582	stabilitate	6	580	stabilitate	6	579
+5885	Stachydeae	580	7		3	weak			Stachydeae	3	597	Stactaydeae	1	581	Stachydeae	3	583	Stacliydese	1	583	Stachydeae	3	581	Stachydese	1	580
+5886	stadholder	581	7		5				stadholder	5	598	stadholder	5	582	stadholder	5	584	stadholder	5	584	Btadholder	1	582	stadholder	5	581
+5887	staff	582	7		6				staff	6	599	staff	6	583	staff	6	585	staff	6	585	staff	6	583	staff	6	582
+5888	stage	583	7		6				stage	6	600	stage	6	584	stage	6	586	stage	6	586	stage	6	584	stage	6	583
+5889	stagger	584	7		6				stagger	6	601	stagger	6	585	stagger	6	587	stagger	6	587	stagger	6	585	stagger	6	584
+5890	Stahlianism	585	7		6				Stahlianism	6	602	Stahlianism	6	586	Stahlianism	6	588	Stahlianism	6	588	Stahlianism	6	586	Stahlianism	6	585
+5891	stake	586	7		6				stake	6	603	stake	6	587	stake	6	589	stake	6	589	stake	6	587	stake	6	586
+5892	stale	587	7		6				stale	6	604	stale	6	588	stale	6	590	stale	6	590	stale	6	588	stale	6	587
+5893	stalkoes	588	7		6				stalkoes	6	605	stalkoes	6	589	stalkoes	6	591	stalkoes	6	591	stalkoes	6	589	stalkoes	6	588
+5894	stallman	589	7		6				stallman	6	606	stallman	6	590	stallman	6	592	stallman	6	592	stallman	6	590	stallman	6	589
+5895	stamin	590	7		6				stamin	6	607	stamin	6	591	stamin	6	593	stamin	6	593	stamin	6	591	stamin	6	590
+5896	stamp	591	7		5				stamp	5	608	stamp	5	592	the	1	594	stamp	5	594	stamp	5	592	stamp	5	591
+5897	stamp-mill	592	7		5				stamp-mill	5	609	stamp-mill	5	593	stamp-mill	5	595	I	1	595	stamp-mill	5	593	stamp-mill	5	592
+5898	stand	593	7		6				stand	6	610	stand	6	594	stand	6	596	stand	6	596	stand	6	594	stand	6	593
+5899	stand	594	7		6				stand	6	611	stand	6	595	stand	6	597	stand	6	597	stand	6	595	stand	6	594
+5900	stand	595	7		6				stand	6	612	stand	6	596	stand	6	598	stand	6	598	stand	6	596	stand	6	595
+5901	standard-bearer	596	7		6				standard-bearer	6	613	standard-bearer	6	597	standard-bearer	6	599	standard-bearer	6	599	standard-bearer	6	597	standard-bearer	6	596
+5902	stand-offishness	597	7		5				stand-offishness	5	614	stand-offishness	5	598	stand-offishness	5	600	stand-offishness	5	600	stand-offishness	5	598	stand-offislmess	1	597
+5903	stannery	598	7		5				stannery	5	615	stannery	5	599	stannery	5	601	Btannery	1	601	stannery	5	599	stannery	5	598
+5904	Staphylinus	599	7		3	weak			Staphylinus	3	616	Staphylinns	1	600	Staphylinus	3	602	Staphyllnns	1	602	Staphylinus	3	600	Staphyliims	1	599
+5905	star	600	7		5				star	5	617	star	5	601	star	5	603	star	5	603	stax	1	601	star	5	600
+5906	star-capsicum	601	7		6				star-capsicum	6	618	star-capsicum	6	602	star-capsicum	6	604	star-capsicum	6	604	star-capsicum	6	602	star-capsicum	6	601
+5907	stare	602	7		5				stare	5	619	stare	5	603	stare	5	605	stare	5	605	together	1	603	stare	5	602
+5908	stark	603	7		6				stark	6	620	stark	6	604	stark	6	606	stark	6	606	stark	6	604	stark	6	603
+5909	star-read	604	7		6				star-read	6	621	star-read	6	605	star-read	6	607	star-read	6	607	star-read	6	605	star-read	6	604
+5910	start	605	7		6				start	6	622	start	6	606	start	6	608	start	6	608	start	6	606	start	6	605
+5911	starve	606	7		6				starve	6	623	starve	6	607	starve	6	609	starve	6	609	starve	6	607	starve	6	606
+5912	state	607	7		6				state	6	624	state	6	608	state	6	610	state	6	610	state	6	608	state	6	607
+5913	stateswoman	608	7		5				stateswoman	5	625	stateswoman	5	609	stateswoman	5	611	i	1	611	stateswoman	5	609	stateswoman	5	608
+5914	stationer	609	7		6				stationer	6	626	stationer	6	610	stationer	6	612	stationer	6	612	stationer	6	610	stationer	6	609
+5915	statuminate	610	7		5				statuminate	5	627	statuminate	5	611	statuminate	5	613	statuminate	5	613	statuminate	5	611	statiuninate	1	610
+5916	statuvolism	611	7		4				statuvolism	4	628	statuvolism	4	612	statuvolism	4	614	Btatuvolism	1	614	statuvolism	4	612	statuTolism	1	611
+5917	stay	612	7		5				stay	5	629	stay	5	613	stay	5	615	stey	1	615	stay	5	613	stay	5	612
+5918	stay-rod	613	7		6				stay-rod	6	630	stay-rod	6	614	stay-rod	6	616	stay-rod	6	616	stay-rod	6	614	stay-rod	6	613
+5919	steak	614	7		6				steak	6	631	steak	6	615	steak	6	617	steak	6	617	steak	6	615	steak	6	614
+5920	steam	615	7		6				steam	6	632	steam	6	616	steam	6	618	steam	6	618	steam	6	616	steam	6	615
+5921	steam-engine	616	7		6				steam-engine	6	633	steam-engine	6	617	steam-engine	6	619	steam-engine	6	619	steam-engine	6	617	steam-engine	6	616
+5922	steam-kettle	617	7		6				steam-kettle	6	634	steam-kettle	6	618	steam-kettle	6	620	steam-kettle	6	620	steam-kettle	6	618	steam-kettle	6	617
+5923	steatornithine	618	7		4				steatornitMne	1	635	steatornithine	4	619	steatornithine	4	621	steatornithine	4	621	steatornithine	4	619	steatornithme	1	618
+5924	steel	619	7		6				steel	6	636	steel	6	620	steel	6	622	steel	6	622	steel	6	620	steel	6	619
+5925	steenbok	620	7		6				steenbok	6	637	steenbok	6	621	steenbok	6	623	steenbok	6	623	steenbok	6	621	steenbok	6	620
+5926	steepness	621	7		6				steepness	6	638	steepness	6	622	steepness	6	624	steepness	6	624	steepness	6	622	steepness	6	621
+5927	steersman	622	7		5				Under	1	639	steersman	5	623	steersman	5	625	steersman	5	625	steersman	5	623	steersman	5	622
+5928	stele	623	7		6				stele	6	640	stele	6	624	stele	6	626	stele	6	626	stele	6	624	stele	6	623
+5929	stelochite	624	7		5				practice	1	641	stelochite	5	625	stelochite	5	627	stelochite	5	627	stelochite	5	625	stelochite	5	624
+5930	Stemodia	625	7		6				Stemodia	6	642	Stemodia	6	626	Stemodia	6	628	Stemodia	6	628	Stemodia	6	626	Stemodia	6	625
+5931	stenographically	626	7		4				stenographically	4	643	stenograpMcally	1	627	stenographically	4	629	stenographically	4	629	stenographically	4	627	In	1	626
+5932	step	627	7		6				step	6	644	step	6	628	step	6	630	step	6	630	step	6	628	step	6	627
+5933	Stephanie	628	7		6				Stephanie	6	645	Stephanie	6	629	Stephanie	6	631	Stephanie	6	631	Stephanie	6	629	Stephanie	6	628
+5934	stercoral	629	7		6				stercoral	6	646	stercoral	6	630	stercoral	6	632	stercoral	6	632	stercoral	6	630	stercoral	6	629
+5935	stereographic	630	7		4				Btereographic	1	647	stereographic	4	631	stereographic	4	633	stereograpUc	1	633	stereographic	4	631	stereographic	4	630
+5936	stereotypery	631	7		5				stereotypery	5	648	stereotypery	5	632	stereotypery	5	634	storeotypery	1	634	stereotypery	5	632	stereotypery	5	631
+5937	stem	632	7		6				stem	6	649	stem	6	633	stem	6	635	stem	6	635	stem	6	633	stem	6	632
+5938	Sterninae	633	7		2	weak			Sterninae	2	650	Sternins	1	634	Sterninae	2	636	Sterninse	1	636	Sternlnse	1	634	Steminse	1	633
+5939	stemoxine	634	7		2	tie			sternoxine	1	651	stemoxine	2	635	stemozine	2	637	stemozme	1	637	stemoxine	2	635	stemozine	2	634
+5940	stethoscopic	635	7		5				stethoscopic	5	652	stethoBcopic	1	636	stethoscopic	5	638	stethoscopic	5	638	stethoscopic	5	636	stethoscopic	5	635
+5941	steward	636	7		6				steward	6	653	steward	6	637	steward	6	639	steward	6	639	steward	6	637	steward	6	636
+5942	stick	637	7		6				stick	6	654	stick	6	638	stick	6	640	stick	6	640	stick	6	638	stick	6	637
+5943	stick	638	7		4				The	1	655	stick	4	639	stick	4	641	stick	4	641	stick	4	639	it	1	638
+5944	Nest	639	7		5				Nest	5	656	Nest	5	640	Another	1	642	Nest	5	642	Nest	5	640	Nest	5	639
+5945	stiffen	640	7		6				stiffen	6	657	stiffen	6	641	stiffen	6	643	stiffen	6	643	stiffen	6	641	stiffen	6	640
+5946	Stigmaria	641	7		6				Stigmaria	6	658	Stigmaria	6	642	Stigmaria	6	644	Stigmaria	6	644	Stigmaria	6	642	Stigmaria	6	641
+5947	still	642	7		5				still	5	659	still	5	643	still	5	645	still	5	645	still	5	643	stUl	1	642
+5948	stilpnomelane	643	7		5				Btilpnomelane	1	660	stilpnomelane	5	644	stilpnomelane	5	646	stilpnomelane	5	646	stilpnomelane	5	644	stilpnomelane	5	643
+5949	stimulus	644	7		5				stimnlus	1	661	stimulus	5	645	stimulus	5	647	stimulus	5	647	stimulus	5	645	stimulus	5	644
+5950	stingy	645	7		6				stingy	6	662	stingy	6	646	stingy	6	648	stingy	6	648	stingy	6	646	stingy	6	645
+5951	stint	646	7		5				stint	5	663	stint	5	647	section	1	649	stint	5	649	stint	5	647	stint	5	646
+5952	stipular	647	7		3	weak			stipulax	2	664	stipulax	2	648	stipular	3	650	stipnlar	1	650	stipular	3	648	stipular	3	647
+5953	stir	648	7		3	weak			Stirrfrus	1	665	stir	3	649	stir	3	651	Stiretrus	1	651	stir	3	649	Siiretrus	1	648
+5954	stitch	649	7		6				stitch	6	666	stitch	6	650	stitch	6	652	stitch	6	652	stitch	6	650	stitch	6	649
+5955	stoccade	650	7		6				stoccade	6	667	stoccade	6	651	stoccade	6	653	stoccade	6	653	stoccade	6	651	stoccade	6	650
+5956	stock	651	7		6				stock	6	668	stock	6	652	stock	6	654	stock	6	654	stock	6	652	stock	6	651
+5957	stock-exchange	652	7		6				stock-exchange	6	669	stock-exchange	6	653	stock-exchange	6	655	stock-exchange	6	655	stock-exchange	6	653	stock-exchange	6	652
+5958	stog	653	7		5				stog	5	670	stog	5	654	BtOg	1	656	stog	5	656	stog	5	654	stog	5	653
+5959	Stolephoms	654	7		2	weak			StolephorxLS	1	671	I	1	655	Stolephorus	1	657	Stolephoms	2	657	Stolephoms	2	655	Btolephorus	1	654
+5960	stomach	655	7		3	weak			stomach	3	672	stomach	3	656	stomacli	1	658	stomach	3	658	stomacb	2	656	stomacb	2	655
+5961	stomatitis	656	7		6				stomatitis	6	673	stomatitis	6	657	stomatitis	6	659	stomatitis	6	659	stomatitis	6	657	stomatitis	6	656
+5962	stone	657	7		6				stone	6	674	stone	6	658	stone	6	660	stone	6	660	stone	6	658	stone	6	657
+5963	stonecat	658	7		6				stonecat	6	675	stonecat	6	659	stonecat	6	661	stonecat	6	661	stonecat	6	659	stonecat	6	658
+5964	stoneman	659	7		6				stoneman	6	676	stoneman	6	660	stoneman	6	662	stoneman	6	662	stoneman	6	660	stoneman	6	659
+5965	stook	660	7		5				stook	5	677	stook	5	661	stook	5	663	stook	5	663	gtook	1	661	stook	5	660
+5966	stoop	661	7		5				stoop	5	678	stoop	5	662	stoop	5	664	stoop	5	664	BtOOp	1	662	stoop	5	661
+5967	stop	662	7		6				stop	6	679	stop	6	663	stop	6	665	stop	6	665	stop	6	663	stop	6	662
+5968	stop-collar	663	7		6				stop-collar	6	680	stop-collar	6	664	stop-collar	6	666	stop-collar	6	666	stop-collar	6	664	stop-collar	6	663
+5969	stop-ship	664	7		4				stop-ship	4	681	stop-ship	4	665	stop-	1	667	stop-sMp	1	667	stop-ship	4	665	stop-ship	4	664
+5970	storehouse	665	7		6				storehouse	6	682	storehouse	6	666	storehouse	6	668	storehouse	6	668	storehouse	6	666	storehouse	6	665
+5971	storm	666	7		5				stonn	1	683	storm	5	667	storm	5	669	storm	5	669	storm	5	667	storm	5	666
+5972	stomello	667	7		3	weak			Btomello	2	684	stomello	3	668	stomello	3	670	stomello	3	670	stornello	1	668	Btomello	2	667
+5973	stound	668	7		3	weak			Btotind	1	685	An	1	669	stound	3	671	I	1	671	stound	3	669	stound	3	668
+5974	stove	669	7		6				stove	6	686	stove	6	670	stove	6	672	stove	6	672	stove	6	670	stove	6	669
+5975	strabismus	670	7		6				strabismus	6	687	strabismus	6	671	strabismus	6	673	strabismus	6	673	strabismus	6	671	strabismus	6	670
+5976	straight	671	7		6				straight	6	688	straight	6	672	straight	6	674	straight	6	674	straight	6	672	straight	6	671
+5977	strain	672	7		5				Btialn	1	689	strain	5	673	strain	5	675	strain	5	675	strain	5	673	strain	5	672
+5978	strait	673	7		6				strait	6	690	strait	6	674	strait	6	676	strait	6	676	strait	6	674	strait	6	673
+5979	stramash	674	7		6				stramash	6	691	stramash	6	675	stramash	6	677	stramash	6	677	stramash	6	675	stramash	6	674
+5980	stranger	675	7		6				stranger	6	692	stranger	6	676	stranger	6	678	stranger	6	678	stranger	6	676	stranger	6	675
+5981	strap-work	676	7		6				strap-work	6	693	strap-work	6	677	strap-work	6	679	strap-work	6	679	strap-work	6	677	strap-work	6	676
+5982	Stratiotes	677	7		4				Stratiotes	4	694	Stratiotes	4	678	Stiatiotes	1	680	Stratiotes	4	680	Stratum	1	678	Stratiotes	4	677
+5983	strawberry	678	7		6				strawberry	6	695	strawberry	6	679	strawberry	6	681	strawberry	6	681	strawberry	6	679	strawberry	6	678
+5984	stray	679	7		5				stray	5	696	stray	5	680	without	1	682	stray	5	682	stray	5	680	stray	5	679
+5985	stream	680	7		6				stream	6	697	stream	6	681	stream	6	683	stream	6	683	stream	6	681	stream	6	680
+5986	street-car	681	7		6				street-car	6	698	street-car	6	682	street-car	6	684	street-car	6	684	street-car	6	682	street-car	6	681
+5987	strenulty	682	7		3	weak			strenolty	1	699	strenulty	3	683	strenuity	2	685	strenuity	2	685	strenulty	3	683	strenulty	3	682
+5988	Streptostylica	683	7		5				Streptostylica	5	700	Streptostylica	5	684	Streptostylica	5	686	Stxeptostylica	1	686	Streptostylica	5	684	Streptostylica	5	683
+5989	stretcher	684	7		6				stretcher	6	701	stretcher	6	685	stretcher	6	687	stretcher	6	687	stretcher	6	685	stretcher	6	684
+5990	strict	685	7		6				strict	6	702	strict	6	686	strict	6	688	strict	6	688	strict	6	686	strict	6	685
+5991	Striges	686	7		6				Striges	6	703	Striges	6	687	Striges	6	689	Striges	6	689	Striges	6	687	Striges	6	686
+5992	strike	687	7		6				strike	6	704	strike	6	688	strike	6	690	strike	6	690	strike	6	688	strike	6	687
+5993	strike	688	7		6				strike	6	705	strike	6	689	strike	6	691	strike	6	691	strike	6	689	strike	6	688
+5994	striking-plate	689	7		5				striking-plate	5	706	striking-plate	5	690	striking-plate	5	692	strikliig-plate	1	692	striking-plate	5	690	striking-plate	5	689
+5995	stringer	690	7		6				stringer	6	707	stringer	6	691	stringer	6	693	stringer	6	693	stringer	6	691	stringer	6	690
+5996	stripe	691	7		5				stripe	5	708	stripe	5	692	stripe	5	694	starlpe	1	694	stripe	5	692	stripe	5	691
+5997	strobiliferous	692	7		5				strobiliferous	5	709	strobiliferous	5	693	strobiliferouB	1	695	strobiliferous	5	695	strobiliferous	5	693	strobiliferous	5	692
+5998	strokle	693	7		6				strokle	6	710	strokle	6	694	strokle	6	696	strokle	6	696	strokle	6	694	strokle	6	693
+5999	strong	694	7		6				strong	6	711	strong	6	695	strong	6	697	strong	6	697	strong	6	695	strong	6	694
+6000	Strongylocentrotus	695	7		5				Strongylocentrotus	5	712	Strongylocentrotus	5	696	Strongylocentrotus	5	698	Strongylocentirotus	1	698	Strongylocentrotus	5	696	Strongylocentrotus	5	695
+6001	strub	696	7		5				strub	5	713	strub	5	697	strub	5	699	stmb	1	699	strub	5	697	strub	5	696
+6002	strumstrum	697	7		3	weak			strumstrum	3	714	stnunstTiim	1	698	strumstrum	3	700	stnunstrum	1	700	strumstrum	3	698	Btrumstrum	1	697
+6003	Strychnos	698	7		4				Strychnos	4	715	Stryclinos	2	699	Stryclinos	2	701	Strychnos	4	701	Strychnos	4	699	Strychnos	4	698
+6004	stub-mortise	699	7		6				stub-mortise	6	716	stub-mortise	6	700	stub-mortise	6	702	stub-mortise	6	702	stub-mortise	6	700	stub-mortise	6	699
+6005	studiedly	700	7		6				studiedly	6	717	studiedly	6	701	studiedly	6	703	studiedly	6	703	studiedly	6	701	studiedly	6	700
+6006	stuff	701	7		4				stnff	2	718	stuff	4	702	stnff	2	704	stuff	4	704	stuff	4	702	stuff	4	701
+6007	stuffing-wheel	702	7		4				stuffing-wheel	4	719	stuffing-wheel	4	703	stuffing-wheel	4	705	stnffing-wheel	1	705	stuffing-wheel	4	703	Btufflng-wheel	1	702
+6008	stump	703	7		5				stump	5	720	stump	5	704	stump	5	706	stmnp	1	706	stump	5	704	stump	5	703
+6009	stuntness	704	7		3	weak			Btuntness	1	721	stuntness	3	705	stmitness	1	707	stnntness	1	707	stuntness	3	705	stuntness	3	704
+6010	sturdy	705	7		6				sturdy	6	722	sturdy	6	706	sturdy	6	708	sturdy	6	708	sturdy	6	706	sturdy	6	705
+6011	stutter	706	7		6				stutter	6	723	stutter	6	707	stutter	6	709	stutter	6	709	stutter	6	707	stutter	6	706
+6012	style	707	7		6				style	6	724	style	6	708	style	6	710	style	6	710	style	6	708	style	6	707
+6013	stylistically	708	7		6				stylistically	6	725	stylistically	6	709	stylistically	6	711	stylistically	6	711	stylistically	6	709	stylistically	6	708
+6014	stylotypite	709	7		4				stylotypite	4	728	stylotypite	4	710	stylotypite	4	712	stylotyplte	1	712	stylotypite	4	710	Btylotypite	1	709
+6015	snasory	710	7		2	tie			suasory	2	729	Buasory	1	711	snasory	2	713	sTiasory	1	713	suasory	2	711	snasory	2	710
+6016	subandean	711	7		4				Btibandean	1	730	subandean	4	712	subandean	4	714	snbandean	1	714	subandean	4	712	subandean	4	711
+6017	Subcoccinella	712	7		6				Subcoccinella	6	731	Subcoccinella	6	713	Subcoccinella	6	715	Subcoccinella	6	715	Subcoccinella	6	713	Subcoccinella	6	712
+6018	subdiatessaron	713	7		4				subdiatessaron	4	732	subdiatessaron	4	714	subdiatessaron	4	716	subdlatessaron	1	716	snbdiatessaron	1	714	subdiatessaron	4	713
+6019	subesophageal	714	7		6				subesophageal	6	733	subesophageal	6	715	subesophageal	6	717	subesophageal	6	717	subesophageal	6	715	subesophageal	6	714
+6020	subimaginal	715	7		6				subimaginal	6	734	subimaginal	6	716	subimaginal	6	718	subimaginal	6	718	subimaginal	6	716	subimaginal	6	715
+6021	subject	716	7		6				subject	6	735	subject	6	717	subject	6	719	subject	6	719	subject	6	717	subject	6	716
+6022	subjectivize	717	7		3	tie			vize	3	736	subjectivize	3	718	vize	3	720	vize	3	720	subjectivize	3	718	subjectivize	3	717
+6023	sublimate	718	7		6				sublimate	6	737	sublimate	6	719	sublimate	6	721	sublimate	6	721	sublimate	6	719	sublimate	6	718
+6024	siderable	719	7		2	weak			siderable	2	738	sublingua	1	720	siderable	2	722	snDlingna	1	722	Bublingua	1	720	subUngua	1	719
+6025	submission	720	7		6				submission	6	739	submission	6	721	submission	6	723	submission	6	723	submission	6	721	submission	6	720
+6026	suboctave	721	7		5				suboctave	5	740	suboctave	5	722	suboctave	5	724	snboctave	1	724	suboctave	5	722	suboctave	5	721
+6027	subpallial	722	7		5				subpallial	5	741	subpallial	5	723	subpallial	5	725	subpallial	5	725	subpallial	5	723	Bubpallial	1	722
+6028	subrogate	723	7		6				subrogate	6	742	subrogate	6	724	subrogate	6	726	subrogate	6	726	subrogate	6	724	subrogate	6	723
+6029	subsequent	724	7		4				subsequent	4	743	subseauent	1	725	subsequent	4	727	subsequent	4	727	subsequent	4	725	subsegnent	1	724
+6030	subsist	725	7		6				subsist	6	744	subsist	6	726	subsist	6	728	subsist	6	728	subsist	6	726	subsist	6	725
+6031	substance	726	7		6				substance	6	745	substance	6	727	substance	6	729	substance	6	729	substance	6	727	substance	6	726
+6032	substantive	727	7		5				substantive	5	746	substantive	5	728	substantive	5	730	snbstantiye	1	730	substantive	5	728	substantive	5	727
+6033	substrate	728	7		6				substrate	6	747	substrate	6	729	substrate	6	731	substrate	6	731	substrate	6	729	substrate	6	728
+6034	Subtetramera	729	7		5				Subtetramera	5	748	Subtetramera	5	730	Subtetramera	5	732	Snbtetramera	1	732	Subtetramera	5	730	Subtetramera	5	729
+6035	subtle	730	7		4				snbtle	2	749	subtle	4	731	subtle	4	733	snbtle	2	733	subtle	4	731	subtle	4	730
+6036	subulate	731	7		5				subulate	5	750	subulate	5	732	subulate	5	734	subulate	5	734	f	1	732	subulate	5	731
+6037	subvesicular	732	7		2	tie			subvesicnlar	1	751	subvesicular	2	733	subvesicolar	2	735	subvesicolar	2	735	subvesicular	2	733	subveBicular	1	732
+6038	succession	733	7		6				succession	6	752	succession	6	734	succession	6	736	succession	6	736	succession	6	734	succession	6	733
+6039	succorable	734	7		6				succorable	6	753	succorable	6	735	succorable	6	737	succorable	6	737	succorable	6	735	succorable	6	734
+6040	such	735	7		5				sncli	1	754	such	5	736	such	5	738	such	5	738	such	5	736	such	5	735
+6041	sucker	736	7		5				Bucker	1	755	sucker	5	737	sucker	5	739	sucker	5	739	sucker	5	737	sucker	5	736
+6042	sudamina	737	7		4				sudamina	4	756	sudamiiia	1	738	sudamina	4	740	sndamina	1	740	sudamina	4	738	sudamina	4	737
+6043	sue	738	7		5				sue	5	757	sue	5	739	sue	5	741	me	1	741	sue	5	739	sue	5	738
+6044	sufferer	739	7		5				sufferer	5	758	sufferer	5	740	sufferer	5	742	sufferer	5	742	siifFerer	1	740	sufferer	5	739
+6045	suffossion	740	7		3	weak			suffossion	3	759	suffossion	3	741	soffossion	2	743	soffossion	2	743	suffossion	3	741	snffoBSion	1	740
+6046	sufic	741	7		3	weak			snflc	1	760	sufic	3	742	sufic	3	744	suflc	1	744	siific	1	742	sufic	3	741
+6047	sugariness	742	7		3	weak			sugariness	3	761	sugariness	3	743	sugarmesB	1	745	sngariness	1	745	sugariness	3	743	snganness	1	742
+6048	suggestion	743	7		4				suggestion	4	762	suggestion	4	744	snggestioii	1	746	snggestion	1	746	suggestion	4	744	suggestion	4	743
+6049	suist	744	7		4				suist	4	763	suist	4	745	sulst	1	747	BUiSt	1	747	suist	4	745	suist	4	744
+6050	suitor	745	7		6				suitor	6	764	suitor	6	746	suitor	6	748	suitor	6	748	suitor	6	746	suitor	6	745
+6051	sulk	746	7		5				sulk	5	765	sulk	5	747	sulk	5	749	nlk	1	749	sulk	5	747	sulk	5	746
+6052	sulphate	747	7		5				sulphate	5	766	sulphate	5	748	sulphate	5	750	sulpliate	1	750	sulphate	5	748	sulphate	5	747
+6053	sulphureously	748	7		4				sulphureously	4	767	sulphureously	4	749	sulphureously	4	751	Bulphureously	2	751	sulphureously	4	749	Bulphureously	2	748
+6054	sultry	749	7		6				sultry	6	768	sultry	6	750	sultry	6	752	sultry	6	752	sultry	6	750	sultry	6	749
+6055	Sumbul	750	7		3	weak			Sumbul	3	769	Sumbul	3	751	Sumbul	3	753	Snmatra	1	753	Sunibiil	1	751	Sumatra	1	750
+6056	summer-room	751	7		4				summer-room	4	770	summer-room	4	752	summer-room	4	754	snminer-room	1	754	summer-room	4	752	Sluniiier-room	1	751
+6057	Sumner's	752	7		4				Sumner's	4	771	I	1	753	Snmner's	1	755	Sumner's	4	755	Sumner's	4	753	Sumner's	4	752
+6058	sun	753	7		4				Sim	1	772	sun	4	754	sun	4	756	snn	1	756	sun	4	754	sun	4	753
+6059	sunbow	754	7		5				sunbow	5	773	sunbow	5	755	sunbow	5	757	stinbow	1	757	sunbow	5	755	sunbow	5	754
+6060	sunderance	755	7		3	weak			sunderance	3	774	Face	2	756	sunderance	3	758	Face	2	758	sunderance	3	756	Sun-diaL	1	755
+6061	sun-god	756	7		6				sun-god	6	775	sun-god	6	757	sun-god	6	759	sun-god	6	759	sun-god	6	757	sun-god	6	756
+6062	sunshine-recorder	757	7		4				stmsluiie-recorder	1	776	sunshine-recorder	4	758	simsMne-recorder	1	760	sunshine-recorder	4	760	sunshine-recorder	4	758	sunshine-recorder	4	757
+6063	super-	758	7		5				super-	5	777	super-	5	759	snper-	1	761	super-	5	761	super-	5	759	super-	5	758
+6064	superbitertial	759	7		5				superbitertial	5	778	superbitertial	5	760	superbitertial	5	762	snperbitertial	1	762	superbitertial	5	760	superbitertial	5	759
+6065	superessential	760	7		5				superessential	5	779	superessential	5	761	superessential	5	763	superessential	5	763	superessential	5	761	superessentlal	1	760
+6066	superfluity	761	7		5				superfluity	5	780	superfluity	5	762	superfluity	5	764	superfltdty	1	764	superfluity	5	762	superfluity	5	761
+6067	superintender	762	7		5				superintender	5	781	superintender	5	763	superintender	5	765	superintender	5	765	superintender	5	763	Buperintender	1	762
+6068	supernal	763	7		5				God	1	782	supernal	5	764	supernal	5	766	supernal	5	766	supernal	5	764	supernal	5	763
+6069	superplus	764	7		2	weak			superplus	2	783	Buperplus	1	765	ex-	1	767	supersalientt	1	767	other	1	765	superplus	2	764
+6070	supersolid	765	7		3	weak			Bupersolid	1	784	supersolid	3	766	supei	1	768	snpersolid	1	768	supersolid	3	766	supersolid	3	765
+6071	supervene	766	7		6				supervene	6	785	supervene	6	767	supervene	6	769	supervene	6	769	supervene	6	767	supervene	6	766
+6072	suppeditate	767	7		6				suppeditate	6	786	suppeditate	6	768	suppeditate	6	770	suppeditate	6	770	suppeditate	6	768	suppeditate	6	767
+6073	supplementation	768	7		5				supplementation	5	787	supplementation	5	769	supplementation	5	771	Bupplementation	1	771	supplementation	5	769	supplementation	5	768
+6074	supply	769	7		5				supply	5	788	supply	5	770	supply	5	772	snpply	1	772	supply	5	770	supply	5	769
+6075	supportation	770	7		5				supportation	5	789	supportation	5	771	sapportation	1	773	supportation	5	773	supportation	5	771	supportation	5	770
+6076	supposititious	771	7		5				supposititious	5	790	supposititious	5	772	supposititious	5	774	supposititious	5	774	By	1	772	supposititious	5	771
+6077	supraciliary	772	7		2	tie			Same	2	791	supraciliary	2	773	Bupraciliary	1	775	Same	2	775	supraciliary	2	773	supracillary	1	772
+6078	supranatural	773	7		4				supranatural	4	792	supranatural	4	774	supranatural	4	776	snpranattiral	1	776	suprarenal	1	774	supranatural	4	773
+6079	supremacy	774	7		6				supremacy	6	793	supremacy	6	775	supremacy	6	777	supremacy	6	777	supremacy	6	775	supremacy	6	774
+6080	surcharge	775	7		6				surcharge	6	794	surcharge	6	776	surcharge	6	778	surcharge	6	778	surcharge	6	776	surcharge	6	775
+6081	sure	776	7		4				sure	4	795	sure	4	777	snre	2	779	snre	2	779	sure	4	777	sure	4	776
+6082	surface	777	7		6				surface	6	796	surface	6	778	surface	6	780	surface	6	780	surface	6	778	surface	6	777
+6083	surface-plane	778	7		6				surface-plane	6	797	surface-plane	6	779	surface-plane	6	781	surface-plane	6	781	surface-plane	6	779	surface-plane	6	778
+6084	surge	779	7		6				surge	6	798	surge	6	780	surge	6	782	surge	6	782	surge	6	780	surge	6	779
+6085	surmark	780	7		6				surmark	6	799	surmark	6	781	surmark	6	783	surmark	6	783	surmark	6	781	surmark	6	780
+6086	surplice	781	7		3	weak			surplice	3	802	Anglican	2	782	Angli	1	784	Anglican	2	784	surplice	3	782	surplice	3	781
+6087	surquidry	782	7		5				surquidry	5	803	surquidry	5	783	snrquidry	1	785	surquidry	5	785	surquidry	5	783	surquidry	5	782
+6088	surround	783	7		4				surround	4	804	surround	4	784	surround	4	786	stuTound	1	786	surround	4	784	surrouna	1	783
+6089	survey	784	7		6				survey	6	805	survey	6	785	survey	6	787	survey	6	787	survey	6	785	survey	6	784
+6090	susceptibility	785	7		5				susceptibility	5	806	susceptibility	5	786	susceptibility	5	788	susceptibility	5	788	susceptibility	5	786	susceptibmty	1	785
+6091	suspectless	786	7		4				tl-	1	807	suspectless	4	787	suspectless	4	789	snspectless	1	789	suspectless	4	787	suspectless	4	786
+6092	suspensor	787	7		3	tie			snspensor	3	808	suspensor	3	788	snspensor	3	790	snspensor	3	790	suspensor	3	788	suspensor	3	787
+6093	sustain	788	7		4				snstain	2	809	sustain	4	789	sustain	4	791	snstain	2	791	sustain	4	789	sustain	4	788
+6094	Suthora	789	7		3	weak			Sutbora	1	810	Suthora	3	790	Sathora	2	792	Sathora	2	792	Suthora	3	790	Suthora	3	789
+6095	suture	790	7		3	weak			suture	3	811	suture	3	791	satnre	1	793	sntnre	1	793	suture	3	791	sutuie	1	790
+6096	swag	791	7		6				swag	6	812	swag	6	792	swag	6	794	swag	6	794	swag	6	792	swag	6	791
+6097	swallow	792	7		6				swallow	6	813	swallow	6	793	swallow	6	795	swallow	6	795	swallow	6	793	swallow	6	792
+6098	swallow-shrike	793	7		6				swallow-shrike	6	814	swallow-shrike	6	794	swallow-shrike	6	796	swallow-shrike	6	796	swallow-shrike	6	794	swallow-shrike	6	793
+6099	swamp-mahogany	794	7		6				swamp-mahogany	6	815	swamp-mahogany	6	795	swamp-mahogany	6	797	swamp-mahogany	6	797	swamp-mahogany	6	795	swamp-mahogany	6	794
+6100	swanky	795	7		6				swanky	6	816	swanky	6	796	swanky	6	798	swanky	6	798	swanky	6	796	swanky	6	795
+6101	swarm	796	7		6				swarm	6	817	swarm	6	797	swarm	6	799	swarm	6	799	swarm	6	797	swarm	6	796
+6102	swash	797	7		6				swash	6	818	swash	6	798	swash	6	800	swash	6	800	swash	6	798	swash	6	797
+6103	sway	798	7		5				sway	5	819	sway	5	799	Bway	1	801	sway	5	801	sway	5	799	sway	5	798
+6104	sweat	799	7		6				sweat	6	820	sweat	6	800	sweat	6	802	sweat	6	802	sweat	6	800	sweat	6	799
+6105	sweating	800	7		5				sweating	5	821	The	1	801	sweating	5	803	sweating	5	803	sweating	5	801	sweating	5	800
+6106	sweep	801	7		6				sweep	6	822	sweep	6	802	sweep	6	804	sweep	6	804	sweep	6	802	sweep	6	801
+6107	sweeps	802	7		6				sweeps	6	823	sweeps	6	803	sweeps	6	805	sweeps	6	805	sweeps	6	803	sweeps	6	802
+6108	sweet-bay	803	7		4				sweet-bay	4	824	sweet-bay	4	804	sweet-bay	4	806	Fragrant	1	806	Sweetbrier	1	804	sweet-bay	4	803
+6109	sweet-oil	804	7		5				i	1	825	sweet-oil	5	805	sweet-oil	5	807	sweet-oil	5	807	sweet-oil	5	805	sweet-oil	5	804
+6110	swell-fish	805	7		5				swell-fish	5	826	swell-fish	5	806	swell-fish	5	808	swell-fish	5	808	swell-fisb	1	806	swell-fish	5	805
+6111	swevening	806	7		4				swevening	4	827	swevening	4	807	Bwevening	1	809	swevening	4	809	swevening	4	807	BweTenmg	1	806
+6112	swill	807	7		4				BwiU	1	828	swill	4	808	swill	4	810	swiU	1	810	swill	4	808	swill	4	807
+6113	swimming-bell	808	7		5				swimming-bell	5	829	swimming-bell	5	809	swimming-bell	5	811	to	1	811	swimming-bell	5	809	swimming-bell	5	808
+6114	swing	809	7		6				swing	6	830	swing	6	810	swing	6	812	swing	6	812	swing	6	810	swing	6	809
+6115	swinge	810	7		5				swinge	5	831	swinge	5	811	Vhen	1	813	swinge	5	813	swinge	5	811	swinge	5	810
+6116	swink	811	7		5				swink	5	832	swink	5	812	swink	5	814	swink	5	814	swink	5	812	Bwink	1	811
+6117	switch	812	7		6				switch	6	833	switch	6	813	switch	6	815	switch	6	815	switch	6	813	switch	6	812
+6118	swither	813	7		5				swither	5	834	swither	5	814	swither	5	816	Bwlther	1	816	swither	5	814	swither	5	813
+6119	sword	814	7		6				sword	6	835	sword	6	815	sword	6	817	sword	6	817	sword	6	815	sword	6	814
+6120	sword-dollar	815	7		6				sword-dollar	6	836	sword-dollar	6	816	sword-dollar	6	818	sword-dollar	6	818	sword-dollar	6	816	sword-dollar	6	815
+6121	swum	816	7		5				swum	5	837	swum	5	817	swum	5	819	swmn	1	819	swum	5	817	swum	5	816
+6122	sycophantic	817	7		5				sycophantic	5	838	sycophantic	5	818	sycophantic	5	820	sycophantic	5	820	infr	1	818	sycophantic	5	817
+6123	syllable	818	7		6				syllable	6	839	syllable	6	819	syllable	6	821	syllable	6	821	syllable	6	819	syllable	6	818
+6124	syllogism	819	7		6				syllogism	6	840	syllogism	6	820	syllogism	6	822	syllogism	6	822	syllogism	6	820	syllogism	6	819
+6125	Sylvicolidae	820	7		3	weak			Sylvicolidae	3	841	Sylvicolidae	3	821	Sylvicolida	1	823	I	1	823	Sylvicolidae	3	821	Sylvicolidse	1	820
+6126	symbolically	821	7		6				symbolically	6	842	symbolically	6	822	symbolically	6	824	symbolically	6	824	symbolically	6	822	symbolically	6	821
+6127	symmetry	822	7		5				symmetry	5	843	symmetry	5	823	symmetry	5	825	symmetry	5	825	symmetry	5	823	symmetiy	1	822
+6128	sympathize	823	7		5				sympathize	5	844	sympathize	5	824	sympatliize	1	826	sympathize	5	826	sympathize	5	824	sympathize	5	823
+6129	Symphoricarpos	824	7		5				Symphoricarpos	5	845	Symphoricarpos	5	825	Symphoricarpos	5	827	Symphoricarpoa	1	827	Symphoricarpos	5	825	Symphoricarpos	5	824
+6130	Symplocos	825	7		3	weak			Symplocos	3	846	V	1	826	Symplocos	3	828	Sjrmplocos	1	828	Branch	1	826	Symplocos	3	825
+6131	synagogue	826	7		6				synagogue	6	847	synagogue	6	827	synagogue	6	829	synagogue	6	829	synagogue	6	827	synagogue	6	826
+6132	synapte	827	7		4				synapte	4	848	synapte	4	828	A	1	830	synapte	4	830	synapte	4	828	aynapte	1	827
+6133	synchoresis	828	7		3	weak			synchoresis	3	849	synchoresis	3	829	a	1	831	I	1	831	sjmclioresis	1	829	synchoresis	3	828
+6134	syncope	829	7		5				syncope	5	850	syncope	5	830	syncope	5	832	syncope	5	832	To	1	830	syncope	5	829
+6135	syndicate	830	7		5				syndicate	5	851	syndicate	5	831	syndicate	5	833	I	1	833	syndicate	5	831	syndicate	5	830
+6136	Synetherinae	831	7		2	tie			Synetherinse	2	852	Synetherinae	2	832	Synetherinae	2	834	Synetherlnse	1	834	Synetherinie	1	832	Synetherinse	2	831
+6137	synod	832	7		5				synod	5	853	synod	5	833	synod	5	835	r	1	835	synod	5	833	synod	5	832
+6138	synonymical	833	7		5				synonymical	5	854	synonymical	5	834	synonymical	5	836	synonymical	5	836	synonsnnical	1	834	synonymical	5	833
+6139	synsarcosis	834	7		3	tie			synsaxcosis	3	855	synsarcosis	3	835	synsaxcosis	3	837	synsarcosis	3	837	synsarcosis	3	835	synsaxcosis	3	834
+6140	syntomia	835	7		4				dp	1	856	Syntractris	1	836	syntomia	4	838	syntomia	4	838	syntomia	4	836	syntomia	4	835
+6141	syringeful	836	7		4				syringeful	4	857	syringeful	4	837	syringeful	4	839	i	1	839	syringeful	4	837	syringeftil	1	836
+6142	syrup	837	7		5				syrup	5	858	syrup	5	838	syrup	5	840	or	1	840	syrup	5	838	syrup	5	837
+6143	system	838	7		5				system	5	859	system	5	839	system	5	841	I	1	841	system	5	839	system	5	838
+6144	Systoechus	839	7		1	tie			Systixchus	1	860	Systoechus	1	840	Systachtts	1	842	Systceckus	1	842	hus	1	840	Systachus	1	839
+6145	The	840	7		4				The	4	861	The	4	841	YoJ	1	843	jS	1	843	The	4	841	The	4	840
+6146	tabasheer	841	7		5				tabasheer	5	862	tabasheer	5	842	tabasheer	5	844	tabasheer	5	844	tabasheer	5	842	tabasbeer	1	841
+6147	tabernacle	842	7		6				tabernacle	6	863	tabernacle	6	843	tabernacle	6	845	tabernacle	6	845	tabernacle	6	843	tabernacle	6	842
+6148	table	843	7		6				table	6	864	table	6	844	table	6	846	table	6	846	table	6	844	table	6	843
+6149	table	844	7		5				table	5	865	table	5	845	table	5	847	t	1	847	table	5	845	table	5	844
+6150	tabler	845	7		5				tabler	5	866	tablet	1	846	tabler	5	848	tabler	5	848	tabler	5	846	tabler	5	845
+6151	taboo	846	7		6				taboo	6	867	taboo	6	847	taboo	6	849	taboo	6	849	taboo	6	847	taboo	6	846
+6152	tac-au-tac	847	7		4				tac-au-tac	4	868	tac-au-tac	4	848	tac-au-tac	4	850	tac-an-tac	1	850	Flowering	1	848	tac-au-tac	4	847
+6153	Tachyglossa	848	7		5				Tachyglossa	5	869	Tachyglossa	5	849	Tachyglossa	5	851	Tachyglossa	5	851	Tachyglpssa	1	849	Tachyglossa	5	848
+6154	tack	849	7		6				tack	6	870	tack	6	850	tack	6	852	tack	6	852	tack	6	850	tack	6	849
+6155	tackle	850	7		6				tackle	6	871	tackle	6	851	tackle	6	853	tackle	6	853	tackle	6	851	tackle	6	850
+6156	tactility	851	7		4				tactility	4	872	In	1	852	tactility	4	854	tactmty	1	854	tactility	4	852	tactility	4	851
+6157	Taeniocampa	852	7		4				Taeniocampa	4	873	Tseniocampa	1	853	Taeniocampa	4	855	Taeniocampa	4	855	Taeniocampa	4	853	Tsniocampa	1	852
+6158	tag	853	7		6				tag	6	874	tag	6	854	tag	6	856	tag	6	856	tag	6	854	tag	6	853
+6159	tagtail	854	7		6				tagtail	6	875	tagtail	6	855	tagtail	6	857	tagtail	6	857	tagtail	6	855	tagtail	6	854
+6160	tail	855	7		4				tail	4	876	tail	4	856	taU	2	858	taU	2	858	tail	4	856	tail	4	855
+6161	tail-feather	856	7		6				tail-feather	6	877	tail-feather	6	857	tail-feather	6	859	tail-feather	6	859	tail-feather	6	857	tail-feather	6	856
+6162	tail-valve	857	7		6				tail-valve	6	878	tail-valve	6	858	tail-valve	6	860	tail-valve	6	860	tail-valve	6	858	tail-valve	6	857
+6163	take	858	7		4				I	2	879	take	4	859	take	4	861	I	2	861	take	4	859	take	4	858
+6164	take	859	7		6				take	6	880	take	6	860	take	6	862	take	6	862	take	6	860	take	6	859
+6165	take	860	7		5				I	1	881	take	5	861	take	5	863	take	5	863	take	5	861	take	5	860
+6166	take	861	7		6				take	6	882	take	6	862	take	6	864	take	6	864	take	6	862	take	6	861
+6167	taket	862	7		5				I	1	883	taket	5	863	taket	5	865	taket	5	865	taket	5	863	taket	5	862
+6168	tale	863	7		6				tale	6	884	tale	6	864	tale	6	866	tale	6	866	tale	6	864	tale	6	863
+6169	talent	864	7		6				talent	6	885	talent	6	865	talent	6	867	talent	6	867	talent	6	865	talent	6	864
+6170	talisman	865	7		6				talisman	6	886	talisman	6	866	talisman	6	868	talisman	6	868	talisman	6	866	talisman	6	865
+6171	talkee-talkee	866	7		5				I	1	887	talkee-talkee	5	867	talkee-talkee	5	869	talkee-talkee	5	869	talkee-talkee	5	867	talkee-talkee	5	866
+6172	tallow-face	867	7		6				tallow-face	6	888	tallow-face	6	868	tallow-face	6	870	tallow-face	6	870	tallow-face	6	868	tallow-face	6	867
+6173	tally-shop	868	7		6				tally-shop	6	889	tally-shop	6	869	tally-shop	6	871	tally-shop	6	871	tally-shop	6	869	tally-shop	6	868
+6174	tamanu	869	7		5				tamanu	5	890	tamanu	5	870	tamanu	5	872	tamana	1	872	tamanu	5	870	tamanu	5	869
+6175	tambour	870	7		5				J	1	891	tambour	5	871	tambour	5	873	tambour	5	873	tambour	5	871	tambour	5	870
+6176	tame	871	7		6				tame	6	892	tame	6	872	tame	6	874	tame	6	874	tame	6	872	tame	6	871
+6177	tampon	872	7		6				tampon	6	893	tampon	6	873	tampon	6	875	tampon	6	875	tampon	6	873	tampon	6	872
+6178	Tanagra	873	7		6				Tanagra	6	894	Tanagra	6	874	Tanagra	6	876	Tanagra	6	876	Tanagra	6	874	Tanagra	6	873
+6179	tangent	874	7		6				tangent	6	895	tangent	6	875	tangent	6	877	tangent	6	877	tangent	6	875	tangent	6	874
+6180	tangle	875	7		6				tangle	6	896	tangle	6	876	tangle	6	878	tangle	6	878	tangle	6	876	tangle	6	875
+6181	tank-car	876	7		6				tank-car	6	897	tank-car	6	877	tank-car	6	879	tank-car	6	879	tank-car	6	877	tank-car	6	876
+6182	tansy	877	7		6				tansy	6	898	tansy	6	878	tansy	6	880	tansy	6	880	tansy	6	878	tansy	6	877
+6183	tantrum	878	7		5				tantnun	1	899	tantrum	5	879	tantrum	5	881	tantrum	5	881	tantrum	5	879	tantrum	5	878
+6184	tap	879	7		6				tap	6	900	tap	6	880	tap	6	882	tap	6	882	tap	6	880	tap	6	879
+6185	tapestried	880	7		6				tapestried	6	901	tapestried	6	881	tapestried	6	883	tapestried	6	883	tapestried	6	881	tapestried	6	880
+6186	tapir	881	7		6				tapir	6	902	tapir	6	882	tapir	6	884	tapir	6	884	tapir	6	882	tapir	6	881
+6187	tap-pickle	882	7		6				tap-pickle	6	903	tap-pickle	6	883	tap-pickle	6	885	tap-pickle	6	885	tap-pickle	6	883	tap-pickle	6	882
+6188	Tarannon	883	7		6				Tarannon	6	904	Tarannon	6	884	Tarannon	6	886	Tarannon	6	886	Tarannon	6	884	Tarannon	6	883
+6189	Tardieu's	884	7		6				Tardieu's	6	905	Tardieu's	6	885	Tardieu's	6	887	Tardieu's	6	887	Tardieu's	6	885	Tardieu's	6	884
+6190	target	885	7		2	tie			taxget	1	906	target	2	886	Targets	2	888	Targets	2	888	target	2	886	A	1	885
+6191	tarnish	886	7		5				tarnish	5	907	tarnish	5	887	tarnish	5	889	p	1	889	tarnish	5	887	tarnish	5	886
+6192	tarryour	887	7		6				tarryour	6	908	tarryour	6	888	tarryour	6	890	tarryour	6	890	tarryour	6	888	tarryour	6	887
+6193	tarsus	888	7		6				tarsus	6	909	tarsus	6	889	tarsus	6	891	tarsus	6	891	tarsus	6	889	tarsus	6	888
+6194	tartarum	889	7		3	weak			tartanun	2	910	tartanun	2	890	tartarum	3	892	tartarum	3	892	tartarum	3	890	tartantm	1	889
+6195	tass	890	7		4				ii	1	911	tass	4	891	tass	4	893	tass	4	893	tass	4	891	tasB	1	890
+6196	taste	891	7		6				taste	6	912	taste	6	892	taste	6	894	taste	6	894	taste	6	892	taste	6	891
+6197	tasto	892	7		6				tasto	6	913	tasto	6	893	tasto	6	895	tasto	6	895	tasto	6	893	tasto	6	892
+6198	tatterdemalion	893	7		6				tatterdemalion	6	914	tatterdemalion	6	894	tatterdemalion	6	896	tatterdemalion	6	896	tatterdemalion	6	894	tatterdemalion	6	893
+6199	tau-bone	894	7		5				tau-bone	5	915	tau-bone	5	895	tan-bone	1	897	tau-bone	5	897	tau-bone	5	895	tau-bone	5	894
+6200	taut	895	7		6				taut	6	916	taut	6	896	taut	6	898	taut	6	898	taut	6	896	taut	6	895
+6201	taw	896	7		5				taw	5	917	taw	5	897	taw	5	899	I	1	899	taw	5	897	taw	5	896
+6202	tax	897	7		6				tax	6	918	tax	6	898	tax	6	900	tax	6	900	tax	6	898	tax	6	897
+6203	taxin	898	7		3	tie			tazin	3	919	taxin	3	899	tazin	3	901	tazin	3	901	taxin	3	899	taxin	3	898
+6204	T-bar	899	7		6				T-bar	6	920	T-bar	6	900	T-bar	6	902	T-bar	6	902	T-bar	6	900	T-bar	6	899
+6205	tea	900	7		6				tea	6	921	tea	6	901	tea	6	903	tea	6	903	tea	6	901	tea	6	900
+6206	teak	901	7		6				teak	6	922	teak	6	902	teak	6	904	teak	6	904	teak	6	902	teak	6	901
+6207	tear	902	7		6				tear	6	923	tear	6	903	tear	6	905	tear	6	905	tear	6	903	tear	6	902
+6208	teaser	903	7		6				teaser	6	924	teaser	6	904	teaser	6	906	teaser	6	906	teaser	6	904	teaser	6	903
+6209		904	7		5					5	925		5	905		5	907	f	1	907		5	905		5	904
+6210		905	7		6					6	926		6	906		6	908		6	908		6	906		6	905
+6211		906	7		6					6	927		6	907		6	909		6	909		6	907		6	906
+6212		907	7		6					6	928		6	908		6	910		6	910		6	908		6	907
+6213		908	7		4				D	1	929	mm	1	909		4	911		4	911		4	909		4	908
+6214		909	7		6					6	930		6	910		6	912		6	912		6	910		6	909
+6215			7		2	weak				2	931							BINOINU	1	913		2	911			
+6216			7		3					3	932								3	914		3	912			
