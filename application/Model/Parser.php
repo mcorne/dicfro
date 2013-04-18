@@ -163,7 +163,8 @@ abstract class Model_Parser
         $string = "\n$errorType! ";
 
         if (! is_null($lineNumber)) {
-            $string .= "({$this->sourceFile} #$lineNumber) ";
+            $basename = basename($this->sourceFile);
+            $string .= "($basename #$lineNumber) ";
         }
 
         $string .= "$message\n";

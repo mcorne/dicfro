@@ -42,11 +42,11 @@ return array(
         ),
 
         'century' => array(
-            'created'      => '2013-13-10',
+            'created'      => '2013-13-14',
             'description'  => "The Century dictionary an encyclopedic lexicon of the English language prepared under the superintendence of William Dwight Whitney, 1895",
             'introduction' => 'http://archive.org/stream/centurydict01whit#page/n5/mode/2up',
             'language'     => 'en',
-            'name'         => 'Century',
+            'name'         => 'Century Dictionary',
             'search'       => array(
                 'properties' => array(
                     'url'     => array(
@@ -61,7 +61,27 @@ return array(
                     ),
                 )
             ),
-            'title'        => 'Century',
+            'title'        => 'Century D.',
+            'type'         => 'index',
+            'url'          => 'century-dictionary',
+            'volume'       => 'readonly',
+        ),
+
+        'century-supplement' => array(
+            'created'      => '2013-13-18',
+            'description'  => "The Century dictionary supplement prepared under the superintendence of Benjamin E. Smith, 1909",
+            'introduction' => 'http://archive.org/stream/cu31924091890685#page/n5/mode/2up',
+            'language'     => 'en',
+            'name'         => 'Century Supplement',
+            'search'       => array(
+                'properties' => array(
+                    'url'     => array(
+                        11 => 'http://ia700404.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/cu31924091890685/cu31924091890685_jp2.zip&file=cu31924091890685_jp2/cu31924091890685_0%03u.jp2&scale=3&rotate=0',
+                        12 => 'http://ia700305.us.archive.org/BookReader/BookReaderImages.php?zip=/7/items/centurydictionar12whituoft/centurydictionar12whituoft_jp2.zip&file=centurydictionar12whituoft_jp2/centurydictionar12whituoft_0%03u.jp2&scale=3&rotate=0',
+                    ),
+                )
+            ),
+            'title'        => 'Century S.',
             'type'         => 'index',
             'volume'       => 'readonly',
         ),
@@ -667,6 +687,7 @@ return array(
             'name' => 'English',
             'dictionaries' => array(
                 'century',
+                'century-supplement',
                 'webster',
                 'wiktionary',
             ),
