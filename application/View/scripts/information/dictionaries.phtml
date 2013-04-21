@@ -15,16 +15,24 @@
 
 ?>
 
-<h1 class="title">Liste des dictionnaires</h1>
 
-<?php foreach($this->dictionariesHelper->getGroups() as $optgroup) :?>
-  <p class="sub-title"><?=$optgroup['label'];?></p>
+<?php if ($this->englishDictList):?>
+  <h1 class="title">Dictionary list (dictionary names in English)</h1>
+  <a href="<?=$this->setActionUrl($this->dictionariesLink);?>">See the list with the original dictionary names</a>
+<?php else:?>
+  <h1 class="title"><?=$this->translate('Dictionary list', null, ! $this->englishDictList);?></h1>
+  <a href="<?=$this->setActionUrl($this->dictlistLink);?>"><?=$this->translate('See the list with the dictionary names in English');?></a>
+<?php endif;?>
+
+<?php foreach($this->dictionariesHelper->getGroups($this->englishDictList) as $optgroup) :?>
+  <p class="sub-title" title="<?=$optgroup['list-title'];?>"><?=$optgroup['label'];?></p>
 
     <ul>
     <?php foreach($optgroup['options'] as $options) :?>
 
       <li>
       <a class="link <?=$options['type'];?>"
+         title ="<?=$options['list-title'];?>"
          href="<?=$this->setActionUrl('introduction/' . $options['value']);?>"><?=$options['title'];?></a>
       </li>
 
@@ -33,14 +41,25 @@
 
 <?php endforeach;?>
 
-<p class="sub-title">DicFro propose 3 types de dictionnaire</p>
-<ul>
-  <li><a class="internal">Dictionnaire interne :</a> les pages du dictionnaire et l'index des pages sont stockés dans DicFro.</li>
-  <li><a class="index">Dictionnaire indexé :</a> les pages du dictionnaire sont stockées hors de DicFro,
-      l'index des pages est stocké dans DicFro. DicFro effectue la recherche d'un mot dans l'index,
-      et affiche la page correspondante du dictionnaire, comme pour un dictionnaire interne.
-  </li>
-  <li><a class="external">Dictionnaire externe :</a> les pages du dictionnaire sont sockées hors de DicFro.
-      DicFro passe le mot recherché au dictionnaire qui effectue la recherche et affiche la page du mot.
-  </li>
-</ul>
+<p class="sub-title"><?=$this->translate('DicFro offers three types of dictionary', null, ! $this->englishDictList);?></p>
+<table class="dictionary-types">
+  <tr>
+    <td class="type internal"><?=$this->translate('Internal dictionaries', null, ! $this->englishDictList);?></td>
+    <td><?=$this->translate('The dictionary pages and the index to the pages are stored in DicFro.', null, ! $this->englishDictList);?></td>
+  </tr>
+  <tr>
+    <td class="type index"><?=$this->translate('Indexed dictionaries', null, ! $this->englishDictList);?></td>
+    <td>
+      <?=$this->translate('The pages of the dictionary are stored outside DicFro.', null, ! $this->englishDictList);?>
+      <?=$this->translate('The index to the pages is stored in DicFro.', null, ! $this->englishDictList);?>
+      <?=$this->translate('DicFro will search a word in the index, and displays the corresponding page of the dictionary', null, ! $this->englishDictList);?>
+    </td>
+  </tr>
+  <tr>
+    <td class="type external"><?=$this->translate('External dictionaries', null, ! $this->englishDictList);?></td>
+    <td>
+      <?=$this->translate('The pages of the dictionary are stored outside DicFro.', null, ! $this->englishDictList);?>
+      <?=$this->translate('DicFro will pass the search word to the dictionary that performs the search and displays the word.', null, ! $this->englishDictList);?>
+    </td>
+  </tr>
+</table>

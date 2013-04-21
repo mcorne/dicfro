@@ -9,7 +9,7 @@
  * @license   http://www.opensource.org/licenses/gpl-3.0.html GNU GPL v3
  */
 
-// exit('Dicfro est en cours de maintenance - Dicfro is down for maintenance');
+// exit('Dicfro is down for maintenance - Dicfro est en cours de maintenance');
 
 $_time = microtime(true);
 

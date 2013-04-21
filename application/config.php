@@ -32,7 +32,7 @@ return array(
     'dictionaries' => array(
         'anglo-norman' => array(
             'created'      => '2013-03-18',
-            'description'  => 'The Anglo-Norman Dictionary',
+            'description'  => 'The Anglo-Norman dictionary',
             'introduction' => 'http://www.anglo-norman.net',
             'language'     => 'fr',
             'name'         => 'Anglo-Norman',
@@ -43,7 +43,7 @@ return array(
 
         'century' => array(
             'created'      => '2013-13-14',
-            'description'  => "The Century dictionary an encyclopedic lexicon of the English language prepared under the superintendence of William Dwight Whitney, 1895",
+            'description'  => 'The Century dictionary, an encyclopedic lexicon of the English language, William D. Whitney, 1895',
             'introduction' => 'http://archive.org/stream/centurydict01whit#page/n5/mode/2up',
             'language'     => 'en',
             'name'         => 'Century Dictionary',
@@ -69,7 +69,7 @@ return array(
 
         'century-supplement' => array(
             'created'      => '2013-13-18',
-            'description'  => "The Century dictionary supplement prepared under the superintendence of Benjamin E. Smith, 1909",
+            'description'  => 'The Century dictionary supplement, Benjamin E. Smith, 1909',
             'introduction' => 'http://archive.org/stream/cu31924091890685#page/n5/mode/2up',
             'language'     => 'en',
             'name'         => 'Century Supplement',
@@ -87,41 +87,43 @@ return array(
         ),
 
         'chretien' => array(
-            'created'     => '2010-08-01',
-            'description' => "Dictionnaire de l'oeuvre de Chrétien de Troyes, Wörterbuch zu Kristian von Troyes' sämtlichen Werken, Wendelin Foerster, 1914",
-            'image'       => 'dictionnaire-chretien-de-troyes.jpg',
-            'language'    => 'fr',
-            'name'        => 'Chrétien de Troyes',
-            'parser'      => array(
+            'created'        => '2010-08-01',
+            'description'    => 'Kristian von Troyes Wörterbuch zu seinem sämtlichen Werken, Wendelin Foerster, 1914',
+            'description-en' => 'Dictionary of the works of Chrétien de Troyes, Wendelin Foerster, 1914',
+            'image'          => 'dictionnaire-chretien-de-troyes.jpg',
+            'language'       => 'fr',
+            'name'           => 'Chrétien de Troyes',
+            'parser'         => array(
                 'class'      => 'Model_Parser_GaffiotLike',
                 'properties' => array(
                     'lineTpl'    => '~^(.+?)__BR____BR__<@_(\d+).tif_>FoersterEdic__BR____BR__~',
                 )
             ),
-            'search'      => array(
+            'search'         => array(
                 'properties' => array(
                     'needTcaf'   => true,
                     'needTobler' => true,
                 )
             ),
-            'title'       => 'Chrétien',
-            'type'        => 'internal',
-            'url'         => 'glossaire-chretien-de-troyes',
+            'title'          => 'Chrétien',
+            'type'           => 'internal',
+            'url'            => 'glossaire-chretien-de-troyes',
         ),
 
         'cnrtl' => array(
-            'created'      => '2010-08-01',
-            'description'  => 'Dictionnaire du Centre National de Ressources Textuelles et Lexicales',
-            'introduction' => 'http://www.cnrtl.fr/definition/',
-            'language'     => 'fr',
-            'name'         => 'CNRTL',
-            'search'       => 'http://www.cnrtl.fr/definition/',
-            'type'         => 'external',
+            'created'        => '2010-08-01',
+            'description'    => 'Dictionnaire du Centre National de Ressources Textuelles et Lexicales',
+            'description-en' => 'Dictionary of the national center for textual and lexical resources',
+            'introduction'   => 'http://www.cnrtl.fr/definition/',
+            'language'       => 'fr',
+            'name'           => 'CNRTL',
+            'search'         => 'http://www.cnrtl.fr/definition/',
+            'type'           => 'external',
         ),
 
         'cotgrave' => array(
             'created'      => '2012-03-11',
-            'description'  => 'A Dictionarie of the French and English Tongues, Randle Cotgrave, 1611',
+            'description'  => 'A dictionarie of the French and English tongues, Randle Cotgrave, 1611',
             'introduction' => 'http://www.pbm.com/~lindahl/cotgrave/',
             'language'     => 'fr',
             'name'         => 'Cotgrave',
@@ -135,47 +137,73 @@ return array(
         ),
 
         'couronnement' => array(
-            'created'     => '2010-08-01',
-            'description' => 'Glossaire du Couronnement de Louis, Ernest Langlois, 1888',
-            'image'       => 'glossaire-couronnement-de-louis.jpg',
-            'language'    => 'fr',
-            'name'        => 'Couronnement de Louis',
-            'parser'      => array(
+            'created'        => '2010-08-01',
+            'description'    => 'Glossaire du Couronnement de Louis, Ernest Langlois, 1888',
+            'description-en' => 'Glossary of the Coronation of Louis, Ernest Langlois, 1888',
+            'image'          => 'glossaire-couronnement-de-louis.jpg',
+            'language'       => 'fr',
+            'name'           => 'Couronnement de Louis',
+            'parser'         => array(
                 'class'      => 'Model_Parser_GaffiotLike',
                 'properties' => array(
                     'imageNumberTpl' => '0000%s',
                     'lineTpl'        => '~^(.+?)__BR____BR__<@_tx(\d+).tif_>EGlos_CourLouisL1__BR____BR__~',
                 )
             ),
-            'search'      => array(
+            'search'         => array(
                 'properties' => array(
                     'needTcaf'   => true,
                     'needTobler' => true,
                 )
             ),
-            'title'       => 'Couronnement',
-            'type'        => 'internal',
-            'url'         => 'glossaire-couronnement-de-louis',
+            'title'          => 'Couronnement',
+            'type'           => 'internal',
+            'url'            => 'glossaire-couronnement-de-louis',
         ),
 
         'dmf' => array(
-            'created'      => '2008-04-14',
-            'description'  => "Dictionnaire du Moyen Français par l'Atilf",
-            'introduction' => 'http://www.atilf.fr/dmf/',
-            'language'     => 'fr',
-            'name'         => 'Moyen français',
-            'search'       => 'http://www.atilf.fr/dmf/definition/',
-            'title'        => 'DMF',
-            'type'         => 'external',
+            'created'        => '2008-04-14',
+            'description'    => "Dictionnaire du Moyen Français, Atilf",
+            'description-en' => "Middle French dictionary, Atilf",
+            'introduction'   => 'http://www.atilf.fr/dmf/',
+            'language'       => 'fr',
+            'name'           => 'Moyen français',
+            'search'         => 'http://www.atilf.fr/dmf/definition/',
+            'title'          => 'DMF',
+            'type'           => 'external',
+        ),
+
+        'ducange' => array(
+            'created'        => '2013-03-19',
+            'description'    => 'Glossarium mediæ et infimæ latinitatis, Du Cange, 1678',
+            'description-en' => 'Glossary of medieval and late Latin, Du Cange, 1678',
+            'introduction'   => 'http://ducange.enc.sorbonne.fr/',
+            'language'       => 'la',
+            'name'           => 'Du Cange',
+            'search'         => 'http://ducange.enc.sorbonne.fr/',
+            'title'          => 'Du Cange',
+            'type'           => 'external',
+        ),
+
+        'dvlf' => array(
+            'created'        => '2012-06-03',
+            'description'    => 'Dictionnaire vivant de la langue française, The ARTFL Project',
+            'description-en' => 'Live dictionary of the French language, The ARTFL Project',
+            'introduction'   => 'http://dvlf.uchicago.edu/',
+            'language'       => 'fr',
+            'name'           => 'DVLF',
+            'search'         => 'http://dvlf.uchicago.edu/mot/',
+            'type'           => 'external',
         ),
 
         'encyclopedie-larousse' => array(
-            'created'      => '2013-04-03',
-            'description'  => "La Grande encyclopédie Larousse, 1971-1976",
-            'introduction' => 'http://gallica.bnf.fr/ark:/12148/bpt6k1200512k/f1.image',
-            'language'     => 'fr',
-            'name'         => 'Encyclopédie Larousse (Aa-Au)',
-            'search'      => array(
+            'created'        => '2013-04-03',
+            'description'    => 'La Grande encyclopédie Larousse, 1971-1976',
+            'description-en' => 'The Larousse great encyclopedia, 1971-1976',
+            'introduction'   => 'http://gallica.bnf.fr/ark:/12148/bpt6k1200512k/f1.image',
+            'language'       => 'fr',
+            'name'           => 'Encyclopédie Larousse (Aa-Au)',
+            'search'         => array(
                 'properties' => array(
                     'entries' => true,
                     'url'     => array(
@@ -184,61 +212,42 @@ return array(
                     ),
                 )
             ),
-            'title'        => 'E. Larousse',
-            'type'         => 'index',
-            'volume'       => 'readonly',
-        ),
-
-        'ducange' => array(
-            'created'      => '2013-03-19',
-            'description'  => 'Du Cange, et al., Glossarium mediæ et infimæ latinitatis. Niort : L. Favre, 1883-1887',
-            'introduction' => 'http://ducange.enc.sorbonne.fr/',
-            'language'     => 'la',
-            'name'         => 'Du Cange',
-            'search'       => 'http://ducange.enc.sorbonne.fr/',
-            'title'         => 'Du Cange',
-            'type'         => 'external',
-        ),
-
-        'dvlf' => array(
-            'created'      => '2012-06-03',
-            'description'  => "Dictionnaire vivant de la langue française du projet ARTFL",
-            'introduction' => 'http://dvlf.uchicago.edu/',
-            'language'     => 'fr',
-            'name'         => 'DVLF',
-            'search'       => 'http://dvlf.uchicago.edu/mot/',
-            'type'         => 'external',
+            'title'          => 'E. Larousse',
+            'type'           => 'index',
+            'volume'         => 'readonly',
         ),
 
         'gaffiot' => array(
-            'created'     => '2008-06-27',
-            'description' => 'Dictionnaire Latin-Français, Félix Gaffiot, 1934',
-            'image'       => 'gaffiot.jpg',
-            'language'    => 'la',
-            'name'        => 'Gaffiot',
-            'parser'      => array(
+            'created'        => '2008-06-27',
+            'description'    => 'Dictionnaire latin-français, Félix Gaffiot, 1934',
+            'description-en' => 'Latin-French dictionary, Félix Gaffiot, 1934',
+            'image'          => 'gaffiot.jpg',
+            'language'       => 'la',
+            'name'           => 'Gaffiot',
+            'parser'         => array(
                 'class'      => 'Model_Parser_GaffiotLike',
                 'properties' => array(
                     'endWord' => '_abréviations',
                     'lineTpl' => '~^(.+?)__BR____BR__<@_tx(\d+).tif_>GaffiotEdic__BR____BR__~',
                 )
             ),
-            'search'      => array(
+            'search'         => array(
                 'properties' => array(
                     'needWhitaker' => true,
                 ),
             ),
-            'type'        => 'internal',
+            'type'           => 'internal',
         ),
 
         'gdf' => array(
-            'created'     => '2008-04-14',
-            'description' => "Dictionnaire de l'ancienne langue française et de tous ses dialectes du IXème au XVème siècle, Frédéric Godefroy, 1880-1895",
-            'image'       => 'dictionnaire-godefroy.jpg',
-            'language'    => 'fr',
-            'name'        => 'Godefroy - Dictionnaire',
-            'parser'      => 'Model_Parser_GdfLike',
-            'search'      => array(
+            'created'        => '2008-04-14',
+            'description'    => "Dictionnaire de l'ancienne langue française et de tous ses dialectes du IXème au XVème siècle, Frédéric Godefroy, 1880-1895",
+            'description-en' => 'Dictionary of the Old French language and all its dialects from the ninth to fifteenth century, Frédéric Godefroy, 1880-1895',
+            'image'          => 'dictionnaire-godefroy.jpg',
+            'language'       => 'fr',
+            'name'           => 'Godefroy - Dictionnaire',
+            'parser'         => 'Model_Parser_GdfLike',
+            'search'         => array(
                 'properties' => array(
                     'errataFiles'      => 'dictionary/gdf/mPimg-3/%s-%s[a-z]*/*.gif',
                     'imagePath'        => 'dictionary/gdf/mImg/%s.gif',
@@ -248,20 +257,21 @@ return array(
                     'needTobler'       => true,
                 )
             ),
-            'title'       => 'D. Godefroy',
-            'type'        => 'internal',
-            'url'         => 'dictionnaire-godefroy',
-            'volume'      => 'input',
+            'title'          => 'D. Godefroy',
+            'type'           => 'internal',
+            'url'            => 'dictionnaire-godefroy',
+            'volume'         => 'input',
         ),
 
         'gdfc' => array(
-            'created'     => '2008-04-14',
-            'description' => "Complément du dictionnaire de l'ancienne langue française et de tous ses dialectes du IXème au XVème siècle, Frédéric Godefroy, 1895-1902",
-            'image'       => 'complement-godefroy.jpg',
-            'language'    => 'fr',
-            'name'        => 'Godefroy - Complément',
-            'parser'      => 'Model_Parser_GdfLike',
-            'search'      => array(
+            'created'        => '2008-04-14',
+            'description'    => "Complément du dictionnaire de l'ancienne langue française et de tous ses dialectes du IXème au XVème siècle, Frédéric Godefroy, 1895-1902",
+            'description-en' => 'Dictionary supplement of the Old French language and all its dialects from the ninth to fifteenth century, Frédéric Godefroy, 1880-1895',
+            'image'          => 'complement-godefroy.jpg',
+            'language'       => 'fr',
+            'name'           => 'Godefroy - Complément',
+            'parser'         => 'Model_Parser_GdfLike',
+            'search'         => array(
                 'properties' => array(
                     'digit'            => 1,
                     'errataFiles'      => 'dictionary/gdfc/mPimg-3/%s-%s[a-z]*/*.gif',
@@ -272,19 +282,20 @@ return array(
                     'needTobler'       => true,
                 )
             ),
-            'title'       => 'C. Godefroy',
-            'type'        => 'internal',
-            'url'         => 'complement-godefroy',
-            'volume'      => 'input',
+            'title'          => 'C. Godefroy',
+            'type'           => 'internal',
+            'url'            => 'complement-godefroy',
+            'volume'         => 'input',
         ),
 
         'gdflex' => array(
-            'created'     => '2008-04-14',
-            'description' => "Lexique de l'ancien français, Frédéric Godefroy, 1901",
-            'image'       => 'lexique-godefroy.jpg',
-            'language'    => 'fr',
-            'name'        => 'Godefroy - Lexique',
-            'search'      => array(
+            'created'        => '2008-04-14',
+            'description'    => "Lexique de l'ancien français, Frédéric Godefroy, 1901",
+            'description-en' => 'Old French lexicon, Frédéric Godefroy, 1880-1895',
+            'image'          => 'lexique-godefroy.jpg',
+            'language'       => 'fr',
+            'name'           => 'Godefroy - Lexique',
+            'search'         => array(
                 'properties' => array(
                     'needErrataText' => true,
                     'needGhostwords' => true,
@@ -292,91 +303,92 @@ return array(
                     'needTobler'     => true,
                 )
             ),
-            'title'       => 'L. Godefroy',
-            'type'        => 'internal',
-            'url'         => 'lexique-godefroy',
+            'title'          => 'L. Godefroy',
+            'type'           => 'internal',
+            'url'            => 'lexique-godefroy',
         ),
 
         'jeanneau' => array(
-            'created'      => '2008-06-27',
-            'description'  => 'Dictionnaire français-latin de Gérard Jeanneau',
-            'introduction' => 'http://www.prima-elementa.fr/Dico.htm',
-            'language'     => 'la',
-            'name'         => 'Jeanneau',
-            'search'       => array(
+            'created'        => '2008-06-27',
+            'description'    => 'Dictionnaire français-latin, Gérard Jeanneau',
+            'description-en' => 'Latin-French dictionary, Gérard Jeanneau',
+            'introduction'   => 'http://www.prima-elementa.fr/Dico.htm',
+            'language'       => 'la',
+            'name'           => 'Jeanneau',
+            'search'         => array(
                 'class' => 'Model_Search_Jeanneau',
                 'properties' => array(
                     'url' => 'http://www.prima-elementa.fr/',
                 ),
             ),
-            'type'         => 'external',
+            'type'           => 'external',
         ),
 
         'lacurne' => array(
-            'created'     => '2013-03-29',
-            'description' => "Dictionnaire historique de l'ancien langage françois ou Glossaire de la langue françoise, J.B. de la Curne de Sainte-Palaye, 1875-1882",
-            'image'       => 'dictionnaire-lacurne.jpg',
-            'language'    => 'fr',
-            'name'        => 'Lacurne - Dictionnaire',
-            'search'      => array(
+            'created'        => '2013-03-29',
+            'description'    => "Dictionnaire historique de l'ancien langage françois ou glossaire de la langue françoise, J.B. de la Curne de Sainte-Palaye, 1875-1882",
+            'description-en' => 'Historical dictionary of the Old French language, J.B. de la Curne de Sainte-Palaye, 1875-1882',
+            'image'          => 'dictionnaire-lacurne.jpg',
+            'language'       => 'fr',
+            'name'           => 'Lacurne - Dictionnaire',
+            'search'         => array(
                 'properties' => array(
                     'needTcaf'   => true,
                     'needTobler' => true,
                 )
             ),
-            'title'       => 'D. Lacurne',
-            'type'        => 'internal',
-            'url'         => 'dictionnaire-lacurne',
-            'volume'      => 'input',
+            'title'          => 'D. Lacurne',
+            'type'           => 'internal',
+            'url'            => 'dictionnaire-lacurne',
+            'volume'         => 'input',
         ),
 
-        'leconjugueur' => array(
-            'created'      => '2010-08-01',
-            'description'  => 'La conjugaison française par le Conjugueur',
-            'introduction' => 'http://www.leconjugueur.com/',
-            'language'     => 'fr',
-            'name'         => 'Le conjugueur',
-            'search'       => array(
-                'properties' => array(
-                    'convert' => 'utf8toASCII',
-                    'url'     => 'http://www.leconjugueur.com/php5/index.php?v=',
-                ),
-            ),
-            'type'         => 'external',
+        'les-verbes' => array(
+            'created'        => '2013-04-21',
+            'description'    => 'Les verbes, les-verbes.com',
+            'description-en' => 'Verbs, les-verbes.com',
+            'introduction'   => 'http://www.les-verbes.com',
+            'language'       => 'fr',
+            'name'           => 'Les verbes',
+            'search'         => 'http://www.les-verbes.com/conjuguer.php?verbe=',
+            'type'           => 'external',
         ),
 
         'lexromv' => array(
-            'created'      => '2010-08-01',
-            'description'  => "Lexique Roman ou dictionnaire de la langue des troubadours comparée avec les autres langues de l'Europe latine, François J. M. Raynouard, 1844",
-            'image'        => 'lexique-roman.jpg',
-            'introduction' => 'roman.phtml',
-            'language'     => 'fr',
-            'name'         => 'Lexique Roman',
-            'search'      => array(
+            'created'        => '2010-08-01',
+            'description'    => "Lexique Roman ou dictionnaire de la langue des troubadours comparée avec les autres langues de l'Europe latine, François J. M. Raynouard, 1844",
+            'description-en' => 'Romance languages lexicon or dictionary of the language of the troubadours compared with other languages ​​of Latin Europe, François J. M. Raynouard, 1844',
+            'image'          => 'lexique-roman.jpg',
+            'introduction'   => 'roman.phtml',
+            'language'       => 'fr',
+            'name'           => 'Lexique Roman',
+            'search'         => array(
                 'class' => 'Model_Search_Lexromv',
             ),
-            'title'        => 'L. Roman',
-            'type'         => 'internal',
-            'url'          => 'lexique-roman',
+            'title'          => 'L. Roman',
+            'type'           => 'internal',
+            'url'            => 'lexique-roman',
         ),
 
         'littre' => array(
-            'created'      => '2010-08-01',
-            'description'  => "Dictionnaire de la langue française d'Émile Littré, 1872-1877",
-            'introduction' => 'http://littre.reverso.net/dictionnaire-francais',
-            'language'     => 'fr',
-            'name'         => 'Littré',
-            'search'       => 'http://littre.reverso.net/dictionnaire-francais/definition/',
-            'type'         => 'external',
+            'created'        => '2010-08-01',
+            'description'    => 'Dictionnaire de la langue française, Émile Littré, 1872-1877',
+            'description-en' => 'Dictionary of the French language, Émile Littré, 1872-1877',
+            'introduction'   => 'http://littre.reverso.net/dictionnaire-francais',
+            'language'       => 'fr',
+            'name'           => 'Littré',
+            'search'         => 'http://littre.reverso.net/dictionnaire-francais/definition/',
+            'type'           => 'external',
         ),
 
         'petit-larousse' => array(
-            'created'      => '2013-04-10',
-            'description'  => "Petit Larousse illustré (noms communs), nouveau dictionnaire encyclopédique (5e édition), publié sous la direction de Claude Augé, 1906",
-            'introduction' => 'http://archive.org/stream/PetitLarousse19061/larousse_petit_1906_a#page/n7/mode/2up',
-            'language'     => 'fr',
-            'name'         => 'Petit Larousse (N.c.)',
-            'search'       => array(
+            'created'        => '2013-04-10',
+            'description'    => "Petit Larousse illustré (noms communs), nouveau dictionnaire encyclopédique (5e édition), Claude Augé, 1906",
+            'description-en' => "Petit Larousse illustrated dictionary (common names), new encyclopedic dictionary (5th Edition), Claude Augé, 1906",
+            'introduction'   => 'http://archive.org/stream/PetitLarousse19061/larousse_petit_1906_a#page/n7/mode/2up',
+            'language'       => 'fr',
+            'name'           => 'Petit Larousse (N.c.)',
+            'search'         => array(
                 'properties' => array(
                     'url'     => array(
                         1 => 'http://ia700503.us.archive.org/BookReader/BookReaderImages.php?zip=/8/items/PetitLarousse19061/larousse_petit_1906_a_jp2.zip&file=larousse_petit_1906_a_jp2/larousse_petit_1906_a_0%03u.jp2&scale=3&rotate=0',
@@ -386,18 +398,19 @@ return array(
                     ),
                 )
             ),
-            'title'        => 'N.c. Larousse',
-            'type'         => 'index',
-            'volume'       => 'readonly',
+            'title'          => 'N.c. Larousse',
+            'type'           => 'index',
+            'volume'         => 'readonly',
         ),
 
         'petit-larousse-np' => array(
-            'created'      => '2013-04-13',
-            'description'  => "Petit Larousse illustré (noms propres), nouveau dictionnaire encyclopédique (5e édition), publié sous la direction de Claude Augé, 1906",
-            'introduction' => 'http://archive.org/stream/PetitLarousse19065/larousse_petit_1906_e#page/n0/mode/2up',
-            'language'     => 'fr',
-            'name'         => 'Petit Larousse (N.p.)',
-            'search'       => array(
+            'created'        => '2013-04-13',
+            'description'    => "Petit Larousse illustré (noms propres), nouveau dictionnaire encyclopédique (5e édition), Claude Augé, 1906",
+            'description-en' => "Petit Larousse illustrated dictionary (proper names), new encyclopedic dictionary (5th Edition), Claude Augé, 1906",
+            'introduction'   => 'http://archive.org/stream/PetitLarousse19065/larousse_petit_1906_e#page/n0/mode/2up',
+            'language'       => 'fr',
+            'name'           => 'Petit Larousse (N.p.)',
+            'search'         => array(
                 'properties' => array(
                     'url'     => array(
                         5 => 'http://ia600501.us.archive.org/BookReader/BookReaderImages.php?zip=/19/items/PetitLarousse19065/larousse_petit_1906_e_jp2.zip&file=larousse_petit_1906_e_jp2/larousse_petit_1906_e_0%03u.jp2&scale=3&rotate=0',
@@ -405,251 +418,262 @@ return array(
                     ),
                 )
             ),
-            'title'        => 'N.p. Larousse',
-            'type'         => 'index',
-            'volume'       => 'readonly',
+            'title'          => 'N.p. Larousse',
+            'type'           => 'index',
+            'volume'         => 'readonly',
         ),
 
         'renart-fhs' => array(
-            'created'     => '2012-01-07',
-            'description' => 'Glossaire du Roman de Renart, N. Fukumoto, N. Harano et S. Suzuki, 1985',
-            'image'       => 'glossaire-roman-de-renart-fhs.jpg',
-            'language'    => 'fr',
-            'name'        => 'Roman de Renart / FHS',
-            'parser'      => array(
+            'created'        => '2012-01-07',
+            'description'    => 'Glossaire du Roman de Renart, N. Fukumoto, N. Harano et S. Suzuki, 1985',
+            'description-en' => 'Glossary of the Roman de Renart, N. Fukumoto, N. Harano et S. Suzuki, 1985',
+            'image'          => 'glossaire-roman-de-renart-fhs.jpg',
+            'language'       => 'fr',
+            'name'           => 'Roman de Renart / FHS',
+            'parser'         => array(
                 'class'      => 'Model_Parser_GaffiotLike',
                 'properties' => array(
                     'imageNumberTpl' => '0000%s',
                     'lineTpl'        => '~^(.+?);(\d+)~',
                 )
             ),
-            'search'      => array(
+            'search'         => array(
                 'properties' => array(
                     'needTcaf'   => true,
                     'needTobler' => true,
                 )
             ),
-            'title'       => 'Renart',
-            'type'        => 'internal',
-            'url'         => 'glossaire-roman-de-renart-fhs',
+            'title'          => 'Renart',
+            'type'           => 'internal',
+            'url'            => 'glossaire-roman-de-renart-fhs',
         ),
 
         'renart-meon-1' => array(
-            'created'     => '2012-01-07',
-            'description' => 'Glossaire du Roman de Renart, volume 1, M. D. M. Méon, 1826',
-            'image'       => 'glossaire-roman-de-renart-meon-vol1.jpg',
-            'language'    => 'fr',
-            'name'        => 'Roman de Renart / Méon v.1',
-            'parser'      => array(
+            'created'        => '2012-01-07',
+            'description'    => 'Glossaire du Roman de Renart, volume 1, M. D. M. Méon, 1826',
+            'description-en' => 'Glossary of the Roman de Renart, volume 1, M. D. M. Méon, 1826',
+            'image'          => 'glossaire-roman-de-renart-meon-vol1.jpg',
+            'language'       => 'fr',
+            'name'           => 'Roman de Renart / Méon v.1',
+            'parser'         => array(
                 'class'      => 'Model_Parser_GaffiotLike',
                 'properties' => array(
                     'imageNumberTpl' => '0000%s',
                     'lineTpl'        => '~^(.+?);(\d+)~',
                 )
             ),
-            'search'      => array(
+            'search'         => array(
                 'properties' => array(
                     'needTcaf'   => true,
                     'needTobler' => true,
                 )
             ),
-            'title'       => 'Méon 1',
-            'type'        => 'internal',
-            'url'         => 'glossaire-roman-de-renart-meon-vol1',
+            'title'          => 'Méon 1',
+            'type'           => 'internal',
+            'url'            => 'glossaire-roman-de-renart-meon-vol1',
         ),
 
         'renart-meon-2' => array(
-            'created'     => '2012-01-07',
-            'description' => 'Glossaire du Roman de Renart, volume 2, M. D. M. Méon, 1826',
-            'image'       => 'glossaire-roman-de-renart-meon-vol2.jpg',
-            'language'    => 'fr',
-            'name'        => 'Roman de Renart / Méon v.2',
-            'parser'      => array(
+            'created'        => '2012-01-07',
+            'description'    => 'Glossaire du Roman de Renart, volume 2, M. D. M. Méon, 1826',
+            'description-en' => 'Glossary of the Roman de Renart, volume 2, M. D. M. Méon, 1826',
+            'image'          => 'glossaire-roman-de-renart-meon-vol2.jpg',
+            'language'       => 'fr',
+            'name'           => 'Roman de Renart / Méon v.2',
+            'parser'         => array(
                 'class'      => 'Model_Parser_GaffiotLike',
                 'properties' => array(
                     'imageNumberTpl' => '0000%s',
                     'lineTpl'        => '~^(.+?);(\d+)~',
                 )
             ),
-            'search'      => array(
+            'search'         => array(
                 'properties' => array(
                     'needTcaf'   => true,
                     'needTobler' => true,
                 )
             ),
-            'title'       => 'Méon 2',
-            'type'        => 'internal',
-            'url'         => 'glossaire-roman-de-renart-meon-vol2',
+            'title'          => 'Méon 2',
+            'type'           => 'internal',
+            'url'            => 'glossaire-roman-de-renart-meon-vol2',
         ),
 
         'renart-meon-3' => array(
-            'created'     => '2012-01-07',
-            'description' => 'Glossaire du Roman de Renart, volume 3, M. D. M. Méon, 1826',
-            'image'       => 'glossaire-roman-de-renart-meon-vol3.jpg',
-            'language'    => 'fr',
-            'name'        => 'Roman de Renart / Méon v.3',
-            'parser'      => array(
+            'created'        => '2012-01-07',
+            'description'    => 'Glossaire du Roman de Renart, volume 3, M. D. M. Méon, 1826',
+            'description-en' => 'Glossary of the Roman de Renart, volume 3, M. D. M. Méon, 1826',
+            'image'          => 'glossaire-roman-de-renart-meon-vol3.jpg',
+            'language'       => 'fr',
+            'name'           => 'Roman de Renart / Méon v.3',
+            'parser'         => array(
                 'class'      => 'Model_Parser_GaffiotLike',
                 'properties' => array(
                     'imageNumberTpl' => '0000%s',
                     'lineTpl'        => '~^(.+?);(\d+)~',
                 )
             ),
-            'search'      => array(
+            'search'         => array(
                 'properties' => array(
                     'needTcaf'   => true,
                     'needTobler' => true,
                 )
             ),
-            'title'       => 'Méon 3',
-            'type'        => 'internal',
-            'url'         => 'glossaire-roman-de-renart-meon-vol3',
+            'title'          => 'Méon 3',
+            'type'           => 'internal',
+            'url'            => 'glossaire-roman-de-renart-meon-vol3',
         ),
 
         'renart-meon-4' => array(
-            'created'     => '2012-01-07',
-            'description' => 'Glossaire du Roman de Renart, volume 4, M. D. M. Méon, 1826',
-            'image'       => 'glossaire-roman-de-renart-meon-vol4.jpg',
-            'language'    => 'fr',
-            'name'        => 'Roman de Renart / Méon v.4',
-            'parser'      => array(
+            'created'        => '2012-01-07',
+            'description'    => 'Glossaire du Roman de Renart, volume 4, M. D. M. Méon, 1826',
+            'description-en' => 'Glossary of the Roman de Renart, volume 4, M. D. M. Méon, 1826',
+            'image'          => 'glossaire-roman-de-renart-meon-vol4.jpg',
+            'language'       => 'fr',
+            'name'           => 'Roman de Renart / Méon v.4',
+            'parser'         => array(
                 'class'      => 'Model_Parser_GaffiotLike',
                 'properties' => array(
                     'imageNumberTpl' => '0000%s',
                     'lineTpl'        => '~^(.+?);(\d+)~',
                 )
             ),
-            'search'      => array(
+            'search'         => array(
                 'properties' => array(
                     'needTcaf'   => true,
                     'needTobler' => true,
                 )
             ),
-            'title'       => 'Méon 4',
-            'type'        => 'internal',
-            'url'         => 'glossaire-roman-de-renart-meon-vol4',
+            'title'          => 'Méon 4',
+            'type'           => 'internal',
+            'url'            => 'glossaire-roman-de-renart-meon-vol4',
         ),
 
         'roland' => array(
-            'created'     => '2010-08-01',
-            'description' => 'Glossaire de la Chanson de Roland, Joseph Bédier, 1927',
-            'image'       => 'glossaire-chanson-de-roland.jpg',
-            'language'    => 'fr',
-            'name'        => 'Chanson de Roland',
-            'parser'      => array(
+            'created'        => '2010-08-01',
+            'description'    => 'Glossaire de la Chanson de Roland, Joseph Bédier, 1927',
+            'description-en' => 'Glossary of the Song of Roland, Joseph Bédier, 1927',
+            'image'          => 'glossaire-chanson-de-roland.jpg',
+            'language'       => 'fr',
+            'name'           => 'Chanson de Roland',
+            'parser'         => array(
                 'class'      => 'Model_Parser_GaffiotLike',
                 'properties' => array(
                     'imageNumberTpl' => '0000%s',
                     'lineTpl'        => '~^(.+?)__BR____BR__<@_tx(\d+).tif_>EGlos_RolB__BR____BR__~',
                 )
             ),
-            'search'      => array(
+            'search'         => array(
                 'properties' => array(
                     'needTcaf'   => true,
                     'needTobler' => true,
                 )
             ),
-            'title'       => 'Roland',
-            'type'        => 'internal',
-            'url'         => 'glossaire-chanson-de-roland',
+            'title'          => 'Roland',
+            'type'           => 'internal',
+            'url'            => 'glossaire-chanson-de-roland',
         ),
 
         'rose' => array(
-            'created'     => '2010-08-01',
-            'description' => 'Glossaire du Roman de la Rose, Ernest Langlois, 1914-1924',
-            'image'       => 'glossaire-roman-de-la-rose.jpg',
-            'language'    => 'fr',
-            'name'        => 'Roman de la Rose',
-            'parser'      => array(
+            'created'        => '2010-08-01',
+            'description'    => 'Glossaire du Roman de la Rose, Ernest Langlois, 1914-1924',
+            'description-en' => 'Glossary of the Roman de la Rose, Ernest Langlois, 1914-1924',
+            'image'          => 'glossaire-roman-de-la-rose.jpg',
+            'language'       => 'fr',
+            'name'           => 'Roman de la Rose',
+            'parser'         => array(
                 'class'      => 'Model_Parser_GaffiotLike',
                 'properties' => array(
                     'imageNumberTpl' => '0000%s',
                     'lineTpl'        => '~^(.+?)__BR____BR__<@_hm(\d+).tif_>EGlos_RoseLLangl__BR____BR__~',
                 )
             ),
-            'search'      => array(
+            'search'         => array(
                 'properties' => array(
                     'needTcaf'   => true,
                     'needTobler' => true,
                 )
             ),
-            'title'       => 'Rose',
-            'type'        => 'internal',
-            'url'         => 'glossaire-roman-de-la-rose',
+            'title'          => 'Rose',
+            'type'           => 'internal',
+            'url'            => 'glossaire-roman-de-la-rose',
         ),
 
         'tcaf' => array(
-            'created'     => '2010-08-01',
-            'description' => "Tableaux de conjugaison de l'ancien français, Machio Okada et Hitoshi Ogurisu, 2007-2011",
-            'image'       => 'tableaux-de-conjugaison.jpg',
-            'language'    => 'fr',
-            'name'        => 'TCAF',
-            'search'      => array(
+            'created'        => '2010-08-01',
+            'description'    => "Tableaux de conjugaison de l'ancien français, Machio Okada et Hitoshi Ogurisu, 2007-2012",
+            'description-en' => 'Old French conjugation tables, Machio Okada and Hitoshi Ogurisu, 2007-2011',
+            'image'          => 'tableaux-de-conjugaison.jpg',
+            'language'       => 'fr',
+            'name'           => 'TCAF',
+            'search'         => array(
                 'class' => 'Model_Search_Tcaf',
             ),
-            'title'       => 'Conjugaisons',
-            'type'        => 'internal',
-            'url'         => 'tableaux-de-conjugaison',
+            'title'          => 'Conjugaisons',
+            'type'           => 'internal',
+            'url'            => 'tableaux-de-conjugaison',
         ),
 
         'tristan' => array(
-            'created'     => '2010-08-01',
-            'description' => 'Glossaire du Roman de Tristan par Béroul, Ernest Muret, 1903',
-            'image'       => 'glossaire-roman-de-tristan.jpg',
-            'language'    => 'fr',
-            'name'        => 'Roman de Tristan',
-            'parser'      => array(
+            'created'        => '2010-08-01',
+            'description'    => 'Glossaire du Roman de Tristan par Béroul, Ernest Muret, 1903',
+            'description-en' => 'Glossary of the Roman de Tristan by Béroul, Ernest Muret, 1903',
+            'image'          => 'glossaire-roman-de-tristan.jpg',
+            'language'       => 'fr',
+            'name'           => 'Roman de Tristan',
+            'parser'         => array(
                 'class'      => 'Model_Parser_GaffiotLike',
                 'properties' => array(
                     'endWord' => '_Glossaire',
                     'lineTpl' => '~^(.+?)__BR____BR__<@_tx(\d+).tif_>EGlos_TristBerM1__BR____BR__~',
                 )
             ),
-            'search'      => array(
+            'search'         => array(
                 'properties' => array(
                     'needTcaf'   => true,
                     'needTobler' => true,
                 )
             ),
-            'title'       => 'Tristan',
-            'type'        => 'internal',
-            'url'         => 'glossaire-roman-de-tristan',
+            'title'          => 'Tristan',
+            'type'           => 'internal',
+            'url'            => 'glossaire-roman-de-tristan',
         ),
 
         'vandaele' => array(
-            'created'     => '2008-06-27',
-            'description' => "Petit dictionnaire de l'ancien français, Hilaire Van Daele, 1901",
-            'image'       => 'vandaele.jpg',
-            'language'    => 'fr',
-            'name'        => 'Van Daele',
-            'search'      => array(
+            'created'        => '2008-06-27',
+            'description'    => "Petit dictionnaire de l'ancien français, Hilaire Van Daele, 1901",
+            'description-en' => "Little dictionary of Old French, Hilaire Van Daele, 1901",
+            'image'          => 'vandaele.jpg',
+            'language'       => 'fr',
+            'name'           => 'Van Daele',
+            'search'         => array(
                 'properties' => array(
                     'needGhostwords' => true,
                     'needTcaf'       => true,
                     'needTobler'     => true,
                 )
             ),
-            'type'        => 'internal',
+            'type'           => 'internal',
         ),
 
         'whitaker' => array(
-            'created'      => '2010-09-16',
-            'description'  => 'Dictionnaire latin-anglais de William Whitaker',
-            'introduction' => 'http://lysy2.archives.nd.edu/cgi-bin/words.exe',
-            'language'     => 'la',
-            'name'         => 'Whitaker',
-            'search'       => array(
+            'created'        => '2010-09-16',
+            'description'    => 'Dictionnaire latin-anglais, William Whitaker, 1997-2007',
+            'description-en' => 'Latin-English dictionary, William Whitaker, 1997-2007',
+            'introduction'   => 'http://lysy2.archives.nd.edu/cgi-bin/words.exe',
+            'language'       => 'la',
+            'name'           => 'Whitaker',
+            'search'         => array(
                 'properties' => array(
                     'convert' => 'utf8toASCII',
                     'url'     => 'http://lysy2.archives.nd.edu/cgi-bin/words.exe?',
                 ),
             ),
-            'type'         => 'external',
+            'type'           => 'external',
         ),
 
         'webster' => array(
             'created'      => '2012-06-03',
-            'description'  => "Webster's Revised Unabridged Dictionary (1913, 1828) of the ARTFL project",
+            'description'  => "Webster's Revised Unabridged Dictionary, 1913, 1828, The ARTFL project",
             'introduction' => 'http://machaut.uchicago.edu/websters',
             'language'     => 'en',
             'name'         => 'Webster',
@@ -659,7 +683,7 @@ return array(
 
         'wiktionary' => array(
             'created'      => '2012-06-03',
-            'description'  => 'Wiktionary, the free dictionary de wiktionary.org',
+            'description'  => 'Wiktionary, the free dictionary, wiktionary.org',
             'introduction' => 'http://en.wiktionary.org',
             'language'     => 'en',
             'name'         => 'Wiktionary',
@@ -668,13 +692,14 @@ return array(
         ),
 
         'wiktionnaire' => array(
-            'created'      => '2012-03-11',
-            'description'  => 'Wiktionnaire, le dictionnaire libre by wiktionary.org',
-            'introduction' => 'http://fr.wiktionary.org',
-            'language'     => 'fr',
-            'name'         => 'Wiktionnaire',
-            'search'       => 'http://fr.wiktionary.org/wiki/',
-            'type'         => 'external',
+            'created'        => '2012-03-11',
+            'description'    => 'Wiktionnaire, le dictionnaire libre, wiktionary.org',
+            'description-en' => 'French Wiktionary, the free dictionary, wiktionary.org',
+            'introduction'   => 'http://fr.wiktionary.org',
+            'language'       => 'fr',
+            'name'           => 'Wiktionnaire',
+            'search'         => 'http://fr.wiktionary.org/wiki/',
+            'type'           => 'external',
         ),
     ),
 
@@ -684,30 +709,29 @@ return array(
     // dictionary groups, displayed as they are ordered below in the home page and select box
     'groups' => array(
         array(
-            'name' => 'English',
             'dictionaries' => array(
                 'century',
                 'century-supplement',
                 'webster',
                 'wiktionary',
             ),
+            'language' => 'en',
         ),
         array(
-            'name' => 'Français',
             'dictionaries' => array(
                 'cnrtl',
                 'dvlf',
                 'encyclopedie-larousse',
-                'leconjugueur',
+                'les-verbes',
                 'littre',
                 'dmf',
                 'petit-larousse',
                 'petit-larousse-np',
                 'wiktionnaire',
             ),
+            'language' => 'fr',
         ),
         array(
-            'name' => 'Français (ancien)',
             'dictionaries' => array(
                 'anglo-norman',
                 'roland',
@@ -729,17 +753,21 @@ return array(
                 'tcaf',
                 'vandaele',
             ),
+            'language' => 'fro',
         ),
         array(
-            'name' => 'Latin',
             'dictionaries' => array(
                 'ducange',
                 'gaffiot',
                 'jeanneau',
                 'whitaker',
             ),
+            'language' => 'la',
         ),
     ),
+
+    // directory containing translations
+    'translations-dir' => realpath("$applicationDir/translations"),
 
     // HTML content directory
     'views-dir' => realpath("$applicationDir/View/scripts"),

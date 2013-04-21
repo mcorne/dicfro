@@ -15,28 +15,25 @@
 
 ?>
 
-<h1 class="title">Dictionnaires de français, latin et anglais</h1>
+<h1 class="title"><?=$this->translate('French, English and Latin dictionaries');?></h1>
 
-<p class="sub-title">3 raisons d'utiliser DicFro</p>
+<p class="sub-title"><?=$this->translate('3 reasons to use DicFro');?></p>
 
 <ul>
-  <li>
-      Effectuer facilement des recherches dans des dictionnaires dont les pages ont été numérisées,
-      comme dans un dictionnaire papier.
-  </li>
-  <li>Faire des recherches dans d'autres dictionnaires disponibles sur l'internet.</li>
-  <li>
-      Rechercher dans plusieurs dictionnaires en parallèle.
-      <a href="<?=$this->setActionUrl($this->optionsLink);?>">Voir les options</a>
+  <li><?=$this->translate('Easy search in dictionaries whose pages have been scanned, as in a paper dictionary');?></li>
+  <li><?=$this->translate('Search in other dictionaries available on the internet');?></li>
+  <li><?=$this->translate('Search in several dictionaries in parallel');?>
+      <br/>
+      <a href="<?=$this->setActionUrl($this->optionsLink);?>"><?=$this->translate('See the options');?></a>
   </li>
 </ul>
 
 <?php if ($newDictionaries = $this->dictionariesHelper->getNewDictionaries()):?>
-  <p class="sub-title" title="Nouveautés des 30 derniers jours">
+  <p class="sub-title" title="<?=$this->translate('New additions of the last 30 days');?>">
     <?php if (count($newDictionaries) == 1):?>
-      Nouveau
+      <?=$this->translate('Recently added dictionary');?>
    <?php else:?>
-      Nouveautés
+      <?=$this->translate('Recently added dictionaries');?>
    <?php endif;?>
   </p>
 
@@ -50,4 +47,5 @@
   </ul>
 <?php endif;?>
 
-<a href="<?=$this->setActionUrl($this->dictionariesLink);?>">Liste de tous les dictionnaires</a>
+<a href="<?=$this->setActionUrl($this->dictionariesLink);?>"><?=$this->translate('List of all dictionaries');?></a>
+(<a href="<?=$this->setActionUrl($this->dictlistLink);?>">in English</a>)

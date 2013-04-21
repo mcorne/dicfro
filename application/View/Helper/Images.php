@@ -9,7 +9,7 @@
  * @package    View
  * @subpackage Helper
  * @author     Michel Corne <mcorne@yahoo.com>
- * @copyright  2008-2010 Michel Corne
+ * @copyright  2008-2013 Michel Corne
  * @license    http://opensource.org/licenses/gpl-3.0.html GNU GPL v3
  */
 
@@ -22,7 +22,7 @@ require_once 'View/Helper/Base.php';
  * @package    View
  * @subpackage Helper
  * @author     Michel Corne <mcorne@yahoo.com>
- * @copyright  2008-2010 Michel Corne
+ * @copyright  2008-2013 Michel Corne
  * @license    http://opensource.org/licenses/gpl-3.0.html GNU GPL v3
  */
 
@@ -39,7 +39,6 @@ class View_Helper_Images extends View_Helper_Base
         'about'        => 'about.jpg',
         'archives'     => 'archives.jpg',
         'dictionaries' => 'dictionary-list.jpg',
-        'help'         => 'help.jpg',
         'options'      => 'options.jpg',
     );
 

@@ -1,20 +1,17 @@
 Things to do
 ------------
 
-- finish unit tests
-- go back to previous dictionary instead of default dictionary from options page, about page etc..., 
-  and fix searched word that is set to "dictionnaire-godefroy"
-- process volumes for indexed dictionary query
-- move volume to search properties
-
-- Ajouter les pages notables du Lexique Roman.
-- Vérifier l'existence des pages lors de la création des dictionnaires.
-- Utiliser la liste de tous les mots possibles générés par Whitaker pour améliorer l'identification des mots déclinés et des verbes conjugués.
-- Traduire l'interface en anglais.
-- Réparer la barre de défilement vertical pour les tablettes.
-- Réparer les problèmes de mots avec accents pour IE.
-
+- add intro pages of Lexique Roman.
+- add intro for indexed dictionaries
 - add panoccitan.org, http://www.etymologie-occitane.fr, deaf-page.de, http://www.atilf.fr/dect/ ...
 - add lacurne supplement, curiosités etc..., grand larousse
 - scan/add tilander
 - add littre
+
+- add default dictionary by language, optionally set by user
+- go back to previous dictionary instead of default dictionary from options page, about page etc..., fix searched word that is set to "dictionnaire-godefroy"
+- fix accentuated character issue with IE
+- fix scrolling bar issue for tablets
+- process volumes for indexed dictionary query
+- move volume to search properties
+- finish or remove unit tests

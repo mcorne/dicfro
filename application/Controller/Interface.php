@@ -12,9 +12,9 @@
  * @license   http://opensource.org/licenses/gpl-3.0.html GNU GPL v3
  */
 
-require_once 'Base/String.php';
 require_once 'Base/View.php';
 require_once 'Controller/Front.php';
+require_once 'Model/Language.php';
 // note: dictionary classes are included dynamically, see $dictionaries and createSearchObject()
 
 /**
@@ -34,24 +34,18 @@ class Controller_Interface
      * @var array
      */
     public $actions = array(
-        'about'        => 'a-propos',
-        'archives'     => 'archives',
-        'dictionaries' => 'liste-des-dictionnaires',
-        'help'         => 'aide',
-        'home'         => 'accueil',
-        'introduction' => 'introduction',
-        'next'         => 'page-suivante',
-        'options'      => 'options',
-        'page'         => 'aller-page',
-        'previous'     => 'page-precedente',
-        'search'       => 'chercher',
+        'about'        => 'information',
+        'archives'     => 'information',
+        'dictionaries' => 'information',
+        'dictlist'     => true,
+        'home'         => 'information',
+        'introduction' => true,
+        'next'         => true,
+        'options'      => 'information',
+        'page'         => true,
+        'previous'     => true,
+        'search'       => true,
     );
-
-    /**
-     * Flipped list of actions
-     * @var array
-     */
-    public $actionsFlipped;
 
     /**
      * Information on a dictionary
@@ -92,28 +86,14 @@ class Controller_Interface
      */
     public function __call($action, $arguments)
     {
-        $method = $this->setActions();
-        $this->$method();
-    }
+        $action = $this->setActions();
 
-    /**
-     * Processes the action to display the "about" page
-     *
-     * @return void
-     */
-    public function aboutAction()
-    {
-        $this->view->information = 'information/about.phtml';
-    }
+        if ($this->actions[$action] === 'information') {
+            $this->view->information = "information/$action.phtml";
+        } else {
+            $this->{$this->front->action}();
+        }
 
-    /**
-     * Processes the action to display the "archives" page
-     *
-     * @return void
-     */
-    public function archivesAction()
-    {
-        $this->view->information = 'information/archives.phtml';
     }
 
     /**
@@ -137,13 +117,12 @@ class Controller_Interface
     }
 
     /**
-     * Processes the action to display the "dictionaries" page
-     *
-     * @return void
+     * Processes the action to display the dictionary list English page
      */
-    public function dictionariesAction()
+    public function dictlistAction()
     {
-        $this->view->information = 'information/dictionaries.phtml';
+        $this->view->information = "information/dictionaries.phtml";
+        $this->view->englishDictList = true;
     }
 
     /**
@@ -187,9 +166,9 @@ class Controller_Interface
         $this->view->homeLink = $this->setActionLink('home');
         $this->view->introductionLink = $this->setActionLink('introduction', $this->dictionary['url']);
         $this->view->optionsLink = $this->setActionLink('options');
-        $this->view->helpLink = $this->setActionLink('help');
         $this->view->aboutLink = $this->setActionLink('about');
         $this->view->dictionariesLink = $this->setActionLink('dictionaries');
+        $this->view->dictlistLink = $this->setActionLink('dictlist');
 
         $this->view->wordLink = $this->setActionLink('search', $this->dictionary['url'], '%s');
 
@@ -226,42 +205,6 @@ class Controller_Interface
     }
 
     /**
-     * Flips the dictionaries information
-     *
-     * Note: the name of this method must not finish with "Action"
-     * so it is not mistaken with a proper action
-     *
-     * @return void
-     */
-    public function flipActions()
-    {
-        $string = new Base_String;
-
-        $actions = array_map(array($string, 'dash2CamelCase'), $this->actions);
-        $this->actionsFlipped = array_flip($actions);
-    }
-
-    /**
-     * Processes the action to display the "help" page
-     *
-     * @return void
-     */
-    public function helpAction()
-    {
-        $this->view->information = 'information/help.phtml';
-    }
-
-    /**
-     * Processes the action to display the "home" page
-     *
-     * @return void
-     */
-    public function homeAction()
-    {
-        $this->view->information = 'information/home.phtml';
-    }
-
-    /**
      * Processes the action to display a dictionary "introduction" page
      *
      * @return void
@@ -286,11 +229,11 @@ class Controller_Interface
      */
     public function init()
     {
-        $this->flipActions();
         $this->setDictionary();
         $this->setWord();
         $this->setPage();
         $this->setVolume();
+        $this->setLanguage();
     }
 
     public function isIE()
@@ -306,16 +249,6 @@ class Controller_Interface
     public function nextAction()
     {
         $this->pageAction('goToNextPage');
-    }
-
-    /**
-     * Processes the action to display the "options" page
-     *
-     * @return void
-     */
-    public function optionsAction()
-    {
-        $this->view->information = 'information/options.phtml';
     }
 
     /**
@@ -376,9 +309,6 @@ class Controller_Interface
     {
         $arguments = func_get_args();
         $arguments = array_filter($arguments);
-
-        $arguments[0] = $this->translateActions($arguments[0]);
-
         $link = implode('/', $arguments);
 
         return $link;
@@ -396,33 +326,11 @@ class Controller_Interface
     {
         $action = $this->parseActions();
 
-        if (isset($this->actionsFlipped[$action])) {
-            $action = $this->actionsFlipped[$action];
-        } else {
+        if (! isset($this->actions[$action])) {
             $action = 'home';
         }
 
-        return $this->front->action = $action . 'Action';
-    }
-
-    /**
-     * Sets last word in cookies
-     */
-    public function setLastWordCookies()
-    {
-        // escapes cookie delimiters
-        $word = str_replace('=', '%3D', $this->view->word);
-        $word = str_replace(';', '%3B', $word);
-
-        // sets multilanguage cookie
-        $cookie = 'last-word';
-        // note: cannot set cookie in debug mode because PHPUnit already sent headers
-        defined('PHPUnit_MAIN_METHOD') or setrawcookie($cookie, $word, 0, '/' . $this->front->config['domain-subpath']);
-
-        // sets specific language cookie
-        $cookie .=  '-' . $this->dictionary['language'];
-        // note: cannot set cookie in debug mode because PHPUnit already sent headers
-        defined('PHPUnit_MAIN_METHOD') or setrawcookie($cookie, $word, 0, '/' . $this->front->config['domain-subpath']);
+        return $action;
     }
 
     /**
@@ -462,6 +370,49 @@ class Controller_Interface
         if (empty($this->dictionary['url'])) {
             $this->dictionary['url'] = $this->dictionary['id'];
         }
+    }
+
+    /**
+     * Sets the interface language
+     */
+    public function setLanguage()
+    {
+        $language = new Language();
+
+        if (isset($_COOKIE['language'])) {
+            // the language is set in a cookie
+            $this->view->language = $_COOKIE['language'];
+
+        } else {
+            // the language is unknown, attempts to detect language
+            $this->view->language = $language->detectLanguage();
+        }
+
+        $this->view->languages = $language->languages;
+
+        // note: cannot set cookie in debug mode because PHPUnit already sent headers
+        // expires as per interface.js setcookie() default
+        defined('PHPUnit_MAIN_METHOD') or setrawcookie('language', $this->view->language, time() + 365 * 24 * 3600, '/' . $this->front->config['domain-subpath']);
+    }
+
+    /**
+     * Sets last word in cookies
+     */
+    public function setLastWordCookies()
+    {
+        // escapes cookie delimiters
+        $word = str_replace('=', '%3D', $this->view->word);
+        $word = str_replace(';', '%3B', $word);
+
+        // sets multilanguage cookie
+        $cookie = 'last-word';
+        // note: cannot set cookie in debug mode because PHPUnit already sent headers
+        defined('PHPUnit_MAIN_METHOD') or setrawcookie($cookie, $word, 0, '/' . $this->front->config['domain-subpath']);
+
+        // sets specific language cookie
+        $cookie .=  '-' . $this->dictionary['language'];
+        // note: cannot set cookie in debug mode because PHPUnit already sent headers
+        defined('PHPUnit_MAIN_METHOD') or setrawcookie($cookie, $word, 0, '/' . $this->front->config['domain-subpath']);
     }
 
     /**
@@ -515,23 +466,5 @@ class Controller_Interface
 
         $word = urldecode($word);
         $this->view->word = strip_tags($word);
-    }
-
-    /**
-     * Translates an action into a method name
-     *
-     * Note: the name of this method must not finish with "Action"
-     * so it is not mistaken with a proper action
-     *
-     * @param  string $action the action name to translate
-     * @return string the translated action name
-     */
-    public function translateActions($action)
-    {
-        if (isset($this->actions[$action])) {
-            $action = $this->actions[$action];
-        }
-
-        return $action;
     }
 }

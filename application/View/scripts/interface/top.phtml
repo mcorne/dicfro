@@ -9,7 +9,7 @@
  * @package    View
  * @subpackage Scripts_Interface
  * @author     Michel Corne <mcorne@yahoo.com>
- * @copyright  2008-2010 Michel Corne
+ * @copyright  2008-2013 Michel Corne
  * @license    http://opensource.org/licenses/gpl-3.0.html GNU GPL v3
  */
 
@@ -32,13 +32,13 @@
   <input type="hidden" id="dictionary-language" value="<?=$this->dictionary['language'];?>"/>
 
   <input class="word" type="text" id="word"
-         title="Entrer le mot à chercher, puis appuyer sur la touche ENTRÉE, ou cliquer sur le bouton Chercher"
+         title="<?=$this->translate('Enter a word then press the ENTER key or click on the button');?>"
          value="<?=$this->word;?>"
          onkeypress="isEnterKey(event) && searchWord('<?=$this->setActionUrl($this->wordLink);?>');" />
 
   <input class="button search" type="button"
          onclick="searchWord('<?=$this->setActionUrl($this->wordLink);?>')"
-         value="Chercher" />
+         value="<?=$this->translate('Search');?>" />
 
 </span>
 
@@ -76,10 +76,10 @@
 <span class="nowrap">
 
   <img class="button" src="<?=$this->setLinkUrl('img/go-previous.png');?>"
-       title="Page précédente"
+       title="<?=$this->translate('Previous page');?>"
        onclick="location.assign('<?=$this->setActionUrl($this->previousPageLink);?>');" />
   <img class="button" src="<?=$this->setLinkUrl('img/go-next.png');?>"
-       title="Page suivante"
+       title="<?=$this->translate('Next page');?>"
        onclick="location.assign('<?=$this->setActionUrl($this->nextPageLink);?>');" />
 
 </span>
@@ -102,30 +102,30 @@
 
   <?php else:?>
     <input class="first-word" type="text" disabled="disabled"
-           title="Premier mot de la page. Si ce mot n'est pas pas le premier mot de la page, veuillez nous contacter pour le corriger. Merci."
+           title="<?=$this->translate('First word of the page, please contact us in case of error');?>"
            value="<?=$this->firstWord;?>" />
   <?php endif;?>
 
-  <span class="page">Page</span>
+  <span class="page"><?=$this->translate('Page');?></span>
   <input class="page" type="text" id="page"
-         title="Entrer le numéro de page, puis appuyer sur la touche ENTRÉE, ou cliquer sur le bouton Afficher"
+         title="<?=$this->translate('Enter a number then press the ENTER key or click on the button');?>"
          value="<?=$this->page;?>"
          onkeypress="isEnterKey(event) && goPage('<?=$this->setActionUrl($this->goPageLink);?>');" />
 
   <?php if(! empty($this->dictionary['volume'])):?>
-    <span class="volume">Volume</span>
+    <span class="volume"><?=$this->translate('Volume');?></span>
     <input class="volume" type="text" id="volume"
            <?php if ($this->dictionary['volume'] == 'readonly'):?>
              disabled=disabled
            <?php else:?>
-             title="Entrer le numéro de volume, puis appuyer sur la touche ENTRÉE, ou cliquer sur le bouton Afficher"
+             title="<?=$this->translate('Enter a number then press the ENTER key or click on the button');?>"
            <?php endif;?>
            value="<?=$this->volume;?>"
            onkeypress="isEnterKey(event) && goPage('<?=$this->setActionUrl($this->goPageLink);?>');" />
   <?php endif;?>
 
   <input class="button" type="button" onclick="goPage('<?=$this->setActionUrl($this->goPageLink);?>')"
-         value="Afficher" />
+         value="<?=$this->translate('Display');?>" />
 
 </span>
 

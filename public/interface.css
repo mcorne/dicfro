@@ -276,17 +276,17 @@ span.identified
 /* specific to information and home pages */
 
 
-a.external
+a.external, td.external
 {
     color: gray;
 }
 
-a.index
+a.index, td.index
 {
     color: blue;
 }
 
-a.internal
+a.internal, td.internal
 {
     color: green;
 }
@@ -308,6 +308,16 @@ h1.title
 li
 {
     margin-bottom: .4em;
+}
+
+select.language
+{
+    vertical-align: middle;
+}
+
+select.language:hover
+{
+    border-color: darkorange;
 }
 
 p.highlight
@@ -359,6 +369,18 @@ table.change-log td
 {
     border: thin solid lightgray;
     vertical-align: top;
+}
+
+table.dictionary-types td
+{
+    padding-bottom: .5em;
+    padding-right: 1em;
+    vertical-align: top;
+}
+
+table.dictionary-types td.type
+{
+    white-space: nowrap;
 }
 
 table.options td

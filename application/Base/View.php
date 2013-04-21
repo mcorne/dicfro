@@ -15,6 +15,7 @@
 require_once 'View/Helper/Dictionaries.php';
 require_once 'View/Helper/Entries.php';
 require_once 'View/Helper/Images.php';
+require_once 'View/Helper/Translator.php';
 require_once 'View/Helper/Verbs.php';
 require_once 'View/Helper/Words.php';
 
@@ -45,19 +46,25 @@ class Base_View
 
     /**
      * Dictionaries view helper
-     * @var object
+     * @var View_Helper_Dictionaries
      */
     public $dictionariesHelper;
 
     /**
      * Images view helper
-     * @var object
+     * @var View_Helper_Images
      */
     public $imagesHelper;
 
     /**
+     * Translator view helper
+     * @var View_Helper_Translator
+     */
+    public $translatorHelper;
+
+    /**
      * Verbs view helper
-     * @var object
+     * @var View_Helper_Verbs
      */
     public $verbsHelper;
 
@@ -69,7 +76,7 @@ class Base_View
 
     /**
      * View helper for identified words
-     * @var object
+     * @var View_Helper_Words
      */
     public $wordsHelper;
 
@@ -137,13 +144,6 @@ class Base_View
     public function init()
     {
         $this->viewsDir = $this->config['views-dir'];
-
-        $this->dictionariesHelper = new View_Helper_Dictionaries($this);
-        $this->entriesHelper      = new View_Helper_Entries($this);
-        $this->imagesHelper       = new View_Helper_Images($this);
-        $this->verbsHelper        = new View_Helper_Verbs($this);
-        $this->wordsHelper        = new View_Helper_Words($this);
-
         $this->setBaseUrl();
     }
 
@@ -190,6 +190,21 @@ class Base_View
     }
 
     /**
+     * Sets Helpers
+     *
+     * @return void
+     */
+    public function setHelpers()
+    {
+        $this->dictionariesHelper = new View_Helper_Dictionaries($this);
+        $this->entriesHelper      = new View_Helper_Entries($this);
+        $this->imagesHelper       = new View_Helper_Images($this);
+        $this->translatorHelper   = new View_Helper_Translator($this);
+        $this->verbsHelper        = new View_Helper_Verbs($this);
+        $this->wordsHelper        = new View_Helper_Words($this);
+    }
+
+    /**
      * Sets a link URL
      *
      * @param  string  $link the name of the link
@@ -231,5 +246,18 @@ class Base_View
         ksort($dynamicProperties);
 
         return $dynamicProperties;
+    }
+
+    /**
+     * shortcut to the translator
+     *
+     * @param string $string
+     * @param string $english
+     * @param bool $translate
+     * @return string
+     */
+    public function translate($string, $english = null, $translate = true)
+    {
+        return $this->translatorHelper->translate($string, $english, $translate);
     }
 }

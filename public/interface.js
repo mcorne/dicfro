@@ -1,7 +1,7 @@
 /**
  * Dicfro
  *
- * @copyright 2008-2012 Michel Corne
+ * @copyright 2008-2013 Michel Corne
  * @license   http://www.opensource.org/licenses/gpl-3.0.html GNU GPL v3
  */
 
@@ -58,6 +58,15 @@ function base64_encode( data )
 
     return enc;
 }
+
+function changeLanguage()
+{
+    var language = document.getElementById('language');
+    
+    setcookie('language', language.value);
+    location.reload();
+}
+
 
 function displayLexromd(actionUrl)
 {
@@ -340,18 +349,13 @@ function openDictionary(action)
 	isNewTab && (dictionary.selectedIndex = prevDictionary);
 }
 
-function print()
+function printPage()
 {
     var
     child = document.getElementById('middle').firstChild,
     grandChild,
     innerHTML,
-    url = '/print.php?content=',
-    message =
-    	'La page va s\'ouvrir dans un nouvel onglet ou fenêtre.\n' +
-    	'Veuillez utiliser le menu du navigateur pour avoir un aperçu de la page et pour ajuster sa taille.\n' +
-    	'Puis imprimez la page.\n' +
-    	'(Les fenêtres contextuelles ou pop-up doivent être autorisées pour pouvoir imprimer).';
+    url = '/print.php?content=';
     
     domainSubpath && (url = '/' + domainSubpath + url);
 
@@ -364,7 +368,6 @@ function print()
                     if (grandChild.nodeName.toLowerCase() == 'iframe'){
                         // this is an iframe, expecting only one; e.g. an external dictionary  page
                         window.open(grandChild.src, 'dfprint'); // note: IE does not accept name with "-" character
-                        alert(message);
                         return;
                     } else if (grandChild.nodeName.toLowerCase() == 'img'){
                         // this a set of images, e.g. an internal dictionary page
@@ -372,7 +375,7 @@ function print()
                         // base64_encode() is necessary because double quotes are causing problems
                         // encodeURIComponent() because the "+" character is causing problems
                         innerHTML = encodeURIComponent(base64_encode(child.innerHTML));
-                        confirm(message) && window.open(url + innerHTML, 'dfprint'); // must use letters for IE, no dash!
+                        window.open(url + innerHTML, 'dfprint'); // must use letters for IE, no dash!
                         return;
                     }
                 }
@@ -382,8 +385,7 @@ function print()
         child = child.nextSibling;
     }
 
-    // note that this message is also used by print.php
-    alert("Impression non disponible pour cette page !");
+    window.print();
 }
 
 function searchLastWord(action)

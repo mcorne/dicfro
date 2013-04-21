@@ -8,7 +8,7 @@
  * @category  DicFro
  * @package   Base
  * @author    Michel Corne <mcorne@yahoo.com>
- * @copyright 2008-2010 Michel Corne
+ * @copyright 2008-2013 Michel Corne
  * @license   http://opensource.org/licenses/gpl-3.0.html GNU GPL v3
  */
 
@@ -21,7 +21,7 @@ require_once 'Controller/Front.php';
  * @category  DicFro
  * @package   Base
  * @author    Michel Corne <mcorne@yahoo.com>
- * @copyright 2008-2010 Michel Corne
+ * @copyright 2008-2013 Michel Corne
  * @license   http://opensource.org/licenses/gpl-3.0.html GNU GPL v3
  */
 
@@ -53,13 +53,14 @@ class Base_Application
     {
         // reads the configuration directives
         $config = require $this->configFile;
-        
+
         // creates the view and the front controller
         $view = new Base_View($config);
         $front = new Controller_Front($config, $view);
-        
+
         // runs the front controller and renders the view
         $front->run();
+        $view->setHelpers();
         $view->render();
     }
 }

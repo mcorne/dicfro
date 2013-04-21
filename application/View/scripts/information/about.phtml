@@ -15,23 +15,13 @@
 
 ?>
 
-<h1 class="title">À propos</h1>
+<h1 class="title"><?=$this->translate('About');?></h1>
 
-<p class="sub-title">
-  <span class="middle">Pourquoi DicFro ?</span>
-</p>
-
-<ul>
-  <li>DicFro = Dic + Fro. [Dic] vient du mot dictionnaire. [Fro] est le code ISO de l'ancien français.</li>
-  <li>En 2007, il n'y avait pas de dictionnaire d'ancien français en ligne sur Internet.
-      Il existait une  solution intéressante hors ligne réalisée par Hitoshi Ogurisu, qui d'ailleurs est toujours disponible.
-      L'idée était d'offrir une interface web simple pour rechercher un mot dans ce dictionnaire.
-      D'autres dictionnaires ont été ajoutés par la suite.
-  </li>
-</ul>
-
-<a href="http://code.google.com/p/dicfro/source/list">Journal des modifications</a>
+<a href="http://code.google.com/p/dicfro/source/list"><?=$this->translate('Change log');?></a>
+<?=$this->translate('(in English)', '');?>
 <br/>
-<a href="http://my.statcounter.com/project/standard/stats.php?project_id=5407064&guest=1">Statistiques</a>
+<a href="http://my.statcounter.com/project/standard/stats.php?project_id=5407064&guest=1"><?=$this->translate('Statistics');?></a>
+<?=$this->translate('(in English)', '');?>
 <br/>
-<a class="link" href="<?=$this->setActionUrl('archives');?>">Archives</a>
+<a href="<?=$this->setActionUrl('archives');?>"><?=$this->translate('Archives');?></a>
+<?=$this->translate('(in French)');?>

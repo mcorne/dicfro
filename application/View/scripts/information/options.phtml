@@ -12,12 +12,11 @@
  * @copyright  2008-2010 Michel Corne
  * @license    http://opensource.org/licenses/gpl-3.0.html GNU GPL v3
  */
-
 ?>
 
-<h1 class="title">Options</h1>
+<h1 class="title"><?=$this->translate('Options');?></h1>
 
-<p class="sub-title">Mode d'ouverture d'un dictionnaire</p>
+<p class="sub-title"><?=$this->translate('How to open a dictionary');?></p>
 
 <table class="options">
   <tr>
@@ -27,7 +26,7 @@
              <?php if(!$this->newTab):?>checked="checked"<?php endif;?>
              onclick="unsetNewTab()"/>
     </td>
-    <td class="text">La sélection d'un nouveau dictionnaire ouvrira ce dictionnaire dans l'onglet courant.</td>
+    <td class="text"><?=$this->translate('The selection of a new dictionary will open the dictionary in the current tab.');?></td>
   </tr>
   <tr>
     <td>
@@ -37,15 +36,16 @@
              onclick="setNewTab()"/>
     </td>
     <td class="text">
-      La sélection d'un nouveau dictionnaire ouvrira ce dictionnaire dans un nouvel onglet.<br />
-      L'ouverture de dictionnaires dans des onglets différents permet d'effectuer des recherches en parallèle.<br />
-      <i>Attention ! Si votre navigateur bloque les fenêtres contextuelles, veuillez le configurer
-      pour toujours autoriser les fenêtres contextuelles pour ce site.</i>
+      <?=$this->translate('The selection of a new dictionary will open the dictionary in a new tab.');?><br />
+      <b><?=$this->translate('The opening of dictionaries in different tabs allows you to search in parallel.');?></b><br />
+      <?=$this->translate('Warning! If your browser blocks pop-ups, please change the setting to always allow pop-ups for this site.');?>
     </td>
   </tr>
 </table>
 
-<p class="sub-title">Mode de recherche d'un mot</p>
+<p class="sub-title"><?=$this->translate('How to search a word');?></p>
+
+<p><?=$this->translate('Applicable for dictionaries open in different tabs');?></p>
 
 <table class="options">
   <tr>
@@ -56,8 +56,7 @@
              onclick="setAutoSearch()"/>
     </td>
     <td>
-      Le dernier mot recherché dans un dictionnaire d'une langue donnée, sera recherché automatiquement
-      quand on passe d'un onglet à un autre, lorsque les dictionnaires sont ouverts dans des onglets différents.
+      <?=$this->translate('The last searched word in a dictionary of a language will be searched automatically when switching from one tab to another.');?>
     </td>
   </tr>
   <tr>
@@ -67,6 +66,26 @@
              <?php if(!$this->autoSearch):?>checked="checked"<?php endif;?>
              onclick="unsetAutoSearch()"/>
     </td>
-    <td>La recherche automatique d'un mot est désactivée.</td>
+    <td><?=$this->translate('The automatic search of a word is disabled.');?></td>
   </tr>
 </table>
+
+<p class="sub-title"><?=$this->translate('Language of the user interface');?></p>
+
+<div>
+  <select class="language" id="language">
+    <?php foreach ($this->languages as $code => $language):?>
+      <?php if (empty($language['no-ui'])):?>
+        <option value="<?=$code;?>"
+                title="<?=$language['english'];?>"
+                <?php if ($code == $this->language): ?>selected="selected"<?php endif;?>>
+          <?=$language['original'];?>
+        </option>
+      <?php endif;?>
+    <?php endforeach;?>
+  </select>
+
+  <input class="button" type="button"
+         onclick="changeLanguage()"
+         value="<?=$this->translate('Change');?>" />
+</div>

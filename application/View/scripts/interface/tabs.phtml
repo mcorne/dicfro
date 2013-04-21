@@ -9,7 +9,7 @@
  * @package    View
  * @subpackage Scripts_Interface
  * @author     Michel Corne <mcorne@yahoo.com>
- * @copyright  2008-2010 Michel Corne
+ * @copyright  2008-2013 Michel Corne
  * @license    http://opensource.org/licenses/gpl-3.0.html GNU GPL v3
  */
 
@@ -22,24 +22,21 @@
 <?php if($this->definition):?>
 
   <a class="tab-selected" id="content-tab"
-     title="Définitions des mots"
-     href="javascript: updateTabContents('content-tab');" >Définitions</a>
+     href="javascript: updateTabContents('content-tab');" ><?=$this->translate('Definitions');?></a>
 
 <?php endif;?>
 
 <?php if($this->vocabulary):?>
 
   <a class="tab-selected" id="content-tab"
-     title="Liste de mots de vocabulaire"
-     href="javascript: updateTabContents('content-tab');" >Vocabulaire</a>
+     href="javascript: updateTabContents('content-tab');" ><?=$this->translate('Vocabulary');?></a>
 
 <?php endif;?>
 
 <?php if($this->errataImages or $this->errataText):?>
 
   <a class="tab" id="errata-tab"
-     title="Corrections & Addenda pour certaines entrées de la page"
-     href="javascript: updateTabContents('errata-tab');" >Corrections</a>
+     href="javascript: updateTabContents('errata-tab');" ><?=$this->translate('Corrections');?></a>
 
 <?php endif;?>
 
@@ -47,7 +44,8 @@
 
   <a class="tab" id="ghostwords-tab"
      href="javascript: updateTabContents('ghostwords-tab'); getGhostwordNotice()"
-     title="Mots de la page qui ne sont pas des vrais mots selon l'Atilf" >Mots fantômes</a>
+     title="Base des mots fantômes de l'ATILF"
+     ><?=$this->translate('Ghost words');?></a>
 
   <select class="ghostwords-tab" id="ghostword-select"
           onclick="updateTabContents('ghostwords-tab'); getGhostwordNotice()"
@@ -65,8 +63,8 @@
 <?php if($this->identifiedWords):?>
 
   <span class="identified"
-        title="Mots identifiés dans la liste des lemmes du Tobler-Lommatzsch">
-    Mots identifiés
+        title="Tobler-Lommatzsch: Altfranzösisches Wörterbuch - Lemmaliste">
+    <?=$this->translate('Identified words');?>
   </span>
 
   <select class="identified"
@@ -76,21 +74,21 @@
 
     <?php
       if($forms = $this->wordsHelper->extractForms('main')) {
-          $label = 'Formes principales';
+          $label = $this->translate('Principal forms');
           require "{$this->viewsDir}/interface/words-optgroup.phtml";
       }
     ?>
 
     <?php
       if($forms = $this->wordsHelper->extractForms('variants')) {
-          $label = 'Variantes';
+          $label = $this->translate('Variant forms');
           require "{$this->viewsDir}/interface/words-optgroup.phtml";
       }
     ?>
 
     <?php
       if($forms = $this->wordsHelper->extractOtherForms()) {
-          $label = 'Formes diverses';
+          $label = $this->translate('Other forms');
           require "{$this->viewsDir}/interface/words-optgroup.phtml";
       }
     ?>
@@ -102,8 +100,8 @@
 <?php if($this->identifiedLatinWords):?>
 
   <span class="identified"
-        title="Mots identifiés avec le dictionnaire de Whitaker">
-    Mots identifiés
+        title="Whitaker Latin-English dictionary - Wordlist">
+    <?=$this->translate('Identified words');?>
   </span>
 
   <select class="identified"
@@ -111,7 +109,7 @@
 
     <option value=""><?=$this->word;?></option>
 
-    <optgroup label="<?php if(count($this->identifiedLatinWords) > 1):?>Formes possibles<?php else:?>Forme possible<?php endif;?>">
+    <optgroup label="<?=count($this->identifiedLatinWords) > 1 ? $this->translate('Other forms') : $this->translate('Other form');?>">
 
     <?php foreach($this->identifiedLatinWords as $word):?>
       <option value="<?=$word;?>"><?=$word;?></option>
@@ -125,8 +123,8 @@
 
 <?php
     if($verbs = $this->verbsHelper->extractIdentifiedVerbs()) {
-        $title = 'Verbes identifiés avec les tableaux de conjugaison de l\'ancien français';
-        $label = 'Verbes identifiés';
+        $title = "Tableaux de conjugaison de l'ancien français";
+        $label = $this->translate('Identified verbs');
         require "{$this->viewsDir}/interface/verbs-select.phtml";
     }
 ?>
@@ -136,9 +134,9 @@
 
   <a class="tab" id="lexromd-tab"
      href="javascript: updateTabContents(document.getElementById('lexromd-img').src? 'lexromd-tab' : 'lexromd-help-tab')"
-     title="Renvoi sur les définitions complètes" >Consulter les définitions</a>
+     ><?=$this->translate('Definitions');?></a>
 
-  <span class="tome">Tome</span>
+  <span class="tome"><?=$this->translate('Tome');?></span>
 
   <select class="tome" id="tome">
     <option></option>
@@ -149,19 +147,19 @@
     <option value="6">VI</option>
   </select>
 
-  <span class="page">Page</span>
+  <span class="page"><?=$this->translate('Page');?></span>
 
   <input class="page" type="text" id="tome-page"
-         title="Choisir le tome, entrer le numéro de page, puis appuyer sur la touche ENTRÉE, ou cliquer sur le bouton Afficher"
+         title="<?=$this->translate('Enter a number then press the ENTER key or click on the button');?>"
          onkeypress="isEnterKey(event) && displayLexromd('<?=$this->setLinkUrl('/dictionary/lexromd/mImg/%s-%s.gif');?>');" />
 
   <input class="button" type="button"
          onclick="displayLexromd('<?=$this->setLinkUrl('/dictionary/lexromd/mImg/%s-%s.gif');?>')"
-         value="Afficher" />
+         value="<?=$this->translate('Display');?>" />
 
   <a class="tab" id="lexromd-help-tab"
      href="javascript: updateTabContents('lexromd-help-tab')"
-     title="Comment utiliser le Lexique Roman" >Aide</a>
+     ><?=$this->translate('Help');?></a>
 
 <?php endif;?>
 
@@ -169,20 +167,20 @@
 
   <a class="tab-selected" id="content-tab"
      title="Définitions des mots"
-     href="javascript: updateTabContents('content-tab');" >Conjugaisons</a>
+     href="javascript: updateTabContents('content-tab');" ><?=$this->translate('');?>Conjugaisons</a>
 
   <?php
     if($verbs = $this->verbsHelper->extractComposedVerbs(0)) {
-        $title = 'Verbes similaires identifiés avec les tableaux de conjugaison de l\'ancien français';
-        $label = 'Verbes similaires à';
+        $title = "Tableaux de conjugaison de l'ancien français";
+        $label = $this->translate('Similar verbs');
         require "{$this->viewsDir}/interface/verbs-select.phtml";
     }
   ?>
 
   <?php
     if($verbs = $this->verbsHelper->extractComposedVerbs(1)) {
-        $title = 'Verbes composés identifiés avec les tableaux de conjugaison de l\'ancien français';
-        $label = 'Verbes composés avec';
+        $title = "Tableaux de conjugaison de l'ancien français";
+        $label = $this->translate('Derived verbs');
         require "{$this->viewsDir}/interface/verbs-select.phtml";
     }
   ?>

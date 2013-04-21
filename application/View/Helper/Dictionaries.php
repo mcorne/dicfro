@@ -9,7 +9,7 @@
  * @package    View
  * @subpackage Helper
  * @author     Michel Corne <mcorne@yahoo.com>
- * @copyright  2008-2010 Michel Corne
+ * @copyright  2008-2013 Michel Corne
  * @license    http://opensource.org/licenses/gpl-3.0.html GNU GPL v3
  */
 
@@ -22,7 +22,7 @@ require_once 'View/Helper/Base.php';
  * @package    View
  * @subpackage Helper
  * @author     Michel Corne <mcorne@yahoo.com>
- * @copyright  2008-2010 Michel Corne
+ * @copyright  2008-2013 Michel Corne
  * @license    http://opensource.org/licenses/gpl-3.0.html GNU GPL v3
  */
 
@@ -75,7 +75,7 @@ class View_Helper_Dictionaries extends View_Helper_Base
      *
      * @return array the groups of dictionaries
      */
-    public function getGroups()
+    public function getGroups($english = false)
     {
         $dictionaries = $this->view->config['dictionaries'];
         $optgroups = array();
@@ -92,18 +92,32 @@ class View_Helper_Dictionaries extends View_Helper_Base
                     $value =  $id;
                 }
 
+                $englishTitle = isset($dictionary['description-en']) ? $dictionary['description-en'] : null;
+
+                if ($english) {
+                    $title     = $englishTitle ?: $dictionary['description'];
+                    $listTitle = $englishTitle ? $dictionary['description'] :  null;
+                } else {
+                    $title     = $dictionary['description'];
+                    $listTitle = $englishTitle;
+                }
+
                 $options[] = array(
-                    'selected' => $id == $this->view->dictionary['id'],
-                    'text'     => $dictionary['name'],
-                    'title'    => $dictionary['description'],
-                    'type'     => $dictionary['type'],
-                    'value'    => $value,
+                    'list-title' => $listTitle,
+                    'selected'   => $id == $this->view->dictionary['id'],
+                    'text'       => $dictionary['name'],
+                    'title'      => $title,
+                    'type'       => $dictionary['type'],
+                    'value'      => $value,
                 );
             }
 
+            $label = $this->view->languages[ $group['language'] ];
+
             $optgroups[] = array(
-                'label'   => $group['name'],
-                'options' => $options,
+                'label'      => $english ? $label['english']  : $label['original'],
+                'list-title' => $english ? $label['original'] : $label['english'],
+                'options'    => $options,
             );
         }
 
