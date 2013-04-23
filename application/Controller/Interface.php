@@ -126,35 +126,6 @@ class Controller_Interface
     }
 
     /**
-     * Finds a dictionary by its URL
-     *
-     * @param string $url the dictionary URL
-     * @return array the dictionary configuration
-     */
-    public function findDictionary($url)
-    {
-        $dictionaries = $this->front->config['dictionaries'];
-
-        foreach($dictionaries as $id => $dictionary) {
-            if ($id == $url or isset($dictionary['url']) and $dictionary['url'] == $url) {
-                // the dictionary is found by its ID or URL
-                $found = $id;
-                break;
-            }
-        }
-
-        if (! isset($found)) {
-            // defaults dictionary
-            $found = 'gdf';
-        }
-
-        $dictionary = $dictionaries[$found];
-        $dictionary['id'] = $found;
-
-        return $dictionary;
-    }
-
-    /**
      * Sets the view data after processing an action
      *
      * @return void
@@ -163,9 +134,15 @@ class Controller_Interface
     {
         $this->view->dictionary = $this->dictionary;
 
-        $this->view->homeLink = $this->setActionLink('home');
+        if (empty($this->front->params['open-dict-in-new-tab'])) {
+            $addDictionaryToPath = null;
+        } else {
+            $addDictionaryToPath = $this->dictionary['url'];
+        }
+
+        $this->view->homeLink = $this->setActionLink('home', $addDictionaryToPath);
         $this->view->introductionLink = $this->setActionLink('introduction', $this->dictionary['url']);
-        $this->view->optionsLink = $this->setActionLink('options');
+        $this->view->optionsLink = $this->setActionLink('options', $addDictionaryToPath);
         $this->view->aboutLink = $this->setActionLink('about');
         $this->view->dictionariesLink = $this->setActionLink('dictionaries');
         $this->view->dictlistLink = $this->setActionLink('dictlist');
@@ -195,9 +172,7 @@ class Controller_Interface
             $this->view->goPageLink = $this->setActionLink('page', $this->dictionary['url'], '%s', $needVolume, $this->view->word);
         }
 
-        $this->view->autoSearch = !empty($_COOKIE['auto-search']);
-        $this->view->newTab = !empty($_COOKIE['new-tab']);
-
+        $this->view->params = $this->front->params;
         $this->view->isIE = $this->isIE();
         $this->view->domainSubpath = $this->front->config['domain-subpath'];
 
@@ -229,11 +204,11 @@ class Controller_Interface
      */
     public function init()
     {
+        $this->setLanguage();
         $this->setDictionary();
         $this->setWord();
         $this->setPage();
         $this->setVolume();
-        $this->setLanguage();
     }
 
     public function isIE()
@@ -249,6 +224,28 @@ class Controller_Interface
     public function nextAction()
     {
         $this->pageAction('goToNextPage');
+    }
+
+    public function optionsAction()
+    {
+        if (($value = $this->front->getPost('language')) !== null) {
+            $this->setcookie('language', $value, 30);
+            $this->setLanguage();
+        }
+
+        if (($value = $this->front->getPost('default-dictionary')) !== null) {
+            $this->setcookie('default-dictionary', $value, 30);
+        }
+
+        if (($value = $this->front->getPost('no-auto-search')) !== null) {
+            $this->setcookie('no-auto-search', $value, 30);
+        }
+
+        if (($value = $this->front->getPost('open-dict-in-new-tab')) !== null) {
+            $this->setcookie('open-dict-in-new-tab', $value, 30);
+        }
+
+        $this->view->information = "information/options.phtml";
     }
 
     /**
@@ -334,15 +331,71 @@ class Controller_Interface
     }
 
     /**
+     * Sets a cookie
+     *
+     * @param string $name
+     * @param mixed $value
+     * @param int $days
+     */
+    public function setcookie($name, $value, $days = 0)
+    {
+        if (! defined('PHPUnit_MAIN_METHOD')) {
+            if (empty($days)) {
+                $expire = 0;
+            } else {
+                $expire = time() + $days * 24 * 3600;
+            }
+
+            setrawcookie($name, $value , $expire, '/' . $this->front->config['domain-subpath']);
+        }
+    }
+
+    /**
      * Validates and sets the dictionary
+     *
+     * @return void
+     */
+    public function setDictionary()
+    {
+        // attempts to extract the dictionary from the url
+        $dictionary = array_shift($this->front->actionParams);
+
+        if (empty($dictionary)) {
+            // attempts to extract the dictionary posted by a form, eg "options"
+            $dictionary = $this->front->getPost('dictionary');
+        }
+
+        if (empty($dictionary) and ! empty($this->front->params['default-dictionary'])) {
+            if ($this->front->params['default-dictionary'] == 'last-used-dictionary') {
+                $dictionary = $this->front->params['dictionary'];
+            } else {
+                $dictionary = $this->front->params['default-dictionary'];
+            }
+        }
+
+        if (! empty($dictionary)) {
+            $dictionary = $this->validateDictionary($dictionary);
+        }
+
+        if (empty($dictionary)) {
+            // invalid or missing dictionary, eg "home", defaults to the lagnauge default dictionary
+            $dictionary = $this->front->config['dictionary-defaults'][$this->view->language];
+        }
+
+        $this->setcookie('dictionary', $dictionary , 30);
+        $this->dictionary = $this->front->config['dictionaries'][$dictionary];
+        $this->setDictionaryDefaults($dictionary);
+    }
+
+    /**
+     * Sets the dictionary defaults
      *
      * @return void
      * @see Model_Parser::setDictionary()
      */
-    public function setDictionary()
+    public function setDictionaryDefaults($dictionary)
     {
-        $url = array_shift($this->front->actionParams);
-        $this->dictionary = $this->findDictionary($url);
+        $this->dictionary['id'] = $dictionary;
 
         if (! isset($this->dictionary['type'])) {
             // ghostwords for example is not meant to be called via HTTP
@@ -363,7 +416,7 @@ class Controller_Interface
             $this->dictionary['search']['properties']['dictionary'] = $this->dictionary['id'];
         }
 
-        if ($this->dictionary['type'] == 'internal' and empty($this->dictionary['introduction'])) {
+        if ($this->dictionary['type'] != 'external' and empty($this->dictionary['introduction'])) {
             $this->dictionary['introduction'] = "{$this->dictionary['id']}.phtml";
         }
 
@@ -379,9 +432,9 @@ class Controller_Interface
     {
         $language = new Language();
 
-        if (isset($_COOKIE['language'])) {
+        if (! empty($this->front->params['language'])) {
             // the language is set in a cookie
-            $this->view->language = $_COOKIE['language'];
+            $this->view->language = $this->front->params['language'];
 
         } else {
             // the language is unknown, attempts to detect language
@@ -390,9 +443,7 @@ class Controller_Interface
 
         $this->view->languages = $language->languages;
 
-        // note: cannot set cookie in debug mode because PHPUnit already sent headers
-        // expires as per interface.js setcookie() default
-        defined('PHPUnit_MAIN_METHOD') or setrawcookie('language', $this->view->language, time() + 365 * 24 * 3600, '/' . $this->front->config['domain-subpath']);
+        $this->setcookie('language', $this->view->language, 30);
     }
 
     /**
@@ -406,13 +457,11 @@ class Controller_Interface
 
         // sets multilanguage cookie
         $cookie = 'last-word';
-        // note: cannot set cookie in debug mode because PHPUnit already sent headers
-        defined('PHPUnit_MAIN_METHOD') or setrawcookie($cookie, $word, 0, '/' . $this->front->config['domain-subpath']);
+        $this->setcookie($cookie, $word);
 
         // sets specific language cookie
         $cookie .=  '-' . $this->dictionary['language'];
-        // note: cannot set cookie in debug mode because PHPUnit already sent headers
-        defined('PHPUnit_MAIN_METHOD') or setrawcookie($cookie, $word, 0, '/' . $this->front->config['domain-subpath']);
+        $this->setcookie($cookie, $word);
     }
 
     /**
@@ -466,5 +515,23 @@ class Controller_Interface
 
         $word = urldecode($word);
         $this->view->word = strip_tags($word);
+    }
+
+    /**
+     * Validates the dictionary
+     *
+     * @param string $dictionary
+     * @return string
+     */
+    public function validateDictionary($dictionary)
+    {
+        foreach($this->front->config['dictionaries'] as $id => $info) {
+            if ($id == $dictionary or isset($info['url']) and $info['url'] == $dictionary) {
+                // the dictionary is found by its ID or URL
+                return $id;
+            }
+        }
+
+        return false;
     }
 }

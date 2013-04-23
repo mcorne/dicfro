@@ -73,9 +73,11 @@ class View_Helper_Dictionaries extends View_Helper_Base
     /**
      * Returns the groups of dictionaries for use in a select box
      *
+     * @param string $selected
+     * @param bool $english
      * @return array the groups of dictionaries
      */
-    public function getGroups($english = false)
+    public function getGroups($selected, $english = false)
     {
         $dictionaries = $this->view->config['dictionaries'];
         $optgroups = array();
@@ -104,7 +106,7 @@ class View_Helper_Dictionaries extends View_Helper_Base
 
                 $options[] = array(
                     'list-title' => $listTitle,
-                    'selected'   => $id == $this->view->dictionary['id'],
+                    'selected'   => $id == $selected or $value == $selected,
                     'text'       => $dictionary['name'],
                     'title'      => $title,
                     'type'       => $dictionary['type'],

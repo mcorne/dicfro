@@ -19,14 +19,6 @@
 
   <?php require "{$this->viewsDir}/interface/links.phtml";?>
 
-  <a class="link"
-     title="<?=$this->translate($this->dictionary['description']);?>"
-    <?php if($this->dictionary['type'] != 'internal'):?>
-      target="_blank"
-      href="<?=$this->dictionary['introduction'];?>"
-    <?php endif;?>
-  ><?=$this->translate($this->dictionary['name']);?></a>
-
   <!-- copyright -->
   <span class="copyright-name">
 

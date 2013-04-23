@@ -49,7 +49,7 @@
   <select class="dict" id="dictionary"
           onchange="openDictionary('<?=$this->setActionUrl($this->dictionaryLink);?>')">
 
-    <?php foreach($this->dictionariesHelper->getGroups() as $optgroup) :?>
+    <?php foreach($this->dictionariesHelper->getGroups($this->dictionary['url']) as $optgroup) :?>
       <optgroup label="<?=$optgroup['label'];?>">
 
         <?php foreach($optgroup['options'] as $option) :?>

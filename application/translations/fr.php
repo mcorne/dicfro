@@ -44,6 +44,9 @@ return array(
     "Corrections" =>
     "Corrections",
 
+    "Default dictionary" =>
+    "Dictionnaire par défaut",
+
     "Definitions" =>
     "Définitions",
 
@@ -161,6 +164,9 @@ return array(
     "Recently added dictionaries" =>
     "Dictionnaires ajoutés récemment",
 
+    "Save" =>
+    "Enregistrer",
+
     "Search" =>
     "Chercher",
 
@@ -170,8 +176,11 @@ return array(
     "Search in several dictionaries in parallel" =>
     "Recherche dans plusieurs dictionnaires en parellele",
 
-    "See the list with the dictionary names in English" =>
-    "Voir la liste avec les noms des dictionnaires en anglais",
+    "See the list with the dictionary names translated in English" =>
+    "Voir la liste avec les noms des dictionnaires traduits en anglais",
+
+    "See the list with the original names of the dictionaries" =>
+    "Voir la liste avec les noms originaux des dictionnaires",
 
     "See the options" =>
     "Voir les options",
@@ -185,8 +194,14 @@ return array(
     "The automatic search of a word is disabled." =>
     "La recherche automatique d'un mot est désactivée.",
 
+    "The default dictionary of the language" =>
+    "Le dictionnaire par défaut de la langue",
+
     "The dictionary pages and the index to the pages are stored in DicFro." =>
     "Les pages du dictionnaire et l'index des pages sont stockés dans DicFro.",
+
+    "The dictionary used last" =>
+    "Le dictionnaire utilisé en dernier",
 
     "The index to the pages is stored in DicFro." =>
     "L'index des pages est stocké dans DicFro.",

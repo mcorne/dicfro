@@ -28,6 +28,12 @@ return array(
     // data directory containing indexes and databases
     'data-dir' => realpath("$applicationDir/data"),
 
+    // default dictionary for each language
+    'dictionary-defaults' => array(
+        'en' => 'century',
+        'fr' => 'gdf',
+    ),
+
     // dictionaries details
     'dictionaries' => array(
         'anglo-norman' => array(
@@ -44,7 +50,8 @@ return array(
         'century' => array(
             'created'      => '2013-13-14',
             'description'  => 'The Century dictionary, an encyclopedic lexicon of the English language, William D. Whitney, 1895',
-            'introduction' => 'http://archive.org/stream/centurydict01whit#page/n5/mode/2up',
+            'image'        => 'century-dictionary.jpg',
+            'introduction' => 'century-dictionary.phtml',
             'language'     => 'en',
             'name'         => 'Century Dictionary',
             'search'       => array(
@@ -70,7 +77,7 @@ return array(
         'century-supplement' => array(
             'created'      => '2013-13-18',
             'description'  => 'The Century dictionary supplement, Benjamin E. Smith, 1909',
-            'introduction' => 'http://archive.org/stream/cu31924091890685#page/n5/mode/2up',
+            'image'        => 'century-supplement.jpg',
             'language'     => 'en',
             'name'         => 'Century Supplement',
             'search'       => array(

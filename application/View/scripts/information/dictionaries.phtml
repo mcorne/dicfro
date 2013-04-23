@@ -17,14 +17,16 @@
 
 
 <?php if ($this->englishDictList):?>
-  <h1 class="title">Dictionary list (dictionary names in English)</h1>
-  <a href="<?=$this->setActionUrl($this->dictionariesLink);?>">See the list with the original dictionary names</a>
+  <h1 class="title">Dictionary list (names translated in English)</h1>
+  <a href="<?=$this->setActionUrl($this->dictionariesLink);?>"
+   ><?=$this->translate('See the list with the original names of the dictionaries');?></a>
 <?php else:?>
   <h1 class="title"><?=$this->translate('Dictionary list', null, ! $this->englishDictList);?></h1>
-  <a href="<?=$this->setActionUrl($this->dictlistLink);?>"><?=$this->translate('See the list with the dictionary names in English');?></a>
+  <a href="<?=$this->setActionUrl($this->dictlistLink);?>"
+   ><?=$this->translate('See the list with the dictionary names translated in English');?></a>
 <?php endif;?>
 
-<?php foreach($this->dictionariesHelper->getGroups($this->englishDictList) as $optgroup) :?>
+<?php foreach($this->dictionariesHelper->getGroups($this->dictionary['id'], $this->englishDictList) as $optgroup) :?>
   <p class="sub-title" title="<?=$optgroup['list-title'];?>"><?=$optgroup['label'];?></p>
 
     <ul>

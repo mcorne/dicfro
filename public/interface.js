@@ -11,11 +11,9 @@ prevDictionary;
 
 function autoSearchLastWord()
 {
-    var	
-	action = document.getElementById('action').value,
-	isAutoSearch = getcookie('auto-search');
+    var	action = document.getElementById('action').value;
 	
-    isAutoSearch && searchLastWord(action);
+    getcookie('no-auto-search') || searchLastWord(action);
 }
 
 function base64_encode( data )
@@ -58,15 +56,6 @@ function base64_encode( data )
 
     return enc;
 }
-
-function changeLanguage()
-{
-    var language = document.getElementById('language');
-    
-    setcookie('language', language.value);
-    location.reload();
-}
-
 
 function displayLexromd(actionUrl)
 {
@@ -219,103 +208,6 @@ function json_decode(str_json) {
     return ''; // fix
 }
 
-/*
- * Returns the JSON representation of a value - phpjs.org version: 1004.2314
- */
-function json_encode(mixed_val) {
-    var json = this.window.JSON;
-    if (typeof json === 'object' && typeof json.stringify === 'function') {
-        return json.stringify(mixed_val);
-    }
-
-    var value = mixed_val;
-
-    var quote = function (string) {
-        var escapable = /[\\\"\u0000-\u001f\u007f-\u009f\u00ad\u0600-\u0604\u070f\u17b4\u17b5\u200c-\u200f\u2028-\u202f\u2060-\u206f\ufeff\ufff0-\uffff]/g;
-        var meta = {
-            '\b': '\\b',
-            '\t': '\\t',
-            '\n': '\\n',
-            '\f': '\\f',
-            '\r': '\\r',
-            '"': '\\"',
-            '\\': '\\\\'
-        };
-
-        escapable.lastIndex = 0;
-        return escapable.test(string) ? '"' + string.replace(escapable, function (a) {
-            var c = meta[a];
-            return typeof c === 'string' ? c : '\\u' + ('0000' + a.charCodeAt(0).toString(16)).slice(-4);
-        }) + '"' : '"' + string + '"';
-    };
-
-    var str = function (key, holder) {
-        var gap = '';
-        var indent = '    ';
-        var i = 0;
-        var k = '';
-        var v = '';
-        var length = 0;
-        var mind = gap;
-        var partial = [];
-        var value = holder[key];
-
-        if (value && typeof value === 'object' && typeof value.toJSON === 'function') {
-            value = value.toJSON(key);
-        }
-
-        switch (typeof value) {
-        case 'string':
-            return quote(value);
-
-        case 'number':
-            return isFinite(value) ? String(value) : 'null';
-
-        case 'boolean':
-        case 'null':
-
-            return String(value);
-
-        case 'object':
-            if (!value) {
-                return 'null';
-            }
-
-            gap += indent;
-            partial = [];
-
-            if (Object.prototype.toString.apply(value) === '[object Array]') {
-
-                length = value.length;
-                for (i = 0; i < length; i += 1) {
-                    partial[i] = str(i, value) || 'null';
-                }
-
-                v = partial.length === 0 ? '[]' : gap ? '[\n' + gap + partial.join(',\n' + gap) + '\n' + mind + ']' : '[' + partial.join(',') + ']';
-                gap = mind;
-                return v;
-            }
-
-            for (k in value) {
-                if (Object.hasOwnProperty.call(value, k)) {
-                    v = str(k, value);
-                    if (v) {
-                        partial.push(quote(k) + (gap ? ': ' : ':') + v);
-                    }
-                }
-            }
-
-            v = partial.length === 0 ? '{}' : gap ? '{\n' + gap + partial.join(',\n' + gap) + '\n' + mind + '}' : '{' + partial.join(',') + '}';
-            gap = mind;
-            return v;
-        }
-    };
-
-    return str('', {
-        '': value
-    });
-}
-
 function onBlur()
 {
 	window.onfocus = onFocus;
@@ -323,9 +215,7 @@ function onBlur()
 
 function onFocus()
 {
-    var	isNewTab = getcookie('new-tab');
-	
-    autoSearchLastWord();
+    getcookie('new-tab') && autoSearchLastWord();
 	
 	window.onfocus = null;
 	window.onblur = onBlur;
@@ -410,21 +300,6 @@ function searchWord(action, word, isNewTab)
 	}
 }
 
-function setAutoSearch()
-{
-	setcookie('auto-search', true);
-    autoSearchLastWord();
-}
-
-/*
- * Send a cookie - phpjs.org version: 1004.2314
- * escaping/unescaping because encoding/decoding does not handle UTF8 well!
- */
-function setcookie(name, value, expires, path, domain, secure) {
-    // return this.setrawcookie(name, encodeURIComponent(value), expires, path, domain, secure);
-    return this.setrawcookie(name, value, expires, path, domain, secure, true); // fix
-}
-
 function setDictionaryHeight(id)
 {
     var
@@ -443,66 +318,6 @@ function setDictionaryHeight(id)
     // note that this might not be the case when loaded thru an iframe
     // that is not being displayed, ex. loaded by MultiDic
     height && (middle.style.height = (height - middle.offsetTop - bottomMargin) + 'px');
-}
-
-function setNewTab()
-{
-	setcookie('new-tab', true);
-}
-
-/*
- * Send a cookie with no url encoding of the value - adapted from phpjs.org version: 1004.2314
- */
-function setrawcookie(name, value, expires, path, domain, secure, toEscape) {
-    // name: the name of the cookie
-    // value: the value of the cookie
-    // expires: the expire date, default to 1 year, set to 1 (remove cookie) if the value is empty
-    // path: the path, defaults to the domain subpath if any, eg "/dicfro/"
-    // domain: the domain
-    // secure: ...
-    // toEscape: the value must be "escaped"
-
-    // fix
-    var date = new Date;
-    expires || (expires = 3600 * 24 * 365);
-    path || (path = domainSubpath);
-    value === null || typeof value == 'string' || typeof value == 'number' ||
-    typeof value == 'boolean' || (value = json_encode(value));
-    value == '{}' && (value = '');
-    value || (expires = 1);
-    toEscape && typeof value == 'string' && (value = value.replace('=', '%3D').replace(';', '%3B'));
-
-    if (expires instanceof Date) {
-        expires = expires.toGMTString();
-    } else if (typeof(expires) == 'number') {
-        expires = (new Date(+(new Date()) + expires * 1e3)).toGMTString();
-    }
-
-    var r = [name + "=" + value],
-    s = {},
-    i = '';
-    s = {
-        expires: expires,
-        path: path,
-        domain: domain
-    };
-    for (i in s) {
-        s[i] && r.push(i + "=" + s[i]);
-    }
-
-    return secure && r.push("secure"),
-    this.window.document.cookie = r.join(";"),
-    true;
-}
-
-function unsetAutoSearch()
-{
-	setcookie('auto-search', false);
-}
-
-function unsetNewTab()
-{
-	setcookie('new-tab', false);
 }
 
 function updateTabContents(target)

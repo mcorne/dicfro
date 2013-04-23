@@ -310,7 +310,7 @@ li
     margin-bottom: .4em;
 }
 
-select.language
+select.language, select.default-dictionary
 {
     vertical-align: middle;
 }
@@ -332,7 +332,7 @@ p.sub-title
     color: green;
     font-size: 1.2em;
     font-weight: bold;
-    margin-top: 2.5em;
+    margin-top: 2em;
 }
 
 p.tip, p.tip a

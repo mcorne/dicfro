@@ -105,6 +105,22 @@ class Controller_Front
         $controller->finish();
     }
 
+
+    /**
+     * Returns a posted parameter
+     *
+     * @param string $param
+     * @return mixed
+     */
+    public function getPost($param)
+    {
+        if (isset($_POST[$param])) {
+            return $_POST[$param];
+        }
+
+        return null;
+    }
+
     /**
      * Matches the route to a controller name, action and function name
      *
@@ -162,10 +178,18 @@ class Controller_Front
      */
     public function setParams()
     {
-        if (empty($_GET)) {
-            $this->params = array();
-        } else {
-            $this->params = $_GET;
+        $this->params = array();
+
+        if (! empty($_GET)) {
+            $this->params += $_GET;
+        }
+
+        if (! empty($_POST)) {
+            $this->params += $_POST;
+        }
+
+        if (! empty($_COOKIE)) {
+            $this->params += $_COOKIE;
         }
     }
 }
