@@ -18,11 +18,11 @@
 
 <?php if ($this->englishDictList):?>
   <h1 class="title">Dictionary list (names translated in English)</h1>
-  <a href="<?=$this->setActionUrl($this->dictionariesLink);?>"
+  <a href="<?=$this->linksHelper->setDictionariesLink();?>"
    ><?=$this->translate('See the list with the original names of the dictionaries');?></a>
 <?php else:?>
   <h1 class="title"><?=$this->translate('Dictionary list', null, ! $this->englishDictList);?></h1>
-  <a href="<?=$this->setActionUrl($this->dictlistLink);?>"
+  <a href="<?=$this->linksHelper->setDictlistLink();?>"
    ><?=$this->translate('See the list with the dictionary names translated in English');?></a>
 <?php endif;?>
 
@@ -35,7 +35,7 @@
       <li>
       <a class="link <?=$options['type'];?>"
          title ="<?=$options['list-title'];?>"
-         href="<?=$this->setActionUrl('introduction/' . $options['value']);?>"><?=$options['title'];?></a>
+         href="<?=$this->linksHelper->setLink(array('introduction', $options['value']));?>"><?=$options['title'];?></a>
       </li>
 
     <?php endforeach;?>

@@ -15,6 +15,7 @@
 require_once 'View/Helper/Dictionaries.php';
 require_once 'View/Helper/Entries.php';
 require_once 'View/Helper/Images.php';
+require_once 'View/Helper/Links.php';
 require_once 'View/Helper/Translator.php';
 require_once 'View/Helper/Verbs.php';
 require_once 'View/Helper/Words.php';
@@ -57,6 +58,12 @@ class Base_View
     public $imagesHelper;
 
     /**
+     * Links view helper
+     * @var View_Helper_Links
+     */
+    public $linksHelper;
+
+    /**
      * Translator view helper
      * @var View_Helper_Translator
      */
@@ -96,9 +103,9 @@ class Base_View
     }
 
     /**
-     * Property overloading getter
+     * Returns null for an undefined property
      *
-     * @param  string $property the name of the property to get
+     * @param  string $property
      * @return null
      */
     public function __get($property)
@@ -159,23 +166,6 @@ class Base_View
     }
 
     /**
-     * Sets an action URL
-     *
-     * @param  string $action the name of the action
-     * @return string the action URL
-     */
-    public function setActionUrl($action = null)
-    {
-        $actionUrl = $this->baseUrl . '/';
-
-        if ($action) {
-            $actionUrl .= $action;
-        }
-
-        return $actionUrl;
-    }
-
-    /**
      * Sets the base URL
      *
      * @return void
@@ -199,6 +189,7 @@ class Base_View
         $this->dictionariesHelper = new View_Helper_Dictionaries($this);
         $this->entriesHelper      = new View_Helper_Entries($this);
         $this->imagesHelper       = new View_Helper_Images($this);
+        $this->linksHelper        = new View_Helper_Link($this);
         $this->translatorHelper   = new View_Helper_Translator($this);
         $this->verbsHelper        = new View_Helper_Verbs($this);
         $this->wordsHelper        = new View_Helper_Words($this);

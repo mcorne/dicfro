@@ -20,7 +20,7 @@
 <!-- logo -->
 <span class="nowrap">
 
-  <a class="logo" href="<?=$this->setActionUrl($this->homeLink);?>">
+  <a class="logo" href="<?=$this->linksHelper->setHomeLink();?>">
     <span style="color:blue;font-size:120%;">d</span><span style="color:green;vertical-align:-20%;">i</span><span style="color:orange;">c</span><span style="color:red;font-size:120%;">f</span><span style="color:blue;">r</span><span style="color:green;vertical-align:20%;">o</span>
   </a>
 
@@ -28,16 +28,16 @@
 
 <!-- search block -->
 <span class="nowrap">
-  <input type="hidden" id="action" value="<?=$this->setActionUrl($this->wordLink);?>"/>
+  <input type="hidden" id="action" value="<?=$this->linksHelper->setWordLink();?>"/>
   <input type="hidden" id="dictionary-language" value="<?=$this->dictionary['language'];?>"/>
 
   <input class="word" type="text" id="word"
          title="<?=$this->translate('Enter a word then press the ENTER key or click on the button');?>"
          value="<?=$this->word;?>"
-         onkeypress="isEnterKey(event) && searchWord('<?=$this->setActionUrl($this->wordLink);?>');" />
+         onkeypress="isEnterKey(event) && searchWord('<?=$this->linksHelper->setWordLink();?>');" />
 
   <input class="button search" type="button"
-         onclick="searchWord('<?=$this->setActionUrl($this->wordLink);?>')"
+         onclick="searchWord('<?=$this->linksHelper->setWordLink();?>')"
          value="<?=$this->translate('Search');?>" />
 
 </span>
@@ -47,7 +47,7 @@
 <span class="nowrap" >
 
   <select class="dict" id="dictionary"
-          onchange="openDictionary('<?=$this->setActionUrl($this->dictionaryLink);?>')">
+          onchange="openDictionary('<?=$this->linksHelper->setDictionaryLink();?>')">
 
     <?php foreach($this->dictionariesHelper->getGroups($this->dictionary['url']) as $optgroup) :?>
       <optgroup label="<?=$optgroup['label'];?>">
@@ -77,10 +77,10 @@
 
   <img class="button" src="<?=$this->setLinkUrl('img/go-previous.png');?>"
        title="<?=$this->translate('Previous page');?>"
-       onclick="location.assign('<?=$this->setActionUrl($this->previousPageLink);?>');" />
+       onclick="location.assign('<?=$this->linksHelper->setPreviousPageLink();?>');" />
   <img class="button" src="<?=$this->setLinkUrl('img/go-next.png');?>"
        title="<?=$this->translate('Next page');?>"
-       onclick="location.assign('<?=$this->setActionUrl($this->nextPageLink);?>');" />
+       onclick="location.assign('<?=$this->linksHelper->setNextPageLink();?>');" />
 
 </span>
 
@@ -89,7 +89,7 @@
 
   <?php if (isset($this->entries)):?>
     <select class="entries" id="entries"
-            onchange="goEntry('<?=$this->setActionUrl($this->goPageLink);?>')">
+            onchange="goEntry('<?=$this->linksHelper->setGoPageLink();?>')">
 
       <?php foreach($this->entriesHelper->getEntries() as $option) :?>
         <option value="<?=$option['value'];?>"
@@ -110,7 +110,7 @@
   <input class="page" type="text" id="page"
          title="<?=$this->translate('Enter a number then press the ENTER key or click on the button');?>"
          value="<?=$this->page;?>"
-         onkeypress="isEnterKey(event) && goPage('<?=$this->setActionUrl($this->goPageLink);?>');" />
+         onkeypress="isEnterKey(event) && goPage('<?=$this->linksHelper->setGoPageLink();?>');" />
 
   <?php if(! empty($this->dictionary['volume'])):?>
     <span class="volume"><?=$this->translate('Volume');?></span>
@@ -121,10 +121,10 @@
              title="<?=$this->translate('Enter a number then press the ENTER key or click on the button');?>"
            <?php endif;?>
            value="<?=$this->volume;?>"
-           onkeypress="isEnterKey(event) && goPage('<?=$this->setActionUrl($this->goPageLink);?>');" />
+           onkeypress="isEnterKey(event) && goPage('<?=$this->linksHelper->setGoPageLink();?>');" />
   <?php endif;?>
 
-  <input class="button" type="button" onclick="goPage('<?=$this->setActionUrl($this->goPageLink);?>')"
+  <input class="button" type="button" onclick="goPage('<?=$this->linksHelper->setGoPageLink();?>')"
          value="<?=$this->translate('Display');?>" />
 
 </span>

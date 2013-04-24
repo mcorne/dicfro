@@ -17,10 +17,10 @@
 
 <!-- links to pages: home, ... -->
 <span class="nowrap" >
-  <a class="link" href="<?=$this->setActionUrl($this->homeLink);?>"><?=$this->translate('Home');?></a>
-  <a class="link" href="<?=$this->setActionUrl($this->introductionLink);?>"><?=$this->translate('Introduction');?></a>
-  <a class="link options" href="<?=$this->setActionUrl($this->optionsLink);?>"><?=$this->translate('Options');?></a>
+  <a class="link" href="<?=$this->linksHelper->setHomeLink();?>"><?=$this->translate('Home');?></a>
+  <a class="link" href="<?=$this->linksHelper->setIntroductionLink();?>"><?=$this->translate('Introduction');?></a>
+  <a class="link options" href="<?=$this->linksHelper->setOptionsLink();?>"><?=$this->translate('Options');?></a>
   <a class="link" href="javascript:printPage()"><?=$this->translate('Print');?></a>
-  <a class="link" href="<?=$this->setActionUrl($this->aboutLink);?>"><?=$this->translate('About');?></a>
+  <a class="link" href="<?=$this->linksHelper->setAboutLink();?>"><?=$this->translate('About');?></a>
   <a class="link" href="mailto:mcorne@yahoo.com?subject=Dicfro"><?=$this->translate('Contact');?></a>
 </span>

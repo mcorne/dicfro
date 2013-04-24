@@ -21,7 +21,7 @@
 </span>
 
 <select class="identified"
-        onchange="searchWord('<?=$this->setActionUrl($this->wordLink);?>', this.value)">
+        onchange="searchWord('<?=$this->linksHelper->setWordLink();?>', this.value)">
 
   <option><?=$this->verbsHelper->extractInfinitives($verbs);?></option>
 

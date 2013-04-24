@@ -8,8 +8,6 @@ Things to do
 - scan/add tilander
 - add littre
 
-- add default dictionary by language, optionally set by user
-- go back to previous dictionary instead of default dictionary from options page, about page etc..., fix searched word that is set to "dictionnaire-godefroy"
 - fix accentuated character issue with IE
 - fix scrolling bar issue for tablets
 - process volumes for indexed dictionary query

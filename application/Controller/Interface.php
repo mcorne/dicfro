@@ -78,7 +78,7 @@ class Controller_Interface
     }
 
     /**
-     * Method overload to call an action
+     * Calls an action
      *
      * @param  string $action    the action name
      * @param  array  $arguments the list of arguments
@@ -93,7 +93,6 @@ class Controller_Interface
         } else {
             $this->{$this->front->action}();
         }
-
     }
 
     /**
@@ -134,42 +133,10 @@ class Controller_Interface
     {
         $this->view->dictionary = $this->dictionary;
 
-        if (empty($this->front->params['open-dict-in-new-tab'])) {
-            $addDictionaryToPath = null;
-        } else {
-            $addDictionaryToPath = $this->dictionary['url'];
-        }
-
-        $this->view->homeLink = $this->setActionLink('home', $addDictionaryToPath);
-        $this->view->introductionLink = $this->setActionLink('introduction', $this->dictionary['url']);
-        $this->view->optionsLink = $this->setActionLink('options', $addDictionaryToPath);
-        $this->view->aboutLink = $this->setActionLink('about');
-        $this->view->dictionariesLink = $this->setActionLink('dictionaries');
-        $this->view->dictlistLink = $this->setActionLink('dictlist');
-
-        $this->view->wordLink = $this->setActionLink('search', $this->dictionary['url'], '%s');
-
         if ($this->parseActions() == 'introduction') {
-            $action = 'introduction';
+            $this->view->action = 'introduction';
         } else {
-            $action = 'search';
-        }
-        $this->view->dictionaryLink = $this->setActionLink($action, '%s', $this->view->word);
-
-        if (isset($this->view->page)) {
-            $this->view->previousPageLink = $this->setActionLink('previous', $this->dictionary['url'],
-                $this->view->page, $this->view->volume, $this->view->word);
-            $this->view->nextPageLink = $this->setActionLink('next', $this->dictionary['url'],
-                $this->view->page, $this->view->volume, $this->view->word);
-
-            if (empty($this->dictionary['volume'])) {
-                $needVolume = '';
-            } else {
-                $needVolume = '%s';
-            }
-
-            // go to page link template used by js
-            $this->view->goPageLink = $this->setActionLink('page', $this->dictionary['url'], '%s', $needVolume, $this->view->word);
+            $this->view->action = 'search';
         }
 
         $this->view->params = $this->front->params;
@@ -295,20 +262,6 @@ class Controller_Interface
         $search = $this->createSearchObject();
         $result = $search->searchWord($this->view->word);
         $this->view->assign($result);
-    }
-
-    /**
-     * Sets an action link
-     *
-     * @return string the action link
-     */
-    public function setActionLink()
-    {
-        $arguments = func_get_args();
-        $arguments = array_filter($arguments);
-        $link = implode('/', $arguments);
-
-        return $link;
     }
 
     /**

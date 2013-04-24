@@ -68,7 +68,7 @@
   </span>
 
   <select class="identified"
-          onchange="searchWord('<?=$this->setActionUrl($this->wordLink);?>', this.value)" >
+          onchange="searchWord('<?=$this->linksHelper->setWordLink();?>', this.value)" >
 
     <option><?=$this->word;?></option>
 
@@ -105,7 +105,7 @@
   </span>
 
   <select class="identified"
-          onchange="searchWord('<?=$this->setActionUrl($this->wordLink);?>', this.value)" >
+          onchange="searchWord('<?=$this->linksHelper->setWordLink();?>', this.value)" >
 
     <option value=""><?=$this->word;?></option>
 
