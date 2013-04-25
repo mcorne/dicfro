@@ -42,6 +42,12 @@ class Model_Search_External extends Model_Search
             $word = $string->{$this->convert}($word);
         }
 
-        return array('externalDict' => $this->url . $word);
+        if (empty($word) and ! empty($this->emptyWord)) {
+            $url = $this->emptyWord;
+        } else {
+            $url = $this->url . $word;
+        }
+
+        return array('externalDict' => $url);
     }
 }

@@ -15,19 +15,32 @@
 
 ?>
 
-
 <?php if ($this->englishDictList):?>
-  <h1 class="title">Dictionary list (names translated in English)</h1>
+
+  <h1 class="title">
+    Dictionary list with names translated in English
+    (<?=$this->dictionariesHelper->countDictionaries();?>)
+  </h1>
   <a href="<?=$this->linksHelper->setDictionariesLink();?>"
    ><?=$this->translate('See the list with the original names of the dictionaries');?></a>
+
 <?php else:?>
-  <h1 class="title"><?=$this->translate('Dictionary list', null, ! $this->englishDictList);?></h1>
+
+  <h1 class="title">
+    <?=$this->translate('Dictionary list', null, ! $this->englishDictList);?>
+    (<?=$this->dictionariesHelper->countDictionaries();?>)
+  </h1>
   <a href="<?=$this->linksHelper->setDictlistLink();?>"
    ><?=$this->translate('See the list with the dictionary names translated in English');?></a>
+
 <?php endif;?>
 
-<?php foreach($this->dictionariesHelper->getGroups($this->dictionary['id'], $this->englishDictList) as $optgroup) :?>
-  <p class="sub-title" title="<?=$optgroup['list-title'];?>"><?=$optgroup['label'];?></p>
+<?php $count = $this->dictionariesHelper->countDictionariesByLanguage();
+      foreach($this->dictionariesHelper->getGroups($this->dictionary['id'], $this->englishDictList) as $optgroup) :?>
+  <p class="sub-title" title="<?=$optgroup['list-title'];?>">
+    <?=$optgroup['label'];?>
+    (<?=$count[ $optgroup['language'] ];?>)
+  </p>
 
     <ul>
     <?php foreach($optgroup['options'] as $options) :?>
@@ -44,23 +57,30 @@
 <?php endforeach;?>
 
 <p class="sub-title"><?=$this->translate('DicFro offers three types of dictionary', null, ! $this->englishDictList);?></p>
+
+
+<?php $count = $this->dictionariesHelper->countDictionariesByType();?>
+
 <table class="dictionary-types">
   <tr>
     <td class="type internal"><?=$this->translate('Internal dictionaries', null, ! $this->englishDictList);?></td>
+    <td>(<?=$count['internal'];?>)</td>
     <td><?=$this->translate('The dictionary pages and the index to the pages are stored in DicFro.', null, ! $this->englishDictList);?></td>
   </tr>
   <tr>
     <td class="type index"><?=$this->translate('Indexed dictionaries', null, ! $this->englishDictList);?></td>
+    <td>(<?=$count['index'];?>)</td>
     <td>
-      <?=$this->translate('The pages of the dictionary are stored outside DicFro.', null, ! $this->englishDictList);?>
-      <?=$this->translate('The index to the pages is stored in DicFro.', null, ! $this->englishDictList);?>
+      <?=$this->translate('The pages of the dictionary are stored outside of DicFro.', null, ! $this->englishDictList);?><br/>
+      <?=$this->translate('The index to the pages is stored in DicFro.', null, ! $this->englishDictList);?><br/>
       <?=$this->translate('DicFro will search a word in the index, and displays the corresponding page of the dictionary', null, ! $this->englishDictList);?>
     </td>
   </tr>
   <tr>
     <td class="type external"><?=$this->translate('External dictionaries', null, ! $this->englishDictList);?></td>
+    <td>(<?=$count['external'];?>)</td>
     <td>
-      <?=$this->translate('The pages of the dictionary are stored outside DicFro.', null, ! $this->englishDictList);?>
+      <?=$this->translate('The pages of the dictionary are stored outside of DicFro.', null, ! $this->englishDictList);?><br/>
       <?=$this->translate('DicFro will pass the search word to the dictionary that performs the search and displays the word.', null, ! $this->englishDictList);?>
     </td>
   </tr>

@@ -29,6 +29,45 @@ require_once 'View/Helper/Base.php';
 class View_Helper_Dictionaries extends View_Helper_Base
 {
     /**
+     * Counts all dictionaries
+     */
+    public function countDictionaries()
+    {
+       return count($this->view->config['dictionaries']);
+    }
+
+    /**
+     * Counts dictionaries by language
+     */
+    public function countDictionariesByLanguage()
+    {
+        $count = array();
+
+        foreach($this->view->config['groups'] as $group) {
+            $language = $group['language'];
+            $count[$language] = count($group['dictionaries']);
+        }
+
+        return $count;
+    }
+
+    /**
+     * Counts dictionaries by type
+     */
+    public function countDictionariesByType()
+    {
+        $count = array();
+
+        foreach($this->view->config['dictionaries'] as $dictionary) {
+            $type = $dictionary['type'];
+            isset($count[$type]) or $count[$type] = 0;
+            $count[$type]++;
+        }
+
+        return $count;
+    }
+
+    /**
      * Returns the dictionary description
      *
      * @return mixed the dictionary description
@@ -36,6 +75,63 @@ class View_Helper_Dictionaries extends View_Helper_Base
     public function getDescription()
     {
         return isset($this->view->dictionary['description']) ? $this->view->dictionary['description'] : '';
+    }
+
+    /**
+     * Returns the groups of dictionaries for use in a select box
+     *
+     * @param string $selected
+     * @param bool $english
+     * @return array the groups of dictionaries
+     */
+    public function getGroups($selected, $english = false)
+    {
+        $dictionaries = $this->view->config['dictionaries'];
+        $optgroups = array();
+
+        foreach($this->view->config['groups'] as $group) {
+            $options = array();
+
+            foreach($group['dictionaries'] as $id) {
+                $dictionary = $dictionaries[$id];
+
+                if (isset($dictionary['url'])) {
+                    $value = $dictionary['url'];
+                } else {
+                    $value =  $id;
+                }
+
+                $englishTitle = isset($dictionary['description-en']) ? $dictionary['description-en'] : null;
+
+                if ($english) {
+                    $title     = $englishTitle ? $englishTitle : $dictionary['description'];
+                    $listTitle = $englishTitle ? $dictionary['description'] :  null;
+                } else {
+                    $title     = $dictionary['description'];
+                    $listTitle = $englishTitle;
+                }
+
+                $options[] = array(
+                    'list-title' => $listTitle,
+                    'selected'   => $id == $selected or $value == $selected,
+                    'text'       => $dictionary['name'],
+                    'title'      => $title,
+                    'type'       => $dictionary['type'],
+                    'value'      => $value,
+                );
+            }
+
+            $label = $this->view->languages[ $group['language'] ];
+
+            $optgroups[] = array(
+                'label'      => $english ? $label['english']  : $label['original'],
+                'language'   => $group['language'],
+                'list-title' => $english ? $label['original'] : $label['english'],
+                'options'    => $options,
+            );
+        }
+
+        return $optgroups;
     }
 
     /**
@@ -68,62 +164,6 @@ class View_Helper_Dictionaries extends View_Helper_Base
         }
 
         return $options;
-    }
-
-    /**
-     * Returns the groups of dictionaries for use in a select box
-     *
-     * @param string $selected
-     * @param bool $english
-     * @return array the groups of dictionaries
-     */
-    public function getGroups($selected, $english = false)
-    {
-        $dictionaries = $this->view->config['dictionaries'];
-        $optgroups = array();
-
-        foreach($this->view->config['groups'] as $group) {
-            $options = array();
-
-            foreach($group['dictionaries'] as $id) {
-                $dictionary = $dictionaries[$id];
-
-                if (isset($dictionary['url'])) {
-                    $value = $dictionary['url'];
-                } else {
-                    $value =  $id;
-                }
-
-                $englishTitle = isset($dictionary['description-en']) ? $dictionary['description-en'] : null;
-
-                if ($english) {
-                    $title     = $englishTitle ?: $dictionary['description'];
-                    $listTitle = $englishTitle ? $dictionary['description'] :  null;
-                } else {
-                    $title     = $dictionary['description'];
-                    $listTitle = $englishTitle;
-                }
-
-                $options[] = array(
-                    'list-title' => $listTitle,
-                    'selected'   => $id == $selected or $value == $selected,
-                    'text'       => $dictionary['name'],
-                    'title'      => $title,
-                    'type'       => $dictionary['type'],
-                    'value'      => $value,
-                );
-            }
-
-            $label = $this->view->languages[ $group['language'] ];
-
-            $optgroups[] = array(
-                'label'      => $english ? $label['english']  : $label['original'],
-                'list-title' => $english ? $label['original'] : $label['english'],
-                'options'    => $options,
-            );
-        }
-
-        return $optgroups;
     }
 
     /**

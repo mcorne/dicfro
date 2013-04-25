@@ -175,7 +175,12 @@ return array(
             'introduction'   => 'http://www.atilf.fr/dmf/',
             'language'       => 'fr',
             'name'           => 'Moyen français',
-            'search'         => 'http://www.atilf.fr/dmf/definition/',
+            'search'         => array(
+                'properties' => array(
+                    'emptyWord' => 'http://www.atilf.fr/dmf/',
+                    'url'       => 'http://www.atilf.fr/dmf/definition/',
+                )
+            ),
             'title'          => 'DMF',
             'type'           => 'external',
         ),
@@ -199,7 +204,12 @@ return array(
             'introduction'   => 'http://dvlf.uchicago.edu/',
             'language'       => 'fr',
             'name'           => 'DVLF',
-            'search'         => 'http://dvlf.uchicago.edu/mot/',
+            'search'         => array(
+                'properties' => array(
+                    'emptyWord' => 'http://dvlf.uchicago.edu/',
+                    'url'       => 'http://dvlf.uchicago.edu/mot/',
+                )
+            ),
             'type'           => 'external',
         ),
 
@@ -357,7 +367,12 @@ return array(
             'introduction'   => 'http://www.les-verbes.com',
             'language'       => 'fr',
             'name'           => 'Les verbes',
-            'search'         => 'http://www.les-verbes.com/conjuguer.php?verbe=',
+            'search'         => array(
+                'properties' => array(
+                    'emptyWord' => 'http://www.les-verbes.com',
+                    'url'       => 'http://www.les-verbes.com/conjuguer.php?verbe=',
+                )
+            ),
             'type'           => 'external',
         ),
 
