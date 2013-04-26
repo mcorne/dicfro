@@ -1,2 +1,0 @@
-
-Error! (D:\Data\dicfro\application\data/encyclopedie-larousse/index.csv #920) bad word order: ARSNOVA > ARSENIC

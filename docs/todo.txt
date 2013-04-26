@@ -1,8 +1,6 @@
 Things to do
 ------------
 
-- add intro pages of Lexique Roman.
-- add intro for indexed dictionaries
 - add panoccitan.org, http://www.etymologie-occitane.fr, deaf-page.de, http://www.atilf.fr/dect/ ...
 - add lacurne supplement, curiosités etc..., grand larousse
 - scan/add tilander
