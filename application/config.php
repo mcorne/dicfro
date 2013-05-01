@@ -220,6 +220,12 @@ return array(
             'image'          => 'encyclopedie-larousse.jpg',
             'language'       => 'fr',
             'name'           => 'Encyclopédie Larousse (Aa-Au)',
+            'parser'         => array(
+                'class'      => 'Model_Parser_Index',
+                'properties' => array(
+                    'singleWord' => true,
+                )
+            ),
             'search'         => array(
                 'properties' => array(
                     'entries' => true,

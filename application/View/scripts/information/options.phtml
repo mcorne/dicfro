@@ -49,7 +49,7 @@
 
 <p class="sub-title"><?=$this->translate('How to search a word');?></p>
 
-<p><?=$this->translate('Applicable for dictionaries open in different tabs');?></p>
+<p><?=$this->translate('This is applicable only for dictionaries open in different tabs.');?></p>
 
 <form action"" method="post">
   <input type="hidden" name="dictionary" value="<?=$this->dictionary['id'];?>" />
@@ -99,6 +99,8 @@
 </form>
 
 <p class="sub-title"><?=$this->translate('Default dictionary');?></p>
+
+<p><?=$this->translate('This is the dictionary open by default the first time you load DicFro in your browser.');?></p>
 
 <form action"" method="post">
   <input type="hidden" name="dictionary" value="<?=$this->dictionary['id'];?>" />

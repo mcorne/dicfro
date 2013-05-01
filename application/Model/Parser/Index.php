@@ -29,6 +29,7 @@ require_once 'Model/Parser.php';
 class Model_Parser_Index extends Model_Parser
 {
     public $batchFileTemplate = 'index.sql';
+    public $singleWord        = false;
     public $sourceFile        = 'index.csv';
 
     public function parseLine($line, $lineNumber)
@@ -59,6 +60,10 @@ class Model_Parser_Index extends Model_Parser
 
                if (preg_match('~[()[\]]~', $word)) {
                    $this->error("parenthesis or bracket mismatch in: $word", true, $lineNumber);
+               }
+
+               if ($this->singleWord) {
+                   list($word) = preg_split('~[ -]~', $word, 2);
                }
 
                $word = str_replace('-', '', $word);

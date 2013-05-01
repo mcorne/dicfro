@@ -23,9 +23,6 @@ return array(
     "About" =>
     "À propos",
 
-    "Applicable for dictionaries open in different tabs" =>
-    "Cas des dictionnaires ouverts dans des onglets différents",
-
     "Archives" =>
     "Archives",
 
@@ -54,7 +51,7 @@ return array(
     "Verbes dérivés",
 
     "DicFro will pass the search word to the dictionary that performs the search and displays the word." =>
-    "DicFro va passer le mot à rechercher dans le dictionnaire qui effectue la recherche et affiche le mot.",
+    "DicFro va passer le mot à rechercher au dictionnaire qui effectue la recherche et affiche le mot.",
 
     "DicFro will search a word in the index, and displays the corresponding page of the dictionary." =>
     "DicFro va chercher un mot dans l'index, et affiche la page correspondante du dictionnaire..",
@@ -220,6 +217,12 @@ return array(
 
     "The selection of a new dictionary will open the dictionary in the current tab." =>
     "La sélection d'un nouveau dictionnaire ouvrira ce dictionnaire dans l'onglet courant.",
+
+    "This is applicable only for dictionaries open in different tabs." =>
+    "Ceci est applicable uniquement pour les dictionnaires ouverts dans des onglets différents.",
+
+    "This is the dictionary open by default the first time you load DicFro in your browser." =>
+    "C'est le dictionnaire ouvert par défaut la première fois que vous chargez DicFro dans votre navigateur.",
 
     "Tome" =>
     "Tome",

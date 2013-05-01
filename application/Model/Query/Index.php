@@ -111,7 +111,7 @@ class Model_Query_Index extends Model_Query
      */
     public function searchPreviousEntries($volume, $page)
     {
-        $sql = "SELECT * FROM word WHERE page < :page AND original != '' ORDER BY page DESC LIMIT 7";
+        $sql = "SELECT * FROM word WHERE page < :page AND original != '' ORDER BY page DESC LIMIT 10";
 
         return array_reverse($this->fetchAll($sql, array(':page' => $page)));
     }
@@ -125,7 +125,7 @@ class Model_Query_Index extends Model_Query
      */
     public function searchNextEntries($volume, $page)
     {
-        $sql = "SELECT * FROM word WHERE page > :page AND original != '' LIMIT 7";
+        $sql = "SELECT * FROM word WHERE page > :page AND original != '' LIMIT 10";
 
         return $this->fetchAll($sql, array(':page' => $page));
     }
