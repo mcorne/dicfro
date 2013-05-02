@@ -299,7 +299,7 @@ class Controller_Interface
                 $expire = time() + $days * 24 * 3600;
             }
 
-            setrawcookie($name, $value , $expire, '/' . $this->front->config['domain-subpath']);
+            setcookie($name, $value , $expire, '/' . $this->front->config['domain-subpath']);
         }
     }
 
@@ -426,7 +426,8 @@ class Controller_Interface
     {
         foreach($this->front->actionParams as $idx => $param) {
             if (is_numeric($param)) {
-                $this->view->page = $param;
+                // converts page number to integer for clarity
+                $this->view->page = (int) $param;
                 unset($this->front->actionParams[$idx]);
                 break;
             }
@@ -442,7 +443,8 @@ class Controller_Interface
     {
         foreach($this->front->actionParams as $idx => $param) {
             if (is_numeric($param)) {
-                $this->view->volume = $param;
+                // converts volume number to integer for clarity
+                $this->view->volume = (int) $param;
                 unset($this->front->actionParams[$idx]);
                 break;
             }
@@ -467,7 +469,8 @@ class Controller_Interface
         }
 
         $word = urldecode($word);
-        $this->view->word = strip_tags($word);
+        // filters out HTML special characters for security
+        $this->view->word = strtr($word, '<>&"', '    ');
     }
 
     /**

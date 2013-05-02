@@ -70,7 +70,7 @@
   <select class="identified"
           onchange="searchWord('<?=$this->linksHelper->setWordLink();?>', this.value)" >
 
-    <option><?=$this->word;?></option>
+    <option><?=$this->escape($this->word);?></option>
 
     <?php
       if($forms = $this->wordsHelper->extractForms('main')) {
@@ -107,7 +107,7 @@
   <select class="identified"
           onchange="searchWord('<?=$this->linksHelper->setWordLink();?>', this.value)" >
 
-    <option value=""><?=$this->word;?></option>
+    <option value=""><?=$this->escape($this->word);?></option>
 
     <optgroup label="<?=count($this->identifiedLatinWords) > 1 ? $this->translate('Other forms') : $this->translate('Other form');?>">
 

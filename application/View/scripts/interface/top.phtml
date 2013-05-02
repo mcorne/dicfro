@@ -33,7 +33,7 @@
 
   <input class="word" type="text" id="word"
          title="<?=$this->translate('Enter a word then press the ENTER key or click on the button');?>"
-         value="<?=$this->word;?>"
+         value="<?=$this->escape($this->word);?>"
          onkeypress="isEnterKey(event) && searchWord('<?=$this->linksHelper->setWordLink();?>');" />
 
   <input class="button search" type="button"
@@ -109,7 +109,7 @@
   <span class="page"><?=$this->translate('Page');?></span>
   <input class="page" type="text" id="page"
          title="<?=$this->translate('Enter a number then press the ENTER key or click on the button');?>"
-         value="<?=$this->page;?>"
+         value="<?=$this->escape($this->page);?>"
          onkeypress="isEnterKey(event) && goPage('<?=$this->linksHelper->setGoPageLink();?>');" />
 
   <?php if(! empty($this->dictionary['volume'])):?>
@@ -120,7 +120,7 @@
            <?php else:?>
              title="<?=$this->translate('Enter a number then press the ENTER key or click on the button');?>"
            <?php endif;?>
-           value="<?=$this->volume;?>"
+           value="<?=$this->escape($this->volume);?>"
            onkeypress="isEnterKey(event) && goPage('<?=$this->linksHelper->setGoPageLink();?>');" />
   <?php endif;?>
 

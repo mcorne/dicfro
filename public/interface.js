@@ -64,6 +64,7 @@ function displayLexromd(actionUrl)
     page = document.getElementById('tome-page').value;
 
     page = parseInt(page);
+    tome = parseInt(tome);
 
     if (validateLexromPage(tome, page)) {
         page = formatLexromPage(page);
@@ -144,8 +145,11 @@ function goEntry(action)
     entry = document.getElementById('entries'),
     pageVolume = entry.value.split('/');
     
-    action = action.replace('%s', pageVolume[0]);
-    action = action.replace('%s', pageVolume[1]);
+    page = parseInt(pageVolume[0]);
+    volume = parseInt(pageVolume[1]);
+    
+    action = action.replace('%s', page);
+    action = action.replace('%s', volume);
     
     location.assign(action);
 }
@@ -156,8 +160,8 @@ function goPage(action)
     page = document.getElementById('page'),
     volume = document.getElementById('volume');
 
-    page && (action = action.replace('%s', page.value));
-    volume && (action = action.replace('%s', volume.value));
+    page && (action = action.replace('%s', parseInt(page.value)));
+    volume && (action = action.replace('%s', parseInt(volume.value)));
 
     location.assign(action);
 }
@@ -291,7 +295,7 @@ function searchLastWord(action)
 function searchWord(action, word, isNewTab)
 {
     word || (word = document.getElementById('word').value);
-	action = action.replace('%s', word.split(',', 2)[0].split(' ', 2)[0]);
+	action = action.replace('%s', word);
 
     if (isNewTab) {
         window.open(action);

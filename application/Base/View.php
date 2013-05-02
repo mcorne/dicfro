@@ -143,6 +143,11 @@ class Base_View
        return $rounded;
     }
 
+    public function escape($string)
+    {
+        return htmlspecialchars($string, ENT_COMPAT, 'UTF-8');
+    }
+
     /**
      * Sets resources used by the view
      *
