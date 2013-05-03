@@ -1,0 +1,32 @@
+initial version v1
+------------------
+
+- 2/5/2013
+
+- searched for "la grande encyclopédie larousse" at gallica.bnf.fr/
+
+for each volume, ex volume 3 :
+- entered http://gallica.bnf.fr/ark:/12148/bpt6k1200514d/f1.image
+- selected "affichage", "feuilleter en plein écran"
+- clicked "téléchargement" icon
+- selected "PDF", "document entier", clicked "lancer le téléchargement"
+- replaced "PDF" with "TXT" in url, pressed enter
+- when page is displayed, right clicked to save as "sources/encyclopedie-larousse/encyclopedie-larousse-3.htm"
+- added first and last pages in "volumes-end-pages.php"
+- added first and last words in "volumes-end-entries.php"
+- added dictionaries/encyclopedie-larousse/search/properties/url/3 in config.php to point to a page/image
+- ran "extract-entries.php 3" (first run)
+- ran "merge-entries.php" (first run)
+- ran "parse encyclopedie-larousse 1", (first run), ignored errors, this is just to create the database, and go to page below for fixing purposes
+
+- fixed bad entries in 3/encyclopedie-larousse-3.csv, via dicfro using go to page:
+* ran "extract-entries.php 3" as many times as necessary
+* updated 3/excluded-entries.php, 3/excluded-words.php and 3/replaced-entries.php as necessary
+
+- ran "merge-entries.php" 
+- ran "parse century 1", fixed errors
+* ran "extract-entries.php 3"
+* updated 3/excluded-entries.php, 3/excluded-words.php and 3/replaced-entries.php as necessary
+
+- updated "name" in config.php
+- updated scripts/introduction/encyclopedie-larousse.phtml

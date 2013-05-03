@@ -1,0 +1,93 @@
+<?php
+/**
+ * Dicfro
+ *
+ * List of excluded entries
+ *
+ * PHP 5
+ *
+ * @author    Michel Corne <mcorne@yahoo.com>
+ * @copyright 2008-2013 Michel Corne
+ * @license   http://www.opensource.org/licenses/gpl-3.0.html GNU GPL v3
+ */
+
+// note that only the first 10 words are used for processing
+
+return array(
+    "autour d’Adélaïde, le réseau routier est surtout constitué de pistes poussié-",
+    "automates stochastiques). La machine",
+    "Automatismes séquentiels" => 1120,
+    "aux actionneurs, ainsi que les variables",
+    "Autorails et engins automoteurs à moteur thermique",
+    "Autoroute" => 1147,
+    "Avenir des automotrices",
+    "Avions de transport" => 1201,
+    "bénéficient indirectement de ces avan-tages, favorables à leur aménagement.",
+    "Avantages procurés à la circulation par une autoroute de liaison",
+    "(Autrichiens). Capit. Vienne. Langue : allemand.",
+    "autrichienne ne présentait pas le dyna-misme de la population allemande.",
+    "AUTRICHIENNE" => "AUTRICHIENNE",
+    "aviculture" => 1192,
+    "bataille. Sébastien lui-même avait disparu :",
+    "bientôt, la perte de l’indépendance allaient",
+    "(BC, BA)",
+    "blanche de São Luís et l’hypocrisie des mauvais prêtres.",
+    "Bach trouve heureusement, en dehors de l’école, des activités sti-",
+    "Bachelard à dresser le grand catalogue thématique de l’imaginaire poétique",
+    "Bachelard demande de placer l’image",
+    "ballet" => array(1260, 1262, 1263),
+    "bien plutôt comme la ligne de démar-",
+    "Bachelard ou le Nouvel Idéalisme épistémolo-gique (Éd. sociales, 1975).",
+    "berval, Beauvaisis, 1602 -Paris 1675). Il",
+    "Biologie, alimentation, migration",
+    "Bali, qui constitue une résidence à part dans la province des pe-",
+    "ballet abstrait, ballet sans argument (Agon, de George Balanchine, 1957).",
+    "ballet académique, ballet composé de pas appartenant à l’école académique ou classique.",
+    "ballet à entrées, composé de parties n’ayant que peu de rapport entre elles.",
+    "ballet mascarade, ballet mêlé de panto-mime, de danse et d’acrobaties (Ballet des Échecs, 1607).",
+    "Ballet Rambert, la plus ancienne compagnie anglaise, fondée à Londres",
+    "Ballets russes" => 1264,
+    "Bordighera (Italie) : premier congrès international et première exposition inter-nationale des bandes dessinées.",
+    "blissements de crédit.",
+    "banque" => 1293,
+    "Barrages en béton. Ils sont de deux natures bien distinctes :",
+    "Barrès et le nationalisme français (A. Colin,",
+    "Barrès (Champion, 1975).",
+    "Baudelaire prend part aux journées de février et de juin dans les rangs des révolutionnaires.",
+    "blissement d’enseignement supérieur. Les",
+    "Biarritz" => 1369,
+    "(Beauvaisiens).",
+    "Beccaria ne revint plus sur le sujet. Il publia en 1769 Discours sur le com-",
+    "bientôt compliquée d’hydropisie, sur",
+    "Berlin, 1906 trad. fr. Notices biographiques sur",
+    "Bien-Aimée de Beethoven (Glomeau, 1946). /",
+    "1922) Beethoven Handbuch (Leipzig, 1926",
+    "Beethoven, Flammarion, 1947). / M. E. Belpaire,",
+    "Beethoven (L’Écran du Monde, Bruxelles, 1946).",
+    "Beethoven (R. Masse, 1955). / B. et J. Massin,",
+    "Beethoven (Fayard, 1970). / A. Boucourechliev,",
+    "Beethoven (Éd. du Seuil, coll. Microcosme",
+    "Beethoven (Buchet-Chastel, 1966). / J. Kerman, les Quatuors de Beethoven (Éd. du Seuil, 1974).",
+    "Béla III profite de l’affermissement de son pouvoir pour entreprendre des",
+    "BELGIQUE" => 1405,
+    "blique fédérale d’Allemagne ou des",
+    "Berlin-Ouest porte bien les stig-mates d’une capitale déchue. Son",
+    "Berlin-Est, premier centre culturel de la République démocratique allemande",
+    "BERLIN" => 1466,
+    "1115 Bernard abbé de Clairvaux.",
+    "1128 Bernard est secrétaire au concile de Troyes.",
+    "1139 Bernard, élu à l’archevêché de Reims, refuse.",
+    "Berry (Plon, 1904). / J. Porcher, les Belles Heures",
+    "Besançon était capitale d’une pro-vince du Bas-Empire. Cela lui valut de",
+    "Botanique" => 1501,
+    "Biologie et écologie" => 1501,
+    "bons sont la Betterave elle-même et le",
+    "biens" => 1516,
+    "binomiale et notée B (n, p) ou B (n, p).",
+    "Bismarck souffrant s’enferme dans le silence. Il s’éteint le 30 juillet 1898.",
+    "blindées",
+    "Blois est installé dans les bâtiments abba-",
+    "1690 Boileau, dont la santé est mauvaise depuis longtemps, cesse d’aller à Versailles.",
+    "Bouches-du-Rhône.",
+    "BOUDDHISME" => 1679,
+);

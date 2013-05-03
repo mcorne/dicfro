@@ -13,6 +13,49 @@
 
 require_once '../../Base/String.php';
 
+function check_entry($entry, $page)
+{
+    static $previous_entry, $singulars, $used_entries, $used_words;
+
+    $original = $entry;
+    $entry = mb_strtolower($entry, 'UTF-8');
+    list($word) = preg_split('~[ [-]~', $entry);
+
+    if (preg_match('~\p{L}s$~u', $word)) {
+        $singular = substr($word, 0, -1);
+
+        if (! isset($used_words[$singular]) and ! isset($used_words[$word])) {
+            $used_words[$word] = true; // this is to avoid repetitions for false positives
+            return "(check plural) $page $original";
+        }
+    }
+    $used_words[$word] = true;
+
+    if (preg_match('~[^\p{L}\d)\]]$~u', $entry)) {
+        return "(check ending) $page $original";
+    }
+
+    if (preg_match('~[/:.]~', $entry)) {
+        if (! preg_match('~[\p{L}() -]+\. \d\d~u', $entry)) {
+            // not a departement
+            return "(check charac) $page $original";
+        }
+    }
+
+    if (isset($used_entries[$entry]) and $used_entries[$entry] != $page) {
+        // note that array_unique() is done on page entries[]
+        return "(already used) $page $original";
+    }
+    $used_entries[$entry] = $page;
+
+    if (count(explode(' ', $entry)) > 7) {
+        return "(long entry)   $page $original";
+    }
+
+
+    return null;
+}
+
 function convert_entry_to_ascii($entry)
 {
     static $string;
@@ -36,6 +79,15 @@ function convert_entry_to_ascii($entry)
     return array($entry_ascii, $word_ascii);
 }
 
+function display_errors($errors)
+{
+    if ($errors) {
+        $string = new Base_String;
+        $errors = implode("\n", $errors);
+        echo  $string->utf8ToInternalString($errors) . "\n";
+    }
+}
+
 function extract_entry($words, $page, $volume = null)
 {
     static $excluded_entries, $excluded_words, $replaced_entries;
@@ -51,6 +103,8 @@ function extract_entry($words, $page, $volume = null)
         return;
     }
 
+    $words = array_map('trim', $words);
+    $words = array_filter($words);
     $entry = implode(' ', $words);
     $entry = str_replace('- ', '-', $entry);
 
@@ -111,7 +165,7 @@ function extract_entry($words, $page, $volume = null)
     return null;
 }
 
-function extract_entries($line, $page)
+function extract_entries($line, $page, $errors)
 {
     $paragraphs = explode('<br><br>', $line);
     $entries = array();
@@ -119,12 +173,19 @@ function extract_entries($line, $page)
     foreach ($paragraphs as $paragraph) {
         if (preg_match_all('~(?: <br>)?<span class="PAG_\d+_ST\d+">([\p{L}\'‘’,.()/\d: -]+)</span>~u', $paragraph, $matches)) {
             if ($entry = extract_entry($matches[1], $page)) {
+                if ($error = check_entry($entry, $page)) {
+                    $errors[] = $error;
+                }
+
                 $entries[] = $entry;
             }
         }
     }
 
-    return implode('; ', $entries);
+    $entries = array_unique($entries);
+    $entries = implode('; ', $entries);
+
+    return array($entries, $errors);
 }
 
 function extract_file($volume)
@@ -147,7 +208,8 @@ function extract_file($volume)
     }
 
     $lines = file($input_path, FILE_SKIP_EMPTY_LINES);
-    $entries = extract_page_entries($volume, $lines);
+    list($entries, $errors) = extract_page_entries($volume, $lines);
+    display_errors($errors);
 
     if (empty($entries)) {
         die("no entries found in $input\n");
@@ -167,6 +229,7 @@ function extract_page_entries($volume, $lines)
     $entries = "page\tentries\timage\tvolume\n";
     $expected_page  = null;
     $expected_image = null;
+    $errors = array();
 
     foreach ($lines as $line) {
         if (preg_match($pattern, $line, $match)) {
@@ -194,13 +257,22 @@ function extract_page_entries($volume, $lines)
                 }
             }
 
-            $entries .= sprintf("%u\t%s\t%u\t%u\n", $page, extract_entries($line, $page), $image, $volume);
+            list($extracted_entries, $errors) = extract_entries($line, $page, $errors);
+
+            $entries .= sprintf("%u\t%s\t%u\t%u\n", $page, $extracted_entries, $image, $volume);
             $expected_page++;
             $expected_image++;
         }
     }
 
-    return $entries;
+    while (isset($expected_page) and $expected_page < $last_page) {
+        // adds blank entry if page missing
+        $entries .= sprintf("%u\t\t%u\t%u\n", $expected_page, $expected_image, $volume);
+        $expected_page++;
+        $expected_image++;
+    }
+
+    return array($entries, $errors);
 }
 
 function fix_loaded_entries($entries)

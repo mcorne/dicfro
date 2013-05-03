@@ -2,7 +2,7 @@
 /**
  * Dicfro
  *
- * Volumes first and last words
+ * List of excluded words
  *
  * PHP 5
  *
@@ -12,7 +12,4 @@
  */
 
 return array(
-    1 => array('Aalto (Alvar)' , 'amidon'),
-    2 => array('Amiens'        , 'Austen (Jane)'),
-    3 => array('Australie'     , 'bouddhisme'),
 );
