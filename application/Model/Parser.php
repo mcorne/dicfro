@@ -77,7 +77,7 @@ abstract class Model_Parser
                 $error = implode('', $this->error);
             }
 
-            print "writing {$this->errorFile} ... ";
+            $this->printMessage("writing {$this->errorFile} ... ");
             @file_put_contents($this->errorFile, $error);
             print "done";
         }
@@ -184,11 +184,11 @@ abstract class Model_Parser
 
     public function import()
     {
-        print "creating database {$this->dataBase} ... \n" ;
+        $this->printMessage("creating database {$this->dataBase} ... \n");
 
         foreach($this->batchFiles as $basename) {
             $name = $this->addPathName($basename);
-            print "reading $name ... " ;
+            $this->printMessage("reading $name ... ");
 
             if (!($isBatchFile = file_exists($name))) {
                 $name = $this->batchFileTemp;
@@ -228,7 +228,7 @@ abstract class Model_Parser
     public function parse($lines, $lineNumber)
     {
         // parses the dictionary
-        print "parsing {$this->sourceFile} ";
+        $this->printMessage("parsing {$this->sourceFile} ");
 
         $data = array_fill_keys(array_keys($this->dataFiles), '');
 
@@ -266,10 +266,15 @@ abstract class Model_Parser
         return $data;
     }
 
+    public function printMessage($message)
+    {
+        echo str_replace($this->directory, '', $message);
+    }
+
     public function read($lineStart = null, $lineCount = null)
     {
         // reads the dictionary
-        print "reading {$this->sourceFile} ... ";
+        $this->printMessage("reading {$this->sourceFile} ... ");
 
         if (! $lines = @file($this->sourceFile)) {
             $this->error("cannot read or empty file {$this->sourceFile}", true);
@@ -287,7 +292,7 @@ abstract class Model_Parser
 
         if ($lineStart !== 1 or $lineCount !== 99999) {
             // slices the dictionary (used primarily for debugging purposes)
-            print "slicing {$this->sourceFile} ... ";
+            $this->printMessage("slicing {$this->sourceFile} ... ");
             $lines = array_slice($lines, $lineStart - 1, $lineCount);
             print count($lines) . " lines sliced\n";
         }
@@ -316,7 +321,7 @@ abstract class Model_Parser
         foreach($data as $name => $string) {
             $file = $this->addPathName($this->dataFiles[$name]);
 
-            print "writing data file $file ... " ;
+            $this->printMessage("writing data file $file ... ");
 
             if (! $bytesCount = @file_put_contents($file, $string)) {
                 $this->error("cannot write file $file", true);

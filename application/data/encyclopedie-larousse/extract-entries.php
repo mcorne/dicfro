@@ -58,10 +58,9 @@ function check_entry($entry, $page)
 
 function convert_entry_to_ascii($entry)
 {
-    static $string;
-
-    if (! isset($string)) {
-        $string = new Base_String;
+    if (preg_match('~^\(?\d+\)?~', $entry)) {
+        // the entry begins with a date, eg 1450 etc., ignores the entry
+        return null;
     }
 
     if (! $words = preg_split('~\P{L}~u', $entry, null, PREG_SPLIT_NO_EMPTY) or count($words) > 15) {
@@ -69,12 +68,12 @@ function convert_entry_to_ascii($entry)
         return null;
     }
 
-    $word_ascii = $string->utf8toASCII($words[0]);
+    $word_ascii = Base_String::_utf8toASCII($words[0]);
 
     // keeps the first 10 words only (to make it easier to exclude entries)
     $words = array_slice($words, 0, 10);
     $entry = implode(' ', $words);
-    $entry_ascii = $string->utf8toASCII($entry);
+    $entry_ascii = Base_String::_utf8toASCII($entry);
 
     return array($entry_ascii, $word_ascii);
 }
@@ -82,9 +81,8 @@ function convert_entry_to_ascii($entry)
 function display_errors($errors)
 {
     if ($errors) {
-        $string = new Base_String;
         $errors = implode("\n", $errors);
-        echo  $string->utf8ToInternalString($errors) . "\n";
+        echo  Base_String::_utf8ToInternalString($errors) . "\n";
     }
 }
 
@@ -140,13 +138,10 @@ function extract_entry($words, $page, $volume = null)
     }
 
     if (isset($replaced_entries[$entry])) {
-        // replaces the entry
-        $entry = $replaced_entries[$entry];
-        // removes the part not used for sorting
-        list($usable_entry_part) = explode('[', $entry);
-        list($first_entry_ascii, $first_word_ascii) = convert_entry_to_ascii($usable_entry_part);
-
-        return $entry;
+        if ($replaced = replace_entry($page, $entry, $replaced_entries[$entry])) {
+            list($entry, $first_entry_ascii, $first_word_ascii) = $replaced;
+            return $entry;
+        }
     }
 
     if (strlen($entry_ascii) > 2 and
@@ -292,7 +287,6 @@ function fix_loaded_entries($entries)
 
 function load_end_entries($volume)
 {
-    $string = new Base_String;
     $end_entries = require __DIR__ . '/volumes-end-entries.php';
 
     if (! isset($end_entries[$volume])) {
@@ -301,18 +295,17 @@ function load_end_entries($volume)
 
     list($first_entry, $last_entry) = $end_entries[$volume];
 
-    $first_entry_ascii = $string->utf8toASCII($first_entry);
-    $last_entry_ascii  = $string->utf8toASCII($last_entry);
+    $first_entry_ascii = Base_String::_utf8toASCII($first_entry);
+    $last_entry_ascii  = Base_String::_utf8toASCII($last_entry);
 
     list($word) = preg_split('~\P{L}~u', $first_entry, null, PREG_SPLIT_NO_EMPTY);
-    $first_word_ascii = $string->utf8toASCII($word);
+    $first_word_ascii = Base_String::_utf8toASCII($word);
 
     return array($first_entry_ascii, $last_entry_ascii, $first_word_ascii);
 }
 
 function load_end_pages($volume)
 {
-    $string = new Base_String;
     $end_pages = require __DIR__ . '/volumes-end-pages.php';
 
     if (! isset($end_pages[$volume])) {
@@ -377,6 +370,41 @@ function load_replaced_entries($volume)
     }
 
     return $replaced_entries;
+}
+
+function replace_entry($page, $entry, $replacement)
+{
+    if (is_array($replacement)) {
+        // this is an entry to replace in a specific page, eg "canadienne" => array("litérature canadienne", 123)
+        list($replacement, $target_page) = $replacement;
+
+    } else if (is_numeric($replacement)) {
+        // this is a default plural replacement in a specific page, eg "mouches" => 123
+        $target_page = $replacement;
+        $replacement = true;
+
+    } else {
+        // this is an entry to replace regardless of the page, eg "byzantine" => "litérature byzantine"
+        $target_page = true;
+    }
+
+    if ($replacement === true) {
+        // this is a default plural replacement, eg replaces "Abeilles sociales" with "Abeille[s] sociale[s]"
+        $replacement = preg_replace('~(.+?)(s)(?!\p{L})~i', '$1[$2]', $entry);
+    }
+
+    if ($target_page !== true and $target_page != $page) {
+        return null;
+    }
+
+    // replaces the entry
+    $entry = $replacement;
+
+    // removes the part not used for sorting
+    list($usable_entry_part) = explode('[', $entry);
+    list($first_entry_ascii, $first_word_ascii) = convert_entry_to_ascii($usable_entry_part);
+
+    return array($entry, $first_entry_ascii, $first_word_ascii);
 }
 
 @list(, $volume) = $argv;

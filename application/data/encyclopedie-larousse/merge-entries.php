@@ -32,4 +32,6 @@ foreach ($volumes as $volume) {
     }
 }
 
-file_put_contents(__DIR__ . '/index.csv', $merged);
+$file = "index.csv";
+file_put_contents(__DIR__ . "/$file", $merged);
+printf("entries of volumes %u-%u merged into %s\n", $volumes[0], end($volumes), $file);

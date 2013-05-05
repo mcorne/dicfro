@@ -28,6 +28,7 @@ return array(
     "autrichienne ne présentait pas le dyna-misme de la population allemande.",
     "AUTRICHIENNE" => "AUTRICHIENNE",
     "aviculture" => 1192,
+    "Aviron" => 1203,
     "bataille. Sébastien lui-même avait disparu :",
     "bientôt, la perte de l’indépendance allaient",
     "(BC, BA)",

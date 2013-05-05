@@ -29,4 +29,3 @@ for each volume, ex volume 3 :
 * updated 3/excluded-entries.php, 3/excluded-words.php and 3/replaced-entries.php as necessary
 
 - updated "name" in config.php
-- updated scripts/introduction/encyclopedie-larousse.phtml
