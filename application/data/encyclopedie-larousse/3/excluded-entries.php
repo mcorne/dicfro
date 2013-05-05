@@ -55,6 +55,7 @@ return array(
     "Barrès et le nationalisme français (A. Colin,",
     "Barrès (Champion, 1975).",
     "Baudelaire prend part aux journées de février et de juin dans les rangs des révolutionnaires.",
+    "Beauvais" => 1382,
     "blissement d’enseignement supérieur. Les",
     "Biarritz" => 1369,
     "(Beauvaisiens).",

@@ -21,6 +21,12 @@ function check_entry($entry, $page)
     $entry = mb_strtolower($entry, 'UTF-8');
     list($word) = preg_split('~[ [-]~', $entry);
 
+    if (isset($used_entries[$entry]) and $used_entries[$entry] != $page) {
+        // note that array_unique() is done on page entries[]
+        return "(already used) $page $original";
+    }
+    $used_entries[$entry] = $page;
+
     if (preg_match('~\p{L}s$~u', $word)) {
         $singular = substr($word, 0, -1);
 
@@ -42,16 +48,9 @@ function check_entry($entry, $page)
         }
     }
 
-    if (isset($used_entries[$entry]) and $used_entries[$entry] != $page) {
-        // note that array_unique() is done on page entries[]
-        return "(already used) $page $original";
-    }
-    $used_entries[$entry] = $page;
-
     if (count(explode(' ', $entry)) > 7) {
         return "(long entry)   $page $original";
     }
-
 
     return null;
 }

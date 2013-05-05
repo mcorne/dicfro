@@ -219,7 +219,7 @@ return array(
             'description-en' => 'The Larousse great encyclopedia, 1971-1976',
             'image'          => 'encyclopedie-larousse.jpg',
             'language'       => 'fr',
-            'name'           => 'Encyclopédie Larousse (A-Ces)',
+            'name'           => 'Encyclopédie Larousse (A-Com)',
             'parser'         => array(
                 'class'      => 'Model_Parser_Index',
                 'properties' => array(
