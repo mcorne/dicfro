@@ -89,11 +89,11 @@
 
   <?php if (isset($this->entries)):?>
     <select class="entries" id="entries"
-            onchange="goEntry('<?=$this->linksHelper->setGoPageLink();?>')">
+            onchange="goEntry('<?=$this->linksHelper->setGoPageLink(true);?>')">
 
       <?php foreach($this->entriesHelper->getEntries() as $option) :?>
         <option value="<?=$option['value'];?>"
-                <?php if($option['selected']):?>selected="selected"<?php endif;?> >
+                <?php if(! empty($option['selected'])):?>selected="selected"<?php endif;?> >
            <?=$option['text'];?>
         </option>
       <?php endforeach;?>

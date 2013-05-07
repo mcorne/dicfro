@@ -103,17 +103,17 @@ class Model_Query_Index extends Model_Query
     }
 
     /**
-     * Searches words before a word
+     * Searches words in same page as a word
      *
      * @param  int $volume
      * @param  int $page
      * @return array
      */
-    public function searchPreviousEntries($volume, $page)
+    public function searchCurrentEntries($volume, $page)
     {
-        $sql = "SELECT * FROM word WHERE page < :page AND original != '' ORDER BY page DESC LIMIT 10";
+        $sql = "SELECT * FROM word WHERE page = :page AND original != '' LIMIT 10";
 
-        return array_reverse($this->fetchAll($sql, array(':page' => $page)));
+        return $this->fetchAll($sql, array(':page' => $page));
     }
 
     /**
@@ -128,6 +128,20 @@ class Model_Query_Index extends Model_Query
         $sql = "SELECT * FROM word WHERE page > :page AND original != '' LIMIT 10";
 
         return $this->fetchAll($sql, array(':page' => $page));
+    }
+
+    /**
+     * Searches words before a word
+     *
+     * @param  int $volume
+     * @param  int $page
+     * @return array
+     */
+    public function searchPreviousEntries($volume, $page)
+    {
+        $sql = "SELECT * FROM word WHERE page < :page AND original != '' ORDER BY page DESC LIMIT 10";
+
+        return array_reverse($this->fetchAll($sql, array(':page' => $page)));
     }
 
     /**

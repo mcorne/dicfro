@@ -132,8 +132,9 @@ class Controller_Interface
     public function finish()
     {
         $this->view->dictionary = $this->dictionary;
+        $this->view->previousAction = $this->parseActions();
 
-        if ($this->parseActions() == 'introduction') {
+        if ($this->view->previousAction == 'introduction') {
             $this->view->action = 'introduction';
         } else {
             $this->view->action = 'search';
@@ -176,6 +177,7 @@ class Controller_Interface
         $this->setWord();
         $this->setPage();
         $this->setVolume();
+        $this->setEntryHash();
     }
 
     public function isIE()
@@ -415,6 +417,22 @@ class Controller_Interface
         // sets specific language cookie
         $cookie .=  '-' . $this->dictionary['language'];
         $this->setcookie($cookie, $word);
+    }
+
+    /**
+     * Validates and sets the entry hash
+     *
+     * @return void
+     */
+    public function setEntryHash()
+    {
+        foreach($this->front->actionParams as $idx => $param) {
+            if (is_numeric($param)) {
+                $this->view->entryHash = $param;
+                unset($this->front->actionParams[$idx]);
+                break;
+            }
+        }
     }
 
     /**

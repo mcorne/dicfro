@@ -80,19 +80,28 @@ class View_Helper_Link extends View_Helper_Base
      *
      * @return string
      */
-    public function setGoPageLink()
+    public function setGoPageLink($isEntries = false)
     {
         static $link = null;
 
-        if (! isset($link)) {
-            if (empty($this->view->dictionary['volume'])) {
-                $link = $this->setLink(array('page', $this->view->dictionary['url'], '%s', $this->view->word));
+        if (! isset($link[$isEntries])) {
+            if (empty($isEntries)) {
+                if (empty($this->view->dictionary['volume'])) {
+                    $link[$isEntries] = $this->setLink(array('page', $this->view->dictionary['url'], '%s', $this->view->word));
+                } else {
+                    $link[$isEntries] = $this->setLink(array('page', $this->view->dictionary['url'], '%s', '%s', $this->view->word));
+                }
+
             } else {
-                $link = $this->setLink(array('page', $this->view->dictionary['url'], '%s', '%s', $this->view->word));
+                if (empty($this->view->dictionary['volume'])) {
+                    $link[$isEntries] = $this->setLink(array('page', $this->view->dictionary['url'], '%s', '%s', $this->view->word));
+                } else {
+                    $link[$isEntries] = $this->setLink(array('page', $this->view->dictionary['url'], '%s', '%s', '%s', $this->view->word));
+                }
             }
         }
 
-        return $link;
+        return $link[$isEntries];
     }
 
     /**

@@ -42,7 +42,7 @@ function check_entry($entry, $page)
     }
 
     if (preg_match('~[/:.]~', $entry)) {
-        if (! preg_match('~[\p{L}() -]+\. \d\d~u', $entry)) {
+        if (! preg_match('~[\p{L}()* -]+\. \d\d~u', $entry)) {
             // not a departement
             return "(check charac) $page $original";
         }
@@ -165,7 +165,7 @@ function extract_entries($line, $page, $errors)
     $entries = array();
 
     foreach ($paragraphs as $paragraph) {
-        if (preg_match_all('~(?: <br>)?<span class="PAG_\d+_ST\d+">([\p{L}\'‘’,.()/\d: -]+)</span>~u', $paragraph, $matches)) {
+        if (preg_match_all('~(?: <br>)?<span class="PAG_\d+_ST\d+">([\p{L}\'‘’,.()/\d:* -]+)</span>~u', $paragraph, $matches)) {
             if ($entry = extract_entry($matches[1], $page)) {
                 if ($error = check_entry($entry, $page)) {
                     $errors[] = $error;
@@ -211,6 +211,14 @@ function extract_file($volume)
 
     file_put_contents($output_path, $entries);
     echo "file added $output\n";
+}
+
+function extract_files()
+{
+    $files = glob(__DIR__ . '/*', GLOB_ONLYDIR);
+    $volumes = array_map('basename', $files);
+    sort($volumes, SORT_NUMERIC);
+    array_map('extract_file', $volumes);
 }
 
 function extract_page_entries($volume, $lines)
@@ -408,4 +416,8 @@ function replace_entry($page, $entry, $replacement)
 
 @list(, $volume) = $argv;
 
-extract_file($volume);
+if (empty($volume)) {
+    extract_files();
+} else {
+    extract_file($volume);
+}

@@ -143,13 +143,14 @@ function goEntry(action)
 {
     var 
     entry = document.getElementById('entries'),
-    pageVolume = entry.value.split('/');
-    
+    pageVolume = entry.value.split('/'),    
     page = parseInt(pageVolume[0]);
     volume = parseInt(pageVolume[1]);
+    entryHash = pageVolume[2];
     
     action = action.replace('%s', page);
     action = action.replace('%s', volume);
+    action = action.replace('%s', entryHash);
     
     location.assign(action);
 }

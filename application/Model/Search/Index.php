@@ -72,7 +72,7 @@ class Model_Search_Index extends Model_Search
             $data['firstWord'] = $result['original'];
         } else {
             $data['entries'] = array(
-                'current'  => $result,
+                'current'  => $this->query->searchCurrentEntries($result['volume'], $result['page']),
                 'previous' => $this->query->searchPreviousEntries($result['volume'], $result['page']),
                 'next'     => $this->query->searchNextEntries($result['volume'], $result['page']),
             );

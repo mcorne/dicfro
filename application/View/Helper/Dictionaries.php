@@ -144,7 +144,8 @@ class View_Helper_Dictionaries extends View_Helper_Base
         $options = array();
 
         foreach($this->view->config['dictionaries'] as $id => $dictionary) {
-            list($year, $month, $day) = explode('-', $dictionary['created']);
+            $date = isset($dictionary['updated']) ? $dictionary['updated'] : $dictionary['created'];
+            list($year, $month, $day) = explode('-', $date);
             $time = time() - 30 * 24 * 3600;
 
             if (mktime(0, 0, 0, $month, $day, $year) >= $time) {

@@ -31,13 +31,13 @@ class Base_String {
     public $accentuated = array(
         // accentuated letters
         'search' => array(
-            'Á', 'À', 'Â', 'Ä', 'Ç', 'Ć', 'É', 'È', 'Ê', 'Ë', 'Í', 'Ì', 'Î', 'Ï', 'Ī', 'Ñ', 'Ó', 'Ò', 'Ô', 'Ö', 'Ú', 'Ù', 'Û', 'Ü', 'Ÿ',
+            'Á', 'À', 'Â', 'Ä', 'Ą', 'Ç', 'Ć', 'É', 'È', 'Ê', 'Ë', 'Í', 'Ì', 'Î', 'Ï', 'Ī', 'Ñ', 'Ó', 'Ò', 'Ô', 'Ö', 'Ú', 'Ù', 'Û', 'Ü', 'Ÿ',
             // Latin diacritic vowels (AEIOU): A with macron, A with breve, etc...
             'Ā', 'Ă', 'Ē', 'Ĕ', 'Ī', 'Ĭ', 'Ō', 'Ŏ', 'Ū', 'Ŭ', 'Ś', 'Ţ',
             ),
         // corresponding ASCII letters
         'replace' => array(
-            'A', 'A', 'A', 'A', 'C', 'C', 'E', 'E', 'E', 'E', 'I', 'I', 'I', 'I', 'I', 'N', 'O', 'O', 'O', 'O', 'U', 'U', 'U', 'U', 'Y',
+            'A', 'A', 'A', 'A', 'A', 'C', 'C', 'E', 'E', 'E', 'E', 'I', 'I', 'I', 'I', 'I', 'N', 'O', 'O', 'O', 'O', 'U', 'U', 'U', 'U', 'Y',
             'A', 'A', 'E', 'E', 'I', 'I', 'O', 'O', 'U', 'U', 'S', 'T',
             ),
         );
