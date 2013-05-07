@@ -57,6 +57,11 @@ function check_entry($entry, $page)
 
 function convert_entry_to_ascii($entry)
 {
+    if (preg_match('~^[()]~', $entry)) {
+        // the entry begins with a non character, ignores the entry
+        return null;
+    }
+
     if (preg_match('~^\(?\d+\)?~', $entry)) {
         // the entry begins with a date, eg 1450 etc., ignores the entry
         return null;
@@ -83,6 +88,28 @@ function display_errors($errors)
         $errors = implode("\n", $errors);
         echo  Base_String::_utf8ToInternalString($errors) . "\n";
     }
+}
+
+function exclude_item($page, $entry, $exclusion)
+{
+    if ($exclusion === true) {
+        // ignores the entry
+        return true;
+
+    } else if (is_array($exclusion)) {
+        if (in_array($page, $exclusion) or in_array($entry, $exclusion)) {
+            // the entry is in a list of pages or entries to ignore
+            return true;
+        }
+
+    } else {
+        if ($exclusion == $page or $exclusion == $entry) {
+            // the entry is in a page or a specific entry to ignore
+            return true;
+        }
+    }
+
+    return false;
 }
 
 function extract_entry($words, $page, $volume = null)
@@ -112,35 +139,18 @@ function extract_entry($words, $page, $volume = null)
 
     list($entry_ascii, $word_ascii) = $ascii;
 
-    if (isset($excluded_words[$word_ascii])) {
-        // this is an excluded word, ignores the entry
+    if (isset($excluded_words[$word_ascii]) and exclude_item($page, $entry, $excluded_words[$word_ascii])) {
         return null;
     }
 
-    if (isset($excluded_entries[$entry_ascii])) {
-        if ($excluded_entries[$entry_ascii] === true) {
-            // ignores the entry
-            return null;
-
-        } else if (is_array($excluded_entries[$entry_ascii])) {
-            if (in_array($page, $excluded_entries[$entry_ascii]) or in_array($entry, $excluded_entries[$entry_ascii])) {
-                // the entry is in a list of pages or entries to ignore
-                return null;
-            }
-
-        } else {
-            if ($excluded_entries[$entry_ascii] == $page or $excluded_entries[$entry_ascii] == $entry) {
-                // the entry is in a page or a specific entry to ignore
-                return null;
-            }
-        }
+    if (isset($excluded_entries[$entry_ascii]) and exclude_item($page, $entry, $excluded_entries[$entry_ascii])) {
+        return null;
     }
 
-    if (isset($replaced_entries[$entry])) {
-        if ($replaced = replace_entry($page, $entry, $replaced_entries[$entry])) {
-            list($entry, $first_entry_ascii, $first_word_ascii) = $replaced;
-            return $entry;
-        }
+    if (isset($replaced_entries[$entry]) and $replaced = replace_entry($page, $entry, $replaced_entries[$entry])) {
+        list($entry, $first_entry_ascii, $first_word_ascii) = $replaced;
+
+        return $entry;
     }
 
     if (strlen($entry_ascii) > 2 and
@@ -199,6 +209,9 @@ function extract_file($volume)
 
     if (! file_exists($directory)) {
         mkdir($directory);
+        file_put_contents("$directory/excluded-entries.php", "<?php return array();");
+        file_put_contents("$directory/excluded-words.php",   "<?php return array();");
+        file_put_contents("$directory/replaced-entries.php", "<?php return array();");
     }
 
     $lines = file($input_path, FILE_SKIP_EMPTY_LINES);
@@ -351,11 +364,17 @@ function load_excluded_words($volume)
         return array();
     }
 
-    $string = new Base_String;
     $excluded_words = require $file;
-    $excluded_words = array_map(array($string, 'utf8toASCII'), $excluded_words);
+    $excluded_words = fix_loaded_entries($excluded_words);
 
-    return array_flip($excluded_words);
+    $excluded_words_ascii = array();
+
+    foreach ($excluded_words as $excluded_word => $page) {
+        list(, $excluded_word) = convert_entry_to_ascii($excluded_word);
+        $excluded_words_ascii[$excluded_word] = $page;
+    }
+
+    return $excluded_words_ascii;
 }
 
 function load_replaced_entries($volume)
