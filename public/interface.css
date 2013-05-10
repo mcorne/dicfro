@@ -210,6 +210,10 @@ select.dict
 
 select.entries
 {
+    border-color: green;
+    border-style: solid;
+    border-width: 2px;
+    color-profile: green;
     vertical-align: middle;
     width: 11em;
 }

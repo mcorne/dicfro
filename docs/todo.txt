@@ -4,7 +4,6 @@ Things to do
 - add panoccitan.org, http://www.etymologie-occitane.fr, deaf-page.de, http://www.atilf.fr/dect/ ...
 - add lacurne supplement, curiosités etc..., grand larousse
 - scan/add tilander
-- add littre
 
 - fix accentuated character issue with IE
 - fix scrolling bar issue for tablets

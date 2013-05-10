@@ -219,11 +219,11 @@ return array(
             'description-en' => 'The Larousse great encyclopedia, 1971-1976',
             'image'          => 'encyclopedie-larousse.jpg',
             'language'       => 'fr',
-            'name'           => 'Encyclopédie Larousse (A-Epi)',
+            'name'           => 'Encyclopédie Larousse (A-Fra)',
             'parser'         => array(
                 'class'      => 'Model_Parser_Index',
                 'properties' => array(
-                    'singleWord' => true,
+                    'wordSeparator' => '~[ -]~',
                 )
             ),
             'search'         => array(
@@ -255,7 +255,7 @@ return array(
             ),
             'title'          => 'E. Larousse',
             'type'           => 'index',
-            'updated'        => '2013-05-07',
+            'updated'        => '2013-05-10',
             'volume'         => 'readonly',
         ),
 
@@ -421,11 +421,12 @@ return array(
             'created'        => '2010-08-01',
             'description'    => 'Dictionnaire de la langue française, Émile Littré, 1872-1877',
             'description-en' => 'Dictionary of the French language, Émile Littré, 1872-1877',
-            'introduction'   => 'http://littre.reverso.net/dictionnaire-francais',
+            'introduction'   => 'http://www.littre.org',
             'language'       => 'fr',
             'name'           => 'Littré',
-            'search'         => 'http://littre.reverso.net/dictionnaire-francais/definition/',
+            'search'         => 'http://www.littre.org/definition/',
             'type'           => 'external',
+            'updated'        => '2013-05-10',
         ),
 
         'petit-larousse' => array(

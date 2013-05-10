@@ -50,11 +50,11 @@ return array(
     "Derived verbs" =>
     "Verbes dérivés",
 
-    "DicFro will pass the search word to the dictionary that performs the search and displays the word." =>
-    "DicFro va passer le mot à rechercher au dictionnaire qui effectue la recherche et affiche le mot.",
+    "DicFro passes the word to the dictionary. The dictionary performs the search and displays the word." =>
+    "DicFro passe le mot au dictionnaire. Le dictionnaire effectue la recherche et affiche le mot.",
 
-    "DicFro will search a word in the index, and displays the corresponding page of the dictionary." =>
-    "DicFro va chercher un mot dans l'index, et affiche la page correspondante du dictionnaire..",
+    "DicFro looks for the word in the index, and displays the corresponding page of the dictionary." =>
+    "DicFro recherche le mot dans l'index, et affiche la page correspondante du dictionnaire.",
 
     "Dictionary list" =>
     "Liste des dictionnaires",
