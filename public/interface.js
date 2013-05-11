@@ -88,7 +88,7 @@ function formatLexromPage(page)
 
 function getcookie(name)
 {
-    return getrawcookie(name, true);
+    return decodeURIComponent(getrawcookie(name, true));
 }
 
 function getrawcookie(name, toUnescape) {
@@ -289,7 +289,7 @@ function searchLastWord(action)
 	dictionaryLanguage = document.getElementById('dictionary-language').value,
 	lastWord = getcookie('last-word-' + dictionaryLanguage),
 	word = document.getElementById('word').value;
-	
+    
     (word != lastWord) && searchWord(action, lastWord);
 }
 

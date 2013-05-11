@@ -62,6 +62,9 @@ return array(
     "DicFro offers three types of dictionary" =>
     "DicFro propose trois types de dictionnaire",
 
+    "Direct link" =>
+    "Lien direct",
+
     "Display" =>
     "Afficher",
 

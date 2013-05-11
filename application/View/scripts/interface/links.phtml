@@ -23,4 +23,7 @@
   <a class="link" href="javascript:printPage()"><?=$this->translate('Print');?></a>
   <a class="link" href="<?=$this->linksHelper->setAboutLink();?>"><?=$this->translate('About');?></a>
   <a class="link" href="mailto:mcorne@yahoo.com?subject=Dicfro"><?=$this->translate('Contact');?></a>
-</span>
+  <?php if ($this->dictionary['type'] == 'external') :?>
+      <a class="link" href="<?=$this->dictionary['introduction'];?>"><?=$this->translate('Direct link');?></a>
+  <?php endif;?>
+  </span>
