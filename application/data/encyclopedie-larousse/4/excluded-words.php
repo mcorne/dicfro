@@ -24,4 +24,5 @@ return array(
     "celle",
     "Celles",
     "catalysent",
+    "C",
 );

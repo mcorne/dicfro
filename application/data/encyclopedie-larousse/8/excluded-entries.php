@@ -36,4 +36,5 @@
     "football germanique.",
     "Forces s’exerçant entre des corps por-teurs de charges électriques.",
     "formation professionnelle" => 4525,
+    "fr. les Fours industriels, Dunod, 1957 2 vol.). /",
 );

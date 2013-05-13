@@ -12,4 +12,5 @@
  */
 
 return array(
+    "BOUDDHISME" => 1679,
 );

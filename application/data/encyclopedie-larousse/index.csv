@@ -1094,7 +1094,7 @@ page	entries	image	volume
 1095		558	2
 1096	Aurélien	559	2
 1097	Aurillac; Auroch; aurore polaire; auscultation; Auscultation du coeur	560	2
-1098		561	2
+1098	Austen (Jane)	561	2
 1099	Australie	2	3
 1100		3	3
 1101		4	3
@@ -2244,7 +2244,7 @@ page	entries	image	volume
 2246		567	4
 2247		568	4
 2248	César (César Baldaccini, dit); césarienne	569	4
-2249	césium ou caesium; Cestode[s]	570	4
+2249	césium ou caesium; Cestode[s]; Cestodes atteint une longueur de 10 m	570	4
 2250		571	4
 2251		572	4
 2253	Cétacé[s]	2	5
@@ -2819,8 +2819,8 @@ page	entries	image	volume
 2822		571	5
 2823		572	5
 2824	composant électronique; Composée[s] ou Composacée[s]	573	5
-2825	composition	574	5
-2826		575	5
+2825	composition; Composition typographique; Composition manuelle; Composition mécanique	574	5
+2826	Composition froide; Composition sans plomb; Composition machine à écrire; Composition photographique	575	5
 2827		576	5
 2828		577	5
 2829	compresseur; comptabilité	2	6
@@ -4563,3 +4563,574 @@ page	entries	image	volume
 4567		564	8
 4568		565	8
 4569		566	8
+4571	France	2	9
+4572		3	9
+4573		4	9
+4574		5	9
+4575		6	9
+4576		7	9
+4577		8	9
+4578		9	9
+4579		10	9
+4580		11	9
+4581		12	9
+4582		13	9
+4583		14	9
+4584		15	9
+4585		16	9
+4586		17	9
+4587		18	9
+4588		19	9
+4589		20	9
+4590		21	9
+4591		22	9
+4592		23	9
+4593		24	9
+4594		25	9
+4595		26	9
+4596		27	9
+4597		28	9
+4598		29	9
+4599		30	9
+4600		31	9
+4601		32	9
+4602		33	9
+4603		34	9
+4604		35	9
+4605		36	9
+4606		37	9
+4607		38	9
+4608		39	9
+4609		40	9
+4610		41	9
+4611		42	9
+4612		43	9
+4613		44	9
+4614		45	9
+4615		46	9
+4616		47	9
+4617		48	9
+4618		49	9
+4619		50	9
+4620		51	9
+4621		52	9
+4622		53	9
+4623		54	9
+4624		55	9
+4625		56	9
+4626		57	9
+4627		58	9
+4628		59	9
+4629		60	9
+4630		61	9
+4631		62	9
+4632		63	9
+4633		64	9
+4634		65	9
+4635		66	9
+4636		67	9
+4637		68	9
+4638		69	9
+4639	France (campagne de 1940)	70	9
+4640		71	9
+4641	France (Anatole)	72	9
+4642	Francfort-sur-le-Main	73	9
+4643		74	9
+4644	Franche-Comté	75	9
+4645		76	9
+4646	Franchet d’Esperey (Louis Félix)	77	9
+4647	Franciscain[s]; francium; Franck (César)	78	9
+4648		79	9
+4649		80	9
+4650		81	9
+4651		82	9
+4652	Franco Bahamonde (Francisco)	83	9
+4653	franco-allemande (guerre)	84	9
+4654		85	9
+4655		86	9
+4656	François d’Assise (saint); François de Sales (saint)	87	9
+4657	François Xavier (saint); François Ier	88	9
+4658		89	9
+4659	François-Joseph Ier	90	9
+4660		91	9
+4661	francophone[s] (littérature[s])	92	9
+4662		93	9
+4663		94	9
+4664	Franklin (Benjamin); Franklin (sir John)	95	9
+4665	fraude; Fréchette (Louis); Frédéric Ier Barberousse	96	9
+4666		97	9
+4667	Frédéric II de Hohenstaufen	98	9
+4668	Frédéric Ier, (roi de Prusse); Frédéric II le Grand	99	9
+4669		100	9
+4670	Frédéric-Guillaume; free jazz	101	9
+4671	frein; Frein à tambour	102	9
+4672	Frein à disque	103	9
+4673		104	9
+4674		105	9
+4675	Freinet (Célestin)	106	9
+4676	frère[s]; Frères mineurs	107	9
+4677		108	9
+4678	Frescobaldi (Girolamo)	109	9
+4679	Fresnel (Augustin)	110	9
+4680	fret maritime	111	9
+4681	Freud (Sigmund)	112	9
+4682	freudo-marxisme; Friedman (Milton)	113	9
+4683	Friesz (Othon); frigidité; frigorifique (machine)	114	9
+4684		115	9
+4685	Frioul-Vénétie Julienne	116	9
+4686	Frisch (Max)	117	9
+4687	Frise	118	9
+4688	frittage	119	9
+4689	Froberger (Johann Jakob)	120	9
+4690		121	9
+4691		122	9
+4692	Froid et médecine; Froissart (Jean); fromage; Fronde (la)	123	9
+4693		124	9
+4694	Front populaire	125	9
+4695	Frontenac (Louis de Buade, comte de Palluau et de)	126	9
+4696	frontière	127	9
+4697	Frost (Robert); fruit	128	9
+4698	Fruits charnus; Fruits secs; Fruits dérivés et faux fruits	129	9
+4699	fruits (jus de)	130	9
+4700	fuel-oil; fugacité; Fugger (les)	131	9
+4701	fugue	132	9
+4702	funiculaire	133	9
+4703	funk art	134	9
+4704	furanne; furoncle; fusée	135	9
+4705		136	9
+4706	fuselage	137	9
+4707	fusil	138	9
+4708	fusion	139	9
+4709		140	9
+4710	fusion nucléaire; futurisme	141	9
+4711		142	9
+4712		143	9
+4713	futuriste; gabarit	144	9
+4714	Gabo (Naoum); Gabon	145	9
+4715		146	9
+4716	Gabriel (Jacques-Ange)	147	9
+4717		148	9
+4718	Gabrieli; Gadda (Carlo Emilio)	149	9
+4719		150	9
+4720	gadolinium; gaine; Gainsborough (Thomas)	151	9
+4721	Galaxie	152	9
+4722		153	9
+4723		154	9
+4724	galaxie; Galaxies particulières	155	9
+4725		156	9
+4726		157	9
+4727	Galba (Servius Sulpicius); gale	158	9
+4728	galerie de mine	159	9
+4729	Galice; Galien (Claude)	160	9
+4730	Galilée (Galileo Galilei, dit)	161	9
+4731	Gallas; galle ou cécidie	162	9
+4732	Gallegos (Rómulo)	163	9
+4733	Galles (pays de)	164	9
+4734		165	9
+4735	gallicanisme	166	9
+4736	Gallieni (Joseph)	167	9
+4737	Gallinacé[s]	168	9
+4738	gallium; Galois (Évariste)	169	9
+4739	Gama (Vasco de)	170	9
+4740	Gambetta (Léon)	171	9
+4741	Gambie; Gamelin (Maurice)	172	9
+4742	gamète; Gamètes semblables; Gamètes dissemblables	173	9
+4743		174	9
+4744		175	9
+4745	gammagraphie; gammathérapie; gamme	176	9
+4746	Gance (Abel); Gand	177	9
+4747		178	9
+4748	Gand, ville d’art	179	9
+4749	Gāndhāra; Gāndhī (Morhandas Karamchand)	180	9
+4750		181	9
+4751	Gāndhī et le svarāj gouvernement par soi-même	182	9
+4752	Gāndhī (Indira)	183	9
+4753	Gange (le); ganglion; Ganglions lymphatiques	184	9
+4754	Ganglions nerveux	185	9
+4755	gangrène	186	9
+4756	Gap; garantie	187	9
+4757		188	9
+4758	Garborg (Arne); García Lorca (Federico)	189	9
+4759		190	9
+4760		191	9
+4761	Gard. 30; garde; Garde des souverains	192	9
+4762	Gardes nationales	193	9
+4763	gare; Gares de voyageurs	194	9
+4764	Gares de marchandises; Garibaldi (Giuseppe)	195	9
+4765	Garneau (François-Xavier) et Garneau (Saint-Denys); Garnier (Charles)	196	9
+4766		197	9
+4767	Garonne (la); Garonne (Haute-). 31	198	9
+4768	Gascogne	199	9
+4769	gastro-entérologie	200	9
+4770	Gastropode[s] ou Gastéropode[s]	201	9
+4771		202	9
+4772		203	9
+4773	gauchisme; Gaudí (Antoni ou Antonio)	204	9
+4774	Gauguin (Paul)	205	9
+4775	Gaule	206	9
+4776		207	9
+4777		208	9
+4778		209	9
+4779		210	9
+4780		211	9
+4781		212	9
+4782	Gaulle (Charles de)	213	9
+4783		214	9
+4784		215	9
+4785		216	9
+4786	Gauss (Carl Friedrich)	217	9
+4787	Gautier (Théophile); Gay-Lussac (Louis Joseph)	218	9
+4788	Gay-Lussac aéronaute; gaz	219	9
+4789		220	9
+4790	Gaz parfaits	221	9
+4791		222	9
+4792	gaz	223	9
+4793	Gaz de houille; Gaz naturel	224	9
+4794	Gaz manufacturé substituable au gaz naturel	225	9
+4795		226	9
+4796		227	9
+4797		228	9
+4798	gaz combustibles	229	9
+4799	gaz (guerre des) ou guerre chimique	230	9
+4800	gaz inertes	231	9
+4801	Gdańsk	232	9
+4802		233	9
+4803	gencive	234	9
+4804	gendarmerie	235	9
+4805		236	9
+4806	générateur électrique	237	9
+4807		238	9
+4808	Générateurs thermo-électriques; Générateurs opto-électriques; Générateurs magnétohydrodynamiques (M. H. D.)	239	9
+4809		240	9
+4810	générative (grammaire)	241	9
+4811		242	9
+4812	Gênes; Gênes et la mer, du Xe au XIIe siècle	243	9
+4813	Gênes et la Casa di San Giorgio	244	9
+4814	Gênes, ville d’art	245	9
+4815	Genet (Jean)	246	9
+4816	génétique	247	9
+4817		248	9
+4818		249	9
+4819		250	9
+4820		251	9
+4821		252	9
+4822		253	9
+4823		254	9
+4824	Genève	255	9
+4825		256	9
+4826		257	9
+4827	Gengis khān	258	9
+4828	génie militaire	259	9
+4829	génie	260	9
+4830	génital	261	9
+4831		262	9
+4832		263	9
+4833	génocide	264	9
+4834	genou	265	9
+4835	genre (peinture de)	266	9
+4836		267	9
+4837	Gentianale[s]; Gény (François)	268	9
+4838	géochimie	269	9
+4839	géodésie; Géodésie classique; Géodésie tridimensionnelle; Géodésie spatiale	270	9
+4840	Géodésie spatiale géométrique; Géodésie spatiale dynamique	271	9
+4841	géographie	272	9
+4842		273	9
+4843		274	9
+4844	Géographie naturelle et analyse des milieux	275	9
+4845		276	9
+4846	géoïde	277	9
+4847	géologie	278	9
+4848		279	9
+4849		280	9
+4850		281	9
+4851	géomagnétisme	282	9
+4852		283	9
+4853		284	9
+4854	géomètre	285	9
+4855	géométrie	286	9
+4856		287	9
+4857	Géométries non archimédiennes	288	9
+4858		289	9
+4859	géomorphologie	290	9
+4860	géophysique	291	9
+4861	George Ier, II, III, rois de Grande-Bretagne et d’Irlande; George V et VI, rois de Grande-Bretagne; George (Stefan)	292	9
+4862	Georges de Poděbrady; Géorgie	293	9
+4863	géorgienne	294	9
+4864	géosynclinal	295	9
+4865		296	9
+4866	géothermie; géotropisme	297	9
+4867	Géraniale[s]; gériatrie; Géricault (Théodore)	298	9
+4868	Germain (les); Germains	299	9
+4869	Germanie	300	9
+4870	germanium	301	9
+4871	germination	302	9
+4872		303	9
+4873	gérontologie	304	9
+4874	Gers. 32	305	9
+4875	Gestalttheorie; gestion financière	306	9
+4876		307	9
+4877	Gesualdo (Carlo), prince de Venosa	308	9
+4878	Gezelle (Guido); Ghāna (empire du)	309	9
+4879	Ghāna (république du)	310	9
+4880		311	9
+4881		312	9
+4882	Ghiberti (Lorenzo); Ghirlandaio (Domenico); Giacometti (Alberto)	313	9
+4883	Giambologna	314	9
+4884	Gibraltar	315	9
+4885	Gide (André)	316	9
+4886		317	9
+4887	Gilgamesh; Giolitti (Giovanni)	318	9
+4888	Giono (Jean); Giorgione (Giorgio da Castelfranco, dit)	319	9
+4889		320	9
+4890		321	9
+4891	Giotto	322	9
+4892	Giovanni Pisano; Giraud (Henri); Giraudoux (Jean)	323	9
+4893	Giraudoux et nous; giraviation	324	9
+4894		325	9
+4895		326	9
+4896	Gironde. 33; Girondin[s]	327	9
+4897		328	9
+4898	gisement; Gisement minier	329	9
+4899	Gisement pétrolifère	330	9
+4900		331	9
+4901	glacerie; glaciaire (relief )	332	9
+4902		333	9
+4903	glacier	334	9
+4904		335	9
+4905	Gladstone (William Ewart)	336	9
+4906	glande	337	9
+4907		338	9
+4908	Glasgow	339	9
+4909		340	9
+4910	glaucome; Glaucome chronique; Glaucome aigu; Glaucome congénital (buphtalmie ou hydrophtalmie)	341	9
+4911	Glaucome secondaire; glucide[s]	342	9
+4912		343	9
+4913	GLUCIDES VÉGÉTAUX; GLUCIDES ET BACTÉRIES; GLUCIDES ANIMAUX	344	9
+4914	Gluck (Christoph Willibald, chevalier von)	345	9
+4915		346	9
+4916	glycérol ou glycérine; glycol[s]; Glycols-α	347	9
+4917	Glycols-β; Glycols-γ; Glycols plus éloignés; glyptique	348	9
+4918	Gnétophyte[s]; gnostique[s]	349	9
+4919	Gobelins (les)	350	9
+4920		351	9
+4921	Gobineau (Arthur de)	352	9
+4922	Godard (Jean-Luc); Gödel (Kurt); Goebbels (Joseph); Goethe (Johann Wolfgang von)	353	9
+4923		354	9
+4924		355	9
+4925		356	9
+4926		357	9
+4927	Gogol (Nikolaï Vassilievitch)	358	9
+4928		359	9
+4929		360	9
+4930	Goldoni (Carlo)	361	9
+4931	Goldsmith (Oliver); golf	362	9
+4932	gomarisme	363	9
+4933	Gombrowicz (Witold)	364	9
+4934	gomme; Gomułka (Władysław)	365	9
+4935	Gonçalves (Nuno)	366	9
+4936	Gonçalves Dias (Antônio); Goncourt (les)	367	9
+4937		368	9
+4938	Góngora (Luis de Argote y de)	369	9
+4939	Gonocoque; Gonocoque et gonococcies; Gontcharov (Ivan Aleksandrovitch)	370	9
+4940	González (Julio); Goodman (Benny)	371	9
+4941	Gordon (Yehudah Leib, dit Yalag)	372	9
+4942	Göring (Hermann); Gorki; Gorki (Maxime)	373	9
+4943		374	9
+4944	Gorky (Arshile)	375	9
+4945	Gossart ou Gossaert (Jan), dit Mabuse; Gossec (François Joseph)	376	9
+4946	Göteborg; gothique (art)	377	9
+4947		378	9
+4948		379	9
+4949		380	9
+4950		381	9
+4951		382	9
+4952	Gottwald (Klement)	383	9
+4953	Goujon (Jean)	384	9
+4954	Gounod (Charles); Gouraud (Henri Eugène)	385	9
+4955	Gouros; goût; Gouthière (Pierre)	386	9
+4956	goutte; Goutte aiguë; Goutte chronique	387	9
+4957	gouvernail	388	9
+4958	gouvernementale (fonction)	389	9
+4959		390	9
+4960		391	9
+4961	Goya (Francisco)	392	9
+4962		393	9
+4963		394	9
+4964	Gozzi (les)	395	9
+4965	Gozzoli (Benozzo); Graal (légende du) et cycle arthurien	396	9
+4966		397	9
+4967	grâce	398	9
+4968	Gracián (Baltasar)	399	9
+4969	Gracques (les)	400	9
+4970	graine	401	9
+4971	Graines sans albumen; Graines à albumen; Graines à périsperme; Graines sans réserves	402	9
+4972		403	9
+4973	Graminacée[s] ou Graminée[s]	404	9
+4974		405	9
+4975	grammaire; Gramsci (Antonio)	406	9
+4976		407	9
+4977	Granados (Enrique); Grande-Bretagne	408	9
+4978		409	9
+4979		410	9
+4980		411	9
+4981		412	9
+4982		413	9
+4983		414	9
+4984		415	9
+4985		416	9
+4986		417	9
+4987		418	9
+4988		419	9
+4989		420	9
+4990		421	9
+4991		422	9
+4992		423	9
+4993		424	9
+4994		425	9
+4995		426	9
+4996		427	9
+4997		428	9
+4998		429	9
+4999		430	9
+5000		431	9
+5001		432	9
+5002		433	9
+5003		434	9
+5004		435	9
+5005		436	9
+5006		437	9
+5007		438	9
+5008		439	9
+5009		440	9
+5010		441	9
+5011		442	9
+5012		443	9
+5013		444	9
+5014		445	9
+5015		446	9
+5016		447	9
+5017		448	9
+5018		449	9
+5019		450	9
+5020		451	9
+5021		452	9
+5022	Grande-Grèce; granite	453	9
+5023		454	9
+5024	granulat	455	9
+5025		456	9
+5026	graphe[s] (théorie de[s]); Graphe orienté	457	9
+5027		458	9
+5028		459	9
+5029	graphique statistique	460	9
+5030	graphite; graphologie	461	9
+5031		462	9
+5032	Graptolite[s]; Grass (Günter)	463	9
+5033	gratte-ciel	464	9
+5034	gravimétrie	465	9
+5035	gravitation	466	9
+5036	gravité; gravure; Graz	467	9
+5037	Grèce	468	9
+5038		469	9
+5039		470	9
+5040		471	9
+5041		472	9
+5042		473	9
+5043		474	9
+5044		475	9
+5045		476	9
+5046		477	9
+5047		478	9
+5048		479	9
+5049		480	9
+5050	GRÈCE ANTIQUE	481	9
+5051		482	9
+5052		483	9
+5053		484	9
+5054		485	9
+5055		486	9
+5056		487	9
+5057		488	9
+5058		489	9
+5059		490	9
+5060		491	9
+5061		492	9
+5062		493	9
+5063		494	9
+5064		495	9
+5065		496	9
+5066		497	9
+5067		498	9
+5068		499	9
+5069		500	9
+5070	Grèce d’Asie	501	9
+5071		502	9
+5072	Grèce d’Occident	503	9
+5073		504	9
+5074		505	9
+5075	Greco (Dhomínikos Theotokópoulos, dit le)	506	9
+5076		507	9
+5077	greffe; Greffes des différents tissus	508	9
+5078		509	9
+5079	Grégoire de Nysse (saint); Grégoire Ier le Grand (saint)	510	9
+5080		511	9
+5081	Grenade; Grenade sous les Zīrides; Grenade sous les Almoravides; Grenade sous les Almohades; Grenade sous les Naṣrides; Grenade ville d’art	512	9
+5082		513	9
+5083		514	9
+5084		515	9
+5085	grève; Grieg (Edvard); Griffith (David Wark)	516	9
+5086		517	9
+5087	Grillparzer (Franz); Grimm (les frères); Grimmelshausen (Hans Jacob Christoph von)	518	9
+5088		519	9
+5089	grippe; Gris (Juan); Grisons	520	9
+5090		521	9
+5091	Gromaire (Marcel)	522	9
+5092		523	9
+5093	Gros (Antoine); grossesse	524	9
+5094		525	9
+5095		526	9
+5096		527	9
+5097		528	9
+5098		529	9
+5099	Grotius; groupe	530	9
+5100		531	9
+5101		532	9
+5102		533	9
+5103		534	9
+5104		535	9
+5105	Groupe quotient; Groupe monogène; groupe cyclique; Groupe des substitutions	536	9
+5106		537	9
+5107	Groupe de pression, lobby et groupe	538	9
+5108		539	9
+5109	Groupe de recherche d’art visuel (G. R. A. V.)	540	9
+5110		541	9
+5111	Guadalajara	542	9
+5112		543	9
+5113		544	9
+5114		545	9
+5115	Guatemala	546	9
+5116		547	9
+5117	Guayaquil; Guderian (Heinz)	548	9
+5118		549	9
+5119	Guépard; Guêpe; Guêpes sociales (Vespidés)	550	9
+5120		551	9
+5121	Guerre mondiale (Première) ou Grande Guerre de 1914-1918	552	9
+5122		553	9
+5123		554	9
+5124		555	9
+5125	Guerre au Moyen-Orient et problème arabe	556	9
+5126		557	9
+5127		558	9
+5128		559	9
+5129	Guerre mondiale (Seconde) ou Guerre de 1939-1945	560	9
+5130		561	9
+5131		562	9
+5132		563	9
+5133		564	9
+5134		565	9
+5135		566	9
+5136		567	9
+5137		568	9
+5138		569	9
+5139		570	9
+5140		571	9
+5141	Guesclin (Bertrand du)	572	9

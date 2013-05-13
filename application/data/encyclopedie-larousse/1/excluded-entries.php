@@ -78,4 +78,5 @@ return array(
     "alternateurs" => 481,
     "Amanitopsis vaginata Ama- nite engainée Grisette). Chapeau mince, nettement strié sur les bords",
     "Amérique latine / Antilles / au nom des divers pays.",
+    "amidon n acide phosphorique n",
 );

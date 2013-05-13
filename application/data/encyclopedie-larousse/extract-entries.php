@@ -115,13 +115,13 @@ function exclude_item($page, $entry, $exclusion)
 function extract_entry($words, $page, $volume = null)
 {
     static $excluded_entries, $excluded_words, $replaced_entries;
-    static $first_entry_ascii, $first_word_ascii, $init, $last_entry_ascii;
+    static $first_entry_ascii, $first_word_ascii, $init, $last_entry_ascii, $last_word_ascii;
 
     if ($words === 'init') {
         // initialization
         $excluded_entries = load_excluded_entries($volume);
         $excluded_words = load_excluded_words($volume);
-        list($first_entry_ascii, $last_entry_ascii, $first_word_ascii) = load_end_entries($volume);
+        list($first_entry_ascii, $last_entry_ascii, $first_word_ascii, $last_word_ascii) = load_end_entries($volume);
         $replaced_entries = load_replaced_entries($volume);
 
         return;
@@ -155,7 +155,7 @@ function extract_entry($words, $page, $volume = null)
 
     if (strlen($entry_ascii) > 2 and
         ($entry_ascii == $first_entry_ascii or $word_ascii >= $first_word_ascii) and
-        $entry_ascii <= $last_entry_ascii)
+         $word_ascii <= $last_word_ascii)
     {
         // the entry is longer than 2 chararcters and
         // same as the previous entry or after the previous entry and
@@ -250,6 +250,9 @@ function extract_page_entries($volume, $lines)
         if (preg_match($pattern, $line, $match)) {
             list(, $image, $page) = $match;
             $image = (int) $image;
+            if ($page == 5141) {
+                $debug = 1; // TODO: remove
+            }
 
             if ($page < $first_page) {
                 continue;
@@ -321,7 +324,10 @@ function load_end_entries($volume)
     list($word) = preg_split('~\P{L}~u', $first_entry, null, PREG_SPLIT_NO_EMPTY);
     $first_word_ascii = Base_String::_utf8toASCII($word);
 
-    return array($first_entry_ascii, $last_entry_ascii, $first_word_ascii);
+    list($word) = preg_split('~\P{L}~u', $last_entry_ascii, null, PREG_SPLIT_NO_EMPTY);
+    $last_word_ascii = Base_String::_utf8toASCII($word);
+
+    return array($first_entry_ascii, $last_entry_ascii, $first_word_ascii, $last_word_ascii);
 }
 
 function load_end_pages($volume)

@@ -61,15 +61,15 @@ class View_Helper_Link extends View_Helper_Base
     public function init()
     {
         $this->arguments = array(
-            'setAboutLink'        => 'about',
+            'setAboutLink'        => array('about', $this->view->dictionary['url']),
             'setArchivesLink'     => 'archives',
             'setDictionaryLink'   => array($this->view->action, '%s', $this->view->word),
             'setDictionariesLink' => 'dictionaries',
             'setDictlistLink'     => 'dictlist',
-            'setHomeLink'         => 'home',
+            'setHomeLink'         => array('home', $this->view->dictionary['url']),
             'setIntroductionLink' => array('introduction', $this->view->dictionary['url']),
             'setNextPageLink'     => array('next', $this->view->dictionary['url'], $this->view->page, $this->view->volume, $this->view->word),
-            'setOptionsLink'      => 'options',
+            'setOptionsLink'      => array('options', $this->view->dictionary['url']),
             'setPreviousPageLink' => array('previous', $this->view->dictionary['url'], $this->view->page, $this->view->volume, $this->view->word),
             'setWordLink'         => array('search', $this->view->dictionary['url'], '%s'),
         );
@@ -102,26 +102,6 @@ class View_Helper_Link extends View_Helper_Base
         }
 
         return $link[$isEntries];
-    }
-
-    /**
-     * Sets the home link
-     *
-     * @return string
-     */
-    public function setHomeLink()
-    {
-        static $link = null;
-
-        if (! isset($link)) {
-            if (empty($this->view->params['open-dict-in-new-tab'])) {
-                $link = $this->setLink('home');
-            } else {
-                $link = $this->setLink(array('home', $this->view->dictionary['url']));
-            }
-        }
-
-        return $link;
     }
 
     /**

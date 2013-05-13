@@ -42,4 +42,5 @@ return array(
     "dérés",
     "délivrent",
     "déjà",
+    "design" => 3413,
 );

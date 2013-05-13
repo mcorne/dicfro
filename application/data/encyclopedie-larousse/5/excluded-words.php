@@ -25,4 +25,5 @@ return array(
     "complétée",
     "comment",
     "complètement",
+    "CO2Na NaCl",
 );

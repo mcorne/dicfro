@@ -38,3 +38,8 @@ version v3
 - ran "find-changes vandaele"
 - found no change
 - renamed txt to index.txt
+
+version v3.1
+------------
+- 12/5/2013
+- fixed entry in index.txt
