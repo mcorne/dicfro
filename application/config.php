@@ -128,6 +128,23 @@ return array(
             'type'           => 'external',
         ),
 
+        'conjugueur' => array(
+            'created'        => '2013-05-19',
+            'description'    => 'Le conjugueur Bescherelle',
+            'description-en' => 'The Bescherelle conjugator',
+            'introduction'   => 'http://www.bescherelle.com/index-conjugueur.php',
+            'language'       => 'fr',
+            'name'           => 'Conjugueur Bescherelle',
+            'search'         => array(
+                'properties' => array(
+                    'convert' => 'utf8toASCII', // iso-8859-1 site
+                    'emptyWord' => 'http://www.bescherelle.com/index-conjugueur.php',
+                    'url'       => 'http://www.bescherelle.com/conjugueur.php?term=',
+                )
+            ),
+            'type'           => 'external',
+        ),
+
         'cotgrave' => array(
             'created'      => '2012-03-11',
             'description'  => 'A dictionarie of the French and English tongues, Randle Cotgrave, 1611',
@@ -219,7 +236,7 @@ return array(
             'description-en' => 'The Larousse great encyclopedia, 1971-1976',
             'image'          => 'encyclopedie-larousse.jpg',
             'language'       => 'fr',
-            'name'           => 'Encyclopédie Larousse (A-Ing)',
+            'name'           => 'Encyclopédie Larousse (A-Lao)',
             'parser'         => array(
                 'class'      => 'Model_Parser_Index',
                 'properties' => array(
@@ -383,22 +400,6 @@ return array(
             'type'           => 'internal',
             'url'            => 'dictionnaire-lacurne',
             'volume'         => 'input',
-        ),
-
-        'les-verbes' => array(
-            'created'        => '2013-04-21',
-            'description'    => 'Les verbes, les-verbes.com',
-            'description-en' => 'Verbs, les-verbes.com',
-            'introduction'   => 'http://www.les-verbes.com',
-            'language'       => 'fr',
-            'name'           => 'Les verbes',
-            'search'         => array(
-                'properties' => array(
-                    'emptyWord' => 'http://www.les-verbes.com',
-                    'url'       => 'http://www.les-verbes.com/conjuguer.php?verbe=',
-                )
-            ),
-            'type'           => 'external',
         ),
 
         'lexromv' => array(
@@ -768,9 +769,9 @@ return array(
         array(
             'dictionaries' => array(
                 'cnrtl',
+                'conjugueur',
                 'dvlf',
                 'encyclopedie-larousse',
-                'les-verbes',
                 'littre',
                 'dmf',
                 'petit-larousse',
