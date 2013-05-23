@@ -1,19 +1,4 @@
 <?php
-/**
- * Dicfro
- *
- * List of excluded entries
- *
- * PHP 5
- *
- * @author    Michel Corne <mcorne@yahoo.com>
- * @copyright 2008-2013 Michel Corne
- * @license   http://www.opensource.org/licenses/gpl-3.0.html GNU GPL v3
- */
-
-// note that only the first 10 words are used for processing
-// a single entry means <plural> => <singular>, eg "Abeilles sociales" equates to "Abeilles sociales" => "Abeille[s] sociale[s]"
-
 return array(
     "concerts (association de)",
     "Conciles de Trente* (1545-1563), Vatican I* (1869-1870), Vatican II* (1962-1965). Voir les articles." => "Conciles de Trente* (1545-1563), Vatican I* (1869-1870), Vatican II* (1962-1965)",

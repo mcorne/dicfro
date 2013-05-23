@@ -1,18 +1,4 @@
 <?php
-/**
- * Dicfro
- *
- * List of excluded entries
- *
- * PHP 5
- *
- * @author    Michel Corne <mcorne@yahoo.com>
- * @copyright 2008-2013 Michel Corne
- * @license   http://www.opensource.org/licenses/gpl-3.0.html GNU GPL v3
- */
-
-// note that only the first 10 words are used for processing
-
 return array(
     "comptes des ménages. Cette dichotonie a disparu dans le nouveau système de comptes nationaux.",
     "compte de production de l’ensemble de la branche :",

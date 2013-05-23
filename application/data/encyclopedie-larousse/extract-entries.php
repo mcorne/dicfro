@@ -210,7 +210,8 @@ function extract_file($volume)
     if (! file_exists($directory)) {
         mkdir($directory);
         file_put_contents("$directory/excluded-entries.php", "<?php return array();");
-        file_put_contents("$directory/excluded-words.php",   "<?php return array();");
+        file_put_contents("$directory/excluded-words.php"  , "<?php return array();");
+        file_put_contents("$directory/missing-entries.php" , "<?php return array();");
         file_put_contents("$directory/replaced-entries.php", "<?php return array();");
     }
 
@@ -237,6 +238,7 @@ function extract_files()
 function extract_page_entries($volume, $lines)
 {
     list($first_page, $last_page) = load_end_pages($volume);
+    $missing_entries = load_missing_entries($volume);
 
     $pattern = sprintf('~<br><br><span class="PAG_(\d+)_ST\d+">La</span> <span class="PAG_\d+_ST\d+">Grande</span> <span class="PAG_\d+_ST\d+">Encyclopédie</span> <span class="PAG_\d+_ST\d+">Larousse</span> <span class="PAG_\d+_ST\d+">-</span> <span class="PAG_\d+_ST\d+">Vol\.</span> <span class="PAG_\d+_ST\d+">%u</span> <br><br><span class="PAG_\d+_ST\d+">(\d+)</span>~', $volume);
     extract_entry('init', null, $volume);
@@ -250,9 +252,6 @@ function extract_page_entries($volume, $lines)
         if (preg_match($pattern, $line, $match)) {
             list(, $image, $page) = $match;
             $image = (int) $image;
-            if ($page == 5141) {
-                $debug = 1; // TODO: remove
-            }
 
             if ($page < $first_page) {
                 continue;
@@ -269,13 +268,23 @@ function extract_page_entries($volume, $lines)
             } else {
                 while (isset($expected_page) and $page > $expected_page) {
                     // adds blank entry if page missing
-                    $entries .= sprintf("%u\t\t%u\t%u\n", $expected_page, $expected_image, $volume);
+                    if (isset($missing_entries[$expected_page])) {
+                        $entries .= sprintf("%u\t\t%u\t%u\n", $expected_page, $missing_entries[$expected_page], $expected_image, $volume);
+                    } else {
+                        $entries .= sprintf("%u\t\t%u\t%u\n", $expected_page, $expected_image, $volume);
+                    }
+
                     $expected_page++;
                     $expected_image++;
                 }
             }
 
             list($extracted_entries, $errors) = extract_entries($line, $page, $errors);
+
+
+            if (empty($extracted_entries) and isset($missing_entries[$page])) {
+                $extracted_entries = $missing_entries[$page];
+            }
 
             $entries .= sprintf("%u\t%s\t%u\t%u\n", $page, $extracted_entries, $image, $volume);
             $expected_page++;
@@ -285,7 +294,12 @@ function extract_page_entries($volume, $lines)
 
     while (isset($expected_page) and $expected_page < $last_page) {
         // adds blank entry if page missing
-        $entries .= sprintf("%u\t\t%u\t%u\n", $expected_page, $expected_image, $volume);
+        if (isset($missing_entries[$expected_page])) {
+            $entries .= sprintf("%u\t\t%u\t%u\n", $expected_page, $missing_entries[$expected_page], $expected_image, $volume);
+        } else {
+            $entries .= sprintf("%u\t\t%u\t%u\n", $expected_page, $expected_image, $volume);
+        }
+
         $expected_page++;
         $expected_image++;
     }
@@ -381,6 +395,17 @@ function load_excluded_words($volume)
     }
 
     return $excluded_words_ascii;
+}
+
+function load_missing_entries($volume)
+{
+    $file = __DIR__ . "/$volume/missing-entries.php";
+
+    if (! file_exists($file)) {
+        return array();
+    }
+
+    return require $file;
 }
 
 function load_replaced_entries($volume)
