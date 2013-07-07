@@ -240,7 +240,7 @@ function extract_page_entries($volume, $lines)
     list($first_page, $last_page) = load_end_pages($volume);
     $missing_entries = load_missing_entries($volume);
 
-    $pattern = sprintf('~<br><br><span class="PAG_(\d+)_ST\d+">La</span> <span class="PAG_\d+_ST\d+">Grande</span> <span class="PAG_\d+_ST\d+">Encyclopédie</span> <span class="PAG_\d+_ST\d+">Larousse</span> <span class="PAG_\d+_ST\d+">-</span> <span class="PAG_\d+_ST\d+">Vol\.</span> <span class="PAG_\d+_ST\d+">%u</span> <br><br><span class="PAG_\d+_ST\d+">(\d+)</span>~', $volume);
+    $pattern = sprintf('~<br><br><span class="PAG_(\d+)_ST\d+">La</span> <span class="PAG_\d+_ST\d+">Grande</span> <span class="PAG_\d+_ST\d+">Encyclopédie</span> <span class="PAG_\d+_ST\d+">Larousse</span> <span class="PAG_\d+_ST\d+">-</span> (?:<span class="PAG_\d+_ST\d+">Vol\.</span> <span class="PAG_\d+_ST\d+">%1$u</span>|<span class="PAG_\d+_ST\d+">Vol\.%1$u</span>) <br><br><span class="PAG_\d+_ST\d+">(\d+)</span>~', $volume);
     extract_entry('init', null, $volume);
 
     $entries = "page\tentries\timage\tvolume\n";
@@ -269,7 +269,7 @@ function extract_page_entries($volume, $lines)
                 while (isset($expected_page) and $page > $expected_page) {
                     // adds blank entry if page missing
                     if (isset($missing_entries[$expected_page])) {
-                        $entries .= sprintf("%u\t\t%u\t%u\n", $expected_page, $missing_entries[$expected_page], $expected_image, $volume);
+                        $entries .= sprintf("%u\t%s\t%u\t%u\n", $expected_page, $missing_entries[$expected_page], $expected_image, $volume);
                     } else {
                         $entries .= sprintf("%u\t\t%u\t%u\n", $expected_page, $expected_image, $volume);
                     }
@@ -422,7 +422,7 @@ function load_replaced_entries($volume)
     foreach ($replaced_entries as $entry => &$replacement) {
         if ($replacement === true) {
             // eg replaces "Abeilles sociales" with "Abeille[s] sociale[s]"
-            $replacement = preg_replace('~(.+?)(s)(?!\p{L})~i', '$1[$2]', $entry);
+            $replacement = preg_replace('~(.+?)([sx])(?!\p{L})~i', '$1[$2]', $entry);
         }
     }
 
