@@ -129,17 +129,18 @@ return array(
         ),
 
         'conjugueur' => array(
-            'created'        => '2013-05-19',
-            'description'    => 'Le conjugueur Bescherelle',
-            'description-en' => 'The Bescherelle conjugator',
-            'introduction'   => 'http://www.bescherelle.com/index-conjugueur.php',
+            'created'        => '2013-07-20',
+            'description'    => 'Le conjugeur de Conjugaison.net',
+            'description-en' => 'The Conjugaison.net conjugator',
+            'introduction'   => 'http://www.conjugaison.net',
             'language'       => 'fr',
-            'name'           => 'Conjugueur Bescherelle',
+            'name'           => 'Conjugaison',
             'search'         => array(
                 'properties' => array(
                     'convert' => 'utf8toASCII', // iso-8859-1 site
-                    'emptyWord' => 'http://www.bescherelle.com/index-conjugueur.php',
-                    'url'       => 'http://www.bescherelle.com/conjugueur.php?term=',
+                    'emptyWord' => 'http://www.conjugaison.net',
+                    'suffix'    => '.html',
+                    'url'       => 'http://www.conjugaison.net/fr/',
                 )
             ),
             'type'           => 'external',

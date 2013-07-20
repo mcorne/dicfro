@@ -46,6 +46,10 @@ class Model_Search_External extends Model_Search
             $url = $this->emptyWord;
         } else {
             $url = $this->url . $word;
+
+            if (isset($this->suffix)) {
+                $url .= $this->suffix;
+            }
         }
 
         return array('externalDict' => $url);
