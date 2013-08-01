@@ -233,11 +233,11 @@ return array(
 
         'encyclopedie-larousse' => array(
             'created'        => '2013-04-03',
-            'description'    => 'La Grande encyclopédie Larousse (A-Ost), 1971-1976',
-            'description-en' => 'The Larousse great encyclopedia (A-Ost), 1971-1976',
+            'description'    => 'La Grande encyclopédie Larousse (A-Pli), 1971-1976',
+            'description-en' => 'The Larousse great encyclopedia (A-Pli), 1971-1976',
             'image'          => 'encyclopedie-larousse.jpg',
             'language'       => 'fr',
-            'name'           => 'Encyclopédie Larousse (A-Ost)',
+            'name'           => 'Encyclopédie Larousse (A-Pli)',
             'parser'         => array(
                 'class'      => 'Model_Parser_Index',
                 'properties' => array(
@@ -273,7 +273,7 @@ return array(
             ),
             'title'          => 'E. Larousse',
             'type'           => 'index',
-            'updated'        => '2013-07-07',
+            'updated'        => '2013-08-01',
             'volume'         => 'readonly',
         ),
 
