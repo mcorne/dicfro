@@ -431,6 +431,17 @@ return array(
             'updated'        => '2013-05-10',
         ),
 
+        'orthonet' => array(
+            'created'        => '2013-07-13',
+            'description'    => 'Orthonet, orthographe et grammaire de la langue française, Conseil international de la Langue française',
+            'description-en' => 'Orthonet, spelling and grammar of the French language, International Council of the French Language',
+            'introduction'   => 'http://orthonet.sdv.fr/',
+            'language'       => 'fr',
+            'name'           => 'Orthonet',
+            'search'         => 'http://orthonet.sdv.fr/php/rech_mot.php?mot=',
+            'type'           => 'external',
+        ),
+
         'petit-larousse' => array(
             'created'        => '2013-04-10',
             'description'    => "Petit Larousse illustré (noms communs), nouveau dictionnaire encyclopédique (5e édition), Claude Augé, 1906",
@@ -775,6 +786,7 @@ return array(
                 'encyclopedie-larousse',
                 'littre',
                 'dmf',
+                'orthonet',
                 'petit-larousse',
                 'petit-larousse-np',
                 'wiktionnaire',
