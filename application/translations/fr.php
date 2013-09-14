@@ -174,7 +174,7 @@ return array(
     "Recherche dans d'autres dictionnaires disponibles sur Internet",
 
     "Search in several dictionaries in parallel" =>
-    "Recherche dans plusieurs dictionnaires en parellele",
+    "Recherche dans plusieurs dictionnaires en parallèle",
 
     "See the list with the dictionary names translated in English" =>
     "Voir la liste avec les noms des dictionnaires traduits en anglais",
