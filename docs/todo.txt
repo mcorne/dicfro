@@ -2,7 +2,7 @@ Things to do
 ------------
 
 - add panoccitan.org, http://www.etymologie-occitane.fr, http://www.atilf.fr/dect/ ...
-- add lacurne supplement, curiosités etc..., grand larousse
+- add lacurne supplement, curiosités etc...
 - scan/add tilander
 
 - fix scrolling bar issue for tablets

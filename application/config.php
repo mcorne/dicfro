@@ -368,6 +368,37 @@ return array(
             'url'            => 'lexique-godefroy',
         ),
 
+        'grand-larousse' => array(
+            'created'        => '2013-09-16',
+            'description'    => 'Grand Larousse de la langue française (A - Cip), 1971-1978',
+            'description-en' => 'The Grand Larousse of the French language (A - Cip), 1971-1978',
+            'image'          => 'grand-larousse.jpg',
+            'language'       => 'fr',
+            'name'           => 'Grand Larousse (A-Cip)',
+            'parser'         => array(
+                'class'      => 'Model_Parser_Index',
+                'properties' => array(
+                    'wordSeparator' => '~[, ]~',
+                )
+            ),
+            'search'         => array(
+                'properties' => array(
+                    'url'     => array(
+                        1  => 'http://gallica.bnf.fr/ark:/12148/bpt6k1200532b/f%u.highres',
+                        2  => 'http://gallica.bnf.fr/ark:/12148/bpt6k1200533r/f%u.highres',
+                        3  => 'http://gallica.bnf.fr/ark:/12148/bpt6k12005345/f%u.highres',
+                        4  => 'http://gallica.bnf.fr/ark:/12148/bpt6k1200535k/f%u.highres',
+                        5  => 'http://gallica.bnf.fr/ark:/12148/bpt6k1200551p/f%u.highres',
+                        6  => 'http://gallica.bnf.fr/ark:/12148/bpt6k1200556r/f%u.highres',
+                        7  => 'http://gallica.bnf.fr/ark:/12148/bpt6k12005590/f%u.highres',
+                    ),
+                )
+            ),
+            'title'          => 'G. Larousse',
+            'type'           => 'index',
+            'volume'         => 'readonly',
+        ),
+
         'jeanneau' => array(
             'created'        => '2008-06-27',
             'description'    => 'Dictionnaire français-latin, Gérard Jeanneau',
@@ -784,6 +815,7 @@ return array(
                 'conjugueur',
                 'dvlf',
                 'encyclopedie-larousse',
+                'grand-larousse',
                 'littre',
                 'dmf',
                 'orthonet',

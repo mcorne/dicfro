@@ -1,0 +1,32 @@
+initial version v1
+------------------
+
+- 15/9/2013
+
+- searched for "grand larousse" at gallica.bnf.fr/
+- found http://gallica.bnf.fr/Search?adva=1&adv=1&tri=&t_relation=%22cb34294780h%22&lang=fr
+
+for each volume, ex volume 3:
+
+- entered http://gallica.bnf.fr/ark:/12148/bpt6k12005345.r=.langFR
+- selected "affichage", "feuilleter en plein écran"
+- clicked "téléchargement" icon
+- selected "PDF", "document entier", clicked "lancer le téléchargement"
+- when page is displayed, right clicked to save as "sources/grand-larousse/grand-larousse-3.pdf"
+- copied & pasted PDF content into "sources/grand-larousse/grand-larousse-3.txt"
+
+- added first page, last page, first image, last image and last word in "extract-entries.php"
+- added dictionaries/grand-larousse/search/properties/url/3 in config.php to point to a page/image
+
+(repetitive process) 
+- fixed bad entries in 3/index.csv, with the help of the PDF or .txt files
+* ran "php extract-entries.php 3" as many times as necessary
+* updated 3/excluded-entries.php and 3/replaced-entries.php as necessary
+
+(finish process) 
+- ran "php merge-entries.php" 
+- ran "parse century 1", fixed parsing errors as necessary (some can be left unfixed which is acceptable)
+* ran "php extract-entries.php 3"
+* updated 3/excluded-entries.php and 3/replaced-entries.php as necessary
+
+- updated "name", "description", "description-en" etc. in config.php
