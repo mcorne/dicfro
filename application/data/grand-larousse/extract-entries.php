@@ -41,6 +41,7 @@ function extract_volume_entries($volume, $entries, $last_word)
     $excluded_entries = load_excluded_entries($volume);
     $replaced_entries = load_replaced_entries($volume);
     $last_ascii = Base_String::_utf8toASCII($last_word);
+    $fixes = array();
 
     foreach($lines as $line) {
         $line = trim($line);
@@ -66,22 +67,40 @@ function extract_volume_entries($volume, $entries, $last_word)
                     $word = $match[2];
                 } else {
                     // ignores subsequent occurences
+                    // $fixes[$page] = "ignored $word";
                     continue;
                 }
             }
 
             if ($word[0] == '*') {
                 // removes * prefix, ex. "*haché"
+                $copy = $word;
                 $word = substr($word, 1);
+                $fixes[$page] = "fixed $copy => $word";
             }
 
             if (preg_match('~^([a-z]) \\1$~', $word, $match)) {
                 // this is a double entry for a letter, ex. "i i"
+                $copy = $word;
                 $word = $match[1];
+                $fixes[$page] = "fixed $copy => $word";
             }
 
-            // removes variants, ex. balluchon ou baluchon
-            list($word) = explode(' ou ', $word);
+            $words = explode(' ou ', $word);
+            if (isset($words[1])) {
+                // removes variants, ex. balluchon ou baluchon
+                $copy = $word;
+                $word = $words[0];
+                $fixes[$page] = "fixed $copy => $word";
+            }
+
+            if (strpos($word, '- ') or strpos($word, ' -')) {
+                // removes spaces around "-"
+                $copy = $word;
+                $word = str_replace('- ', '-', $word);
+                $word = str_replace(' -', '-', $word);
+                $fixes[$page] = "fixed $copy => $word";
+            }
 
             $ascii = Base_String::_utf8toASCII($word);
 
@@ -92,6 +111,7 @@ function extract_volume_entries($volume, $entries, $last_word)
                 $ascii > $last_ascii)                          // excludes word after the last word
             {
                 // this is a false positive
+                unset($fixes[$page]);
                 continue;
             }
 
@@ -103,6 +123,8 @@ function extract_volume_entries($volume, $entries, $last_word)
     if (empty($entries)) {
         die("no entries found in volume $volume");
     }
+
+    echo print_fixes($fixes);
 
     return $entries;
 }
@@ -174,6 +196,21 @@ function load_volume($volume)
     }
 
     return file($file, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+}
+
+function print_fixes($fixes)
+{
+    if (empty($fixes)) {
+        return null;
+    }
+
+    $fixes[] = null; // adds extra new line
+
+    foreach ($fixes as $page => &$fixe) {
+        $fixe = "($page) $fixe";
+    }
+
+    return implode("\n", $fixes);
 }
 
 function write_index($entries, $number)
