@@ -17,11 +17,11 @@ function extract_entries($number)
 {
     $volumes = array(
         1 => array('first_page' => 1   , 'last_page' => 722 , 'first_image' => 105, 'last_image' => 826 , 'last_word' => 'cippe'),
-        2 => array('first_page' => 723 , 'last_page' => 1685, 'first_image' => 9  , 'last_image' => 971 , 'last_word' => 'érythrose'), // page 1686 is blank
-        3 => array('first_page' => 1687, 'last_page' => 2559, 'first_image' => 9  , 'last_image' => 881 , 'last_word' => 'incuse'), // page 2560 is blank
+        2 => array('first_page' => 723 , 'last_page' => 1686, 'first_image' => 9  , 'last_image' => 972 , 'last_word' => 'érythrose'), // page 1686 is blank
+        3 => array('first_page' => 1687, 'last_page' => 2560, 'first_image' => 9  , 'last_image' => 882 , 'last_word' => 'incuse'), // page 2560 is blank
         4 => array('first_page' => 2561, 'last_page' => 3618, 'first_image' => 9  , 'last_image' => 1066, 'last_word' => 'nystagmus'),
         5 => array('first_page' => 3619, 'last_page' => 4648, 'first_image' => 9  , 'last_image' => 1038, 'last_word' => 'psittacus'),
-        6 => array('first_page' => 4649, 'last_page' => 5767, 'first_image' => 9  , 'last_image' => 1127, 'last_word' => 'survolteur'), // page 5768 is blank
+        6 => array('first_page' => 4649, 'last_page' => 5768, 'first_image' => 9  , 'last_image' => 1128, 'last_word' => 'survolteur'), // page 5768 is blank
         7 => array('first_page' => 5769, 'last_page' => 6528, 'first_image' => 9  , 'last_image' => 768 , 'last_word' => 'zythum'),
     );
 
@@ -59,17 +59,6 @@ function extract_volume_entries($volume, $entries, $last_word)
                    preg_match('~^([^[\]]+) +\[[øœ̃œɑ̃ɑɔ̃ɔəɛ̃ɛɥɲʁʃʒabdefgijklmnoprstuvwyz(), -]+\]~u', $line, $match)) {
             // this is an entry, a head word followed by its pronunciation, ex. psophométrie [psfometri]
             $word = $match[1];
-            $ascii = Base_String::_utf8toASCII($word);
-
-            if (preg_match("~[«»]~u", $word) or                // excludes citations etc.
-                isset($excluded_entries[$word]) and            // excludes specific words, possibly for a given page
-                    ($excluded_entries[$word] === true or in_array($page, $excluded_entries[$word])) or
-                isset($prev_ascii) and $ascii < $prev_ascii or // excludes word before previous word
-                $ascii > $last_ascii)                          // excludes word after the last word
-            {
-                // this is a false positive
-                continue;
-            }
 
             if (preg_match('~^(\d)\. +(.+)~u', $word, $match)) {
                 if ($match[1] == 1) {
@@ -79,6 +68,31 @@ function extract_volume_entries($volume, $entries, $last_word)
                     // ignores subsequent occurences
                     continue;
                 }
+            }
+
+            if ($word[0] == '*') {
+                // removes * prefix, ex. "*haché"
+                $word = substr($word, 1);
+            }
+
+            if (preg_match('~^([a-z]) \\1$~', $word, $match)) {
+                // this is a double entry for a letter, ex. "i i"
+                $word = $match[1];
+            }
+
+            // removes variants, ex. balluchon ou baluchon
+            list($word) = explode(' ou ', $word);
+
+            $ascii = Base_String::_utf8toASCII($word);
+
+            if (preg_match('~[«»]~u', $word) or                // excludes citations etc.
+                isset($excluded_entries[$word]) and            // excludes specific words, possibly for a given page
+                    ($excluded_entries[$word] === true or in_array($page, $excluded_entries[$word])) or
+                isset($prev_ascii) and $ascii < $prev_ascii or // excludes word before previous word
+                $ascii > $last_ascii)                          // excludes word after the last word
+            {
+                // this is a false positive
+                continue;
             }
 
             $entries[$page]['word'] = $word;
@@ -168,7 +182,7 @@ function write_index($entries, $number)
     $headers = "page\tentries\timage\tvolume";
     $content = implode("\n", $lines);
     $file = "$number/index.csv";
-    file_put_contents($file, $headers . "\n" . $content);
+    file_put_contents($file, $headers . "\n" . $content . "\n");
 
     echo "file added $file";
 }

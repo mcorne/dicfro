@@ -356,7 +356,7 @@ page	entries	image	volume
 355	balayures	459	1
 356	baliste	460	1
 357	ballerine	461	1
-358	balluchon ou baluchon	462	1
+358	balluchon	462	1
 359	bambocheur, euse	463	1
 360	banc	464	1
 361	bandeau	465	1
@@ -507,7 +507,7 @@ page	entries	image	volume
 506	breuvage	610	1
 507	bricheton	611	1
 508	bridé, e	612	1
-509	briffeton ou brifton	613	1
+509	briffeton	613	1
 510	briguer	614	1
 511	brillantine	615	1
 512	brimer	616	1
@@ -657,7 +657,7 @@ page	entries	image	volume
 656	changeur, euse	760	1
 657	chansonner	761	1
 658	chantant, e	762	1
-659	chantignole ou chantignolle	763	1
+659	chantignole	763	1
 660	chaouch	764	1
 661	chapeauter	765	1
 662	chaperonnage	766	1
@@ -717,7 +717,1845 @@ page	entries	image	volume
 716	cibiche	820	1
 717	cicéronien, enne	821	1
 718	cierge	822	1
-719	cimaise ou cymaise	823	1
+719	cimaise	823	1
 720	ciné-club	824	1
 721	cinglé, e	825	1
 722	cinquièmement	826	1
+723	cirage	9	2
+724	circonspection	10	2
+725		11	2
+726		12	2
+727		13	2
+728	circonstancier	14	2
+729	circonvoisin, e	15	2
+730	circulatoire	16	2
+731	ciron	17	2
+732	ciselage	18	2
+733	cité	19	2
+734	citoyenneté	20	2
+735	civilement	21	2
+736	civique	22	2
+737	clafoutis	23	2
+738	claire	24	2
+739	claironner	25	2
+740	clangoreux, euse	26	2
+741	claqué, e	27	2
+742	claqueur	28	2
+743	classement	29	2
+744	classification	30	2
+745	claustration	31	2
+746	clayonnage	32	2
+747	clément, e	33	2
+748	cléricature	34	2
+749	clignement	35	2
+750	climatisation	36	2
+751	clinquanter	37	2
+752	clivage	38	2
+753	clocher-arcades	39	2
+754	cloîtrier, ère	40	2
+755	closeau	41	2
+756	cloueur, euse	42	2
+757	clubiste	43	2
+758	coaliseur, euse	44	2
+759	cocaïne	45	2
+760	cochenillage	46	2
+761	cochonnément	47	2
+762	coconnage	48	2
+763	codage	49	2
+764	coeliaque	50	2
+765	coexistant, e	51	2
+766	coexistence	52	2
+767	cognat	53	2
+768	cohésif, ive	54	2
+769	coiffeur, euse	55	2
+770	coinçage	56	2
+771	cokéfaction	57	2
+772	colérer	58	2
+773	colin	59	2
+774	collage	60	2
+775	colle	61	2
+776	collectionner	62	2
+777	collègue	63	2
+778	colleté, e	64	2
+779	collinette	65	2
+780	colombiculteur	66	2
+781	colonisable	67	2
+782	colonnette	68	2
+783	coloriste	69	2
+784	colubriformes	70	2
+785	combattre	71	2
+786	combinard, e	72	2
+787	comblé, e	73	2
+788	comédien, enne	74	2
+789	comiquement	75	2
+790	commandement	76	2
+791	commanderie	77	2
+792	commémorable	78	2
+793	commendataire	79	2
+794	commentaire	80	2
+795	commercer	81	2
+796	commination	82	2
+797	commissionnaire	83	2
+798	commodément	84	2
+799	communal, e, aux	85	2
+800	communautaire	86	2
+801	communier	87	2
+802	communiste	88	2
+803	commutativité	89	2
+804	comourants	90	2
+805	compagnonnage	91	2
+806		92	2
+807		93	2
+808		94	2
+809		95	2
+810	comparaître	96	2
+811	compartimentage	97	2
+812	compatissant, e	98	2
+813	compérage	99	2
+814	compilateur, trice	100	2
+815	complaisant, e	101	2
+816	complémentaire	102	2
+817		103	2
+818	complet, ète	104	2
+819	complétif, ive	105	2
+820	complication	106	2
+821	compliquer	107	2
+822	composé, e	108	2
+823	compossible	109	2
+824	compréhension	110	2
+825	compressibilité	111	2
+826	compromissoire	112	2
+827	compte-fils	113	2
+828	compte-secondes	114	2
+829	compulsation	115	2
+830	concasseur	116	2
+831	concentrique	117	2
+832	concert	118	2
+833		119	2
+834		120	2
+835		121	2
+836	concessionnaire	122	2
+837	conciergerie	123	2
+838	concitoyen, enne	124	2
+839	concordance	125	2
+840		126	2
+841		127	2
+842		128	2
+843	concordant, e	129	2
+844	concrescence	130	2
+845	concurrence	131	2
+846	condamner	132	2
+847	condescendant, e	133	2
+848		134	2
+849		135	2
+850		136	2
+851		137	2
+852		138	2
+853		139	2
+854	conditionnant, e	140	2
+855		141	2
+856		142	2
+857		143	2
+858	conditionnellement	144	2
+859	condoléance	145	2
+860	conduit	146	2
+861	condylome	147	2
+862	conférencier, ère	148	2
+863	confessionnal	149	2
+864	confident, e	150	2
+865	confins	151	2
+866	confit, e	152	2
+867	conformateur	153	2
+868	confort	154	2
+869	confusément	155	2
+870	congédiable	156	2
+871	conglutinant, e	157	2
+872	congruence	158	2
+873	conjointement	159	2
+874		160	2
+875		161	2
+876		162	2
+877		163	2
+878		164	2
+879	conjonctival, e, aux	165	2
+880		166	2
+881		167	2
+882		168	2
+883		169	2
+884		170	2
+885	conjugal, e, aux	171	2
+886	conjugué, e	172	2
+887	connaissant, e	173	2
+888	connecter	174	2
+889	connivent, e	175	2
+890	connoter	176	2
+891	conoïdal, e, aux	177	2
+892	consacrer	178	2
+893	consciencieusement	179	2
+894	consécutif, ive	180	2
+895	conseilleur, euse	181	2
+896		182	2
+897		183	2
+898	conséquent, e	184	2
+899	conservation	185	2
+900	conservé, e	186	2
+901	consignataire	187	2
+902	consistant, e	188	2
+903	consoler	189	2
+904	consommer	190	2
+905	consonne	191	2
+906		192	2
+907		193	2
+908		194	2
+909		195	2
+910	consort	196	2
+911	consoude	197	2
+912	constante	198	2
+913	constitué, e	199	2
+914	constitutionnaire	200	2
+915	constructivisme	201	2
+916	consultable	202	2
+917	contact	203	2
+918	contaminer	204	2
+919	contemporanéité	205	2
+920	contentement	206	2
+921	contestable	207	2
+922	contextuel, elle	208	2
+923	contingentement	209	2
+924	continûment	210	2
+925	contractable	211	2
+926	contracturer	212	2
+927	contraire	213	2
+928		214	2
+929	contrairement	215	2
+930	contralto	216	2
+931	contrat	217	2
+932	contre-allée	218	2
+933	contre-bouter	219	2
+934	contredire	220	2
+935	contrefaction	221	2
+936	contre-lettre	222	2
+937	contre-pal	223	2
+938	contre-poil (à)	224	2
+939	contresignataire	225	2
+940	contributif, ive	226	2
+941	contrôler	227	2
+942	convaincant, e	228	2
+943	convenant, e	229	2
+944	conventionnalisme	230	2
+945	convergence	231	2
+946	convertir	232	2
+947	convive	233	2
+948	convoyage	234	2
+949	coopératif, ive	235	2
+950		236	2
+951		237	2
+952		238	2
+953		239	2
+954	coordonnable	240	2
+955	copartage	241	2
+956	copilote	242	2
+957	coq-à-l’âne	243	2
+958	coqueliner	244	2
+959	coquetterie	245	2
+960	coquinet, ette	246	2
+961	corbeille	247	2
+962	cordé, e	248	2
+963	corder	249	2
+964	cordon-bleu	250	2
+965	cornacées	251	2
+966	corneille	252	2
+967	cornettiste	253	2
+968	corollairement	254	2
+969		255	2
+970	corps-mort	256	2
+971	correctement	257	2
+972	correctionnellement	258	2
+973	corricolo	259	2
+974	corrodant, e	260	2
+975	corruption	261	2
+976	cortes	262	2
+977	cosécante	263	2
+978	cosmopolitisme	264	2
+979	costumer	265	2
+980	coté, e	266	2
+981	côtelé, e	267	2
+982	cotillon	268	2
+983	coton-poudre	269	2
+984	couac	270	2
+985	couché, e	271	2
+986	coucherie	272	2
+987	cou-de-cygne	273	2
+988	coufique	274	2
+989	coule	275	2
+990	couleur	276	2
+991	couleuvre	277	2
+992	coulissant, e	278	2
+993	coumarine	279	2
+994		280	2
+995	coupable	281	2
+996	coupé, e	282	2
+997	coupelle	283	2
+998	coupe-racines	284	2
+999	couplet	285	2
+1000	courable	286	2
+1001	courante	287	2
+1002	courbaturé, e	288	2
+1003	courge	289	2
+1004	courlis	290	2
+1005	courre	291	2
+1006	courroux	292	2
+1007	course - croisière	293	2
+1008	court, e	294	2
+1009	courtement	295	2
+1010	courtiser	296	2
+1011	coussin	297	2
+1012	coutellerie	298	2
+1013	coutumièrement	299	2
+1014	couventine	300	2
+1015	couverte	301	2
+1016	couvre-joint	302	2
+1017	covariance	303	2
+1018	crac !	304	2
+1019	craie	305	2
+1020	craintivement	306	2
+1021	crampser	307	2
+1022	crâneur, euse	308	2
+1023	crapule	309	2
+1024	craqueter	310	2
+1025	crassineux, euse	311	2
+1026	crayeux, euse	312	2
+1027	créateur, trice	313	2
+1028	crécerelle	314	2
+1029	créditer	315	2
+1030	crémant	316	2
+1031	créneler	317	2
+1032	crêperie	318	2
+1033	crèque	319	2
+1034	crétin, e	320	2
+1035	creuseur	321	2
+1036	crevasser	322	2
+1037	crevette	323	2
+1038	criblage	324	2
+1039	crierie	325	2
+1040	criminellement	326	2
+1041	criquer	327	2
+1042	criss	328	2
+1043	cristallisoir	329	2
+1044	critiquer	330	2
+1045	croasser	331	2
+1046	crochetage	332	2
+1047	croisade	333	2
+1048	croisée	334	2
+1049	croisiller	335	2
+1050	croix	336	2
+1051	cromesquis	337	2
+1052	croquet	338	2
+1053	crossoptérygiens	339	2
+1054	croupetons (à)	340	2
+1055	croûtelette	341	2
+1056	C. R. S.	342	2
+1057	crucifère	343	2
+1058	cruel, elle	344	2
+1059	cryptesthésie	345	2
+1060	cubisme	346	2
+1061	cuiller	347	2
+1062	cuire	348	2
+1063	cuisinier, ère	349	2
+1064	cuite	350	2
+1065	culasse	351	2
+1066	cul-de-basse-fosse	352	2
+1067	culminer	353	2
+1068	culottin	354	2
+1069	cultuel, elle	355	2
+1070	cumulo-nimbus	356	2
+1071	curculionidés	357	2
+1072	curiethérapie	358	2
+1073	curseur	359	2
+1074	cuver	360	2
+1075	cyclecar	361	2
+1076	cylindrage	362	2
+1077	cyniquement	363	2
+1078	cytise	364	2
+1079	d	365	2
+1080	dague	366	2
+1081	dalmatique	367	2
+1082	dame-d’onze-heures	368	2
+1083	damoiseau	369	2
+1084	danois, e	370	2
+1085	danser	371	2
+1086	dariole	372	2
+1087	datte	373	2
+1088	davier	374	2
+1089		375	2
+1090	dé-	376	2
+1091	de auditu	377	2
+1092	débaptiser	378	2
+1093	débarrer	379	2
+1094	débaucheur, euse	380	2
+1095	débitable	381	2
+1096	déblayage	382	2
+1097	débord	383	2
+1098	débouchement	384	2
+1099	débours	385	2
+1100	débridé, e	386	2
+1101	débrouilleur, euse	387	2
+1102	décabosser	388	2
+1103	décalcification	389	2
+1104	décapité, e	390	2
+1105	décelable	391	2
+1106	décercler	392	2
+1107	décharge	393	2
+1108	décharnement	394	2
+1109	déchiffrer	395	2
+1110	déchocage	396	2
+1111	décilage	397	2
+1112	décisionnel, elle	398	2
+1113	déclassé, e	399	2
+1114	déclinant, e	400	2
+1115	décoaguler	401	2
+1116	décolletage	402	2
+1117	décommettre	403	2
+1118	déconcertement	404	2
+1119	décontamination	405	2
+1120	décoré, e	406	2
+1121	découpé, e	407	2
+1122	décousure	408	2
+1123	décramponner	409	2
+1124	décréter	410	2
+1125	décroissant, e	411	2
+1126	décuplement	412	2
+1127	dédicace	413	2
+1128	dédit	414	2
+1129	déduire	415	2
+1130	défaire	416	2
+1131	défaut	417	2
+1132	défectueux, euse	418	2
+1133	défensable	419	2
+1134	déférent, e	420	2
+1135	défiance	421	2
+1136	défilage	422	2
+1137	définissant	423	2
+1138	déflexion	424	2
+1139	défourner	425	2
+1140	dégagé, e	426	2
+1141	dégaine	427	2
+1142	dégénération	428	2
+1143	déglutition	429	2
+1144	dégosiller	430	2
+1145	dégoûtation	431	2
+1146	dégradé	432	2
+1147		433	2
+1148		434	2
+1149		435	2
+1150		436	2
+1151		437	2
+1152		438	2
+1153	dégréement	439	2
+1154	dégrouper	440	2
+1155	déhaler	441	2
+1156	déicole	442	2
+1157	déjeuneur	443	2
+1158	délai-congé	444	2
+1159	délayable	445	2
+1160	déléguer	446	2
+1161	délicatement	447	2
+1162	délice	448	2
+1163	délimitation	449	2
+1164	délissage	450	2
+1165	délover	451	2
+1166	démagogie	452	2
+1167	demandeur, euse	453	2
+1168	démaquillage	454	2
+1169	démarreur	455	2
+1170	démembrement	456	2
+1171	démerdard	457	2
+1172	demeuré, e	458	2
+1173	demi-aile	459	2
+1174	demi-coupé	460	2
+1175	demi-mondain, e	461	2
+1176	demi-setier	462	2
+1177	démobilisable	463	2
+1178	démolissage	464	2
+1179	démonstratif, ive	465	2
+1180		466	2
+1181		467	2
+1182		468	2
+1183		469	2
+1184		470	2
+1185	démonstration	471	2
+1186	démonter	472	2
+1187	démoustiquer	473	2
+1188	dénazification	474	2
+1189	dénicheur, euse	475	2
+1190	dénominateur	476	2
+1191	dénouer	477	2
+1192	dentaire	478	2
+1193	dentelé, e	479	2
+1194	dénucléarisation	480	2
+1195	dépaquetage	481	2
+1196	départementalement	482	2
+1197	dépayser	483	2
+1198	dépendant, e	484	2
+1199	dépenser	485	2
+1200	dépeupler	486	2
+1201	dépistage	487	2
+1202	déplafonnement	488	2
+1203	déplié	489	2
+1204	dépoétisation	490	2
+1205	déposable	491	2
+1206	dépotage	492	2
+1207	dépouiller	493	2
+1208	déprécation	494	2
+1209	dépressionnaire	495	2
+1210	dépuratif, ive	496	2
+1211	dérager	497	2
+1212	dérangeur, euse	498	2
+1213	dérider	499	2
+1214	dériver 1, de l’angl.	500	2
+1215	dernièrement	501	2
+1216	dérobeur, euse	502	2
+1217	dérouler	503	2
+1218	derviche	504	2
+1219	désacclimater	505	2
+1220	désagencer	506	2
+1221	désamidonnage	507	2
+1222	désargentement	508	2
+1223	désassorti, e	509	2
+1224	descellement	510	2
+1225	descenseur	511	2
+1226	désemmêler	512	2
+1227	désencrasser	513	2
+1228	désensibilisant	514	2
+1229	déserteur	515	2
+1230	désespoir	516	2
+1231	désheuré, e	517	2
+1232	désigner	518	2
+1233	désintéressé, e	519	2
+1234	désireux, euse	520	2
+1235	désodorisant, e	521	2
+1236	désorbitation	522	2
+1237	désormais	523	2
+1238	dessaisissement	524	2
+1239	dessert	525	2
+1240	dessinable	526	2
+1241	dessous-de-bouteille	527	2
+1242	dessus-de-lit	528	2
+1243	destinatoire	529	2
+1244	destructif, ive	530	2
+1245		531	2
+1246		532	2
+1247		533	2
+1248	détacher	534	2
+1249	détaillant, e	535	2
+1250	détendre	536	2
+1251	détériorer	537	2
+1252		538	2
+1253		539	2
+1254	déterminé, e	540	2
+1255	déterminisme	541	2
+1256	détirement	542	2
+1257	détoxication	543	2
+1258	détresse	544	2
+1259	détrousseur	545	2
+1260	deutérocanonique	546	2
+1261	dévaler	547	2
+1262	devantier	548	2
+1263	dévaster	549	2
+1264	dévelouté, e	550	2
+1265	devers	551	2
+1266	dévideur, euse	552	2
+1267	devise	553	2
+1268	dévoisé, e	554	2
+1269	dévolutaire	555	2
+1270	dévotieusement	556	2
+1271	dévriller	557	2
+1272	diablement	558	2
+1273	diablesse	559	2
+1274	diacoustique	560	2
+1275	dialectal, e, aux	561	2
+1276		562	2
+1277		563	2
+1278		564	2
+1279		565	2
+1280		566	2
+1281	dialecticien, enne	567	2
+1282	dialectiquement	568	2
+1283	diamantaire	569	2
+1284	diapasonner	570	2
+1285	diastase	571	2
+1286	dictame	572	2
+1287	dicton	573	2
+1288		574	2
+1289	dièse	575	2
+1290	diététicien, enne	576	2
+1291	diffa	577	2
+1292	différence	578	2
+1293	différentier	579	2
+1294	difficultueusement	580	2
+1295	diffusément	581	2
+1296	digeste	582	2
+1297	dignement	583	2
+1298	diguer	584	2
+1299	dilatoire	585	2
+1300	diligent, e	586	2
+1301	dimère	587	2
+1302	dimissoire	588	2
+1303	dînette	589	2
+1304	dioptre	590	2
+1305	diphtonguer	591	2
+1306	diplomatie	592	2
+1307	diptyque	593	2
+1308		594	2
+1309	direct	595	2
+1310	directif, ive	596	2
+1311	dirigisme	597	2
+1312	disciplinable	598	2
+1313	discontinuation	599	2
+1314	discorder	600	2
+1315		601	2
+1316		602	2
+1317		603	2
+1318		604	2
+1319	discourtois, e	605	2
+1320	discrédit	606	2
+1321	discriminant, e	607	2
+1322	discuteur, euse	608	2
+1323	disgracieusement	609	2
+1324	disparaître	610	2
+1325	dispendieusement	611	2
+1326	dispersif, ive	612	2
+1327	dispositif	613	2
+1328	disproportion	614	2
+1329	disquaire	615	2
+1330	disséminement	616	2
+1331		617	2
+1332	dissimiler	618	2
+1333	dissipé, e	619	2
+1334	dissolvant, e	620	2
+1335	dissyllabe	621	2
+1336	distension	622	2
+1337	distinctivement	623	2
+1338	distraire	624	2
+1339	distributif, ive	625	2
+1340		626	2
+1341		627	2
+1342		628	2
+1343		629	2
+1344	distributionalisme	630	2
+1345	diva	631	2
+1346	diversement	632	2
+1347	divette	633	2
+1348	divis, e	634	2
+1349	divisionnaire	635	2
+1350	dix-cors	636	2
+1351	djebel	637	2
+1352	doctissime	638	2
+1353	documentaire	639	2
+1354	dodu, e	640	2
+1355	doguer (se)	641	2
+1356	dolcissimo	642	2
+1357	dolomie	643	2
+1358	domesticité	644	2
+1359	dominance	645	2
+1360	dominicain, e	646	2
+1361	dompteur, euse	647	2
+1362	dondaine	648	2
+1363	donner	649	2
+1364		650	2
+1365	donneur, euse	651	2
+1366	donzelle	652	2
+1367	dorlotement	653	2
+1368	dormitif, ive	654	2
+1369	dosable	655	2
+1370	dossière	656	2
+1371	doublé, e	657	2
+1372	double-étoffe	658	2
+1373	doublon	659	2
+1374	douche	660	2
+1375	douelle	661	2
+1376	doum	662	2
+1377	douteur, euse	663	2
+1378	doux-amer	664	2
+1379	doyen, enne	665	2
+1380	dragonnades	666	2
+1381	drainage	667	2
+1382	dran	668	2
+1383	drapier, ère	669	2
+1384	dresseur, euse	670	2
+1385	drille	671	2
+1386	droit, e	672	2
+1387		673	2
+1388	droitement	674	2
+1389	drôlement	675	2
+1390	drugstore	676	2
+1391	dubitativement	677	2
+1392	D. U. E. L.	678	2
+1393	duo	679	2
+1394	dupliquer	680	2
+1395	durable	681	2
+1396	dure-mère	682	2
+1397	duumviral, e, aux	683	2
+1398	dynamiste	684	2
+1399	dyscinésie	685	2
+1400	dyspnée	686	2
+1401	e	687	2
+1402		688	2
+1403		689	2
+1404		690	2
+1405		691	2
+1406		692	2
+1407		693	2
+1408		694	2
+1409	é-	695	2
+1410	eaubénitier	696	2
+1411	ébarbeur, euse	697	2
+1412	ébauchon	698	2
+1413	éborgnage	699	2
+1414	ébouriffé, e	700	2
+1415	ébrasement	701	2
+1416	éburnation	702	2
+1417	écaillure	703	2
+1418	écartant, e	704	2
+1419	eccéité	705	2
+1420	échafauder	706	2
+1421	échanger	707	2
+1422	échappée	708	2
+1423	écharde	709	2
+1424	écharper	710	2
+1425	échauffement	711	2
+1426	échelage	712	2
+1427	échellier	713	2
+1428	écheveler	714	2
+1429	échinocactus	715	2
+1430	échoir	716	2
+1431	écillé, e	717	2
+1432	éclaircissage	718	2
+1433	éclaireur	719	2
+1434	éclaté, e	720	2
+1435	éclectisme	721	2
+1436	éclore	722	2
+1437	écoeurer	723	2
+1438	écolier, ère	724	2
+1439	économétrie	725	2
+1440	économiquement	726	2
+1441	écorché	727	2
+1442	écosse	728	2
+1443	écouler	729	2
+1444	écoute-s’il-pleut	730	2
+1445	écrasage	731	2
+1446	écraseur, euse	732	2
+1447	écrieur	733	2
+1448	écriteau	734	2
+1449	écrivaillerie	735	2
+1450	écrouelle	736	2
+1451	ecthèse	737	2
+1452	écuelle	738	2
+1453	écumeur, euse	739	2
+1454	écusson	740	2
+1455	eczématiforme	741	2
+1456	édifier	742	2
+1457	éditionner	743	2
+1458	éduqué, e	744	2
+1459	effaceur, euse	745	2
+1460	effarvatte	746	2
+1461	effervescent, e	747	2
+1462	effeuillage	748	2
+1463	efficacement	749	2
+1464	effileur, euse	750	2
+1465	effleurir	751	2
+1466	effluver	752	2
+1467	effraction	753	2
+1468	effrénement	754	2
+1469	effulgence	755	2
+1470	égailler (s’)	756	2
+1471	égalable	757	2
+1472	égaliseur, euse	758	2
+1473	égaré, e	759	2
+1474	égarrotter	760	2
+1475	églant	761	2
+1476	égocentrisme	762	2
+1477	égotique	763	2
+1478	égrappage	764	2
+1479	égreneur, euse	765	2
+1480	égyptiac	766	2
+1481	éjaculateur	767	2
+1482	elaeis	768	2
+1483	élancer	769	2
+1484	élargisseur	770	2
+1485	élatérie	771	2
+1486	électivement	772	2
+1487	électriquement	773	2
+1488	électrochimique	774	2
+1489	électrolyser	775	2
+1490	électro-osmose	776	2
+1491	élégance	777	2
+1492	élémentaire	778	2
+1493	éléphantiasique	779	2
+1494	élève	780	2
+1495	éleveur, euse	781	2
+1496	élingue	782	2
+1497		783	2
+1498		784	2
+1499	élite	785	2
+1500	ellébore	786	2
+1501		787	2
+1502		788	2
+1503	ellipsographe	789	2
+1504	éloigné, e	790	2
+1505	éloquent, e	791	2
+1506	éluvionnaire	792	2
+1507	émaillerie	793	2
+1508	émanothérapie	794	2
+1509	emballer	795	2
+1510	embarillage	796	2
+1511	embarrassé, e	797	2
+1512	embâtage	798	2
+1513	embéguiner	799	2
+1514	embêté, e	800	2
+1515	embobiner	801	2
+1516	embossure	802	2
+1517	embourrer	803	2
+1518	embraquer	804	2
+1519	embrasseur, euse	805	2
+1520	embroquement	806	2
+1521	embrun	807	2
+1522	embuscade	808	2
+1523	émerger	809	2
+1524	émèse	810	2
+1525	émigré, e	811	2
+1526	émission	812	2
+1527	emmancheur	813	2
+1528	emmerder	814	2
+1529	emmuseler	815	2
+1530	émotion	816	2
+1531	émouchetage	817	2
+1532	empaillage	818	2
+1533	empanachage	819	2
+1534	empâteur, euse	820	2
+1535	empêcheur, euse	821	2
+1536	emperruqué, e	822	2
+1537	emphytéose	823	2
+1538	empileur, euse	824	2
+1539	emplanture	825	2
+1540	employé, e	826	2
+1541	empoigneur	827	2
+1542	emportement	828	2
+1543	emposieu	829	2
+1544	empressé, e	830	2
+1545	emprunt	831	2
+1546		832	2
+1547		833	2
+1548		834	2
+1549		835	2
+1550		836	2
+1551		837	2
+1552		838	2
+1553		839	2
+1554		840	2
+1555	emprunté, e	841	2
+1556	empyème	842	2
+1557	émulsionnable	843	2
+1558		844	2
+1559	E. N. A.	845	2
+1560	encadreur	846	2
+1561	encapsulant, e	847	2
+1562	encastage	848	2
+1563	encensement	849	2
+1564	enchaîner	850	2
+1565	enchaperonner	851	2
+1566	enchérissement	852	2
+1567	enclavé, e	853	2
+1568	enclôture	854	2
+1569	encolleur, euse	855	2
+1570	encorder	856	2
+1571	en-cours	857	2
+1572	encroûter	858	2
+1573	endémique	859	2
+1574	endiguer	860	2
+1575	endolorir	861	2
+1576	endormissement	862	2
+1577	endriague	863	2
+1578	endurcissement	864	2
+1579	énergiquement	865	2
+1580	enfance	866	2
+1581	enfantelet	867	2
+1582	enfermement	868	2
+1583	enfileur, euse	869	2
+1584	enflécher	870	2
+1585	enfonceur, euse	871	2
+1586	enfourrer	872	2
+1587	engager	873	2
+1588	engagiste	874	2
+1589	engendreur	875	2
+1590	engloutissement	876	2
+1591	engouffrement	877	2
+1592	engramme	878	2
+1593	engueulement	879	2
+1594	énigmatique	880	2
+1595	enjamber	881	2
+1596	enkysté, e	882	2
+1597	enlever	883	2
+1598	enlourdir	884	2
+1599	enniaiser	885	2
+1600	ennuyeusement	886	2
+1601	énormément	887	2
+1602	enquêteur, euse	888	2
+1603	enrailler	889	2
+1604	enregistrer	890	2
+1605	enrobage	891	2
+1606	enrouleur, euse	892	2
+1607	enseigne	893	2
+1608	ensellé, e	894	2
+1609	E. N. S. E. T.	895	2
+1610	ensommeillement	896	2
+1611	entablement	897	2
+1612	entamure	898	2
+1613	entendre	899	2
+1614	entendu, e	900	2
+1615	entérocolite	901	2
+1616	entêté, e	902	2
+1617	entichement	903	2
+1618	entôleur, euse	904	2
+1619	entortillage	905	2
+1620	entournure	906	2
+1621	entraînement	907	2
+1622	entrave	908	2
+1623	entrechat	909	2
+1624	entrecuisse	910	2
+1625	entre-écorce	911	2
+1626	entreligne	912	2
+1627	entrepénétrer (s’)	913	2
+1628	entreprise	914	2
+1629	entrerail	915	2
+1630	entretenu, e	916	2
+1631	entretoiser	917	2
+1632	énumérer	918	2
+1633	enveloppé, e	919	2
+1634	envi (à l’)	920	2
+1635	enviné, e	921	2
+1636	envoilement	922	2
+1637	envoyé, e	923	2
+1638	éolipyle	924	2
+1639	épaisseur	925	2
+1640	épancher	926	2
+1641	épanouissement	927	2
+1642	épargneur, euse	928	2
+1643	épater	929	2
+1644	épauletier	930	2
+1645	épeiche	931	2
+1646	éperonnement	932	2
+1647	éphélide	933	2
+1648	épiaire	934	2
+1649	épicier, ère	935	2
+1650	épidermique	936	2
+1651	épigénique	937	2
+1652	épiler	938	2
+1653	épinéphèle	939	2
+1654	épinglé, e	940	2
+1655	épiphyse	941	2
+1656	épisodique	942	2
+1657		943	2
+1658		944	2
+1659		945	2
+1660		946	2
+1661		947	2
+1662		948	2
+1663		949	2
+1664		950	2
+1665	épithétique	951	2
+1666	éplucheur, euse	952	2
+1667	épongeage	953	2
+1668	épousable	954	2
+1669	époutissage	955	2
+1670	épreuve	956	2
+1671	éprouvette	957	2
+1672	épuranien, enne	958	2
+1673	équarrissoir	959	2
+1674	équeutage	960	2
+1675	équilibrer	961	2
+1676	équipartition	962	2
+1677	équipollent, e	963	2
+1678	équivaloir	964	2
+1679	éraillure	965	2
+1680	éréthisme	966	2
+1681	ergotisme	967	2
+1682	érotique	968	2
+1683	erre	969	2
+1684	erroné, e	970	2
+1685	éruption	971	2
+1686		972	2
+1687	ès	9	3
+1688	escadronner	10	3
+1689	escalopé, e	11	3
+1690	escarcelle	12	3
+1691	escarpin	13	3
+1692	esclavager	14	3
+1693	escompteur	15	3
+1694	escroquerie	16	3
+1695	espacement	17	3
+1696	esparcette	18	3
+1697	espérantisme	19	3
+1698	espionner	20	3
+1699		21	3
+1700		22	3
+1701	esprité, e	23	3
+1702	esquisser	24	3
+1703	essaim	25	3
+1704	essayeur, euse	26	3
+1705	esseuler	27	3
+1706	essuie-meubles	28	3
+1707	estamper	29	3
+1708	esthéticien, enne	30	3
+1709	estimé, e	31	3
+1710	estocade	32	3
+1711	estrade	33	3
+1712	et	34	3
+1713	établissement	35	3
+1714	étagère	36	3
+1715	étaleur, euse	37	3
+1716	étalonneur	38	3
+1717	étanchéité	39	3
+1718		40	3
+1719	étatique	41	3
+1720	étayer	42	3
+1721	ételle	43	3
+1722	étendue	44	3
+1723	éternité	45	3
+1724	éthéréen, enne	46	3
+1725	ethnographique	47	3
+1726	étinceler	48	3
+1727	étiqueter	49	3
+1728	étoffé, e	50	3
+1729	étoilement	51	3
+1730	étonnure	52	3
+1731	étouffeur, euse	53	3
+1732	étourdiment	54	3
+1733	étrangeté	55	3
+1734	étrangleur, euse	56	3
+1735		57	3
+1736	étrécir	58	3
+1737	étreindre	59	3
+1738	étrésillonner	60	3
+1739	étriquement	61	3
+1740	étron	62	3
+1741	étudier	63	3
+1742	étymologique	64	3
+1743	eugéniste	65	3
+1744		66	3
+1745	euphonique	67	3
+1746	européanisme	68	3
+1747	eutélie	69	3
+1748	évadé, e	70	3
+1749	évangélisation	71	3
+1750	évaporatoire	72	3
+1751	éveillé, e	73	3
+1752	éventail	74	3
+1753	éventiller	75	3
+1754	évhémérisme	76	3
+1755	éviration	77	3
+1756	évocatoire	78	3
+1757	evzone	79	3
+1758	ex aequo	80	3
+1759	exalté, e	81	3
+1760	exanthématique	82	3
+1761	excavateur, trice	83	3
+1762	excellentissime	84	3
+1763	excepter	85	3
+1764	excessif, ive	86	3
+1765	excitatif, ive	87	3
+1766	exclamativement	88	3
+1767	exclusivement	89	3
+1768	excru, e	90	3
+1769	exeat	91	3
+1770	exécutif, ive	92	3
+1771	exemple	93	3
+1772	exercer	94	3
+1773	exerciseur	95	3
+1774	exhaustion	96	3
+1775	exhumation	97	3
+1776	exilé, e	98	3
+1777	exo-	99	3
+1778	exoration	100	3
+1779	exosphère	101	3
+1780	expansionnisme	102	3
+1781	expédier	103	3
+1782	expéditivement	104	3
+1783	expert, e	105	3
+1784	expirer	106	3
+1785	explicitation	107	3
+1786	exploitant, ante	108	3
+1787	explorer	109	3
+1788	explosivité	110	3
+1789	expositeur	111	3
+1790	expressif, ive	112	3
+1791	ex professo	113	3
+1792	exquis, e	114	3
+1793	extase	115	3
+1794	exténuation	116	3
+1795	extériorité	117	3
+1796	extirpable	118	3
+1797	extrader	119	3
+1798	extranéité	120	3
+1799	extra-utérin, e	121	3
+1800	extrêmement	122	3
+1801	exubérant, e	123	3
+1802		124	3
+1803	f	125	3
+1804	fabricien	126	3
+1805	fabulation	127	3
+1806		128	3
+1807	face-à-face	129	3
+1808	fâcherie	130	3
+1809	facilement	131	3
+1810		132	3
+1811	faconde	133	3
+1812	factage	134	3
+1813	factif	135	3
+1814	factualité	136	3
+1815	fada	137	3
+1816	fadet, ette	138	3
+1817	fagoteur, euse	139	3
+1818	faiblement	140	3
+1819	faïencé, e	141	3
+1820	faillite	142	3
+1821	fainéantise	143	3
+1822		144	3
+1823		145	3
+1824		146	3
+1825		147	3
+1826	faire le faut	148	3
+1827	faisandage	149	3
+1828	faisselle	150	3
+1829	faîtage	151	3
+1830	faîteau	152	3
+1831	falciforme	153	3
+1832	falot	154	3
+1833	falzar	155	3
+1834	familièrement	156	3
+1835	famine	157	3
+1836	fanchon	158	3
+1837	fanfarer	159	3
+1838	fantaisie	160	3
+1839	fantasmagorique	161	3
+1840	fantoccini	162	3
+1841	faquin	163	3
+1842	farci, e	164	3
+1843	fardier	165	3
+1844	fariner	166	3
+1845	fascé, e	167	3
+1846	fascio	168	3
+1847	fastueusement	169	3
+1848	fathma	170	3
+1849	fatras	171	3
+1850	faucard	172	3
+1851	fauconneau	173	3
+1852	fausset	174	3
+1853	fauteur, trice	175	3
+1854	faux-bourdon	176	3
+1855	faux-fuyant	177	3
+1856	favorisé, e	178	3
+1857	fébrigène	179	3
+1858	fécondité	180	3
+1859	fédérer	181	3
+1860	feint, e	182	3
+1861	félibre	183	3
+1862	félonie	184	3
+1863	féminisation	185	3
+1864	femme-canon	186	3
+1865	fendu, e	187	3
+1866	fenestrier, ère	188	3
+1867	fenugrec	189	3
+1868	féra, férat ou ferrat	190	3
+1869	fériable	191	3
+1870	fermé, e	192	3
+1871	fermement	193	3
+1872		194	3
+1873	fermeté	195	3
+1874	férocement	196	3
+1875	ferrailleur	197	3
+1876	ferricyanure	198	3
+1877	ferrure	199	3
+1878	fervent, e	200	3
+1879	festiner	201	3
+1880	Fête-Dieu	202	3
+1881	féticheur	203	3
+1882		204	3
+1883		205	3
+1884	feudataire	206	3
+1885	feuillagé, e	207	3
+1886	feuillé, e	208	3
+1887	feuilleter	209	3
+1888	feutrage	210	3
+1889	fiabilité	211	3
+1890	fibranne	212	3
+1891	ficeler	213	3
+1892	ficher	214	3
+1893	fichet	215	3
+1894	fictivement	216	3
+1895	fidèlement	217	3
+1896	fiel	218	3
+1897	fier-à-bras	219	3
+1898	fiévreusement	220	3
+1899	fignolage	221	3
+1900	figuré, e	222	3
+1901	figurine	223	3
+1902	filabilité	224	3
+1903	filamenteux, euse	225	3
+1904	filé, e	226	3
+1905	filetage	227	3
+1906	filiale	228	3
+1907	filler	229	3
+1908	filmage	230	3
+1909	filterie	231	3
+1910	fin	232	3
+1911		233	3
+1912	finage	234	3
+1913	finale	235	3
+1914	financièrement	236	3
+1915	finette	237	3
+1916	finish	238	3
+1917	finn	239	3
+1918	fiscalité	240	3
+1919	fixateur, trice	241	3
+1920	fixisme	242	3
+1921	fjeld	243	3
+1922	flagada	244	3
+1923	flair	245	3
+1924	flambard	246	3
+1925	flamberge	247	3
+1926	flammé, e	248	3
+1927	flanc-garde	249	3
+1928	flâner	250	3
+1929	flanqueur	251	3
+1930	flatterie	252	3
+1931	flatulence	253	3
+1932	fléché, e	254	3
+1933	flegmatiquement	255	3
+1934	flétrissant, e	256	3
+1935	fleurage	257	3
+1936	fleuret	258	3
+1937	fleurissant, e	259	3
+1938	flexible	260	3
+1939	flicaille	261	3
+1940	floc !	262	3
+1941	flonger	263	3
+1942	floricole	264	3
+1943	flottaison	265	3
+1944	flotteron	266	3
+1945	flouerie	267	3
+1946	fluet, ette	268	3
+1947	fluorescéine	269	3
+1948	flûteau	270	3
+1949	fluxage	271	3
+1950	foie	272	3
+1951	foie-de-boeuf	273	3
+1952	foireux, euse	274	3
+1953	foisonner	275	3
+1954	folié, e	276	3
+1955	follette	277	3
+1956	fonceur	278	3
+1957		279	3
+1958		280	3
+1959		281	3
+1960		282	3
+1961		283	3
+1962	fonctionnaire	284	3
+1963		285	3
+1964	fondamental, e, aux	286	3
+1965	fonde	287	3
+1966	fondre	288	3
+1967	fondu, e	289	3
+1968	fontainebleau	290	3
+1969	forain, e	291	3
+1970		292	3
+1971	forcé, e	293	3
+1972	forcément	294	3
+1973	forcerie	295	3
+1974	forclore	296	3
+1975	forfaitaire	297	3
+1976	forgerie	298	3
+1977	formalisme	299	3
+1978	formatif, ive	300	3
+1979		301	3
+1980	formé, e	302	3
+1981	formeret	303	3
+1982	formidablement	304	3
+1983	formuler	305	3
+1984	forsythia	306	3
+1985		307	3
+1986	forte	308	3
+1987	forte-piano	309	3
+1988	fortitude	310	3
+1989	fortuné, e	311	3
+1990	fossé	312	3
+1991	fossilifère	313	3
+1992	fouace	314	3
+1993	foudrier	315	3
+1994	fouettage	316	3
+1995	fougasse	317	3
+1996	fouilleur, euse	318	3
+1997	foulant, e	319	3
+1998	foulerie	320	3
+1999	fourbe	321	3
+2000	fourbir	322	3
+2001	fourchet	323	3
+2002	fourgonnette	324	3
+2003	fourmiller	325	3
+2004	fournil	326	3
+2005	fournisseur, euse	327	3
+2006	fourreau	328	3
+2007	fourre-tout	329	3
+2008	fourvoiement	330	3
+2009	foutrebleu !	331	3
+2010	fra	332	3
+2011	fracasser	333	3
+2012	fragilement	334	3
+2013	fragmentation	335	3
+2014	fraîchissant, e	336	3
+2015		337	3
+2016	fraisage	338	3
+2017	framboisière	339	3
+2018	français, e	340	3
+2019	franchement	341	3
+2020	francique	342	3
+2021	francolin	343	3
+2022	frangeuse	344	3
+2023	frappe-devant	345	3
+2024	frappeur, euse	346	3
+2025	fraternitaire	347	3
+2026	frauduleusement	348	3
+2027	fredonnement	349	3
+2028	freinage	350	3
+2029	frémir	351	3
+2030	frénétiquement	352	3
+2031	frère	353	3
+2032	fresquiste	354	3
+2033	friabilité	355	3
+2034	fricoteur, euse	356	3
+2035	frigorifier	357	3
+2036	fringillidés	358	3
+2037	fripouillard	359	3
+2038	friser	360	3
+2039	frissonnant, e	361	3
+2040	friturier, ère	362	3
+2041		363	3
+2042	froidement	364	3
+2043	froissable	365	3
+2044	frôlure	366	3
+2045	froncé, e	367	3
+2046	front	368	3
+2047	frontail	369	3
+2048	frontogénétique	370	3
+2049	frotteur, euse	371	3
+2050	fructification	372	3
+2051	fruitage	373	3
+2052	fruition	374	3
+2053	fruticuleux, euse	375	3
+2054	fugué, e	376	3
+2055	fulgural, e, aux	377	3
+2056	fulminique	378	3
+2057	fumer	379	3
+2058	fumier	380	3
+2059	funambulesque	381	3
+2060	funicule	382	3
+2061	furfuracé, e	383	3
+2062	furioso	384	3
+2063	fusariose	385	3
+2064	fuséen	386	3
+2065	fusilier	387	3
+2066	fusuline	388	3
+2067	futur, e	389	3
+2068		390	3
+2069		391	3
+2070		392	3
+2071		393	3
+2072		394	3
+2073	futurisme	395	3
+2074		396	3
+2075	g	397	3
+2076	gabardine	398	3
+2077	gabegie	399	3
+2078	gâchette	400	3
+2079	gaga	401	3
+2080	gagne-petit	402	3
+2081	gagneur, euse	403	3
+2082	gaillardie	404	3
+2083	galactagogue	405	3
+2084	galanterie	406	3
+2085	galéasse	407	3
+2086	galérien	408	3
+2087	galfâtre	409	3
+2088	gallicanisme	410	3
+2089	galochier	411	3
+2090	galopeur, euse	412	3
+2091	galvanométrique	413	3
+2092	gambier	414	3
+2093	gamma	415	3
+2094	ganadería	416	3
+2095	gangstérisme	417	3
+2096	ganté, e	418	3
+2097	garant, e	419	3
+2098	garatisme	420	3
+2099	garçonne	421	3
+2100		422	3
+2101		423	3
+2102	gardé, e	424	3
+2103	garde-étalon	425	3
+2104	garde-manche	426	3
+2105		427	3
+2106	garde-rats	428	3
+2107	garde-scellés	429	3
+2108	gare	430	3
+2109	gargarisme	431	3
+2110	gargousserie	432	3
+2111	garnisonner	433	3
+2112	garouage	434	3
+2113	garus	435	3
+2114	gastéro-	436	3
+2115	gastropode	437	3
+2116	gâte-fête	438	3
+2117	gâthique	439	3
+2118	gauchement	440	3
+2119	gauchisant, e	441	3
+2120	gaufré, e	442	3
+2121	gauloisement	443	3
+2122	gavette	444	3
+2123	gazage	445	3
+2124	gazer	446	3
+2125	gazométrique	447	3
+2126	gecko	448	3
+2127	gelant, e	449	3
+2128	geleur, euse	450	3
+2129	géminé, e	451	3
+2130	gemmé, e	452	3
+2131	gendarmer (se)	453	3
+2132	généalogie	454	3
+2133	genera	455	3
+2134	généralement	456	3
+2135	génératif, ive	457	3
+2136		458	3
+2137		459	3
+2138		460	3
+2139		461	3
+2140		462	3
+2141		463	3
+2142		464	3
+2143		465	3
+2144		466	3
+2145	génération	467	3
+2146	générique	468	3
+2147	généthliologie	469	3
+2148	genièvre	470	3
+2149	géniture	471	3
+2150		472	3
+2151		473	3
+2152		474	3
+2153		475	3
+2154		476	3
+2155		477	3
+2156		478	3
+2157		479	3
+2158		480	3
+2159	gens	481	3
+2160	gentiane	482	3
+2161	gentilhomme	483	3
+2162	gentiment	484	3
+2163	géodésique	485	3
+2164	géométralement	486	3
+2165	géophyte	487	3
+2166	géranium-lierre	488	3
+2167	gerbillon	489	3
+2168	germanique	490	3
+2169	germicide	491	3
+2170		492	3
+2171		493	3
+2172		494	3
+2173	géronte	495	3
+2174	gérontocratie	496	3
+2175	gesticulant, e	497	3
+2176	gibbon	498	3
+2177	giboyer	499	3
+2178	gigantesquement	500	3
+2179	gigoter	501	3
+2180	gindre	502	3
+2181	girande	503	3
+2182	giroflier	504	3
+2183	giselle	505	3
+2184	githagisme	506	3
+2185	glace	507	3
+2186	glacerie	508	3
+2187	glaciale	509	3
+2188	glageon	510	3
+2189	glandaire	511	3
+2190	glapissement	512	3
+2191	gliome	513	3
+2192	glissette	514	3
+2193	globe-trotter	515	3
+2194	glome	516	3
+2195	glorieux, euse	517	3
+2196	gloseur, euse	518	3
+2197	gloussant, e	519	3
+2198	glucosé, e	520	3
+2199	glycogénolyse	521	3
+2200	gnole	522	3
+2201	goal	523	3
+2202	gobet	524	3
+2203	godiche	525	3
+2204	goguenard, e	526	3
+2205	golfe	527	3
+2206	gommier	528	3
+2207	gonfleur	529	3
+2208	gorge-de-pigeon	530	3
+2209	gorgonzola	531	3
+2210	gouaillerie	532	3
+2211	gouge	533	3
+2212	goule	534	3
+2213	goupiller	535	3
+2214	gourer	536	3
+2215	gourmé, e	537	3
+2216	gousse	538	3
+2217	goûter	539	3
+2218	goutte-à-goutte	540	3
+2219	gouvernable	541	3
+2220	gouvernementalisme	542	3
+2221	gouvernés	543	3
+2222		544	3
+2223	graciable	545	3
+2224	gracilaire	546	3
+2225	gradine	547	3
+2226	graillon	548	3
+2227	grainage	549	3
+2228	graisseur, euse	550	3
+2229		551	3
+2230		552	3
+2231		553	3
+2232	grammateus	554	3
+2233	Gramophone	555	3
+2234		556	3
+2235	grand-angulaire	557	3
+2236	grandesse	558	3
+2237	grandiloquence	559	3
+2238	grand-livre	560	3
+2239	granth	561	3
+2240	graphiquement	562	3
+2241	grappier, ère	563	3
+2242		564	3
+2243	gras-double	565	3
+2244	gratin	566	3
+2245	gratte-cul	567	3
+2246	grattoire	568	3
+2247	gravé, e	569	3
+2248	gravement	570	3
+2249	gravifique	571	3
+2250	graviter	572	3
+2251	grécisation	573	3
+2252	gréeur	574	3
+2253	grègues	575	3
+2254	grelottement	576	3
+2255	grenadine	577	3
+2256	grenouiller	578	3
+2257	grésillon	579	3
+2258	gribouillis	580	3
+2259	griffonnage	581	3
+2260	gril	582	3
+2261	grilloir	583	3
+2262	grimacerie	584	3
+2263	grimpart	585	3
+2264	grincher	586	3
+2265	grippal, e, aux	587	3
+2266	grisage	588	3
+2267	grisâtre	589	3
+2268	grisonnant, e	590	3
+2269	grivette	591	3
+2270	grogner	592	3
+2271	grolles	593	3
+2272	gros, grosse	594	3
+2273		595	3
+2274	gros-guillaume	596	3
+2275	grossier, ère	597	3
+2276	grossissant, e	598	3
+2277	grouillement	599	3
+2278	groupement	600	3
+2279	grue-console	601	3
+2280	grumelure	602	3
+2281	guède	603	3
+2282	guêpier	604	3
+2283	guérison	605	3
+2284	guerrier, ère	606	3
+2285	guêtre	607	3
+2286	gueule-bée	608	3
+2287	gueules	609	3
+2288	gui	610	3
+2289	guide-âne	611	3
+2290	guides	612	3
+2291	guignolade	613	3
+2292	guilloche	614	3
+2293	guimberge	615	3
+2294	guinderesse	616	3
+2295	guipure	617	3
+2296	guivré, e	618	3
+2297	guyanais, e	619	3
+2298	gymnoblaste	620	3
+2299	gypsage	621	3
+2300		622	3
+2301	h	623	3
+2302	ha !	624	3
+2303	habilement	625	3
+2304	habillé, e	626	3
+2305	habilleur, euse	627	3
+2306	habitat	628	3
+2307	habituel, elle	629	3
+2308	haché, e	630	3
+2309	hachette	631	3
+2310	hadal, e	632	3
+2311	haïk	633	3
+2312	haire	634	3
+2313	halement	635	3
+2314	haletant, e	636	3
+2315	hall	637	3
+2316	hallucination	638	3
+2317	halosel	639	3
+2318	hameau	640	3
+2319	hancher	641	3
+2320	hanteur, euse	642	3
+2321	haquet	643	3
+2322	harde	644	3
+2323	hardware	645	3
+2324	haricoter	646	3
+2325	harmonien, enne	647	3
+2326	harmonisation	648	3
+2327	haro	649	3
+2328	harpiste	650	3
+2329	hasardé, e	651	3
+2330	hasardeusement	652	3
+2331	hâtelet	653	3
+2332	hauban	654	3
+2333	hausse-queue	655	3
+2334		656	3
+2335	hautainement	657	3
+2336	haute-lissier, ère	658	3
+2337	haut-fond	659	3
+2338	haut-le-pied	660	3
+2339	havresac	661	3
+2340	hébergeur, euse	662	3
+2341	H. E. C.	663	3
+2342	hédrocèle	664	3
+2343	hélianthe	665	3
+2344	héligare	666	3
+2345	héliotropine	667	3
+2346	helminthe	668	3
+2347	hématoxyline	669	3
+2348	hémistiche	670	3
+2349	hendéca-	671	3
+2350	hépatisation	672	3
+2351	heracleum	673	3
+2352	herber	674	3
+2353	herboriser	675	3
+2354	héréditairement	676	3
+2355	hérissement	677	3
+2356	hérissonner	678	3
+2357	herméneutique	679	3
+2358	herniaire	680	3
+2359	héroïquement	681	3
+2360	herpès	682	3
+2361	hésiter	683	3
+2362	hétérochronie	684	3
+2363	hétéromère	685	3
+2364		686	3
+2365	heureusement	687	3
+2366	heureux, euse	688	3
+2367	heurtement	689	3
+2368	hexamètre	690	3
+2369		691	3
+2370	hibernal, e, aux	692	3
+2371	hideur	693	3
+2372	hiérarchique	694	3
+2373	hiéroglyphique	695	3
+2374	hilarité	696	3
+2375	hippocentaure	697	3
+2376	hirsute	698	3
+2377	histochimie	699	3
+2378	histologie	700	3
+2379	historiographe	701	3
+2380	hiver	702	3
+2381	hoc	703	3
+2382	hoir	704	3
+2383	holocristallin, e	705	3
+2384	homéostasie	706	3
+2385	homiliaire	707	3
+2386		708	3
+2387	homme-chien	709	3
+2388	homocinétique	710	3
+2389	homologuer	711	3
+2390		712	3
+2391	homonymie	713	3
+2392	homophone	714	3
+2393	honnêtement	715	3
+2394		716	3
+2395	honnir	717	3
+2396	honorifique	718	3
+2397	hop !	719	3
+2398	horde	720	3
+2399	horizonner	721	3
+2400	hormin	722	3
+2401	horrible	723	3
+2402	horrifiant, e	724	3
+2403	horsain	725	3
+2404	horst	726	3
+2405	hospitalisation	727	3
+2406	hostilement	728	3
+2407	hôtellerie	729	3
+2408	houe	730	3
+2409	houlette	731	3
+2410	houri	732	3
+2411	houssée	733	3
+2412	hucher	734	3
+2413	hui	735	3
+2414	huilé, e	736	3
+2415	huitain	737	3
+2416	huîtrier, ère	738	3
+2417	humanisable	739	3
+2418	humanitairerie	740	3
+2419	humblement	741	3
+2420	humicole	742	3
+2421	humifère	743	3
+2422	humoristique	744	3
+2423	hurler	745	3
+2424	hussarder	746	3
+2425	hybridisme	747	3
+2426	hydraviation	748	3
+2427	hydrofuger	749	3
+2428	hydrophile	750	3
+2429	hydrothérapique	751	3
+2430	hygiénique	752	3
+2431	hymenaea	753	3
+2432	hyosciamine	754	3
+2433	hyperboliquement	755	3
+2434	hyperespace	756	3
+2435	hypermétrie	757	3
+2436	hypersialie	758	3
+2437	hypertrophier	759	3
+2438	hypnotiseur, euse	760	3
+2439	hypocoristique	761	3
+2440	hypogée	762	3
+2441	hypostatique	763	3
+2442	hypothèse	764	3
+2443	hystér(o)-	765	3
+2444		766	3
+2445	i	767	3
+2446	ïambe	768	3
+2447	ibsénien, enne	769	3
+2448	ichtyosaure	770	3
+2449	iconoclastie	771	3
+2450	idéalement	772	3
+2451	idéaliste	773	3
+2452		774	3
+2453	idée-force	775	3
+2454	identification	776	3
+2455	idéogramme	777	3
+2456	idéo-moteur, trice	778	3
+2457	idiotisme	779	3
+2458	idylle	780	3
+2459	ignition	781	3
+2460	ignorant, e	782	3
+2461	iguane	783	3
+2462	ilang-ilang	784	3
+2463	iléo-	785	3
+2464	illégitimité	786	3
+2465	illogiquement	787	3
+2466	illuminisme	788	3
+2467	illusoire	789	3
+2468	illustrissime	790	3
+2469	imagé, e	791	3
+2470	imagier, ère	792	3
+2471	imaginer	793	3
+2472	imbécilement	794	3
+2473	imbibition	795	3
+2474	imitable	796	3
+2475	imiter	797	3
+2476	immangeable	798	3
+2477	immatriculer	799	3
+2478	immédiateté	800	3
+2479	immérité, e	801	3
+2480	imminent, e	802	3
+2481	immobilisme	803	3
+2482	immolation	804	3
+2483	immoraliste	805	3
+2484	immuabilité	806	3
+2485	immunogène	807	3
+2486	impairement	808	3
+2487		809	3
+2488		810	3
+2489		811	3
+2490		812	3
+2491		813	3
+2492		814	3
+2493		815	3
+2494	imparfaitement	816	3
+2495	impassibilité	817	3
+2496	impatientant, ante	818	3
+2497	impeignable	819	3
+2498	impératif, ive	820	3
+2499		821	3
+2500		822	3
+2501		823	3
+2502	impérativement	824	3
+2503	imperforation	825	3
+2504	impérissable	826	3
+2505	impersonnellement	827	3
+2506	impétigo	828	3
+2507	impitié	829	3
+2508	implexe	830	3
+2509	implorateur, trice	831	3
+2510	impondérabilité	832	3
+2511	importateur, trice	833	3
+2512	import-export	834	3
+2513	imposeur	835	3
+2514	impossession	836	3
+2515	imposte	837	3
+2516	impotence	838	3
+2517	imprécatoire	839	3
+2518	impréméditation	840	3
+2519	impressionnabilité	841	3
+2520	impressionnant, e	842	3
+2521	imprévoyant, e	843	3
+2522	imprimerie	844	3
+2523	improbité	845	3
+2524	impropriété	846	3
+2525	impubère	847	3
+2526	impuissant, e	848	3
+2527	impurement	849	3
+2528	imputréfiable	850	3
+2529	inaccommodable	851	3
+2530	inactinique	852	3
+2531	inaffecté, e	853	3
+2532	inamovible	854	3
+2533	inapaisé, e	855	3
+2534	inaptitude	856	3
+2535	inattaqué, e	857	3
+2536	inauthenticité	858	3
+2537	incantatoire	859	3
+2538	incarné, e	860	3
+2539	incendié, e	861	3
+2540	incessamment	862	3
+2541	incident, e	863	3
+2542	incise	864	3
+2543	inciter	865	3
+2544	inclination	866	3
+2545	inclure	867	3
+2546	incohérent, e	868	3
+2547	incommodant, e	869	3
+2548	incomparablement	870	3
+2549	incompréhensible	871	3
+2550	inconduite	872	3
+2551	inconsciemment	873	3
+2552	inconsidéré, e	874	3
+2553	inconstatable	875	3
+2554	inconvénient	876	3
+2555	incorrect, e	877	3
+2556	incouvé, e	878	3
+2557	incroyablement	879	3
+2558	incubation	880	3
+2559	incunable	881	3
+2560		882	3

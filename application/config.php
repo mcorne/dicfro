@@ -370,15 +370,15 @@ return array(
 
         'grand-larousse' => array(
             'created'        => '2013-09-16',
-            'description'    => 'Grand Larousse de la langue française (A - Cip), 1971-1978',
-            'description-en' => 'The Grand Larousse of the French language (A - Cip), 1971-1978',
+            'description'    => 'Grand Larousse de la langue française (A - Inc), 1971-1978',
+            'description-en' => 'The Grand Larousse of the French language (A - Inc), 1971-1978',
             'image'          => 'grand-larousse.jpg',
             'language'       => 'fr',
-            'name'           => 'Grand Larousse (A-Cip)',
+            'name'           => 'Grand Larousse (A-Inc)',
             'parser'         => array(
                 'class'      => 'Model_Parser_Index',
                 'properties' => array(
-                    'wordSeparator' => '~[, ]~',
+                    'wordSeparator' => '~[,]~',
                 )
             ),
             'search'         => array(
@@ -396,6 +396,7 @@ return array(
             ),
             'title'          => 'G. Larousse',
             'type'           => 'index',
+            'updated'        => '2013-09-17',
             'volume'         => 'readonly',
         ),
 
