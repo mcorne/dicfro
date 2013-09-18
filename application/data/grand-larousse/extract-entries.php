@@ -76,14 +76,14 @@ function extract_volume_entries($volume, $entries, $last_word)
                 // removes * prefix, ex. "*haché"
                 $copy = $word;
                 $word = substr($word, 1);
-                $fixes[$page] = "fixed $copy => $word";
+                $fixes[$page] = "fixed: $copy => $word";
             }
 
             if (preg_match('~^([a-z]) \\1$~', $word, $match)) {
                 // this is a double entry for a letter, ex. "i i"
                 $copy = $word;
                 $word = $match[1];
-                $fixes[$page] = "fixed $copy => $word";
+                $fixes[$page] = "fixed: $copy => $word";
             }
 
             $words = explode(' ou ', $word);
@@ -91,7 +91,7 @@ function extract_volume_entries($volume, $entries, $last_word)
                 // removes variants, ex. balluchon ou baluchon
                 $copy = $word;
                 $word = $words[0];
-                $fixes[$page] = "fixed $copy => $word";
+                $fixes[$page] = "fixed: $copy => $word";
             }
 
             if (strpos($word, '- ') or strpos($word, ' -')) {
@@ -99,12 +99,22 @@ function extract_volume_entries($volume, $entries, $last_word)
                 $copy = $word;
                 $word = str_replace('- ', '-', $word);
                 $word = str_replace(' -', '-', $word);
-                $fixes[$page] = "fixed $copy => $word";
+                $fixes[$page] = "fixed: $copy => $word";
             }
 
-            $ascii = Base_String::_utf8toASCII($word);
+            // excludes inflexions, ex. "passé,e" to keep "passé" only instead of "passée" because there is a the word "passé" after
+            list($base_word) = explode(',', $word);
+            $ascii = Base_String::_utf8toASCII($base_word);
 
-            if (preg_match('~[«»]~u', $word) or                // excludes citations etc.
+            if (strpos($base_word, ' ')) {
+                $fixes[$page] = "space inside: $word";
+            }
+
+            if (substr($base_word, -1) == 's') {
+                // $fixes[$page] = "plural: $word";
+            }
+
+            if (preg_match('~[«»<>]~u', $word) or              // excludes citations etc.
                 isset($excluded_entries[$word]) and            // excludes specific words, possibly for a given page
                     ($excluded_entries[$word] === true or in_array($page, $excluded_entries[$word])) or
                 isset($prev_ascii) and $ascii < $prev_ascii or // excludes word before previous word
@@ -204,13 +214,13 @@ function print_fixes($fixes)
         return null;
     }
 
-    $fixes[] = null; // adds extra new line
-
     foreach ($fixes as $page => &$fixe) {
         $fixe = "($page) $fixe";
     }
 
-    return implode("\n", $fixes);
+    $fixes = implode("\n", $fixes) . "\n";
+
+    return Base_String::_utf8ToInternalString($fixes);
 }
 
 function write_index($entries, $number)
