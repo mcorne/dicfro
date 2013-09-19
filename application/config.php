@@ -48,7 +48,7 @@ return array(
         ),
 
         'century' => array(
-            'created'      => '2013-13-14',
+            'created'      => '2013-04-14',
             'description'  => 'The Century dictionary, an encyclopedic lexicon of the English language, William D. Whitney, 1895',
             'image'        => 'century-dictionary.jpg',
             'introduction' => 'century-dictionary.phtml',
@@ -75,7 +75,7 @@ return array(
         ),
 
         'century-supplement' => array(
-            'created'      => '2013-13-18',
+            'created'      => '2013-04-18',
             'description'  => 'The Century dictionary supplement, Benjamin E. Smith, 1909',
             'image'        => 'century-supplement.jpg',
             'language'     => 'en',
@@ -370,11 +370,11 @@ return array(
 
         'grand-larousse' => array(
             'created'        => '2013-09-16',
-            'description'    => 'Grand Larousse de la langue française (A - Psi), 1971-1978',
-            'description-en' => 'The Grand Larousse of the French language (A - Psi), 1971-1978',
+            'description'    => 'Grand Larousse de la langue française (A - Sur), 1971-1978',
+            'description-en' => 'The Grand Larousse of the French language (A - Sur), 1971-1978',
             'image'          => 'grand-larousse.jpg',
             'language'       => 'fr',
-            'name'           => 'Grand Larousse (A-Psi)',
+            'name'           => 'Grand Larousse (A-Sur)',
             'parser'         => array(
                 'class'      => 'Model_Parser_Index',
                 'properties' => array(
@@ -396,7 +396,7 @@ return array(
             ),
             'title'          => 'G. Larousse',
             'type'           => 'index',
-            'updated'        => '2013-09-18',
+            'updated'        => '2013-09-19',
             'volume'         => 'readonly',
         ),
 

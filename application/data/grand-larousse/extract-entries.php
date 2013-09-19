@@ -15,6 +15,8 @@ require_once '../../Base/String.php';
 
 function extract_entries($number)
 {
+    mb_internal_encoding('UTF-8');
+
     $volumes = array(
         1 => array('first_page' => 1   , 'last_page' => 722 , 'first_image' => 105, 'last_image' => 826 , 'last_word' => 'cippe'),
         2 => array('first_page' => 723 , 'last_page' => 1686, 'first_image' => 9  , 'last_image' => 972 , 'last_word' => 'érythrose'), // page 1686 is blank
@@ -41,6 +43,7 @@ function extract_volume_entries($volume, $entries, $last_word)
     $excluded_entries = load_excluded_entries($volume);
     $replaced_entries = load_replaced_entries($volume);
     $last_ascii = Base_String::_utf8toASCII($last_word);
+    $prev_ascii = null;
     $fixes = array();
 
     foreach($lines as $line) {
@@ -72,52 +75,18 @@ function extract_volume_entries($volume, $entries, $last_word)
                 }
             }
 
-            if ($word[0] == '*') {
-                // removes * prefix, ex. "*haché"
-                $copy = $word;
-                $word = substr($word, 1);
-                $fixes[$page] = "fixed: $copy => $word";
-            }
-
-            if (preg_match('~^([a-z]) \\1$~', $word, $match)) {
-                // this is a double entry for a letter, ex. "i i"
-                $copy = $word;
-                $word = $match[1];
-                $fixes[$page] = "fixed: $copy => $word";
-            }
-
-            $words = explode(' ou ', $word);
-            if (isset($words[1])) {
-                // removes variants, ex. balluchon ou baluchon
-                $copy = $word;
-                $word = $words[0];
-                $fixes[$page] = "fixed: $copy => $word";
-            }
-
-            if (strpos($word, '- ') or strpos($word, ' -')) {
-                // removes spaces around "-"
-                $copy = $word;
-                $word = str_replace('- ', '-', $word);
-                $word = str_replace(' -', '-', $word);
-                $fixes[$page] = "fixed: $copy => $word";
-            }
+            list($word, $fixes) = fix_word($word, $fixes, $page);
 
             // excludes inflexions, ex. "passé,e" to keep "passé" only instead of "passée" because there is a the word "passé" after
             list($base_word) = explode(',', $word);
             $ascii = Base_String::_utf8toASCII($base_word);
 
-            if (strpos($base_word, ' ')) {
-                $fixes[$page] = "space inside: $word";
-            }
-
-            if (substr($base_word, -1) == 's') {
-                // $fixes[$page] = "plural: $word";
-            }
+            $fixes = set_warnings($word, $base_word, $fixes, $page, $ascii, $prev_ascii, $entries);
 
             if (preg_match('~[«»<>]~u', $word) or              // excludes citations etc.
                 isset($excluded_entries[$word]) and            // excludes specific words, possibly for a given page
                     ($excluded_entries[$word] === true or in_array($page, $excluded_entries[$word])) or
-                isset($prev_ascii) and $ascii < $prev_ascii or // excludes word before previous word
+                isset($prev_ascii) and $ascii <= $prev_ascii or // excludes word before previous word
                 $ascii > $last_ascii)                          // excludes word after the last word
             {
                 // this is a false positive
@@ -152,6 +121,41 @@ function fix_loaded_entries($entries)
     }
 
     return $fixed;
+}
+
+function fix_word($word, $fixes, $page)
+{
+    if ($word[0] == '*') {
+        // removes * prefix, ex. "*haché"
+        $copy = $word;
+        $word = substr($word, 1);
+        $fixes[$page] = "fixed: $copy => $word";
+    }
+
+    if (preg_match('~^([a-z]) \\1$~', $word, $match)) {
+        // this is a double entry for a letter, ex. "i i"
+        $copy = $word;
+        $word = $match[1];
+        $fixes[$page] = "fixed: $copy => $word";
+    }
+
+    $words = explode(' ou ', $word);
+    if (isset($words[1])) {
+        // removes variants, ex. balluchon ou baluchon
+        $copy = $word;
+        $word = $words[0];
+        $fixes[$page] = "fixed: $copy => $word";
+    }
+
+    if (strpos($word, '- ') or strpos($word, ' -')) {
+        // removes spaces around "-"
+        $copy = $word;
+        $word = str_replace('- ', '-', $word);
+        $word = str_replace(' -', '-', $word);
+        $fixes[$page] = "fixed: $copy => $word";
+    }
+
+    return array($word, $fixes);
 }
 
 function implode_entry($entry)
@@ -221,6 +225,27 @@ function print_fixes($fixes)
     $fixes = implode("\n", $fixes) . "\n";
 
     return Base_String::_utf8ToInternalString($fixes);
+}
+
+function set_warnings($word, $base_word, $fixes, $page, $ascii, $prev_ascii, $entries)
+{
+    if (strpos($base_word, ' ')) {
+        $fixes[$page] = "space inside: $word";
+    }
+
+    if (substr($base_word, -1) == 's') {
+        // $fixes[$page] = "plural: $word";
+    }
+
+    if (mb_substr($base_word, -1) == 'é' and ! empty($entries[$page -1 ]['word']) and $ascii != $prev_ascii) {
+        // the entry is similar to a previous entry in the previous page
+        // ex. "stylé, e" (SYTLE) in current page, "stylaire" (STYLAIRE) in previous page
+        // but there is also "style" (STYLE) in previous page which will not be found when searching "style"
+        $candidate = mb_substr($base_word, 0, -1) . 'e';
+        $fixes[$page] = "change: $word if $candidate is a word and in previous page";
+    }
+
+    return $fixes;
 }
 
 function write_index($entries, $number)

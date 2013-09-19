@@ -73,7 +73,7 @@ page	entries	image	volume
 72	aérien, enne	176	1
 73	aéronaval, e, als	177	1
 74	affadissant, e	178	1
-75	affairé, e	179	1
+75	affairement	179	1
 76	affaisser	180	1
 77	affecter	181	1
 78	affectivité	182	1
@@ -86,7 +86,7 @@ page	entries	image	volume
 85	affublement	189	1
 86	africanité	190	1
 87	agatisation	191	1
-88	âgé, e	192	1
+88	agence	192	1
 89	agenouilloir	193	1
 90	agérate	194	1
 91	agglutinatif, ive	195	1
@@ -147,7 +147,7 @@ page	entries	image	volume
 146	aménorrhée	250	1
 147	amertume	251	1
 148	amiable	252	1
-149	aminé, e	253	1
+149	amiral	253	1
 150	ammonite	254	1
 151	amollissant, e	255	1
 152	amorçoir	256	1
@@ -178,7 +178,7 @@ page	entries	image	volume
 177	annihilation	281	1
 178	annotateur, trice	282	1
 179	anomal, e, aux	283	1
-180	ansé, e	284	1
+180	ansériformes	284	1
 181	antéchrist	285	1
 182	anthologie	286	1
 183	anthyllis	287	1
@@ -237,7 +237,7 @@ page	entries	image	volume
 236	argumentation	340	1
 237	aristo	341	1
 238	arithmétiquement	342	1
-239	armé, e	343	1
+239	armée	343	1
 240	armet	344	1
 241	armoriste	345	1
 242	arpègement	346	1
@@ -332,7 +332,7 @@ page	entries	image	volume
 331	avant-guerre	435	1
 332	avaricieusement	436	1
 333	aveindre	437	1
-334	aventuré, e	438	1
+334	aventurer	438	1
 335	aversion	439	1
 336	aveuglement	440	1
 337	avidité	441	1
@@ -376,7 +376,7 @@ page	entries	image	volume
 375	basal, e, aux	479	1
 376	basaner	480	1
 377	base-ball	481	1
-378	basqué, e	482	1
+378	basquine	482	1
 379	basse-taille	483	1
 380	bastidon	484	1
 381	batailler	485	1
@@ -412,7 +412,7 @@ page	entries	image	volume
 411	bestial, e, aux	515	1
 412	bétel	516	1
 413	bêtiser	517	1
-414	beurré	518	1
+414	beurrée	518	1
 415	biaisé, e	519	1
 416	bibliobus	520	1
 417	bicentenaire	521	1
@@ -481,7 +481,7 @@ page	entries	image	volume
 480	bourdonner	584	1
 481	bourgeoisant, e	585	1
 482	bourgeonner	586	1
-483	bourré, e	587	1
+483	bourreau	587	1
 484	bourrette	588	1
 485	bourse	589	1
 486	boursoufler	590	1
@@ -506,7 +506,7 @@ page	entries	image	volume
 505	breneux, euse	609	1
 506	breuvage	610	1
 507	bricheton	611	1
-508	bridé, e	612	1
+508	brider	612	1
 509	briffeton	613	1
 510	briguer	614	1
 511	brillantine	615	1
@@ -599,8 +599,8 @@ page	entries	image	volume
 598	cartonnage	702	1
 599	caryopse	703	1
 600	cascabelle	704	1
-601	caserné, e	705	1
-602	casqué, e	706	1
+601	casernement	705	1
+602	casquer	706	1
 603	casse-assiettes	707	1
 604	casserole	708	1
 605	cassie	709	1
@@ -664,11 +664,11 @@ page	entries	image	volume
 663	chapuiser	767	1
 664	charbonnage	768	1
 665	charentais, e	769	1
-666	chargé, e	770	1
+666	chargement	770	1
 667	chargeuse	771	1
 668	charlatanerie	772	1
 669	charmille	773	1
-670	charpenté, e	774	1
+670	charpenter	774	1
 671	charrieur	775	1
 672	chartrier	776	1
 673	chasse-cousin	777	1
@@ -702,7 +702,7 @@ page	entries	image	volume
 701	chinois, e	805	1
 702	chipoter	806	1
 703	chirographe	807	1
-704	chloré, e	808	1
+704	chlorhydrate	808	1
 705	chocnosoff	809	1
 706	choisir	810	1
 707	chômé, e	811	1
@@ -4647,3 +4647,1123 @@ page	entries	image	volume
 4646	psellion	1036	5
 4647	pseudonymie	1037	5
 4648	psittacidés	1038	5
+4649	psoas	9	6
+4650	psychanalyser	10	6
+4651		11	6
+4652		12	6
+4653		13	6
+4654		14	6
+4655		15	6
+4656		16	6
+4657		17	6
+4658		18	6
+4659		19	6
+4660		20	6
+4661		21	6
+4662		22	6
+4663		23	6
+4664		24	6
+4665	psychoanaleptique	25	6
+4666	psychologique	26	6
+4667	psychologisme	27	6
+4668	psychopédagogie	28	6
+4669	psychostasie	29	6
+4670	ptérion	30	6
+4671	ptoléméen, enne	31	6
+4672	puantise	32	6
+4673	publicain	33	6
+4674	publication	34	6
+4675	publipostage	35	6
+4676	pucerotte	36	6
+4677	pudibond, e	37	6
+4678	puérilement	38	6
+4679	puisage	39	6
+4680	puissamment	40	6
+4681	puissant, e	41	6
+4682	puits	42	6
+4683	pulicaire	43	6
+4684	pulmonaire	44	6
+4685	pulsatille	45	6
+4686	pulvérisé, e	46	6
+4687	puncheur	47	6
+4688	punt	48	6
+4689	pureau	49	6
+4690	pureté	50	6
+4691	purgeoir	51	6
+4692	puriforme	52	6
+4693	purulence	53	6
+4694	putativement	54	6
+4695	P.-V.	55	6
+4696	pyr(o)-	56	6
+4697	pyrodynamique	57	6
+4698	pyrosulfurique	58	6
+4699	q	59	6
+4700	quadriépointé, e	60	6
+4701	quadripartition	61	6
+4702	quakerisme	62	6
+4703		63	6
+4704		64	6
+4705	quant à	65	6
+4706		66	6
+4707	quantitométrique	67	6
+4708	quarderonner	68	6
+4709	quartefeuille	69	6
+4710	quartier-maître	70	6
+4711	quaternaire	71	6
+4712	quatre-vingt(s)	72	6
+4713		73	6
+4714	québécois, e	74	6
+4715	quémander	75	6
+4716	quereller	76	6
+4717	questionnaire	77	6
+4718	queue	78	6
+4719	queue-de-mouton	79	6
+4720	quichenotte	80	6
+4721	quinaire	81	6
+4722	quinquennat	82	6
+4723	quintessencié, e	83	6
+4724	quirat	84	6
+4725	qui vive ?	85	6
+4726	quotidien, enne	86	6
+4727	r	87	6
+4728	ra	88	6
+4729	rabaissant, e	89	6
+4730	rabat-eau	90	6
+4731	rabattu, e	91	6
+4732	rabatture	92	6
+4733	rabiotage	93	6
+4734	rabote	94	6
+4735	rabouilleur, euse	95	6
+4736	raccommodeur, euse	96	6
+4737	raccourcir	97	6
+4738	raccrochement	98	6
+4739	racémeux, euse	99	6
+4740	rachevage	100	6
+4741	racineau	101	6
+4742	racler	102	6
+4743	racon	103	6
+4744	radariste	104	6
+4745	radiateur	105	6
+4746	radicalaire	106	6
+4747	radiesthésie	107	6
+4748	radiobaliser	108	6
+4749	radiogalaxie	109	6
+4750	radiologique	110	6
+4751	radio-pirate	111	6
+4752	radiothérapie	112	6
+4753	radoucissement	113	6
+4754	raffinement	114	6
+4755	rafistoleur, euse	115	6
+4756	rafraîchissement	116	6
+4757	rageusement	117	6
+4758	raguer	118	6
+4759	rai-de-coeur	119	6
+4760	raidissage	120	6
+4761	railbond	121	6
+4762	railroute	122	6
+4763	raisiné	123	6
+4764		124	6
+4765		125	6
+4766	raisonnable	126	6
+4767	raisonnablement	127	6
+4768	raisonneur, euse	128	6
+4769	rajeunissant, e	129	6
+4770	râlant, e	130	6
+4771	râler	131	6
+4772	rallier	132	6
+4773	rallongi	133	6
+4774	ramager	134	6
+4775	ramasse-couverts	135	6
+4776	ramassette	136	6
+4777	ramastiquer	137	6
+4778	raméal, e, aux	138	6
+4779	ramenable	139	6
+4780	rameneret	140	6
+4781	rameutement	141	6
+4782	ramifier	142	6
+4783	ramollo	143	6
+4784	rampeau	144	6
+4785	rampiste	145	6
+4786	rancarder	146	6
+4787	rancissure	147	6
+4788	rand	148	6
+4789	range	149	6
+4790	rangée	150	6
+4791	rangette	151	6
+4792	ranine	152	6
+4793	rapatronnage	153	6
+4794	râperie	154	6
+4795	râpeux, euse	155	6
+4796	rapidement	156	6
+4797	rapinade	157	6
+4798	rappelable	158	6
+4799	rappliquer	159	6
+4800	rapportage	160	6
+4801	rapporteur, euse	161	6
+4802	rapprocher	162	6
+4803	rare	163	6
+4804	rarissime	164	6
+4805	rasé, e	165	6
+4806	rassade	166	6
+4807	rassérénant, e	167	6
+4808	rat, rate	168	6
+4809	ratatouille	169	6
+4810	ratelle	170	6
+4811	ratifier	171	6
+4812	rationaliste	172	6
+4813	ratisser	173	6
+4814	raturage	174	6
+4815	ravageant, e	175	6
+4816	ravaudeur, euse	176	6
+4817	ravineux, euse	177	6
+4818	ravitailleur, euse	178	6
+4819	rayonnage	179	6
+4820	rayonnement	180	6
+4821	réactance	181	6
+4822	réactionnaire	182	6
+4823	réajustement	183	6
+4824	réalisme	184	6
+4825	réaménagement	185	6
+4826	rebatteret	186	6
+4827	rébellion	187	6
+4828	rebondissement	188	6
+4829	rebrousse	189	6
+4830	rebutant, e	190	6
+4831	recel	191	6
+4832	recépée	192	6
+4833	réceptionnaire	193	6
+4834	recevabilité	194	6
+4835	réchampir	195	6
+4836	réchauffant, e	196	6
+4837	rechercher	197	6
+4838	récidiviste	198	6
+4839	réciproquement	199	6
+4840	récitation	200	6
+4841	réclamier	201	6
+4842	récliner	202	6
+4843	récoler	203	6
+4844	recommandable	204	6
+4845	recommençant, e	205	6
+4846	récompenser	206	6
+4847	réconcilier	207	6
+4848	reconnaissable	208	6
+4849	reconnu, e	209	6
+4850	reconquête	210	6
+4851	recoquiller	211	6
+4852	recoupement	212	6
+4853	recouvrable	213	6
+4854	recréateur, trice	214	6
+4855	recroiser	215	6
+4856	recruitement	216	6
+4857	rectangularité	217	6
+4858	rectifieur	218	6
+4859		219	6
+4860	rectite	220	6
+4861	rectoscope	221	6
+4862	recuire	222	6
+4863	recul	223	6
+4864	reculer	224	6
+4865	récupération	225	6
+4866	récurrent, e	226	6
+4867	recycler	227	6
+4868	redéfaire	228	6
+4869	redescente	229	6
+4870	rédimé, e	230	6
+4871	redit	231	6
+4872	redormir	232	6
+4873	redoul	233	6
+4874	redresser	234	6
+4875	réductibilité	235	6
+4876	réductionnel, elle	236	6
+4877	réduit, e	237	6
+4878	réduite	238	6
+4879	réédition	239	6
+4880	réembauchage	240	6
+4881	réexpédition	241	6
+4882	réfectoire	242	6
+4883	référendariat	243	6
+4884	réfléchir	244	6
+4885	reflètement	245	6
+4886	réflexion	246	6
+4887	refondre	247	6
+4888	reformer	248	6
+4889	reformulation	249	6
+4890	refouloir	250	6
+4891	réfrangibilité	251	6
+4892	refroidissement	252	6
+4893	réfugier (se)	253	6
+4894	refuser	254	6
+4895	regagner	255	6
+4896	régalec	256	6
+4897	regardant, e	257	6
+4898		258	6
+4899	regardeur, euse	259	6
+4900	régénérant, e	260	6
+4901	régenter	261	6
+4902	régimage	262	6
+4903	régiment	263	6
+4904	régional, e, aux	264	6
+4905	régissant, e	265	6
+4906	réglable	266	6
+4907		267	6
+4908	règlement	268	6
+4909	réglementairement	269	6
+4910	réglet	270	6
+4911	régnant, e	271	6
+4912	régolite	272	6
+4913	regrattage	273	6
+4914	regrettable	274	6
+4915	regretteur, euse	275	6
+4916	régulateur, trice	276	6
+4917	régule	277	6
+4918	régulièrement	278	6
+4919	rehaussage	279	6
+4920	réincarnation	280	6
+4921	réintégration	281	6
+4922	rejet	282	6
+4923	rejointoiement	283	6
+4924	relâchement	284	6
+4925	relaisser (se)	285	6
+4926		286	6
+4927		287	6
+4928		288	6
+4929		289	6
+4930		290	6
+4931		291	6
+4932		292	6
+4933		293	6
+4934		294	6
+4935		295	6
+4936		296	6
+4937		297	6
+4938		298	6
+4939	relation	299	6
+4940	relationné, e	300	6
+4941	relaxothérapie	301	6
+4942	relevailles	302	6
+4943		303	6
+4944	relève-rail	304	6
+4945	religion	305	6
+4946	reliquaire	306	6
+4947	reluquer	307	6
+4948	remarquablement	308	6
+4949	remblayer	309	6
+4950	remédiable	310	6
+4951	remémorer	311	6
+4952		312	6
+4953	remeubler	313	6
+4954	remis, e	314	6
+4955	remisier	315	6
+4956	remmener	316	6
+4957	remonter	317	6
+4958	remontoir	318	6
+4959	remorquer	319	6
+4960	rempiètement	320	6
+4961	remplier	321	6
+4962	remplisseur, euse	322	6
+4963	remuement	323	6
+4964	remueur, euse	324	6
+4965	renaissant, e	325	6
+4966	renarde	326	6
+4967	rencontrer	327	6
+4968	rendement	328	6
+4969	rendu, e	329	6
+4970	renégat, e	330	6
+4971	renfoncer	331	6
+4972	rengagement	332	6
+4973	reniflement	333	6
+4974	renoncer	334	6
+4975	renouvelable	335	6
+4976	renseigner	336	6
+4977	renting	337	6
+4978	rentrer	338	6
+4979	rentrure	339	6
+4980	renverser	340	6
+4981	renvoi	341	6
+4982	réordination	342	6
+4983	répandeur	343	6
+4984	repapilloter	344	6
+4985	réparer	345	6
+4986	répartissable	346	6
+4987	repasseur, euse	347	6
+4988	repenser	348	6
+4989	reperceur, euse	349	6
+4990	répertoire	350	6
+4991	répétiteur, trice	351	6
+4992	repiqueur, euse	352	6
+4993	repliable	353	6
+4994	répliqueur, euse	354	6
+4995	répons	355	6
+4996	reporter	356	6
+4997	reposant, e	357	6
+4998	repose-tête	358	6
+4999	repousseur	359	6
+5000	représailles	360	6
+5001	représentatif, ive	361	6
+5002	représentativement	362	6
+5003	repressage	363	6
+5004	repriser	364	6
+5005	reprochable	365	6
+5006	reproductivité	366	6
+5007	réprouver	367	6
+5008	républicaniser	368	6
+5009	répugnant, e	369	6
+5010	réputation	370	6
+5011	requête	371	6
+5012	requis, e	372	6
+5013	resarcelé, e	373	6
+5014	résécable	374	6
+5015	réservat	375	6
+5016		376	6
+5017	réserver	377	6
+5018	réserviste	378	6
+5019	résident, e	379	6
+5020	résignable	380	6
+5021	résilience	381	6
+5022	résipiscence	382	6
+5023	résistanciel, elle	383	6
+5024	résistible	384	6
+5025	résolument	385	6
+5026	résonateur, trice	386	6
+5027	résorciné, e	387	6
+5028	respectabilité	388	6
+5029	respirabilité	389	6
+5030	resplendir	390	6
+5031	ressac	391	6
+5032	ressemblant, e	392	6
+5033	resserre	393	6
+5034	resservir	394	6
+5035	ressortant, e	395	6
+5036	ressouvenance	396	6
+5037	ressuscitation	397	6
+5038	restaurant-pont	398	6
+5039	rester	399	6
+5040	restituable	400	6
+5041	restituteur	401	6
+5042	restringent, e	402	6
+5043	résupination	403	6
+5044	rétablissement	404	6
+5045	retardataire	405	6
+5046	retendoir	406	6
+5047	rétenteur, trice	407	6
+5048	réticence	408	6
+5049	réticulo-sarcome	409	6
+5050	retirer	410	6
+5051	retirette	411	6
+5052	retombement	412	6
+5053	retorderie	413	6
+5054	retour	414	6
+5055	retournage	415	6
+5056	retournement	416	6
+5057		417	6
+5058	retourneur	418	6
+5059	retraitant, e	419	6
+5060	retranchement	420	6
+5061	retravailler	421	6
+5062	rétroactivement	422	6
+5063	rétroposition	423	6
+5064	rétroversé, e	424	6
+5065	réunir	425	6
+5066	revalenta	426	6
+5067	revasculariser	427	6
+5068	réveilleur, euse	428	6
+5069	révélé, e	429	6
+5070	revendre	430	6
+5071	revente	431	6
+5072	revenue	432	6
+5073	réverbérer	433	6
+5074	révérenciel, elle	434	6
+5075	revernir	435	6
+5076	reverse (en)	436	6
+5077	reversoir	437	6
+5078	revêtu, e	438	6
+5079	rêveusement	439	6
+5080	réviseur	440	6
+5081	revival	441	6
+5082	révocabilité	442	6
+5083	rêvoir	443	6
+5084	révolu, e	444	6
+5085	révolutionnaire	445	6
+5086	revolver	446	6
+5087	révulser	447	6
+5088	rhabillage	448	6
+5089	rhénium	449	6
+5090		450	6
+5091		451	6
+5092		452	6
+5093		453	6
+5094		454	6
+5095		455	6
+5096		456	6
+5097		457	6
+5098		458	6
+5099		459	6
+5100		460	6
+5101	rhétoriqueur	461	6
+5102	rhinocérotidés	462	6
+5103	rhizome	463	6
+5104	rhodophycées	464	6
+5105	rhumatisant, e	465	6
+5106	rhynchophore	466	6
+5107	ribauderie	467	6
+5108	ricanerie	468	6
+5109	riche	469	6
+5110	richissime	470	6
+5111	ricochet	471	6
+5112	ridée	472	6
+5113	ridicule	473	6
+5114	ridule	474	6
+5115	riesling	475	6
+5116	rififi	476	6
+5117	rigoler	477	6
+5118	rillauds	478	6
+5119		479	6
+5120		480	6
+5121		481	6
+5122		482	6
+5123		483	6
+5124	rimé, e	484	6
+5125	rimeur, euse	485	6
+5126	ringard	486	6
+5127	riposter	487	6
+5128	ris	488	6
+5129	risiblement	489	6
+5130	risque-tout	490	6
+5131	rituale	491	6
+5132	rivelaine	492	6
+5133	rivetage	493	6
+5134	rizaire	494	6
+5135	rober	495	6
+5136	robine	496	6
+5137	robotisation	497	6
+5138	rocade	498	6
+5139	rochage	499	6
+5140	roche-réservoir	500	6
+5141	rocking-chair	501	6
+5142	roder	502	6
+5143	rodeuse	503	6
+5144	roger-bontemps	504	6
+5145	rognerie	505	6
+5146	rogommeux, euse	506	6
+5147		507	6
+5148		508	6
+5149	roie	509	6
+5150	rôler	510	6
+5151	rôlet	511	6
+5152	romaine	512	6
+5153	romançage	513	6
+5154	romancine	514	6
+5155	romaniste	515	6
+5156	romérage	516	6
+5157	rompu, e	517	6
+5158	romsteck	518	6
+5159		519	6
+5160	rondache	520	6
+5161	rondelet, ette	521	6
+5162	rondine	522	6
+5163	ronflotter	523	6
+5164	ronier	524	6
+5165	roquillard	525	6
+5166	rose	526	6
+5167	rose-croix	527	6
+5168	roseur	528	6
+5169	rossignolade	529	6
+5170	rotatif, ive	530	6
+5171	rôtissage	531	6
+5172	roturièrement	532	6
+5173	roudoudou	533	6
+5174	rouelle	534	6
+5175		535	6
+5176	rougeard	536	6
+5177	rough	537	6
+5178	rouilleuse	538	6
+5179	roule	539	6
+5180	roulé-boulé	540	6
+5181	rouler	541	6
+5182	roule-ta-bosse	542	6
+5183	roulier, ère	543	6
+5184	round	544	6
+5185	rousse	545	6
+5186	roussir	546	6
+5187		547	6
+5188	router	548	6
+5189	routinièrement	549	6
+5190	royalement	550	6
+5191	royauté	551	6
+5192	rubaner	552	6
+5193	rubicelle	553	6
+5194	rubrite	554	6
+5195	rudement	555	6
+5196	rudiste	556	6
+5197	rueur, euse	557	6
+5198	ruine-de-Rome	558	6
+5199	ruineux, euse	559	6
+5200	ruisson	560	6
+5201	runcaire	561	6
+5202	rural, e, aux	562	6
+5203	russien, enne	563	6
+5204	rustiquement	564	6
+5205	ruthène	565	6
+5206	rythmer	566	6
+5207		567	6
+5208		568	6
+5209		569	6
+5210		570	6
+5211		571	6
+5212		572	6
+5213	rythmeur, euse	573	6
+5214		574	6
+5215	s	575	6
+5216	sabler	576	6
+5217	sablonnier	577	6
+5218	sabotier	578	6
+5219	saccade	579	6
+5220	saccharimètre	580	6
+5221	sacramentel, elle	581	6
+5222	sacret	582	6
+5223	sacristie	583	6
+5224	sadomasochisme	584	6
+5225	sagacité	585	6
+5226	sagesse	586	6
+5227	sagitté, e	587	6
+5228	saignement	588	6
+5229	sailler	589	6
+5230	sainfoin	590	6
+5231	saint-benoît	591	6
+5232	Saint-Esprit	592	6
+5233	Saint-Siège	593	6
+5234	saisir-arrêter	594	6
+5235	saison	595	6
+5236	saké	596	6
+5237	salaison	597	6
+5238	salauderie	598	6
+5239	salègre	599	6
+5240	salicorne	600	6
+5241	saline	601	6
+5242	salix	602	6
+5243	salol	603	6
+5244	saloperie	604	6
+5245	salpingectomie	605	6
+5246	saltique	606	6
+5247	salure	607	6
+5248	salutaire	608	6
+5249	samare	609	6
+5250	samoyède	610	6
+5251	sanction	611	6
+5252	sanctus	612	6
+5253	Sanforisage	613	6
+5254	san-gavino	614	6
+5255	sanglade	615	6
+5256	sanglier	616	6
+5257	sanguinaire	617	6
+5258	sannion	618	6
+5259	sanskritiste	619	6
+5260	santilite	620	6
+5261	saperde	621	6
+5262	sapientiaux	622	6
+5263	sapotacées	623	6
+5264	sarcastiquement	624	6
+5265	sarcoplasma	625	6
+5266	sardoniquement	626	6
+5267	sarrasinage	627	6
+5268	sassage	628	6
+5269	satellite	629	6
+5270	satinade	630	6
+5271	satisfactoire	631	6
+5272	satisfecit	632	6
+5273	saturer	633	6
+5274	satyreau	634	6
+5275	sauciflard	635	6
+5276	saugrenuité	636	6
+5277	saumurer	637	6
+5278	saurel	638	6
+5279	sautade	639	6
+5280	sautée	640	6
+5281	sautereau	641	6
+5282	sauterie	642	6
+5283	sautillon	643	6
+5284	sauvagement	644	6
+5285	sauvagin, e	645	6
+5286	sauvetage	646	6
+5287	sauvignon	647	6
+5288	saveur	648	6
+5289	savoir-faire	649	6
+5290	savonnage	650	6
+5291	saxifragacées	651	6
+5292	scalaire	652	6
+5293	scandaliser	653	6
+5294	scaphandridés	654	6
+5295	scaridés	655	6
+5296	sceau-cylindre	656	6
+5297	sceller	657	6
+5298	scenic railway	658	6
+5299	sceptiquement	659	6
+5300	schématiquement	660	6
+5301	schisme	661	6
+5302	schizoïde	662	6
+5303	schnock	663	6
+5304	sciemment	664	6
+5305	scientifique	665	6
+5306	scinque	666	6
+5307	scissi-	667	6
+5308	scléro-choroïdite	668	6
+5309	scolairement	669	6
+5310	scolie	670	6
+5311	scorification	671	6
+5312	scottique	672	6
+5313	scribouillard	673	6
+5314	scrupuleusement	674	6
+5315	sculier	675	6
+5316	scutellum	676	6
+5317	séant, e	677	6
+5318	sébeste	678	6
+5319		679	6
+5320	sécabilité	680	6
+5321	sèche-cheveux	681	6
+5322	sécheresse	682	6
+5323	second, e	683	6
+5324	secondaire	684	6
+5325	secondairement	685	6
+5326	secouage	686	6
+5327	secoueur, euse	687	6
+5328	secousse	688	6
+5329	secrétage	689	6
+5330	secrétaire-rédacteur	690	6
+5331	secréter	691	6
+5332	sectile	692	6
+5333	sectionale	693	6
+5334	séculairement	694	6
+5335	sedan	695	6
+5336	sédimentologique	696	6
+5337	segmentaire	697	6
+5338	seiche	698	6
+5339	sein	699	6
+5340	séjourner	700	6
+5341	sélection	701	6
+5342	selenicereus	702	6
+5343	self-inductance	703	6
+5344	sellée	704	6
+5345	selva	705	6
+5346	semainier, ère	706	6
+5347		707	6
+5348		708	6
+5349		709	6
+5350		710	6
+5351		711	6
+5352		712	6
+5353	sémantisme	713	6
+5354	semblablement	714	6
+5355	sème	715	6
+5356	semen-contra	716	6
+5357	semi-conducteur	717	6
+5358	séminal, e, aux	718	6
+5359		719	6
+5360		720	6
+5361		721	6
+5362	sémiologique	722	6
+5363		723	6
+5364		724	6
+5365		725	6
+5366	semi-ouvré, e	726	6
+5367	semi-public, ique	727	6
+5368	semoule	728	6
+5369	sénatorien, enne	729	6
+5370	sénevé	730	6
+5371		731	6
+5372		732	6
+5373	sensass	733	6
+5374	sensé, e	734	6
+5375	sensible	735	6
+5376	sensiblement	736	6
+5377	sensiblerie	737	6
+5378	sensori-tonique	738	6
+5379	sentencié, e	739	6
+5380		740	6
+5381	sentimental, e, aux	741	6
+5382	sentir	742	6
+5383		743	6
+5384	seoir	744	6
+5385	séparateur-aspirateur	745	6
+5386	séparément	746	6
+5387	sépé	747	6
+5388	septemvir	748	6
+5389	septime	749	6
+5390	séqué, e	750	6
+5391	séquestrectomie	751	6
+5392	séranceur	752	6
+5393	sérénissime	753	6
+5394	sergent-chef	754	6
+5395	séricite	755	6
+5396	sérier	756	6
+5397	serin, e	757	6
+5398	sermon	758	6
+5399	sérosanguin, e	759	6
+5400	serpenteau	760	6
+5401	serpiérite	761	6
+5402	serre-bijoux	762	6
+5403	serre-papiers	763	6
+5404	serre-tête	764	6
+5405	servante	765	6
+5406		766	6
+5407	serviette	767	6
+5408		768	6
+5409	servites	769	6
+5410	servo-	770	6
+5411	sétacé, e	771	6
+5412	seulement	772	6
+5413	sévices	773	6
+5414	sexisme	774	6
+5415	sextupler	775	6
+5416	shako	776	6
+5417	shipchandler	777	6
+5418		778	6
+5419	sial	779	6
+5420	sibyllin, e	780	6
+5421	sidéralité	781	6
+5422	siège	782	6
+5423	siéger	783	6
+5424	siennois, e	784	6
+5425	sifflet	785	6
+5426	sifilet	786	6
+5427	signalé, e	787	6
+5428	signalétique	788	6
+5429		789	6
+5430	signer	790	6
+5431	significativement	791	6
+5432	silencer	792	6
+5433	silésienne	793	6
+5434	siliciuration	794	6
+5435	sillonner	795	6
+5436	silybe	796	6
+5437	similigraveur	797	6
+5438		798	6
+5439	simplement	799	6
+5440	simplifier	800	6
+5441	simuler	801	6
+5442	sincèrement	802	6
+5443	singer	803	6
+5444	singulièrement	804	6
+5445	sinophile	805	6
+5446	sinusoïde	806	6
+5447	sirène	807	6
+5448	sis, e	808	6
+5449	sitaris	809	6
+5450	situationnisme	810	6
+5451	situer	811	6
+5452	six-huit	812	6
+5453	ski	813	6
+5454	slavisant, e	814	6
+5455	sludge	815	6
+5456	S.N.C.F.	816	6
+5457	sobriquet	817	6
+5458	social-démocrate	818	6
+5459	socialiser	819	6
+5460		820	6
+5461	socinianisme	821	6
+5462		822	6
+5463		823	6
+5464		824	6
+5465		825	6
+5466		826	6
+5467	sociologie	827	6
+5468	socratiquement	828	6
+5469	soeurette	829	6
+5470	soi-disant	830	6
+5471	soif	831	6
+5472	soigneusement	832	6
+5473	soirée	833	6
+5474	soixante-quinze	834	6
+5475	solanacées	835	6
+5476	soldate	836	6
+5477	soldeur, euse	837	6
+5478	soleillade	838	6
+5479	solennellement	839	6
+5480	solère	840	6
+5481	solidarisme	841	6
+5482	solidement	842	6
+5483	solitaire	843	6
+5484	sollicitation	844	6
+5485	solognot, e	845	6
+5486	solutionnement	846	6
+5487	somato-agnosie	847	6
+5488	sombrer	848	6
+5489	sommatoire	849	6
+5490	sommeil	850	6
+5491	sommer	851	6
+5492	sommité	852	6
+5493	somnoler	853	6
+5494	sonagramme	854	6
+5495	sonante	855	6
+5496	sonder	856	6
+5497	songerie	857	6
+5498	sonnaille	858	6
+5499	sonnerie	859	6
+5500	sonneur, euse	860	6
+5501	sonorisation	861	6
+5502	sophistiquement	862	6
+5503	sorbé, e	863	6
+5504	sordide	864	6
+5505	sortable	865	6
+5506	sorti, e	866	6
+5507	sortie-de-bain	867	6
+5508		868	6
+5509	S.O.S.	869	6
+5510	sosie	870	6
+5511	sottisier	871	6
+5512	souahéli, e,	872	6
+5513	souchet	873	6
+5514	soucier	874	6
+5515	soudabilité	875	6
+5516	souder	876	6
+5517	soue	877	6
+5518		878	6
+5519	soufflé, e	879	6
+5520		880	6
+5521	soufflerie	881	6
+5522	souffleur, euse	882	6
+5523	souffre-douleur	883	6
+5524	souffroir	884	6
+5525	soufrer	885	6
+5526	souillard, e	886	6
+5527	soukier	887	6
+5528	soûlaison	888	6
+5529	soûlerie	889	6
+5530	soulier	890	6
+5531	soûlographe	891	6
+5532	soumis	892	6
+5533	soumissionnaire	893	6
+5534	soupçonnable	894	6
+5535	soupente	895	6
+5536	soupeser	896	6
+5537	soupirail	897	6
+5538	souple	898	6
+5539	souplement	899	6
+5540	souquetage	900	6
+5541	sourcier, ère	901	6
+5542	sourcilleusement	902	6
+5543	sourdaud, e	903	6
+5544	sourdiner	904	6
+5545	souriceau	905	6
+5546	souris	906	6
+5547	sournoisement	907	6
+5548		908	6
+5549	sous-acétate	909	6
+5550	sous-barbe	910	6
+5551	sous-chauffer	911	6
+5552	sous-crépitant	912	6
+5553	sous-cutané, e	913	6
+5554	sous-entendre	914	6
+5555	sous-évaluer	915	6
+5556	sous-industrialisation	916	6
+5557	sous-maître	917	6
+5558	sous-occupation	918	6
+5559	sous-planage	919	6
+5560	sous-quadruple	920	6
+5561	soussigner	921	6
+5562	soustraction	922	6
+5563	soustylaire	923	6
+5564	soutanelle	924	6
+5565		925	6
+5566	soutenu, e	926	6
+5567	soutien-gorge	927	6
+5568	souvenir-écran	928	6
+5569	souverain, e	929	6
+5570	soviet	930	6
+5571	spagirie	931	6
+5572	spartium	932	6
+5573	spatuler	933	6
+5574	spécialité	934	6
+5575	spécifique	935	6
+5576	spectral, e, aux	936	6
+5577	spectroscopie	937	6
+5578	spéculos	938	6
+5579	spermatocyte	939	6
+5580	sphéricité	940	6
+5581	sphygmographie	941	6
+5582	spiral, e, aux	942	6
+5583	spirituel, elle	943	6
+5584	spirométrie	944	6
+5585	splénographie	945	6
+5586	spontané, e	946	6
+5587	sporotriche	947	6
+5588	sportswear	948	6
+5589	squalidité	949	6
+5590	squelettique	950	6
+5591	stabiliser	951	6
+5592	stabulation	952	6
+5593	stagiarisation	953	6
+5594	stalle	954	6
+5595	standardisation	955	6
+5596	staphylin, e	956	6
+5597	statère	957	6
+5598	stationnaire	958	6
+5599	statique	959	6
+5600		960	6
+5601		961	6
+5602		962	6
+5603		963	6
+5604		964	6
+5605		965	6
+5606		966	6
+5607	statistiquement	967	6
+5608	statue-bloc	968	6
+5609	stayer	969	6
+5610	stelis	970	6
+5611	sténobiote	971	6
+5612	stéphanois, e	972	6
+5613	stéréochimique	973	6
+5614	stéréotaxique	974	6
+5615	stérilement	975	6
+5616	sternal, e, aux	976	6
+5617	stick	977	6
+5618	stilboestrol	978	6
+5619	stimulus	979	6
+5620	stockage	980	6
+5621	stoïquement	981	6
+5622	stopper	982	6
+5623	stramonium	983	6
+5624	stratégique	984	6
+5625	strepto-	985	6
+5626	strictement	986	6
+5627	stridulatoire	987	6
+5628	striole	988	6
+5629	stromatée	989	6
+5630		990	6
+5631		991	6
+5632		992	6
+5633		993	6
+5634		994	6
+5635	strophique	995	6
+5636	structural, e, aux	996	6
+5637		997	6
+5638		998	6
+5639		999	6
+5640		1000	6
+5641	structuraliste	1001	6
+5642	structurel, elle	1002	6
+5643	strumiprive	1003	6
+5644	stupéfaction	1004	6
+5645	stupide	1005	6
+5646	stylaire	1006	6
+5647	styler	1007	6
+5648		1008	6
+5649		1009	6
+5650		1010	6
+5651		1011	6
+5652		1012	6
+5653	stylite	1013	6
+5654	styphnite	1014	6
+5655	subalternisation	1015	6
+5656	subduction	1016	6
+5657	subjacent, e	1017	6
+5658		1018	6
+5659		1019	6
+5660		1020	6
+5661		1021	6
+5662		1022	6
+5663		1023	6
+5664		1024	6
+5665		1025	6
+5666		1026	6
+5667		1027	6
+5668	subjugation	1028	6
+5669	sublatif	1029	6
+5670	sublimité	1030	6
+5671	suborbital, e, aux	1031	6
+5672		1032	6
+5673		1033	6
+5674	subordinément	1034	6
+5675	subrécargue	1035	6
+5676	subsidence	1036	6
+5677	subspontané, e	1037	6
+5678	substantif, ive	1038	6
+5679	substitutif, ive	1039	6
+5680	substruction	1040	6
+5681	subtilisation	1041	6
+5682	subventionner	1042	6
+5683	succenturié, e	1043	6
+5684	succession	1044	6
+5685	succomber	1045	6
+5686	succursalisme	1046	6
+5687	suçon	1047	6
+5688	sucrer	1048	6
+5689	sud	1049	6
+5690	sudoripare	1050	6
+5691	suerie	1051	6
+5692	suffisamment	1052	6
+5693	suffisant, e	1053	6
+5694	suffragant	1054	6
+5695	suggestible	1055	6
+5696	suiffage	1056	6
+5697		1057	6
+5698	suitée	1058	6
+5699	suivisme	1059	6
+5700	sujet, ette	1060	6
+5701		1061	6
+5702		1062	6
+5703		1063	6
+5704	sujétion	1064	6
+5705	sulamite	1065	6
+5706	sulfidoseur	1066	6
+5707	sulfurifère	1067	6
+5708	sunamite	1068	6
+5709	superbement	1069	6
+5710	superfétatoire	1070	6
+5711	superfin, e	1071	6
+5712	supérieurement	1072	6
+5713	superinvolution	1073	6
+5714	superman	1074	6
+5715	superréaction	1075	6
+5716	suppéditer	1076	6
+5717	supplément	1077	6
+5718	supplétif, ive	1078	6
+5719	suppliciant, e	1079	6
+5720	supportable	1080	6
+5721	supposable	1081	6
+5722	supposer	1082	6
+5723	suppositoire	1083	6
+5724	suppurant, e	1084	6
+5725	supraconductivité	1085	6
+5726	suprêmement	1086	6
+5727		1087	6
+5728	sûr, e	1088	6
+5729		1089	6
+5730	surabondamment	1090	6
+5731	surabonder	1091	6
+5732	suralimenter	1092	6
+5733	surbaissement	1093	6
+5734	surcharger	1094	6
+5735	surchauffeur	1095	6
+5736	surcomprimé	1096	6
+5737	surcroître	1097	6
+5738	surdorure	1098	6
+5739	suréminent, e	1099	6
+5740	suréquiper	1100	6
+5741		1101	6
+5742	surévaluation	1102	6
+5743	surexposer	1103	6
+5744		1104	6
+5745	surfacer	1105	6
+5746	surforage	1106	6
+5747	surglacé	1107	6
+5748	surimposer	1108	6
+5749	surintendante	1109	6
+5750	surlargeur	1110	6
+5751	surmontage	1111	6
+5752	surmontoir	1112	6
+5753	surnaturaliste	1113	6
+5754	surnumérariat	1114	6
+5755	surpâturage	1115	6
+5756	surplus	1116	6
+5757	surpresseur	1117	6
+5758	surprise	1118	6
+5759	surprix	1119	6
+5760	surrection	1120	6
+5761	sursauter	1121	6
+5762	sursollicitation	1122	6
+5763	surtravail	1123	6
+5764	surveillé, e	1124	6
+5765	survente	1125	6
+5766	survivancier	1126	6
+5767	survol	1127	6
+5768		1128	6
