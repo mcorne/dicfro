@@ -739,7 +739,7 @@ page	entries	image	volume
 738	claire	24	2
 739	claironner	25	2
 740	clangoreux, euse	26	2
-741	claqué, e	27	2
+741	claquebois	27	2
 742	claqueur	28	2
 743	classement	29	2
 744	classification	30	2
@@ -785,7 +785,7 @@ page	entries	image	volume
 784	colubriformes	70	2
 785	combattre	71	2
 786	combinard, e	72	2
-787	comblé, e	73	2
+787	comblement	73	2
 788	comédien, enne	74	2
 789	comiquement	75	2
 790	commandement	76	2
@@ -817,7 +817,7 @@ page	entries	image	volume
 816	complémentaire	102	2
 817		103	2
 818	complet, ète	104	2
-819	complétif, ive	105	2
+819	complètement	105	2
 820	complication	106	2
 821	compliquer	107	2
 822	composé, e	108	2
@@ -898,7 +898,7 @@ page	entries	image	volume
 897		183	2
 898	conséquent, e	184	2
 899	conservation	185	2
-900	conservé, e	186	2
+900	conserver	186	2
 901	consignataire	187	2
 902	consistant, e	188	2
 903	consoler	189	2
@@ -960,7 +960,7 @@ page	entries	image	volume
 959	coquetterie	245	2
 960	coquinet, ette	246	2
 961	corbeille	247	2
-962	cordé, e	248	2
+962	cordeau	248	2
 963	corder	249	2
 964	cordon-bleu	250	2
 965	cornacées	251	2
@@ -978,12 +978,12 @@ page	entries	image	volume
 977	cosécante	263	2
 978	cosmopolitisme	264	2
 979	costumer	265	2
-980	coté, e	266	2
-981	côtelé, e	267	2
+980		266	2
+981	coteau	267	2
 982	cotillon	268	2
 983	coton-poudre	269	2
 984	couac	270	2
-985	couché, e	271	2
+985	couche-culotte	271	2
 986	coucherie	272	2
 987	cou-de-cygne	273	2
 988	coufique	274	2
@@ -994,20 +994,20 @@ page	entries	image	volume
 993	coumarine	279	2
 994		280	2
 995	coupable	281	2
-996	coupé, e	282	2
+996	coupe-batterie	282	2
 997	coupelle	283	2
 998	coupe-racines	284	2
 999	couplet	285	2
 1000	courable	286	2
 1001	courante	287	2
-1002	courbaturé, e	288	2
+1002	courbaturer	288	2
 1003	courge	289	2
 1004	courlis	290	2
 1005	courre	291	2
 1006	courroux	292	2
 1007	course-croisière	293	2
 1008	court, e	294	2
-1009	courtement	295	2
+1009	court-bouillon	295	2
 1010	courtiser	296	2
 1011	coussin	297	2
 1012	coutellerie	298	2
@@ -1119,7 +1119,7 @@ page	entries	image	volume
 1118	déconcertement	404	2
 1119	décontamination	405	2
 1120	décoré, e	406	2
-1121	découpé, e	407	2
+1121	découper	407	2
 1122	décousure	408	2
 1123	décramponner	409	2
 1124	décréter	410	2
@@ -1170,7 +1170,7 @@ page	entries	image	volume
 1169	démarreur	455	2
 1170	démembrement	456	2
 1171	démerdard	457	2
-1172	demeuré, e	458	2
+1172	demeurer	458	2
 1173	demi-aile	459	2
 1174	demi-coupé	460	2
 1175	demi-mondain, e	461	2
@@ -1369,8 +1369,8 @@ page	entries	image	volume
 1368	dormitif, ive	654	2
 1369	dosable	655	2
 1370	dossière	656	2
-1371	doublé, e	657	2
-1372	double-étoffe	658	2
+1371	double-as	657	2
+1372	double-deux	658	2
 1373	doublon	659	2
 1374	douche	660	2
 1375	douelle	661	2
@@ -1407,12 +1407,12 @@ page	entries	image	volume
 1406		692	2
 1407		693	2
 1408		694	2
-1409	é-	695	2
+1409	eau	695	2
 1410	eaubénitier	696	2
 1411	ébarbeur, euse	697	2
 1412	ébauchon	698	2
 1413	éborgnage	699	2
-1414	ébouriffé, e	700	2
+1414	ébouriffer	700	2
 1415	ébrasement	701	2
 1416	éburnation	702	2
 1417	écaillure	703	2
@@ -1565,7 +1565,7 @@ page	entries	image	volume
 1564	enchaîner	850	2
 1565	enchaperonner	851	2
 1566	enchérissement	852	2
-1567	enclavé, e	853	2
+1567	enclavement	853	2
 1568	enclôture	854	2
 1569	encolleur, euse	855	2
 1570	encorder	856	2
@@ -1614,7 +1614,7 @@ page	entries	image	volume
 1613	entendre	899	2
 1614	entendu, e	900	2
 1615	entérocolite	901	2
-1616	entêté, e	902	2
+1616	entêtement	902	2
 1617	entichement	903	2
 1618	entôleur, euse	904	2
 1619	entortillage	905	2
@@ -1631,7 +1631,7 @@ page	entries	image	volume
 1630	entretenu, e	916	2
 1631	entretoiser	917	2
 1632	énumérer	918	2
-1633	enveloppé, e	919	2
+1633	enveloppement	919	2
 1634	envi (à l’)	920	2
 1635	enviné, e	921	2
 1636	envoilement	922	2
@@ -1652,7 +1652,7 @@ page	entries	image	volume
 1651	épigénique	937	2
 1652	épiler	938	2
 1653	épinéphèle	939	2
-1654	épinglé, e	940	2
+1654	épingler	940	2
 1655	épiphyse	941	2
 1656	épisodique	942	2
 1657		943	2
@@ -1687,7 +1687,7 @@ page	entries	image	volume
 1686		972	2
 1687	ès	9	3
 1688	escadronner	10	3
-1689	escalopé, e	11	3
+1689	escaloper	11	3
 1690	escarcelle	12	3
 1691	escarpin	13	3
 1692	esclavager	14	3
@@ -1707,7 +1707,7 @@ page	entries	image	volume
 1706	essuie-meubles	28	3
 1707	estamper	29	3
 1708	esthéticien, enne	30	3
-1709	estimé, e	31	3
+1709	estimer	31	3
 1710	estocade	32	3
 1711	estrade	33	3
 1712	et	34	3
@@ -1726,7 +1726,7 @@ page	entries	image	volume
 1725	ethnographique	47	3
 1726	étinceler	48	3
 1727	étiqueter	49	3
-1728	étoffé, e	50	3
+1728	étoffement	50	3
 1729	étoilement	51	3
 1730	étonnure	52	3
 1731	étouffeur, euse	53	3
@@ -1817,7 +1817,7 @@ page	entries	image	volume
 1816	fadet, ette	138	3
 1817	fagoteur, euse	139	3
 1818	faiblement	140	3
-1819	faïencé, e	141	3
+1819	faïencerie	141	3
 1820	faillite	142	3
 1821	fainéantise	143	3
 1822		144	3
@@ -1868,7 +1868,7 @@ page	entries	image	volume
 1867	fenugrec	189	3
 1868	féra, férat ou ferrat	190	3
 1869	fériable	191	3
-1870	fermé, e	192	3
+1870		192	3
 1871	fermement	193	3
 1872		194	3
 1873	fermeté	195	3
@@ -1883,8 +1883,8 @@ page	entries	image	volume
 1882		204	3
 1883		205	3
 1884	feudataire	206	3
-1885	feuillagé, e	207	3
-1886	feuillé, e	208	3
+1885	feuillagiste	207	3
+1886	feuille-de-sauge	208	3
 1887	feuilleter	209	3
 1888	feutrage	210	3
 1889	fiabilité	211	3
@@ -1898,11 +1898,11 @@ page	entries	image	volume
 1897	fier-à-bras	219	3
 1898	fiévreusement	220	3
 1899	fignolage	221	3
-1900	figuré, e	222	3
+1900	figurément	222	3
 1901	figurine	223	3
 1902	filabilité	224	3
 1903	filamenteux, euse	225	3
-1904	filé, e	226	3
+1904	filer	226	3
 1905	filetage	227	3
 1906	filiale	228	3
 1907	filler	229	3
@@ -1924,13 +1924,13 @@ page	entries	image	volume
 1923	flair	245	3
 1924	flambard	246	3
 1925	flamberge	247	3
-1926	flammé, e	248	3
+1926	flammèche	248	3
 1927	flanc-garde	249	3
 1928	flâner	250	3
 1929	flanqueur	251	3
 1930	flatterie	252	3
 1931	flatulence	253	3
-1932	fléché, e	254	3
+1932	flécher	254	3
 1933	flegmatiquement	255	3
 1934	flétrissant, e	256	3
 1935	fleurage	257	3
@@ -1952,7 +1952,7 @@ page	entries	image	volume
 1951	foie-de-boeuf	273	3
 1952	foireux, euse	274	3
 1953	foisonner	275	3
-1954	folié, e	276	3
+1954	folio	276	3
 1955	follette	277	3
 1956	fonceur	278	3
 1957		279	3
@@ -1987,8 +1987,8 @@ page	entries	image	volume
 1986	forte	308	3
 1987	forte-piano	309	3
 1988	fortitude	310	3
-1989	fortuné, e	311	3
-1990	fossé	312	3
+1989	forum	311	3
+1990	fosserage	312	3
 1991	fossilifère	313	3
 1992	fouace	314	3
 1993	foudrier	315	3
@@ -2043,7 +2043,7 @@ page	entries	image	volume
 2042	froidement	364	3
 2043	froissable	365	3
 2044	frôlure	366	3
-2045	froncé, e	367	3
+2045	froncement	367	3
 2046	front	368	3
 2047	frontail	369	3
 2048	frontogénétique	370	3
@@ -2052,7 +2052,7 @@ page	entries	image	volume
 2051	fruitage	373	3
 2052	fruition	374	3
 2053	fruticuleux, euse	375	3
-2054	fugué, e	376	3
+2054	fuguer	376	3
 2055	fulgural, e, aux	377	3
 2056	fulminique	378	3
 2057	fumer	379	3
@@ -2101,7 +2101,7 @@ page	entries	image	volume
 2100		422	3
 2101		423	3
 2102	gardé, e	424	3
-2103	garde-étalon	425	3
+2103	garde-chiourme	425	3
 2104	garde-manche	426	3
 2105		427	3
 2106	garde-rats	428	3
@@ -2118,7 +2118,7 @@ page	entries	image	volume
 2117	gâthique	439	3
 2118	gauchement	440	3
 2119	gauchisant, e	441	3
-2120	gaufré, e	442	3
+2120	gaufrer	442	3
 2121	gauloisement	443	3
 2122	gavette	444	3
 2123	gazage	445	3
@@ -2128,7 +2128,7 @@ page	entries	image	volume
 2127	gelant, e	449	3
 2128	geleur, euse	450	3
 2129	géminé, e	451	3
-2130	gemmé, e	452	3
+2130	gemmer	452	3
 2131	gendarmer (se)	453	3
 2132	généalogie	454	3
 2133	genera	455	3
@@ -2196,7 +2196,7 @@ page	entries	image	volume
 2195	glorieux, euse	517	3
 2196	gloseur, euse	518	3
 2197	gloussant, e	519	3
-2198	glucosé, e	520	3
+2198	glucoserie	520	3
 2199	glycogénolyse	521	3
 2200	gnole	522	3
 2201	goal	523	3
@@ -2245,7 +2245,7 @@ page	entries	image	volume
 2244	gratin	566	3
 2245	gratte-cul	567	3
 2246	grattoire	568	3
-2247	gravé, e	569	3
+2247	gravelage	569	3
 2248	gravement	570	3
 2249	gravifique	571	3
 2250	graviter	572	3
@@ -2272,7 +2272,7 @@ page	entries	image	volume
 2271	grolles	593	3
 2272	gros, grosse	594	3
 2273		595	3
-2274	gros-guillaume	596	3
+2274	gros-bec	596	3
 2275	grossier, ère	597	3
 2276	grossissant, e	598	3
 2277	grouillement	599	3
@@ -2294,7 +2294,7 @@ page	entries	image	volume
 2293	guimberge	615	3
 2294	guinderesse	616	3
 2295	guipure	617	3
-2296	guivré, e	618	3
+2296	guizada	618	3
 2297	guyanais, e	619	3
 2298	gymnoblaste	620	3
 2299	gypsage	621	3
@@ -2306,7 +2306,7 @@ page	entries	image	volume
 2305	habilleur, euse	627	3
 2306	habitat	628	3
 2307	habituel, elle	629	3
-2308	haché, e	630	3
+2308	hache-bâché, e	630	3
 2309	hachette	631	3
 2310	hadal, e	632	3
 2311	haïk	633	3
@@ -2412,7 +2412,7 @@ page	entries	image	volume
 2411	houssée	733	3
 2412	hucher	734	3
 2413	hui	735	3
-2414	huilé, e	736	3
+2414	huiler	736	3
 2415	huitain	737	3
 2416	huîtrier, ère	738	3
 2417	humanisable	739	3
@@ -2467,7 +2467,7 @@ page	entries	image	volume
 2466	illuminisme	788	3
 2467	illusoire	789	3
 2468	illustrissime	790	3
-2469	imagé, e	791	3
+2469	image-orthicon	791	3
 2470	imagier, ère	792	3
 2471	imaginer	793	3
 2472	imbécilement	794	3
@@ -2537,7 +2537,7 @@ page	entries	image	volume
 2536	inauthenticité	858	3
 2537	incantatoire	859	3
 2538	incarné, e	860	3
-2539	incendié, e	861	3
+2539	incendier	861	3
 2540	incessamment	862	3
 2541	incident, e	863	3
 2542	incise	864	3
@@ -2629,7 +2629,7 @@ page	entries	image	volume
 2628		76	4
 2629		77	4
 2630	informationnel, elle	78	4
-2631	informé, e	79	4
+2631	informel, elle	79	4
 2632	infra	80	4
 2633	infréquenté, e	81	4
 2634	infusoir	82	4
@@ -2734,8 +2734,8 @@ page	entries	image	volume
 2733	inversible	181	4
 2734	investissement	182	4
 2735	invinciblement	183	4
-2736	invité, e	184	4
-2737	involucré, e	185	4
+2736	inviter	184	4
+2737	involuté, e	185	4
 2738	iodémie	186	4
 2739	iono-	187	4
 2740	irathérapie	188	4
@@ -2769,7 +2769,7 @@ page	entries	image	volume
 2768	jalap	216	4
 2769	jaloux, ouse	217	4
 2770	jambage	218	4
-2771	jambé, e	219	4
+2771	jamber	219	4
 2772	jambette	220	4
 2773	janin	221	4
 2774	japonaiserie	222	4
@@ -2820,7 +2820,7 @@ page	entries	image	volume
 2819	jubarte	267	4
 2820	juchoir	268	4
 2821	judiciairement	269	4
-2822	jugé, e	270	4
+2822	jugeable	270	4
 2823	jugeote	271	4
 2824	juguler	272	4
 2825	julienne	273	4
@@ -2872,7 +2872,7 @@ page	entries	image	volume
 2871	laminage	319	4
 2872	lampe	320	4
 2873	lampon	321	4
-2874	lancé, e	322	4
+2874	lance-bombes	322	4
 2875	lance-roquettes	323	4
 2876	lanciner	324	4
 2877		325	4
@@ -2898,14 +2898,14 @@ page	entries	image	volume
 2897	largement	345	4
 2898	larghetto	346	4
 2899	larme-de-Job	347	4
-2900	larvé, e	348	4
+2900	larveux, euse	348	4
 2901	las !	349	4
 2902	Lastex	350	4
 2903	laticifère	351	4
 2904	latiniste	352	4
 2905	latticinio	353	4
 2906	lavabilité	354	4
-2907	lavé, e	355	4
+2907	lave-dos	355	4
 2908	lave-racines	356	4
 2909	laxatif, ive	357	4
 2910		358	4
@@ -2929,7 +2929,7 @@ page	entries	image	volume
 2928	lésinerie	376	4
 2929	lestage	377	4
 2930	léthéen, enne	378	4
-2931	lettré, e	379	4
+2931	lettrer	379	4
 2932	leucémie	380	4
 2933	leurs	381	4
 2934	lève-cadre	382	4
@@ -2984,7 +2984,7 @@ page	entries	image	volume
 2983	limnétique	431	4
 2984	limonière	432	4
 2985	linacé, e	433	4
-2986	lingé, e	434	4
+2986	linger, ère	434	4
 2987	lingue	435	4
 2988		436	4
 2989		437	4
@@ -3002,7 +3002,7 @@ page	entries	image	volume
 3001	lionceau	449	4
 3002	lipoprotéique	450	4
 3003	liquidable	451	4
-3004	liquidé, e	452	4
+3004	liquidement	452	4
 3005	liron	453	4
 3006	lisant, e	454	4
 3007	lisière	455	4
@@ -3056,10 +3056,10 @@ page	entries	image	volume
 3055	lumignon	503	4
 3056	luminescent, e	504	4
 3057	lunaison	505	4
-3058	luné, e	506	4
-3059	lunetté, e	507	4
+3058	lunel	506	4
+3059	lunetterie	507	4
 3060	lupulin	508	4
-3061	lustré, e	509	4
+3061	lustrer	509	4
 3062	luthé, e	510	4
 3063	lutter	511	4
 3064	luxembourgeois, e	512	4
@@ -3072,7 +3072,7 @@ page	entries	image	volume
 3071	macérer	519	4
 3072	machette	520	4
 3073	machination	521	4
-3074	machiné, e	522	4
+3074	machine-frein	522	4
 3075	machiniste	523	4
 3076	macis	524	4
 3077	macouba	525	4
@@ -3088,7 +3088,7 @@ page	entries	image	volume
 3087	maguey	535	4
 3088	maid	536	4
 3089	maigri, e	537	4
-3090	maillé, e	538	4
+3090	maillechort	538	4
 3091	mailleur, euse	539	4
 3092		540	4
 3093		541	4
@@ -3127,7 +3127,7 @@ page	entries	image	volume
 3126	mancipé, e	574	4
 3127	mandataire	575	4
 3128	mandoliniste	576	4
-3129	manégé, e	577	4
+3129	manéger	577	4
 3130	mangeotter	578	4
 3131	mangerie	579	4
 3132	maniabilité	580	4
@@ -3144,7 +3144,7 @@ page	entries	image	volume
 3143	manoko	591	4
 3144	manquement	592	4
 3145	mansard	593	4
-3146	mansardé, e	594	4
+3146	manse	594	4
 3147	mantelé, e	595	4
 3148	manuélin, e	596	4
 3149	manutention	597	4
@@ -3155,7 +3155,7 @@ page	entries	image	volume
 3154	marc	602	4
 3155	marchandage	603	4
 3156	marchant, e	604	4
-3157	marché	605	4
+3157		605	4
 3158	mar-chef	606	4
 3159	marchette	607	4
 3160	marécageux, euse	608	4
@@ -3165,14 +3165,14 @@ page	entries	image	volume
 3164	mariable	612	4
 3165	marie-couche-toi-là	613	4
 3166	marieur, euse	614	4
-3167	mariné, e	615	4
+3167	mariner	615	4
 3168	marionnette	616	4
 3169	marle	617	4
 3170	marmonnement	618	4
 3171	marmottier	619	4
 3172	maroquinerie	620	4
 3173	marque	621	4
-3174	marqué, e	622	4
+3174	marquer	622	4
 3175	marqués J	623	4
 3176	marqueter	624	4
 3177	marrant, e	625	4
@@ -3182,9 +3182,9 @@ page	entries	image	volume
 3181	martineur	629	4
 3182	martyrologie	630	4
 3183	masculinisme	631	4
-3184	masqué, e	632	4
+3184	masquer	632	4
 3185	masse	633	4
-3186	massé	634	4
+3186	masse-cuite	634	4
 3187	massif, ive	635	4
 3188	mastax	636	4
 3189	mastoïdite	637	4
@@ -3211,7 +3211,7 @@ page	entries	image	volume
 3210	mèche	658	4
 3211	mécompréhension	659	4
 3212	mécontentement	660	4
-3213	médaillé, e	661	4
+3213	médailler	661	4
 3214	médeciner	662	4
 3215	médiat, e	663	4
 3216	médicastre	664	4
@@ -3230,12 +3230,12 @@ page	entries	image	volume
 3229	mémé	677	4
 3230	mémento	678	4
 3231	mémorabilité	679	4
-3232	menacé, e	680	4
+3232	menacer	680	4
 3233	ménageable	681	4
 3234	ménagerie	682	4
 3235	mendigoter	683	4
 3236	ménesse	684	4
-3237	méningé, e	685	4
+3237	méningiome	685	4
 3238	mensole	686	4
 3239	mentalement	687	4
 3240	mentisme	688	4
@@ -3254,7 +3254,7 @@ page	entries	image	volume
 3253	mesquinement	701	4
 3254	messe	702	4
 3255	messin, e	703	4
-3256	mesuré, e	704	4
+3256	mesurément	704	4
 3257	mesureur	705	4
 3258	métachromatisme	706	4
 3259	métalinguistique	707	4
@@ -3280,7 +3280,7 @@ page	entries	image	volume
 3279	mettage	727	4
 3280		728	4
 3281	meublant, e	729	4
-3282	meublé, e	730	4
+3282	meubler	730	4
 3283	meuleau	731	4
 3284	meurt-de-soif	732	4
 3285	mezzo forte	733	4
@@ -3300,7 +3300,7 @@ page	entries	image	volume
 3299	militaire	747	4
 3300	militariser	748	4
 3301	millée	749	4
-3302	millésimé, e	750	4
+3302	millésimer	750	4
 3303	milligrade	751	4
 3304	mimétique	752	4
 3305	minaret	753	4
@@ -3409,7 +3409,7 @@ page	entries	image	volume
 3408	mouchardage	856	4
 3409	moucher	857	4
 3410	moucheur, euse	858	4
-3411	mouflé, e	859	4
+3411	moufler	859	4
 3412	mouillère	860	4
 3413	moulant, e	861	4
 3414	mouleau	862	4
@@ -3440,7 +3440,7 @@ page	entries	image	volume
 3439	multiprogrammation	887	4
 3440	munir	888	4
 3441	mûr, e	889	4
-3442	mûre	890	4
+3442	murage	890	4
 3443	muret	891	4
 3444	murmure	892	4
 3445	musarder	893	4
@@ -3536,7 +3536,7 @@ page	entries	image	volume
 3535	nez-de-chat	983	4
 3536	niaiser	984	4
 3537	nicher	985	4
-3538	nicotiné, e	986	4
+3538	nicotineux, euse	986	4
 3539	nid-d’hirondelle	987	4
 3540	nière	988	4
 3541	nilotique	989	4
@@ -3546,12 +3546,12 @@ page	entries	image	volume
 3545	nivéo-éolien, enne	993	4
 3546	noblement	994	4
 3547	nobliau	995	4
-3548	nocivité	996	4
+3548	noct(i)-	996	4
 3549	noduleux, euse	997	4
 3550	noir, e	998	4
 3551		999	4
-3552		1000	4
-3553	noire	1001	4
+3552	noirâtre	1000	4
+3553	noircisseur, euse	1001	4
 3554	noli-me-tangere	1002	4
 3555		1003	4
 3556		1004	4
@@ -3583,7 +3583,7 @@ page	entries	image	volume
 3582	nord	1030	4
 3583	nord-ouest-quart-ouest	1031	4
 3584	normalement	1032	4
-3585	normé, e	1033	4
+3585	normo-	1033	4
 3586	nostalgique	1034	4
 3587	notairesse	1035	4
 3588	notencéphale	1036	4
@@ -3601,7 +3601,7 @@ page	entries	image	volume
 3600	novillada	1048	4
 3601	noyauteur	1049	4
 3602	nozigue	1050	4
-3603	nuagé, e	1051	4
+3603	nuageux, euse	1051	4
 3604	nubile	1052	4
 3605	nuclide	1053	4
 3606	nuée	1054	4
