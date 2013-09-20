@@ -370,11 +370,11 @@ return array(
 
         'grand-larousse' => array(
             'created'        => '2013-09-16',
-            'description'    => 'Grand Larousse de la langue française (A - Sur), 1971-1978',
-            'description-en' => 'The Grand Larousse of the French language (A - Sur), 1971-1978',
+            'description'    => 'Grand Larousse de la langue française, 1971-1978',
+            'description-en' => 'The Grand Larousse of the French language, 1971-1978',
             'image'          => 'grand-larousse.jpg',
             'language'       => 'fr',
-            'name'           => 'Grand Larousse (A-Sur)',
+            'name'           => 'Grand Larousse',
             'parser'         => array(
                 'class'      => 'Model_Parser_Index',
                 'properties' => array(
@@ -396,7 +396,7 @@ return array(
             ),
             'title'          => 'G. Larousse',
             'type'           => 'index',
-            'updated'        => '2013-09-19',
+            'updated'        => '2013-09-20',
             'volume'         => 'readonly',
         ),
 

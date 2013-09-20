@@ -3,6 +3,7 @@ return array(
     "âgé, e",
     "adoptée : desir",
     "affairé, e",
+    "amé, e",
     "aminé, e",
     "ansé, e",
     "armé, e",

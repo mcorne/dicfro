@@ -81,7 +81,7 @@ function extract_volume_entries($volume, $entries, $last_word)
             list($base_word) = explode(',', $word);
             $ascii = Base_String::_utf8toASCII($base_word);
 
-            $fixes = set_warnings($word, $base_word, $fixes, $page, $ascii, $prev_ascii, $entries);
+            $fixes = set_warnings($word, $base_word, $fixes, $page, $ascii, $prev_ascii);
 
             if (preg_match('~[«»<>]~u', $word) or              // excludes citations etc.
                 isset($excluded_entries[$word]) and            // excludes specific words, possibly for a given page
@@ -227,7 +227,7 @@ function print_fixes($fixes)
     return Base_String::_utf8ToInternalString($fixes);
 }
 
-function set_warnings($word, $base_word, $fixes, $page, $ascii, $prev_ascii, $entries)
+function set_warnings($word, $base_word, $fixes, $page, $ascii, $prev_ascii)
 {
     if (strpos($base_word, ' ')) {
         $fixes[$page] = "space inside: $word";
@@ -237,12 +237,12 @@ function set_warnings($word, $base_word, $fixes, $page, $ascii, $prev_ascii, $en
         // $fixes[$page] = "plural: $word";
     }
 
-    if (mb_substr($base_word, -1) == 'é' and ! empty($entries[$page -1 ]['word']) and $ascii != $prev_ascii) {
-        // the entry is similar to a previous entry in the previous page
+    if (mb_substr($base_word, -1) == 'é' and $ascii != $prev_ascii) {
+        // the entry is similar to a previous entry in a previous page
         // ex. "stylé, e" (SYTLE) in current page, "stylaire" (STYLAIRE) in previous page
         // but there is also "style" (STYLE) in previous page which will not be found when searching "style"
         $candidate = mb_substr($base_word, 0, -1) . 'e';
-        $fixes[$page] = "change: $word if $candidate is a word and in previous page";
+        $fixes[$page] = "change: $word if $candidate is a word and in a previous page";
     }
 
     return $fixes;
