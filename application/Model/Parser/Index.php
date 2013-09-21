@@ -54,22 +54,26 @@ class Model_Parser_Index extends Model_Parser
                 $word = $prevWord;
 
             } else {
-               $word = $entry;
-               $word = preg_replace('~\[[^()[\]]*\]~', '', $word);
-               $word = preg_replace('~\([^()[\]]*\)~', '', $word);
+                $word = $entry;
+                $word = preg_replace('~\[[^()[\]]*\]~', '', $word);
+                $word = preg_replace('~\([^()[\]]*\)~', '', $word);
 
-               if (preg_match('~[()[\]]~', $word)) {
-                   $this->error("parenthesis or bracket mismatch in: $word", true, $lineNumber);
-               }
+                if (preg_match('~[()[\]]~', $word)) {
+                    $this->error("parenthesis or bracket mismatch in: $word", true, $lineNumber);
+                }
 
-               if ($this->wordSeparator) {
-                   list($word) = preg_split($this->wordSeparator, $word, 2);
-               }
+                if ($this->entryReplacements) {
+                    $word = preg_replace($this->entryReplacements['pattern'], $this->entryReplacements['replacement'], $word);
+                }
 
-               $word = str_replace('-', '', $word);
-               $word = $this->string->utf8toASCIIorDigit($word);
+                if ($this->wordSeparator) {
+                    list($word) = preg_split($this->wordSeparator, $word, 2);
+                }
 
-               $this->validateWordOrder($word, $lineNumber);
+                $word = str_replace('-', '', $word);
+                $word = $this->string->utf8toASCIIorDigit($word);
+
+                $this->validateWordOrder($word, $lineNumber);
             }
 
             $wordData = array(

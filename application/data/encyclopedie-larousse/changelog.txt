@@ -1,6 +1,6 @@
 initial version v1
 ------------------
-
+ 
 - 2/5/2013
 
 - searched for "la grande encyclopédie larousse" at gallica.bnf.fr/
@@ -25,12 +25,18 @@ for each volume, ex volume 3 :
 (repetitive process) 
 - fixed bad entries in 3/encyclopedie-larousse-3.csv, via dicfro using go to page:
 * ran "php extract-entries.php 3" as many times as necessary
-* updated 3/excluded-entries.php, 3/excluded-words.php and 3/replaced-entries.php as necessary
+* updated 3/excluded-entries.php, 3/excluded-words.php, 3/missing-entries.php and 3/replaced-entries.php as necessary
 
 (finish process) 
 - ran "php merge-entries.php" 
-- ran "parse century 1", fixed parsing errors as necessary (some can be left unfixed which is acceptable)
+- ran "parse grand-larousse 1", fixed parsing errors, updated config property "entryReplacements"
 * ran "php extract-entries.php 3"
-* updated 3/excluded-entries.php, 3/excluded-words.php and 3/replaced-entries.php as necessary
+* updated 3/excluded-entries.php, 3/excluded-words.php, 3/missing-entries.php and 3/replaced-entries.php as necessary
 
 - updated "name", "description", "description-en", "updated" in config.php
+
+
+format of the files with fixes
+------------------------------
+- this applies to: excluded-entries.php, excluded-words.php, missing-entries.php and replaced-entries.php
+- the format is described in the fix-examples directory

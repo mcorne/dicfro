@@ -233,15 +233,17 @@ return array(
 
         'encyclopedie-larousse' => array(
             'created'        => '2013-04-03',
-            'description'    => 'La Grande encyclopédie Larousse (A - Ren), 1971-1976',
-            'description-en' => 'The Larousse great encyclopedia (A - Ren), 1971-1976',
+            'description'    => 'La Grande encyclopédie Larousse (A - Sci), 1971-1976',
+            'description-en' => 'The Larousse great encyclopedia (A - Sci), 1971-1976',
             'image'          => 'encyclopedie-larousse.jpg',
             'language'       => 'fr',
-            'name'           => 'Encyclopédie Larousse (A-Ren)',
+            'name'           => 'Encyclopédie Larousse (A-Sci)',
             'parser'         => array(
                 'class'      => 'Model_Parser_Index',
                 'properties' => array(
-                    'wordSeparator' => '~[ -]~',
+                    // replacements ex. "Saint-Aubin" => "SaintAubin", "La Pérouse" => "LaPérouse", etc.
+                    'entryReplacements' => array('pattern' => '~^(Sainte?|La|néo|New|Nord|Pays|photo)[ -]~iu', 'replacement' => '$1'),
+                    'wordSeparator'     => '~[ -]~',
                 )
             ),
             'search'         => array(
@@ -273,7 +275,7 @@ return array(
             ),
             'title'          => 'E. Larousse',
             'type'           => 'index',
-            'updated'        => '2013-09-14',
+            'updated'        => '2013-09-21',
             'volume'         => 'readonly',
         ),
 
@@ -378,7 +380,7 @@ return array(
             'parser'         => array(
                 'class'      => 'Model_Parser_Index',
                 'properties' => array(
-                    'wordSeparator' => '~[,]~',
+                    'wordSeparator' => '~,~',
                 )
             ),
             'search'         => array(

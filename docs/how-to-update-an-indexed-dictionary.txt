@@ -1,0 +1,9 @@
+How to update an indexed dictionary
+-----------------------------------
+
+
+This applies to indexed dictionaries such as the Larousse dictionaries and the Century dictionary.
+The procedure is described for each dictionary in its change log file, eg application/data/century/changelog.txt.
+
+Note that some dictionaries have files with fixes used by the entries extractor.
+Their formats are described in the dictionary fix-examples directory, eg application/data/encyclopedie-larousse/fix-examples.

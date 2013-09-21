@@ -25,8 +25,14 @@ for each volume, ex volume 3:
 
 (finish process) 
 - ran "php merge-entries.php" 
-- ran "parse century 1", fixed parsing errors as necessary (some can be left unfixed which is acceptable)
+- ran "parse grand-larousse 1", fixed parsing errors
 * ran "php extract-entries.php 3"
 * updated 3/excluded-entries.php and 3/replaced-entries.php as necessary
 
 - updated "name", "description", "description-en" etc. in config.php
+
+
+format of the files with fixes
+------------------------------
+- this applies to: excluded-entries.php and replaced-entries.php
+- the format is described in the fix-examples directory

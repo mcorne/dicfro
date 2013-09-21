@@ -74,6 +74,11 @@ function convert_entry_to_ascii($entry)
 
     $word_ascii = Base_String::_utf8toASCII($words[0]);
 
+    if (isset($words[1]) and ($word_ascii == 'SAINT' or $word_ascii == 'SAINTE')) {
+        // fixes detection and sorting of "Saint Empire..." after "Sainte-Claire..." and others saints after "Saintes"
+        $word_ascii .= Base_String::_utf8toASCII($words[1]);
+    }
+
     // keeps the first 10 words only (to make it easier to exclude entries)
     $words = array_slice($words, 0, 10);
     $entry = implode(' ', $words);

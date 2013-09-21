@@ -21,6 +21,8 @@
     "Pétrole et gaz naturel en mer du Nord. Droit et économie (Technip, 1972).",
     "Philadelphie se font par New York, qui dispose de relations quasi mondiales.",
     "phénol en diphénylamine :",
+    "Photoconductivité",
+    "Photodiode",
     "Photomultiplicateurs",
     "Photopiles ou cellules photovoltaïques",
     "photométrie Pour effectuer des mesures photomé-",
