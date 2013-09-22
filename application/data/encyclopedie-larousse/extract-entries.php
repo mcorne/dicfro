@@ -437,8 +437,25 @@ function load_replaced_entries($volume)
 function replace_entry($page, $entry, $replacement)
 {
     if (is_array($replacement)) {
-        // this is an entry to replace in a specific page, eg "canadienne" => array("litérature canadienne", 123)
-        list($replacement, $target_page) = $replacement;
+        if (is_string($replacement[0])) {
+            // this is an entry to replace in a specific page, eg "canadienne" => array("litérature canadienne", 123)
+            list($replacement, $target_page) = $replacement;
+
+        } else {
+            // this is an entry to replace differently depending on the page, eg "Succession" => array(
+            //     array("Succession d'Autriche (guerre de la)", 10456),
+            //     array("Succession d'Espagne (guerre de la)", 10458)),
+            $replacements = $replacement;
+
+            foreach ($replacements as $replacement) {
+                list($replacement, $target_page) = $replacement;
+
+                if ($target_page == $page) {
+                    // this is the replacement for the current page
+                    break;
+                }
+            }
+        }
 
     } else if (is_numeric($replacement)) {
         // this is a default plural replacement in a specific page, eg "mouches" => 123
