@@ -33,4 +33,8 @@
     "plantes sauvages. L’activité des échan-",
     "plasticité pour la mise",
     "Platon reste alors six années à Athènes. Mais, en 361, de nouveau",
+    "P. T.",
+    "P. B.",
+    "P. P.",
+    "P. G.",
 );

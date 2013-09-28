@@ -47,4 +47,5 @@
     "Orthoptères",
     "Oscillateurs harmoniques Divers principes de montage peuvent" => "Oscillateurs harmoniques",
     "oses et osides",
+    "Mythe bororo du feu" => "Mythe bororo du feu destructeur",
 );

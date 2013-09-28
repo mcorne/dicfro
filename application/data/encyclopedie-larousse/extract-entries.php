@@ -158,8 +158,7 @@ function extract_entry($words, $page, $volume = null)
         return $entry;
     }
 
-    if (strlen($entry_ascii) > 2 and
-        ($entry_ascii == $first_entry_ascii or $word_ascii >= $first_word_ascii) and
+    if (($entry_ascii == $first_entry_ascii or $word_ascii >= $first_word_ascii) and
          $word_ascii <= $last_word_ascii)
     {
         // the entry is longer than 2 chararcters and

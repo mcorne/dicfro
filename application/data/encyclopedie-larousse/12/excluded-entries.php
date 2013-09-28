@@ -58,4 +58,5 @@
     "Mapou a été très influencé par la Haskalah et ses idéaux. Mais, tan-",
     "Marchand drapier et homme politique français (v. 1316 -Paris 1358).",
     "MARCHÉS" => "MARCHÉS",
+    "Łukasiewicz",
 );

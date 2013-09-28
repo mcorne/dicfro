@@ -78,4 +78,5 @@ return array(
     "1690 Boileau, dont la santé est mauvaise depuis longtemps, cesse d’aller à Versailles.",
     "Bouches-du-Rhône.",
     "BOUDDHISME" => 1679,
+    "B. G.",
 );
