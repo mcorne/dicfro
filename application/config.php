@@ -233,16 +233,16 @@ return array(
 
         'encyclopedie-larousse' => array(
             'created'        => '2013-04-03',
-            'description'    => 'La Grande encyclopédie Larousse (A - Syn), 1971-1976',
-            'description-en' => 'The Larousse great encyclopedia (A - Syn), 1971-1976',
+            'description'    => 'La Grande encyclopédie Larousse (A - Tur), 1971-1976',
+            'description-en' => 'The Larousse great encyclopedia (A - Tur), 1971-1976',
             'image'          => 'encyclopedie-larousse.jpg',
             'language'       => 'fr',
-            'name'           => 'Encyclopédie Larousse (A-Syn)',
+            'name'           => 'Encyclopédie Larousse (A-Tur)',
             'parser'         => array(
                 'class'      => 'Model_Parser_Index',
                 'properties' => array(
                     // replacements ex. "Saint-Aubin" => "SaintAubin", "La Pérouse" => "LaPérouse", etc.
-                    'entryReplacements' => array('pattern' => '~^(Sainte?|La|néo|New|Nord|Pays|photo|sous)[ -]~iu', 'replacement' => '$1'),
+                    'entryReplacements' => array('pattern' => '~^(Sainte?|La|néo|New|Nord|Pays|photo|sous|trans)[ -]~iu', 'replacement' => '$1'),
                     'wordSeparator'     => '~[ -]~',
                 )
             ),
