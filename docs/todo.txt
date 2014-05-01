@@ -1,6 +1,8 @@
 Things to do
 ------------
 
+- change names to DMF, CNRTLi
+
 - add panoccitan.org, http://www.etymologie-occitane.fr, http://www.atilf.fr/dect/ ...
 - add lacurne supplement, curiosités etc...
 - scan/add tilander

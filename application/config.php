@@ -93,6 +93,45 @@ return array(
             'volume'       => 'readonly',
         ),
 
+        'chambers-dictionary' => array(
+            'created'      => '2014-04-29',
+            'description'  => 'The Century Chambers Dictionary',
+            'introduction' => 'http://chambers.dictionary.x10host.com/?about',
+            'language'     => 'en',
+            'name'         => 'Chambers Dictionary',
+            'search'       => 'http://chambers.dictionary.x10host.com/?w=',
+            'title'         => 'Chambers D.',
+            'type'         => 'external',
+        ),
+
+        'chambers-encyclopedia' => array(
+            'created'      => '2014-05-01',
+            'description'  => "The Chambers's encyclopaedia, a dictionary of universal knowledge, William & Robert Chambers, 1901",
+            'image'        => 'chambers-encyclopedia.jpg',
+            'introduction' => 'chambers-encyclopedia.phtml',
+            'language'     => 'en',
+            'name'         => "Chambers's Encyclopaedia (A-Be)",
+            'search'       => array(
+                'properties' => array(
+                    'url'     => array(
+                        1  => 'https://ia600308.us.archive.org/BookReader/BookReaderImages.php?zip=/5/items/chamberssency01lond/chamberssency01lond_jp2.zip&file=chamberssency01lond_jp2/chamberssency01lond_0%03u.jp2&scale=3&rotate=0',
+                        2  => 'https://ia600302.us.archive.org/BookReader/BookReaderImages.php?zip=/35/items/chamberssency02lond/chamberssency02lond_jp2.zip&file=chamberssency02lond_jp2/chamberssency02lond_0%03u.jp2&scale=3&rotate=0',
+                        3  => 'https://ia600307.us.archive.org/BookReader/BookReaderImages.php?zip=/6/items/chamberssency03lond/chamberssency03lond_jp2.zip&file=chamberssency03lond_jp2/chamberssency03lond_0%03.jp2&scale=3&rotate=0',
+                        4  => 'https://ia700302.us.archive.org/BookReader/BookReaderImages.php?zip=/7/items/chamberssency04lond/chamberssency04lond_jp2.zip&file=chamberssency04lond_jp2/chamberssency04lond_0%03.jp2&scale=3&rotate=0',
+                        5  => 'https://ia700306.us.archive.org/BookReader/BookReaderImages.php?zip=/17/items/chamberssency05lond/chamberssency05lond_jp2.zip&file=chamberssency05lond_jp2/chamberssency05lond_0%03.jp2&scale=3&rotate=0',
+                        6  => 'https://ia600300.us.archive.org/BookReader/BookReaderImages.php?zip=/18/items/chamberssency06lond/chamberssency06lond_jp2.zip&file=chamberssency06lond_jp2/chamberssency06lond_0%03.jp2&scale=3&rotate=0',
+                        7  => 'https://ia700304.us.archive.org/BookReader/BookReaderImages.php?zip=/24/items/chamberssency07lond/chamberssency07lond_jp2.zip&file=chamberssency07lond_jp2/chamberssency07lond_0%03.jp2&scale=3&rotate=0',
+                        8  => 'https://ia600308.us.archive.org/BookReader/BookReaderImages.php?zip=/25/items/chamberssency08lond/chamberssency08lond_jp2.zip&file=chamberssency08lond_jp2/chamberssency08lond_0%03.jp2&scale=3&rotate=0',
+                        9  => 'https://ia600302.us.archive.org/BookReader/BookReaderImages.php?zip=/27/items/chambersencyclop09lond/chambersencyclop09lond_jp2.zip&file=chambersencyclop09lond_jp2/chambersencyclop09lond_0%03.jp2&scale=3&rotate=0',
+                        10 => 'https://ia700306.us.archive.org/BookReader/BookReaderImages.php?zip=/17/items/chambersencyclop10lond/chambersencyclop10lond_jp2.zip&file=chambersencyclop10lond_jp2/chambersencyclop10lond_0%03.jp2&scale=3&rotate=0',
+                    ),
+                )
+            ),
+            'title'        => 'Chambers E.',
+            'type'         => 'index',
+            'volume'       => 'input',
+        ),
+
         'chretien' => array(
             'created'        => '2010-08-01',
             'description'    => 'Kristian von Troyes Wörterbuch zu seinem sämtlichen Werken, Wendelin Foerster, 1914',
@@ -277,6 +316,16 @@ return array(
             'type'           => 'index',
             'updated'        => '2013-09-28',
             'volume'         => 'readonly',
+        ),
+
+        'etymonline' => array(
+            'created'      => '2014-04-09',
+            'description'  => 'Online Etymology Dictionary',
+            'introduction' => 'http://www.etymonline.com/index.php?allowed_in_frame=1',
+            'language'     => 'en',
+            'name'         => 'Etymonline',
+            'search'       => 'http://www.etymonline.com/index.php?allowed_in_frame=1&searchmode=none&search=',
+            'type'         => 'external',
         ),
 
         'gaffiot' => array(
@@ -805,8 +854,11 @@ return array(
     'groups' => array(
         array(
             'dictionaries' => array(
+                'chambers-dictionary',
+                'chambers-encyclopedia',
                 'century',
                 'century-supplement',
+                'etymonline',
                 'webster',
                 'wiktionary',
             ),

@@ -29,6 +29,7 @@ require_once 'Model/Parser.php';
 class Model_Parser_Index extends Model_Parser
 {
     public $batchFileTemplate = 'index.sql';
+    public $entryReplacements = null;
     public $wordSeparator     = null;
     public $sourceFile        = 'index.csv';
 
