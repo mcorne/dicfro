@@ -8,7 +8,7 @@
  * @category  DicFro
  * @package   Config
  * @author    Michel Corne <mcorne@yahoo.com>
- * @copyright 2008-2013 Michel Corne
+ * @copyright 2008-2014 Michel Corne
  * @license   http://opensource.org/licenses/gpl-3.0.html GNU GPL v3
  */
 
@@ -110,7 +110,7 @@ return array(
             'image'        => 'chambers-encyclopedia.jpg',
             'introduction' => 'chambers-encyclopedia.phtml',
             'language'     => 'en',
-            'name'         => "Chambers's Encyclopaedia (A-Be)",
+            'name'         => "Chambers's Encyclopaedia (A-Ca)",
             'search'       => array(
                 'properties' => array(
                     'url'     => array(
@@ -129,6 +129,7 @@ return array(
             ),
             'title'        => 'Chambers E.',
             'type'         => 'index',
+            'updated'      => '2014-05-03',
             'volume'       => 'input',
         ),
 
@@ -154,17 +155,6 @@ return array(
             'title'          => 'Chrétien',
             'type'           => 'internal',
             'url'            => 'glossaire-chretien-de-troyes',
-        ),
-
-        'cnrtl' => array(
-            'created'        => '2010-08-01',
-            'description'    => 'Dictionnaire du Centre National de Ressources Textuelles et Lexicales',
-            'description-en' => 'Dictionary of the national center for textual and lexical resources',
-            'introduction'   => 'http://www.cnrtl.fr/definition/',
-            'language'       => 'fr',
-            'name'           => 'CNRTL',
-            'search'         => 'http://www.cnrtl.fr/definition/',
-            'type'           => 'external',
         ),
 
         'conjugueur' => array(
@@ -227,8 +217,8 @@ return array(
 
         'dmf' => array(
             'created'        => '2008-04-14',
-            'description'    => "Dictionnaire du Moyen Français, Atilf",
-            'description-en' => "Middle French dictionary, Atilf",
+            'description'    => "Dictionnaire du Moyen Français (DMF), Analyse et Traitement Informatique de la Langue Française (Atilf)",
+            'description-en' => "Middle French dictionary (DMF), Computer Processing and Analysis of the French Language (Atilf)",
             'introduction'   => 'http://www.atilf.fr/dmf/',
             'language'       => 'fr',
             'name'           => 'Moyen français',
@@ -256,17 +246,18 @@ return array(
 
         'dvlf' => array(
             'created'        => '2012-06-03',
-            'description'    => 'Dictionnaire vivant de la langue française, The ARTFL Project',
-            'description-en' => 'Live dictionary of the French language, The ARTFL Project',
+            'description'    => 'Dictionnaire vivant de la langue française (DVLF), The ARTFL Project',
+            'description-en' => 'Live dictionary of the French language (DVLF), The ARTFL Project',
             'introduction'   => 'http://dvlf.uchicago.edu/',
             'language'       => 'fr',
-            'name'           => 'DVLF',
+            'name'           => 'Dict. vivant de la langue fr.',
             'search'         => array(
                 'properties' => array(
                     'emptyWord' => 'http://dvlf.uchicago.edu/',
                     'url'       => 'http://dvlf.uchicago.edu/mot/',
                 )
             ),
+            'title'           => 'DVLF',
             'type'           => 'external',
         ),
 
@@ -356,7 +347,7 @@ return array(
             'description-en' => 'Dictionary of the Old French language and all its dialects from the ninth to fifteenth century, Frédéric Godefroy, 1880-1895',
             'image'          => 'dictionnaire-godefroy.jpg',
             'language'       => 'fr',
-            'name'           => 'Godefroy - Dictionnaire',
+            'name'           => 'Godefroy / Dictionnaire',
             'parser'         => 'Model_Parser_GdfLike',
             'search'         => array(
                 'properties' => array(
@@ -380,7 +371,7 @@ return array(
             'description-en' => 'Dictionary supplement of the Old French language and all its dialects from the ninth to fifteenth century, Frédéric Godefroy, 1880-1895',
             'image'          => 'complement-godefroy.jpg',
             'language'       => 'fr',
-            'name'           => 'Godefroy - Complément',
+            'name'           => 'Godefroy / Complément',
             'parser'         => 'Model_Parser_GdfLike',
             'search'         => array(
                 'properties' => array(
@@ -405,7 +396,7 @@ return array(
             'description-en' => 'Old French lexicon, Frédéric Godefroy, 1880-1895',
             'image'          => 'lexique-godefroy.jpg',
             'language'       => 'fr',
-            'name'           => 'Godefroy - Lexique',
+            'name'           => 'Godefroy / Lexique',
             'search'         => array(
                 'properties' => array(
                     'needErrataText' => true,
@@ -469,18 +460,18 @@ return array(
 
         'lacurne' => array(
             'created'        => '2013-03-29',
-            'description'    => "Dictionnaire historique de l'ancien langage françois ou glossaire de la langue françoise, J.B. de la Curne de Sainte-Palaye, 1875-1882",
-            'description-en' => 'Historical dictionary of the Old French language, J.B. de la Curne de Sainte-Palaye, 1875-1882',
+            'description'    => "Dictionnaire historique de l'ancien langage françois ou glossaire de la langue françoise (LacEdic), J.B. de la Curne de Sainte-Palaye, 1875-1882",
+            'description-en' => 'Historical dictionary of the Old French language (LacEdic), J.B. de la Curne de Sainte-Palaye, 1875-1882',
             'image'          => 'dictionnaire-lacurne.jpg',
             'language'       => 'fr',
-            'name'           => 'Lacurne - Dictionnaire',
+            'name'           => 'Lacurne / Dictionnaire',
             'search'         => array(
                 'properties' => array(
                     'needTcaf'   => true,
                     'needTobler' => true,
                 )
             ),
-            'title'          => 'D. Lacurne',
+            'title'          => 'LacEdic',
             'type'           => 'internal',
             'url'            => 'dictionnaire-lacurne',
             'volume'         => 'input',
@@ -531,7 +522,7 @@ return array(
             'description-en' => "Petit Larousse illustrated dictionary (common names), new encyclopedic dictionary (5th Edition), Claude Augé, 1906",
             'image'          => 'petit-larousse.jpg',
             'language'       => 'fr',
-            'name'           => 'Petit Larousse (N.c.)',
+            'name'           => 'Petit Larousse / N. communs',
             'search'         => array(
                 'properties' => array(
                     'url'     => array(
@@ -553,7 +544,7 @@ return array(
             'description-en' => "Petit Larousse illustrated dictionary (proper names), new encyclopedic dictionary (5th Edition), Claude Augé, 1906",
             'image'          => 'petit-larousse-np.jpg',
             'language'       => 'fr',
-            'name'           => 'Petit Larousse (N.p.)',
+            'name'           => 'Petit Larousse / N. propres',
             'search'         => array(
                 'properties' => array(
                     'url'     => array(
@@ -744,17 +735,30 @@ return array(
 
         'tcaf' => array(
             'created'        => '2010-08-01',
-            'description'    => "Tableaux de conjugaison de l'ancien français, Machio Okada et Hitoshi Ogurisu, 2007-2012",
-            'description-en' => 'Old French conjugation tables, Machio Okada and Hitoshi Ogurisu, 2007-2011',
+            'description'    => "Tableaux de conjugaison de l'ancien français (TCAF), Machio Okada et Hitoshi Ogurisu, 2007-2012",
+            'description-en' => 'Old French conjugation tables (TCAF), Machio Okada and Hitoshi Ogurisu, 2007-2011',
             'image'          => 'tableaux-de-conjugaison.jpg',
             'language'       => 'fr',
-            'name'           => 'TCAF',
+            'name'           => 'Conjugaison',
             'search'         => array(
                 'class' => 'Model_Search_Tcaf',
             ),
-            'title'          => 'Conjugaisons',
+            'title'          => 'TCAF',
             'type'           => 'internal',
             'url'            => 'tableaux-de-conjugaison',
+        ),
+
+        'tlfi' => array(
+            'created'        => '2010-08-01',
+            'description'    => 'Le Trésor de la Langue Française informatisé (TLFi), Centre National de Ressources Textuelles et Lexicales',
+            'description-en' => 'The Computerized Treasury of the French Language (TLFi), the National Center for Textual and Lexical Resources',
+            'introduction'   => 'http://www.cnrtl.fr/definition/',
+            'language'       => 'fr',
+            'name'           => 'Trésor de la Langue Fr.',
+            'search'         => 'http://www.cnrtl.fr/definition/',
+            'title'          => 'TLFi',
+            'type'           => 'external',
+            'updated'        => '2014-05-02',
         ),
 
         'tristan' => array(
@@ -866,7 +870,6 @@ return array(
         ),
         array(
             'dictionaries' => array(
-                'cnrtl',
                 'conjugueur',
                 'dvlf',
                 'encyclopedie-larousse',
@@ -876,6 +879,7 @@ return array(
                 'orthonet',
                 'petit-larousse',
                 'petit-larousse-np',
+                'tlfi',
                 'wiktionnaire',
             ),
             'language' => 'fr',
@@ -885,6 +889,7 @@ return array(
                 'anglo-norman',
                 'roland',
                 'chretien',
+                'tcaf',
                 'cotgrave',
                 'couronnement',
                 'gdf',
@@ -899,7 +904,6 @@ return array(
                 'renart-meon-3',
                 'renart-meon-4',
                 'tristan',
-                'tcaf',
                 'vandaele',
             ),
             'language' => 'fro',

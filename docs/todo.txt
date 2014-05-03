@@ -1,13 +1,10 @@
 Things to do
 ------------
 
-- change names to DMF, CNRTLi
 
 - add panoccitan.org, http://www.etymologie-occitane.fr, http://www.atilf.fr/dect/ ...
 - add lacurne supplement, curiosités etc...
 - scan/add tilander
 
 - fix scrolling bar issue for tablets
-- process volumes for indexed dictionary query
-- move volume to search properties
 - finish or remove unit tests

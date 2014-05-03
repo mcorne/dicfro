@@ -8,7 +8,7 @@
  * @category  DicFro
  * @package   Controller
  * @author    Michel Corne <mcorne@yahoo.com>
- * @copyright 2008-2013 Michel Corne
+ * @copyright 2008-2014 Michel Corne
  * @license   http://opensource.org/licenses/gpl-3.0.html GNU GPL v3
  */
 
@@ -359,6 +359,10 @@ class Controller_Interface
 
         if (! isset($this->dictionary['query'])) {
             $this->dictionary['query'] = array();
+        }
+
+        if (isset($this->dictionary['volume'])) {
+            $this->dictionary['query']['properties']['useVolume'] = $this->dictionary['volume'] == 'input';
         }
 
         if (! isset($this->dictionary['search'])) {

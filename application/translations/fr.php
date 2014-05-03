@@ -71,6 +71,9 @@ return array(
     "Enter a number then press the ENTER key or click on the button" =>
     "Entrer un nombre puis appuyer sur la touche ENTRÉE, ou cliquer sur le bouton",
 
+    "Enter a word" =>
+    "Entrer un mot",
+
     "Enter a word then press the ENTER key or click on the button" =>
     "Entrer un mot puis appuyer sur la touche ENTRÉE, ou cliquer sur le bouton",
 

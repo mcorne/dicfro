@@ -9,7 +9,7 @@
  * @package    Model
  * @subpackage Query
  * @author     Michel Corne <mcorne@yahoo.com>
- * @copyright  2008-2010 Michel Corne
+ * @copyright  2008-2014 Michel Corne
  * @license    http://opensource.org/licenses/gpl-3.0.html GNU GPL v3
  */
 
@@ -37,7 +37,14 @@ class Model_Query_Index extends Model_Query
      */
     public function goToFirstPage()
     {
-        return $this->fetch("SELECT * FROM word ORDER BY page ASC LIMIT 1");
+        if ($this->useVolume) {
+            $result = $this->fetch("SELECT * FROM word ORDER BY volume ASC, page ASC LIMIT 1");
+
+        } else {
+            $result = $this->fetch("SELECT * FROM word ORDER BY page ASC LIMIT 1");
+        }
+
+        return $result;
     }
 
     /**
@@ -47,7 +54,14 @@ class Model_Query_Index extends Model_Query
      */
     public function goToLastPage()
     {
-        return $this->fetch("SELECT * FROM word ORDER BY page DESC LIMIT 1");
+        if ($this->useVolume) {
+            $result = $this->fetch("SELECT * FROM word ORDER BY volume DESC, page DESC LIMIT 1");
+
+        } else {
+            $result = $this->fetch("SELECT * FROM word ORDER BY page DESC LIMIT 1");
+        }
+
+        return $result;
     }
 
     /**
@@ -59,9 +73,16 @@ class Model_Query_Index extends Model_Query
      */
     public function goToNextPage($volume, $page)
     {
-        $sql = "SELECT * FROM word WHERE page > :page LIMIT 1";
+        if ($this->useVolume) {
+            $sql = "SELECT * FROM word WHERE (volume = :volume AND page > :page OR volume > :volume) ORDER BY volume ASC, page ASC LIMIT 1";
+            $parameters = array(':page' => $page, ':volume' => $volume);
 
-        if (! $result = $this->fetch($sql, array(':page' => $page))) {
+        } else {
+            $sql = "SELECT * FROM word WHERE page > :page ORDER BY page ASC LIMIT 1";
+            $parameters = array(':page' => $page);
+        }
+
+        if (! $result = $this->fetch($sql, $parameters)) {
             $result = $this->goToLastPage();
         }
 
@@ -76,9 +97,16 @@ class Model_Query_Index extends Model_Query
      */
     public function goToPage($volume, $page)
     {
-        $sql = "SELECT * FROM word WHERE page >= :page LIMIT 1";
+        if ($this->useVolume) {
+            $sql = "SELECT * FROM word WHERE (volume = :volume AND page >= :page OR volume > :volume) ORDER BY volume ASC, page ASC LIMIT 1";
+            $parameters = array(':page' => $page, ':volume' => $volume);
 
-        if (! $result = $this->fetch($sql, array(':page' => $page))) {
+        } else {
+            $sql = "SELECT * FROM word WHERE page >= :page ORDER BY page ASC LIMIT 1";
+            $parameters = array(':page' => $page);
+        }
+
+        if (! $result = $this->fetch($sql, $parameters)) {
             $result = $this->goToLastPage();
         }
 
@@ -93,9 +121,16 @@ class Model_Query_Index extends Model_Query
      */
     public function goToPreviousPage($volume, $page)
     {
-        $sql = "SELECT * FROM word WHERE page < :page ORDER BY page DESC LIMIT 1";
+        if ($this->useVolume) {
+            $sql = "SELECT * FROM word WHERE (volume = :volume AND page < :page OR volume < :volume) ORDER BY volume DESC, page DESC LIMIT 1";
+            $parameters = array(':page' => $page, ':volume' => $volume);
 
-        if (! $result = $this->fetch($sql, array(':page' => $page))) {
+        } else {
+            $sql = "SELECT * FROM word WHERE page < :page ORDER BY page DESC LIMIT 1";
+            $parameters = array(':page' => $page);
+        }
+
+        if (! $result = $this->fetch($sql, $parameters)) {
             $result = $this->goToFirstPage();
         }
 
@@ -111,9 +146,16 @@ class Model_Query_Index extends Model_Query
      */
     public function searchCurrentEntries($volume, $page)
     {
-        $sql = "SELECT * FROM word WHERE page = :page AND original != '' LIMIT 10";
+        if ($this->useVolume) {
+            $sql = "SELECT * FROM word WHERE volume = :volume AND page = :page AND original != '' LIMIT 10";
+            $parameters = array(':page' => $page, ':volume' => $volume);
 
-        return $this->fetchAll($sql, array(':page' => $page));
+        } else {
+            $sql = "SELECT * FROM word WHERE page = :page AND original != '' LIMIT 10";
+            $parameters = array(':page' => $page);
+        }
+
+        return $this->fetchAll($sql, $parameters);
     }
 
     /**
@@ -125,9 +167,16 @@ class Model_Query_Index extends Model_Query
      */
     public function searchNextEntries($volume, $page)
     {
-        $sql = "SELECT * FROM word WHERE page > :page AND original != '' LIMIT 10";
+        if ($this->useVolume) {
+            $sql = "SELECT * FROM word WHERE (volume = :volume AND page > :page OR volume > :volume) AND original != '' ORDER BY volume ASC, page ASC LIMIT 10";
+            $parameters = array(':page' => $page, ':volume' => $volume);
 
-        return $this->fetchAll($sql, array(':page' => $page));
+        } else {
+            $sql = "SELECT * FROM word WHERE page > :page AND original != '' ORDER BY page ASC LIMIT 10";
+            $parameters = array(':page' => $page);
+        }
+
+        return $this->fetchAll($sql, $parameters);
     }
 
     /**
@@ -139,9 +188,17 @@ class Model_Query_Index extends Model_Query
      */
     public function searchPreviousEntries($volume, $page)
     {
-        $sql = "SELECT * FROM word WHERE page < :page AND original != '' ORDER BY page DESC LIMIT 10";
+        if ($this->useVolume) {
+            $sql = "SELECT * FROM word WHERE (volume = :volume AND page < :page OR volume < :volume) AND original != '' ORDER BY volume DESC, page DESC LIMIT 10";
+            $parameters = array(':page' => $page, ':volume' => $volume);
 
-        return array_reverse($this->fetchAll($sql, array(':page' => $page)));
+        } else {
+            $sql = "SELECT * FROM word WHERE page < :page AND original != '' ORDER BY page DESC LIMIT 10";
+            $parameters = array(':page' => $page);
+        }
+
+
+        return array_reverse($this->fetchAll($sql, $parameters));
     }
 
     /**

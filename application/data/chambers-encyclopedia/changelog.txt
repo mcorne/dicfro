@@ -1,0 +1,21 @@
+initial version v1
+------------------
+
+- 2/5/2014
+
+for each volume, ex volume 2 :
+- downloaded https://archive.org/stream/chambersencyclop09lond/chambersencyclop09lond_djvu.txt
+- replaced in notepad
+^([^\n]*[02468oO]) *\n\n\n\n([^\n]+)\n\n\n\n([^\n]+)\n\n\n
+_ZZZZZ_\1\t\2\n
+- replaced  in notepad
+^([^\n]+)\n\n\n\n([^\n]+)\n\n\n\n([^\n]*[13579]) *\n\n\n
+_ZZZZZ_\3\t\1\n
+- extracted _ZZZZZ_
+- trimmed
+- copied & pasted in calc oo
+- fixed numbers
+- removed false entries
+- fixed non letters, checked X, K
+- merged into "index.csv"
+- ran "parse chambers-encycopedia 1", fixed errors

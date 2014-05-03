@@ -18,8 +18,9 @@ CREATE TABLE word (
 
 .import %s word
 
-CREATE INDEX 'ascii' ON word (ascii ASC);
-CREATE INDEX 'image' ON word (image ASC);
-CREATE INDEX 'page'  ON word (page ASC);
+CREATE INDEX 'ascii'  ON word (ascii ASC);
+CREATE INDEX 'image'  ON word (image ASC);
+CREATE INDEX 'page'   ON word (page ASC);
+CREATE INDEX 'volume' ON word (volume ASC, page ASC);
 
 SELECT count(*) FROM word;

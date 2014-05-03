@@ -9,7 +9,7 @@
  * @package    Model
  * @subpackage Query
  * @author     Michel Corne <mcorne@yahoo.com>
- * @copyright  2008-2010 Michel Corne
+ * @copyright  2008-2014 Michel Corne
  * @license    http://opensource.org/licenses/gpl-3.0.html GNU GPL v3
  */
 
@@ -78,16 +78,16 @@ abstract class Model_Query
      * Prepares and executes a query and fetches the first row
      *
      * @param  string    $query      the SQL query
-     * @param  array     $parameter  the list of parameters, format: array(<key> => <value>,...)
+     * @param  array     $parameters the list of parameters, format: array(<key> => <value>,...)
      * @param  string    $fetchStyle the fetch style
      * @return mixed     the result of the query
      * @throws Exception if no result is returned
      */
-    public function fetch($query, $parameter = array(), $fetchStyle = PDO::FETCH_ASSOC)
+    public function fetch($query, $parameters = array(), $fetchStyle = PDO::FETCH_ASSOC)
     {
         $pdo = new PDO($this->dsn) and
         $statement = $pdo->prepare($query) and
-        $statement->execute($parameter) and
+        $statement->execute($parameters) and
         $result = $statement->fetch($fetchStyle);
 
         if (!isset($result)) {
@@ -101,16 +101,16 @@ abstract class Model_Query
      * Prepares and executes a query and fetches all rows
      *
      * @param  string    $query      the SQL query
-     * @param  array     $parameter  the list of parameters, format: array(<key> => <value>,...)
+     * @param  array     $parameters the list of parameters, format: array(<key> => <value>,...)
      * @param  string    $fetchStyle the fetch style
      * @return mixed     the result of the query
      * @throws Exception if no result is returned
      */
-    public function fetchAll($query, $parameter = array(), $fetchStyle = PDO::FETCH_ASSOC)
+    public function fetchAll($query, $parameters = array(), $fetchStyle = PDO::FETCH_ASSOC)
     {
         $pdo = new PDO($this->dsn) and
         $statement = $pdo->prepare($query) and
-        $statement->execute($parameter) and
+        $statement->execute($parameters) and
         $result = $statement->fetchAll($fetchStyle);
 
         if (!isset($result)) {

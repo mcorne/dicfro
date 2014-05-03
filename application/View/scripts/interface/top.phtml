@@ -32,6 +32,7 @@
   <input type="hidden" id="dictionary-language" value="<?=$this->dictionary['language'];?>"/>
 
   <input class="word" type="text" id="word"
+         placeholder="<?=$this->translate('Enter a word');?>"
          title="<?=$this->translate('Enter a word then press the ENTER key or click on the button');?>"
          value="<?=$this->escape($this->word);?>"
          onkeypress="isEnterKey(event) && searchWord('<?=$this->linksHelper->setWordLink();?>');" />
