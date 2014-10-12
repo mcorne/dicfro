@@ -115,7 +115,7 @@ class View_Helper_Dictionaries extends View_Helper_Base
                     'list-title' => $listTitle,
                     'selected'   => $id == $selected or $value == $selected,
                     'text'       => $dictionary['name'],
-                    'title'      => $title,
+                    'title'      => strip_tags($title),
                     'type'       => $dictionary['type'],
                     'value'      => $value,
                 );
