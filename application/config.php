@@ -343,7 +343,7 @@ return array(
 
         'gdf' => array(
             'created'        => '2008-04-14',
-            'description'    => "Dictionnaire de l'ancienne langue française et de tous ses dialectes du IXème au XVème siècle, Frédéric Godefroy, 1880-1895",
+            'description'    => "Dictionnaire de l'ancienne langue française et de tous ses dialectes du IX<sup>e</sup> au XV<sup>e</sup> siècle, Frédéric Godefroy, 1880-1895",
             'description-en' => 'Dictionary of the Old French language and all its dialects from the ninth to fifteenth century, Frédéric Godefroy, 1880-1895',
             'image'          => 'dictionnaire-godefroy.jpg',
             'language'       => 'fr',
@@ -367,7 +367,7 @@ return array(
 
         'gdfc' => array(
             'created'        => '2008-04-14',
-            'description'    => "Complément du dictionnaire de l'ancienne langue française et de tous ses dialectes du IXème au XVème siècle, Frédéric Godefroy, 1895-1902",
+            'description'    => "Complément du dictionnaire de l'ancienne langue française et de tous ses dialectes du IX<sup>e</sup> au XV<sup>e</sup> siècle, Frédéric Godefroy, 1895-1902",
             'description-en' => 'Dictionary supplement of the Old French language and all its dialects from the ninth to fifteenth century, Frédéric Godefroy, 1880-1895',
             'image'          => 'complement-godefroy.jpg',
             'language'       => 'fr',
