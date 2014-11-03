@@ -1,9 +1,18 @@
+# uncomment the proper environment setting, comment the other
+# note that this setting might be overruled by the php-fpm config if any
+# SetEnv ENVIRONMENT production
+SetEnv ENVIRONMENT development
+
 RewriteEngine On
+
+# uncomment or fix accordingly if dictionaries are in a public/dictionary
+RewriteRule dictionary/(.+)$ /dicfro-dictionary/$1 [NC,L]
+
 RewriteCond %{REQUEST_FILENAME} -s [OR]
 RewriteCond %{REQUEST_FILENAME} -l [OR]
 RewriteCond %{REQUEST_FILENAME} -d
 RewriteRule ^.*$ - [NC,L]
 
 # select rule depending if dicfro is run as a domain subpath, eg my.domain.com/dicfro or not
-RewriteRule ^.*$ /index.php [NC,L]
-# RewriteRule ^.*$ /dicfro/index.php [NC,L]
+# RewriteRule ^.*$ /index.php [NC,L]
+RewriteRule ^.*$ /dicfro/index.php [NC,L]

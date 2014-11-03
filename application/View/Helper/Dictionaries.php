@@ -141,6 +141,7 @@ class View_Helper_Dictionaries extends View_Helper_Base
      */
     public function getNewDictionaries()
     {
+        date_default_timezone_set('UTC');
         $options = array();
 
         foreach($this->view->config['dictionaries'] as $id => $dictionary) {

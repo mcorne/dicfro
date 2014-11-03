@@ -13,12 +13,13 @@
 
 $_time = microtime(true);
 
-// sets application path
-$applicationPath = strpos($_SERVER['REQUEST_URI'], '/dicfro') === 0? '/../../cgi-bin/dicfro' : '/../application'; // dicfro domain subpath autodetection, default is none
-// $applicationPath = '/../application';                                                                          // installation with no domain subpath, eg local installation
-// $applicationPath = '/../../cgi-bin/xyz';                                                                       // installation with "xyz" domain subpath
+if (getenv('ENVIRONMENT') == 'production') {
+    $applicationPath = '/../../cgi-bin/dicfro';
+} else {
+    $applicationPath = '/../application';
+}
 
-$applicationPath = realpath(dirname(__FILE__) . $applicationPath);
+$applicationPath = realpath(__DIR__ . $applicationPath);
 set_include_path($applicationPath);
 
 require_once 'Base/Application.php';
