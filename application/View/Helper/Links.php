@@ -63,8 +63,9 @@ class View_Helper_Link extends View_Helper_Base
         $this->arguments = array(
             'setAboutLink'        => array('about', $this->view->dictionary['url']),
             'setArchivesLink'     => 'archives',
-            'setDictionaryLink'   => array($this->view->action, '%s', $this->view->word),
             'setDictionariesLink' => 'dictionaries',
+            'setDictionaryLink'   => array($this->view->action, '%s', $this->view->word),
+            'setDictionaryTest'   => 'test',
             'setDictlistLink'     => 'dictlist',
             'setHomeLink'         => array('home', $this->view->dictionary['url']),
             'setIntroductionLink' => array('introduction', $this->view->dictionary['url']),

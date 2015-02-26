@@ -56,6 +56,9 @@ return array(
     "DicFro looks for the word in the index, and displays the corresponding page of the dictionary." =>
     "DicFro recherche le mot dans l'index, et affiche la page correspondante du dictionnaire.",
 
+    "Dictionary Test" =>
+    "Test des dictionnaires",
+
     "Dictionary list" =>
     "Liste des dictionnaires",
 

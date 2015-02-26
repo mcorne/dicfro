@@ -9,7 +9,7 @@
  * @package    Model
  * @subpackage Search
  * @author     Michel Corne <mcorne@yahoo.com>
- * @copyright  2008-2013 Michel Corne
+ * @copyright  2008-2015 Michel Corne
  * @license    http://opensource.org/licenses/gpl-3.0.html GNU GPL v3
  */
 
@@ -23,7 +23,7 @@ require_once 'Model/Search/External.php';
  * @package    Model
  * @subpackage Search
  * @author     Michel Corne <mcorne@yahoo.com>
- * @copyright  2008-2013 Michel Corne
+ * @copyright  2008-2015 Michel Corne
  * @license    http://opensource.org/licenses/gpl-3.0.html GNU GPL v3
  */
 
@@ -46,7 +46,7 @@ class Model_Search_Jeanneau extends Model_Search_External
         'd' => array('da', 'ded', 'der', 'di', 'dir', 'dit', 'duo'),
         'e' => array('e', 'eg', 'em', 'es', 'exb', 'exo', 'ext'),
         'f' => array('fa', 'fe', 'fi', 'fl', 'fr', 'fu'),
-        'g' => array('g'),
+        'g' => array('g', 'glau'),
         'h' => array('h'),
         'i' => array('ia', 'imi', 'imu', 'ind', 'infi', 'inn', 'inst', 'inter', 'intes', 'invi'),
         'j' => array('j'),

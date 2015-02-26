@@ -17,6 +17,11 @@ body
     vertical-align: middle;
 }
 
+.red
+{
+    color: red;
+}
+
 a.gray, span.gray
 {
     color: gray;
@@ -75,7 +80,7 @@ div.page
 div.page img.picture
 {
     border-width: 0;
-	float: right;
+    float: right;
     margin: 2em 0 1em 1em;
 }
 
@@ -119,6 +124,12 @@ iframe.notice
     height: 2200px;
     scrolling: no;
     width: 100%;
+}
+
+iframe.test
+{
+    height: 30em;
+    width: 100em;
 }
 
 img.creative

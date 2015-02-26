@@ -5,8 +5,8 @@ SetEnv ENVIRONMENT development
 
 RewriteEngine On
 
-# uncomment or fix accordingly if dictionaries are in a public/dictionary
-RewriteRule dictionary/(.+)$ /dicfro-dictionary/$1 [NC,L]
+# uncomment if dictionaries are in a public/dictionary or fix accordingly
+RewriteRule ^dictionary/(.+)$ /dicfro-dictionary/$1 [NC,L]
 
 RewriteCond %{REQUEST_FILENAME} -s [OR]
 RewriteCond %{REQUEST_FILENAME} -l [OR]

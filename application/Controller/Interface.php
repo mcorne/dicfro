@@ -45,6 +45,7 @@ class Controller_Interface
         'page'         => true,
         'previous'     => true,
         'search'       => true,
+        'test'         => 'information',
     );
 
     /**

@@ -1,0 +1,54 @@
+<?php
+
+/**
+ * Dicfro
+ *
+ * PHP 5
+ *
+ * @category   DicFro
+ * @package    View
+ * @subpackage Scripts_Information
+ * @author     Michel Corne <mcorne@yahoo.com>
+ * @copyright  2015 Michel Corne
+ * @license    http://opensource.org/licenses/gpl-3.0.html GNU GPL v3
+ */
+
+?>
+
+<h1 class="title"><?=$this->translate('Dictionary availability');?></h1>
+
+<?php foreach($this->config['dictionaries'] as $dictionary):?>
+
+  <?php if (isset($dictionary['test'])):?>
+
+    <?php foreach((array) $dictionary['test'] as $index => $url):?>
+
+      <p class="sub-title">
+        <?=$dictionary['name'];?>
+
+        <?php if (is_array($dictionary['test'])):?>
+          (#<?=$index;?>)
+        <?php endif;?>
+
+        <?php if (! $url):?>
+          <span class="red">Not tested !</span>
+        <?php endif;?>
+      </p>
+
+      <?php if ($url):?>
+        <p><a href="<?=$url;?>"><?=$url;?></a></p>
+        <iframe class="test" src="<?=$url;?>"></iframe>
+      <?php endif;?>
+
+    <?php endforeach;?>
+
+  <?php else:?>
+
+    <p class="sub-title">
+      <?=$dictionary['name'];?>
+      <span class="red">Not tested !</span>
+    </p>
+
+  <?php endif;?>
+
+<?php endforeach;?>

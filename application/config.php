@@ -36,17 +36,6 @@ return array(
 
     // dictionaries details
     'dictionaries' => array(
-        'anglo-norman' => array(
-            'created'      => '2013-03-18',
-            'description'  => 'The Anglo-Norman dictionary',
-            'introduction' => 'http://www.anglo-norman.net',
-            'language'     => 'fr',
-            'name'         => 'Anglo-Norman',
-            'search'       => 'http://www.anglo-norman.net/cgi-bin/form-s1?term1=',
-            'title'        => 'AND',
-            'type'         => 'external',
-        ),
-
         'century' => array(
             'created'      => '2013-04-14',
             'description'  => 'The Century dictionary, an encyclopedic lexicon of the English language, William D. Whitney, 1895',
@@ -57,7 +46,7 @@ return array(
             'search'       => array(
                 'properties' => array(
                     'url'     => array(
-                        1 => 'http://ia600305.us.archive.org/BookReader/BookReaderImages.php?zip=/29/items/centurydict01whit/centurydict01whit_jp2.zip&file=centurydict01whit_jp2/centurydict01whit_0%03u.jp2&scale=3&rotate=0',
+                        1 => 'http://ia601409.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/centurydict01whit/centurydict01whit_jp2.zip&file=centurydict01whit_jp2/centurydict01whit_0%03u.jp2&scale=3&rotate=0',
                         2 => 'http://ia700400.us.archive.org/BookReader/BookReaderImages.php?zip=/1/items/cu31924091890594/cu31924091890594_jp2.zip&file=cu31924091890594_jp2/cu31924091890594_0%03u.jp2&scale=3&rotate=0',
                         3 => 'http://ia700406.us.archive.org/BookReader/BookReaderImages.php?zip=/21/items/cu31924091890602/cu31924091890602_jp2.zip&file=cu31924091890602_jp2/cu31924091890602_0%03u.jp2&scale=3&rotate=0',
                         4 => 'http://ia700406.us.archive.org/BookReader/BookReaderImages.php?zip=/3/items/cu31924091890610/cu31924091890610_jp2.zip&file=cu31924091890610_jp2/cu31924091890610_0%03u.jp2&scale=3&rotate=0',
@@ -67,6 +56,16 @@ return array(
                         8 => 'http://ia600407.us.archive.org/BookReader/BookReaderImages.php?zip=/17/items/cu31924091890651/cu31924091890651_jp2.zip&file=cu31924091890651_jp2/cu31924091890651_0%03u.jp2&scale=3&rotate=0',
                     ),
                 )
+            ),
+            'test'         => array(
+                        1 => 'http://ia601409.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/centurydict01whit/centurydict01whit_jp2.zip&file=centurydict01whit_jp2/centurydict01whit_0027.jp2&scale=3&rotate=0',
+                        2 => 'http://ia700400.us.archive.org/BookReader/BookReaderImages.php?zip=/1/items/cu31924091890594/cu31924091890594_jp2.zip&file=cu31924091890594_jp2/cu31924091890594_0013.jp2&scale=3&rotate=0',
+                        3 => 'http://ia700406.us.archive.org/BookReader/BookReaderImages.php?zip=/21/items/cu31924091890602/cu31924091890602_jp2.zip&file=cu31924091890602_jp2/cu31924091890602_0012.jp2&scale=3&rotate=0',
+                        4 => 'http://ia700406.us.archive.org/BookReader/BookReaderImages.php?zip=/3/items/cu31924091890610/cu31924091890610_jp2.zip&file=cu31924091890610_jp2/cu31924091890610_0012.jp2&scale=3&rotate=0',
+                        5 => 'http://ia600406.us.archive.org/BookReader/BookReaderImages.php?zip=/2/items/cu31924091890628/cu31924091890628_jp2.zip&file=cu31924091890628_jp2/cu31924091890628_0012.jp2&scale=3&rotate=0',
+                        6 => 'http://ia700402.us.archive.org/BookReader/BookReaderImages.php?zip=/35/items/cu31924091890636/cu31924091890636_jp2.zip&file=cu31924091890636_jp2/cu31924091890636_0012.jp2&scale=3&rotate=0',
+                        7 => 'http://ia600407.us.archive.org/BookReader/BookReaderImages.php?zip=/8/items/cu31924091890644/cu31924091890644_jp2.zip&file=cu31924091890644_jp2/cu31924091890644_0013.jp2&scale=3&rotate=0',
+                        8 => 'http://ia600407.us.archive.org/BookReader/BookReaderImages.php?zip=/17/items/cu31924091890651/cu31924091890651_jp2.zip&file=cu31924091890651_jp2/cu31924091890651_0012.jp2&scale=3&rotate=0',
             ),
             'title'        => 'Century D.',
             'type'         => 'index',
@@ -84,24 +83,17 @@ return array(
                 'properties' => array(
                     'url'     => array(
                         11 => 'http://ia700404.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/cu31924091890685/cu31924091890685_jp2.zip&file=cu31924091890685_jp2/cu31924091890685_0%03u.jp2&scale=3&rotate=0',
-                        12 => 'http://ia700305.us.archive.org/BookReader/BookReaderImages.php?zip=/7/items/centurydictionar12whituoft/centurydictionar12whituoft_jp2.zip&file=centurydictionar12whituoft_jp2/centurydictionar12whituoft_0%03u.jp2&scale=3&rotate=0',
+                        12 => 'http://ia902606.us.archive.org/BookReader/BookReaderImages.php?zip=/33/items/centurydictionar12whituoft/centurydictionar12whituoft_jp2.zip&file=centurydictionar12whituoft_jp2/centurydictionar12whituoft_0%03u.jp2&scale=3&rotate=0',
                     ),
                 )
+            ),
+            'test'         => array(
+                        11 => 'http://ia700404.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/cu31924091890685/cu31924091890685_jp2.zip&file=cu31924091890685_jp2/cu31924091890685_0018.jp2&scale=3&rotate=0',
+                        12 => 'http://ia902606.us.archive.org/BookReader/BookReaderImages.php?zip=/33/items/centurydictionar12whituoft/centurydictionar12whituoft_jp2.zip&file=centurydictionar12whituoft_jp2/centurydictionar12whituoft_0015.jp2&scale=3&rotate=0',
             ),
             'title'        => 'Century S.',
             'type'         => 'index',
             'volume'       => 'readonly',
-        ),
-
-        'chambers-dictionary' => array(
-            'created'      => '2014-04-29',
-            'description'  => 'The Century Chambers Dictionary',
-            'introduction' => 'http://chambers.dictionary.x10host.com/?about',
-            'language'     => 'en',
-            'name'         => 'Chambers Dictionary',
-            'search'       => 'http://chambers.dictionary.x10host.com/?w=',
-            'title'         => 'Chambers D.',
-            'type'         => 'external',
         ),
 
         'chambers-encyclopedia' => array(
@@ -114,8 +106,8 @@ return array(
             'search'       => array(
                 'properties' => array(
                     'url'     => array(
-                        1  => 'https://ia600308.us.archive.org/BookReader/BookReaderImages.php?zip=/5/items/chamberssency01lond/chamberssency01lond_jp2.zip&file=chamberssency01lond_jp2/chamberssency01lond_0%03u.jp2&scale=3&rotate=0',
-                        2  => 'https://ia600302.us.archive.org/BookReader/BookReaderImages.php?zip=/35/items/chamberssency02lond/chamberssency02lond_jp2.zip&file=chamberssency02lond_jp2/chamberssency02lond_0%03u.jp2&scale=3&rotate=0',
+                        1  => 'https://ia801407.us.archive.org/BookReader/BookReaderImages.php?zip=/5/items/chamberssency01lond/chamberssency01lond_jp2.zip&file=chamberssency01lond_jp2/chamberssency01lond_0%03u.jp2&scale=3&rotate=0',
+                        2  => 'https://ia601405.us.archive.org/BookReader/BookReaderImages.php?zip=/21/items/chamberssency02lond/chamberssency02lond_jp2.zip&file=chamberssency02lond_jp2/chamberssency02lond_0%03u.jp2&scale=3&rotate=0',
                         3  => 'https://ia600307.us.archive.org/BookReader/BookReaderImages.php?zip=/6/items/chamberssency03lond/chamberssency03lond_jp2.zip&file=chamberssency03lond_jp2/chamberssency03lond_0%03.jp2&scale=3&rotate=0',
                         4  => 'https://ia700302.us.archive.org/BookReader/BookReaderImages.php?zip=/7/items/chamberssency04lond/chamberssency04lond_jp2.zip&file=chamberssency04lond_jp2/chamberssency04lond_0%03.jp2&scale=3&rotate=0',
                         5  => 'https://ia700306.us.archive.org/BookReader/BookReaderImages.php?zip=/17/items/chamberssency05lond/chamberssency05lond_jp2.zip&file=chamberssency05lond_jp2/chamberssency05lond_0%03.jp2&scale=3&rotate=0',
@@ -126,6 +118,18 @@ return array(
                         10 => 'https://ia700306.us.archive.org/BookReader/BookReaderImages.php?zip=/17/items/chambersencyclop10lond/chambersencyclop10lond_jp2.zip&file=chambersencyclop10lond_jp2/chambersencyclop10lond_0%03.jp2&scale=3&rotate=0',
                     ),
                 )
+            ),
+            'test'         => array(
+                        1  => 'https://ia801407.us.archive.org/BookReader/BookReaderImages.php?zip=/5/items/chamberssency01lond/chamberssency01lond_jp2.zip&file=chamberssency01lond_jp2/chamberssency01lond_0021.jp2&scale=3&rotate=0',
+                        2  => 'https://ia601405.us.archive.org/BookReader/BookReaderImages.php?zip=/21/items/chamberssency02lond/chamberssency02lond_jp2.zip&file=chamberssency02lond_jp2/chamberssency02lond_0009.jp2&scale=3&rotate=0',
+                        3  => null,
+                        4  => null,
+                        5  => null,
+                        6  => null,
+                        7  => null,
+                        8  => null,
+                        9  => null,
+                        10 => null,
             ),
             'title'        => 'Chambers E.',
             'type'         => 'index',
@@ -152,6 +156,7 @@ return array(
                     'needTobler' => true,
                 )
             ),
+            'test'           => 'http://www.micmap.org/dicfro/search/glossaire-chretien-de-troyes/ab',
             'title'          => 'Chrétien',
             'type'           => 'internal',
             'url'            => 'glossaire-chretien-de-troyes',
@@ -172,6 +177,7 @@ return array(
                     'url'       => 'http://www.conjugaison.net/fr/',
                 )
             ),
+            'test' => 'http://www.conjugaison.net/fr/aller.html',
             'type'           => 'external',
         ),
 
@@ -187,6 +193,7 @@ return array(
                     'url' => 'http://www.pbm.com/~lindahl/cotgrave/search/search_backend.cgi?query=',
                 ),
             ),
+            'test'         => 'http://www.pbm.com/~lindahl/cotgrave/search/search_backend.cgi?query=abb',
             'type'         => 'external',
         ),
 
@@ -210,6 +217,7 @@ return array(
                     'needTobler' => true,
                 )
             ),
+            'test'           => 'http://www.micmap.org/dicfro/search/glossaire-couronnement-de-louis/a',
             'title'          => 'Couronnement',
             'type'           => 'internal',
             'url'            => 'glossaire-couronnement-de-louis',
@@ -228,6 +236,7 @@ return array(
                     'url'       => 'http://www.atilf.fr/dmf/definition/',
                 )
             ),
+            'test'           => 'http://www.atilf.fr/dmf/definition/a',
             'title'          => 'DMF',
             'type'           => 'external',
         ),
@@ -240,6 +249,7 @@ return array(
             'language'       => 'la',
             'name'           => 'Du Cange',
             'search'         => 'http://ducange.enc.sorbonne.fr/',
+            'test'           => 'http://ducange.enc.sorbonne.fr/a',
             'title'          => 'Du Cange',
             'type'           => 'external',
         ),
@@ -257,7 +267,8 @@ return array(
                     'url'       => 'http://dvlf.uchicago.edu/mot/',
                 )
             ),
-            'title'           => 'DVLF',
+            'test'           => 'http://dvlf.uchicago.edu/mot/a',
+            'title'          => 'DVLF',
             'type'           => 'external',
         ),
 
@@ -303,6 +314,28 @@ return array(
                     ),
                 )
             ),
+            'test'           => array(
+                        1  => 'http://gallica.bnf.fr/ark:/12148/bpt6k1200512k/f8.highres',
+                        2  => 'http://gallica.bnf.fr/ark:/12148/bpt6k12005130/f2.highres',
+                        3  => 'http://gallica.bnf.fr/ark:/12148/bpt6k1200514d/f2.highres',
+                        4  => 'http://gallica.bnf.fr/ark:/12148/bpt6k1200515t/f2.highres',
+                        5  => 'http://gallica.bnf.fr/ark:/12148/bpt6k12005167/f2.highres',
+                        6  => 'http://gallica.bnf.fr/ark:/12148/bpt6k1200517n/f2.highres',
+                        7  => 'http://gallica.bnf.fr/ark:/12148/bpt6k12005182/f2.highres',
+                        8  => 'http://gallica.bnf.fr/ark:/12148/bpt6k1200519g/f2.highres',
+                        9  => 'http://gallica.bnf.fr/ark:/12148/bpt6k12005204/f2.highres',
+                        10 => 'http://gallica.bnf.fr/ark:/12148/bpt6k1200521j/f2.highres',
+                        11 => 'http://gallica.bnf.fr/ark:/12148/bpt6k1200522z/f2.highres',
+                        12 => 'http://gallica.bnf.fr/ark:/12148/bpt6k1200523c/f2.highres',
+                        13 => 'http://gallica.bnf.fr/ark:/12148/bpt6k1200524s/f2.highres',
+                        14 => 'http://gallica.bnf.fr/ark:/12148/bpt6k12005256/f2.highres',
+                        15 => 'http://gallica.bnf.fr/ark:/12148/bpt6k1200526m/f2.highres',
+                        16 => 'http://gallica.bnf.fr/ark:/12148/bpt6k12005271/f2.highres',
+                        17 => 'http://gallica.bnf.fr/ark:/12148/bpt6k1200528f/f2.highres',
+                        18 => 'http://gallica.bnf.fr/ark:/12148/bpt6k1200529v/f2.highres',
+                        19 => 'http://gallica.bnf.fr/ark:/12148/bpt6k1200530h/f2.highres',
+                        20 => 'http://gallica.bnf.fr/ark:/12148/bpt6k1200531x/f2.highres',
+            ),
             'title'          => 'E. Larousse',
             'type'           => 'index',
             'updated'        => '2013-09-28',
@@ -316,6 +349,7 @@ return array(
             'language'     => 'en',
             'name'         => 'Etymonline',
             'search'       => 'http://www.etymonline.com/index.php?allowed_in_frame=1&searchmode=none&search=',
+            'test'         => 'http://www.etymonline.com/index.php?allowed_in_frame=1&searchmode=none&search=a',
             'type'         => 'external',
         ),
 
@@ -338,6 +372,7 @@ return array(
                     'needWhitaker' => true,
                 ),
             ),
+            'test'           => 'http://www.micmap.org/dicfro/search/gaffiot/a',
             'type'           => 'internal',
         ),
 
@@ -359,6 +394,7 @@ return array(
                     'needTobler'       => true,
                 )
             ),
+            'test'           => 'http://www.micmap.org/dicfro/search/dictionnaire-godefroy/a',
             'title'          => 'D. Godefroy',
             'type'           => 'internal',
             'url'            => 'dictionnaire-godefroy',
@@ -384,6 +420,7 @@ return array(
                     'needTobler'       => true,
                 )
             ),
+            'test'           => 'http://www.micmap.org/dicfro/search/complement-godefroy/a',
             'title'          => 'C. Godefroy',
             'type'           => 'internal',
             'url'            => 'complement-godefroy',
@@ -405,6 +442,7 @@ return array(
                     'needTobler'     => true,
                 )
             ),
+            'test'           => 'http://www.micmap.org/dicfro/search/lexique-godefroy/a',
             'title'          => 'L. Godefroy',
             'type'           => 'internal',
             'url'            => 'lexique-godefroy',
@@ -425,7 +463,7 @@ return array(
             ),
             'search'         => array(
                 'properties' => array(
-                    'url'     => array(
+                    'url' => array(
                         1  => 'http://gallica.bnf.fr/ark:/12148/bpt6k1200532b/f%u.highres',
                         2  => 'http://gallica.bnf.fr/ark:/12148/bpt6k1200533r/f%u.highres',
                         3  => 'http://gallica.bnf.fr/ark:/12148/bpt6k12005345/f%u.highres',
@@ -435,6 +473,15 @@ return array(
                         7  => 'http://gallica.bnf.fr/ark:/12148/bpt6k12005590/f%u.highres',
                     ),
                 )
+            ),
+            'test'           => array(
+                        1  => 'http://gallica.bnf.fr/ark:/12148/bpt6k1200532b/f105.highres',
+                        2  => 'http://gallica.bnf.fr/ark:/12148/bpt6k1200533r/f9.highres',
+                        3  => 'http://gallica.bnf.fr/ark:/12148/bpt6k12005345/f9.highres',
+                        4  => 'http://gallica.bnf.fr/ark:/12148/bpt6k1200535k/f9.highres',
+                        5  => 'http://gallica.bnf.fr/ark:/12148/bpt6k1200551p/f9.highres',
+                        6  => 'http://gallica.bnf.fr/ark:/12148/bpt6k1200556r/f9.highres',
+                        7  => 'http://gallica.bnf.fr/ark:/12148/bpt6k12005590/f9.highres',
             ),
             'title'          => 'G. Larousse',
             'type'           => 'index',
@@ -455,6 +502,7 @@ return array(
                     'url' => 'http://www.prima-elementa.fr/',
                 ),
             ),
+            'test'           => 'http://www.prima-elementa.fr/Dico-a01.html#',
             'type'           => 'external',
         ),
 
@@ -471,6 +519,7 @@ return array(
                     'needTobler' => true,
                 )
             ),
+            'test'           => 'http://www.micmap.org/dicfro/search/dictionnaire-lacurne/a',
             'title'          => 'LacEdic',
             'type'           => 'internal',
             'url'            => 'dictionnaire-lacurne',
@@ -488,6 +537,7 @@ return array(
             'search'         => array(
                 'class' => 'Model_Search_Lexromv',
             ),
+            'test'           => 'http://www.micmap.org/dicfro/search/lexique-roman/a',
             'title'          => 'L. Roman',
             'type'           => 'internal',
             'url'            => 'lexique-roman',
@@ -501,6 +551,7 @@ return array(
             'language'       => 'fr',
             'name'           => 'Littré',
             'search'         => 'http://www.littre.org/definition/',
+            'test'           => 'http://www.littre.org/definition/a',
             'type'           => 'external',
             'updated'        => '2013-05-10',
         ),
@@ -513,6 +564,7 @@ return array(
             'language'       => 'fr',
             'name'           => 'Orthonet',
             'search'         => 'http://orthonet.sdv.fr/php/rech_mot.php?mot=',
+            'test'           => 'http://orthonet.sdv.fr/php/rech_mot.php?mot=a',
             'type'           => 'external',
         ),
 
@@ -533,6 +585,12 @@ return array(
                     ),
                 )
             ),
+            'test'           => array(
+                        1 => 'http://ia700503.us.archive.org/BookReader/BookReaderImages.php?zip=/8/items/PetitLarousse19061/larousse_petit_1906_a_jp2.zip&file=larousse_petit_1906_a_jp2/larousse_petit_1906_a_0014.jp2&scale=3&rotate=0',
+                        2 => 'http://ia700507.us.archive.org/BookReader/BookReaderImages.php?zip=/6/items/PetitLarousse19062/larousse_petit_1906_b_jp2.zip&file=larousse_petit_1906_b_jp2/larousse_petit_1906_b_0000.jp2&scale=3&rotate=0',
+                        3 => 'http://ia600503.us.archive.org/BookReader/BookReaderImages.php?zip=/22/items/PetitLarousse19063/larousse_petit_1906_c_jp2.zip&file=larousse_petit_1906_c_jp2/larousse_petit_1906_c_0000.jp2&scale=3&rotate=0',
+                        4 => 'http://ia700507.us.archive.org/BookReader/BookReaderImages.php?zip=/5/items/PetitLarousse19064/larousse_petit_1906_d_jp2.zip&file=larousse_petit_1906_d_jp2/larousse_petit_1906_d_0000.jp2&scale=3&rotate=0',
+            ),
             'title'          => 'N.c. Larousse',
             'type'           => 'index',
             'volume'         => 'readonly',
@@ -552,6 +610,10 @@ return array(
                         6 => 'http://ia700503.us.archive.org/BookReader/BookReaderImages.php?zip=/10/items/PetitLarousse19066/larousse_petit_1906_f_jp2.zip&file=larousse_petit_1906_f_jp2/larousse_petit_1906_f_0%03u.jp2&scale=3&rotate=0',
                     ),
                 )
+            ),
+            'test'           => array(
+                        5 => 'http://ia600501.us.archive.org/BookReader/BookReaderImages.php?zip=/19/items/PetitLarousse19065/larousse_petit_1906_e_jp2.zip&file=larousse_petit_1906_e_jp2/larousse_petit_1906_e_0000.jp2&scale=3&rotate=0',
+                        6 => 'http://ia700503.us.archive.org/BookReader/BookReaderImages.php?zip=/10/items/PetitLarousse19066/larousse_petit_1906_f_jp2.zip&file=larousse_petit_1906_f_jp2/larousse_petit_1906_f_0000.jp2&scale=3&rotate=0',
             ),
             'title'          => 'N.p. Larousse',
             'type'           => 'index',
@@ -578,6 +640,7 @@ return array(
                     'needTobler' => true,
                 )
             ),
+            'test'           => 'http://www.micmap.org/dicfro/search/glossaire-roman-de-renart-fhs/a',
             'title'          => 'Renart',
             'type'           => 'internal',
             'url'            => 'glossaire-roman-de-renart-fhs',
@@ -603,6 +666,7 @@ return array(
                     'needTobler' => true,
                 )
             ),
+            'test'           => 'http://www.micmap.org/dicfro/search/glossaire-roman-de-renart-meon-vol1/a',
             'title'          => 'Méon 1',
             'type'           => 'internal',
             'url'            => 'glossaire-roman-de-renart-meon-vol1',
@@ -628,6 +692,7 @@ return array(
                     'needTobler' => true,
                 )
             ),
+            'test'           => 'http://www.micmap.org/dicfro/search/glossaire-roman-de-renart-meon-vol2/a',
             'title'          => 'Méon 2',
             'type'           => 'internal',
             'url'            => 'glossaire-roman-de-renart-meon-vol2',
@@ -653,6 +718,7 @@ return array(
                     'needTobler' => true,
                 )
             ),
+            'test'           => 'http://www.micmap.org/dicfro/search/glossaire-roman-de-renart-meon-vol3/a',
             'title'          => 'Méon 3',
             'type'           => 'internal',
             'url'            => 'glossaire-roman-de-renart-meon-vol3',
@@ -678,6 +744,7 @@ return array(
                     'needTobler' => true,
                 )
             ),
+            'test'           => 'http://www.micmap.org/dicfro/search/glossaire-roman-de-renart-meon-vol4/a',
             'title'          => 'Méon 4',
             'type'           => 'internal',
             'url'            => 'glossaire-roman-de-renart-meon-vol4',
@@ -703,6 +770,7 @@ return array(
                     'needTobler' => true,
                 )
             ),
+            'test'           => 'http://www.micmap.org/dicfro/search/glossaire-chanson-de-roland/a',
             'title'          => 'Roland',
             'type'           => 'internal',
             'url'            => 'glossaire-chanson-de-roland',
@@ -728,6 +796,7 @@ return array(
                     'needTobler' => true,
                 )
             ),
+            'test'           => 'http://www.micmap.org/dicfro/search/glossaire-roman-de-la-rose/a',
             'title'          => 'Rose',
             'type'           => 'internal',
             'url'            => 'glossaire-roman-de-la-rose',
@@ -743,6 +812,7 @@ return array(
             'search'         => array(
                 'class' => 'Model_Search_Tcaf',
             ),
+            'test'           => 'http://www.micmap.org/dicfro/search/tableaux-de-conjugaison/a',
             'title'          => 'TCAF',
             'type'           => 'internal',
             'url'            => 'tableaux-de-conjugaison',
@@ -756,6 +826,7 @@ return array(
             'language'       => 'fr',
             'name'           => 'Trésor de la Langue Fr.',
             'search'         => 'http://www.cnrtl.fr/definition/',
+            'test'           => 'http://www.cnrtl.fr/definition/a',
             'title'          => 'TLFi',
             'type'           => 'external',
             'updated'        => '2014-05-02',
@@ -781,6 +852,7 @@ return array(
                     'needTobler' => true,
                 )
             ),
+            'test'           => 'http://www.micmap.org/dicfro/search/glossaire-roman-de-tristan/a',
             'title'          => 'Tristan',
             'type'           => 'internal',
             'url'            => 'glossaire-roman-de-tristan',
@@ -800,6 +872,7 @@ return array(
                     'needTobler'     => true,
                 )
             ),
+            'test'           => 'http://www.micmap.org/dicfro/search/vandaele/a',
             'type'           => 'internal',
         ),
 
@@ -816,6 +889,7 @@ return array(
                     'url'     => 'http://lysy2.archives.nd.edu/cgi-bin/words.exe?',
                 ),
             ),
+            'test'           => 'http://lysy2.archives.nd.edu/cgi-bin/words.exe?A',
             'type'           => 'external',
         ),
 
@@ -826,6 +900,7 @@ return array(
             'language'     => 'en',
             'name'         => 'Webster',
             'search'       => 'http://machaut.uchicago.edu/?action=search&resource=Webster%27s&quicksearch=on&word=',
+            'test'         => 'http://machaut.uchicago.edu/?action=search&resource=Webster%27s&quicksearch=on&word=a',
             'type'         => 'external',
         ),
 
@@ -836,6 +911,7 @@ return array(
             'language'     => 'en',
             'name'         => 'Wiktionary',
             'search'       => 'http://en.wiktionary.org/wiki/',
+            'test'         => 'http://en.wiktionary.org/wiki/a',
             'type'         => 'external',
         ),
 
@@ -847,6 +923,7 @@ return array(
             'language'       => 'fr',
             'name'           => 'Wiktionnaire',
             'search'         => 'http://fr.wiktionary.org/wiki/',
+            'test'           => 'http://fr.wiktionary.org/wiki/a',
             'type'           => 'external',
         ),
     ),
@@ -858,7 +935,6 @@ return array(
     'groups' => array(
         array(
             'dictionaries' => array(
-                'chambers-dictionary',
                 'chambers-encyclopedia',
                 'century',
                 'century-supplement',
@@ -886,7 +962,6 @@ return array(
         ),
         array(
             'dictionaries' => array(
-                'anglo-norman',
                 'roland',
                 'chretien',
                 'tcaf',

@@ -42,7 +42,10 @@
 
   <?php if($this->information):?>
       <div class="page">
-        <img class="picture" src="<?=$this->imagesHelper->getImageFile();?>" />
+        <?php if ($this->previousAction != 'test'):?>
+          <img class="picture" src="<?=$this->imagesHelper->getImageFile();?>" />
+        <?php endif;?>
+
         <?php include $this->viewsDir . '/' . $this->information;?>
       </div>
   <?php endif;?>
