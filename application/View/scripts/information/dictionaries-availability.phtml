@@ -15,18 +15,18 @@
 
 ?>
 
-<h1 class="title"><?=$this->translate('Dictionary availability');?></h1>
+<h1 class="title"><?=$this->translate('Dictionaries availability');?></h1>
 
-<?php foreach($this->config['dictionaries'] as $dictionary):?>
+<?php foreach($this->dictionaries as $dictionary):?>
 
-  <?php if (isset($dictionary['test'])):?>
+  <?php if ($dictionary['urls']):?>
 
-    <?php foreach((array) $dictionary['test'] as $index => $url):?>
+    <?php foreach((array) $dictionary['urls'] as $index => $url):?>
 
       <p class="sub-title">
         <?=$dictionary['name'];?>
 
-        <?php if (is_array($dictionary['test'])):?>
+        <?php if (is_array($dictionary['urls'])):?>
           (#<?=$index;?>)
         <?php endif;?>
 

@@ -8,7 +8,7 @@
  * @category  DicFro
  * @package   Controller
  * @author    Michel Corne <mcorne@yahoo.com>
- * @copyright 2008-2014 Michel Corne
+ * @copyright 2008-2015 Michel Corne
  * @license   http://opensource.org/licenses/gpl-3.0.html GNU GPL v3
  */
 
@@ -34,18 +34,19 @@ class Controller_Interface
      * @var array
      */
     public $actions = array(
-        'about'        => 'information',
-        'archives'     => 'information',
-        'dictionaries' => 'information',
-        'dictlist'     => true,
-        'home'         => 'information',
-        'introduction' => true,
-        'next'         => true,
-        'options'      => 'information',
-        'page'         => true,
-        'previous'     => true,
-        'search'       => true,
-        'test'         => 'information',
+        'about'                     => 'information',
+        'archives'                  => 'information',
+        'dictionaries'              => 'information',
+        'dictionaries-availability' => true,
+        'dictionaries-search-test'  => true,
+        'dictlist'                  => true,
+        'home'                      => 'information',
+        'introduction'              => true,
+        'next'                      => true,
+        'options'                   => 'information',
+        'page'                      => true,
+        'previous'                  => true,
+        'search'                    => true,
     );
 
     /**
@@ -91,6 +92,7 @@ class Controller_Interface
 
         if ($this->actions[$action] === 'information') {
             $this->view->information = "information/$action.phtml";
+
         } else {
             $this->{$this->front->action}();
         }
@@ -114,6 +116,77 @@ class Controller_Interface
         require_once $file;
 
         return new $class($this->front->config['data-dir'], $this->dictionary['search']['properties'], $this->dictionary['query']);
+    }
+
+    /**
+     * Sets the URLs to check the dictionaries availability
+     */
+    public function dictionariesAvailabilityAction()
+    {
+        $dictionaries = [];
+
+        foreach($this->front->config['dictionaries'] as $id => $dictionary) {
+            if (! isset($dictionary['availability-test'])) {
+                $urls = null;
+
+            } elseif ($dictionary['type'] == 'internal') {
+                $dictionaryUrl = isset($dictionary['url']) ? $dictionary['url'] : $id;
+                $urls = sprintf('http://www.micmap.org/dicfro/search/%s/%s', $dictionaryUrl, $dictionary['availability-test']);
+
+            } elseif (! isset($dictionary['search'])) {
+                $urls = null; // to process if there happens to be such a case one day
+
+            } elseif (is_string($dictionary['search'])) {
+                $urls = $dictionary['search'] . $dictionary['availability-test'];
+
+            } elseif (! isset($dictionary['search']['properties']['url'])) {
+                $urls = null; // to process if there happens to be such a case one day
+
+            } elseif (is_string($dictionary['search']['properties']['url'])) {
+                $urls = $dictionary['search']['properties']['url'] . $dictionary['availability-test'];
+
+                if (isset($dictionary['search']['properties']['suffix'])) {
+                    $urls .= $dictionary['search']['properties']['suffix'];
+                }
+
+            } else {
+                $urls = [];
+
+                foreach ($dictionary['search']['properties']['url'] as $index => $url) {
+                    if (isset($dictionary['availability-test'][$index])) {
+                        $urls[$index] = sprintf($url, $dictionary['availability-test'][$index]);
+                    } else {
+                        $urls[$index] = null;
+                    }
+                }
+            }
+
+            $dictionaries[] = [
+                'name' => $dictionary['name'],
+                'urls' => $urls,
+            ];
+        }
+
+        $this->view->dictionaries = $dictionaries;
+        $this->view->information = "information/dictionaries-availability.phtml";
+    }
+
+    /**
+     * Tests and validates dictionaries search
+     */
+    public function dictionariesSearchTestAction()
+    {
+        $result = [];
+
+        foreach($this->front->config['dictionaries'] as $id => $dictionary) {
+            $this->dictionary = $dictionary;
+            $this->setDictionaryDefaults($id);
+            $search = $this->createSearchObject();
+            $result[] = $search->searchWord('a');
+        }
+
+        $this->view->result =  $result;
+        $this->view->information = "information/dictionaries-search-test.phtml";
     }
 
     /**

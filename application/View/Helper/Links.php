@@ -61,18 +61,19 @@ class View_Helper_Link extends View_Helper_Base
     public function init()
     {
         $this->arguments = array(
-            'setAboutLink'        => array('about', $this->view->dictionary['url']),
-            'setArchivesLink'     => 'archives',
-            'setDictionariesLink' => 'dictionaries',
-            'setDictionaryLink'   => array($this->view->action, '%s', $this->view->word),
-            'setDictionaryTest'   => 'test',
-            'setDictlistLink'     => 'dictlist',
-            'setHomeLink'         => array('home', $this->view->dictionary['url']),
-            'setIntroductionLink' => array('introduction', $this->view->dictionary['url']),
-            'setNextPageLink'     => array('next', $this->view->dictionary['url'], $this->view->page, $this->view->volume, $this->view->word),
-            'setOptionsLink'      => array('options', $this->view->dictionary['url']),
-            'setPreviousPageLink' => array('previous', $this->view->dictionary['url'], $this->view->page, $this->view->volume, $this->view->word),
-            'setWordLink'         => array('search', $this->view->dictionary['url'], '%s'),
+            'setAboutLink'                => array('about', $this->view->dictionary['url']),
+            'setArchivesLink'             => 'archives',
+            'setDictionariesAvailability' => 'dictionaries-availability',
+            'setDictionariesLink'         => 'dictionaries',
+            'setDictionariesSearchTest'   => 'dictionaries-search-test',
+            'setDictionaryLink'           => array($this->view->action, '%s', $this->view->word),
+            'setDictlistLink'             => 'dictlist',
+            'setHomeLink'                 => array('home', $this->view->dictionary['url']),
+            'setIntroductionLink'         => array('introduction', $this->view->dictionary['url']),
+            'setNextPageLink'             => array('next', $this->view->dictionary['url'], $this->view->page, $this->view->volume, $this->view->word),
+            'setOptionsLink'              => array('options', $this->view->dictionary['url']),
+            'setPreviousPageLink'         => array('previous', $this->view->dictionary['url'], $this->view->page, $this->view->volume, $this->view->word),
+            'setWordLink'                 => array('search', $this->view->dictionary['url'], '%s'),
         );
     }
 
