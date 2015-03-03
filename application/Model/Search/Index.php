@@ -29,13 +29,13 @@ require_once 'Model/Search.php';
 
 class Model_Search_Index extends Model_Search
 {
-    public function __construct($directory, $properties, $query = array())
+    public function __construct($dataDir, $properties, $query = array(), $dictionaryDir = null)
     {
         if (! isset($query['class'])) {
             $query['class'] = 'Model_Query_Index';
         }
 
-        parent::__construct($directory, $properties, $query);
+        parent::__construct($dataDir, $properties, $query, $dictionaryDir);
     }
 
     public function __call($name, $arguments)

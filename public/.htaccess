@@ -5,8 +5,10 @@ SetEnv ENVIRONMENT development
 
 RewriteEngine On
 
-# uncomment if dictionaries are in a public/dictionary or fix accordingly
-RewriteRule ^dictionary/(.+)$ /dicfro-dictionary/$1 [NC,L]
+# comment the rule if all dictionaries are in dicfro public/dictionary, eg "dictionary/chretien/mImg/0000025.gif" in production
+# or fix accordingly, eg "dicfro-dictionary/chretien/public/mImg/0000025.gif" in development
+# IMPORTANT! keep in sync with config.php "domain-subpath" and "dictionary-dir"
+RewriteRule ^dictionary/([^/]+)/(.+)$ /dicfro-dictionary/$1/public/$2 [NC,L]
 
 RewriteCond %{REQUEST_FILENAME} -s [OR]
 RewriteCond %{REQUEST_FILENAME} -l [OR]

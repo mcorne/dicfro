@@ -9,7 +9,7 @@
  * @package    Model
  * @subpackage Search
  * @author     Michel Corne <mcorne@yahoo.com>
- * @copyright  2008-2010 Michel Corne
+ * @copyright  2008-2015 Michel Corne
  * @license    http://opensource.org/licenses/gpl-3.0.html GNU GPL v3
  */
 
@@ -38,11 +38,6 @@ class Model_Search_Internal extends Model_Search
      * Template to parse an image number
      */
     const PARSE_IMAGE_NUMBER_TPL = '~(\d\d)(?:0|1)(\d\d\d\d)~i';
-
-    /**
-     * Template of the name of an image file
-     */
-    const IMAGE_DEFAULT_PATH_TPL = 'dictionary/%s/mImg/%s.gif';
 
     /**
      * Additional digit used in some dictionaries, ex. in the "Godefroy Complement"
@@ -104,13 +99,13 @@ class Model_Search_Internal extends Model_Search
      */
     public $needTcaf = false;
 
-    public function __construct($directory, $properties, $query = array())
+    public function __construct($directory, $properties, $query = array(), $dictionaryDir = null)
     {
         if (! isset($query['class'])) {
             $query['class'] = 'Model_Query_Internal';
         }
 
-        parent::__construct($directory, $properties, $query);
+        parent::__construct($directory, $properties, $query, $dictionaryDir);
 
         $this->directory = $directory;
     }
@@ -186,7 +181,19 @@ class Model_Search_Internal extends Model_Search
         list($volume, $page) = $this->extractVolumeAndPage($imageNumber);
         $pattern = sprintf($this->errataFiles, $volume, (int)$page);
 
-        return glob($pattern);
+        if (!  empty($this->dictionaryDir)) {
+            list($dictionaryId, $imageSubpath) = explode('/', $pattern, 2);
+            $dictionaryDir = sprintf($this->dictionaryDir, $dictionaryId);
+            $pattern =  "$dictionaryDir/$imageSubpath";
+        }
+
+        $errataFiles = glob($pattern);
+
+        if (!  empty($this->dictionaryDir)) {
+            $errataFiles = str_replace($dictionaryDir, "dictionary/$dictionaryId", $errataFiles);
+        }
+
+        return $errataFiles;
     }
 
     /**
@@ -284,9 +291,9 @@ class Model_Search_Internal extends Model_Search
     public function setImagePath($foundWord)
     {
         if ($this->imagePath) {
-            $path = sprintf($this->imagePath, $foundWord['image']);
+            $path = 'dictionary/' . sprintf($this->imagePath, $foundWord['image']);
         } else {
-            $path = sprintf(self::IMAGE_DEFAULT_PATH_TPL, $this->dictionary, $foundWord['image']);
+            $path = sprintf('dictionary/%s/mImg/%s.gif', $this->dictionary, $foundWord['image']);
         }
 
         return $path;

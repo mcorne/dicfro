@@ -14,13 +14,9 @@
 
 /**
  * Application configuration file
+ *
+ * IMPORTANT! keep "domain-subpath" and "dictionary-dir" in sync with .htaccess
  */
-
-// sets domain subpath
-// dicfro domain subpath autodetection, default is none
-$domainSubpath = (isset($_SERVER['REQUEST_URI']) and strpos($_SERVER['REQUEST_URI'], '/dicfro') === 0)? 'dicfro' : '';
-// $domainSubpath = '';    // installation with no domain subpath, eg local installation
-// $domainSubpath = 'xyz'; // installation with "xyz" domain subpath
 
 $applicationDir = dirname(__FILE__); // global variable used by scripts
 
@@ -33,6 +29,12 @@ return array(
         'en' => 'century',
         'fr' => 'gdf',
     ),
+
+    // sets the dictionary directory containting images (dictionary pages)
+    // this MUST BE kept in sync with .htaccess dictionary rewrite rule
+    // eg "dicfro-dictionary/chretien/public/mImg/0000025.gif" in development
+    'dictionary-dir' => dirname(__FILE__) . '/../../dicfro-dictionary/%s/public',
+    // leave empty if dictionaries are in dicfro public/dictionary, eg "dictionary/chretien/mImg/0000025.gif" in production
 
     // dictionaries details
     'dictionaries' => array(
@@ -379,8 +381,8 @@ return array(
             'parser'         => 'Model_Parser_GdfLike',
             'search'         => array(
                 'properties' => array(
-                    'errataFiles'      => 'dictionary/gdf/mPimg-3/%s-%s[a-z]*/*.gif',
-                    'imagePath'        => 'dictionary/gdf/mImg/%s.gif',
+                    'errataFiles'      => 'gdf/mPimg-3/%s-%s[a-z]*/*.gif',
+                    'imagePath'        => 'gdf/mImg/%s.gif',
                     'needErrataImages' => true,
                     'needGhostwords'   => true,
                     'needTcaf'         => true,
@@ -405,8 +407,8 @@ return array(
             'search'         => array(
                 'properties' => array(
                     'digit'            => 1,
-                    'errataFiles'      => 'dictionary/gdfc/mPimg-3/%s-%s[a-z]*/*.gif',
-                    'imagePath'        => 'dictionary/gdfc/mImg/%s.gif',
+                    'errataFiles'      => 'gdfc/mPimg-3/%s-%s[a-z]*/*.gif',
+                    'imagePath'        => 'gdfc/mImg/%s.gif',
                     'needErrataImages' => true,
                     'needGhostwords'   => true,
                     'needTcaf'         => true,
@@ -920,8 +922,12 @@ return array(
         ),
     ),
 
-    // domain subpath set in .htaccess, ex. "dicfro" from "www.micmap.org/dicfro"
-    'domain-subpath' => $domainSubpath,
+    // sets the domain subpath
+    // this MUST BE kept in sync with .htaccess dictionary rewrite rule
+    // dicfro domain subpath autodetection, default is none
+    'domain-subpath' => (isset($_SERVER['REQUEST_URI']) and strpos($_SERVER['REQUEST_URI'], '/dicfro') === 0)? 'dicfro' : '',
+    // $domainSubpath = '';    // installation with no domain subpath, eg local installation
+    // $domainSubpath = 'xyz'; // installation with "xyz" domain subpath
 
     // dictionary groups, displayed as they are ordered below in the home page and select box
     'groups' => array(

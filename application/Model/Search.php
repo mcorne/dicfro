@@ -22,7 +22,7 @@
  * @package    Model
  * @subpackage Search
  * @author     Michel Corne <mcorne@yahoo.com>
- * @copyright  2008-2010 Michel Corne
+ * @copyright  2008-2015 Michel Corne
  * @license    http://opensource.org/licenses/gpl-3.0.html GNU GPL v3
  */
 
@@ -35,16 +35,24 @@ abstract class Model_Search
     public $dictionary;
 
     /**
+     * Dictionary directory containting images (dictionary pages)
+     * @var string
+     */
+    public $dictionaryDir;
+
+    /**
      * Query object
      * @var object
      */
     public $query;
 
-    public function __construct($directory, $properties = array(), $query = array())
+    public function __construct($directory, $properties = array(), $query = array(), $dictionaryDir = null)
     {
         foreach($properties as $property => $value) {
             $this->$property = $value;
         }
+
+        $this->dictionaryDir = $dictionaryDir;
 
         if (isset($query['class'])) {
             $class = $query['class'];
