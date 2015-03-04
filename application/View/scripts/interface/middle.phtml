@@ -23,10 +23,6 @@
       <img src="<?=$this->setLinkUrl($this->definition);?>" />
   <?php endif;?>
 
-  <?php if($this->vocabulary):?>
-      <img src="<?=$this->setLinkUrl($this->vocabulary);?>" />
-  <?php endif;?>
-
   <?php if($this->externalDict):?>
     <iframe class="notice" id="external-dict" onload="window.focus(); setDictionaryHeight(this.id)"
             src="<?=$this->externalDict;?>"></iframe>

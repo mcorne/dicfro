@@ -529,9 +529,6 @@ return array(
             'introduction'   => 'roman.phtml',
             'language'       => 'fr',
             'name'           => 'Lexique Roman',
-            'search'         => array(
-                'class' => 'Model_Search_Lexromv',
-            ),
             'title'          => 'L. Roman',
             'type'           => 'internal',
             'url'            => 'lexique-roman',

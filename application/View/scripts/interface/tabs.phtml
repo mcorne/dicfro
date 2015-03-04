@@ -20,16 +20,14 @@
 <hr class="tabs" />
 
 <?php if($this->definition):?>
+  <?php if($this->dictionary['id'] == 'lexromv'):?>
+    <a class="tab-selected" id="content-tab"
+       href="javascript: updateTabContents('content-tab');" ><?=$this->translate('Vocabulary');?></a>
 
-  <a class="tab-selected" id="content-tab"
-     href="javascript: updateTabContents('content-tab');" ><?=$this->translate('Definitions');?></a>
-
-<?php endif;?>
-
-<?php if($this->vocabulary):?>
-
-  <a class="tab-selected" id="content-tab"
-     href="javascript: updateTabContents('content-tab');" ><?=$this->translate('Vocabulary');?></a>
+  <?php else:?>
+    <a class="tab-selected" id="content-tab"
+       href="javascript: updateTabContents('content-tab');" ><?=$this->translate('Definitions');?></a>
+  <?php endif;?>
 
 <?php endif;?>
 
@@ -130,7 +128,7 @@
 ?>
 
 <!-- lexique roman page and volume block -->
-<?php if($this->vocabulary):?>
+<?php if($this->dictionary['id'] == 'lexromv'):?>
 
   <a class="tab" id="lexromd-tab"
      href="javascript: updateTabContents(document.getElementById('lexromd-img').src? 'lexromd-tab' : 'lexromd-help-tab')"
