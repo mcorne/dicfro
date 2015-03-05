@@ -191,7 +191,7 @@ return array(
             'type'         => 'external',
         ),
 
-        'couronnement' => array(
+        'couronnement-de-louis-glossary' => array(
             'availability-test' => 'acorcié',
             'created'        => '2010-08-01',
             'description'    => 'Glossaire du Couronnement de Louis, Ernest Langlois, 1888',
@@ -961,7 +961,7 @@ return array(
                 'chretien-de-troyes-glossary',
                 'tcaf',
                 'cotgrave',
-                'couronnement',
+                'couronnement-de-louis-glossary',
                 'gdf',
                 'gdfc',
                 'gdflex',
