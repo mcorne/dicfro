@@ -1,9 +1,9 @@
-dictpage.zip @ http://users.erols.com/whitaker/dictpage.htm
+dictpage.zip @ http://archives.nd.edu/whitaker/words.htm
 
 verified that there is no changed as of 17 july 2010
 
 from v1 to v2
 -------------
 
-- changed feri into fieri for fio, feri, factus sum 
+- changed feri into fieri for fio, feri, factus sum
 - changed depostus into depositus for depono, deponere, deposui, depostus

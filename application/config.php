@@ -347,7 +347,7 @@ return array(
             'type'              => 'external',
         ),
 
-        'gaffiot' => array(
+        'gaffiot-dictionary' => array(
             'availability-test' => 'abaris',
             'created'        => '2008-06-27',
             'description'    => 'Dictionnaire latin-français, Félix Gaffiot, 1934',
@@ -981,7 +981,7 @@ return array(
         array(
             'dictionaries' => array(
                 'ducange',
-                'gaffiot',
+                'gaffiot-dictionary',
                 'jeanneau',
                 'whitaker',
             ),
