@@ -131,7 +131,7 @@ return array(
             'volume'       => 'input',
         ),
 
-        'chretien' => array(
+        'chretien-de-troyes-glossary' => array(
             'availability-test' => 'abonder',
             'created'        => '2010-08-01',
             'description'    => 'Kristian von Troyes Wörterbuch zu seinem sämtlichen Werken, Wendelin Foerster, 1914',
@@ -958,7 +958,7 @@ return array(
         array(
             'dictionaries' => array(
                 'roland',
-                'chretien',
+                'chretien-de-troyes-glossary',
                 'tcaf',
                 'cotgrave',
                 'couronnement',
