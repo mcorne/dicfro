@@ -520,20 +520,6 @@ return array(
             'volume'         => 'input',
         ),
 
-        'lexromv' => array(
-            'availability-test' => 'abat',
-            'created'        => '2010-08-01',
-            'description'    => "Lexique Roman ou dictionnaire de la langue des troubadours comparée avec les autres langues de l'Europe latine, François J. M. Raynouard, 1844",
-            'description-en' => 'Romance languages lexicon or dictionary of the language of the troubadours compared with other languages ​​of Latin Europe, François J. M. Raynouard, 1844',
-            'image'          => 'lexique-roman.jpg',
-            'introduction'   => 'roman.phtml',
-            'language'       => 'fr',
-            'name'           => 'Lexique Roman',
-            'title'          => 'L. Roman',
-            'type'           => 'internal',
-            'url'            => 'lexique-roman',
-        ),
-
         'littre' => array(
             'availability-test' => 'avoir',
             'created'           => '2010-08-01',
@@ -767,6 +753,21 @@ return array(
             'url'            => 'glossaire-chanson-de-roland',
         ),
 
+        'roman-lexicon' => array(
+            'availability-test' => 'abat',
+            'created'        => '2010-08-01',
+            'description'    => "Lexique Roman ou dictionnaire de la langue des troubadours comparée avec les autres langues de l'Europe latine, François J. M. Raynouard, 1844",
+            'description-en' => 'Romance languages lexicon or dictionary of the language of the troubadours compared with other languages ​​of Latin Europe, François J. M. Raynouard, 1844',
+            'image'          => 'lexique-roman.jpg',
+            'introduction'   => 'roman.phtml',
+            'language'       => 'fr',
+            'name'           => 'Lexique Roman',
+            'search'         => 'roman-lexicon/lexromv/mImg/%s.gif',
+            'title'          => 'L. Roman',
+            'type'           => 'internal',
+            'url'            => 'lexique-roman',
+        ),
+
         'rose' => array(
             'availability-test' => 'aaise',
             'created'        => '2010-08-01',
@@ -966,7 +967,7 @@ return array(
                 'gdfc',
                 'gdflex',
                 'lacurne-dictionary',
-                'lexromv',
+                'roman-lexicon',
                 'rose',
                 'renart-fhs',
                 'renart-meon-1',

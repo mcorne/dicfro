@@ -118,7 +118,7 @@ class Controller_Interface
         return new $class(
                 $this->front->config['data-dir'],
                 $this->dictionary['search']['properties'],
-                $this->dictionary['query'], 
+                $this->dictionary['query'],
                 $this->front->config['dictionary-dir']);
     }
 
@@ -445,8 +445,13 @@ class Controller_Interface
 
         if (! isset($this->dictionary['search'])) {
             $this->dictionary['search'] = array();
+
         } else if (is_string($this->dictionary['search'])) {
-            $this->dictionary['search'] = array('properties' => array('url' => $this->dictionary['search']));
+            if ($this->dictionary['type'] == 'internal') {
+                $this->dictionary['search'] = array('properties' => array('imagePath' => $this->dictionary['search']));
+            } else {
+                $this->dictionary['search'] = array('properties' => array('url' => $this->dictionary['search']));
+            }
         }
 
         if (! isset($this->dictionary['search']['properties']['dictionary'])) {
