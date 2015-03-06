@@ -500,7 +500,7 @@ return array(
             'type'           => 'external',
         ),
 
-        'lacurne' => array(
+        'lacurne-dictionary' => array(
             'availability-test' => 'aatisson',
             'created'        => '2013-03-29',
             'description'    => "Dictionnaire historique de l'ancien langage françois ou glossaire de la langue françoise (LacEdic), J.B. de la Curne de Sainte-Palaye, 1875-1882",
@@ -965,7 +965,7 @@ return array(
                 'gdf',
                 'gdfc',
                 'gdflex',
-                'lacurne',
+                'lacurne-dictionary',
                 'lexromv',
                 'rose',
                 'renart-fhs',
