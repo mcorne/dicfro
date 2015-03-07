@@ -597,32 +597,6 @@ return array(
             'volume'         => 'readonly',
         ),
 
-        'renart-meon-3' => array(
-            'availability-test' => 'aignel',
-            'created'        => '2012-01-07',
-            'description'    => 'Glossaire du Roman de Renart, volume 3, M. D. M. Méon, 1826',
-            'description-en' => 'Glossary of the Roman de Renart, volume 3, M. D. M. Méon, 1826',
-            'image'          => 'glossaire-roman-de-renart-meon-vol3.jpg',
-            'language'       => 'fr',
-            'name'           => 'Roman de Renart / Méon v.3',
-            'parser'         => array(
-                'class'      => 'Model_Parser_GaffiotLike',
-                'properties' => array(
-                    'imageNumberTpl' => '0000%s',
-                    'lineTpl'        => '~^(.+?);(\d+)~',
-                )
-            ),
-            'search'         => array(
-                'properties' => array(
-                    'needTcaf'   => true,
-                    'needTobler' => true,
-                )
-            ),
-            'title'          => 'Méon 3',
-            'type'           => 'internal',
-            'url'            => 'glossaire-roman-de-renart-meon-vol3',
-        ),
-
         'renart-meon-4' => array(
             'availability-test' => 'acroire',
             'created'        => '2012-01-07',
@@ -754,6 +728,33 @@ return array(
             'title'          => 'Méon 2',
             'type'           => 'internal',
             'url'            => 'glossaire-roman-de-renart-meon-vol2',
+        ),
+
+        'roman-de-renart-meon-3-glossary' => array(
+            'availability-test' => 'aignel',
+            'created'        => '2012-01-07',
+            'description'    => 'Glossaire du Roman de Renart, volume 3, M. D. M. Méon, 1826',
+            'description-en' => 'Glossary of the Roman de Renart, volume 3, M. D. M. Méon, 1826',
+            'image'          => 'glossaire-roman-de-renart-meon-vol3.jpg',
+            'language'       => 'fr',
+            'name'           => 'Roman de Renart / Méon v.3',
+            'parser'         => array(
+                'class'      => 'Model_Parser_GaffiotLike',
+                'properties' => array(
+                    'imageNumberTpl' => '0000%s',
+                    'lineTpl'        => '~^(.+?);(\d+)~',
+                )
+            ),
+            'search'         => array(
+                'properties' => array(
+                    'imagePath'  => 'old-french-glossaries/roman-de-renart-meon-3-glossary/mImg/%s.gif',
+                    'needTcaf'   => true,
+                    'needTobler' => true,
+                )
+            ),
+            'title'          => 'Méon 3',
+            'type'           => 'internal',
+            'url'            => 'glossaire-roman-de-renart-meon-vol3',
         ),
 
         'roman-lexicon' => array(
@@ -975,7 +976,7 @@ return array(
                 'roman-de-renart-fhs-glossary',
                 'roman-de-renart-meon-1-glossary',
                 'roman-de-renart-meon-2-glossary',
-                'renart-meon-3',
+                'roman-de-renart-meon-3-glossary',
                 'renart-meon-4',
                 'tristan',
                 'vandaele',
