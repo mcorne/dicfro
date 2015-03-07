@@ -860,7 +860,7 @@ return array(
             'updated'           => '2014-05-02',
         ),
 
-        'vandaele' => array(
+        'vandaele-dictionary' => array(
             'availability-test' => 'aan',
             'created'        => '2008-06-27',
             'description'    => "Petit dictionnaire de l'ancien français, Hilaire Van Daele, 1901",
@@ -870,6 +870,7 @@ return array(
             'name'           => 'Van Daele',
             'search'         => array(
                 'properties' => array(
+                    'imagePath'      => 'old-french-glossaries/vandaele-dictionary/mImg/%s.gif',
                     'needGhostwords' => true,
                     'needTcaf'       => true,
                     'needTobler'     => true,
@@ -985,7 +986,7 @@ return array(
                 'roman-de-renart-meon-3-glossary',
                 'roman-de-renart-meon-4-glossary',
                 'roman-de-tristan-glossary',
-                'vandaele',
+                'vandaele-dictionary',
             ),
             'language' => 'fro',
         ),
