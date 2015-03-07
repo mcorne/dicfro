@@ -450,7 +450,7 @@ return array(
             'volume'         => 'input',
         ),
 
-        'gdflex' => array(
+        'godefroy-lexicon' => array(
             'availability-test' => 'acorsage',
             'created'        => '2008-04-14',
             'description'    => "Lexique de l'ancien français, Frédéric Godefroy, 1901",
@@ -460,6 +460,7 @@ return array(
             'name'           => 'Godefroy / Lexique',
             'search'         => array(
                 'properties' => array(
+                    'imagePath'      => 'old-french-glossaries/godefroy-lexicon/mImg/%s.gif',
                     'needErrataText' => true,
                     'needGhostwords' => true,
                     'needTcaf'       => true,
@@ -976,7 +977,7 @@ return array(
                 'couronnement-de-louis-glossary',
                 'gdf',
                 'gdfc',
-                'gdflex',
+                'godefroy-lexicon',
                 'lacurne-dictionary',
                 'roman-lexicon',
                 'roman-de-la-rose-glossary',

@@ -1,6 +1,7 @@
 Things to do
 ------------
 
+- fix url including old-french-glossaries in introductions and tabs
 - finish dictionary search test
 - refactor middle and tabs per dictionary
 
