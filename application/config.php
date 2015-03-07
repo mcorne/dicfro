@@ -624,6 +624,33 @@ return array(
             'volume'         => 'readonly',
         ),
 
+        'roman-de-la-rose-glossary' => array(
+            'availability-test' => 'aaise',
+            'created'        => '2010-08-01',
+            'description'    => 'Glossaire du Roman de la Rose, Ernest Langlois, 1914-1924',
+            'description-en' => 'Glossary of the Roman de la Rose, Ernest Langlois, 1914-1924',
+            'image'          => 'glossaire-roman-de-la-rose.jpg',
+            'language'       => 'fr',
+            'name'           => 'Roman de la Rose',
+            'parser'         => array(
+                'class'      => 'Model_Parser_GaffiotLike',
+                'properties' => array(
+                    'imageNumberTpl' => '0000%s',
+                    'lineTpl'        => '~^(.+?)__BR____BR__<@_hm(\d+).tif_>EGlos_RoseLLangl__BR____BR__~',
+                )
+            ),
+            'search'         => array(
+                'properties' => array(
+                    'imagePath'  => 'old-french-glossaries/roman-de-la-rose-glossary/mImg/%s.gif',
+                    'needTcaf'   => true,
+                    'needTobler' => true,
+                )
+            ),
+            'title'          => 'Rose',
+            'type'           => 'internal',
+            'url'            => 'glossaire-roman-de-la-rose',
+        ),
+
         'roman-de-renart-fhs-glossary' => array(
             'availability-test' => 'aramir',
             'created'        => '2012-01-07',
@@ -772,32 +799,6 @@ return array(
             'title'          => 'L. Roman',
             'type'           => 'internal',
             'url'            => 'lexique-roman',
-        ),
-
-        'rose' => array(
-            'availability-test' => 'aaise',
-            'created'        => '2010-08-01',
-            'description'    => 'Glossaire du Roman de la Rose, Ernest Langlois, 1914-1924',
-            'description-en' => 'Glossary of the Roman de la Rose, Ernest Langlois, 1914-1924',
-            'image'          => 'glossaire-roman-de-la-rose.jpg',
-            'language'       => 'fr',
-            'name'           => 'Roman de la Rose',
-            'parser'         => array(
-                'class'      => 'Model_Parser_GaffiotLike',
-                'properties' => array(
-                    'imageNumberTpl' => '0000%s',
-                    'lineTpl'        => '~^(.+?)__BR____BR__<@_hm(\d+).tif_>EGlos_RoseLLangl__BR____BR__~',
-                )
-            ),
-            'search'         => array(
-                'properties' => array(
-                    'needTcaf'   => true,
-                    'needTobler' => true,
-                )
-            ),
-            'title'          => 'Rose',
-            'type'           => 'internal',
-            'url'            => 'glossaire-roman-de-la-rose',
         ),
 
         'tcaf' => array(
@@ -974,7 +975,7 @@ return array(
                 'gdflex',
                 'lacurne-dictionary',
                 'roman-lexicon',
-                'rose',
+                'roman-de-la-rose-glossary',
                 'roman-de-renart-fhs-glossary',
                 'roman-de-renart-meon-1-glossary',
                 'roman-de-renart-meon-2-glossary',
