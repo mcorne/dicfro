@@ -597,32 +597,6 @@ return array(
             'volume'         => 'readonly',
         ),
 
-        'renart-meon-1' => array(
-            'availability-test' => 'acorde',
-            'created'        => '2012-01-07',
-            'description'    => 'Glossaire du Roman de Renart, volume 1, M. D. M. Méon, 1826',
-            'description-en' => 'Glossary of the Roman de Renart, volume 1, M. D. M. Méon, 1826',
-            'image'          => 'glossaire-roman-de-renart-meon-vol1.jpg',
-            'language'       => 'fr',
-            'name'           => 'Roman de Renart / Méon v.1',
-            'parser'         => array(
-                'class'      => 'Model_Parser_GaffiotLike',
-                'properties' => array(
-                    'imageNumberTpl' => '0000%s',
-                    'lineTpl'        => '~^(.+?);(\d+)~',
-                )
-            ),
-            'search'         => array(
-                'properties' => array(
-                    'needTcaf'   => true,
-                    'needTobler' => true,
-                )
-            ),
-            'title'          => 'Méon 1',
-            'type'           => 'internal',
-            'url'            => 'glossaire-roman-de-renart-meon-vol1',
-        ),
-
         'renart-meon-2' => array(
             'availability-test' => 'adolé',
             'created'        => '2012-01-07',
@@ -744,7 +718,7 @@ return array(
             ),
             'search'         => array(
                 'properties' => array(
-                    'imagePath'  => 'old-french-glossaries/renart-fhs/mImg/%s.gif',
+                    'imagePath'  => 'old-french-glossaries/roman-de-renart-fhs-glossary/mImg/%s.gif',
                     'needTcaf'   => true,
                     'needTobler' => true,
                 )
@@ -752,6 +726,33 @@ return array(
             'title'          => 'Renart',
             'type'           => 'internal',
             'url'            => 'glossaire-roman-de-renart-fhs',
+        ),
+
+        'roman-de-renart-meon-1-glossary' => array(
+            'availability-test' => 'acorde',
+            'created'        => '2012-01-07',
+            'description'    => 'Glossaire du Roman de Renart, volume 1, M. D. M. Méon, 1826',
+            'description-en' => 'Glossary of the Roman de Renart, volume 1, M. D. M. Méon, 1826',
+            'image'          => 'glossaire-roman-de-renart-meon-vol1.jpg',
+            'language'       => 'fr',
+            'name'           => 'Roman de Renart / Méon v.1',
+            'parser'         => array(
+                'class'      => 'Model_Parser_GaffiotLike',
+                'properties' => array(
+                    'imageNumberTpl' => '0000%s',
+                    'lineTpl'        => '~^(.+?);(\d+)~',
+                )
+            ),
+            'search'         => array(
+                'properties' => array(
+                    'imagePath'  => 'old-french-glossaries/roman-de-renart-meon-1-glossary/mImg/%s.gif',
+                    'needTcaf'   => true,
+                    'needTobler' => true,
+                )
+            ),
+            'title'          => 'Méon 1',
+            'type'           => 'internal',
+            'url'            => 'glossaire-roman-de-renart-meon-vol1',
         ),
 
         'roman-lexicon' => array(
@@ -971,7 +972,7 @@ return array(
                 'roman-lexicon',
                 'rose',
                 'roman-de-renart-fhs-glossary',
-                'renart-meon-1',
+                'roman-de-renart-meon-1-glossary',
                 'renart-meon-2',
                 'renart-meon-3',
                 'renart-meon-4',
