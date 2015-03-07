@@ -131,6 +131,33 @@ return array(
             'volume'       => 'input',
         ),
 
+        'chanson-de-roland-glossary' => array(
+            'availability-test' => 'acuminier',
+            'created'        => '2010-08-01',
+            'description'    => 'Glossaire de la Chanson de Roland, Joseph Bédier, 1927',
+            'description-en' => 'Glossary of the Song of Roland, Joseph Bédier, 1927',
+            'image'          => 'glossaire-chanson-de-roland.jpg',
+            'language'       => 'fr',
+            'name'           => 'Chanson de Roland',
+            'parser'         => array(
+                'class'      => 'Model_Parser_GaffiotLike',
+                'properties' => array(
+                    'imageNumberTpl' => '0000%s',
+                    'lineTpl'        => '~^(.+?)__BR____BR__<@_tx(\d+).tif_>EGlos_RolB__BR____BR__~',
+                )
+            ),
+            'search'         => array(
+                'properties' => array(
+                    'imagePath'  => 'old-french-glossaries/chanson-de-roland-glossary/mImg/%s.gif',
+                    'needTcaf'   => true,
+                    'needTobler' => true,
+                )
+            ),
+            'title'          => 'Roland',
+            'type'           => 'internal',
+            'url'            => 'glossaire-chanson-de-roland',
+        ),
+
         'chretien-de-troyes-glossary' => array(
             'availability-test' => 'abonder',
             'created'        => '2010-08-01',
@@ -597,32 +624,6 @@ return array(
             'volume'         => 'readonly',
         ),
 
-        'roland' => array(
-            'availability-test' => 'acuminier',
-            'created'        => '2010-08-01',
-            'description'    => 'Glossaire de la Chanson de Roland, Joseph Bédier, 1927',
-            'description-en' => 'Glossary of the Song of Roland, Joseph Bédier, 1927',
-            'image'          => 'glossaire-chanson-de-roland.jpg',
-            'language'       => 'fr',
-            'name'           => 'Chanson de Roland',
-            'parser'         => array(
-                'class'      => 'Model_Parser_GaffiotLike',
-                'properties' => array(
-                    'imageNumberTpl' => '0000%s',
-                    'lineTpl'        => '~^(.+?)__BR____BR__<@_tx(\d+).tif_>EGlos_RolB__BR____BR__~',
-                )
-            ),
-            'search'         => array(
-                'properties' => array(
-                    'needTcaf'   => true,
-                    'needTobler' => true,
-                )
-            ),
-            'title'          => 'Roland',
-            'type'           => 'internal',
-            'url'            => 'glossaire-chanson-de-roland',
-        ),
-
         'roman-de-renart-fhs-glossary' => array(
             'availability-test' => 'aramir',
             'created'        => '2012-01-07',
@@ -963,7 +964,7 @@ return array(
         ),
         array(
             'dictionaries' => array(
-                'roland',
+                'chanson-de-roland-glossary',
                 'chretien-de-troyes-glossary',
                 'tcaf',
                 'cotgrave',
