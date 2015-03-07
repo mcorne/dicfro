@@ -824,7 +824,7 @@ return array(
             'introduction'   => 'roman.phtml',
             'language'       => 'fr',
             'name'           => 'Lexique Roman',
-            'search'         => 'roman-lexicon/lexromv/mImg/%s.gif',
+            'search'         => 'old-french-glossaries/roman-lexicon/lexromv/mImg/%s.gif',
             'title'          => 'L. Roman',
             'type'           => 'internal',
             'url'            => 'lexique-roman',
