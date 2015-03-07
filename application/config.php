@@ -597,32 +597,6 @@ return array(
             'volume'         => 'readonly',
         ),
 
-        'renart-fhs' => array(
-            'availability-test' => 'aramir',
-            'created'        => '2012-01-07',
-            'description'    => 'Glossaire du Roman de Renart, N. Fukumoto, N. Harano et S. Suzuki, 1985',
-            'description-en' => 'Glossary of the Roman de Renart, N. Fukumoto, N. Harano et S. Suzuki, 1985',
-            'image'          => 'glossaire-roman-de-renart-fhs.jpg',
-            'language'       => 'fr',
-            'name'           => 'Roman de Renart / FHS',
-            'parser'         => array(
-                'class'      => 'Model_Parser_GaffiotLike',
-                'properties' => array(
-                    'imageNumberTpl' => '0000%s',
-                    'lineTpl'        => '~^(.+?);(\d+)~',
-                )
-            ),
-            'search'         => array(
-                'properties' => array(
-                    'needTcaf'   => true,
-                    'needTobler' => true,
-                )
-            ),
-            'title'          => 'Renart',
-            'type'           => 'internal',
-            'url'            => 'glossaire-roman-de-renart-fhs',
-        ),
-
         'renart-meon-1' => array(
             'availability-test' => 'acorde',
             'created'        => '2012-01-07',
@@ -751,6 +725,33 @@ return array(
             'title'          => 'Roland',
             'type'           => 'internal',
             'url'            => 'glossaire-chanson-de-roland',
+        ),
+
+        'roman-de-renart-fhs-glossary' => array(
+            'availability-test' => 'aramir',
+            'created'        => '2012-01-07',
+            'description'    => 'Glossaire du Roman de Renart, N. Fukumoto, N. Harano et S. Suzuki, 1985',
+            'description-en' => 'Glossary of the Roman de Renart, N. Fukumoto, N. Harano et S. Suzuki, 1985',
+            'image'          => 'glossaire-roman-de-renart-fhs.jpg',
+            'language'       => 'fr',
+            'name'           => 'Roman de Renart / FHS',
+            'parser'         => array(
+                'class'      => 'Model_Parser_GaffiotLike',
+                'properties' => array(
+                    'imageNumberTpl' => '0000%s',
+                    'lineTpl'        => '~^(.+?);(\d+)~',
+                )
+            ),
+            'search'         => array(
+                'properties' => array(
+                    'imagePath'  => 'old-french-glossaries/renart-fhs/mImg/%s.gif',
+                    'needTcaf'   => true,
+                    'needTobler' => true,
+                )
+            ),
+            'title'          => 'Renart',
+            'type'           => 'internal',
+            'url'            => 'glossaire-roman-de-renart-fhs',
         ),
 
         'roman-lexicon' => array(
@@ -969,7 +970,7 @@ return array(
                 'lacurne-dictionary',
                 'roman-lexicon',
                 'rose',
-                'renart-fhs',
+                'roman-de-renart-fhs-glossary',
                 'renart-meon-1',
                 'renart-meon-2',
                 'renart-meon-3',
