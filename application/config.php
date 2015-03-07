@@ -174,6 +174,7 @@ return array(
             ),
             'search'         => array(
                 'properties' => array(
+                    'imagePath'  => 'old-french-glossaries/chretien-de-troyes-glossary/mImg/%s.gif',
                     'needTcaf'   => true,
                     'needTobler' => true,
                 )
