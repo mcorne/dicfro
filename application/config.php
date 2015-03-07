@@ -786,6 +786,33 @@ return array(
             'url'            => 'glossaire-roman-de-renart-meon-vol4',
         ),
 
+        'roman-de-tristan-glossary' => array(
+            'availability-test' => 'acorder',
+            'created'        => '2010-08-01',
+            'description'    => 'Glossaire du Roman de Tristan par Béroul, Ernest Muret, 1903',
+            'description-en' => 'Glossary of the Roman de Tristan by Béroul, Ernest Muret, 1903',
+            'image'          => 'glossaire-roman-de-tristan.jpg',
+            'language'       => 'fr',
+            'name'           => 'Roman de Tristan',
+            'parser'         => array(
+                'class'      => 'Model_Parser_GaffiotLike',
+                'properties' => array(
+                    'endWord' => '_Glossaire',
+                    'lineTpl' => '~^(.+?)__BR____BR__<@_tx(\d+).tif_>EGlos_TristBerM1__BR____BR__~',
+                )
+            ),
+            'search'         => array(
+                'properties' => array(
+                    'imagePath'  => 'old-french-glossaries/roman-de-tristan-glossary/mImg/%s.gif',
+                    'needTcaf'   => true,
+                    'needTobler' => true,
+                )
+            ),
+            'title'          => 'Tristan',
+            'type'           => 'internal',
+            'url'            => 'glossaire-roman-de-tristan',
+        ),
+
         'roman-lexicon' => array(
             'availability-test' => 'abat',
             'created'        => '2010-08-01',
@@ -829,32 +856,6 @@ return array(
             'title'             => 'TLFi',
             'type'              => 'external',
             'updated'           => '2014-05-02',
-        ),
-
-        'tristan' => array(
-            'availability-test' => 'acorder',
-            'created'        => '2010-08-01',
-            'description'    => 'Glossaire du Roman de Tristan par Béroul, Ernest Muret, 1903',
-            'description-en' => 'Glossary of the Roman de Tristan by Béroul, Ernest Muret, 1903',
-            'image'          => 'glossaire-roman-de-tristan.jpg',
-            'language'       => 'fr',
-            'name'           => 'Roman de Tristan',
-            'parser'         => array(
-                'class'      => 'Model_Parser_GaffiotLike',
-                'properties' => array(
-                    'endWord' => '_Glossaire',
-                    'lineTpl' => '~^(.+?)__BR____BR__<@_tx(\d+).tif_>EGlos_TristBerM1__BR____BR__~',
-                )
-            ),
-            'search'         => array(
-                'properties' => array(
-                    'needTcaf'   => true,
-                    'needTobler' => true,
-                )
-            ),
-            'title'          => 'Tristan',
-            'type'           => 'internal',
-            'url'            => 'glossaire-roman-de-tristan',
         ),
 
         'vandaele' => array(
@@ -981,7 +982,7 @@ return array(
                 'roman-de-renart-meon-2-glossary',
                 'roman-de-renart-meon-3-glossary',
                 'roman-de-renart-meon-4-glossary',
-                'tristan',
+                'roman-de-tristan-glossary',
                 'vandaele',
             ),
             'language' => 'fro',
