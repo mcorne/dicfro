@@ -236,6 +236,7 @@ return array(
             ),
             'search'         => array(
                 'properties' => array(
+                    'imagePath'  => 'old-french-glossaries/couronnement-de-louis-glossary/mImg/%s.gif',
                     'needTcaf'   => true,
                     'needTobler' => true,
                 )
