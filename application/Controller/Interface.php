@@ -462,6 +462,10 @@ class Controller_Interface
             $this->dictionary['introduction'] = "{$this->dictionary['id']}.phtml";
         }
 
+        if (empty($this->dictionary['image'])) {
+            $this->dictionary['image'] = "{$this->dictionary['id']}.jpg";
+        }
+
         if (empty($this->dictionary['url'])) {
             $this->dictionary['url'] = $this->dictionary['id'];
         }

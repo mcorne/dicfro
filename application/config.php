@@ -38,7 +38,7 @@ return array(
 
     // dictionaries details
     'dictionaries' => array(
-        'century' => array(
+        'century-dictionary' => array(
             'availability-test' => array(
                 1 => '027',
                 2 => '012',
@@ -51,8 +51,6 @@ return array(
             ),
             'created'      => '2013-04-14',
             'description'  => 'The Century dictionary, an encyclopedic lexicon of the English language, William D. Whitney, 1895',
-            'image'        => 'century-dictionary.jpg',
-            'introduction' => 'century-dictionary.phtml',
             'language'     => 'en',
             'name'         => 'Century Dictionary',
             'search'       => array(
@@ -71,7 +69,6 @@ return array(
             ),
             'title'        => 'Century D.',
             'type'         => 'index',
-            'url'          => 'century-dictionary',
             'volume'       => 'readonly',
         ),
 
@@ -82,7 +79,6 @@ return array(
             ),
             'created'      => '2013-04-18',
             'description'  => 'The Century dictionary supplement, Benjamin E. Smith, 1909',
-            'image'        => 'century-supplement.jpg',
             'language'     => 'en',
             'name'         => 'Century Supplement',
             'search'       => array(
@@ -105,8 +101,6 @@ return array(
             ),
             'created'      => '2014-05-01',
             'description'  => "The Chambers's encyclopaedia, a dictionary of universal knowledge, William & Robert Chambers, 1901",
-            'image'        => 'chambers-encyclopedia.jpg',
-            'introduction' => 'chambers-encyclopedia.phtml',
             'language'     => 'en',
             'name'         => "Chambers's Encyclopaedia (A-Ca)",
             'search'       => array(
@@ -162,7 +156,7 @@ return array(
             'created'        => '2010-08-01',
             'description'    => 'Kristian von Troyes Wörterbuch zu seinem sämtlichen Werken, Wendelin Foerster, 1914',
             'description-en' => 'Dictionary of the works of Chrétien de Troyes, Wendelin Foerster, 1914',
-            'image'          => 'dictionnaire-chretien-de-troyes.jpg',
+            'image'          => 'glossaire-chretien-de-troyes.jpg',
             'language'       => 'fr',
             'name'           => 'Chrétien de Troyes',
             'parser'         => array(
@@ -318,7 +312,6 @@ return array(
             'created'        => '2013-04-03',
             'description'    => 'La Grande encyclopédie Larousse, 1971-1976',
             'description-en' => 'The Larousse great encyclopedia, 1971-1976',
-            'image'          => 'encyclopedie-larousse.jpg',
             'language'       => 'fr',
             'name'           => 'Encyclopédie Larousse',
             'parser'         => array(
@@ -394,6 +387,7 @@ return array(
                 ),
             ),
             'type'           => 'internal',
+            'url'            => 'gaffiot',
         ),
 
         'gdf' => array(
@@ -481,7 +475,6 @@ return array(
             'created'        => '2013-09-16',
             'description'    => 'Grand Larousse de la langue française, 1971-1978',
             'description-en' => 'The Grand Larousse of the French language, 1971-1978',
-            'image'          => 'grand-larousse.jpg',
             'language'       => 'fr',
             'name'           => 'Grand Larousse',
             'parser'         => array(
@@ -932,7 +925,7 @@ return array(
         array(
             'dictionaries' => array(
                 'chambers-encyclopedia',
-                'century',
+                'century-dictionary',
                 'century-supplement',
                 'etymonline',
                 'webster',
