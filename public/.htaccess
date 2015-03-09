@@ -5,9 +5,10 @@ SetEnv ENVIRONMENT development
 
 RewriteEngine On
 
-# comment the rule if all dictionaries are in dicfro public/dictionary, eg "dictionary/chretien/mImg/0000025.gif" in production
-# or fix accordingly, eg "dicfro-dictionary/chretien/public/mImg/0000025.gif" in development
+# comment the rule if all dictionaries are in dicfro public/dictionary, eg "dictionary/chanson-de-roland-glossary/mImg/0000025.gif" in production
+# or fix accordingly, eg "dicfro-dictionary/old-french-glossaries/public/chanson-de-roland-glossary/mImg/0000025.gif" in development
 # IMPORTANT! keep in sync with config.php "domain-subpath" and "dictionary-dir"
+RewriteRule ^dictionary/(chanson-de-roland-glossary|chretien-de-troyes-glossary|couronnement-de-louis-glossary|godefroy-lexicon|roman-de-la-rose-glossary|roman-de-renart-fhs-glossary|roman-de-renart-meon-[1-4]-glossary|roman-de-tristan-glossary|roman-lexicon|vandaele-dictionary)/(.+)$ /dicfro-dictionary/old-french-glossaries/public/$1/$2 [NC,L]
 RewriteRule ^dictionary/([^/]+)/(.+)$ /dicfro-dictionary/$1/public/$2 [NC,L]
 
 RewriteCond %{REQUEST_FILENAME} -s [OR]

@@ -148,7 +148,6 @@ return array(
             ),
             'search'         => array(
                 'properties' => array(
-                    'imagePath'  => 'old-french-glossaries/chanson-de-roland-glossary/mImg/%s.gif',
                     'needTcaf'   => true,
                     'needTobler' => true,
                 )
@@ -174,7 +173,6 @@ return array(
             ),
             'search'         => array(
                 'properties' => array(
-                    'imagePath'  => 'old-french-glossaries/chretien-de-troyes-glossary/mImg/%s.gif',
                     'needTcaf'   => true,
                     'needTobler' => true,
                 )
@@ -236,7 +234,6 @@ return array(
             ),
             'search'         => array(
                 'properties' => array(
-                    'imagePath'  => 'old-french-glossaries/couronnement-de-louis-glossary/mImg/%s.gif',
                     'needTcaf'   => true,
                     'needTobler' => true,
                 )
@@ -460,7 +457,6 @@ return array(
             'name'           => 'Godefroy / Lexique',
             'search'         => array(
                 'properties' => array(
-                    'imagePath'      => 'old-french-glossaries/godefroy-lexicon/mImg/%s.gif',
                     'needErrataText' => true,
                     'needGhostwords' => true,
                     'needTcaf'       => true,
@@ -644,7 +640,6 @@ return array(
             ),
             'search'         => array(
                 'properties' => array(
-                    'imagePath'  => 'old-french-glossaries/roman-de-la-rose-glossary/mImg/%s.gif',
                     'needTcaf'   => true,
                     'needTobler' => true,
                 )
@@ -671,7 +666,6 @@ return array(
             ),
             'search'         => array(
                 'properties' => array(
-                    'imagePath'  => 'old-french-glossaries/roman-de-renart-fhs-glossary/mImg/%s.gif',
                     'needTcaf'   => true,
                     'needTobler' => true,
                 )
@@ -698,7 +692,6 @@ return array(
             ),
             'search'         => array(
                 'properties' => array(
-                    'imagePath'  => 'old-french-glossaries/roman-de-renart-meon-1-glossary/mImg/%s.gif',
                     'needTcaf'   => true,
                     'needTobler' => true,
                 )
@@ -725,7 +718,6 @@ return array(
             ),
             'search'         => array(
                 'properties' => array(
-                    'imagePath'  => 'old-french-glossaries/roman-de-renart-meon-2-glossary/mImg/%s.gif',
                     'needTcaf'   => true,
                     'needTobler' => true,
                 )
@@ -752,7 +744,6 @@ return array(
             ),
             'search'         => array(
                 'properties' => array(
-                    'imagePath'  => 'old-french-glossaries/roman-de-renart-meon-3-glossary/mImg/%s.gif',
                     'needTcaf'   => true,
                     'needTobler' => true,
                 )
@@ -779,7 +770,6 @@ return array(
             ),
             'search'         => array(
                 'properties' => array(
-                    'imagePath'  => 'old-french-glossaries/roman-de-renart-meon-4-glossary/mImg/%s.gif',
                     'needTcaf'   => true,
                     'needTobler' => true,
                 )
@@ -806,7 +796,6 @@ return array(
             ),
             'search'         => array(
                 'properties' => array(
-                    'imagePath'  => 'old-french-glossaries/roman-de-tristan-glossary/mImg/%s.gif',
                     'needTcaf'   => true,
                     'needTobler' => true,
                 )
@@ -825,7 +814,7 @@ return array(
             'introduction'   => 'roman.phtml',
             'language'       => 'fr',
             'name'           => 'Lexique Roman',
-            'search'         => 'old-french-glossaries/roman-lexicon/lexromv/mImg/%s.gif',
+            'search'         => 'roman-lexicon/lexromv/mImg/%s.gif',
             'title'          => 'L. Roman',
             'type'           => 'internal',
             'url'            => 'lexique-roman',
@@ -871,7 +860,6 @@ return array(
             'name'           => 'Van Daele',
             'search'         => array(
                 'properties' => array(
-                    'imagePath'      => 'old-french-glossaries/vandaele-dictionary/mImg/%s.gif',
                     'needGhostwords' => true,
                     'needTcaf'       => true,
                     'needTobler'     => true,
