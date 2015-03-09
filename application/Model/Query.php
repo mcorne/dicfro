@@ -51,7 +51,7 @@ abstract class Model_Query
      * @param  string $directory the dictionaries directory
      * @return void
      */
-    public function __construct($directory, $properties = array())
+    public function __construct($directory, $properties = [])
     {
         foreach($properties as $property => $value) {
             $this->$property = $value;
@@ -78,12 +78,12 @@ abstract class Model_Query
      * Prepares and executes a query and fetches the first row
      *
      * @param  string    $query      the SQL query
-     * @param  array     $parameters the list of parameters, format: array(<key> => <value>,...)
+     * @param  array     $parameters the list of parameters, format: [<key> => <value>,...]
      * @param  string    $fetchStyle the fetch style
      * @return mixed     the result of the query
      * @throws Exception if no result is returned
      */
-    public function fetch($query, $parameters = array(), $fetchStyle = PDO::FETCH_ASSOC)
+    public function fetch($query, $parameters = [], $fetchStyle = PDO::FETCH_ASSOC)
     {
         $pdo = new PDO($this->dsn) and
         $statement = $pdo->prepare($query) and
@@ -101,12 +101,12 @@ abstract class Model_Query
      * Prepares and executes a query and fetches all rows
      *
      * @param  string    $query      the SQL query
-     * @param  array     $parameters the list of parameters, format: array(<key> => <value>,...)
+     * @param  array     $parameters the list of parameters, format: [<key> => <value>,...]
      * @param  string    $fetchStyle the fetch style
      * @return mixed     the result of the query
      * @throws Exception if no result is returned
      */
-    public function fetchAll($query, $parameters = array(), $fetchStyle = PDO::FETCH_ASSOC)
+    public function fetchAll($query, $parameters = [], $fetchStyle = PDO::FETCH_ASSOC)
     {
         $pdo = new PDO($this->dsn) and
         $statement = $pdo->prepare($query) and

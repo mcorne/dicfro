@@ -54,7 +54,7 @@ class Model_Query_Tcaf extends Model_Query
         $query .= "AND tense <> 'comp.' ";
         $query .= "ORDER BY ascii";
 
-        $result = $this->fetchAll($query, array(':ascii' => $ascii));
+        $result = $this->fetchAll($query, [':ascii' => $ascii]);
 
         return $result;
     }
@@ -74,7 +74,7 @@ class Model_Query_Tcaf extends Model_Query
         $query .= "AND tense <> 'comp.' ";
         $query .= "ORDER BY ascii";
 
-        $result = $this->fetchAll($query, array(':ascii' => $ascii));
+        $result = $this->fetchAll($query, [':ascii' => $ascii]);
 
         return $result;
     }
@@ -94,7 +94,7 @@ class Model_Query_Tcaf extends Model_Query
         $query .= "AND tense = 'comp.' ";
         $query .= "ORDER BY ascii";
 
-        $result = $this->fetchAll($query, array(':ascii' => $ascii));
+        $result = $this->fetchAll($query, [':ascii' => $ascii]);
 
         return $result;
     }
@@ -113,7 +113,7 @@ class Model_Query_Tcaf extends Model_Query
         $query .= "WHERE ascii = :ascii AND tense <> 'comp.' ";
         $query .= "ORDER BY ascii";
 
-        $result = $this->fetchAll($query, array(':ascii' => $ascii));
+        $result = $this->fetchAll($query, [':ascii' => $ascii]);
 
         return $result;
     }

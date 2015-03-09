@@ -28,27 +28,27 @@ class Base_String {
      *
      * @var array
      */
-    public $accentuated = array(
+    public $accentuated = [
         // accentuated letters
-        'search' => array(
+        'search' => [
             'Á', 'À', 'Â', 'Ä', 'Ą', 'Ç', 'Ć', 'É', 'È', 'Ê', 'Ë', 'Í', 'Ì', 'Î', 'Ï', 'Ī', 'Ł', 'Ñ', 'Ó', 'Ò', 'Ô', 'Ö', 'Ú', 'Ù', 'Û', 'Ü', 'Ÿ',
             // Latin diacritic vowels (AEIOU): A with macron, A with breve, etc...
             'Ā', 'Ă', 'Ē', 'Ĕ', 'Ī', 'Ĭ', 'Ł', 'Ō', 'Ŏ', 'Ū', 'Ŭ', 'Ś', 'Ţ', 'Z̧'
-            ),
+        ],
         // corresponding ASCII letters
-        'replace' => array(
+        'replace' => [
             'A', 'A', 'A', 'A', 'A', 'C', 'C', 'E', 'E', 'E', 'E', 'I', 'I', 'I', 'I', 'I', 'L', 'N', 'O', 'O', 'O', 'O', 'U', 'U', 'U', 'U', 'Y',
             'A', 'A', 'E', 'E', 'I', 'I', 'L', 'O', 'O', 'U', 'U', 'S', 'T', 'Z'
-            ),
-        );
+        ],
+    ];
 
     /**
      * Mapping of non ASCII letters to DOS character map letters
      *
      * @var array
      */
-    public $utf8ToCP850 = array(// http://en.wikipedia.org/wiki/Code_page_850
-        'search' => array(
+    public $utf8ToCP850 = [// http://en.wikipedia.org/wiki/Code_page_850
+        'search' => [
             'Ç', 'ü', 'é', 'â', 'ä', 'à', 'å', 'ç', 'ê', 'ë', 'è', 'ï', 'î', 'ì', 'Ä', 'Å',
             'É', 'æ', 'Æ', 'ô', 'ö', 'ò', 'û', 'ù', 'ÿ', 'Ö', 'Ü', 'ø', '£', 'Ø', '×', 'ƒ',
             'á', 'í', 'ó', 'ú', 'ñ', 'Ñ', 'ª', 'º', '¿', '®', '¬', '½', '¼', '¡', '«', '»',
@@ -59,9 +59,9 @@ class Base_String {
             '' , '±', '' , '¾', '¶', '§', '÷', '¸', '°', '¨', '·', '¹', '³', '²', '' , '' ,
             // others
             '’',
-        ),
+        ],
 
-        'replace' => array(
+        'replace' => [
             "\x80", "\x81", "\x82", "\x83", "\x84", "\x85", "\x86", "\x87", "\x88", "\x89", "\x8A", "\x8B", "\x8C", "\x8D", "\x8E", "\x8F",
             "\x90", "\x91", "\x92", "\x93", "\x94", "\x95", "\x96", "\x97", "\x99", "\x99", "\x9A", "\x9B", "\x9C", "\x9D", "\x9E", "\x9F",
             "\xA0", "\xA1", "\xA2", "\xA3", "\xA4", "\xA5", "\xA6", "\xA7", "\xAA", "\xA9", "\xAA", "\xAB", "\xAC", "\xAD", "\xAE", "\xAF",
@@ -72,8 +72,8 @@ class Base_String {
             "\xF0", "\xF1", "\xF2", "\xF3", "\xF4", "\xF5", "\xF6", "\xF7", "\xFF", "\xF9", "\xFA", "\xFB", "\xFC", "\xFD", "\xFE", "\xFF",
             // others
             "'",
-        ),
-    );
+        ],
+    ];
 
     public static $self;
 
@@ -96,7 +96,7 @@ class Base_String {
 
         $name = substr($name, 1);
 
-        return call_user_func_array(array(self::$self, $name), $arguments);
+        return call_user_func_array([self::$self, $name], $arguments);
     }
 
     /**
@@ -238,7 +238,7 @@ class Base_String {
     public function utf8ToInternal($mixed)
     {
         if (is_array($mixed)) {
-            $mixed = array_map(array($this, __FUNCTION__), $mixed);
+            $mixed = array_map([$this, __FUNCTION__], $mixed);
         } else {
             $mixed = $this->utf8ToInternalString($mixed);
         }

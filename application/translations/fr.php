@@ -16,7 +16,7 @@
  * Translation in French
  */
 
-return array(
+return [
     "3 reasons to use DicFro" =>
     "3 raisons d'utiliser DicFro",
 
@@ -250,4 +250,4 @@ return array(
 
     "Warning! If your browser blocks pop-ups, please change the setting to always allow pop-ups for this site." =>
     "Attention ! Si votre navigateur bloque les fenêtres contextuelles, veuillez le configurer pour toujours autoriser les fenêtres contextuelles pour ce site.",
-);
+];

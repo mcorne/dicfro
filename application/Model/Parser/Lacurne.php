@@ -46,7 +46,7 @@ class Model_Parser_Lacurne extends Model_Parser_GaffiotLike
 
     public function preProcessing($lines)
     {
-        $sorted = array();
+        $sorted = [];
 
         foreach($lines as $line) {
             // extracts first word of a line

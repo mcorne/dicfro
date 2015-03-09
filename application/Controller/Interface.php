@@ -33,7 +33,7 @@ class Controller_Interface
      * List of actions
      * @var array
      */
-    public $actions = array(
+    public $actions = [
         'about'                     => 'information',
         'archives'                  => 'information',
         'dictionaries'              => 'information',
@@ -47,7 +47,7 @@ class Controller_Interface
         'page'                      => true,
         'previous'                  => true,
         'search'                    => true,
-    );
+    ];
 
     /**
      * Information on a dictionary
@@ -436,7 +436,7 @@ class Controller_Interface
         }
 
         if (! isset($this->dictionary['query'])) {
-            $this->dictionary['query'] = array();
+            $this->dictionary['query'] = [];
         }
 
         if (isset($this->dictionary['volume'])) {
@@ -444,13 +444,13 @@ class Controller_Interface
         }
 
         if (! isset($this->dictionary['search'])) {
-            $this->dictionary['search'] = array();
+            $this->dictionary['search'] = [];
 
         } else if (is_string($this->dictionary['search'])) {
             if ($this->dictionary['type'] == 'internal') {
-                $this->dictionary['search'] = array('properties' => array('imagePath' => $this->dictionary['search']));
+                $this->dictionary['search'] = ['properties' => ['imagePath' => $this->dictionary['search']]];
             } else {
-                $this->dictionary['search'] = array('properties' => array('url' => $this->dictionary['search']));
+                $this->dictionary['search'] = ['properties' => ['url' => $this->dictionary['search']]];
             }
         }
 

@@ -33,7 +33,7 @@ class Model_Parser_GdfLike extends Model_Parser
 
     public $separator = '|';
 
-    public function __construct($directory, $properties = array(), $dictionaryConfig = array(), $noExitOnEror = false, $verbose = false)
+    public function __construct($directory, $properties = [], $dictionaryConfig = [], $noExitOnEror = false, $verbose = false)
     {
         parent::__construct($directory, $properties, $dictionaryConfig, $noExitOnEror, $verbose);
         $this->setDictionary();
@@ -82,7 +82,7 @@ class Model_Parser_GdfLike extends Model_Parser
 
         list(, $word, $imageNumber) = $matches;
 
-        return array($word, $imageNumber);
+        return [$word, $imageNumber];
     }
 
     public function fixImageNumber($imageNumber)
@@ -116,7 +116,7 @@ class Model_Parser_GdfLike extends Model_Parser
 
         if ($line == $prevLine or $this->isEndOfData($line) or $this->isLineIgnored($line)) {
             // ignores duplicated lines or comments ...
-            return array();
+            return [];
         }
         $prevLine = $line;
 
@@ -135,13 +135,13 @@ class Model_Parser_GdfLike extends Model_Parser
 
         $imageNumber = $this->fixImageNumber($imageNumber);
 
-        $wordData = array(
+        $wordData = [
             'ascii'    => $word,
             'image'    => $imageNumber,
             'original' => $original,
             'line'     => $lineNumber,
             'previous' => $prevWord,
-        );
+        ];
 
         $this->validateWordOrder($word, $lineNumber);
 
@@ -151,7 +151,7 @@ class Model_Parser_GdfLike extends Model_Parser
 
         $prevWord = $word;
 
-        return array($this->addMissingImages($wordData) . $this->setWordData($wordData));
+        return [$this->addMissingImages($wordData) . $this->setWordData($wordData)];
     }
 
     public function postParseLine($wordData, $line)

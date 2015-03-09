@@ -75,11 +75,11 @@ class Model_Query_Index extends Model_Query
     {
         if ($this->useVolume) {
             $sql = "SELECT * FROM word WHERE (volume = :volume AND page > :page OR volume > :volume) ORDER BY volume ASC, page ASC LIMIT 1";
-            $parameters = array(':page' => $page, ':volume' => $volume);
+            $parameters = [':page' => $page, ':volume' => $volume];
 
         } else {
             $sql = "SELECT * FROM word WHERE page > :page ORDER BY page ASC LIMIT 1";
-            $parameters = array(':page' => $page);
+            $parameters = [':page' => $page];
         }
 
         if (! $result = $this->fetch($sql, $parameters)) {
@@ -99,11 +99,11 @@ class Model_Query_Index extends Model_Query
     {
         if ($this->useVolume) {
             $sql = "SELECT * FROM word WHERE (volume = :volume AND page >= :page OR volume > :volume) ORDER BY volume ASC, page ASC LIMIT 1";
-            $parameters = array(':page' => $page, ':volume' => $volume);
+            $parameters = [':page' => $page, ':volume' => $volume];
 
         } else {
             $sql = "SELECT * FROM word WHERE page >= :page ORDER BY page ASC LIMIT 1";
-            $parameters = array(':page' => $page);
+            $parameters = [':page' => $page];
         }
 
         if (! $result = $this->fetch($sql, $parameters)) {
@@ -123,11 +123,11 @@ class Model_Query_Index extends Model_Query
     {
         if ($this->useVolume) {
             $sql = "SELECT * FROM word WHERE (volume = :volume AND page < :page OR volume < :volume) ORDER BY volume DESC, page DESC LIMIT 1";
-            $parameters = array(':page' => $page, ':volume' => $volume);
+            $parameters = [':page' => $page, ':volume' => $volume];
 
         } else {
             $sql = "SELECT * FROM word WHERE page < :page ORDER BY page DESC LIMIT 1";
-            $parameters = array(':page' => $page);
+            $parameters = [':page' => $page];
         }
 
         if (! $result = $this->fetch($sql, $parameters)) {
@@ -148,11 +148,11 @@ class Model_Query_Index extends Model_Query
     {
         if ($this->useVolume) {
             $sql = "SELECT * FROM word WHERE volume = :volume AND page = :page AND original != '' LIMIT 10";
-            $parameters = array(':page' => $page, ':volume' => $volume);
+            $parameters = [':page' => $page, ':volume' => $volume];
 
         } else {
             $sql = "SELECT * FROM word WHERE page = :page AND original != '' LIMIT 10";
-            $parameters = array(':page' => $page);
+            $parameters = [':page' => $page];
         }
 
         return $this->fetchAll($sql, $parameters);
@@ -169,11 +169,11 @@ class Model_Query_Index extends Model_Query
     {
         if ($this->useVolume) {
             $sql = "SELECT * FROM word WHERE (volume = :volume AND page > :page OR volume > :volume) AND original != '' ORDER BY volume ASC, page ASC LIMIT 10";
-            $parameters = array(':page' => $page, ':volume' => $volume);
+            $parameters = [':page' => $page, ':volume' => $volume];
 
         } else {
             $sql = "SELECT * FROM word WHERE page > :page AND original != '' ORDER BY page ASC LIMIT 10";
-            $parameters = array(':page' => $page);
+            $parameters = [':page' => $page];
         }
 
         return $this->fetchAll($sql, $parameters);
@@ -190,11 +190,11 @@ class Model_Query_Index extends Model_Query
     {
         if ($this->useVolume) {
             $sql = "SELECT * FROM word WHERE (volume = :volume AND page < :page OR volume < :volume) AND original != '' ORDER BY volume DESC, page DESC LIMIT 10";
-            $parameters = array(':page' => $page, ':volume' => $volume);
+            $parameters = [':page' => $page, ':volume' => $volume];
 
         } else {
             $sql = "SELECT * FROM word WHERE page < :page AND original != '' ORDER BY page DESC LIMIT 10";
-            $parameters = array(':page' => $page);
+            $parameters = [':page' => $page];
         }
 
 
@@ -213,13 +213,13 @@ class Model_Query_Index extends Model_Query
 
         $sql = "SELECT * FROM word WHERE ascii >= :ascii LIMIT 1";
 
-        if ($result = $this->fetch($sql, array(':ascii' => $ascii))) {
+        if ($result = $this->fetch($sql, [':ascii' => $ascii])) {
             // found same or next word, searches previous word if different
             // note: need to find the first occurence of the previous word, ex. first page with "A"
             // note: previous is empty if this is the first page
             $result['ascii'] == $ascii or
             empty($result['previous']) or
-            $result = $this->fetch($sql, array(':ascii' => $result['previous']));
+            $result = $this->fetch($sql, [':ascii' => $result['previous']]);
 
         } else {
             // no word found,  returns the last one

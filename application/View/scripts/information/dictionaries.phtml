@@ -48,7 +48,7 @@
       <li>
       <a class="link <?=$options['type'];?>"
          title ="<?=$options['list-title'];?>"
-         href="<?=$this->linksHelper->setLink(array('introduction', $options['value']));?>"><?=$options['title'];?></a>
+         href="<?=$this->linksHelper->setLink(['introduction', $options['value']]);?>"><?=$options['title'];?></a>
       </li>
 
     <?php endforeach;?>

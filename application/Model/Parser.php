@@ -45,7 +45,7 @@ abstract class Model_Parser
     public $string;
     public $verbose;
 
-    public function __construct($directory, $properties = array(), $dictionaryConfig = array(), $noExitOnEror = false, $verbose = false)
+    public function __construct($directory, $properties = [], $dictionaryConfig = [], $noExitOnEror = false, $verbose = false)
     {
         $this->directory        = $directory;
         $this->dictionaryConfig = $dictionaryConfig;
@@ -138,13 +138,13 @@ abstract class Model_Parser
     public function setDictionary()
     {
         if (! isset($this->dictionaryConfig['query'])) {
-            $this->dictionaryConfig['query'] = array();
+            $this->dictionaryConfig['query'] = [];
         }
 
         if (! isset($this->dictionaryConfig['search'])) {
-            $this->dictionaryConfig['search'] = array();
+            $this->dictionaryConfig['search'] = [];
         } else if (is_string($this->dictionaryConfig['search'])) {
-            $this->dictionaryConfig['search'] = array('properties' => array('url' => $this->dictionaryConfig['search']));
+            $this->dictionaryConfig['search'] = ['properties' => ['url' => $this->dictionaryConfig['search']]];
         }
 
         if (! isset($this->dictionaryConfig['search']['properties']['dictionary'])) {
@@ -297,7 +297,7 @@ abstract class Model_Parser
             print count($lines) . " lines sliced\n";
         }
 
-        return array($lines, $lineStart);
+        return [$lines, $lineStart];
     }
 
     public function validateWordOrder($word, $lineNumber)

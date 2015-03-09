@@ -40,7 +40,7 @@ class Model_Parser_Vandaele extends Model_Parser_GdfLike
 
         list(, $imageNumber, $word) = $matches;
 
-        return array($word, $imageNumber);
+        return [$word, $imageNumber];
     }
 
     public function isLineIgnored($line)

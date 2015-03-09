@@ -67,7 +67,7 @@ class View_Helper_Words extends View_Helper_Base
      */
     public function extractForms($type)
     {
-        $forms = array();
+        $forms = [];
 
         foreach($this->view->identifiedWords as $word) {
             if (! empty($word[$type])) {
@@ -85,7 +85,7 @@ class View_Helper_Words extends View_Helper_Base
      */
     public function extractOtherForms()
     {
-        $forms = array();
+        $forms = [];
 
         foreach($this->view->identifiedWords as $word) {
             if (empty($word['main']) and empty($word['variants'])) {
@@ -111,10 +111,10 @@ class View_Helper_Words extends View_Helper_Base
         if ($type) {
             $words = preg_split(self::FORM_SEPARATOR, $word[$type]);
         } else {
-            $words = array($word['lemma']);
+            $words = [$word['lemma']];
         }
 
-        $forms = array();
+        $forms = [];
 
         foreach($words as $form) {
             if ($type) {
@@ -123,10 +123,10 @@ class View_Helper_Words extends View_Helper_Base
                 $text = $lemmaAndPof;
             }
 
-            $forms[] = array(
+            $forms[] = [
                 'value' => $form,
                 'text'  => $text,
-            );
+            ];
         }
 
         return $forms;
@@ -140,7 +140,7 @@ class View_Helper_Words extends View_Helper_Base
      */
     public function sortForms($forms)
     {
-        $sorted = array();
+        $sorted = [];
 
         foreach($forms as $form) {
             list($key) = explode(',', $form['text']);

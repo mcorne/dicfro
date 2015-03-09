@@ -220,7 +220,7 @@ class Base_View
      * @param  array   $ignore list of properties to ignore
      * @return array   the list of properties and their values
      */
-    public function toArray($filter = false, $ignore = array())
+    public function toArray($filter = false, $ignore = [])
     {
         settype($ignore, 'array');
 

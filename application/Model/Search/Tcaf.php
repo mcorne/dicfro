@@ -51,9 +51,9 @@ class Model_Search_Tcaf
             $conjugation = $this->query->searchModelConjugation($word);
         }
 
-        return array(
+        return [
             'tcaf'          => $conjugation,
             'composedVerbs' => $this->query->searchComposedVerbs($word),
-        );
+        ];
     }
 }

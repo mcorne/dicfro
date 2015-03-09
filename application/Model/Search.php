@@ -46,7 +46,7 @@ abstract class Model_Search
      */
     public $query;
 
-    public function __construct($directory, $properties = array(), $query = array(), $dictionaryDir = null)
+    public function __construct($directory, $properties = [], $query = [], $dictionaryDir = null)
     {
         foreach($properties as $property => $value) {
             $this->$property = $value;
@@ -64,7 +64,7 @@ abstract class Model_Search
             if (isset($query['properties'])) {
                 $properties = $query['properties'];
             } else {
-                $properties = array();
+                $properties = [];
             }
 
             $this->query = new $class($directory, $properties);

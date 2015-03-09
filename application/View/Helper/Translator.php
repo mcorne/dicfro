@@ -33,7 +33,7 @@ class View_Helper_Translator extends View_Helper_Base
      *
      * @var array
      */
-    public $translation = array();
+    public $translation = [];
 
     /*
      * Loads the translation file

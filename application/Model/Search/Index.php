@@ -29,7 +29,7 @@ require_once 'Model/Search.php';
 
 class Model_Search_Index extends Model_Search
 {
-    public function __construct($dataDir, $properties, $query = array(), $dictionaryDir = null)
+    public function __construct($dataDir, $properties, $query = [], $dictionaryDir = null)
     {
         if (! isset($query['class'])) {
             $query['class'] = 'Model_Query_Index';
@@ -44,7 +44,7 @@ class Model_Search_Index extends Model_Search
             throw new Exception('invalid method');
         }
 
-        $result = call_user_func_array(array($this->query, $name), $arguments);
+        $result = call_user_func_array([$this->query, $name], $arguments);
 
         if (is_array($this->url)) {
             // selects the volume url
@@ -62,20 +62,20 @@ class Model_Search_Index extends Model_Search
             $externalDict = sprintf($url, $result['image']);
         }
 
-        $data =  array(
+        $data =  [
             'externalDict' => $externalDict,
             'page'         => $result['page'],
             'volume'       => $result['volume'],
-        );
+        ];
 
         if (empty($this->entries)) {
             $data['firstWord'] = $result['original'];
         } else {
-            $data['entries'] = array(
+            $data['entries'] = [
                 'current'  => $this->query->searchCurrentEntries($result['volume'], $result['page']),
                 'previous' => $this->query->searchPreviousEntries($result['volume'], $result['page']),
                 'next'     => $this->query->searchNextEntries($result['volume'], $result['page']),
-            );
+            ];
         }
 
         return $data;

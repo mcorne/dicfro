@@ -25,12 +25,12 @@
 
 class Language
 {
-    public $languages = array(
-        'en'  => array('english' => 'English'    , 'original' => 'English'),
-        'fr'  => array('english' => 'French'     , 'original' => 'Français'),
-        'fro' => array('english' => 'Old French' , 'original' => 'Français ancien', 'no-ui' => true),
-        'la'  => array('english' => 'Latin'      , 'original' => 'Latin'          , 'no-ui' => true),
-    );
+    public $languages = [
+        'en'  => ['english' => 'English'    , 'original' => 'English'],
+        'fr'  => ['english' => 'French'     , 'original' => 'Français'],
+        'fro' => ['english' => 'Old French' , 'original' => 'Français ancien', 'no-ui' => true],
+        'la'  => ['english' => 'Latin'      , 'original' => 'Latin'          , 'no-ui' => true],
+    ];
 
     /**
      * Detects the user language
@@ -42,7 +42,7 @@ class Language
         global $_root_directory;
 
         $browser_languages = $this->getBrowserLanguage();
-        $browser_languages = array_map(array($this, 'fixLanguageCode'), $browser_languages);
+        $browser_languages = array_map([$this, 'fixLanguageCode'], $browser_languages);
         $possible_languages = array_intersect($browser_languages, array_keys($this->languages));
         // selects the first possible language
         $language = current($possible_languages);
@@ -89,11 +89,11 @@ class Language
      * Returns the browser accepted languages
      *
      * @return array the list of accepted languages and their quality
-     *               ex: array("fr" => 1, "de" => 0.8)
+     *               ex: ["fr" => 1, "de" => 0.8]
      */
     public function getBrowserLanguage()
     {
-        $languages = array();
+        $languages = [];
 
         if (isset($_SERVER['HTTP_ACCEPT_LANGUAGE'])) {
             // there are accepted languages, ex: "hu, en-us;q=0.66, en;q=0.33", "hu,en-us;q=0.5"

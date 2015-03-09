@@ -39,7 +39,7 @@ class Model_Parser_Index extends Model_Parser
 
         if ($lineNumber == 1) {
             // ignores headers
-            return array();
+            return [];
         }
 
         $line = trim($line);
@@ -77,16 +77,16 @@ class Model_Parser_Index extends Model_Parser
                 $this->validateWordOrder($word, $lineNumber);
             }
 
-            $wordData = array(
+            $wordData = [
                 'ascii'    => $word,
                 'fix'      => $fix,
                 'image'    => $imageNumber,
                 'line'     => $lineNumber,
-                'original' => str_replace(array('[', ']'), '', $entry),
+                'original' => str_replace(['[', ']'], '', $entry),
                 'page'     => $page,
                 'previous' => $prevWord,
                 'volume'   => $volume,
-            );
+            ];
 
             ksort($wordData);
             $wordsData[] = implode('|', $wordData);
@@ -94,6 +94,6 @@ class Model_Parser_Index extends Model_Parser
             $prevWord = $word;
         }
 
-        return array(implode("\n", $wordsData));
+        return [implode("\n", $wordsData)];
     }
 }

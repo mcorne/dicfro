@@ -45,7 +45,7 @@ require_once $file;
 if (isset($dictionaryConfig['query']['properties'])) {
     $properties = $dictionaryConfig['query']['properties'];
 } else {
-    $properties = array();
+    $properties = [];
 }
 
 $query = new $class($directory, $properties);

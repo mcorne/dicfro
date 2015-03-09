@@ -49,7 +49,7 @@ class View_Helper_Entries extends View_Helper_Base
         $options = $this->setOptions($this->view->entries['previous']);
 
         if (empty($this->view->entries['current'])) {
-            $options[] = array('selected' => true, 'text' => '--', 'value' => null);
+            $options[] = ['selected' => true, 'text' => '--', 'value' => null];
 
         } else {
             if (! empty($this->view->entryHash)) {
@@ -182,11 +182,11 @@ class View_Helper_Entries extends View_Helper_Base
     {
         $entryHash = $this->calculate_entry_hash($entry['original']);
 
-        return array(
+        return [
             'selected' => $selected,
             'text'     => $entry['original'],
             'value'    => sprintf('%u/%u/%s', $entry['page'], $entry['volume'], $entryHash),
-        );
+        ];
     }
 
     /**
@@ -197,7 +197,7 @@ class View_Helper_Entries extends View_Helper_Base
      * @param string $selected
      * @return array
      */
-    public function setOptions($entries, $options = array(), $selected = null)
+    public function setOptions($entries, $options = [], $selected = null)
     {
         foreach($entries as $index => $entry) {
             $options[] = $this->setOption($entry, $index === $selected);

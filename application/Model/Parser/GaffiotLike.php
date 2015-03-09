@@ -44,7 +44,7 @@ class Model_Parser_GaffiotLike extends Model_Parser_GdfLike
 
     public function isLineIgnored($line)
     {
-        static $parsedImage = array();
+        static $parsedImage = [];
 
         $ignore = false;
 

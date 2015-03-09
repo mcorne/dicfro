@@ -58,7 +58,7 @@ class Model_Query_Internal extends Model_Query
     {
         $sql = "SELECT * FROM word WHERE image > :image LIMIT 2";
 
-        if (! $result = $this->fetchAll($sql, array(':image' => $imageNumber))) {
+        if (! $result = $this->fetchAll($sql, [':image' => $imageNumber])) {
             $result = $this->goToLastPage();
         }
 
@@ -76,7 +76,7 @@ class Model_Query_Internal extends Model_Query
     {
         $sql = "SELECT * FROM word WHERE image >= :image LIMIT 2";
 
-        if (! $result = $this->fetchAll($sql, array(':image' => $imageNumber))) {
+        if (! $result = $this->fetchAll($sql, [':image' => $imageNumber])) {
             $result = $this->goToLastPage();
         }
 
@@ -93,7 +93,7 @@ class Model_Query_Internal extends Model_Query
     {
         $sql = "SELECT * FROM word WHERE image <= :image ORDER BY image DESC LIMIT 2";
 
-        $result = array_reverse($this->fetchAll($sql, array(':image' => $imageNumber)));
+        $result = array_reverse($this->fetchAll($sql, [':image' => $imageNumber]));
 
         if (empty($result) or count($result) < 2) {
             $result = $this->goToFirstPage();
@@ -114,13 +114,13 @@ class Model_Query_Internal extends Model_Query
 
         $sql = "SELECT * FROM word WHERE ascii >= :ascii LIMIT 2";
 
-        if ($result = $this->fetchAll($sql, array(':ascii' => $ascii))) {
+        if ($result = $this->fetchAll($sql, [':ascii' => $ascii])) {
             // found same or next word, searches previous word if different
             // note: need to find the first occurence of the previous word, ex. first page with "A"
             // note: previous is empty if this is the first page
             $result[0]['ascii'] == $ascii or
             empty($result[0]['previous']) or
-            $result = $this->fetchAll($sql, array(':ascii' => $result[0]['previous']));
+            $result = $this->fetchAll($sql, [':ascii' => $result[0]['previous']]);
 
         } else {
             // no word found,  returns the last one

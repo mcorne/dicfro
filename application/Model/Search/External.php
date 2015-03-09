@@ -52,6 +52,6 @@ class Model_Search_External extends Model_Search
             }
         }
 
-        return array('externalDict' => $url);
+        return ['externalDict' => $url];
     }
 }

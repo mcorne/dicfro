@@ -37,7 +37,7 @@ class Controller_Front
      * Action parameters
      * @var string
      */
-    public $actionParams = array();
+    public $actionParams = [];
 
     /**
      * Configuration directives
@@ -49,9 +49,9 @@ class Controller_Front
      * List of controller classes
      * @var array
      */
-    protected $controllerClasses = array(
+    protected $controllerClasses = [
         'interface' => 'Controller_Interface',
-    );
+    ];
 
     /**
      * Name of the controller
@@ -178,7 +178,7 @@ class Controller_Front
      */
     public function setParams()
     {
-        $this->params = array();
+        $this->params = [];
 
         if (! empty($_GET)) {
             $this->params += $_GET;

@@ -32,8 +32,8 @@ class Model_Parser_Tobler extends Model_Parser
     const word = '([-\pL ()\'!,]*)\d?';
 
     public $dictionary = 'tobler';
-    public $batchFiles = array('entry.sql', 'word.sql');
-    public $dataFiles = array('entry' => 'entry.txt', 'word' => 'word.txt');
+    public $batchFiles = ['entry.sql', 'word.sql'];
+    public $dataFiles = ['entry' => 'entry.txt', 'word' => 'word.txt'];
     public $sourceFile = 'tllemma.v1.csv';
 
     public $uniquePofFile = 'unique-pof.php';
@@ -42,37 +42,37 @@ class Model_Parser_Tobler extends Model_Parser
     public $uniquePof;
     public $fixPof;
 
-    public $lineFormat = array(
+    public $lineFormat = [
         'word'     => self::word,
         'main'     => self::word,
         'pof'      => '([\pL .(),\d?]*)',
         'variants' => '([^;]*),?',
-        );
+    ];
 
-    public $fix = array(
+    public $fix = [
         'conque(s)...que'                => 'conque(s) que',
         'sal geme s.m.'                  => 'sal geme',
         'tipe .. tope'                   => 'tipe tope',
         'vis: a vis'                     => 'vis a vis',
         'me[r]cresdi, mercres, mescredi' => 'me(r)cresdi, mercres, mescredi',
-        );
+    ];
 
-    public $special = array(
-        'auberc (h)aubert'          => array('auberc', 'aubert', 'haubert'),
-        'brelle (et) melle (mesle)' => array('brelle', 'melle', 'mesle'),
-        'conque(s) que'             => array('conque', 'conques', 'que'),
-        'keuve leu leu (a la)'      => array('keuve', 'leu'),
-        'ma (m\')'                  => array('ma'),
-        'ma(n)drago(i)re'           => array('madragore', 'mandragoire'),
-        'ne (non) le'               => array('ne', 'non'),
-        'puet ce (cel) estre'       => array('puet', 'estre'),
-        'rechigne-chat (a)'         => array('rechigne', 'chat'),
-        'Ta ça, ta ça'              => array('ta', 'ça'),
-        'ta ta, ta ho'              => array('ta', 'ho'),
-        'wara(e)ntis(s)ement'       => array('warantisement', 'waraentissement'),
-        );
+    public $special = [
+        'auberc (h)aubert'          => ['auberc', 'aubert', 'haubert'],
+        'brelle (et) melle (mesle)' => ['brelle', 'melle', 'mesle'],
+        'conque(s) que'             => ['conque', 'conques', 'que'],
+        'keuve leu leu (a la)'      => ['keuve', 'leu'],
+        'ma (m\')'                  => ['ma'],
+        'ma(n)drago(i)re'           => ['madragore', 'mandragoire'],
+        'ne (non) le'               => ['ne', 'non'],
+        'puet ce (cel) estre'       => ['puet', 'estre'],
+        'rechigne-chat (a)'         => ['rechigne', 'chat'],
+        'Ta ça, ta ça'              => ['ta', 'ça'],
+        'ta ta, ta ho'              => ['ta', 'ho'],
+        'wara(e)ntis(s)ement'       => ['warantisement', 'waraentissement'],
+    ];
 
-    public function __construct($directory, $properties = array(), $dictionaryConfig = array(), $noExitOnEror = false, $verbose = false)
+    public function __construct($directory, $properties = [], $dictionaryConfig = [], $noExitOnEror = false, $verbose = false)
     {
         parent::__construct($directory, $properties, $dictionaryConfig, $noExitOnEror, $verbose);
 
@@ -82,16 +82,16 @@ class Model_Parser_Tobler extends Model_Parser
 
         $this->lineFormat = '~^' . implode('\s*;\s*', $this->lineFormat) . ';~u';
 
-        $this->fix = array(
+        $this->fix = [
             'search'  => array_keys($this->fix),
             'replace' => array_values($this->fix),
-        );
+        ];
     }
 
     public function parseLine($line, $lineNumber)
     {
         if ($lineNumber === 1) {
-            return array();
+            return [];
         }
         // trims the line, converts to UTF-8, fixes typos
         $line = trim($line);
@@ -117,20 +117,20 @@ class Model_Parser_Tobler extends Model_Parser
         // sets the entry info
         $info = $this->setInfo($lemma, $main, $pof, $variants, $line, $lineNumber);
 
-        $entryData = array(
+        $entryData = [
             'lemma'    => $lemma,
             'main'     => $main,
             'pof'      => $pof,
             'variants' => $variants,
             'info'     => $info,
             'line'     => $lineNumber,
-            );
+        ];
         ksort($entryData);
 
-        return array(
+        return [
             'entry' => implode('|', $entryData),
             'word'  => $wordData,
-            );
+        ];
     }
 
     public function parsePof($pof, $line, $lineNumber)
@@ -152,7 +152,7 @@ class Model_Parser_Tobler extends Model_Parser
     {
         // removes trailing punctuations, spaces, contracted articles
         $word = trim($lemma, '-!');
-        $word = str_replace(array("d'", "l'", "n'"), '', $word);
+        $word = str_replace(["d'", "l'", "n'"], '', $word);
 
         $isMultiWord = true;
 
@@ -161,7 +161,7 @@ class Model_Parser_Tobler extends Model_Parser
             $words = $this->special[$word];
         } else if (preg_match('~^\pL+$~u', $word)) {
             // a single word, e.g. "aaatir"
-            $words = array($word);
+            $words = [$word];
             $isMultiWord = false;
         } else if (preg_match('~^(\pL+)(?:[- ](\pL+))(?:[- ](\pL+))?(?:[- ](\pL+))?$~u', $word, $matches)) {
             // a composed word, e.g. "abat-quatre", extracts the single word
@@ -172,7 +172,7 @@ class Model_Parser_Tobler extends Model_Parser
             // a multi spelling word, e.g. "aier(es)", "apri(s)mier", '(en)scïentos"
             // extracts the word including the content between the brakets
             $longWord = array_shift($matches);
-            $words[] = str_replace(array('(', ')'), '', $longWord);
+            $words[] = str_replace(['(', ')'], '', $longWord);
             // extracts the word excluding the content between the brakets
             $words[] = implode('', $matches);
         } else if (preg_match('~^(\pL+), (\pL+)$~u', $word, $matches)) {
@@ -202,10 +202,10 @@ class Model_Parser_Tobler extends Model_Parser
             // a few words are ignored, e.g. "l'", "qu'" etc...
             // see the report/error file
             $this->error("ignoring word: $line", false, $lineNumber);
-            $words = array();
+            $words = [];
         }
 
-        return array($words, $isMultiWord);
+        return [$words, $isMultiWord];
     }
 
     public function parseVariants($variants, $line, $lineNumber)
@@ -265,15 +265,15 @@ class Model_Parser_Tobler extends Model_Parser
 
     public function setWordsData($words, $isMultiWord, $lineNumber)
     {
-        $wordsData = array();
+        $wordsData = [];
 
         foreach($words as $word) {
-            $data = array(
+            $data = [
                 'original'  => $word,
                 'ascii'     => $this->string->utf8toASCII($word),
                 'line'      => $lineNumber,
                 'multiword' => (int)$isMultiWord,
-            );
+            ];
 
             ksort($data);
             $wordsData[] = implode('|', $data);

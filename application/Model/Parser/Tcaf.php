@@ -33,8 +33,8 @@ class Model_Parser_Tcaf extends Model_Parser
     const FORM_TPL = '~^(\d): (.+)$~';
     const VERB_SEPARATOR = ' *[,;] *';
 
-    public $batchFiles = array('entry.sql', 'word.sql');
-    public $dataFiles = array('entry' => 'entry.txt', 'word' => 'word.txt');
+    public $batchFiles = ['entry.sql', 'word.sql'];
+    public $dataFiles = ['entry' => 'entry.txt', 'word' => 'word.txt'];
 
     public function checkVerbs($verbs, $lineNumber)
     {
@@ -54,7 +54,7 @@ class Model_Parser_Tcaf extends Model_Parser
             $verbs = $form;
         }
 
-        return array($person, $this->parseVerbs($verbs, $lineNumber));
+        return [$person, $this->parseVerbs($verbs, $lineNumber)];
     }
 
     public function parseLine($line, $lineNumber)
@@ -64,7 +64,7 @@ class Model_Parser_Tcaf extends Model_Parser
 
         if (!$line) {
             // ignores empty lines or comments
-            return array();
+            return [];
         }
 
         if (! preg_match(self::LINE_TPL, $line, $matches)) {
@@ -74,10 +74,10 @@ class Model_Parser_Tcaf extends Model_Parser
 
         list(, $infinitive, $tense, $conjugation) = $matches;
 
-        return array(
+        return [
             'entry' => $this->setEntryData($infinitive, $tense, $conjugation, $lineNumber),
             'word'  => $this->setWordsData($infinitive, $tense, $conjugation, $lineNumber),
-        );
+        ];
     }
 
     public function parseVerbs($verbs, $lineNumber)
@@ -103,13 +103,13 @@ class Model_Parser_Tcaf extends Model_Parser
 
     public function setEntryData($infinitive, $tense, $forms, $lineNumber)
     {
-        $entryData = array(
+        $entryData = [
             'ascii'       => $this->setInfinitiveAscii($infinitive),
             'original'    => $infinitive,
             'tense'       => $tense,
             'conjugation' => str_replace('__BR__   ', '<br />', $forms),
             'line'        => $lineNumber,
-            );
+            ];
 
         ksort($entryData);
 
@@ -120,10 +120,10 @@ class Model_Parser_Tcaf extends Model_Parser
     {
         list($person, $verbs) = $form;
 
-        $wordsData = array();
+        $wordsData = [];
 
         foreach($verbs as $verb) {
-            $wordData = array(
+            $wordData = [
                 'ascii'            => $this->string->utf8toASCII($verb),
                 'original'         => $verb,
                 'person'           => $person,
@@ -132,7 +132,7 @@ class Model_Parser_Tcaf extends Model_Parser
                 'tense'            => $tense,
                 'line'             => $lineNumber,
                 'composed'         => (int)($tense == 'comp.' and !strpos($verb, '*')),
-            );
+            ];
 
             ksort($wordData);
 
@@ -145,7 +145,7 @@ class Model_Parser_Tcaf extends Model_Parser
     public function setWordsData($infinitive, $tense, $conjugation, $lineNumber)
     {
         $forms = explode(self::FORM_SEPARATOR, $conjugation);
-        $wordsData = array();
+        $wordsData = [];
 
         foreach($forms as $form) {
             $form = $this->parseForm($form, $lineNumber);

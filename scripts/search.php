@@ -35,7 +35,7 @@ require_once $file;
 if (isset($dictionaryConfig['search']['properties'])) {
     $properties = $dictionaryConfig['search']['properties'];
 } else {
-    $properties = array();
+    $properties = [];
 }
 
 $properties['dictionary'] = $dictionary;
@@ -43,7 +43,7 @@ $properties['dictionary'] = $dictionary;
 if (isset($dictionaryConfig['query'])) {
     $query = $dictionaryConfig['query'];
 } else {
-    $query = array();
+    $query = [];
 }
 
 $search = new $class($config['data-dir'], $properties, $query);

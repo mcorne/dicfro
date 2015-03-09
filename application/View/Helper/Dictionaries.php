@@ -41,7 +41,7 @@ class View_Helper_Dictionaries extends View_Helper_Base
      */
     public function countDictionariesByLanguage()
     {
-        $count = array();
+        $count = [];
 
         foreach($this->view->config['groups'] as $group) {
             $language = $group['language'];
@@ -56,7 +56,7 @@ class View_Helper_Dictionaries extends View_Helper_Base
      */
     public function countDictionariesByType()
     {
-        $count = array();
+        $count = [];
 
         foreach($this->view->config['dictionaries'] as $dictionary) {
             $type = $dictionary['type'];
@@ -87,10 +87,10 @@ class View_Helper_Dictionaries extends View_Helper_Base
     public function getGroups($selected, $english = false)
     {
         $dictionaries = $this->view->config['dictionaries'];
-        $optgroups = array();
+        $optgroups = [];
 
         foreach($this->view->config['groups'] as $group) {
-            $options = array();
+            $options = [];
 
             foreach($group['dictionaries'] as $id) {
                 $dictionary = $dictionaries[$id];
@@ -111,24 +111,24 @@ class View_Helper_Dictionaries extends View_Helper_Base
                     $listTitle = $englishTitle;
                 }
 
-                $options[] = array(
+                $options[] = [
                     'list-title' => $listTitle,
                     'selected'   => $id == $selected or $value == $selected,
                     'text'       => $dictionary['name'],
                     'title'      => strip_tags($title),
                     'type'       => $dictionary['type'],
                     'value'      => $value,
-                );
+                ];
             }
 
             $label = $this->view->languages[ $group['language'] ];
 
-            $optgroups[] = array(
+            $optgroups[] = [
                 'label'      => $english ? $label['english']  : $label['original'],
                 'language'   => $group['language'],
                 'list-title' => $english ? $label['original'] : $label['english'],
                 'options'    => $options,
-            );
+            ];
         }
 
         return $optgroups;
@@ -142,7 +142,7 @@ class View_Helper_Dictionaries extends View_Helper_Base
     public function getNewDictionaries()
     {
         date_default_timezone_set('UTC');
-        $options = array();
+        $options = [];
 
         foreach($this->view->config['dictionaries'] as $id => $dictionary) {
             $date = isset($dictionary['updated']) ? $dictionary['updated'] : $dictionary['created'];
@@ -157,11 +157,11 @@ class View_Helper_Dictionaries extends View_Helper_Base
                     $value =  $id;
                 }
 
-                $options[] = array(
+                $options[] = [
                     'text'     => $dictionary['name'],
                     'title'    => $dictionary['description'],
                     'value'    => $value,
-                );
+                ];
             }
         }
 

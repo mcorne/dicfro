@@ -36,12 +36,12 @@ class Model_Parser_Ghostwords extends Model_Parser
     public function duplicateWord($word)
     {
         // ex. duplicates "DEF(F)ROQUER" into "DEFROQUER" and "DEFFROQUER"
-        return array(preg_replace('~\([^)]+\)~', '', $word), preg_replace('~[()]~', '', $word));
+        return [preg_replace('~\([^)]+\)~', '', $word), preg_replace('~[()]~', '', $word)];
     }
 
     public function duplicateWords($words)
     {
-        $duplicated = array();
+        $duplicated = [];
 
         foreach($words as $word) {
             $duplicated = array_merge($duplicated, $this->duplicateWord($word));
@@ -57,7 +57,7 @@ class Model_Parser_Ghostwords extends Model_Parser
 
         if (!$line or substr($line, 0, 2) == '//') {
             // ignores empty lines or comments
-            return array();
+            return [];
         }
 
         if (! preg_match(self::LINE_TPL, $line, $matches)) {
@@ -73,22 +73,22 @@ class Model_Parser_Ghostwords extends Model_Parser
         $word = preg_replace('~(UN|UNE|LE|LA|LES|DE|DES|L\') ~', '', $word); // removes articles, ex. "APPELLÉ DE MALADIE"
         $words = preg_split('~[ ,]+~', $word); // splits words
         $words = $this->duplicateWords($words); // duplicates words, ex. splits "DEF(F)ROQUER"
-        $words = array_map(array($this->string, 'utf8toASCII'), $words); // converts to upper case ASCII
+        $words = array_map([$this->string, 'utf8toASCII'], $words); // converts to upper case ASCII
         sort($words);
         $words = array_unique($words);
 
-        $wordsData = array();
+        $wordsData = [];
 
         foreach($words as $word) {
-            $wordData = array(
+            $wordData = [
                 'ascii'    => $word,
                 'line'     => $lineNumber,
                 'original' => $original,
-            );
+            ];
 
             $wordsData[] = implode('|', $wordData);
         }
 
-        return array(implode("\n", $wordsData));
+        return [implode("\n", $wordsData)];
     }
 }

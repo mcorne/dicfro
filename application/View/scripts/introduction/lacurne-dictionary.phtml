@@ -71,7 +71,7 @@
 
 <p>
   Au lecteur :
-  <?php foreach(array('I'  , 'II'  , 'III'  , 'IV') as $number => $letter):
+  <?php foreach(['I'  , 'II'  , 'III'  , 'IV'] as $number => $letter):
         $number += 29;?>
     <a href="<?=$this->setLinkUrl("dictionary/lacurne-dictionary/mImg/ex/0/01_page_0$number.gif");?>"><?=$letter;?></a>
   <?php endforeach;?>
@@ -79,8 +79,8 @@
 
 <p>
   Le projet :
-  <?php foreach(array('IV', 'V' , 'VI' , 'VII' , 'VIII', 'IX',
-                      'X' , 'XI', 'XII', 'XIII', 'XIV' , 'XV' ) as $number => $letter):
+  <?php foreach(['IV', 'V' , 'VI' , 'VII' , 'VIII', 'IX',
+                 'X' , 'XI', 'XII', 'XIII', 'XIV' , 'XV'] as $number => $letter):
         $number += 32;?>
     <a href="<?=$this->setLinkUrl("dictionary/lacurne-dictionary/mImg/ex/0/01_page_0$number.gif");?>"><?=$letter;?></a>
   <?php endforeach;?>
@@ -103,9 +103,9 @@
 
 <p>
   Biographie de La Curne :
-  <?php foreach(array('I'  , 'II'  , 'III'  , 'IV'  , 'V'  , 'VI'  , 'VII' , 'VIII' , 'IX' , 'X',
-                      'XI' , 'XII' , 'XIII' , 'XIV' , 'XV' , 'XVI' , 'XVII', 'XVIII', 'XIX', 'XX',
-                      'XXI', 'XXII', 'XXIII', 'XXIV', 'XXV', 'XXVI') as $number => $letter):
+  <?php foreach(['I'  , 'II'  , 'III'  , 'IV'  , 'V'  , 'VI'  , 'VII' , 'VIII' , 'IX' , 'X',
+                 'XI' , 'XII' , 'XIII' , 'XIV' , 'XV' , 'XVI' , 'XVII', 'XVIII', 'XIX', 'XX',
+                 'XXI', 'XXII', 'XXIII', 'XXIV', 'XXV', 'XXVI'] as $number => $letter):
         $number += 9; $number < 10 and $number = "0$number";?>
     <a href="<?=$this->setLinkUrl("dictionary/lacurne-dictionary/mImg/ex/10-ex-0$number.gif");?>"><?=$letter;?></a>
   <?php endforeach;?>

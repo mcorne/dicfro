@@ -99,7 +99,7 @@ class Model_Search_Internal extends Model_Search
      */
     public $needTcaf = false;
 
-    public function __construct($directory, $properties, $query = array(), $dictionaryDir = null)
+    public function __construct($directory, $properties, $query = [], $dictionaryDir = null)
     {
         if (! isset($query['class'])) {
             $query['class'] = 'Model_Query_Internal';
@@ -119,9 +119,9 @@ class Model_Search_Internal extends Model_Search
     public function extractVolumeAndPage($imageNumber)
     {
         if (preg_match(self::PARSE_IMAGE_NUMBER_TPL, $imageNumber, $match)) {
-            return array($match[1], $match[2]);
+            return [$match[1], $match[2]];
         } else {
-            return array();
+            return [];
         }
     }
 
@@ -263,11 +263,11 @@ class Model_Search_Internal extends Model_Search
     {
         $result = $this->query->searchWord($word);
 
-        return $this->updateResult($result) + array(
+        return $this->updateResult($result) + [
             'identifiedWords'      => $this->needTobler   ? $this->searchTobler($word)   : null,
             'identifiedVerbs'      => $this->needTcaf     ? $this->searchTcaf($word)     : null,
             'identifiedLatinWords' => $this->needWhitaker ? $this->searchWhitaker($word) : null,
-        );;
+        ];
     }
 
     /**
@@ -319,7 +319,7 @@ class Model_Search_Internal extends Model_Search
             $page = '';
         }
 
-        return array(
+        return [
             'definition'           => $this->setImagePath($foundWord),
             'errataImages'         => $this->needErrataImages? $this->searchErrata($foundWord['image']) : null,
             'errataText'           => $this->needErrataText? $foundWord['errata'] : null,
@@ -327,6 +327,6 @@ class Model_Search_Internal extends Model_Search
             'volume'               => $volume,
             'page'                 => $page,
             'firstWord'            => $foundWord['original'],
-        );
+        ];
     }
 }

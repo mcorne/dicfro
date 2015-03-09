@@ -20,7 +20,7 @@ if (empty($dictionary) or ! in_array($dictionary, $dictionaries)) {
     die('you must choose a valid dictionary among: '. implode(', ', $dictionaries));
 }
 
-$dictionaryConfig = isset($config['dictionaries'][$dictionary]) ? $config['dictionaries'][$dictionary] : array();
+$dictionaryConfig = isset($config['dictionaries'][$dictionary]) ? $config['dictionaries'][$dictionary] : [];
 
 set_include_path($applicationDir);
 

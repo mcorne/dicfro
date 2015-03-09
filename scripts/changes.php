@@ -37,7 +37,7 @@ function compare_directory_hash($dictionary, $directory1, $directory2)
         return null;
     }
 
-    $differences = array();
+    $differences = [];
 
     if ($added_files = array_diff_key($hash2, $hash1)) {
         $differences['added-files'] = array_keys($added_files);

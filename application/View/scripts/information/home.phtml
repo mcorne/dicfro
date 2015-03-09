@@ -41,7 +41,7 @@
     <?php foreach($newDictionaries as $option) :?>
       <li>
         <a class="link <?=$option['type'];?>"
-           href="<?=$this->linksHelper->setLink(array('introduction', $option['value']));?>"><?=$option['title'];?></a>
+           href="<?=$this->linksHelper->setLink(['introduction', $option['value']]);?>"><?=$option['title'];?></a>
      </li>
     <?php endforeach;?>
   </ul>

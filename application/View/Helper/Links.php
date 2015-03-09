@@ -60,21 +60,21 @@ class View_Helper_Link extends View_Helper_Base
      */
     public function init()
     {
-        $this->arguments = array(
-            'setAboutLink'                => array('about', $this->view->dictionary['url']),
+        $this->arguments = [
+            'setAboutLink'                => ['about', $this->view->dictionary['url']],
             'setArchivesLink'             => 'archives',
             'setDictionariesAvailability' => 'dictionaries-availability',
             'setDictionariesLink'         => 'dictionaries',
             'setDictionariesSearchTest'   => 'dictionaries-search-test',
-            'setDictionaryLink'           => array($this->view->action, '%s', $this->view->word),
+            'setDictionaryLink'           => [$this->view->action, '%s', $this->view->word],
             'setDictlistLink'             => 'dictlist',
-            'setHomeLink'                 => array('home', $this->view->dictionary['url']),
-            'setIntroductionLink'         => array('introduction', $this->view->dictionary['url']),
-            'setNextPageLink'             => array('next', $this->view->dictionary['url'], $this->view->page, $this->view->volume, $this->view->word),
-            'setOptionsLink'              => array('options', $this->view->dictionary['url']),
-            'setPreviousPageLink'         => array('previous', $this->view->dictionary['url'], $this->view->page, $this->view->volume, $this->view->word),
-            'setWordLink'                 => array('search', $this->view->dictionary['url'], '%s'),
-        );
+            'setHomeLink'                 => ['home', $this->view->dictionary['url']],
+            'setIntroductionLink'         => ['introduction', $this->view->dictionary['url']],
+            'setNextPageLink'             => ['next', $this->view->dictionary['url'], $this->view->page, $this->view->volume, $this->view->word],
+            'setOptionsLink'              => ['options', $this->view->dictionary['url']],
+            'setPreviousPageLink'         => ['previous', $this->view->dictionary['url'], $this->view->page, $this->view->volume, $this->view->word],
+            'setWordLink'                 => ['search', $this->view->dictionary['url'], '%s'],
+        ];
     }
 
     /**
@@ -89,16 +89,16 @@ class View_Helper_Link extends View_Helper_Base
         if (! isset($link[$isEntries])) {
             if (empty($isEntries)) {
                 if (empty($this->view->dictionary['volume'])) {
-                    $link[$isEntries] = $this->setLink(array('page', $this->view->dictionary['url'], '%s', $this->view->word));
+                    $link[$isEntries] = $this->setLink(['page', $this->view->dictionary['url'], '%s', $this->view->word]);
                 } else {
-                    $link[$isEntries] = $this->setLink(array('page', $this->view->dictionary['url'], '%s', '%s', $this->view->word));
+                    $link[$isEntries] = $this->setLink(['page', $this->view->dictionary['url'], '%s', '%s', $this->view->word]);
                 }
 
             } else {
                 if (empty($this->view->dictionary['volume'])) {
-                    $link[$isEntries] = $this->setLink(array('page', $this->view->dictionary['url'], '%s', '%s', $this->view->word));
+                    $link[$isEntries] = $this->setLink(['page', $this->view->dictionary['url'], '%s', '%s', $this->view->word]);
                 } else {
-                    $link[$isEntries] = $this->setLink(array('page', $this->view->dictionary['url'], '%s', '%s', '%s', $this->view->word));
+                    $link[$isEntries] = $this->setLink(['page', $this->view->dictionary['url'], '%s', '%s', '%s', $this->view->word]);
                 }
             }
         }
@@ -112,7 +112,7 @@ class View_Helper_Link extends View_Helper_Base
      * @param $arguments
      * @return string
      */
-    public function setLink($arguments = array())
+    public function setLink($arguments = [])
     {
         $arguments = array_filter((array) $arguments);
         array_unshift($arguments, $this->view->baseUrl);

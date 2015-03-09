@@ -32,7 +32,7 @@ class View_Helper_Images extends View_Helper_Base
      * Image information
      * @var array
      */
-    public $images = array(
+    public $images = [
         // dicfro home and default
         'default'      => 'dicfro.jpg',
          // information pages
@@ -40,7 +40,7 @@ class View_Helper_Images extends View_Helper_Base
         'archives'     => 'archives.jpg',
         'dictionaries' => 'dictionary-list.jpg',
         'options'      => 'options.jpg',
-    );
+    ];
 
     /**
      * Returns the image name

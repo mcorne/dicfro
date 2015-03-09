@@ -26,13 +26,13 @@ require_once 'Model/Query.php';
  * @license    http://opensource.org/licenses/gpl-3.0.html GNU GPL v3
  */
 
-class Model_Query_Tobler extends Model_Query 
+class Model_Query_Tobler extends Model_Query
 {
     /**
      * Constructor
      *
      * @param  string $directory the dictionaries directory
-     * @return void  
+     * @return void
      */
     public function __construct($directory = '.')
     {
@@ -53,7 +53,7 @@ class Model_Query_Tobler extends Model_Query
         $query .= "WHERE ascii = :ascii AND entry.line = word.line ";
         $query .= "ORDER BY main, variants, lemma, pof";
 
-        $result = $this->fetchAll($query, array(':ascii' => $ascii));
+        $result = $this->fetchAll($query, [':ascii' => $ascii]);
 
         return $result;
     }

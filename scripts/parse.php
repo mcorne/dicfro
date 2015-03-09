@@ -16,7 +16,7 @@
 require_once 'common.php';
 
 if (! empty($dictionaryConfig['parser']) and is_string($dictionaryConfig['parser'])) {
-    $dictionaryConfig['parser'] = array('class' => $dictionaryConfig['parser']);
+    $dictionaryConfig['parser'] = ['class' => $dictionaryConfig['parser']];
 }
 
 if (isset($dictionaryConfig['parser']['class'])) {
