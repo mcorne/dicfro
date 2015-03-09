@@ -804,7 +804,6 @@ return array(
             'description'    => "Lexique Roman ou dictionnaire de la langue des troubadours comparée avec les autres langues de l'Europe latine, François J. M. Raynouard, 1844",
             'description-en' => 'Romance languages lexicon or dictionary of the language of the troubadours compared with other languages ​​of Latin Europe, François J. M. Raynouard, 1844',
             'image'          => 'lexique-roman.jpg',
-            'introduction'   => 'roman.phtml',
             'language'       => 'fr',
             'name'           => 'Lexique Roman',
             'search'         => 'roman-lexicon/lexromv/mImg/%s.gif',
