@@ -26,7 +26,7 @@ return [
 
     // default dictionary for each language
     'dictionary-defaults' => [
-        'en' => 'century',
+        'en' => 'century-dictionary',
         'fr' => 'gdf',
     ],
 
