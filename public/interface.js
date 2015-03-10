@@ -12,7 +12,7 @@ prevDictionary;
 function autoSearchLastWord()
 {
     var	action = document.getElementById('action').value;
-	
+
     getcookie('no-auto-search') || searchLastWord(action);
 }
 
@@ -141,17 +141,17 @@ function getWindowHeight()
 
 function goEntry(action)
 {
-    var 
+    var
     entry = document.getElementById('entries'),
-    pageVolume = entry.value.split('/'),    
+    pageVolume = entry.value.split('/'),
     page = parseInt(pageVolume[0]);
     volume = parseInt(pageVolume[1]);
     entryHash = pageVolume[2];
-    
+
     action = action.replace('%s', page);
     action = action.replace('%s', volume);
     action = action.replace('%s', entryHash);
-    
+
     location.assign(action);
 }
 
@@ -165,6 +165,12 @@ function goPage(action)
     volume && (action = action.replace('%s', parseInt(volume.value)));
 
     location.assign(action);
+}
+
+function hideOrDisplay(id)
+{
+    var element = document.getElementById(id);
+    element.style.display = element.style.display == 'none' ? 'block' : 'none';
 }
 
 function isEnterKey(keyEvent)
@@ -221,7 +227,7 @@ function onBlur()
 function onFocus()
 {
     getcookie('new-tab') && autoSearchLastWord();
-	
+
 	window.onfocus = null;
 	window.onblur = onBlur;
 }
@@ -234,13 +240,13 @@ function onLoad()
 
 function openDictionary(action)
 {
-    var 
+    var
 	isNewTab = getcookie('new-tab'),
 	dictionary = document.getElementById('dictionary');
-	
+
 	action = action.replace('%s', dictionary.value);
     searchWord(action, null, isNewTab);
-	
+
 	isNewTab && (dictionary.selectedIndex = prevDictionary);
 }
 
@@ -251,7 +257,7 @@ function printPage()
     grandChild,
     innerHTML,
     url = '/print.php?content=';
-    
+
     domainSubpath && (url = '/' + domainSubpath + url);
 
     while(child){
@@ -289,7 +295,7 @@ function searchLastWord(action)
 	dictionaryLanguage = document.getElementById('dictionary-language').value,
 	lastWord = getcookie('last-word-' + dictionaryLanguage),
 	word = document.getElementById('word').value;
-    
+
     (word != lastWord) && searchWord(action, lastWord);
 }
 

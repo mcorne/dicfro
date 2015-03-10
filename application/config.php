@@ -67,6 +67,9 @@ return [
                     ],
                 ],
             ],
+            'search-test'  => [
+                1 => 'a',
+            ],
             'title'        => 'Century D.',
             'type'         => 'index',
             'volume'       => 'readonly',
@@ -981,6 +984,9 @@ return [
             'language' => 'la',
         ],
     ],
+
+    // test directory containing expected test results
+    'tests-dir' => realpath("$applicationDir/tests"),
 
     // directory containing translations
     'translations-dir' => realpath("$applicationDir/translations"),

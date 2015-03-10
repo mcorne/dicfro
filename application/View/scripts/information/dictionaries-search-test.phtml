@@ -17,6 +17,56 @@
 
 <h1 class="title"><?=$this->translate('Dictionaries search test');?></h1>
 
-<pre>
-<?php print_r($this->result);?>
-</pre>
+<?php foreach($this->results as $results):?>
+
+  <?php if (isset($results['result'])):?>
+
+    <?php foreach($results['result'] as $index => $result):?>
+
+      <p class="test-result">
+
+        <?php if ($index):?>
+          <?=$results['name'];?> (#<?=$index;?>):
+        <?php else:?>
+          <?=$results['name'];?>:
+        <?php endif;?>
+
+        <?php if (! $result):?>
+          <span class="red">Not tested</span>
+
+        <?php elseif (! isset($results['expected']) or ! isset($results['expected'][$index])):?>
+          <span class="orange">
+              Please check the result! Keep or remove tests/search/<?=$results['id'];?> accordingly
+              (<a class="orange" href="">see details</a>).
+          </span>
+
+        <?php elseif ($result != $results['expected'][$index]):?>
+          <span class="red">
+              Error! Fix and/or remove &quot;tests/search/<?=$results['id'];?>&quot; accordingly
+              (<a class="red" href="">see details</a>).
+          </span>
+
+        <?php else:?>
+          Test OK
+          (<a href="">see details</a>).
+
+        <?php endif;?>
+      </p>
+
+      <?php if ($result):?>
+        <?php isset($results['expected'][$index]) and $result['expected'] = $results['expected'][$index]['found'];?>
+        <pre><?=preg_replace('~^Array\s+\(\s+(.+?)\s+\)\s+$~i', '$1', print_r($result, true));?></pre>
+      <?php endif;?>
+
+    <?php endforeach;?>
+
+  <?php else:?>
+
+    <p class="test-result">
+      <?=$results['name'];?>:
+      <span class="red">Not tested !</span>
+    </p>
+
+  <?php endif;?>
+
+<?php endforeach;?>

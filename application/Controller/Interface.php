@@ -180,16 +180,51 @@ class Controller_Interface
      */
     public function dictionariesSearchTestAction()
     {
-        $result = [];
+        $results = [];
 
         foreach($this->front->config['dictionaries'] as $id => $dictionary) {
             $this->dictionary = $dictionary;
             $this->setDictionaryDefaults($id);
             $search = $this->createSearchObject();
-            $result[] = $search->searchWord('a');
+
+            if (! isset($dictionary['search-test'])) {
+                $result = null;
+
+            } elseif (is_string($dictionary['search-test'])) {
+                $result[] = [
+                    'word'  => $dictionary['search-test'],
+                    'found' => $search->searchWord($dictionary['search-test']),
+                ];
+
+            } else {
+                $result = [];
+
+                foreach (array_keys($dictionary['search']['properties']['url']) as $index) {
+                    if (isset($dictionary['search-test'][$index])) {
+                        $result[$index] = [
+                            'word'  => $dictionary['search-test'][$index],
+                            'found' => $search->searchWord($dictionary['search-test'][$index]),
+                        ];
+                    }
+                }
+            }
+
+            $filename = sprintf('%s/search/%s.php', $this->front->config['tests-dir'], $id);
+            $expected = $this->readExpectedTestResults($filename);
+
+            if (! $expected and $result) {
+                $this->writeTestResult($filename, $result);
+            }
+
+            $results[] = [
+                'expected' => $expected,
+                'id'       => $id,
+                'name'     => $dictionary['name'],
+                'result'   => $result,
+            ];
         }
 
-        $this->view->result =  $result;
+        $this->view->results =  $results;
         $this->view->information = "information/dictionaries-search-test.phtml";
     }
 
@@ -330,6 +365,22 @@ class Controller_Interface
     public function previousAction()
     {
         $this->pageAction('goToPreviousPage');
+    }
+
+    /**
+     * Returns the content of a test file
+     *
+     * @return mixed
+     */
+    public function readExpectedTestResults($filename)
+    {
+        if (file_exists($filename)) {
+            $expected = include $filename;
+        } else {
+            $expected = null;
+        }
+
+        return $expected;
     }
 
     /**
@@ -598,5 +649,22 @@ class Controller_Interface
         }
 
         return false;
+    }
+
+    /**
+     * Writes a test result in a file
+     *
+     * @param string $filename
+     * @param mixed $result
+     * @throws Exception
+     */
+    public function writeTestResult($filename, $result)
+    {
+        $php = var_export($result, true);
+        $content = sprintf("<?php\nreturn %s;", $php);
+
+        if (! file_put_contents($filename, $content)) {
+            throw new Exception("cannot write: $filename");
+        }
     }
 }
