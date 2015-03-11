@@ -19,11 +19,11 @@
 
 <?php foreach($this->results as $results):?>
 
-  <?php if (isset($results['result'])):?>
+  <?php if (! empty($results['result'])):?>
 
     <?php foreach($results['result'] as $index => $result):?>
 
-      <p class="test-result">
+      <div class="test-result">
 
         <?php if ($index):?>
           <?=$results['name'];?> (#<?=$index;?>):
@@ -32,40 +32,44 @@
         <?php endif;?>
 
         <?php if (! $result):?>
-          <span class="red">Not tested</span>
+          <span class="orange">Not tested</span>
 
         <?php elseif (! isset($results['expected']) or ! isset($results['expected'][$index])):?>
           <span class="orange">
-              Please check the result! Keep or remove tests/search/<?=$results['id'];?> accordingly
-              (<a class="orange" href="">see details</a>).
+              Please check the result! Keep or remove tests/search/<?=$results['id'];?> accordingly.
           </span>
 
         <?php elseif ($result != $results['expected'][$index]):?>
           <span class="red">
-              Error! Fix and/or remove &quot;tests/search/<?=$results['id'];?>&quot; accordingly
-              (<a class="red" href="">see details</a>).
+              Error! Fix and/or remove &quot;tests/search/<?=$results['id'];?>&quot; accordingly.
           </span>
 
         <?php else:?>
-          Test OK
-          (<a href="">see details</a>).
+          <span class="green">Test OK.</span>
 
         <?php endif;?>
-      </p>
 
-      <?php if ($result):?>
-        <?php isset($results['expected'][$index]) and $result['expected'] = $results['expected'][$index]['found'];?>
-        <pre><?=preg_replace('~^Array\s+\(\s+(.+?)\s+\)\s+$~i', '$1', print_r($result, true));?></pre>
-      <?php endif;?>
+        <?php if ($result):?>
+          <a href="javascript:hideOrDisplay('<?=$results['id'];?>-<?=$index;?>')">See details</a>.
+          <pre class="test-result" id="<?=$results['id'];?>-<?=$index;?>">
+Test result:
+<?=preg_replace('~^Array\n\(\n(.+?)\n\)\n$~is', '$1', print_r($result, true));?>
+
+Expected result:
+<?=preg_replace('~^Array\n\(\n(.+?)\n\)\n$~is', '$1', print_r($results['expected'][$index], true));?>
+          </pre>
+        <?php endif;?>
+
+      </div>
 
     <?php endforeach;?>
 
   <?php else:?>
 
-    <p class="test-result">
+    <div class="test-result">
       <?=$results['name'];?>:
-      <span class="red">Not tested !</span>
-    </p>
+      <span class="orange">Not tested !</span>
+    </div>
 
   <?php endif;?>
 

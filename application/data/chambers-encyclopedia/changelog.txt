@@ -18,4 +18,4 @@ _ZZZZZ_\3\t\1\n
 - removed false entries
 - fixed non letters, checked X, K
 - merged into "index.csv"
-- ran "parse chambers-encycopedia 1", fixed errors
+- ran "parse chambers-encyclopedia 1", fixed errors

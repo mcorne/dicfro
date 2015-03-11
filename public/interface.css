@@ -12,6 +12,11 @@ body
     margin: 1.3em 1.3em 0 1em;
 }
 
+.green
+{
+    color: green;
+}
+
 .middle
 {
     vertical-align: middle;
@@ -317,6 +322,13 @@ a.options
     font-weight: bold;
 }
 
+div.test-result
+{
+    font-size: 1.2em;
+    margin-bottom: .5em;
+    margin-top: 0;
+}
+
 h1.title
 {
     color: green;
@@ -369,19 +381,17 @@ p.sub-title a
     color: green;
 }
 
-p.test-result
-{
-    color: green;
-    font-size: 1.2em;
-    font-weight: bold;
-    margin-top: 1em;
-}
-
 p.tip, p.tip a
 {
     color: green;
     font-size: 1em;
     font-weight: bold;
+}
+
+pre.test-result
+{
+    display: none;
+    font-size: 1.2em;
 }
 
 table.change-log

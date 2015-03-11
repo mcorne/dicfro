@@ -191,10 +191,10 @@ class Controller_Interface
                 $result = null;
 
             } elseif (is_string($dictionary['search-test'])) {
-                $result[] = [
+                $result = [[
                     'word'  => $dictionary['search-test'],
                     'found' => $search->searchWord($dictionary['search-test']),
-                ];
+                ]];
 
             } else {
                 $result = [];

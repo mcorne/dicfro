@@ -170,7 +170,7 @@ function goPage(action)
 function hideOrDisplay(id)
 {
     var element = document.getElementById(id);
-    element.style.display = element.style.display == 'none' ? 'block' : 'none';
+    element.style.display = element.style.display == 'block' ? 'none' : 'block';
 }
 
 function isEnterKey(keyEvent)

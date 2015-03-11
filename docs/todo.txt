@@ -1,7 +1,6 @@
 Things to do
 ------------
 
-- finish dictionary search test
 - refactor middle and tabs per dictionary
 
 - add panoccitan.org, http://www.etymologie-occitane.fr, http://www.atilf.fr/dect/ ...
