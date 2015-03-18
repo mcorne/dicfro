@@ -27,7 +27,7 @@ return [
     // default dictionary for each language
     'dictionary-defaults' => [
         'en' => 'century-dictionary',
-        'fr' => 'gdf',
+        'fr' => 'godefroy-dictionary',
     ],
 
     // sets the dictionary directory containting images (dictionary pages)
@@ -448,32 +448,6 @@ return [
             'url'            => 'gaffiot',
         ],
 
-        'gdf' => [
-            'availability-test' => 'aardoir',
-            'created'        => '2008-04-14',
-            'description'    => "Dictionnaire de l'ancienne langue française et de tous ses dialectes du IX<sup>e</sup> au XV<sup>e</sup> siècle, Frédéric Godefroy, 1880-1895",
-            'description-en' => 'Dictionary of the Old French language and all its dialects from the ninth to fifteenth century, Frédéric Godefroy, 1880-1895',
-            'image'          => 'dictionnaire-godefroy.jpg',
-            'language'       => 'fr',
-            'name'           => 'Godefroy / Dictionnaire',
-            'parser'         => 'Model_Parser_GdfLike',
-            'search'         => [
-                'properties' => [
-                    'errataFiles'      => 'gdf/mPimg-3/%s-%s[a-z]*/*.gif',
-                    'imagePath'        => 'gdf/mImg/%s.gif',
-                    'needErrataImages' => true,
-                    'needGhostwords'   => true,
-                    'needTcaf'         => true,
-                    'needTobler'       => true,
-                ],
-            ],
-            'search-test'    => 'a',
-            'title'          => 'D. Godefroy',
-            'type'           => 'internal',
-            'url'            => 'dictionnaire-godefroy',
-            'volume'         => 'input',
-        ],
-
         'gdfc' => [
             'availability-test' => 'abevreur',
             'created'        => '2008-04-14',
@@ -498,6 +472,31 @@ return [
             'title'          => 'C. Godefroy',
             'type'           => 'internal',
             'url'            => 'complement-godefroy',
+            'volume'         => 'input',
+        ],
+
+        'godefroy-dictionary' => [
+            'availability-test' => 'aardoir',
+            'created'        => '2008-04-14',
+            'description'    => "Dictionnaire de l'ancienne langue française et de tous ses dialectes du IX<sup>e</sup> au XV<sup>e</sup> siècle, Frédéric Godefroy, 1880-1895",
+            'description-en' => 'Dictionary of the Old French language and all its dialects from the ninth to fifteenth century, Frédéric Godefroy, 1880-1895',
+            'image'          => 'dictionnaire-godefroy.jpg',
+            'language'       => 'fr',
+            'name'           => 'Godefroy / Dictionnaire',
+            'parser'         => 'Model_Parser_GdfLike',
+            'search'         => [
+                'properties' => [
+                    'errataFiles'      => 'godefroy-dictionary/mPimg-3/%s-%s[a-z]*/*.gif',
+                    'needErrataImages' => true,
+                    'needGhostwords'   => true,
+                    'needTcaf'         => true,
+                    'needTobler'       => true,
+                ],
+            ],
+            'search-test'    => 'a',
+            'title'          => 'D. Godefroy',
+            'type'           => 'internal',
+            'url'            => 'dictionnaire-godefroy',
             'volume'         => 'input',
         ],
 
@@ -1054,7 +1053,7 @@ return [
                 'tcaf',
                 'cotgrave',
                 'couronnement-de-louis-glossary',
-                'gdf',
+                'godefroy-dictionary',
                 'gdfc',
                 'godefroy-lexicon',
                 'lacurne-dictionary',
