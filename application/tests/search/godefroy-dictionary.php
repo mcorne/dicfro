@@ -5,14 +5,14 @@ return array (
     'word' => 'a',
     'found' => 
     array (
-      'definition' => 'dictionary/gdf/mImg/0100001.gif',
+      'definition' => 'dictionary/godefroy-dictionary/mImg/0100001.gif',
       'errataImages' => 
       array (
-        0 => 'dictionary/gdf/mPimg-3/01-1b1c2x2/01-1b.gif',
-        1 => 'dictionary/gdf/mPimg-3/01-1b1c2x2/01-1c-v8.gif',
-        2 => 'dictionary/gdf/mPimg-3/01-1b1c2x2/01-1c.gif',
-        3 => 'dictionary/gdf/mPimg-3/01-1b1c2x2/01-1x-v2.gif',
-        4 => 'dictionary/gdf/mPimg-3/01-1b1c2x2/01-1x.gif',
+        0 => 'dictionary/godefroy-dictionary/mPimg-3/01-1b1c2x2/01-1b.gif',
+        1 => 'dictionary/godefroy-dictionary/mPimg-3/01-1b1c2x2/01-1c-v8.gif',
+        2 => 'dictionary/godefroy-dictionary/mPimg-3/01-1b1c2x2/01-1c.gif',
+        3 => 'dictionary/godefroy-dictionary/mPimg-3/01-1b1c2x2/01-1x-v2.gif',
+        4 => 'dictionary/godefroy-dictionary/mPimg-3/01-1b1c2x2/01-1x.gif',
       ),
       'errataText' => NULL,
       'ghostwords' => 

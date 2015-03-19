@@ -5,7 +5,7 @@ return array (
     'word' => 'a',
     'found' => 
     array (
-      'definition' => 'dictionary/gdfc/mImg/0810009.gif',
+      'definition' => 'dictionary/godefroy-supplement/mImg/0810009.gif',
       'errataImages' => 
       array (
       ),
