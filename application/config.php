@@ -448,33 +448,6 @@ return [
             'url'            => 'gaffiot',
         ],
 
-        'gdfc' => [
-            'availability-test' => 'abevreur',
-            'created'        => '2008-04-14',
-            'description'    => "Complément du dictionnaire de l'ancienne langue française et de tous ses dialectes du IX<sup>e</sup> au XV<sup>e</sup> siècle, Frédéric Godefroy, 1895-1902",
-            'description-en' => 'Dictionary supplement of the Old French language and all its dialects from the ninth to fifteenth century, Frédéric Godefroy, 1880-1895',
-            'image'          => 'complement-godefroy.jpg',
-            'language'       => 'fr',
-            'name'           => 'Godefroy / Complément',
-            'parser'         => 'Model_Parser_GdfLike',
-            'search'         => [
-                'properties' => [
-                    'digit'            => 1,
-                    'errataFiles'      => 'gdfc/mPimg-3/%s-%s[a-z]*/*.gif',
-                    'imagePath'        => 'gdfc/mImg/%s.gif',
-                    'needErrataImages' => true,
-                    'needGhostwords'   => true,
-                    'needTcaf'         => true,
-                    'needTobler'       => true,
-                ],
-            ],
-            'search-test'    => 'a',
-            'title'          => 'C. Godefroy',
-            'type'           => 'internal',
-            'url'            => 'complement-godefroy',
-            'volume'         => 'input',
-        ],
-
         'godefroy-dictionary' => [
             'availability-test' => 'aardoir',
             'created'        => '2008-04-14',
@@ -520,6 +493,32 @@ return [
             'title'          => 'L. Godefroy',
             'type'           => 'internal',
             'url'            => 'lexique-godefroy',
+        ],
+
+        'godefroy-supplement' => [
+            'availability-test' => 'abevreur',
+            'created'        => '2008-04-14',
+            'description'    => "Complément du dictionnaire de l'ancienne langue française et de tous ses dialectes du IX<sup>e</sup> au XV<sup>e</sup> siècle, Frédéric Godefroy, 1895-1902",
+            'description-en' => 'Dictionary supplement of the Old French language and all its dialects from the ninth to fifteenth century, Frédéric Godefroy, 1880-1895',
+            'image'          => 'complement-godefroy.jpg',
+            'language'       => 'fr',
+            'name'           => 'Godefroy / Complément',
+            'parser'         => 'Model_Parser_GdfLike',
+            'search'         => [
+                'properties' => [
+                    'digit'            => 1,
+                    'errataFiles'      => 'godefroy-supplement/mPimg-3/%s-%s[a-z]*/*.gif',
+                    'needErrataImages' => true,
+                    'needGhostwords'   => true,
+                    'needTcaf'         => true,
+                    'needTobler'       => true,
+                ],
+            ],
+            'search-test'    => 'a',
+            'title'          => 'C. Godefroy',
+            'type'           => 'internal',
+            'url'            => 'complement-godefroy',
+            'volume'         => 'input',
         ],
 
         'grand-larousse' => [
@@ -1054,7 +1053,7 @@ return [
                 'cotgrave',
                 'couronnement-de-louis-glossary',
                 'godefroy-dictionary',
-                'gdfc',
+                'godefroy-supplement',
                 'godefroy-lexicon',
                 'lacurne-dictionary',
                 'roman-lexicon',
