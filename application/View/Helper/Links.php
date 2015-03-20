@@ -65,6 +65,7 @@ class View_Helper_Link extends View_Helper_Base
             'setArchivesLink'             => 'archives',
             'setDictionariesAvailability' => 'dictionaries-availability',
             'setDictionariesLink'         => 'dictionaries',
+            'setDictionariesPageTest'     => 'dictionaries-page-test',
             'setDictionariesSearchTest'   => 'dictionaries-search-test',
             'setDictionaryLink'           => [$this->view->action, '%s', $this->view->word],
             'setDictlistLink'             => 'dictlist',

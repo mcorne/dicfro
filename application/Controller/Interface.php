@@ -127,9 +127,14 @@ class Controller_Interface
      */
     public function dictionariesAvailabilityAction()
     {
+        $testCases = require $this->front->config['test-cases'];
         $dictionaries = [];
 
         foreach($this->front->config['dictionaries'] as $id => $dictionary) {
+            if (isset($testCases[$id])) {
+                $dictionary += $testCases[$id];
+            }
+
             if (! isset($dictionary['availability-test'])) {
                 $urls = null;
 
@@ -173,6 +178,65 @@ class Controller_Interface
 
         $this->view->dictionaries = $dictionaries;
         $this->view->information = "information/dictionaries-availability.phtml";
+        $this->view->noImage = true;
+    }
+
+    /**
+     * Tests and validates dictionaries go to page
+     */
+    public function dictionariesPageTestAction()
+    {
+        $testCases = require $this->front->config['test-cases'];
+        $results = [];
+
+        foreach($this->front->config['dictionaries'] as $id => $dictionary) {
+            if ($dictionary['type'] == 'external') {
+                continue;
+            }
+
+            if (isset($testCases[$id])) {
+                $dictionary += $testCases[$id];
+            }
+
+            $this->dictionary = $dictionary;
+            $this->setDictionaryDefaults($id);
+            $search = $this->createSearchObject();
+
+            if (! isset($dictionary['page-test'])) {
+                $result = null;
+
+            } else {
+                $result = [];
+
+                foreach ($dictionary['page-test'] as $index => $page) {
+                    $volume = isset($page['volume']) ? $page['volume'] : 0;
+                    $method = $page['action'];
+
+                    $result[$index] = [
+                        'page'  => $page,
+                        'found' => $search->$method($volume, $page['page']),
+                    ];
+                }
+            }
+
+            $filename = sprintf('%s/page/%s.php', $this->front->config['tests-dir'], $id);
+            $expected = $this->readExpectedTestResults($filename);
+
+            if (! $expected and $result) {
+                $this->writeTestResult($filename, $result);
+            }
+
+            $results[] = [
+                'expected' => $expected,
+                'id'       => $id,
+                'name'     => $dictionary['name'],
+                'result'   => $result,
+            ];
+        }
+
+        $this->view->information = "information/dictionaries-page-test.phtml";
+        $this->view->noImage = true;
+        $this->view->results = $results;
     }
 
     /**
@@ -180,12 +244,17 @@ class Controller_Interface
      */
     public function dictionariesSearchTestAction()
     {
+        $testCases = require $this->front->config['test-cases'];
         $results = [];
 
         foreach($this->front->config['dictionaries'] as $id => $dictionary) {
             $this->dictionary = $dictionary;
             $this->setDictionaryDefaults($id);
             $search = $this->createSearchObject();
+
+            if (isset($testCases[$id])) {
+                $dictionary += $testCases[$id];
+            }
 
             if (! isset($dictionary['search-test'])) {
                 $result = null;
@@ -205,6 +274,8 @@ class Controller_Interface
                             'word'  => $dictionary['search-test'][$index],
                             'found' => $search->searchWord($dictionary['search-test'][$index]),
                         ];
+                    } else {
+                        $result[$index] = null;
                     }
                 }
             }
@@ -224,8 +295,9 @@ class Controller_Interface
             ];
         }
 
-        $this->view->results =  $results;
         $this->view->information = "information/dictionaries-search-test.phtml";
+        $this->view->noImage = true;
+        $this->view->results = $results;
     }
 
     /**

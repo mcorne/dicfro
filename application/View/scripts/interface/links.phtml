@@ -16,7 +16,7 @@
 ?>
 
 <!-- links to pages: home, ... -->
-<span class="nowrap" >
+<span class="item" >
   <a class="link" href="<?=$this->linksHelper->setHomeLink();?>"><?=$this->translate('Home');?></a>
   <a class="link" href="<?=$this->linksHelper->setIntroductionLink();?>"><?=$this->translate('Introduction');?></a>
   <a class="link options" href="<?=$this->linksHelper->setOptionsLink();?>"><?=$this->translate('Options');?></a>
@@ -26,4 +26,4 @@
   <?php if ($this->dictionary['type'] == 'external') :?>
       <a class="link" href="<?=$this->dictionary['introduction'];?>"><?=$this->translate('Direct link');?></a>
   <?php endif;?>
-  </span>
+</span>

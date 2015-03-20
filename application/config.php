@@ -39,16 +39,6 @@ return [
     // dictionaries details
     'dictionaries' => [
         'century-dictionary' => [
-            'availability-test' => [
-                1 => '027',
-                2 => '012',
-                3 => '012',
-                4 => '012',
-                5 => '012',
-                6 => '012',
-                7 => '012',
-                8 => '012',
-            ],
             'created'      => '2013-04-14',
             'description'  => 'The Century dictionary, an encyclopedic lexicon of the English language, William D. Whitney, 1895',
             'language'     => 'en',
@@ -67,26 +57,12 @@ return [
                     ],
                 ],
             ],
-            'search-test'  => [
-                1 => 'A',
-                2 => 'Celticize',
-                3 => 'Droop',
-                4 => 'H',
-                5 => 'M',
-                6 => 'Pharmacological',
-                7 => 'Salsify',
-                8 => 'Technicality',
-            ],
             'title'        => 'Century D.',
             'type'         => 'index',
             'volume'       => 'readonly',
         ],
 
         'century-supplement' => [
-            'availability-test' => [
-                11 => '018',
-                12 => '015',
-            ],
             'created'      => '2013-04-18',
             'description'  => 'The Century dictionary supplement, Benjamin E. Smith, 1909',
             'language'     => 'en',
@@ -99,20 +75,12 @@ return [
                     ],
                 ],
             ],
-            'search-test'  => [
-                11 => 'A',
-                12 => 'M',
-            ],
             'title'        => 'Century S.',
             'type'         => 'index',
             'volume'       => 'readonly',
         ],
 
         'chambers-encyclopedia' => [
-            'availability-test' => [
-                1 => '023', // first page = 021
-                2 => '010', // first page = 009
-            ],
             'created'      => '2014-05-01',
             'description'  => "The Chambers's encyclopaedia, a dictionary of universal knowledge, William & Robert Chambers, 1901",
             'language'     => 'en',
@@ -133,18 +101,6 @@ return [
                     ],
                 ],
             ],
-            'search-test'  => [
-                1  => 'A',
-                2  => 'Beaugency',
-                // 3  => 'Catarrh',
-                // 4  => 'Dionysius',
-                // 5  => 'Friday',
-                // 6  => 'Humber',
-                // 7  => 'Maltebrun',
-                // 8  => 'Peasant',
-                // 9  => 'Round',
-                // 10 => 'Swastika',
-            ],
             'title'        => 'Chambers E.',
             'type'         => 'index',
             'updated'      => '2014-05-03',
@@ -152,7 +108,6 @@ return [
         ],
 
         'chanson-de-roland-glossary' => [
-            'availability-test' => 'acuminier',
             'created'        => '2010-08-01',
             'description'    => 'Glossaire de la Chanson de Roland, Joseph Bédier, 1927',
             'description-en' => 'Glossary of the Song of Roland, Joseph Bédier, 1927',
@@ -172,14 +127,12 @@ return [
                     'needTobler' => true,
                 ],
             ],
-            'search-test'    => 'a',
             'title'          => 'Roland',
             'type'           => 'internal',
             'url'            => 'glossaire-chanson-de-roland',
         ],
 
         'chretien-de-troyes-glossary' => [
-            'availability-test' => 'abonder',
             'created'        => '2010-08-01',
             'description'    => 'Kristian von Troyes Wörterbuch zu seinem sämtlichen Werken, Wendelin Foerster, 1914',
             'description-en' => 'Dictionary of the works of Chrétien de Troyes, Wendelin Foerster, 1914',
@@ -198,14 +151,12 @@ return [
                     'needTobler' => true,
                 ],
             ],
-            'search-test'    => 'a',
             'title'          => 'Chrétien',
             'type'           => 'internal',
             'url'            => 'glossaire-chretien-de-troyes',
         ],
 
         'conjugueur' => [
-            'availability-test' => 'avoir',
             'created'           => '2013-07-20',
             'description'       => 'Le conjugeur de Conjugaison.net',
             'description-en'    => 'The Conjugaison.net conjugator',
@@ -220,12 +171,10 @@ return [
                     'url'       => 'http://www.conjugaison.net/fr/',
                 ],
             ],
-            'search-test'       => 'avoir',
             'type'              => 'external',
         ],
 
         'cotgrave' => [
-            'availability-test' => 'abb',
             'created'      => '2012-03-11',
             'description'  => 'A dictionarie of the French and English tongues, Randle Cotgrave, 1611',
             'introduction' => 'http://www.pbm.com/~lindahl/cotgrave/',
@@ -237,12 +186,10 @@ return [
                     'url' => 'http://www.pbm.com/~lindahl/cotgrave/search/search_backend.cgi?query=',
                 ],
             ],
-            'search-test'  => 'abb',
             'type'         => 'external',
         ],
 
         'couronnement-de-louis-glossary' => [
-            'availability-test' => 'acorcié',
             'created'        => '2010-08-01',
             'description'    => 'Glossaire du Couronnement de Louis, Ernest Langlois, 1888',
             'description-en' => 'Glossary of the Coronation of Louis, Ernest Langlois, 1888',
@@ -262,14 +209,12 @@ return [
                     'needTobler' => true,
                 ],
             ],
-            'search-test'    => 'a',
             'title'          => 'Couronnement',
             'type'           => 'internal',
             'url'            => 'glossaire-couronnement-de-louis',
         ],
 
         'dmf' => [
-            'availability-test' => 'avoir',
             'created'        => '2008-04-14',
             'description'    => "Dictionnaire du Moyen Français (DMF), Analyse et Traitement Informatique de la Langue Française (Atilf)",
             'description-en' => "Middle French dictionary (DMF), Computer Processing and Analysis of the French Language (Atilf)",
@@ -282,13 +227,11 @@ return [
                     'url'       => 'http://www.atilf.fr/dmf/definition/',
                 ],
             ],
-            'search-test'    => 'avoir',
             'title'          => 'DMF',
             'type'           => 'external',
         ],
 
         'ducange' => [
-            'availability-test' => 'abaces',
             'created'           => '2013-03-19',
             'description'       => 'Glossarium mediæ et infimæ latinitatis, Du Cange, 1678',
             'description-en'    => 'Glossary of medieval and late Latin, Du Cange, 1678',
@@ -296,13 +239,11 @@ return [
             'language'          => 'la',
             'name'              => 'Du Cange',
             'search'            => 'http://ducange.enc.sorbonne.fr/',
-            'search-test'       => 'abaces',
             'title'             => 'Du Cange',
             'type'              => 'external',
         ],
 
         'dvlf' => [
-            'availability-test' => 'avoir',
             'created'        => '2012-06-03',
             'description'    => 'Dictionnaire vivant de la langue française (DVLF), The ARTFL Project',
             'description-en' => 'Live dictionary of the French language (DVLF), The ARTFL Project',
@@ -315,34 +256,11 @@ return [
                     'url'       => 'http://dvlf.uchicago.edu/mot/',
                 ],
             ],
-            'search-test'    => 'avoir',
             'title'          => 'DVLF',
             'type'           => 'external',
         ],
 
         'encyclopedie-larousse' => [
-            'availability-test' => [
-                1  => '8',
-                2  => '2',
-                3  => '2',
-                4  => '2',
-                5  => '2',
-                6  => '2',
-                7  => '2',
-                8  => '2',
-                9  => '2',
-                10 => '2',
-                11 => '2',
-                12 => '2',
-                13 => '2',
-                14 => '2',
-                15 => '2',
-                16 => '2',
-                17 => '2',
-                18 => '2',
-                19 => '2',
-                20 => '2',
-            ],
             'created'        => '2013-04-03',
             'description'    => 'La Grande encyclopédie Larousse, 1971-1976',
             'description-en' => 'The Larousse great encyclopedia, 1971-1976',
@@ -383,28 +301,6 @@ return [
                     ],
                 ],
             ],
-            'search-test'    => [
-                1 => 'Aalto',
-                2 => 'Amiens',
-                3 => 'Australie',
-                4 => 'Boudin',
-                5 => 'Cétacés',
-                6 => 'Compresseur',
-                7 => 'Désinfection',
-                8 => 'Épilepsie',
-                9 => 'France',
-                10 => 'Guesde',
-                11 => 'Initiation',
-                12 => 'La Pérouse',
-                13 => 'Marconi',
-                14 => 'Moyen âge',
-                15 => 'Ostrava',
-                16 => 'Plomb',
-                17 => 'Renan',
-                18 => 'scintigraphie', // 'Science-fiction' is cut at the dash,
-                19 => 'Syndrome',
-                20 => 'Tuyau',
-            ],
             'title'          => 'E. Larousse',
             'type'           => 'index',
             'updated'        => '2013-09-28',
@@ -412,19 +308,16 @@ return [
         ],
 
         'etymonline' => [
-            'availability-test' => 'avid',
             'created'           => '2014-04-09',
             'description'       => 'Online Etymology Dictionary',
             'introduction'      => 'http://www.etymonline.com/index.php?allowed_in_frame=1',
             'language'          => 'en',
             'name'              => 'Etymonline',
             'search'            => 'http://www.etymonline.com/index.php?allowed_in_frame=1&searchmode=none&search=',
-            'search-test'       => 'avid',
             'type'              => 'external',
         ],
 
         'gaffiot-dictionary' => [
-            'availability-test' => 'abaris',
             'created'        => '2008-06-27',
             'description'    => 'Dictionnaire latin-français, Félix Gaffiot, 1934',
             'description-en' => 'Latin-French dictionary, Félix Gaffiot, 1934',
@@ -443,13 +336,11 @@ return [
                     'needWhitaker' => true,
                 ],
             ],
-            'search-test'    => 'a',
             'type'           => 'internal',
             'url'            => 'gaffiot',
         ],
 
         'godefroy-dictionary' => [
-            'availability-test' => 'aardoir',
             'created'        => '2008-04-14',
             'description'    => "Dictionnaire de l'ancienne langue française et de tous ses dialectes du IX<sup>e</sup> au XV<sup>e</sup> siècle, Frédéric Godefroy, 1880-1895",
             'description-en' => 'Dictionary of the Old French language and all its dialects from the ninth to fifteenth century, Frédéric Godefroy, 1880-1895',
@@ -466,7 +357,6 @@ return [
                     'needTobler'       => true,
                 ],
             ],
-            'search-test'    => 'a',
             'title'          => 'D. Godefroy',
             'type'           => 'internal',
             'url'            => 'dictionnaire-godefroy',
@@ -474,7 +364,6 @@ return [
         ],
 
         'godefroy-lexicon' => [
-            'availability-test' => 'acorsage',
             'created'        => '2008-04-14',
             'description'    => "Lexique de l'ancien français, Frédéric Godefroy, 1901",
             'description-en' => 'Old French lexicon, Frédéric Godefroy, 1880-1895',
@@ -489,14 +378,12 @@ return [
                     'needTobler'     => true,
                 ],
             ],
-            'search-test'    => 'a',
             'title'          => 'L. Godefroy',
             'type'           => 'internal',
             'url'            => 'lexique-godefroy',
         ],
 
         'godefroy-supplement' => [
-            'availability-test' => 'abevreur',
             'created'        => '2008-04-14',
             'description'    => "Complément du dictionnaire de l'ancienne langue française et de tous ses dialectes du IX<sup>e</sup> au XV<sup>e</sup> siècle, Frédéric Godefroy, 1895-1902",
             'description-en' => 'Dictionary supplement of the Old French language and all its dialects from the ninth to fifteenth century, Frédéric Godefroy, 1880-1895',
@@ -514,7 +401,6 @@ return [
                     'needTobler'       => true,
                 ],
             ],
-            'search-test'    => 'a',
             'title'          => 'C. Godefroy',
             'type'           => 'internal',
             'url'            => 'complement-godefroy',
@@ -522,15 +408,6 @@ return [
         ],
 
         'grand-larousse' => [
-            'availability-test' => [
-                1  => '105.highres',
-                2  => '9.highres',
-                3  => '9.highres',
-                4  => '9.highres',
-                5  => '9.highres',
-                6  => '9.highres',
-                7  => '9.highres',
-            ],
             'created'        => '2013-09-16',
             'description'    => 'Grand Larousse de la langue française, 1971-1978',
             'description-en' => 'The Grand Larousse of the French language, 1971-1978',
@@ -555,15 +432,6 @@ return [
                     ],
                 ],
             ],
-            'search-test'    => [
-                1 => 'a',
-                2 => 'cirage',
-                3 => 'ès',
-                4 => 'indatable',
-                5 => 'o',
-                6 => 'psoas',
-                7 => 'sus',
-            ],
             'title'          => 'G. Larousse',
             'type'           => 'index',
             'updated'        => '2013-09-20',
@@ -571,7 +439,6 @@ return [
         ],
 
         'jeanneau' => [
-            'availability-test' => 'Dico-a01.html#',
             'created'        => '2008-06-27',
             'description'    => 'Dictionnaire français-latin, Gérard Jeanneau',
             'description-en' => 'Latin-French dictionary, Gérard Jeanneau',
@@ -584,12 +451,10 @@ return [
                     'url' => 'http://www.prima-elementa.fr/',
                 ],
             ],
-            'search-test'    => 'a',
             'type'           => 'external',
         ],
 
         'lacurne-dictionary' => [
-            'availability-test' => 'aatisson',
             'created'        => '2013-03-29',
             'description'    => "Dictionnaire historique de l'ancien langage françois ou glossaire de la langue françoise (LacEdic), J.B. de la Curne de Sainte-Palaye, 1875-1882",
             'description-en' => 'Historical dictionary of the Old French language (LacEdic), J.B. de la Curne de Sainte-Palaye, 1875-1882',
@@ -602,7 +467,6 @@ return [
                     'needTobler' => true,
                 ],
             ],
-            'search-test'    => 'a',
             'title'          => 'LacEdic',
             'type'           => 'internal',
             'url'            => 'dictionnaire-lacurne',
@@ -610,7 +474,6 @@ return [
         ],
 
         'littre' => [
-            'availability-test' => 'avoir',
             'created'           => '2010-08-01',
             'description'       => 'Dictionnaire de la langue française, Émile Littré, 1872-1877',
             'description-en'    => 'Dictionary of the French language, Émile Littré, 1872-1877',
@@ -618,13 +481,11 @@ return [
             'language'          => 'fr',
             'name'              => 'Littré',
             'search'            => 'http://www.littre.org/definition/',
-            'search-test'       => 'avoir',
             'type'              => 'external',
             'updated'           => '2013-05-10',
         ],
 
         'orthonet' => [
-            'availability-test' => 'avoir',
             'created'           => '2013-07-13',
             'description'       => 'Orthonet, orthographe et grammaire de la langue française, Conseil international de la Langue française',
             'description-en'    => 'Orthonet, spelling and grammar of the French language, International Council of the French Language',
@@ -632,17 +493,10 @@ return [
             'language'          => 'fr',
             'name'              => 'Orthonet',
             'search'            => 'http://orthonet.sdv.fr/php/rech_mot.php?mot=',
-            'search-test'       => 'avoir',
             'type'              => 'external',
         ],
 
         'petit-larousse' => [
-            'availability-test' => [
-                1 => '015', // first page = 014
-                2 => '001', // first page = 000
-                3 => '001', // first page = 000
-                4 => '001', // first page = 000
-            ],
             'created'        => '2013-04-10',
             'description'    => "Petit Larousse illustré (noms communs), nouveau dictionnaire encyclopédique (5e édition), Claude Augé, 1906",
             'description-en' => "Petit Larousse illustrated dictionary (common names), new encyclopedic dictionary (5th Edition), Claude Augé, 1906",
@@ -659,22 +513,12 @@ return [
                     ],
                 ],
             ],
-            'search-test'    => [
-                1 => 'A',
-                2 => 'D',
-                3 => 'L',
-                4 => 'R',
-            ],
             'title'          => 'N.c. Larousse',
             'type'           => 'index',
             'volume'         => 'readonly',
         ],
 
         'petit-larousse-np' => [
-            'availability-test' => [
-                5 => '000',
-                6 => '000',
-            ],
             'created'        => '2013-04-13',
             'description'    => "Petit Larousse illustré (noms propres), nouveau dictionnaire encyclopédique (5e édition), Claude Augé, 1906",
             'description-en' => "Petit Larousse illustrated dictionary (proper names), new encyclopedic dictionary (5th Edition), Claude Augé, 1906",
@@ -689,17 +533,12 @@ return [
                     ],
                 ],
             ],
-            'search-test'    => [
-                5 => 'A',
-                6 => 'K',
-            ],
             'title'          => 'N.p. Larousse',
             'type'           => 'index',
             'volume'         => 'readonly',
         ],
 
         'roman-de-la-rose-glossary' => [
-            'availability-test' => 'aaise',
             'created'        => '2010-08-01',
             'description'    => 'Glossaire du Roman de la Rose, Ernest Langlois, 1914-1924',
             'description-en' => 'Glossary of the Roman de la Rose, Ernest Langlois, 1914-1924',
@@ -719,14 +558,12 @@ return [
                     'needTobler' => true,
                 ],
             ],
-            'search-test'    => 'a',
             'title'          => 'Rose',
             'type'           => 'internal',
             'url'            => 'glossaire-roman-de-la-rose',
         ],
 
         'roman-de-renart-fhs-glossary' => [
-            'availability-test' => 'aramir',
             'created'        => '2012-01-07',
             'description'    => 'Glossaire du Roman de Renart, N. Fukumoto, N. Harano et S. Suzuki, 1985',
             'description-en' => 'Glossary of the Roman de Renart, N. Fukumoto, N. Harano et S. Suzuki, 1985',
@@ -746,14 +583,12 @@ return [
                     'needTobler' => true,
                 ],
             ],
-            'search-test'    => 'a',
             'title'          => 'Renart',
             'type'           => 'internal',
             'url'            => 'glossaire-roman-de-renart-fhs',
         ],
 
         'roman-de-renart-meon-1-glossary' => [
-            'availability-test' => 'acorde',
             'created'        => '2012-01-07',
             'description'    => 'Glossaire du Roman de Renart, volume 1, M. D. M. Méon, 1826',
             'description-en' => 'Glossary of the Roman de Renart, volume 1, M. D. M. Méon, 1826',
@@ -773,14 +608,12 @@ return [
                     'needTobler' => true,
                 ],
             ],
-            'search-test'    => 'a',
             'title'          => 'Méon 1',
             'type'           => 'internal',
             'url'            => 'glossaire-roman-de-renart-meon-vol1',
         ],
 
         'roman-de-renart-meon-2-glossary' => [
-            'availability-test' => 'adolé',
             'created'        => '2012-01-07',
             'description'    => 'Glossaire du Roman de Renart, volume 2, M. D. M. Méon, 1826',
             'description-en' => 'Glossary of the Roman de Renart, volume 2, M. D. M. Méon, 1826',
@@ -800,14 +633,12 @@ return [
                     'needTobler' => true,
                 ],
             ],
-            'search-test'    => 'a',
             'title'          => 'Méon 2',
             'type'           => 'internal',
             'url'            => 'glossaire-roman-de-renart-meon-vol2',
         ],
 
         'roman-de-renart-meon-3-glossary' => [
-            'availability-test' => 'aignel',
             'created'        => '2012-01-07',
             'description'    => 'Glossaire du Roman de Renart, volume 3, M. D. M. Méon, 1826',
             'description-en' => 'Glossary of the Roman de Renart, volume 3, M. D. M. Méon, 1826',
@@ -827,14 +658,12 @@ return [
                     'needTobler' => true,
                 ],
             ],
-            'search-test'    => 'a',
             'title'          => 'Méon 3',
             'type'           => 'internal',
             'url'            => 'glossaire-roman-de-renart-meon-vol3',
         ],
 
         'roman-de-renart-meon-4-glossary' => [
-            'availability-test' => 'acroire',
             'created'        => '2012-01-07',
             'description'    => 'Glossaire du Roman de Renart, volume 4, M. D. M. Méon, 1826',
             'description-en' => 'Glossary of the Roman de Renart, volume 4, M. D. M. Méon, 1826',
@@ -854,14 +683,12 @@ return [
                     'needTobler' => true,
                 ],
             ],
-            'search-test'    => 'a',
             'title'          => 'Méon 4',
             'type'           => 'internal',
             'url'            => 'glossaire-roman-de-renart-meon-vol4',
         ],
 
         'roman-de-tristan-glossary' => [
-            'availability-test' => 'acorder',
             'created'        => '2010-08-01',
             'description'    => 'Glossaire du Roman de Tristan par Béroul, Ernest Muret, 1903',
             'description-en' => 'Glossary of the Roman de Tristan by Béroul, Ernest Muret, 1903',
@@ -881,14 +708,12 @@ return [
                     'needTobler' => true,
                 ],
             ],
-            'search-test'    => 'a',
             'title'          => 'Tristan',
             'type'           => 'internal',
             'url'            => 'glossaire-roman-de-tristan',
         ],
 
         'roman-lexicon' => [
-            'availability-test' => 'abat',
             'created'        => '2010-08-01',
             'description'    => "Lexique Roman ou dictionnaire de la langue des troubadours comparée avec les autres langues de l'Europe latine, François J. M. Raynouard, 1844",
             'description-en' => 'Romance languages lexicon or dictionary of the language of the troubadours compared with other languages ​​of Latin Europe, François J. M. Raynouard, 1844',
@@ -896,14 +721,12 @@ return [
             'language'       => 'fr',
             'name'           => 'Lexique Roman',
             'search'         => 'roman-lexicon/lexromv/mImg/%s.gif',
-            'search-test'    => 'a',
             'title'          => 'L. Roman',
             'type'           => 'internal',
             'url'            => 'lexique-roman',
         ],
 
         'tcaf' => [
-            'availability-test' => 'pris',
             'created'        => '2010-08-01',
             'description'    => "Tableaux de conjugaison de l'ancien français (TCAF), Machio Okada et Hitoshi Ogurisu, 2007-2012",
             'description-en' => 'Old French conjugation tables (TCAF), Machio Okada and Hitoshi Ogurisu, 2007-2011',
@@ -913,14 +736,12 @@ return [
             'search'         => [
                 'class' => 'Model_Search_Tcaf',
             ],
-            'search-test'    => 'pris',
             'title'          => 'TCAF',
             'type'           => 'internal',
             'url'            => 'tableaux-de-conjugaison',
         ],
 
         'tlfi' => [
-            'availability-test' => 'avoir',
             'created'           => '2010-08-01',
             'description'       => 'Le Trésor de la Langue Française informatisé (TLFi), Centre National de Ressources Textuelles et Lexicales',
             'description-en'    => 'The Computerized Treasury of the French Language (TLFi), the National Center for Textual and Lexical Resources',
@@ -928,14 +749,12 @@ return [
             'language'          => 'fr',
             'name'              => 'Trésor de la Langue Fr.',
             'search'            => 'http://www.cnrtl.fr/definition/',
-            'search-test'       => 'avoir',
             'title'             => 'TLFi',
             'type'              => 'external',
             'updated'           => '2014-05-02',
         ],
 
         'vandaele-dictionary' => [
-            'availability-test' => 'aan',
             'created'        => '2008-06-27',
             'description'    => "Petit dictionnaire de l'ancien français, Hilaire Van Daele, 1901",
             'description-en' => "Little dictionary of Old French, Hilaire Van Daele, 1901",
@@ -949,12 +768,10 @@ return [
                     'needTobler'     => true,
                 ],
             ],
-            'search-test'    => 'a',
             'type'           => 'internal',
         ],
 
         'whitaker' => [
-            'availability-test' => 'A',
             'created'        => '2010-09-16',
             'description'    => 'Dictionnaire latin-anglais, William Whitaker, 1997-2007',
             'description-en' => 'Latin-English dictionary, William Whitaker, 1997-2007',
@@ -967,36 +784,30 @@ return [
                     'url'     => 'http://lysy2.archives.nd.edu/cgi-bin/words.exe?',
                 ],
             ],
-            'search-test'    => 'a',
             'type'           => 'external',
         ],
 
         'webster' => [
-            'availability-test' => 'avid',
             'created'           => '2012-06-03',
             'description'       => "Webster's Revised Unabridged Dictionary, 1913, 1828, The ARTFL project",
             'introduction'      => 'http://machaut.uchicago.edu/websters',
             'language'          => 'en',
             'name'              => 'Webster',
             'search'            => 'http://machaut.uchicago.edu/?action=search&resource=Webster%27s&quicksearch=on&word=',
-            'search-test'       => 'avid',
             'type'              => 'external',
         ],
 
         'wiktionary' => [
-            'availability-test' => 'avid',
             'created'           => '2012-06-03',
             'description'       => 'Wiktionary, the free dictionary, wiktionary.org',
             'introduction'      => 'http://en.wiktionary.org',
             'language'          => 'en',
             'name'              => 'Wiktionary',
             'search'            => 'http://en.wiktionary.org/wiki/',
-            'search-test'       => 'avid',
             'type'              => 'external',
         ],
 
         'wiktionnaire' => [
-            'availability-test' => 'avoir',
             'created'           => '2012-03-11',
             'description'       => 'Wiktionnaire, le dictionnaire libre, wiktionary.org',
             'description-en'    => 'French Wiktionary, the free dictionary, wiktionary.org',
@@ -1004,7 +815,6 @@ return [
             'language'          => 'fr',
             'name'              => 'Wiktionnaire',
             'search'            => 'http://fr.wiktionary.org/wiki/',
-            'search-test'       => 'avoir',
             'type'              => 'external',
         ],
     ],
@@ -1078,6 +888,9 @@ return [
             'language' => 'la',
         ],
     ],
+
+    // test cases file name
+    'test-cases' => realpath("$applicationDir/test-cases.php"),
 
     // test directory containing expected test results
     'tests-dir' => realpath("$applicationDir/tests"),

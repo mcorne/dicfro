@@ -15,7 +15,7 @@
 
 ?>
 
-<h1 class="title"><?=$this->translate('Dictionaries search test');?></h1>
+<h1 class="title"><?=$this->translate('Dictionaries page test');?></h1>
 
 <table class="test-result">
 
@@ -28,13 +28,13 @@
 
       <td class="nowrap">
         <?php if (count($results['result']) > 1):?>
-          <?=$results['name'];?> #<?=$index;?>
+          <?=$results['name'];?> #<?=$index + 1;?>
         <?php else:?>
           <?=$results['name'];?>
         <?php endif;?>
       </td>
 
-      <td><?=$result['word'];?></td>
+      <td class="nowrap"><?=implode('/', $result['page']);?></td>
 
       <?php if (! $result):?>
         <td class="orange nowrap">Not tested</td>
@@ -43,7 +43,7 @@
         <td class="orange nowrap">Need validation!</td>
         <td class="nowrap"><a href="javascript:hideOrDisplay('<?=$results['id'];?>-<?=$index;?>')">See details</a></td>
         <td>
-          <span class="orange">Please check the result and keep or remove tests/search/<?=$results['id'];?> accordingly</span>
+          <span class="orange">Please check the result and keep or remove tests/page/<?=$results['id'];?> accordingly</span>
           <pre class="test-result" id="<?=$results['id'];?>-<?=$index;?>">
 Test result
 <?=preg_replace('~^Array\n\(\n(.+?)\n\)\n$~is', '$1', print_r($result, true));?>
@@ -64,7 +64,7 @@ Test result = Expected result
         <td class="nowrap red">Error!</td>
         <td class="nowrap"><a href="javascript:hideOrDisplay('<?=$results['id'];?>-<?=$index;?>')">See details</a></td>
         <td>
-          <span class="red">Fix or remove &quot;tests/search/<?=$results['id'];?>&quot; accordingly</span>
+          <span class="red">Fix or remove &quot;tests/page/<?=$results['id'];?>&quot; accordingly</span>
           <pre class="test-result" id="<?=$results['id'];?>-<?=$index;?>">
 Test result:
 <?=preg_replace('~^Array\n\(\n(.+?)\n\)\n$~is', '$1', print_r($result, true));?>

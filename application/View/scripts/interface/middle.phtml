@@ -38,7 +38,7 @@
 
   <?php if($this->information):?>
       <div class="page">
-        <?php if (! in_array($this->previousAction, ['dictionariesAvailability', 'dictionariesSearchTest'])):?>
+        <?php if (empty($this->noImage)):?>
           <img class="picture" src="<?=$this->imagesHelper->getImageFile();?>" />
         <?php endif;?>
 

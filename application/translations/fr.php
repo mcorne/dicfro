@@ -59,6 +59,9 @@ return [
     "Dictionaries availability" =>
     "Disponibilité des dictionnaires",
 
+    "Dictionaries page test" =>
+    "Test de pages des dictionnaires",
+
     "Dictionaries search test" =>
     "Test de recherche dans les dictionnaires",
 

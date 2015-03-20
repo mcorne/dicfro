@@ -18,7 +18,7 @@
 <div>
 
 <!-- logo -->
-<span class="nowrap">
+<span class="item">
 
   <a class="logo" href="<?=$this->linksHelper->setHomeLink();?>">
     <span style="color:blue;font-size:120%;">d</span><span style="color:green;vertical-align:-20%;">i</span><span style="color:orange;">c</span><span style="color:red;font-size:120%;">f</span><span style="color:blue;">r</span><span style="color:green;vertical-align:20%;">o</span>
@@ -27,7 +27,7 @@
 </span>
 
 <!-- search block -->
-<span class="nowrap">
+<span class="item">
   <input type="hidden" id="action" value="<?=$this->linksHelper->setWordLink();?>"/>
   <input type="hidden" id="dictionary-language" value="<?=$this->dictionary['language'];?>"/>
 
@@ -45,7 +45,7 @@
 
 <!-- dictionary select block -->
 
-<span class="nowrap" >
+<span class="item" >
 
   <select class="dict" id="dictionary"
           onchange="openDictionary('<?=$this->linksHelper->setDictionaryLink();?>')">
@@ -74,7 +74,7 @@
 
 <?php if(isset($this->page)):?>
 
-<span class="nowrap">
+<span class="item">
 
   <img class="button" src="<?=$this->setLinkUrl('img/go-previous.png');?>"
        title="<?=$this->translate('Previous page');?>"
