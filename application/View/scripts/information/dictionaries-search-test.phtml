@@ -43,7 +43,7 @@
         <td class="orange nowrap">Need validation!</td>
         <td class="nowrap"><a href="javascript:hideOrDisplay('<?=$results['id'];?>-<?=$index;?>')">See details</a></td>
         <td>
-          <span class="orange">Please check the result and keep or remove tests/search/<?=$results['id'];?> accordingly</span>
+          <span class="orange">Keep or remove tests/search/<?=$results['id'];?> accordingly</span>
           <pre class="test-result" id="<?=$results['id'];?>-<?=$index;?>">
 Test result
 <?=preg_replace('~^Array\n\(\n(.+?)\n\)\n$~is', '$1', print_r($result, true));?>
