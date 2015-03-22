@@ -8,7 +8,7 @@
  * @category  DicFro
  * @package   Translations
  * @author    Michel Corne <mcorne@yahoo.com>
- * @copyright 2008-2013 Michel Corne
+ * @copyright 2008-2015 Michel Corne
  * @license   http://opensource.org/licenses/gpl-3.0.html GNU GPL v3
  */
 
@@ -23,14 +23,8 @@ return [
     "About" =>
     "À propos",
 
-    "Archives" =>
-    "Archives",
-
     "Change" =>
     "Changer",
-
-    "Change log" =>
-    "Journal des modifications",
 
     "Consult the definitions" =>
     "Consulter les définitions",
@@ -55,15 +49,6 @@ return [
 
     "DicFro looks for the word in the index, and displays the corresponding page of the dictionary." =>
     "DicFro recherche le mot dans l'index, et affiche la page correspondante du dictionnaire.",
-
-    "Dictionaries availability" =>
-    "Disponibilité des dictionnaires",
-
-    "Dictionaries page test" =>
-    "Test de pages des dictionnaires",
-
-    "Dictionaries search test" =>
-    "Test de recherche dans les dictionnaires",
 
     "Dictionary list" =>
     "Liste des dictionnaires",
@@ -199,9 +184,6 @@ return [
 
     "Similar verbs" =>
     "Verbes similaires",
-
-    "Statistics" =>
-    "Statistiques",
 
     "The automatic search of a word is disabled." =>
     "La recherche automatique d'un mot est désactivée.",

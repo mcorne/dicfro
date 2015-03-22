@@ -9,26 +9,19 @@
  * @package    View
  * @subpackage Scripts_Information
  * @author     Michel Corne <mcorne@yahoo.com>
- * @copyright  2008-2013 Michel Corne
+ * @copyright  2008-2015 Michel Corne
  * @license    http://opensource.org/licenses/gpl-3.0.html GNU GPL v3
  */
 
 ?>
 
-<h1 class="title"><?=$this->translate('About');?></h1>
+<h1 class="title"><?=$this->translate('About');?> <?=$this->translate('(in English)', '');?></h1>
 
-<a href="http://code.google.com/p/dicfro/source/list"><?=$this->translate('Change log');?></a>
-<?=$this->translate('(in English)', '');?>
+<a href="https://github.com/mcorne/dicfro">Project Source Code</a><br/>
+<a href="http://my.statcounter.com/project/standard/stats.php?project_id=5407064&guest=1">Statistics</a><br/>
+<a href="<?=$this->linksHelper->setArchivesLink();?>">Archives</a> <?=$this->translate('(in French)');?><br/>
 <br/>
-<a href="http://my.statcounter.com/project/standard/stats.php?project_id=5407064&guest=1"><?=$this->translate('Statistics');?></a>
-<?=$this->translate('(in English)', '');?>
-<br/>
-<a href="<?=$this->linksHelper->setArchivesLink();?>"><?=$this->translate('Archives');?></a>
-<?=$this->translate('(in French)');?>
-<br/>
-<br/>
-<a href="<?=$this->linksHelper->setDictionariesAvailability();?>"><?=$this->translate('Dictionaries availability');?></a>
-<br/>
-<a href="<?=$this->linksHelper->setDictionariesSearchTest();?>"><?=$this->translate('Dictionaries search test');?></a>
-<br/>
-<a href="<?=$this->linksHelper->setDictionariesPageTest();?>"><?=$this->translate('Dictionaries page test');?></a>
+<a href="<?=$this->linksHelper->setDictionariesAvailability();?>">Dictionaries Availability</a><br/>
+<a href="<?=$this->linksHelper->setDictionariesSearchTest();?>">Dictionaries Search Test</a><br/>
+<a href="<?=$this->linksHelper->setDictionariesPageTest();?>">Dictionaries Page Test</a><br/>
+<a href="<?=$this->linksHelper->setLink('phpliteadmin.php');?>">Database Administration</a>
