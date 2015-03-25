@@ -99,6 +99,14 @@ div.page img.picture
     margin: 2em 0 1em 1em;
 }
 
+div.debug-trace
+{
+    color: green;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: .5em 0 0 1em;
+}
+
 div.tense
 {
     font-weight: bold;
@@ -166,7 +174,7 @@ input.button, img.button
     vertical-align: middle;
 }
 
-img.button:hover
+input.button:hover, img.button:hover
 {
     background-color: orange;
     border-color: darkorange;
@@ -203,6 +211,11 @@ input.search
     font-size: 1.25em;
 }
 
+input.under-radio-buttons
+{
+    margin-top: .5em;
+}
+
 input.volume
 {
     font-size : 90%;
@@ -218,10 +231,10 @@ input.word
     width: 11em;
 }
 
-input.button:hover
+pre.debug-trace
 {
-    background-color: orange;
-    border-color: darkorange;
+    font-size: 1.2em;
+    padding: .5em;
 }
 
 select.identified, select.ghostwords-tab, #content-tab, #errata-tab
@@ -325,6 +338,11 @@ a.options
 {
     color: green;
     font-weight: bold;
+}
+
+div.options
+{
+    margin-bottom: 1.5em;
 }
 
 table.test-result

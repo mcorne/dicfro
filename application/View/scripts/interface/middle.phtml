@@ -118,4 +118,18 @@
   </div>
 <?php endif;?>
 
+<div id="debug">
+  <?php if($this->actionTrace):?>
+    <div class="debug-trace">Action Trace</div>
+    <pre class="debug-trace"><?=preg_replace(['~^Array\s+\(\s~', '~\s+\)\s+$~'], '', print_r($this->actionTrace, true));?></pre>
+  <?php endif;?>
+
+  <?php if($this->queryTrace):?>
+    <?php foreach($this->queryTrace as $index => $trace): ?>
+      <div class="debug-trace">Query Trace #<?=($index + 1);?></div>
+      <pre class="debug-trace"><?=preg_replace(['~^Array\s+\(\s~', '~\s+\)\s+$~'], '', print_r($trace, true));?></pre>
+    <?php endforeach;?>
+  <?php endif;?>
+</div>
+
 </div>

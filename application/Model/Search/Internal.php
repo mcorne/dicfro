@@ -286,7 +286,7 @@ class Model_Search_Internal extends Model_Search
         if ($page > 9999) {
             $page = 9999;
         }
-        
+
         return sprintf(self::BUILD_IMAGE_NUMBER_TPL, $volume, $this->digit, $page);
     }
 

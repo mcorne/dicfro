@@ -334,8 +334,8 @@ function setDictionaryHeight(id)
 function updateTabContents(target)
 {
     var
-    sections = ['content', 'errata', 'ghostwords', 'lexromd', 'lexromd-help' ],
-    tabs = ['content-tab', 'errata-tab', 'ghostwords-tab', 'lexromd-tab', 'lexromd-help-tab' ],
+    sections = ['content'    , 'errata'    , 'ghostwords'    , 'lexromd'    , 'lexromd-help'    , 'debug'     ],
+    tabs     = ['content-tab', 'errata-tab', 'ghostwords-tab', 'lexromd-tab', 'lexromd-help-tab', 'debug-tab' ],
     sectionId,
     tabId,
     section,

@@ -33,6 +33,8 @@ abstract class Model_Query
      */
     const DSN_TPL = 'sqlite:%s/dictionary.sqlite';
 
+    static public $debug = false;
+
     /**
      * Name of the dictionary database
      * @var string
@@ -45,6 +47,8 @@ abstract class Model_Query
      */
     public $string;
 
+    static public $trace = [];
+
     /**
      * Constructor
      *
@@ -53,7 +57,7 @@ abstract class Model_Query
      */
     public function __construct($directory, $properties = [])
     {
-        foreach($properties as $property => $value) {
+        foreach((array) $properties as $property => $value) {
             $this->$property = $value;
         }
 
@@ -61,6 +65,21 @@ abstract class Model_Query
         $this->dsn = $this->createDsn($directory);
 
         $this->string = new Base_String;
+    }
+
+    public function addDebugTrace($result)
+    {
+        $trace = debug_backtrace(0);
+        $trace = array_slice($trace, 1, -4);
+        $trace = array_reverse($trace);
+        $calls = array_map([$this, 'formatCall'], $trace);
+        $query = array_pop($calls);
+
+        self::$trace[] = [
+            'call-stack' => $calls,
+            'query'      => $query,
+            'result'     => $result,
+        ];
     }
 
     /**
@@ -90,6 +109,10 @@ abstract class Model_Query
         $statement->execute($parameters) and
         $result = $statement->fetch($fetchStyle);
 
+        if (self::$debug) {
+            $this->addDebugTrace($result);
+        }
+
         if (!isset($result)) {
             throw new Exception('unexpected query error');
         }
@@ -113,10 +136,51 @@ abstract class Model_Query
         $statement->execute($parameters) and
         $result = $statement->fetchAll($fetchStyle);
 
+        if (self::$debug) {
+            $this->addDebugTrace($result);
+        }
+
         if (!isset($result)) {
             throw new Exception('unexpected query error');
         }
 
         return $result;
+    }
+
+    public function formatArgument($arg)
+    {
+        $arg = $this->formatObject($arg);
+        $arg = var_export($arg, true);
+        $arg = preg_replace('~\s+~', ' ', $arg);
+        $arg = str_replace('array ( ', '[', $arg);
+        $arg = str_replace(' )', ']', $arg);
+        $arg = str_replace(',]', ']', $arg);
+
+        return $arg;
+    }
+
+    public function formatCall($trace)
+{
+        $args = array_map([$this, 'formatArgument'], $trace['args']);
+        $args = implode(', ', $args);
+
+        if (isset($trace['class'])) {
+            $call = sprintf('%s::%s(%s)', $trace['class'], $trace['function'], $args);
+        } else {
+            $call = sprintf('%s(%s)', $trace['function'], $args);
+        }
+
+        return $call;
+    }
+
+    public function formatObject($arg)
+    {
+        if (is_object($arg)) {
+            $arg = get_class($arg);
+        } elseif (is_array($arg)) {
+            $arg = array_map([$this, 'formatObject'], $arg);
+        }
+
+        return $arg;
     }
 }

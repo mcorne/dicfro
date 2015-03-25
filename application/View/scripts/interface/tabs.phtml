@@ -19,7 +19,7 @@
 
 <hr class="tabs" />
 
-<?php if($this->definition):?>
+<?php if($this->definition or $this->actionTrace):?>
   <?php if($this->dictionary['id'] == 'roman-lexicon'):?>
     <a class="tab-selected" id="content-tab"
        href="javascript: updateTabContents('content-tab');" ><?=$this->translate('Vocabulary');?></a>
@@ -183,6 +183,11 @@
     }
   ?>
 
+<?php endif;?>
+
+<?php if($this->actionTrace):?>
+    <a class="tab-selected" id="debug-tab"
+       href="javascript: updateTabContents('debug-tab');" ><?=$this->translate('Debug');?></a>
 <?php endif;?>
 
 </div>

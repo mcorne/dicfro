@@ -35,6 +35,9 @@ return [
     "Corrections" =>
     "Corrections",
 
+    "Debug Mode" =>
+    "Mode de débogage",
+
     "Default dictionary" =>
     "Dictionnaire par défaut",
 
@@ -167,6 +170,9 @@ return [
     "Search" =>
     "Chercher",
 
+    "Search a word in a dictionary, or go to a page, then click on the \"Debug\" tab to view the debug trace." =>
+    "Chercher un mot dans un dictionnaire, ou aller à une page, puis cliquer sur l'onglet \"Debug\" pour afficher la trace de débogage.",
+
     "Search in other dictionaries available on the internet" =>
     "Recherche dans d'autres dictionnaires disponibles sur Internet",
 
@@ -187,6 +193,12 @@ return [
 
     "The automatic search of a word is disabled." =>
     "La recherche automatique d'un mot est désactivée.",
+
+    "The debug mode is off." =>
+    "Le mode de débogage est désactivé.",
+
+    "The debug mode is on." =>
+    "Le mode de débogage est activé.",
 
     "The default dictionary of the language" =>
     "Le dictionnaire par défaut de la langue",

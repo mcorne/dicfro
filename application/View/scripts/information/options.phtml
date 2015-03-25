@@ -16,122 +16,164 @@
 
 <h1 class="title"><?=$this->translate('Options');?></h1>
 
-<p class="sub-title"><?=$this->translate('How to open a dictionary');?></p>
+<div class="options">
+    <p class="sub-title"><?=$this->translate('How to open a dictionary');?></p>
 
-<form action"" method="post">
-  <input type="hidden" name="dictionary" value="<?=$this->dictionary['id'];?>" />
+    <form method="post">
+      <input type="hidden" name="dictionary" value="<?=$this->dictionary['id'];?>" />
 
-  <table class="options">
-    <tr>
-      <td>
-        <input type="radio" name="open-dict-in-new-tab" value=""
-               <?php if($this->isIE):?>class="ie"<?php endif;?>
-               <?php if(empty($this->params['open-dict-in-new-tab'])):?>checked="checked"<?php endif;?>/>
-      </td>
-      <td class="text"><?=$this->translate('The selection of a new dictionary will open the dictionary in the current tab.');?></td>
-    </tr>
-    <tr>
-      <td>
-        <input type="radio" name="open-dict-in-new-tab" value="1"
-               <?php if($this->isIE):?>class="ie"<?php endif;?>
-               <?php if(! empty($this->params['open-dict-in-new-tab'])):?>checked="checked"<?php endif;?>/>
-      </td>
-      <td class="text">
-        <?=$this->translate('The selection of a new dictionary will open the dictionary in a new tab.');?><br />
-        <b><?=$this->translate('The opening of dictionaries in different tabs allows you to search in parallel.');?></b><br />
-        <?=$this->translate('Warning! If your browser blocks pop-ups, please change the setting to always allow pop-ups for this site.');?>
-      </td>
-    </tr>
-  </table>
+      <table class="options">
+        <tr>
+          <td>
+            <input type="radio" name="open-dict-in-new-tab" value=""
+                   <?php if($this->isIE):?>class="ie"<?php endif;?>
+                   <?php if(empty($this->params['open-dict-in-new-tab'])):?>checked="checked"<?php endif;?>/>
+          </td>
+          <td class="text"><?=$this->translate('The selection of a new dictionary will open the dictionary in the current tab.');?></td>
+        </tr>
+        <tr>
+          <td>
+            <input type="radio" name="open-dict-in-new-tab" value="1"
+                   <?php if($this->isIE):?>class="ie"<?php endif;?>
+                   <?php if(! empty($this->params['open-dict-in-new-tab'])):?>checked="checked"<?php endif;?>/>
+          </td>
+          <td class="text">
+            <?=$this->translate('The selection of a new dictionary will open the dictionary in a new tab.');?><br />
+            <b><?=$this->translate('The opening of dictionaries in different tabs allows you to search in parallel.');?></b><br />
+            <?=$this->translate('Warning! If your browser blocks pop-ups, please change the setting to always allow pop-ups for this site.');?>
+          </td>
+        </tr>
+      </table>
 
-  <input class="button" type="submit" value="<?=$this->translate('Save');?>" />
-</form>
+      <input class="button under-radio-buttons" type="submit" value="<?=$this->translate('Save');?>" />
+    </form>
+</div>
 
-<p class="sub-title"><?=$this->translate('How to search a word');?></p>
+<div class="options">
+    <p class="sub-title"><?=$this->translate('How to search a word');?></p>
 
-<p><?=$this->translate('This is applicable only for dictionaries open in different tabs.');?></p>
+    <p><?=$this->translate('This is applicable only for dictionaries open in different tabs.');?></p>
 
-<form action"" method="post">
-  <input type="hidden" name="dictionary" value="<?=$this->dictionary['id'];?>" />
+    <form method="post">
+      <input type="hidden" name="dictionary" value="<?=$this->dictionary['id'];?>" />
 
-  <table class="options">
-    <tr>
-      <td>
-        <input type="radio" name="no-auto-search" value=""
-               <?php if($this->isIE):?>class="ie"<?php endif;?>
-               <?php if(empty($this->params['no-auto-search'])):?>checked="checked"<?php endif;?>/>
-      </td>
-      <td>
-        <?=$this->translate('The last searched word in a dictionary of a language will be searched automatically when switching from one tab to another.');?>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <input type="radio" name="no-auto-search" value="1"
-               <?php if($this->isIE):?>class="ie"<?php endif;?>
-               <?php if(! empty($this->params['no-auto-search'])):?>checked="checked"<?php endif;?>/>
-      </td>
-      <td><?=$this->translate('The automatic search of a word is disabled.');?></td>
-    </tr>
-  </table>
+      <table class="options">
+        <tr>
+          <td>
+            <input type="radio" name="no-auto-search" value=""
+                   <?php if($this->isIE):?>class="ie"<?php endif;?>
+                   <?php if(empty($this->params['no-auto-search'])):?>checked="checked"<?php endif;?>/>
+          </td>
+          <td>
+            <?=$this->translate('The last searched word in a dictionary of a language will be searched automatically when switching from one tab to another.');?>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="radio" name="no-auto-search" value="1"
+                   <?php if($this->isIE):?>class="ie"<?php endif;?>
+                   <?php if(! empty($this->params['no-auto-search'])):?>checked="checked"<?php endif;?>/>
+          </td>
+          <td><?=$this->translate('The automatic search of a word is disabled.');?></td>
+        </tr>
+      </table>
 
-  <input class="button" type="submit" value="<?=$this->translate('Save');?>" />
-</form>
+      <input class="button under-radio-buttons" type="submit" value="<?=$this->translate('Save');?>" />
+    </form>
+</div>
 
-<p class="sub-title"><?=$this->translate('Language of the user interface');?></p>
+<div class="options">
+    <p class="sub-title"><?=$this->translate('Language of the user interface');?></p>
 
-<form action"" method="post">
-  <input type="hidden" name="dictionary" value="<?=$this->dictionary['id'];?>" />
+    <form method="post">
+      <input type="hidden" name="dictionary" value="<?=$this->dictionary['id'];?>" />
 
-  <select class="language" name="language">
-    <?php foreach ($this->languages as $code => $language):?>
-      <?php if (empty($language['no-ui'])):?>
-        <option value="<?=$code;?>"
-                title="<?=$language['english'];?>"
-                <?php if ($code == $this->language): ?>selected="selected"<?php endif;?>>
-          <?=$language['original'];?>
-        </option>
-      <?php endif;?>
-    <?php endforeach;?>
-  </select>
-
-  <input class="button" type="submit" value="<?=$this->translate('Change');?>" />
-</form>
-
-<p class="sub-title"><?=$this->translate('Default dictionary');?></p>
-
-<p><?=$this->translate('This is the dictionary open by default the first time you load DicFro in your browser.');?></p>
-
-<form action"" method="post">
-  <input type="hidden" name="dictionary" value="<?=$this->dictionary['id'];?>" />
-
-    <select class="default-dictionary" name="default-dictionary">
-
-      <option value=""><?=$this->translate('The default dictionary of the language');?></option>
-
-      <?php $selected = empty($this->params['default-dictionary']) ? null : $this->params['default-dictionary'];?>
-      <option value="last-used-dictionary"
-              <?php if($selected == 'last-used-dictionary'):?>selected="selected"<?php endif;?>>
-              <?=$this->translate('The dictionary used last');?>
-      </option>
-
-      <?php foreach($this->dictionariesHelper->getGroups($selected) as $optgroup) :?>
-        <optgroup label="<?=$optgroup['label'];?>">
-
-          <?php foreach($optgroup['options'] as $option) :?>
-
-            <option value="<?=$option['value'];?>"
-                    title="<?=$option['title'];?>"
-                    <?php if($option['selected']):?>selected="selected"<?php endif;?>>
-              <?=$option['text'];?>
+      <select class="language" name="language">
+        <?php foreach ($this->languages as $code => $language):?>
+          <?php if (empty($language['no-ui'])):?>
+            <option value="<?=$code;?>"
+                    title="<?=$language['english'];?>"
+                    <?php if ($code == $this->language): ?>selected="selected"<?php endif;?>>
+              <?=$language['original'];?>
             </option>
+          <?php endif;?>
+        <?php endforeach;?>
+      </select>
 
+      <input class="button" type="submit" value="<?=$this->translate('Change');?>" />
+    </form>
+</div>
+
+<div class="options">
+    <p class="sub-title"><?=$this->translate('Default dictionary');?></p>
+
+    <p><?=$this->translate('This is the dictionary open by default the first time you load DicFro in your browser.');?></p>
+
+    <form method="post">
+      <input type="hidden" name="dictionary" value="<?=$this->dictionary['id'];?>" />
+
+        <select class="default-dictionary" name="default-dictionary">
+
+          <option value=""><?=$this->translate('The default dictionary of the language');?></option>
+
+          <?php $selected = empty($this->params['default-dictionary']) ? null : $this->params['default-dictionary'];?>
+          <option value="last-used-dictionary"
+                  <?php if($selected == 'last-used-dictionary'):?>selected="selected"<?php endif;?>>
+                  <?=$this->translate('The dictionary used last');?>
+          </option>
+
+          <?php foreach($this->dictionariesHelper->getGroups($selected) as $optgroup) :?>
+            <optgroup label="<?=$optgroup['label'];?>">
+
+              <?php foreach($optgroup['options'] as $option) :?>
+
+                <option value="<?=$option['value'];?>"
+                        title="<?=$option['title'];?>"
+                        <?php if($option['selected']):?>selected="selected"<?php endif;?>>
+                  <?=$option['text'];?>
+                </option>
+
+              <?php endforeach;?>
+
+            </optgroup>
           <?php endforeach;?>
 
-        </optgroup>
-      <?php endforeach;?>
+        </select>
 
-    </select>
+      <input class="button" type="submit" value="<?=$this->translate('Save');?>" />
+    </form>
+</div>
 
-  <input class="button" type="submit" value="<?=$this->translate('Save');?>" />
-</form>
+<div class="options">
+    <p class="sub-title"><?=$this->translate('Debug Mode');?></p>
+
+    <form method="post">
+      <input type="hidden" name="dictionary" value="<?=$this->dictionary['id'];?>" />
+
+      <table class="options">
+        <tr>
+          <td>
+            <input type="radio" name="debug" value=""
+                   <?php if($this->isIE):?>class="ie"<?php endif;?>
+                   <?php if(empty($this->params['debug'])):?>checked="checked"<?php endif;?>/>
+          </td>
+          <td>
+            <?=$this->translate('The debug mode is off.');?>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="radio" name="debug" value="1"
+                   <?php if($this->isIE):?>class="ie"<?php endif;?>
+                   <?php if(! empty($this->params['debug'])):?>checked="checked"<?php endif;?>/>
+          </td>
+          <td>
+            <?=$this->translate('The debug mode is on.');?><br/>
+            <?=$this->translate('Search a word in a dictionary, or go to a page, then click on the "Debug" tab to view the debug trace.');?>
+          </td>
+        </tr>
+      </table>
+
+      <input class="button under-radio-buttons" type="submit" value="<?=$this->translate('Save');?>" />
+    </form>
+</div>

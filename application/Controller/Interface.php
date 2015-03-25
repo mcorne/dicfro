@@ -15,6 +15,7 @@
 require_once 'Base/View.php';
 require_once 'Controller/Front.php';
 require_once 'Model/Language.php';
+require_once 'Model/Query.php';
 // note: dictionary classes are included dynamically, see $dictionaries and createSearchObject()
 
 /**
@@ -77,6 +78,8 @@ class Controller_Interface
     {
         $this->front = $front;
         $this->view = $this->front->view;
+
+        Model_Query::$debug = !empty($this->front->params['debug']);
     }
 
     /**
@@ -399,6 +402,10 @@ class Controller_Interface
             $this->setcookie('open-dict-in-new-tab', $value, 30);
         }
 
+        if (($value = $this->front->getPost('debug')) !== null) {
+            $this->setcookie('debug', $value, 30);
+        }
+
         $this->view->information = "information/options.phtml";
     }
 
@@ -413,6 +420,18 @@ class Controller_Interface
             $search = $this->createSearchObject();
             $result = $search->$action($this->view->volume, $this->view->page);
             $this->view->assign($result);
+
+            if (Model_Query::$debug) {
+                $volume = $this->view->volume === '' ? 'null' : $this->view->volume;
+                $action = sprintf('%s::%s(%s, %s)', get_class($search), $action, $volume, $this->view->page);
+
+                $this->view->actionTrace = [
+                    'action' => $action,
+                    'result' => $result,
+                ];
+
+                $this->view->queryTrace = Model_Query::$trace;
+            }
         }
     }
 
@@ -465,6 +484,16 @@ class Controller_Interface
         $search = $this->createSearchObject();
         $result = $search->searchWord($this->view->word);
         $this->view->assign($result);
+
+        if (Model_Query::$debug) {
+            $this->view->actionTrace = [
+                'action' => sprintf('%s::searchWord()', get_class($search)),
+                'result' => $result,
+            ];
+
+            $this->view->queryTrace = Model_Query::$trace;
+        }
+
     }
 
     /**
