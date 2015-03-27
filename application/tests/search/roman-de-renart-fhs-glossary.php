@@ -2,8 +2,8 @@
 return array (
   0 => 
   array (
-    'word' => 'a',
-    'found' => 
+    'id' => 'a',
+    'result' => 
     array (
       'definition' => 'dictionary/roman-de-renart-fhs-glossary/mImg/0000507.gif',
       'errataImages' => NULL,

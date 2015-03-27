@@ -2,8 +2,8 @@
 return array (
   0 => 
   array (
-    'word' => 'avoir',
-    'found' => 
+    'id' => 'avoir',
+    'result' => 
     array (
       'externalDict' => 'http://www.atilf.fr/dmf/definition/avoir',
     ),

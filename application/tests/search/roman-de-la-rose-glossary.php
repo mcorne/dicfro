@@ -2,8 +2,8 @@
 return array (
   0 => 
   array (
-    'word' => 'a',
-    'found' => 
+    'id' => 'a',
+    'result' => 
     array (
       'definition' => 'dictionary/roman-de-la-rose-glossary/mImg/0000117.gif',
       'errataImages' => NULL,

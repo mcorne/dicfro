@@ -2,8 +2,8 @@
 return array (
   1 => 
   array (
-    'word' => 'A',
-    'found' => 
+    'id' => 'A',
+    'result' => 
     array (
       'externalDict' => 'https://ia801407.us.archive.org/BookReader/BookReaderImages.php?zip=/5/items/chamberssency01lond/chamberssency01lond_jp2.zip&file=chamberssency01lond_jp2/chamberssency01lond_0021.jp2&scale=3&rotate=0',
       'page' => '9',
@@ -13,8 +13,8 @@ return array (
   ),
   2 => 
   array (
-    'word' => 'Beaugency',
-    'found' => 
+    'id' => 'Beaugency',
+    'result' => 
     array (
       'externalDict' => 'https://ia601405.us.archive.org/BookReader/BookReaderImages.php?zip=/21/items/chamberssency02lond/chamberssency02lond_jp2.zip&file=chamberssency02lond_jp2/chamberssency02lond_0009.jp2&scale=3&rotate=0',
       'page' => '1',

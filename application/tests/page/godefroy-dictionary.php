@@ -1,42 +1,9 @@
 <?php
 return array (
-  0 => 
-  array (
-    'page' => 
-    array (
-      'action' => 'goToPage',
-      'page' => 0,
-      'volume' => 1,
-    ),
-    'found' => 
-    array (
-      'definition' => 'dictionary/godefroy-dictionary/mImg/0100001.gif',
-      'errataImages' => 
-      array (
-        0 => 'dictionary/godefroy-dictionary/mPimg-3/01-1b1c2x2/01-1b.gif',
-        1 => 'dictionary/godefroy-dictionary/mPimg-3/01-1b1c2x2/01-1c-v8.gif',
-        2 => 'dictionary/godefroy-dictionary/mPimg-3/01-1b1c2x2/01-1c.gif',
-        3 => 'dictionary/godefroy-dictionary/mPimg-3/01-1b1c2x2/01-1x-v2.gif',
-        4 => 'dictionary/godefroy-dictionary/mPimg-3/01-1b1c2x2/01-1x.gif',
-      ),
-      'errataText' => NULL,
-      'ghostwords' => 
-      array (
-      ),
-      'volume' => 1,
-      'page' => 1,
-      'firstWord' => 'A',
-    ),
-  ),
   1 => 
   array (
-    'page' => 
-    array (
-      'action' => 'goToPage',
-      'page' => 1,
-      'volume' => 1,
-    ),
-    'found' => 
+    'id' => 'goToPage/0/1',
+    'result' => 
     array (
       'definition' => 'dictionary/godefroy-dictionary/mImg/0100001.gif',
       'errataImages' => 
@@ -58,140 +25,8 @@ return array (
   ),
   2 => 
   array (
-    'page' => 
-    array (
-      'action' => 'goToPage',
-      'page' => 100,
-      'volume' => 1,
-    ),
-    'found' => 
-    array (
-      'definition' => 'dictionary/godefroy-dictionary/mImg/0100100.gif',
-      'errataImages' => 
-      array (
-        0 => 'dictionary/godefroy-dictionary/mPimg-3/01-100a2b1c3/01-100aa.gif',
-        1 => 'dictionary/godefroy-dictionary/mPimg-3/01-100a2b1c3/01-100b.gif',
-        2 => 'dictionary/godefroy-dictionary/mPimg-3/01-100a2b1c3/01-100ccc.gif',
-      ),
-      'errataText' => NULL,
-      'ghostwords' => 
-      array (
-      ),
-      'volume' => 1,
-      'page' => 100,
-      'firstWord' => 'ADESERTIR',
-    ),
-  ),
-  3 => 
-  array (
-    'page' => 
-    array (
-      'action' => 'goToPage',
-      'page' => 792,
-      'volume' => 1,
-    ),
-    'found' => 
-    array (
-      'definition' => 'dictionary/godefroy-dictionary/mImg/0100792.gif',
-      'errataImages' => 
-      array (
-        0 => 'dictionary/godefroy-dictionary/mPimg-3/01-792c1/01-792c-v8.gif',
-      ),
-      'errataText' => NULL,
-      'ghostwords' => 
-      array (
-        0 => 'CASSETIN',
-      ),
-      'volume' => 1,
-      'page' => 792,
-      'firstWord' => 'CASSART',
-    ),
-  ),
-  4 => 
-  array (
-    'page' => 
-    array (
-      'action' => 'goToPage',
-      'page' => 10000,
-      'volume' => 1,
-    ),
-    'found' => 
-    array (
-      'definition' => 'dictionary/godefroy-dictionary/mImg/0200001.gif',
-      'errataImages' => 
-      array (
-        0 => 'dictionary/godefroy-dictionary/mPimg-3/02-1b1c1/02-1b.gif',
-        1 => 'dictionary/godefroy-dictionary/mPimg-3/02-1b1c1/02-1c-v8.gif',
-      ),
-      'errataText' => NULL,
-      'ghostwords' => 
-      array (
-      ),
-      'volume' => 2,
-      'page' => 1,
-      'firstWord' => 'CASTEILLON',
-    ),
-  ),
-  5 => 
-  array (
-    'page' => 
-    array (
-      'action' => 'goToNextPage',
-      'page' => 1,
-      'volume' => 1,
-    ),
-    'found' => 
-    array (
-      'definition' => 'dictionary/godefroy-dictionary/mImg/0100002.gif',
-      'errataImages' => 
-      array (
-        0 => 'dictionary/godefroy-dictionary/mPimg-3/01-2b2c6/01-2bb.gif',
-        1 => 'dictionary/godefroy-dictionary/mPimg-3/01-2b2c6/01-2c-v8.gif',
-        2 => 'dictionary/godefroy-dictionary/mPimg-3/01-2b2c6/01-2ccccc.gif',
-      ),
-      'errataText' => NULL,
-      'ghostwords' => 
-      array (
-      ),
-      'volume' => 1,
-      'page' => 2,
-      'firstWord' => 'A',
-    ),
-  ),
-  6 => 
-  array (
-    'page' => 
-    array (
-      'action' => 'goToNextPage',
-      'page' => 792,
-      'volume' => 1,
-    ),
-    'found' => 
-    array (
-      'definition' => 'dictionary/godefroy-dictionary/mImg/0200001.gif',
-      'errataImages' => 
-      array (
-        0 => 'dictionary/godefroy-dictionary/mPimg-3/02-1b1c1/02-1b.gif',
-        1 => 'dictionary/godefroy-dictionary/mPimg-3/02-1b1c1/02-1c-v8.gif',
-      ),
-      'errataText' => NULL,
-      'ghostwords' => 
-      array (
-      ),
-      'volume' => 2,
-      'page' => 1,
-      'firstWord' => 'CASTEILLON',
-    ),
-  ),
-  7 => 
-  array (
-    'page' => 
-    array (
-      'action' => 'goToPreviousPage',
-      'page' => 1,
-      'volume' => 1,
-    ),
-    'found' => 
+    'id' => 'goToPage/1/1',
+    'result' => 
     array (
       'definition' => 'dictionary/godefroy-dictionary/mImg/0100001.gif',
       'errataImages' => 
@@ -211,183 +46,31 @@ return array (
       'firstWord' => 'A',
     ),
   ),
-  8 => 
+  3 => 
   array (
-    'page' => 
+    'id' => 'goToPage/100/1',
+    'result' => 
     array (
-      'action' => 'goToPreviousPage',
-      'page' => 792,
-      'volume' => 1,
-    ),
-    'found' => 
-    array (
-      'definition' => 'dictionary/godefroy-dictionary/mImg/0100791.gif',
+      'definition' => 'dictionary/godefroy-dictionary/mImg/0100100.gif',
       'errataImages' => 
       array (
-        0 => 'dictionary/godefroy-dictionary/mPimg-3/01-791a1/01-791a-v2.gif',
+        0 => 'dictionary/godefroy-dictionary/mPimg-3/01-100a2b1c3/01-100aa.gif',
+        1 => 'dictionary/godefroy-dictionary/mPimg-3/01-100a2b1c3/01-100b.gif',
+        2 => 'dictionary/godefroy-dictionary/mPimg-3/01-100a2b1c3/01-100ccc.gif',
       ),
       'errataText' => NULL,
       'ghostwords' => 
       array (
-        0 => 'CASON',
       ),
       'volume' => 1,
-      'page' => 791,
-      'firstWord' => 'CASAIN',
-    ),
-  ),
-  9 => 
-  array (
-    'page' => 
-    array (
-      'action' => 'goToPage',
-      'page' => 1,
-      'volume' => 2,
-    ),
-    'found' => 
-    array (
-      'definition' => 'dictionary/godefroy-dictionary/mImg/0200001.gif',
-      'errataImages' => 
-      array (
-        0 => 'dictionary/godefroy-dictionary/mPimg-3/02-1b1c1/02-1b.gif',
-        1 => 'dictionary/godefroy-dictionary/mPimg-3/02-1b1c1/02-1c-v8.gif',
-      ),
-      'errataText' => NULL,
-      'ghostwords' => 
-      array (
-      ),
-      'volume' => 2,
-      'page' => 1,
-      'firstWord' => 'CASTEILLON',
-    ),
-  ),
-  10 => 
-  array (
-    'page' => 
-    array (
-      'action' => 'goToPage',
       'page' => 100,
-      'volume' => 2,
-    ),
-    'found' => 
-    array (
-      'definition' => 'dictionary/godefroy-dictionary/mImg/0200100.gif',
-      'errataImages' => 
-      array (
-        0 => 'dictionary/godefroy-dictionary/mPimg-3/02-100c1/02-100c.gif',
-      ),
-      'errataText' => NULL,
-      'ghostwords' => 
-      array (
-      ),
-      'volume' => 2,
-      'page' => 100,
-      'firstWord' => 'CHAUXUMIER',
+      'firstWord' => 'ADESERTIR',
     ),
   ),
-  11 => 
+  4 => 
   array (
-    'page' => 
-    array (
-      'action' => 'goToPage',
-      'page' => 786,
-      'volume' => 2,
-    ),
-    'found' => 
-    array (
-      'definition' => 'dictionary/godefroy-dictionary/mImg/0200786.gif',
-      'errataImages' => 
-      array (
-      ),
-      'errataText' => NULL,
-      'ghostwords' => 
-      array (
-      ),
-      'volume' => 2,
-      'page' => 786,
-      'firstWord' => 'DUSTRE',
-    ),
-  ),
-  12 => 
-  array (
-    'page' => 
-    array (
-      'action' => 'goToPage',
-      'page' => 10000,
-      'volume' => 2,
-    ),
-    'found' => 
-    array (
-      'definition' => 'dictionary/godefroy-dictionary/mImg/0300001.gif',
-      'errataImages' => 
-      array (
-      ),
-      'errataText' => NULL,
-      'ghostwords' => 
-      array (
-      ),
-      'volume' => 3,
-      'page' => 1,
-      'firstWord' => 'E',
-    ),
-  ),
-  13 => 
-  array (
-    'page' => 
-    array (
-      'action' => 'goToNextPage',
-      'page' => 1,
-      'volume' => 2,
-    ),
-    'found' => 
-    array (
-      'definition' => 'dictionary/godefroy-dictionary/mImg/0200002.gif',
-      'errataImages' => 
-      array (
-        0 => 'dictionary/godefroy-dictionary/mPimg-3/02-2a2b1/02-2a.gif',
-        1 => 'dictionary/godefroy-dictionary/mPimg-3/02-2a2b1/02-2ab-v8.gif',
-      ),
-      'errataText' => NULL,
-      'ghostwords' => 
-      array (
-      ),
-      'volume' => 2,
-      'page' => 2,
-      'firstWord' => 'CASTILLÉ',
-    ),
-  ),
-  14 => 
-  array (
-    'page' => 
-    array (
-      'action' => 'goToNextPage',
-      'page' => 786,
-      'volume' => 2,
-    ),
-    'found' => 
-    array (
-      'definition' => 'dictionary/godefroy-dictionary/mImg/0300001.gif',
-      'errataImages' => 
-      array (
-      ),
-      'errataText' => NULL,
-      'ghostwords' => 
-      array (
-      ),
-      'volume' => 3,
-      'page' => 1,
-      'firstWord' => 'E',
-    ),
-  ),
-  15 => 
-  array (
-    'page' => 
-    array (
-      'action' => 'goToPreviousPage',
-      'page' => 1,
-      'volume' => 2,
-    ),
-    'found' => 
+    'id' => 'goToPage/792/1',
+    'result' => 
     array (
       'definition' => 'dictionary/godefroy-dictionary/mImg/0100792.gif',
       'errataImages' => 
@@ -404,17 +87,155 @@ return array (
       'firstWord' => 'CASSART',
     ),
   ),
-  16 => 
+  5 => 
   array (
-    'page' => 
+    'id' => 'goToPage/10000/1',
+    'result' => 
     array (
-      'action' => 'goToPreviousPage',
-      'page' => 786,
+      'definition' => 'dictionary/godefroy-dictionary/mImg/0200001.gif',
+      'errataImages' => 
+      array (
+        0 => 'dictionary/godefroy-dictionary/mPimg-3/02-1b1c1/02-1b.gif',
+        1 => 'dictionary/godefroy-dictionary/mPimg-3/02-1b1c1/02-1c-v8.gif',
+      ),
+      'errataText' => NULL,
+      'ghostwords' => 
+      array (
+      ),
       'volume' => 2,
+      'page' => 1,
+      'firstWord' => 'CASTEILLON',
     ),
-    'found' => 
+  ),
+  6 => 
+  array (
+    'id' => 'goToNextPage/1/1',
+    'result' => 
     array (
-      'definition' => 'dictionary/godefroy-dictionary/mImg/0200785.gif',
+      'definition' => 'dictionary/godefroy-dictionary/mImg/0100002.gif',
+      'errataImages' => 
+      array (
+        0 => 'dictionary/godefroy-dictionary/mPimg-3/01-2b2c6/01-2bb.gif',
+        1 => 'dictionary/godefroy-dictionary/mPimg-3/01-2b2c6/01-2c-v8.gif',
+        2 => 'dictionary/godefroy-dictionary/mPimg-3/01-2b2c6/01-2ccccc.gif',
+      ),
+      'errataText' => NULL,
+      'ghostwords' => 
+      array (
+      ),
+      'volume' => 1,
+      'page' => 2,
+      'firstWord' => 'A',
+    ),
+  ),
+  7 => 
+  array (
+    'id' => 'goToNextPage/792/1',
+    'result' => 
+    array (
+      'definition' => 'dictionary/godefroy-dictionary/mImg/0200001.gif',
+      'errataImages' => 
+      array (
+        0 => 'dictionary/godefroy-dictionary/mPimg-3/02-1b1c1/02-1b.gif',
+        1 => 'dictionary/godefroy-dictionary/mPimg-3/02-1b1c1/02-1c-v8.gif',
+      ),
+      'errataText' => NULL,
+      'ghostwords' => 
+      array (
+      ),
+      'volume' => 2,
+      'page' => 1,
+      'firstWord' => 'CASTEILLON',
+    ),
+  ),
+  8 => 
+  array (
+    'id' => 'goToPreviousPage/1/1',
+    'result' => 
+    array (
+      'definition' => 'dictionary/godefroy-dictionary/mImg/0100001.gif',
+      'errataImages' => 
+      array (
+        0 => 'dictionary/godefroy-dictionary/mPimg-3/01-1b1c2x2/01-1b.gif',
+        1 => 'dictionary/godefroy-dictionary/mPimg-3/01-1b1c2x2/01-1c-v8.gif',
+        2 => 'dictionary/godefroy-dictionary/mPimg-3/01-1b1c2x2/01-1c.gif',
+        3 => 'dictionary/godefroy-dictionary/mPimg-3/01-1b1c2x2/01-1x-v2.gif',
+        4 => 'dictionary/godefroy-dictionary/mPimg-3/01-1b1c2x2/01-1x.gif',
+      ),
+      'errataText' => NULL,
+      'ghostwords' => 
+      array (
+      ),
+      'volume' => 1,
+      'page' => 1,
+      'firstWord' => 'A',
+    ),
+  ),
+  9 => 
+  array (
+    'id' => 'goToPreviousPage/792/1',
+    'result' => 
+    array (
+      'definition' => 'dictionary/godefroy-dictionary/mImg/0100791.gif',
+      'errataImages' => 
+      array (
+        0 => 'dictionary/godefroy-dictionary/mPimg-3/01-791a1/01-791a-v2.gif',
+      ),
+      'errataText' => NULL,
+      'ghostwords' => 
+      array (
+        0 => 'CASON',
+      ),
+      'volume' => 1,
+      'page' => 791,
+      'firstWord' => 'CASAIN',
+    ),
+  ),
+  10 => 
+  array (
+    'id' => 'goToPage/1/2',
+    'result' => 
+    array (
+      'definition' => 'dictionary/godefroy-dictionary/mImg/0200001.gif',
+      'errataImages' => 
+      array (
+        0 => 'dictionary/godefroy-dictionary/mPimg-3/02-1b1c1/02-1b.gif',
+        1 => 'dictionary/godefroy-dictionary/mPimg-3/02-1b1c1/02-1c-v8.gif',
+      ),
+      'errataText' => NULL,
+      'ghostwords' => 
+      array (
+      ),
+      'volume' => 2,
+      'page' => 1,
+      'firstWord' => 'CASTEILLON',
+    ),
+  ),
+  11 => 
+  array (
+    'id' => 'goToPage/100/2',
+    'result' => 
+    array (
+      'definition' => 'dictionary/godefroy-dictionary/mImg/0200100.gif',
+      'errataImages' => 
+      array (
+        0 => 'dictionary/godefroy-dictionary/mPimg-3/02-100c1/02-100c.gif',
+      ),
+      'errataText' => NULL,
+      'ghostwords' => 
+      array (
+      ),
+      'volume' => 2,
+      'page' => 100,
+      'firstWord' => 'CHAUXUMIER',
+    ),
+  ),
+  12 => 
+  array (
+    'id' => 'goToPage/786/2',
+    'result' => 
+    array (
+      'definition' => 'dictionary/godefroy-dictionary/mImg/0200786.gif',
       'errataImages' => 
       array (
       ),
@@ -423,19 +244,14 @@ return array (
       array (
       ),
       'volume' => 2,
-      'page' => 785,
-      'firstWord' => 'DURER',
+      'page' => 786,
+      'firstWord' => 'DUSTRE',
     ),
   ),
-  17 => 
+  13 => 
   array (
-    'page' => 
-    array (
-      'action' => 'goToPage',
-      'page' => 1,
-      'volume' => 3,
-    ),
-    'found' => 
+    'id' => 'goToPage/10000/2',
+    'result' => 
     array (
       'definition' => 'dictionary/godefroy-dictionary/mImg/0300001.gif',
       'errataImages' => 
@@ -450,15 +266,104 @@ return array (
       'firstWord' => 'E',
     ),
   ),
+  14 => 
+  array (
+    'id' => 'goToNextPage/1/2',
+    'result' => 
+    array (
+      'definition' => 'dictionary/godefroy-dictionary/mImg/0200002.gif',
+      'errataImages' => 
+      array (
+        0 => 'dictionary/godefroy-dictionary/mPimg-3/02-2a2b1/02-2a.gif',
+        1 => 'dictionary/godefroy-dictionary/mPimg-3/02-2a2b1/02-2ab-v8.gif',
+      ),
+      'errataText' => NULL,
+      'ghostwords' => 
+      array (
+      ),
+      'volume' => 2,
+      'page' => 2,
+      'firstWord' => 'CASTILLÉ',
+    ),
+  ),
+  15 => 
+  array (
+    'id' => 'goToNextPage/786/2',
+    'result' => 
+    array (
+      'definition' => 'dictionary/godefroy-dictionary/mImg/0300001.gif',
+      'errataImages' => 
+      array (
+      ),
+      'errataText' => NULL,
+      'ghostwords' => 
+      array (
+      ),
+      'volume' => 3,
+      'page' => 1,
+      'firstWord' => 'E',
+    ),
+  ),
+  16 => 
+  array (
+    'id' => 'goToPreviousPage/1/2',
+    'result' => 
+    array (
+      'definition' => 'dictionary/godefroy-dictionary/mImg/0100792.gif',
+      'errataImages' => 
+      array (
+        0 => 'dictionary/godefroy-dictionary/mPimg-3/01-792c1/01-792c-v8.gif',
+      ),
+      'errataText' => NULL,
+      'ghostwords' => 
+      array (
+        0 => 'CASSETIN',
+      ),
+      'volume' => 1,
+      'page' => 792,
+      'firstWord' => 'CASSART',
+    ),
+  ),
+  17 => 
+  array (
+    'id' => 'goToPreviousPage/786/2',
+    'result' => 
+    array (
+      'definition' => 'dictionary/godefroy-dictionary/mImg/0200785.gif',
+      'errataImages' => 
+      array (
+      ),
+      'errataText' => NULL,
+      'ghostwords' => 
+      array (
+      ),
+      'volume' => 2,
+      'page' => 785,
+      'firstWord' => 'DURER',
+    ),
+  ),
   18 => 
   array (
-    'page' => 
+    'id' => 'goToPage/1/3',
+    'result' => 
     array (
-      'action' => 'goToPage',
-      'page' => 100,
+      'definition' => 'dictionary/godefroy-dictionary/mImg/0300001.gif',
+      'errataImages' => 
+      array (
+      ),
+      'errataText' => NULL,
+      'ghostwords' => 
+      array (
+      ),
       'volume' => 3,
+      'page' => 1,
+      'firstWord' => 'E',
     ),
-    'found' => 
+  ),
+  19 => 
+  array (
+    'id' => 'goToPage/100/3',
+    'result' => 
     array (
       'definition' => 'dictionary/godefroy-dictionary/mImg/0300100.gif',
       'errataImages' => 
@@ -473,15 +378,10 @@ return array (
       'firstWord' => 'ENCHE',
     ),
   ),
-  19 => 
+  20 => 
   array (
-    'page' => 
-    array (
-      'action' => 'goToPage',
-      'page' => 792,
-      'volume' => 3,
-    ),
-    'found' => 
+    'id' => 'goToPage/792/3',
+    'result' => 
     array (
       'definition' => 'dictionary/godefroy-dictionary/mImg/0300792.gif',
       'errataImages' => 
@@ -496,15 +396,10 @@ return array (
       'firstWord' => 'FILATERIE',
     ),
   ),
-  20 => 
+  21 => 
   array (
-    'page' => 
-    array (
-      'action' => 'goToPage',
-      'page' => 10000,
-      'volume' => 3,
-    ),
-    'found' => 
+    'id' => 'goToPage/10000/3',
+    'result' => 
     array (
       'definition' => 'dictionary/godefroy-dictionary/mImg/0400001.gif',
       'errataImages' => 
@@ -519,15 +414,10 @@ return array (
       'firstWord' => 'FILÉ',
     ),
   ),
-  21 => 
+  22 => 
   array (
-    'page' => 
-    array (
-      'action' => 'goToNextPage',
-      'page' => 1,
-      'volume' => 3,
-    ),
-    'found' => 
+    'id' => 'goToNextPage/1/3',
+    'result' => 
     array (
       'definition' => 'dictionary/godefroy-dictionary/mImg/0300002.gif',
       'errataImages' => 
@@ -544,15 +434,10 @@ return array (
       'firstWord' => 'EAGEMENT',
     ),
   ),
-  22 => 
+  23 => 
   array (
-    'page' => 
-    array (
-      'action' => 'goToNextPage',
-      'page' => 792,
-      'volume' => 3,
-    ),
-    'found' => 
+    'id' => 'goToNextPage/792/3',
+    'result' => 
     array (
       'definition' => 'dictionary/godefroy-dictionary/mImg/0400001.gif',
       'errataImages' => 
@@ -567,15 +452,10 @@ return array (
       'firstWord' => 'FILÉ',
     ),
   ),
-  23 => 
+  24 => 
   array (
-    'page' => 
-    array (
-      'action' => 'goToPreviousPage',
-      'page' => 1,
-      'volume' => 3,
-    ),
-    'found' => 
+    'id' => 'goToPreviousPage/1/3',
+    'result' => 
     array (
       'definition' => 'dictionary/godefroy-dictionary/mImg/0200786.gif',
       'errataImages' => 
@@ -590,15 +470,10 @@ return array (
       'firstWord' => 'DUSTRE',
     ),
   ),
-  24 => 
+  25 => 
   array (
-    'page' => 
-    array (
-      'action' => 'goToPreviousPage',
-      'page' => 792,
-      'volume' => 3,
-    ),
-    'found' => 
+    'id' => 'goToPreviousPage/792/3',
+    'result' => 
     array (
       'definition' => 'dictionary/godefroy-dictionary/mImg/0300791.gif',
       'errataImages' => 
@@ -613,15 +488,10 @@ return array (
       'firstWord' => 'FIGURATIF',
     ),
   ),
-  25 => 
+  26 => 
   array (
-    'page' => 
-    array (
-      'action' => 'goToPage',
-      'page' => 1,
-      'volume' => 4,
-    ),
-    'found' => 
+    'id' => 'goToPage/1/4',
+    'result' => 
     array (
       'definition' => 'dictionary/godefroy-dictionary/mImg/0400001.gif',
       'errataImages' => 
@@ -636,15 +506,10 @@ return array (
       'firstWord' => 'FILÉ',
     ),
   ),
-  26 => 
+  27 => 
   array (
-    'page' => 
-    array (
-      'action' => 'goToPage',
-      'page' => 100,
-      'volume' => 4,
-    ),
-    'found' => 
+    'id' => 'goToPage/100/4',
+    'result' => 
     array (
       'definition' => 'dictionary/godefroy-dictionary/mImg/0400100.gif',
       'errataImages' => 
@@ -659,15 +524,10 @@ return array (
       'firstWord' => 'FORTIFICATION',
     ),
   ),
-  27 => 
+  28 => 
   array (
-    'page' => 
-    array (
-      'action' => 'goToPage',
-      'page' => 796,
-      'volume' => 4,
-    ),
-    'found' => 
+    'id' => 'goToPage/796/4',
+    'result' => 
     array (
       'definition' => 'dictionary/godefroy-dictionary/mImg/0400796.gif',
       'errataImages' => 
@@ -682,15 +542,10 @@ return array (
       'firstWord' => 'LISON',
     ),
   ),
-  28 => 
+  29 => 
   array (
-    'page' => 
-    array (
-      'action' => 'goToPage',
-      'page' => 10000,
-      'volume' => 4,
-    ),
-    'found' => 
+    'id' => 'goToPage/10000/4',
+    'result' => 
     array (
       'definition' => 'dictionary/godefroy-dictionary/mImg/0500001.gif',
       'errataImages' => 
@@ -705,15 +560,10 @@ return array (
       'firstWord' => 'LISTE',
     ),
   ),
-  29 => 
+  30 => 
   array (
-    'page' => 
-    array (
-      'action' => 'goToNextPage',
-      'page' => 1,
-      'volume' => 4,
-    ),
-    'found' => 
+    'id' => 'goToNextPage/1/4',
+    'result' => 
     array (
       'definition' => 'dictionary/godefroy-dictionary/mImg/0400002.gif',
       'errataImages' => 
@@ -728,15 +578,10 @@ return array (
       'firstWord' => 'FILERON',
     ),
   ),
-  30 => 
+  31 => 
   array (
-    'page' => 
-    array (
-      'action' => 'goToNextPage',
-      'page' => 796,
-      'volume' => 4,
-    ),
-    'found' => 
+    'id' => 'goToNextPage/796/4',
+    'result' => 
     array (
       'definition' => 'dictionary/godefroy-dictionary/mImg/0500001.gif',
       'errataImages' => 
@@ -751,15 +596,10 @@ return array (
       'firstWord' => 'LISTE',
     ),
   ),
-  31 => 
+  32 => 
   array (
-    'page' => 
-    array (
-      'action' => 'goToPreviousPage',
-      'page' => 1,
-      'volume' => 4,
-    ),
-    'found' => 
+    'id' => 'goToPreviousPage/1/4',
+    'result' => 
     array (
       'definition' => 'dictionary/godefroy-dictionary/mImg/0300792.gif',
       'errataImages' => 
@@ -774,15 +614,10 @@ return array (
       'firstWord' => 'FILATERIE',
     ),
   ),
-  32 => 
+  33 => 
   array (
-    'page' => 
-    array (
-      'action' => 'goToPreviousPage',
-      'page' => 796,
-      'volume' => 4,
-    ),
-    'found' => 
+    'id' => 'goToPreviousPage/796/4',
+    'result' => 
     array (
       'definition' => 'dictionary/godefroy-dictionary/mImg/0400795.gif',
       'errataImages' => 
@@ -797,15 +632,10 @@ return array (
       'firstWord' => 'LIRIN',
     ),
   ),
-  33 => 
+  34 => 
   array (
-    'page' => 
-    array (
-      'action' => 'goToPage',
-      'page' => 1,
-      'volume' => 5,
-    ),
-    'found' => 
+    'id' => 'goToPage/1/5',
+    'result' => 
     array (
       'definition' => 'dictionary/godefroy-dictionary/mImg/0500001.gif',
       'errataImages' => 
@@ -820,15 +650,10 @@ return array (
       'firstWord' => 'LISTE',
     ),
   ),
-  34 => 
+  35 => 
   array (
-    'page' => 
-    array (
-      'action' => 'goToPage',
-      'page' => 100,
-      'volume' => 5,
-    ),
-    'found' => 
+    'id' => 'goToPage/100/5',
+    'result' => 
     array (
       'definition' => 'dictionary/godefroy-dictionary/mImg/0500100.gif',
       'errataImages' => 
@@ -843,15 +668,10 @@ return array (
       'firstWord' => 'MAISTRE ESCOLE',
     ),
   ),
-  35 => 
+  36 => 
   array (
-    'page' => 
-    array (
-      'action' => 'goToPage',
-      'page' => 790,
-      'volume' => 5,
-    ),
-    'found' => 
+    'id' => 'goToPage/790/5',
+    'result' => 
     array (
       'definition' => 'dictionary/godefroy-dictionary/mImg/0500790.gif',
       'errataImages' => 
@@ -866,15 +686,10 @@ return array (
       'firstWord' => 'PARSIETE',
     ),
   ),
-  36 => 
+  37 => 
   array (
-    'page' => 
-    array (
-      'action' => 'goToPage',
-      'page' => 10000,
-      'volume' => 5,
-    ),
-    'found' => 
+    'id' => 'goToPage/10000/5',
+    'result' => 
     array (
       'definition' => 'dictionary/godefroy-dictionary/mImg/0600001.gif',
       'errataImages' => 
@@ -890,15 +705,10 @@ return array (
       'firstWord' => 'PARSOMMER',
     ),
   ),
-  37 => 
+  38 => 
   array (
-    'page' => 
-    array (
-      'action' => 'goToNextPage',
-      'page' => 1,
-      'volume' => 5,
-    ),
-    'found' => 
+    'id' => 'goToNextPage/1/5',
+    'result' => 
     array (
       'definition' => 'dictionary/godefroy-dictionary/mImg/0500002.gif',
       'errataImages' => 
@@ -913,15 +723,10 @@ return array (
       'firstWord' => 'LISTEL',
     ),
   ),
-  38 => 
+  39 => 
   array (
-    'page' => 
-    array (
-      'action' => 'goToNextPage',
-      'page' => 790,
-      'volume' => 5,
-    ),
-    'found' => 
+    'id' => 'goToNextPage/790/5',
+    'result' => 
     array (
       'definition' => 'dictionary/godefroy-dictionary/mImg/0600001.gif',
       'errataImages' => 
@@ -937,15 +742,10 @@ return array (
       'firstWord' => 'PARSOMMER',
     ),
   ),
-  39 => 
+  40 => 
   array (
-    'page' => 
-    array (
-      'action' => 'goToPreviousPage',
-      'page' => 1,
-      'volume' => 5,
-    ),
-    'found' => 
+    'id' => 'goToPreviousPage/1/5',
+    'result' => 
     array (
       'definition' => 'dictionary/godefroy-dictionary/mImg/0400796.gif',
       'errataImages' => 
@@ -960,15 +760,10 @@ return array (
       'firstWord' => 'LISON',
     ),
   ),
-  40 => 
+  41 => 
   array (
-    'page' => 
-    array (
-      'action' => 'goToPreviousPage',
-      'page' => 790,
-      'volume' => 5,
-    ),
-    'found' => 
+    'id' => 'goToPreviousPage/790/5',
+    'result' => 
     array (
       'definition' => 'dictionary/godefroy-dictionary/mImg/0500789.gif',
       'errataImages' => 
@@ -984,15 +779,10 @@ return array (
       'firstWord' => 'PARRIERE',
     ),
   ),
-  41 => 
+  42 => 
   array (
-    'page' => 
-    array (
-      'action' => 'goToPage',
-      'page' => 1,
-      'volume' => 6,
-    ),
-    'found' => 
+    'id' => 'goToPage/1/6',
+    'result' => 
     array (
       'definition' => 'dictionary/godefroy-dictionary/mImg/0600001.gif',
       'errataImages' => 
@@ -1008,15 +798,10 @@ return array (
       'firstWord' => 'PARSOMMER',
     ),
   ),
-  42 => 
+  43 => 
   array (
-    'page' => 
-    array (
-      'action' => 'goToPage',
-      'page' => 100,
-      'volume' => 6,
-    ),
-    'found' => 
+    'id' => 'goToPage/100/6',
+    'result' => 
     array (
       'definition' => 'dictionary/godefroy-dictionary/mImg/0600100.gif',
       'errataImages' => 
@@ -1031,15 +816,10 @@ return array (
       'firstWord' => 'PERFORCEMENT',
     ),
   ),
-  43 => 
+  44 => 
   array (
-    'page' => 
-    array (
-      'action' => 'goToPage',
-      'page' => 778,
-      'volume' => 6,
-    ),
-    'found' => 
+    'id' => 'goToPage/778/6',
+    'result' => 
     array (
       'definition' => 'dictionary/godefroy-dictionary/mImg/0600778.gif',
       'errataImages' => 
@@ -1054,15 +834,10 @@ return array (
       'firstWord' => 'REMEMBRABLEMENT',
     ),
   ),
-  44 => 
+  45 => 
   array (
-    'page' => 
-    array (
-      'action' => 'goToPage',
-      'page' => 10000,
-      'volume' => 6,
-    ),
-    'found' => 
+    'id' => 'goToPage/10000/6',
+    'result' => 
     array (
       'definition' => 'dictionary/godefroy-dictionary/mImg/0700001.gif',
       'errataImages' => 
@@ -1079,15 +854,10 @@ return array (
       'firstWord' => 'REMEMBRANT',
     ),
   ),
-  45 => 
+  46 => 
   array (
-    'page' => 
-    array (
-      'action' => 'goToNextPage',
-      'page' => 1,
-      'volume' => 6,
-    ),
-    'found' => 
+    'id' => 'goToNextPage/1/6',
+    'result' => 
     array (
       'definition' => 'dictionary/godefroy-dictionary/mImg/0600002.gif',
       'errataImages' => 
@@ -1102,15 +872,10 @@ return array (
       'firstWord' => 'PARSOUGNIER',
     ),
   ),
-  46 => 
+  47 => 
   array (
-    'page' => 
-    array (
-      'action' => 'goToNextPage',
-      'page' => 778,
-      'volume' => 6,
-    ),
-    'found' => 
+    'id' => 'goToNextPage/778/6',
+    'result' => 
     array (
       'definition' => 'dictionary/godefroy-dictionary/mImg/0700001.gif',
       'errataImages' => 
@@ -1127,15 +892,10 @@ return array (
       'firstWord' => 'REMEMBRANT',
     ),
   ),
-  47 => 
+  48 => 
   array (
-    'page' => 
-    array (
-      'action' => 'goToPreviousPage',
-      'page' => 1,
-      'volume' => 6,
-    ),
-    'found' => 
+    'id' => 'goToPreviousPage/1/6',
+    'result' => 
     array (
       'definition' => 'dictionary/godefroy-dictionary/mImg/0500790.gif',
       'errataImages' => 
@@ -1150,15 +910,10 @@ return array (
       'firstWord' => 'PARSIETE',
     ),
   ),
-  48 => 
+  49 => 
   array (
-    'page' => 
-    array (
-      'action' => 'goToPreviousPage',
-      'page' => 778,
-      'volume' => 6,
-    ),
-    'found' => 
+    'id' => 'goToPreviousPage/778/6',
+    'result' => 
     array (
       'definition' => 'dictionary/godefroy-dictionary/mImg/0600777.gif',
       'errataImages' => 
@@ -1174,15 +929,10 @@ return array (
       'firstWord' => 'REMBOUSCHIEMENT',
     ),
   ),
-  49 => 
+  50 => 
   array (
-    'page' => 
-    array (
-      'action' => 'goToPage',
-      'page' => 1,
-      'volume' => 7,
-    ),
-    'found' => 
+    'id' => 'goToPage/1/7',
+    'result' => 
     array (
       'definition' => 'dictionary/godefroy-dictionary/mImg/0700001.gif',
       'errataImages' => 
@@ -1199,15 +949,10 @@ return array (
       'firstWord' => 'REMEMBRANT',
     ),
   ),
-  50 => 
+  51 => 
   array (
-    'page' => 
-    array (
-      'action' => 'goToPage',
-      'page' => 100,
-      'volume' => 7,
-    ),
-    'found' => 
+    'id' => 'goToPage/100/7',
+    'result' => 
     array (
       'definition' => 'dictionary/godefroy-dictionary/mImg/0700100.gif',
       'errataImages' => 
@@ -1222,15 +967,10 @@ return array (
       'firstWord' => 'RESNABLEMENT',
     ),
   ),
-  51 => 
+  52 => 
   array (
-    'page' => 
-    array (
-      'action' => 'goToPage',
-      'page' => 788,
-      'volume' => 7,
-    ),
-    'found' => 
+    'id' => 'goToPage/788/7',
+    'result' => 
     array (
       'definition' => 'dictionary/godefroy-dictionary/mImg/0700788.gif',
       'errataImages' => 
@@ -1245,15 +985,10 @@ return array (
       'firstWord' => 'TRAINEGAINE',
     ),
   ),
-  52 => 
+  53 => 
   array (
-    'page' => 
-    array (
-      'action' => 'goToPage',
-      'page' => 10000,
-      'volume' => 7,
-    ),
-    'found' => 
+    'id' => 'goToPage/10000/7',
+    'result' => 
     array (
       'definition' => 'dictionary/godefroy-dictionary/mImg/0800001.gif',
       'errataImages' => 
@@ -1268,15 +1003,10 @@ return array (
       'firstWord' => 'TRAIRE',
     ),
   ),
-  53 => 
+  54 => 
   array (
-    'page' => 
-    array (
-      'action' => 'goToNextPage',
-      'page' => 1,
-      'volume' => 7,
-    ),
-    'found' => 
+    'id' => 'goToNextPage/1/7',
+    'result' => 
     array (
       'definition' => 'dictionary/godefroy-dictionary/mImg/0700002.gif',
       'errataImages' => 
@@ -1291,15 +1021,10 @@ return array (
       'firstWord' => 'REMEMORANCE',
     ),
   ),
-  54 => 
+  55 => 
   array (
-    'page' => 
-    array (
-      'action' => 'goToNextPage',
-      'page' => 788,
-      'volume' => 7,
-    ),
-    'found' => 
+    'id' => 'goToNextPage/788/7',
+    'result' => 
     array (
       'definition' => 'dictionary/godefroy-dictionary/mImg/0800001.gif',
       'errataImages' => 
@@ -1314,15 +1039,10 @@ return array (
       'firstWord' => 'TRAIRE',
     ),
   ),
-  55 => 
+  56 => 
   array (
-    'page' => 
-    array (
-      'action' => 'goToPreviousPage',
-      'page' => 1,
-      'volume' => 7,
-    ),
-    'found' => 
+    'id' => 'goToPreviousPage/1/7',
+    'result' => 
     array (
       'definition' => 'dictionary/godefroy-dictionary/mImg/0600778.gif',
       'errataImages' => 
@@ -1337,15 +1057,10 @@ return array (
       'firstWord' => 'REMEMBRABLEMENT',
     ),
   ),
-  56 => 
+  57 => 
   array (
-    'page' => 
-    array (
-      'action' => 'goToPreviousPage',
-      'page' => 788,
-      'volume' => 7,
-    ),
-    'found' => 
+    'id' => 'goToPreviousPage/788/7',
+    'result' => 
     array (
       'definition' => 'dictionary/godefroy-dictionary/mImg/0700787.gif',
       'errataImages' => 
@@ -1360,15 +1075,10 @@ return array (
       'firstWord' => 'TRAINCHIEMANT',
     ),
   ),
-  57 => 
+  58 => 
   array (
-    'page' => 
-    array (
-      'action' => 'goToPage',
-      'page' => 1,
-      'volume' => 8,
-    ),
-    'found' => 
+    'id' => 'goToPage/1/8',
+    'result' => 
     array (
       'definition' => 'dictionary/godefroy-dictionary/mImg/0800001.gif',
       'errataImages' => 
@@ -1383,15 +1093,10 @@ return array (
       'firstWord' => 'TRAIRE',
     ),
   ),
-  58 => 
+  59 => 
   array (
-    'page' => 
-    array (
-      'action' => 'goToPage',
-      'page' => 100,
-      'volume' => 8,
-    ),
-    'found' => 
+    'id' => 'goToPage/100/8',
+    'result' => 
     array (
       'definition' => 'dictionary/godefroy-dictionary/mImg/0800100.gif',
       'errataImages' => 
@@ -1406,38 +1111,10 @@ return array (
       'firstWord' => 'TRUMELEOR',
     ),
   ),
-  59 => 
-  array (
-    'page' => 
-    array (
-      'action' => 'goToPage',
-      'page' => 344,
-      'volume' => 8,
-    ),
-    'found' => 
-    array (
-      'definition' => 'dictionary/godefroy-dictionary/mImg/0800344.gif',
-      'errataImages' => 
-      array (
-      ),
-      'errataText' => NULL,
-      'ghostwords' => 
-      array (
-      ),
-      'volume' => 8,
-      'page' => 344,
-      'firstWord' => 'ZIRBE',
-    ),
-  ),
   60 => 
   array (
-    'page' => 
-    array (
-      'action' => 'goToPage',
-      'page' => 10000,
-      'volume' => 8,
-    ),
-    'found' => 
+    'id' => 'goToPage/344/8',
+    'result' => 
     array (
       'definition' => 'dictionary/godefroy-dictionary/mImg/0800344.gif',
       'errataImages' => 
@@ -1454,36 +1131,8 @@ return array (
   ),
   61 => 
   array (
-    'page' => 
-    array (
-      'action' => 'goToNextPage',
-      'page' => 1,
-      'volume' => 8,
-    ),
-    'found' => 
-    array (
-      'definition' => 'dictionary/godefroy-dictionary/mImg/0800002.gif',
-      'errataImages' => 
-      array (
-      ),
-      'errataText' => NULL,
-      'ghostwords' => 
-      array (
-      ),
-      'volume' => 8,
-      'page' => 2,
-      'firstWord' => 'TRAIRE',
-    ),
-  ),
-  62 => 
-  array (
-    'page' => 
-    array (
-      'action' => 'goToNextPage',
-      'page' => 344,
-      'volume' => 8,
-    ),
-    'found' => 
+    'id' => 'goToPage/10000/8',
+    'result' => 
     array (
       'definition' => 'dictionary/godefroy-dictionary/mImg/0800344.gif',
       'errataImages' => 
@@ -1498,15 +1147,46 @@ return array (
       'firstWord' => 'ZIRBE',
     ),
   ),
+  62 => 
+  array (
+    'id' => 'goToNextPage/1/8',
+    'result' => 
+    array (
+      'definition' => 'dictionary/godefroy-dictionary/mImg/0800002.gif',
+      'errataImages' => 
+      array (
+      ),
+      'errataText' => NULL,
+      'ghostwords' => 
+      array (
+      ),
+      'volume' => 8,
+      'page' => 2,
+      'firstWord' => 'TRAIRE',
+    ),
+  ),
   63 => 
   array (
-    'page' => 
+    'id' => 'goToNextPage/344/8',
+    'result' => 
     array (
-      'action' => 'goToPreviousPage',
-      'page' => 1,
+      'definition' => 'dictionary/godefroy-dictionary/mImg/0800344.gif',
+      'errataImages' => 
+      array (
+      ),
+      'errataText' => NULL,
+      'ghostwords' => 
+      array (
+      ),
       'volume' => 8,
+      'page' => 344,
+      'firstWord' => 'ZIRBE',
     ),
-    'found' => 
+  ),
+  64 => 
+  array (
+    'id' => 'goToPreviousPage/1/8',
+    'result' => 
     array (
       'definition' => 'dictionary/godefroy-dictionary/mImg/0700788.gif',
       'errataImages' => 
@@ -1521,15 +1201,10 @@ return array (
       'firstWord' => 'TRAINEGAINE',
     ),
   ),
-  64 => 
+  65 => 
   array (
-    'page' => 
-    array (
-      'action' => 'goToPreviousPage',
-      'page' => 344,
-      'volume' => 8,
-    ),
-    'found' => 
+    'id' => 'goToPreviousPage/344/8',
+    'result' => 
     array (
       'definition' => 'dictionary/godefroy-dictionary/mImg/0800343.gif',
       'errataImages' => 

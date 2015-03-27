@@ -1,28 +1,9 @@
 <?php
 return array (
-  0 => 
-  array (
-    'page' => 
-    array (
-      'action' => 'goToPage',
-      'page' => 0,
-    ),
-    'found' => 
-    array (
-      'externalDict' => 'http://ia700404.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/cu31924091890685/cu31924091890685_jp2.zip&file=cu31924091890685_jp2/cu31924091890685_0018.jp2&scale=3&rotate=0',
-      'page' => '1',
-      'volume' => '11',
-      'firstWord' => 'A',
-    ),
-  ),
   1 => 
   array (
-    'page' => 
-    array (
-      'action' => 'goToPage',
-      'page' => 1,
-    ),
-    'found' => 
+    'id' => 'goToPage/0',
+    'result' => 
     array (
       'externalDict' => 'http://ia700404.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/cu31924091890685/cu31924091890685_jp2.zip&file=cu31924091890685_jp2/cu31924091890685_0018.jp2&scale=3&rotate=0',
       'page' => '1',
@@ -32,12 +13,19 @@ return array (
   ),
   2 => 
   array (
-    'page' => 
+    'id' => 'goToPage/1',
+    'result' => 
     array (
-      'action' => 'goToPage',
-      'page' => 1000,
+      'externalDict' => 'http://ia700404.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/cu31924091890685/cu31924091890685_jp2.zip&file=cu31924091890685_jp2/cu31924091890685_0018.jp2&scale=3&rotate=0',
+      'page' => '1',
+      'volume' => '11',
+      'firstWord' => 'A',
     ),
-    'found' => 
+  ),
+  3 => 
+  array (
+    'id' => 'goToPage/1000',
+    'result' => 
     array (
       'externalDict' => 'http://ia902606.us.archive.org/BookReader/BookReaderImages.php?zip=/33/items/centurydictionar12whituoft/centurydictionar12whituoft_jp2.zip&file=centurydictionar12whituoft_jp2/centurydictionar12whituoft_0260.jp2&scale=3&rotate=0',
       'page' => '1000',
@@ -45,29 +33,10 @@ return array (
       'firstWord' => 'piga',
     ),
   ),
-  3 => 
-  array (
-    'page' => 
-    array (
-      'action' => 'goToPage',
-      'page' => 1467,
-    ),
-    'found' => 
-    array (
-      'externalDict' => 'http://ia902606.us.archive.org/BookReader/BookReaderImages.php?zip=/33/items/centurydictionar12whituoft/centurydictionar12whituoft_jp2.zip&file=centurydictionar12whituoft_jp2/centurydictionar12whituoft_0727.jp2&scale=3&rotate=0',
-      'page' => '1467',
-      'volume' => '12',
-      'firstWord' => 'zwitter',
-    ),
-  ),
   4 => 
   array (
-    'page' => 
-    array (
-      'action' => 'goToPage',
-      'page' => 10000,
-    ),
-    'found' => 
+    'id' => 'goToPage/1467',
+    'result' => 
     array (
       'externalDict' => 'http://ia902606.us.archive.org/BookReader/BookReaderImages.php?zip=/33/items/centurydictionar12whituoft/centurydictionar12whituoft_jp2.zip&file=centurydictionar12whituoft_jp2/centurydictionar12whituoft_0727.jp2&scale=3&rotate=0',
       'page' => '1467',
@@ -77,27 +46,8 @@ return array (
   ),
   5 => 
   array (
-    'page' => 
-    array (
-      'action' => 'goToNextPage',
-      'page' => 1,
-    ),
-    'found' => 
-    array (
-      'externalDict' => 'http://ia700404.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/cu31924091890685/cu31924091890685_jp2.zip&file=cu31924091890685_jp2/cu31924091890685_0019.jp2&scale=3&rotate=0',
-      'page' => '2',
-      'volume' => '11',
-      'firstWord' => 'aberrate',
-    ),
-  ),
-  6 => 
-  array (
-    'page' => 
-    array (
-      'action' => 'goToNextPage',
-      'page' => 1467,
-    ),
-    'found' => 
+    'id' => 'goToPage/10000',
+    'result' => 
     array (
       'externalDict' => 'http://ia902606.us.archive.org/BookReader/BookReaderImages.php?zip=/33/items/centurydictionar12whituoft/centurydictionar12whituoft_jp2.zip&file=centurydictionar12whituoft_jp2/centurydictionar12whituoft_0727.jp2&scale=3&rotate=0',
       'page' => '1467',
@@ -105,14 +55,32 @@ return array (
       'firstWord' => 'zwitter',
     ),
   ),
+  6 => 
+  array (
+    'id' => 'goToNextPage/1',
+    'result' => 
+    array (
+      'externalDict' => 'http://ia700404.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/cu31924091890685/cu31924091890685_jp2.zip&file=cu31924091890685_jp2/cu31924091890685_0019.jp2&scale=3&rotate=0',
+      'page' => '2',
+      'volume' => '11',
+      'firstWord' => 'aberrate',
+    ),
+  ),
   7 => 
   array (
-    'page' => 
+    'id' => 'goToNextPage/1467',
+    'result' => 
     array (
-      'action' => 'goToPreviousPage',
-      'page' => 1,
+      'externalDict' => 'http://ia902606.us.archive.org/BookReader/BookReaderImages.php?zip=/33/items/centurydictionar12whituoft/centurydictionar12whituoft_jp2.zip&file=centurydictionar12whituoft_jp2/centurydictionar12whituoft_0727.jp2&scale=3&rotate=0',
+      'page' => '1467',
+      'volume' => '12',
+      'firstWord' => 'zwitter',
     ),
-    'found' => 
+  ),
+  8 => 
+  array (
+    'id' => 'goToPreviousPage/1',
+    'result' => 
     array (
       'externalDict' => 'http://ia700404.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/cu31924091890685/cu31924091890685_jp2.zip&file=cu31924091890685_jp2/cu31924091890685_0018.jp2&scale=3&rotate=0',
       'page' => '1',
@@ -120,14 +88,10 @@ return array (
       'firstWord' => 'A',
     ),
   ),
-  8 => 
+  9 => 
   array (
-    'page' => 
-    array (
-      'action' => 'goToPreviousPage',
-      'page' => 1467,
-    ),
-    'found' => 
+    'id' => 'goToPreviousPage/1467',
+    'result' => 
     array (
       'externalDict' => 'http://ia902606.us.archive.org/BookReader/BookReaderImages.php?zip=/33/items/centurydictionar12whituoft/centurydictionar12whituoft_jp2.zip&file=centurydictionar12whituoft_jp2/centurydictionar12whituoft_0726.jp2&scale=3&rotate=0',
       'page' => '1466',

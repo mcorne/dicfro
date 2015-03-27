@@ -2,8 +2,8 @@
 return array (
   0 => 
   array (
-    'word' => 'a',
-    'found' => 
+    'id' => 'a',
+    'result' => 
     array (
       'definition' => 'dictionary/vandaele-dictionary/mImg/0000009.gif',
       'errataImages' => NULL,

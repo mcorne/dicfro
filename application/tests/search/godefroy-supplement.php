@@ -2,8 +2,8 @@
 return array (
   0 => 
   array (
-    'word' => 'a',
-    'found' => 
+    'id' => 'a',
+    'result' => 
     array (
       'definition' => 'dictionary/godefroy-supplement/mImg/0810009.gif',
       'errataImages' => 

@@ -2,8 +2,8 @@
 return array (
   0 => 
   array (
-    'word' => 'a',
-    'found' => 
+    'id' => 'a',
+    'result' => 
     array (
       'definition' => 'dictionary/roman-de-renart-meon-1-glossary/mImg/0000359.gif',
       'errataImages' => NULL,

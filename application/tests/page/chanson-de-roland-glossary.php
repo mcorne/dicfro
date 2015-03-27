@@ -1,31 +1,9 @@
 <?php
 return array (
-  0 => 
-  array (
-    'page' => 
-    array (
-      'action' => 'goToPage',
-      'page' => 0,
-    ),
-    'found' => 
-    array (
-      'definition' => 'dictionary/chanson-de-roland-glossary/mImg/0000323.gif',
-      'errataImages' => NULL,
-      'errataText' => NULL,
-      'ghostwords' => NULL,
-      'volume' => '',
-      'page' => 323,
-      'firstWord' => 'A',
-    ),
-  ),
   1 => 
   array (
-    'page' => 
-    array (
-      'action' => 'goToPage',
-      'page' => 323,
-    ),
-    'found' => 
+    'id' => 'goToPage/0',
+    'result' => 
     array (
       'definition' => 'dictionary/chanson-de-roland-glossary/mImg/0000323.gif',
       'errataImages' => NULL,
@@ -38,12 +16,22 @@ return array (
   ),
   2 => 
   array (
-    'page' => 
+    'id' => 'goToPage/323',
+    'result' => 
     array (
-      'action' => 'goToPage',
-      'page' => 400,
+      'definition' => 'dictionary/chanson-de-roland-glossary/mImg/0000323.gif',
+      'errataImages' => NULL,
+      'errataText' => NULL,
+      'ghostwords' => NULL,
+      'volume' => '',
+      'page' => 323,
+      'firstWord' => 'A',
     ),
-    'found' => 
+  ),
+  3 => 
+  array (
+    'id' => 'goToPage/400',
+    'result' => 
     array (
       'definition' => 'dictionary/chanson-de-roland-glossary/mImg/0000400.gif',
       'errataImages' => NULL,
@@ -54,32 +42,10 @@ return array (
       'firstWord' => 'GUARISUN',
     ),
   ),
-  3 => 
-  array (
-    'page' => 
-    array (
-      'action' => 'goToPage',
-      'page' => 501,
-    ),
-    'found' => 
-    array (
-      'definition' => 'dictionary/chanson-de-roland-glossary/mImg/0000501.gif',
-      'errataImages' => NULL,
-      'errataText' => NULL,
-      'ghostwords' => NULL,
-      'volume' => '',
-      'page' => 501,
-      'firstWord' => 'VULEIR',
-    ),
-  ),
   4 => 
   array (
-    'page' => 
-    array (
-      'action' => 'goToPage',
-      'page' => 10000,
-    ),
-    'found' => 
+    'id' => 'goToPage/501',
+    'result' => 
     array (
       'definition' => 'dictionary/chanson-de-roland-glossary/mImg/0000501.gif',
       'errataImages' => NULL,
@@ -92,30 +58,8 @@ return array (
   ),
   5 => 
   array (
-    'page' => 
-    array (
-      'action' => 'goToNextPage',
-      'page' => 323,
-    ),
-    'found' => 
-    array (
-      'definition' => 'dictionary/chanson-de-roland-glossary/mImg/0000324.gif',
-      'errataImages' => NULL,
-      'errataText' => NULL,
-      'ghostwords' => NULL,
-      'volume' => '',
-      'page' => 324,
-      'firstWord' => 'A',
-    ),
-  ),
-  6 => 
-  array (
-    'page' => 
-    array (
-      'action' => 'goToNextPage',
-      'page' => 501,
-    ),
-    'found' => 
+    'id' => 'goToPage/10000',
+    'result' => 
     array (
       'definition' => 'dictionary/chanson-de-roland-glossary/mImg/0000501.gif',
       'errataImages' => NULL,
@@ -126,14 +70,38 @@ return array (
       'firstWord' => 'VULEIR',
     ),
   ),
+  6 => 
+  array (
+    'id' => 'goToNextPage/323',
+    'result' => 
+    array (
+      'definition' => 'dictionary/chanson-de-roland-glossary/mImg/0000324.gif',
+      'errataImages' => NULL,
+      'errataText' => NULL,
+      'ghostwords' => NULL,
+      'volume' => '',
+      'page' => 324,
+      'firstWord' => 'A',
+    ),
+  ),
   7 => 
   array (
-    'page' => 
+    'id' => 'goToNextPage/501',
+    'result' => 
     array (
-      'action' => 'goToPreviousPage',
-      'page' => 323,
+      'definition' => 'dictionary/chanson-de-roland-glossary/mImg/0000501.gif',
+      'errataImages' => NULL,
+      'errataText' => NULL,
+      'ghostwords' => NULL,
+      'volume' => '',
+      'page' => 501,
+      'firstWord' => 'VULEIR',
     ),
-    'found' => 
+  ),
+  8 => 
+  array (
+    'id' => 'goToPreviousPage/323',
+    'result' => 
     array (
       'definition' => 'dictionary/chanson-de-roland-glossary/mImg/0000323.gif',
       'errataImages' => NULL,
@@ -144,14 +112,10 @@ return array (
       'firstWord' => 'A',
     ),
   ),
-  8 => 
+  9 => 
   array (
-    'page' => 
-    array (
-      'action' => 'goToPreviousPage',
-      'page' => 501,
-    ),
-    'found' => 
+    'id' => 'goToPreviousPage/501',
+    'result' => 
     array (
       'definition' => 'dictionary/chanson-de-roland-glossary/mImg/0000500.gif',
       'errataImages' => NULL,

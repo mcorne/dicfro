@@ -2,8 +2,8 @@
 return array (
   0 => 
   array (
-    'word' => 'a',
-    'found' => 
+    'id' => 'a',
+    'result' => 
     array (
       'definition' => 'dictionary/couronnement-de-louis-glossary/mImg/0000173.gif',
       'errataImages' => NULL,

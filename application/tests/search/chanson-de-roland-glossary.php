@@ -2,8 +2,8 @@
 return array (
   0 => 
   array (
-    'word' => 'a',
-    'found' => 
+    'id' => 'a',
+    'result' => 
     array (
       'definition' => 'dictionary/chanson-de-roland-glossary/mImg/0000323.gif',
       'errataImages' => NULL,

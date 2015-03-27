@@ -2,8 +2,8 @@
 return array (
   0 => 
   array (
-    'word' => 'pris',
-    'found' => 
+    'id' => 'pris',
+    'result' => 
     array (
       'tcaf' => 
       array (

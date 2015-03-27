@@ -192,17 +192,17 @@ class Controller_Interface
         $testCases = require $this->front->config['test-cases'];
         $results = [];
 
-        foreach($this->front->config['dictionaries'] as $id => $dictionary) {
+        foreach($this->front->config['dictionaries'] as $dictionaryId => $dictionary) {
             if ($dictionary['type'] == 'external') {
                 continue;
             }
 
-            if (isset($testCases[$id])) {
-                $dictionary += $testCases[$id];
+            if (isset($testCases[$dictionaryId])) {
+                $dictionary += $testCases[$dictionaryId];
             }
 
             $this->dictionary = $dictionary;
-            $this->setDictionaryDefaults($id);
+            $this->setDictionaryDefaults($dictionaryId);
             $search = $this->createSearchObject();
 
             if (! isset($dictionary['page-test'])) {
@@ -215,14 +215,14 @@ class Controller_Interface
                     $volume = isset($page['volume']) ? $page['volume'] : 0;
                     $method = $page['action'];
 
-                    $result[$index] = [
-                        'page'  => $page,
-                        'found' => $search->$method($volume, $page['page']),
+                    $result[$index + 1] = [
+                        'id'     => implode('/', $page),
+                        'result' => $search->$method($volume, $page['page']),
                     ];
                 }
             }
 
-            $filename = sprintf('%s/page/%s.php', $this->front->config['tests-dir'], $id);
+            $filename = sprintf('%s/page/%s.php', $this->front->config['tests-dir'], $dictionaryId);
             $expected = $this->readExpectedTestResults($filename);
 
             if (! $expected and $result) {
@@ -230,16 +230,18 @@ class Controller_Interface
             }
 
             $results[] = [
+                'basename' => $dictionaryId,
                 'expected' => $expected,
-                'id'       => $id,
                 'name'     => $dictionary['name'],
                 'result'   => $result,
             ];
         }
 
-        $this->view->information = "information/dictionaries-page-test.phtml";
+        $this->view->information = "information/test-results.phtml";
         $this->view->noImage = true;
         $this->view->results = $results;
+        $this->view->testDirectory = 'tests/page';
+        $this->view->title = 'Dictionaries Page Test';
     }
 
     /**
@@ -250,13 +252,13 @@ class Controller_Interface
         $testCases = require $this->front->config['test-cases'];
         $results = [];
 
-        foreach($this->front->config['dictionaries'] as $id => $dictionary) {
+        foreach($this->front->config['dictionaries'] as $dictionaryId => $dictionary) {
             $this->dictionary = $dictionary;
-            $this->setDictionaryDefaults($id);
+            $this->setDictionaryDefaults($dictionaryId);
             $search = $this->createSearchObject();
 
-            if (isset($testCases[$id])) {
-                $dictionary += $testCases[$id];
+            if (isset($testCases[$dictionaryId])) {
+                $dictionary += $testCases[$dictionaryId];
             }
 
             if (! isset($dictionary['search-test'])) {
@@ -264,8 +266,8 @@ class Controller_Interface
 
             } elseif (is_string($dictionary['search-test'])) {
                 $result = [[
-                    'word'  => $dictionary['search-test'],
-                    'found' => $search->searchWord($dictionary['search-test']),
+                    'id'     => $dictionary['search-test'],
+                    'result' => $search->searchWord($dictionary['search-test']),
                 ]];
 
             } else {
@@ -274,8 +276,8 @@ class Controller_Interface
                 foreach (array_keys($dictionary['search']['properties']['url']) as $index) {
                     if (isset($dictionary['search-test'][$index])) {
                         $result[$index] = [
-                            'word'  => $dictionary['search-test'][$index],
-                            'found' => $search->searchWord($dictionary['search-test'][$index]),
+                            'id'     => $dictionary['search-test'][$index],
+                            'result' => $search->searchWord($dictionary['search-test'][$index]),
                         ];
                     } else {
                         $result[$index] = null;
@@ -283,7 +285,7 @@ class Controller_Interface
                 }
             }
 
-            $filename = sprintf('%s/search/%s.php', $this->front->config['tests-dir'], $id);
+            $filename = sprintf('%s/search/%s.php', $this->front->config['tests-dir'], $dictionaryId);
             $expected = $this->readExpectedTestResults($filename);
 
             if (! $expected and $result) {
@@ -291,16 +293,18 @@ class Controller_Interface
             }
 
             $results[] = [
+                'basename' => $dictionaryId,
                 'expected' => $expected,
-                'id'       => $id,
                 'name'     => $dictionary['name'],
                 'result'   => $result,
             ];
         }
 
-        $this->view->information = "information/dictionaries-search-test.phtml";
+        $this->view->information = "information/test-results.phtml";
         $this->view->noImage = true;
         $this->view->results = $results;
+        $this->view->testDirectory = 'tests/search';
+        $this->view->title = 'Dictionaries Search Test';
     }
 
     /**

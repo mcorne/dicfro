@@ -2,8 +2,8 @@
 return array (
   0 => 
   array (
-    'word' => 'a',
-    'found' => 
+    'id' => 'a',
+    'result' => 
     array (
       'definition' => 'dictionary/roman-de-tristan-glossary/mImg/0000145.gif',
       'errataImages' => NULL,

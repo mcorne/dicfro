@@ -2,8 +2,8 @@
 return array (
   1 => 
   array (
-    'word' => 'a',
-    'found' => 
+    'id' => 'a',
+    'result' => 
     array (
       'externalDict' => 'http://gallica.bnf.fr/ark:/12148/bpt6k1200532b/f105.highres',
       'page' => '1',
@@ -13,8 +13,8 @@ return array (
   ),
   2 => 
   array (
-    'word' => 'cirage',
-    'found' => 
+    'id' => 'cirage',
+    'result' => 
     array (
       'externalDict' => 'http://gallica.bnf.fr/ark:/12148/bpt6k1200533r/f9.highres',
       'page' => '723',
@@ -24,8 +24,8 @@ return array (
   ),
   3 => 
   array (
-    'word' => 'ès',
-    'found' => 
+    'id' => 'ès',
+    'result' => 
     array (
       'externalDict' => 'http://gallica.bnf.fr/ark:/12148/bpt6k12005345/f9.highres',
       'page' => '1687',
@@ -35,8 +35,8 @@ return array (
   ),
   4 => 
   array (
-    'word' => 'indatable',
-    'found' => 
+    'id' => 'indatable',
+    'result' => 
     array (
       'externalDict' => 'http://gallica.bnf.fr/ark:/12148/bpt6k1200535k/f9.highres',
       'page' => '2561',
@@ -46,8 +46,8 @@ return array (
   ),
   5 => 
   array (
-    'word' => 'o',
-    'found' => 
+    'id' => 'o',
+    'result' => 
     array (
       'externalDict' => 'http://gallica.bnf.fr/ark:/12148/bpt6k1200551p/f9.highres',
       'page' => '3619',
@@ -57,8 +57,8 @@ return array (
   ),
   6 => 
   array (
-    'word' => 'psoas',
-    'found' => 
+    'id' => 'psoas',
+    'result' => 
     array (
       'externalDict' => 'http://gallica.bnf.fr/ark:/12148/bpt6k1200556r/f9.highres',
       'page' => '4649',
@@ -68,8 +68,8 @@ return array (
   ),
   7 => 
   array (
-    'word' => 'sus',
-    'found' => 
+    'id' => 'sus',
+    'result' => 
     array (
       'externalDict' => 'http://gallica.bnf.fr/ark:/12148/bpt6k12005590/f9.highres',
       'page' => '5769',

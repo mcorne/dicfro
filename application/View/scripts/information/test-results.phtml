@@ -15,7 +15,7 @@
 
 ?>
 
-<h1 class="title"><?=$this->translate('Dictionaries Page Test');?></h1>
+<h1 class="title"><?=$this->title;?></h1>
 
 <table class="test-result">
 
@@ -27,24 +27,26 @@
     <?php foreach($results['result'] as $index => $result):?>
 
       <td class="nowrap">
-        <?php if (count($results['result']) > 1):?>
-          <?=$results['name'];?> #<?=$index + 1;?>
-        <?php else:?>
           <?=$results['name'];?>
+      </td>
+
+      <td class="nowrap">
+        <?php if (count($results['result']) > 1):?>
+          #<?=$index;?>
         <?php endif;?>
       </td>
 
-      <td class="nowrap"><?=implode('/', $result['page']);?></td>
+      <td class="nowrap"><?=$result['id'];?></td>
 
       <?php if (! $result):?>
         <td class="orange nowrap">Not tested</td>
 
       <?php elseif (! isset($results['expected']) or ! isset($results['expected'][$index])):?>
         <td class="orange nowrap">Need validation!</td>
-        <td class="nowrap"><a href="javascript:hideOrDisplay('<?=$results['id'];?>-<?=$index;?>')">See details</a></td>
+        <td class="nowrap"><a href="javascript:hideOrDisplay('<?=$results['basename'];?>-<?=$index;?>')">See details</a></td>
         <td>
-          <span class="orange">Keep or remove tests/page/<?=$results['id'];?> accordingly</span>
-          <pre class="test-result" id="<?=$results['id'];?>-<?=$index;?>">
+          <span class="orange">Keep or remove <?=$this->testDirectory;?>/<?=$results['basename'];?>.php accordingly</span>
+          <pre class="test-result" id="<?=$results['basename'];?>-<?=$index;?>">
 Test result
 <?=preg_replace('~^Array\n\(\n(.+?)\n\)\n$~is', '$1', print_r($result, true));?>
           </pre>
@@ -52,9 +54,9 @@ Test result
 
       <?php elseif ($result == $results['expected'][$index]):?>
         <td class="green nowrap">Test OK</td>
-        <td class="nowrap"><a href="javascript:hideOrDisplay('<?=$results['id'];?>-<?=$index;?>')">See details</a></td>
+        <td class="nowrap"><a href="javascript:hideOrDisplay('<?=$results['basename'];?>-<?=$index;?>')">See details</a></td>
         <td>
-            <pre class="test-result" id="<?=$results['id'];?>-<?=$index;?>">
+            <pre class="test-result" id="<?=$results['basename'];?>-<?=$index;?>">
 Test result = Expected result
 <?=preg_replace('~^Array\n\(\n(.+?)\n\)\n$~is', '$1', print_r($result, true));?>
             </pre>
@@ -62,10 +64,10 @@ Test result = Expected result
 
       <?php else:?>
         <td class="nowrap red">Error!</td>
-        <td class="nowrap"><a href="javascript:hideOrDisplay('<?=$results['id'];?>-<?=$index;?>')">See details</a></td>
+        <td class="nowrap"><a href="javascript:hideOrDisplay('<?=$results['basename'];?>-<?=$index;?>')">See details</a></td>
         <td>
-          <span class="red">Fix or remove &quot;tests/page/<?=$results['id'];?>&quot; accordingly</span>
-          <pre class="test-result" id="<?=$results['id'];?>-<?=$index;?>">
+          <span class="red">Fix or remove <?=$this->testDirectory;?>/<?=$results['basename'];?>.php accordingly</span>
+          <pre class="test-result" id="<?=$results['basename'];?>-<?=$index;?>">
 Test result:
 <?=preg_replace('~^Array\n\(\n(.+?)\n\)\n$~is', '$1', print_r($result, true));?>
 

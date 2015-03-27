@@ -2,8 +2,8 @@
 return array (
   1 => 
   array (
-    'word' => 'Aalto',
-    'found' => 
+    'id' => 'Aalto',
+    'result' => 
     array (
       'externalDict' => 'http://gallica.bnf.fr/ark:/12148/bpt6k1200512k/f8.highres',
       'page' => '3',
@@ -156,8 +156,8 @@ return array (
   ),
   2 => 
   array (
-    'word' => 'Amiens',
-    'found' => 
+    'id' => 'Amiens',
+    'result' => 
     array (
       'externalDict' => 'http://gallica.bnf.fr/ark:/12148/bpt6k12005130/f2.highres',
       'page' => '539',
@@ -409,8 +409,8 @@ return array (
   ),
   3 => 
   array (
-    'word' => 'Australie',
-    'found' => 
+    'id' => 'Australie',
+    'result' => 
     array (
       'externalDict' => 'http://gallica.bnf.fr/ark:/12148/bpt6k1200514d/f2.highres',
       'page' => '1099',
@@ -662,8 +662,8 @@ return array (
   ),
   4 => 
   array (
-    'word' => 'Boudin',
-    'found' => 
+    'id' => 'Boudin',
+    'result' => 
     array (
       'externalDict' => 'http://gallica.bnf.fr/ark:/12148/bpt6k1200515t/f2.highres',
       'page' => '1681',
@@ -926,8 +926,8 @@ return array (
   ),
   5 => 
   array (
-    'word' => 'Cétacés',
-    'found' => 
+    'id' => 'Cétacés',
+    'result' => 
     array (
       'externalDict' => 'http://gallica.bnf.fr/ark:/12148/bpt6k12005167/f2.highres',
       'page' => '2253',
@@ -1179,8 +1179,8 @@ return array (
   ),
   6 => 
   array (
-    'word' => 'Compresseur',
-    'found' => 
+    'id' => 'Compresseur',
+    'result' => 
     array (
       'externalDict' => 'http://gallica.bnf.fr/ark:/12148/bpt6k1200517n/f2.highres',
       'page' => '2829',
@@ -1443,8 +1443,8 @@ return array (
   ),
   7 => 
   array (
-    'word' => 'Désinfection',
-    'found' => 
+    'id' => 'Désinfection',
+    'result' => 
     array (
       'externalDict' => 'http://gallica.bnf.fr/ark:/12148/bpt6k12005182/f2.highres',
       'page' => '3415',
@@ -1751,8 +1751,8 @@ return array (
   ),
   8 => 
   array (
-    'word' => 'Épilepsie',
-    'found' => 
+    'id' => 'Épilepsie',
+    'result' => 
     array (
       'externalDict' => 'http://gallica.bnf.fr/ark:/12148/bpt6k1200519g/f2.highres',
       'page' => '4005',
@@ -2004,8 +2004,8 @@ return array (
   ),
   9 => 
   array (
-    'word' => 'France',
-    'found' => 
+    'id' => 'France',
+    'result' => 
     array (
       'externalDict' => 'http://gallica.bnf.fr/ark:/12148/bpt6k12005204/f2.highres',
       'page' => '4571',
@@ -2257,8 +2257,8 @@ return array (
   ),
   10 => 
   array (
-    'word' => 'Guesde',
-    'found' => 
+    'id' => 'Guesde',
+    'result' => 
     array (
       'externalDict' => 'http://gallica.bnf.fr/ark:/12148/bpt6k1200521j/f2.highres',
       'page' => '5143',
@@ -2521,8 +2521,8 @@ return array (
   ),
   11 => 
   array (
-    'word' => 'Initiation',
-    'found' => 
+    'id' => 'Initiation',
+    'result' => 
     array (
       'externalDict' => 'http://gallica.bnf.fr/ark:/12148/bpt6k1200522z/f2.highres',
       'page' => '5723',
@@ -2785,8 +2785,8 @@ return array (
   ),
   12 => 
   array (
-    'word' => 'La Pérouse',
-    'found' => 
+    'id' => 'La Pérouse',
+    'result' => 
     array (
       'externalDict' => 'http://gallica.bnf.fr/ark:/12148/bpt6k1200523c/f2.highres',
       'page' => '6299',
@@ -3049,8 +3049,8 @@ return array (
   ),
   13 => 
   array (
-    'word' => 'Marconi',
-    'found' => 
+    'id' => 'Marconi',
+    'result' => 
     array (
       'externalDict' => 'http://gallica.bnf.fr/ark:/12148/bpt6k1200524s/f2.highres',
       'page' => '6871',
@@ -3324,8 +3324,8 @@ return array (
   ),
   14 => 
   array (
-    'word' => 'Moyen âge',
-    'found' => 
+    'id' => 'Moyen âge',
+    'result' => 
     array (
       'externalDict' => 'http://gallica.bnf.fr/ark:/12148/bpt6k12005256/f2.highres',
       'page' => '7445',
@@ -3588,8 +3588,8 @@ return array (
   ),
   15 => 
   array (
-    'word' => 'Ostrava',
-    'found' => 
+    'id' => 'Ostrava',
+    'result' => 
     array (
       'externalDict' => 'http://gallica.bnf.fr/ark:/12148/bpt6k1200526m/f2.highres',
       'page' => '8069',
@@ -3863,8 +3863,8 @@ return array (
   ),
   16 => 
   array (
-    'word' => 'Plomb',
-    'found' => 
+    'id' => 'Plomb',
+    'result' => 
     array (
       'externalDict' => 'http://gallica.bnf.fr/ark:/12148/bpt6k12005271/f2.highres',
       'page' => '8687',
@@ -4116,8 +4116,8 @@ return array (
   ),
   17 => 
   array (
-    'word' => 'Renan',
-    'found' => 
+    'id' => 'Renan',
+    'result' => 
     array (
       'externalDict' => 'http://gallica.bnf.fr/ark:/12148/bpt6k1200528f/f2.highres',
       'page' => '9337',
@@ -4380,8 +4380,8 @@ return array (
   ),
   18 => 
   array (
-    'word' => 'scintigraphie',
-    'found' => 
+    'id' => 'scintigraphie',
+    'result' => 
     array (
       'externalDict' => 'http://gallica.bnf.fr/ark:/12148/bpt6k1200529v/f5.highres',
       'page' => '9960',
@@ -4633,8 +4633,8 @@ return array (
   ),
   19 => 
   array (
-    'word' => 'Syndrome',
-    'found' => 
+    'id' => 'Syndrome',
+    'result' => 
     array (
       'externalDict' => 'http://gallica.bnf.fr/ark:/12148/bpt6k1200530h/f2.highres',
       'page' => '10583',
@@ -4930,8 +4930,8 @@ return array (
   ),
   20 => 
   array (
-    'word' => 'Tuyau',
-    'found' => 
+    'id' => 'Tuyau',
+    'result' => 
     array (
       'externalDict' => 'http://gallica.bnf.fr/ark:/12148/bpt6k1200531x/f2.highres',
       'page' => '11213',
