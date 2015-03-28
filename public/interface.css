@@ -8,7 +8,7 @@
 body
 {
     font-family: arial;
-    font-size: .8em;
+    font-size: .85em;
     margin: 1.3em 1.3em 0 1em;
 }
 
@@ -237,9 +237,9 @@ pre.debug-trace
     padding: .5em;
 }
 
-select.identified, select.ghostwords-tab, #content-tab, #errata-tab
+select.identified, select.ghostwords-tab, #content-tab, #errata-tab, #lexromd-help-tab
 {
-    margin-right: 1.5em;
+    margin-right: 1em;
 }
 
 select.dict
@@ -425,6 +425,7 @@ pre.test-result
 table.change-log
 {
     border-collapse: collapse;
+    margin-bottom: 1em;
 }
 
 table.change-log img
