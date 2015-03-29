@@ -118,7 +118,7 @@
   </div>
 <?php endif;?>
 
-<div id="debug">
+<div id="debug" style="display:none;">
   <?php if($this->actionTrace):?>
     <div class="debug-trace">Action Trace</div>
     <pre class="debug-trace"><?=preg_replace(['~^Array\s+\(\s~', '~\s+\)\s+$~'], '', print_r($this->actionTrace, true));?></pre>
