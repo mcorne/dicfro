@@ -118,11 +118,7 @@ class Controller_Interface
         $file = str_replace('_', '/', $class) . '.php';
         require_once $file;
 
-        return new $class(
-                $this->front->config['data-dir'],
-                $this->dictionary['search']['properties'],
-                $this->dictionary['query'],
-                $this->front->config['dictionary-dir']);
+        return new $class($this->dictionary['search']['properties'], $this->dictionary['query'], $this->front->config['dictionary-dir']);
     }
 
     /**

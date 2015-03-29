@@ -1,15 +1,9 @@
 <?php
-
 /**
  * Dicfro
  *
- * PHP 5
- *
- * @category   DicFro
- * @package    Model
- * @subpackage Parser
  * @author     Michel Corne <mcorne@yahoo.com>
- * @copyright  2008-2010 Michel Corne
+ * @copyright  2008-2015 Michel Corne
  * @license    http://opensource.org/licenses/gpl-3.0.html GNU GPL v3
  */
 
@@ -17,15 +11,7 @@ require_once 'Base/String.php';
 
 /**
  * Dictionary parser
- *
- * @category   DicFro
- * @package    Model
- * @subpackage Parser
- * @author     Michel Corne <mcorne@yahoo.com>
- * @copyright  2008-2010 Michel Corne
- * @license    http://opensource.org/licenses/gpl-3.0.html GNU GPL v3
  */
-
 abstract class Model_Parser
 {
 
@@ -129,7 +115,7 @@ abstract class Model_Parser
         $file = str_replace('_', '/', $class) . '.php';
         require_once $file;
 
-        $this->search = new $class($this->directory, $this->dictionaryConfig['search']['properties'], $this->dictionaryConfig['query']);
+        $this->search = new $class($this->dictionaryConfig['search']['properties'], $this->dictionaryConfig['query']);
     }
 
     /**

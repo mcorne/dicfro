@@ -1,42 +1,20 @@
 <?php
-
 /**
  * Dicfro
  *
- * PHP 5
- *
- * @category   DicFro
- * @package    Model
- * @subpackage Search
  * @author     Michel Corne <mcorne@yahoo.com>
  * @copyright  2008-2015 Michel Corne
  * @license    http://opensource.org/licenses/gpl-3.0.html GNU GPL v3
  */
 
 require_once 'Model/Search.php';
-// query classes are included as needed
 
 /**
- * Search an internal dictionary
- *
- * @category   DicFro
- * @package    Model
- * @subpackage Search
- * @author     Michel Corne <mcorne@yahoo.com>
- * @copyright  2008-2010 Michel Corne
- * @license    http://opensource.org/licenses/gpl-3.0.html GNU GPL v3
+ * Searches an internal dictionary
  */
-
 class Model_Search_Internal extends Model_Search
 {
-    /**
-     * Template to create an image number
-     */
     const BUILD_IMAGE_NUMBER_TPL = '%\'02s%s%\'04s';
-
-    /**
-     * Template to parse an image number
-     */
     const PARSE_IMAGE_NUMBER_TPL = '~(\d\d)(?:0|1)(\d\d\d\d)~i';
 
     /**
@@ -62,43 +40,12 @@ class Model_Search_Internal extends Model_Search
      * @var string
      */
     public $errataFiles;
-
-    /**
-     * Flag to search or not the text errata
-     * @var boolean
-     */
     public $needErrataText = false;
-
-    /**
-     * Flag to search or not the image errata
-     * @var boolean
-     */
     public $needErrataImages = false;
-
-    /**
-     * Flag to search or not the ghostwords
-     * @var boolean
-     */
     public $needGhostwords = false;
-
-    /**
-     * Flag to search or not words in the Tobler
-     * @var boolean
-     */
     public $needTobler = false;
-
-    /**
-     * Flag to search or not words in the Whitaker
-     * @var boolean
-     */
     public $needWhitaker = false;
-
-    /**
-     * Flag to search or not words in the Tcaf
-     * @var boolean
-     */
     public $needTcaf = false;
-
     public $queryClass = 'Model_Query_Internal';
 
     /**

@@ -2,12 +2,8 @@
 /**
  * Dicfro
  *
- * Dictionary parsing
- *
- * PHP 5
- *
  * @author    Michel Corne <mcorne@yahoo.com>
- * @copyright 2008-2012 Michel Corne
+ * @copyright 2008-2015 Michel Corne
  * @license   http://www.opensource.org/licenses/gpl-3.0.html GNU GPL v3
  */
 
@@ -49,7 +45,7 @@ if (! isset($dictionaryConfig['parser']['properties']['dictionary'])) {
 require $file;
 
 try {
-    $parser = new $class($config['data-dir'], $dictionaryConfig['parser']['properties'], $dictionaryConfig, $noExitOnError, $verbose);
+    $parser = new $class($dataDir, $dictionaryConfig['parser']['properties'], $dictionaryConfig, $noExitOnError, $verbose);
     $parser->create($lineStart, $lineCount);
 } catch (Exception $e) {
     die($e->getMessage());

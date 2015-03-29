@@ -12,13 +12,7 @@
  *
  * See Base_Application::run() that updates the configuration
  */
-
-$applicationDir = dirname(__FILE__); // global variable used by scripts
-
 return [
-    // data directory containing indexes and databases
-    'data-dir' => realpath("$applicationDir/data"),
-
     // default dictionary for each language
     'dictionary-defaults' => [
         'en' => 'century-dictionary',

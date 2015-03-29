@@ -2,24 +2,21 @@
 /**
  * Dicfro
  *
- * Dictionary parsing, search, and query common functions
- *
- * PHP 5
- *
  * @author    Michel Corne <mcorne@yahoo.com>
- * @copyright 2008-2012 Michel Corne
+ * @copyright 2008-2015 Michel Corne
  * @license   http://www.opensource.org/licenses/gpl-3.0.html GNU GPL v3
  */
 
-$config = require __DIR__ . '/../application/config.php';
-
-$dictionaries = glob("{$config['data-dir']}/*", GLOB_ONLYDIR);
+$dataDir = realpath(__DIR__ . "/../data");
+$dictionaries = glob("$dataDir/*", GLOB_ONLYDIR);
 $dictionaries = array_map('basename', $dictionaries);
 
 if (empty($dictionary) or ! in_array($dictionary, $dictionaries)) {
     die('you must choose a valid dictionary among: '. implode(', ', $dictionaries));
 }
 
+$applicationDir = __DIR__ . '/../application';
+$config = require __DIR__ . "$applicationDir/config.php";
 $dictionaryConfig = isset($config['dictionaries'][$dictionary]) ? $config['dictionaries'][$dictionary] : [];
 
 set_include_path($applicationDir);

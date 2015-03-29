@@ -18,12 +18,11 @@ abstract class Model_Search
     public $queryClass;
 
     /**
-     * @param string $directory
      * @param array $properties
      * @param array $query
      * @param string $dictionaryDir
      */
-    public function __construct($directory, $properties = null, $query = null, $dictionaryDir = null)
+    public function __construct($properties = null, $query = null, $dictionaryDir = null)
     {
         foreach((array) $properties as $property => $value) {
             $this->$property = $value;
