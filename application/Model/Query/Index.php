@@ -1,15 +1,9 @@
 <?php
-
 /**
  * Dicfro
  *
- * PHP 5
- *
- * @category   DicFro
- * @package    Model
- * @subpackage Query
  * @author     Michel Corne <mcorne@yahoo.com>
- * @copyright  2008-2014 Michel Corne
+ * @copyright  2008-2015 Michel Corne
  * @license    http://opensource.org/licenses/gpl-3.0.html GNU GPL v3
  */
 
@@ -18,16 +12,8 @@ require_once 'Model/Query.php';
 /**
  * Queries an indexed dictionary database
  *
- * @category   DicFro
- * @package    Model
- * @subpackage Query
- * @author     Michel Corne <mcorne@yahoo.com>
- * @copyright  2008-2010 Michel Corne
- * @license    http://opensource.org/licenses/gpl-3.0.html GNU GPL v3
+ * TODO: process volume for all, to use optionally depending if absolute page numbering (readonly volume)
  */
-
- // TODO: process volume for all, to use optionally depending if absolute page numbering (readonly volume)
-
 class Model_Query_Index extends Model_Query
 {
     /**

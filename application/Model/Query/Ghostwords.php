@@ -1,13 +1,7 @@
 <?php
-
 /**
  * Dicfro
  *
- * PHP 5
- *
- * @category   DicFro
- * @package    Model
- * @subpackage Query
  * @author     Michel Corne <mcorne@yahoo.com>
  * @copyright  2008-2010 Michel Corne
  * @license    http://opensource.org/licenses/gpl-3.0.html GNU GPL v3
@@ -17,27 +11,10 @@ require_once 'Model/Query.php';
 
 /**
  * Queries the ghostwords database
- *
- * @category   DicFro
- * @package    Model
- * @subpackage Query
- * @author     Michel Corne <mcorne@yahoo.com>
- * @copyright  2008-2010 Michel Corne
- * @license    http://opensource.org/licenses/gpl-3.0.html GNU GPL v3
  */
-
 class Model_Query_Ghostwords extends Model_Query
 {
-    /**
-     * Constructor
-     *
-     * @param  string $directory the dictionaries directory
-     * @return void
-     */
-    public function __construct($directory = '.')
-    {
-        parent::__construct($directory . '/ghostwords');
-    }
+    public $dictionaryId = 'ghostwords';
 
     /**
      * Search words between two words or from a word

@@ -598,7 +598,7 @@ class Controller_Interface
         }
 
         if (! isset($this->dictionary['query'])) {
-            $this->dictionary['query'] = [];
+            $this->dictionary['query'] = null;
         }
 
         if (isset($this->dictionary['volume'])) {
@@ -606,7 +606,7 @@ class Controller_Interface
         }
 
         if (! isset($this->dictionary['search'])) {
-            $this->dictionary['search'] = [];
+            $this->dictionary['search'] = null;
 
         } else if (is_string($this->dictionary['search'])) {
             if ($this->dictionary['type'] == 'internal') {

@@ -99,16 +99,7 @@ class Model_Search_Internal extends Model_Search
      */
     public $needTcaf = false;
 
-    public function __construct($directory, $properties, $query = [], $dictionaryDir = null)
-    {
-        if (! isset($query['class'])) {
-            $query['class'] = 'Model_Query_Internal';
-        }
-
-        parent::__construct($directory, $properties, $query, $dictionaryDir);
-
-        $this->directory = $directory;
-    }
+    public $queryClass = 'Model_Query_Internal';
 
     /**
      * Extracts the volume and page numbers from the image number
@@ -206,7 +197,7 @@ class Model_Search_Internal extends Model_Search
     public function searchGhostwords($foundWord, $nextWord)
     {
         require_once 'Model/Query/Ghostwords.php';
-        $query = new Model_Query_Ghostwords($this->directory);
+        $query = new Model_Query_Ghostwords();
 
         return $query->searchWords($foundWord['ascii'], $nextWord['ascii']);
     }
@@ -220,7 +211,7 @@ class Model_Search_Internal extends Model_Search
     public function searchTcaf($word)
     {
         require_once 'Model/Query/Tcaf.php';
-        $query = new Model_Query_Tcaf($this->directory);
+        $query = new Model_Query_Tcaf();
 
         return $query->searchVerbs($word);
     }
@@ -234,7 +225,7 @@ class Model_Search_Internal extends Model_Search
     public function searchTobler($word)
     {
         require_once 'Model/Query/Tobler.php';
-        $query = new Model_Query_Tobler($this->directory);
+        $query = new Model_Query_Tobler();
 
         return $query->searchWords($word);
     }
@@ -248,7 +239,7 @@ class Model_Search_Internal extends Model_Search
     public function searchWhitaker($word)
     {
         require_once 'Model/Query/Whitaker.php';
-        $query = new Model_Query_Whitaker($this->directory);
+        $query = new Model_Query_Whitaker();
 
         return $query->searchWords($word);
     }

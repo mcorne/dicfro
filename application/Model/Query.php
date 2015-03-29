@@ -1,15 +1,9 @@
 <?php
-
 /**
  * Dicfro
  *
- * PHP 5
- *
- * @category   DicFro
- * @package    Model
- * @subpackage Query
  * @author     Michel Corne <mcorne@yahoo.com>
- * @copyright  2008-2014 Michel Corne
+ * @copyright  2008-2015 Michel Corne
  * @license    http://opensource.org/licenses/gpl-3.0.html GNU GPL v3
  */
 
@@ -17,56 +11,36 @@ require_once 'Base/String.php';
 
 /**
  * Queries a dictionary database
- *
- * @category   DicFro
- * @package    Model
- * @subpackage Query
- * @author     Michel Corne <mcorne@yahoo.com>
- * @copyright  2008-2010 Michel Corne
- * @license    http://opensource.org/licenses/gpl-3.0.html GNU GPL v3
  */
-
 abstract class Model_Query
 {
-    /**
-     * Template of the dictionary database name
-     */
-    const DSN_TPL = 'sqlite:%s/dictionary.sqlite';
-
     static public $debug = false;
-
-    /**
-     * Name of the dictionary database
-     * @var string
-     */
-    public $dsn;
-
-    /**
-     * String object
-     * @var object
-     */
-    public $string;
-
+    public $dictionaryId;
+    public $string; // Base_String
     static public $trace = [];
 
     /**
-     * Constructor
-     *
-     * @param  string $directory the dictionaries directory
-     * @return void
+     * @param array $properties
+     * @param string $dictionaryId
      */
-    public function __construct($directory, $properties = [])
+    public function __construct($properties = null, $dictionaryId = null)
     {
+        if (! $dictionaryId) {
+            $dictionaryId = $this->dictionaryId;
+        }
+
+        $this->dsn = sprintf('sqlite:%s/../data/%s/dictionary.sqlite', __DIR__, $dictionaryId);
+
         foreach((array) $properties as $property => $value) {
             $this->$property = $value;
         }
 
-        // sets the dictionary database name
-        $this->dsn = $this->createDsn($directory);
-
         $this->string = new Base_String;
     }
 
+    /**
+     * @param array $result
+     */
     public function addDebugTrace($result)
     {
         $trace = debug_backtrace(0);
@@ -80,17 +54,6 @@ abstract class Model_Query
             'query'      => $query,
             'result'     => $result,
         ];
-    }
-
-    /**
-     * Creates the name of the dictionary database
-     *
-     * @param  string $directory the dictionaries directory
-     * @return string the name of the dictionary database
-     */
-    public function createDsn($directory)
-    {
-        return sprintf(self::DSN_TPL, $directory);
     }
 
     /**
@@ -147,6 +110,10 @@ abstract class Model_Query
         return $result;
     }
 
+    /**
+     * @param mixed $arg
+     * @return string
+     */
     public function formatArgument($arg)
     {
         $arg = $this->formatObject($arg);
@@ -159,6 +126,11 @@ abstract class Model_Query
         return $arg;
     }
 
+    /**
+     * @param aray $trace
+     * @return string
+     *
+     */
     public function formatCall($trace)
 {
         $args = array_map([$this, 'formatArgument'], $trace['args']);
@@ -173,6 +145,10 @@ abstract class Model_Query
         return $call;
     }
 
+    /**
+     * @param mixed $arg
+     * @return array|string
+     */
     public function formatObject($arg)
     {
         if (is_object($arg)) {

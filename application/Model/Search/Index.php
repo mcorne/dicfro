@@ -1,43 +1,27 @@
 <?php
-
 /**
  * Dicfro
  *
- * PHP 5
- *
- * @category   DicFro
- * @package    Model
- * @subpackage Search
  * @author     Michel Corne <mcorne@yahoo.com>
- * @copyright  2008-2010 Michel Corne
+ * @copyright  2008-2015 Michel Corne
  * @license    http://opensource.org/licenses/gpl-3.0.html GNU GPL v3
  */
 
 require_once 'Model/Search.php';
-// query classes are included as needed
 
 /**
- * Search an indexed dictionary
- *
- * @category   DicFro
- * @package    Model
- * @subpackage Search
- * @author     Michel Corne <mcorne@yahoo.com>
- * @copyright  2008-2013 Michel Corne
- * @license    http://opensource.org/licenses/gpl-3.0.html GNU GPL v3
+ * Searches an indexed dictionary
  */
-
 class Model_Search_Index extends Model_Search
 {
-    public function __construct($dataDir, $properties, $query = [], $dictionaryDir = null)
-    {
-        if (! isset($query['class'])) {
-            $query['class'] = 'Model_Query_Index';
-        }
+    public $queryClass = 'Model_Query_Index';
 
-        parent::__construct($dataDir, $properties, $query, $dictionaryDir);
-    }
-
+    /**
+     * @param string $name
+     * @param array $arguments
+     * @return array
+     * @throws Exception
+     */
     public function __call($name, $arguments)
     {
         if (! method_exists($this->query, $name)) {

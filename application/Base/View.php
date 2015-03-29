@@ -12,19 +12,8 @@
  */
 class Base_View
 {
-    /**
-     * @var string
-     */
     public $baseUrl;
-
-    /**
-     * @var array
-     */
     public $config;
-
-    /**
-     * @var string
-     */
     public $viewsDir;
 
     /**

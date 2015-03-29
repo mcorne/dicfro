@@ -1,73 +1,52 @@
 <?php
-
 /**
  * Dicfro
  *
- * PHP 5
- *
- * @category   DicFro
- * @package    Model
- * @subpackage Search
- * @author     Michel Corne <mcorne@yahoo.com>
- * @copyright  2008-2010 Michel Corne
- * @license    http://opensource.org/licenses/gpl-3.0.html GNU GPL v3
- */
-
-// the query class is included as needed
-
-/**
- * Search a dictionary
- *
- * @category   DicFro
- * @package    Model
- * @subpackage Search
  * @author     Michel Corne <mcorne@yahoo.com>
  * @copyright  2008-2015 Michel Corne
  * @license    http://opensource.org/licenses/gpl-3.0.html GNU GPL v3
  */
 
+/**
+ * Searches a dictionary
+ */
 abstract class Model_Search
 {
-    /**
-     * Name of the dictionary
-     * @var string
-     */
     public $dictionary;
-
-    /**
-     * Dictionary directory containting images (dictionary pages)
-     * @var string
-     */
     public $dictionaryDir;
+    public $query; // Model_Query
+    public $queryClass;
 
     /**
-     * Query object
-     * @var object
+     * @param string $directory
+     * @param array $properties
+     * @param array $query
+     * @param string $dictionaryDir
      */
-    public $query;
-
-    public function __construct($directory, $properties = [], $query = [], $dictionaryDir = null)
+    public function __construct($directory, $properties = null, $query = null, $dictionaryDir = null)
     {
-        foreach($properties as $property => $value) {
+        foreach((array) $properties as $property => $value) {
             $this->$property = $value;
         }
 
-        $this->dictionaryDir = $dictionaryDir;
-
-        if (isset($query['class'])) {
-            $class = $query['class'];
-            $file = str_replace('_', '/', $class) . '.php';
-            require_once $file;
-
-            $directory .= '/' . $this->dictionary;
-
-            if (isset($query['properties'])) {
-                $properties = $query['properties'];
-            } else {
-                $properties = [];
-            }
-
-            $this->query = new $class($directory, $properties);
+        if (is_array($query) or $this->queryClass) {
+            $this->createQuery($query);
         }
+
+        $this->dictionaryDir = $dictionaryDir;
+    }
+
+    /**
+     * @param mixed $query
+     */
+    public function createQuery($query)
+    {
+        $queryClass = isset($query['class']) ? $query['class'] : $this->queryClass;
+
+        $file = str_replace('_', '/', $queryClass) . '.php';
+        require_once $file;
+
+        $properties = isset($query['properties']) ? $query['properties'] : null;
+        $this->query = new $queryClass($properties, $this->dictionary);
     }
 }
