@@ -130,19 +130,19 @@ class Controller_Interface
      */
     public function dictionariesAvailabilityAction()
     {
-        $testCases = require $this->front->config['test-cases'];
+        $testCases = require __DIR__ . '/../test-cases.php';
         $dictionaries = [];
 
-        foreach($this->front->config['dictionaries'] as $id => $dictionary) {
-            if (isset($testCases[$id])) {
-                $dictionary += $testCases[$id];
+        foreach($this->front->config['dictionaries'] as $dictionaryId => $dictionary) {
+            if (isset($testCases[$dictionaryId])) {
+                $dictionary += $testCases[$dictionaryId];
             }
 
             if (! isset($dictionary['availability-test'])) {
                 $urls = null;
 
             } elseif ($dictionary['type'] == 'internal') {
-                $dictionaryUrl = isset($dictionary['url']) ? $dictionary['url'] : $id;
+                $dictionaryUrl = isset($dictionary['url']) ? $dictionary['url'] : $dictionaryId;
                 $urls = sprintf('http://www.micmap.org/dicfro/search/%s/%s', $dictionaryUrl, $dictionary['availability-test']);
 
             } elseif (! isset($dictionary['search'])) {
@@ -189,7 +189,8 @@ class Controller_Interface
      */
     public function dictionariesPageTestAction()
     {
-        $testCases = require $this->front->config['test-cases'];
+        $currentDictionary = $this->dictionary;
+        $testCases = require __DIR__ . '/../test-cases.php';
         $results = [];
 
         foreach($this->front->config['dictionaries'] as $dictionaryId => $dictionary) {
@@ -222,7 +223,7 @@ class Controller_Interface
                 }
             }
 
-            $filename = sprintf('%s/page/%s.php', $this->front->config['tests-dir'], $dictionaryId);
+            $filename = sprintf('%s/../tests/page/%s.php', __DIR__, $dictionaryId);
             $expected = $this->readExpectedTestResults($filename);
 
             if (! $expected and $result) {
@@ -237,6 +238,8 @@ class Controller_Interface
             ];
         }
 
+        $this->dictionary = $currentDictionary;
+
         $this->view->information = "information/test-results.phtml";
         $this->view->noImage = true;
         $this->view->results = $results;
@@ -249,7 +252,8 @@ class Controller_Interface
      */
     public function dictionariesSearchTestAction()
     {
-        $testCases = require $this->front->config['test-cases'];
+        $currentDictionary = $this->dictionary;
+        $testCases = require __DIR__ . '/../test-cases.php';
         $results = [];
 
         foreach($this->front->config['dictionaries'] as $dictionaryId => $dictionary) {
@@ -285,7 +289,7 @@ class Controller_Interface
                 }
             }
 
-            $filename = sprintf('%s/search/%s.php', $this->front->config['tests-dir'], $dictionaryId);
+            $filename = sprintf('%s/../tests/search/%s.php', __DIR__, $dictionaryId);
             $expected = $this->readExpectedTestResults($filename);
 
             if (! $expected and $result) {
@@ -299,6 +303,8 @@ class Controller_Interface
                 'result'   => $result,
             ];
         }
+
+        $this->dictionary = $currentDictionary;
 
         $this->view->information = "information/test-results.phtml";
         $this->view->noImage = true;
@@ -547,33 +553,33 @@ class Controller_Interface
     public function setDictionary()
     {
         // attempts to extract the dictionary from the url
-        $dictionary = array_shift($this->front->actionParams);
+        $dictionaryId = array_shift($this->front->actionParams);
 
-        if (empty($dictionary)) {
+        if (empty($dictionaryId)) {
             // attempts to extract the dictionary posted by a form, eg "options"
-            $dictionary = $this->front->getPost('dictionary');
+            $dictionaryId = $this->front->getPost('dictionary');
         }
 
-        if (empty($dictionary) and ! empty($this->front->params['default-dictionary'])) {
+        if (empty($dictionaryId) and ! empty($this->front->params['default-dictionary'])) {
             if ($this->front->params['default-dictionary'] == 'last-used-dictionary') {
-                $dictionary = $this->front->params['dictionary'];
+                $dictionaryId = $this->front->params['dictionary'];
             } else {
-                $dictionary = $this->front->params['default-dictionary'];
+                $dictionaryId = $this->front->params['default-dictionary'];
             }
         }
 
-        if (! empty($dictionary)) {
-            $dictionary = $this->validateDictionary($dictionary);
+        if (! empty($dictionaryId)) {
+            $dictionaryId = $this->validateDictionary($dictionaryId);
         }
 
-        if (empty($dictionary)) {
+        if (empty($dictionaryId)) {
             // invalid or missing dictionary, eg "home", defaults to the lagnauge default dictionary
-            $dictionary = $this->front->config['dictionary-defaults'][$this->view->language];
+            $dictionaryId = $this->front->config['dictionary-defaults'][$this->view->language];
         }
 
-        $this->setcookie('dictionary', $dictionary , 30);
-        $this->dictionary = $this->front->config['dictionaries'][$dictionary];
-        $this->setDictionaryDefaults($dictionary);
+        $this->setcookie('dictionary', $dictionaryId , 30);
+        $this->dictionary = $this->front->config['dictionaries'][$dictionaryId];
+        $this->setDictionaryDefaults($dictionaryId);
     }
 
     /**
@@ -582,9 +588,9 @@ class Controller_Interface
      * @return void
      * @see Model_Parser::setDictionary()
      */
-    public function setDictionaryDefaults($dictionary)
+    public function setDictionaryDefaults($dictionaryId)
     {
-        $this->dictionary['id'] = $dictionary;
+        $this->dictionary['id'] = $dictionaryId;
 
         if (! isset($this->dictionary['type'])) {
             // ghostwords for example is not meant to be called via HTTP
@@ -741,13 +747,13 @@ class Controller_Interface
     /**
      * Validates the dictionary
      *
-     * @param string $dictionary
+     * @param string $dictionaryId
      * @return string
      */
-    public function validateDictionary($dictionary)
+    public function validateDictionary($dictionaryId)
     {
         foreach($this->front->config['dictionaries'] as $id => $info) {
-            if ($id == $dictionary or isset($info['url']) and $info['url'] == $dictionary) {
+            if ($id == $dictionaryId or isset($info['url']) and $info['url'] == $dictionaryId) {
                 // the dictionary is found by its ID or URL
                 return $id;
             }

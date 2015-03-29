@@ -1,12 +1,7 @@
 <?php
-
 /**
  * Dicfro
  *
- * PHP 5
- *
- * @category  DicFro
- * @package   Config
  * @author    Michel Corne <mcorne@yahoo.com>
  * @copyright 2008-2015 Michel Corne
  * @license   http://opensource.org/licenses/gpl-3.0.html GNU GPL v3
@@ -15,7 +10,7 @@
 /**
  * Application configuration file
  *
- * IMPORTANT! keep "domain-subpath" and "dictionary-dir" in sync with .htaccess
+ * See Base_Application::run() that updates the configuration
  */
 
 $applicationDir = dirname(__FILE__); // global variable used by scripts
@@ -29,12 +24,6 @@ return [
         'en' => 'century-dictionary',
         'fr' => 'godefroy-dictionary',
     ],
-
-    // sets the dictionary directory containting images (dictionary pages)
-    // this MUST BE kept in sync with .htaccess dictionary rewrite rule
-    // eg "dicfro-dictionary/chretien/public/mImg/0000025.gif" in development
-    'dictionary-dir' => dirname(__FILE__) . '/../../dicfro-dictionary/%s/public',
-    // leave empty if dictionaries are in dicfro public/dictionary, eg "dictionary/chretien/mImg/0000025.gif" in production
 
     // dictionaries details
     'dictionaries' => [
@@ -819,13 +808,6 @@ return [
         ],
     ],
 
-    // sets the domain subpath
-    // this MUST BE kept in sync with .htaccess dictionary rewrite rule
-    // dicfro domain subpath autodetection, default is none
-    'domain-subpath' => (isset($_SERVER['REQUEST_URI']) and strpos($_SERVER['REQUEST_URI'], '/dicfro') === 0)? 'dicfro' : '',
-    // $domainSubpath = '';    // installation with no domain subpath, eg local installation
-    // $domainSubpath = 'xyz'; // installation with "xyz" domain subpath
-
     // dictionary groups, displayed as they are ordered below in the home page and select box
     'groups' => [
         [
@@ -888,16 +870,4 @@ return [
             'language' => 'la',
         ],
     ],
-
-    // test cases file name
-    'test-cases' => realpath("$applicationDir/test-cases.php"),
-
-    // test directory containing expected test results
-    'tests-dir' => realpath("$applicationDir/tests"),
-
-    // directory containing translations
-    'translations-dir' => realpath("$applicationDir/translations"),
-
-    // HTML content directory
-    'views-dir' => realpath("$applicationDir/View/scripts"),
 ];

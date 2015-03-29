@@ -1,32 +1,15 @@
 <?php
-
 /**
  * Dicfro
  *
- * PHP 5
- *
- * @category   DicFro
- * @package    View
- * @subpackage Helper
  * @author     Michel Corne <mcorne@yahoo.com>
- * @copyright  2008-2013 Michel Corne
+ * @copyright  2008-2015 Michel Corne
  * @license    http://opensource.org/licenses/gpl-3.0.html GNU GPL v3
  */
 
 require_once 'View/Helper/Base.php';
 
-/**
- * Links View Helper
- *
- * @category   DicFro
- * @package    View
- * @subpackage Helper
- * @author     Michel Corne <mcorne@yahoo.com>
- * @copyright  2008-2013 Michel Corne
- * @license    http://opensource.org/licenses/gpl-3.0.html GNU GPL v3
- */
-
-class View_Helper_Link extends View_Helper_Base
+class View_Helper_Links extends View_Helper_Base
 {
     /**
      * Links parameters

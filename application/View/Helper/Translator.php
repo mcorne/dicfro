@@ -1,30 +1,13 @@
 <?php
-
 /**
  * Dicfro
  *
- * PHP 5
- *
- * @category   DicFro
- * @package    View
- * @subpackage Helper
  * @author     Michel Corne <mcorne@yahoo.com>
- * @copyright  2008-2013 Michel Corne
+ * @copyright  2008-2015 Michel Corne
  * @license    http://opensource.org/licenses/gpl-3.0.html GNU GPL v3
  */
 
 require_once 'View/Helper/Base.php';
-
-/**
- * Translator View Helper
- *
- * @category   DicFro
- * @package    View
- * @subpackage Helper
- * @author     Michel Corne <mcorne@yahoo.com>
- * @copyright  2008-2013 Michel Corne
- * @license    http://opensource.org/licenses/gpl-3.0.html GNU GPL v3
- */
 
 class View_Helper_Translator extends View_Helper_Base
 {
@@ -40,7 +23,7 @@ class View_Helper_Translator extends View_Helper_Base
      */
     public function init()
     {
-        $file = sprintf('%s/%s.php', $this->view->config['translations-dir'], $this->view->language);
+        $file = sprintf('%s/../../translations/%s.php', __DIR__, $this->view->language);
 
         if (file_exists($file)) {
             $this->translation = require $file;
