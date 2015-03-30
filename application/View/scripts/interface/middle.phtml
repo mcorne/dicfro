@@ -1,18 +1,11 @@
 <?php
-
 /**
  * Dicfro
  *
- * PHP 5
- *
- * @category   DicFro
- * @package    View
- * @subpackage Scripts_Interface
  * @author     Michel Corne <mcorne@yahoo.com>
- * @copyright  2008-2010 Michel Corne
+ * @copyright  2008-2015 Michel Corne
  * @license    http://opensource.org/licenses/gpl-3.0.html GNU GPL v3
  */
-
 ?>
 
 <div id="middle">
@@ -31,7 +24,7 @@
   <?php if($this->introduction):?>
       <div class="page">
         <img class="picture" src="<?=$this->imagesHelper->getImageFile();?>" />
-        <h1 class="title"><?=$this->dictionariesHelper->getDescription();?></h1>
+        <h1 class="title"><?=$this->dictionariesHelper->getDictionaryDescription();?></h1>
         <?php include $this->viewsDir . '/' . $this->introduction;?>
       </div>
   <?php endif;?>

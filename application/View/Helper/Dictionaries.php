@@ -1,35 +1,18 @@
 <?php
-
 /**
  * Dicfro
  *
- * PHP 5
- *
- * @category   DicFro
- * @package    View
- * @subpackage Helper
  * @author     Michel Corne <mcorne@yahoo.com>
- * @copyright  2008-2013 Michel Corne
+ * @copyright  2008-2015 Michel Corne
  * @license    http://opensource.org/licenses/gpl-3.0.html GNU GPL v3
  */
 
 require_once 'View/Helper/Base.php';
 
-/**
- * Dictionaries View Helper
- *
- * @category   DicFro
- * @package    View
- * @subpackage Helper
- * @author     Michel Corne <mcorne@yahoo.com>
- * @copyright  2008-2013 Michel Corne
- * @license    http://opensource.org/licenses/gpl-3.0.html GNU GPL v3
- */
-
 class View_Helper_Dictionaries extends View_Helper_Base
 {
     /**
-     * Counts all dictionaries
+     * @return int
      */
     public function countDictionaries()
     {
@@ -37,7 +20,8 @@ class View_Helper_Dictionaries extends View_Helper_Base
     }
 
     /**
-     * Counts dictionaries by language
+     *
+     * @return int
      */
     public function countDictionariesByLanguage()
     {
@@ -52,7 +36,7 @@ class View_Helper_Dictionaries extends View_Helper_Base
     }
 
     /**
-     * Counts dictionaries by type
+     * @return int
      */
     public function countDictionariesByType()
     {
@@ -68,23 +52,23 @@ class View_Helper_Dictionaries extends View_Helper_Base
     }
 
     /**
-     * Returns the dictionary description
-     *
-     * @return mixed the dictionary description
+     * @return string
      */
-    public function getDescription()
+    public function getDictionaryDescription()
     {
-        return isset($this->view->dictionary['description']) ? $this->view->dictionary['description'] : '';
+        if (! isset($this->view->dictionary['description'])) {
+            return null;
+        }
+
+        return $this->view->dictionary['description'];
     }
 
     /**
-     * Returns the groups of dictionaries for use in a select box
-     *
      * @param string $selected
      * @param bool $english
-     * @return array the groups of dictionaries
+     * @return array
      */
-    public function getGroups($selected, $english = false)
+    public function groupDictionaries($selected, $english = false)
     {
         $dictionaries = $this->view->config['dictionaries'];
         $optgroups = [];
@@ -135,8 +119,6 @@ class View_Helper_Dictionaries extends View_Helper_Base
     }
 
     /**
-     * Returns the recently added dictionaries
-     *
      * @return array
      */
     public function getNewDictionaries()
@@ -158,9 +140,10 @@ class View_Helper_Dictionaries extends View_Helper_Base
                 }
 
                 $options[] = [
-                    'text'     => $dictionary['name'],
-                    'title'    => $dictionary['description'],
-                    'value'    => $value,
+                    'text'  => $dictionary['name'],
+                    'title' => $dictionary['description'],
+                    'type'  => $dictionary['type'],
+                    'value' => $value,
                 ];
             }
         }
@@ -169,12 +152,16 @@ class View_Helper_Dictionaries extends View_Helper_Base
     }
 
     /**
-     * Returns the page title
-     *
-     * @return string the page title
+     * @return string
      */
     public function getPageTitle()
     {
-        return isset($this->view->dictionary['title']) ? $this->view->dictionary['title'] : $this->view->dictionary['name'];
+        if (isset($this->view->dictionary['title'])) {
+            $pageTitle = $this->view->dictionary['title'];
+        } else {
+            $pageTitle = $this->view->dictionary['name'];
+        }
+
+        return $pageTitle;
     }
 }

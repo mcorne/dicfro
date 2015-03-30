@@ -20,7 +20,7 @@
 <!-- logo -->
 <span class="item">
 
-  <a class="logo" href="<?=$this->linksHelper->setHomeLink();?>">
+  <a class="logo" href="<?=$this->linksHelper->setLink('home', $this->dictionary['url']);?>">
     <span style="color:blue;font-size:120%;">d</span><span style="color:green;vertical-align:-20%;">i</span><span style="color:orange;">c</span><span style="color:red;font-size:120%;">f</span><span style="color:blue;">r</span><span style="color:green;vertical-align:20%;">o</span>
   </a>
 
@@ -48,9 +48,9 @@
 <span class="item" >
 
   <select class="dict" id="dictionary"
-          onchange="openDictionary('<?=$this->linksHelper->setDictionaryLink();?>')">
+          onchange="openDictionary('<?=$this->linksHelper->setLink($this->action, '%s', $this->word);?>')">
 
-    <?php foreach($this->dictionariesHelper->getGroups($this->dictionary['url']) as $optgroup) :?>
+    <?php foreach($this->dictionariesHelper->groupDictionaries($this->dictionary['url']) as $optgroup) :?>
       <optgroup label="<?=$optgroup['label'];?>">
 
         <?php foreach($optgroup['options'] as $option) :?>
@@ -78,10 +78,10 @@
 
   <img class="button" src="<?=$this->setLinkUrl('img/go-previous.png');?>"
        title="<?=$this->translate('Previous page');?>"
-       onclick="location.assign('<?=$this->linksHelper->setPreviousPageLink();?>');" />
+       onclick="location.assign('<?=$this->linksHelper->setLink('previous', $this->dictionary['url'], $this->page, $this->volume, $this->word);?>');" />
   <img class="button" src="<?=$this->setLinkUrl('img/go-next.png');?>"
        title="<?=$this->translate('Next page');?>"
-       onclick="location.assign('<?=$this->linksHelper->setNextPageLink();?>');" />
+       onclick="location.assign('<?=$this->linksHelper->setLink('next', $this->dictionary['url'], $this->page, $this->volume, $this->word);?>');" />
 
 </span>
 

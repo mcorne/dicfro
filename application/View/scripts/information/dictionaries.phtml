@@ -1,18 +1,11 @@
 <?php
-
 /**
  * Dicfro
  *
- * PHP 5
- *
- * @category   DicFro
- * @package    View
- * @subpackage Scripts_Information
  * @author     Michel Corne <mcorne@yahoo.com>
- * @copyright  2008-2013 Michel Corne
+ * @copyright  2008-2015 Michel Corne
  * @license    http://opensource.org/licenses/gpl-3.0.html GNU GPL v3
  */
-
 ?>
 
 <?php if ($this->englishDictList):?>
@@ -21,7 +14,7 @@
     Dictionary list with names translated in English
     (<?=$this->dictionariesHelper->countDictionaries();?>)
   </h1>
-  <a href="<?=$this->linksHelper->setDictionariesLink();?>"
+  <a href="<?=$this->linksHelper->setLink('dictionaries');?>"
    ><?=$this->translate('See the list with the original names of the dictionaries');?></a>
 
 <?php else:?>
@@ -30,13 +23,13 @@
     <?=$this->translate('Dictionary list', null, ! $this->englishDictList);?>
     (<?=$this->dictionariesHelper->countDictionaries();?>)
   </h1>
-  <a href="<?=$this->linksHelper->setDictlistLink();?>"
+  <a href="<?=$this->linksHelper->setLink('dictlist');?>"
    ><?=$this->translate('See the list with the dictionary names translated in English');?></a>
 
 <?php endif;?>
 
 <?php $count = $this->dictionariesHelper->countDictionariesByLanguage();
-      foreach($this->dictionariesHelper->getGroups($this->dictionary['id'], $this->englishDictList) as $optgroup) :?>
+      foreach($this->dictionariesHelper->groupDictionaries($this->dictionary['id'], $this->englishDictList) as $optgroup) :?>
   <p class="sub-title" title="<?=$optgroup['list-title'];?>">
     <?=$optgroup['label'];?>
     (<?=$count[ $optgroup['language'] ];?>)
@@ -48,7 +41,7 @@
       <li>
       <a class="link <?=$options['type'];?>"
          title ="<?=$options['list-title'];?>"
-         href="<?=$this->linksHelper->setLink(['introduction', $options['value']]);?>"><?=$options['title'];?></a>
+         href="<?=$this->linksHelper->setLink('introduction', $options['value']);?>"><?=$options['title'];?></a>
       </li>
 
     <?php endforeach;?>

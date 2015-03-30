@@ -1,15 +1,9 @@
 <?php
-
 /**
  * Dicfro
  *
- * PHP 5
- *
- * @category   DicFro
- * @package    View
- * @subpackage Scripts_Information
  * @author     Michel Corne <mcorne@yahoo.com>
- * @copyright  2008-2010 Michel Corne
+ * @copyright  2008-2015 Michel Corne
  * @license    http://opensource.org/licenses/gpl-3.0.html GNU GPL v3
  */
 ?>
@@ -122,7 +116,7 @@
                   <?=$this->translate('The dictionary used last');?>
           </option>
 
-          <?php foreach($this->dictionariesHelper->getGroups($selected) as $optgroup) :?>
+          <?php foreach($this->dictionariesHelper->groupDictionaries($selected) as $optgroup) :?>
             <optgroup label="<?=$optgroup['label'];?>">
 
               <?php foreach($optgroup['options'] as $option) :?>
