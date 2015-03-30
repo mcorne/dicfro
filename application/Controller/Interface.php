@@ -126,7 +126,7 @@ class Controller_Interface
      */
     public function dictionariesAvailabilityAction()
     {
-        $testCases = require __DIR__ . '/../test-cases.php';
+        $testCases = require __DIR__ . '/../tests/test-cases.php';
         $dictionaries = [];
 
         foreach($this->front->config['dictionaries'] as $dictionaryId => $dictionary) {
@@ -186,7 +186,7 @@ class Controller_Interface
     public function dictionariesPageTestAction()
     {
         $currentDictionary = $this->dictionary;
-        $testCases = require __DIR__ . '/../test-cases.php';
+        $testCases = require __DIR__ . '/../tests/test-cases.php';
         $results = [];
 
         foreach($this->front->config['dictionaries'] as $dictionaryId => $dictionary) {
@@ -219,7 +219,7 @@ class Controller_Interface
                 }
             }
 
-            $filename = sprintf('%s/../tests/page/%s.php', __DIR__, $dictionaryId);
+            $filename = sprintf('%s/../tests/expected-results/page/%s.php', __DIR__, $dictionaryId);
             $expected = $this->readExpectedTestResults($filename);
 
             if (! $expected and $result) {
@@ -249,7 +249,7 @@ class Controller_Interface
     public function dictionariesSearchTestAction()
     {
         $currentDictionary = $this->dictionary;
-        $testCases = require __DIR__ . '/../test-cases.php';
+        $testCases = require __DIR__ . '/../tests/test-cases.php';
         $results = [];
 
         foreach($this->front->config['dictionaries'] as $dictionaryId => $dictionary) {
@@ -285,7 +285,7 @@ class Controller_Interface
                 }
             }
 
-            $filename = sprintf('%s/../tests/search/%s.php', __DIR__, $dictionaryId);
+            $filename = sprintf('%s/../tests/expected-results/search/%s.php', __DIR__, $dictionaryId);
             $expected = $this->readExpectedTestResults($filename);
 
             if (! $expected and $result) {
