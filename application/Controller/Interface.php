@@ -1,12 +1,7 @@
 <?php
-
 /**
  * Dicfro
  *
- * PHP 5
- *
- * @category  DicFro
- * @package   Controller
  * @author    Michel Corne <mcorne@yahoo.com>
  * @copyright 2008-2015 Michel Corne
  * @license   http://opensource.org/licenses/gpl-3.0.html GNU GPL v3
@@ -16,18 +11,12 @@ require_once 'Base/View.php';
 require_once 'Controller/Front.php';
 require_once 'Model/Language.php';
 require_once 'Model/Query.php';
-// note: dictionary classes are included dynamically, see $dictionaries and createSearchObject()
 
 /**
  * Interface controller
  *
- * @category  DicFro
- * @package   Controller
- * @author    Michel Corne <mcorne@yahoo.com>
- * @copyright 2008-2013 Michel Corne
- * @license   http://opensource.org/licenses/gpl-3.0.html GNU GPL v3
+ * Note: dictionary classes are included dynamically, see $dictionaries and createSearchObject()
  */
-
 class Controller_Interface
 {
     /**
@@ -126,32 +115,28 @@ class Controller_Interface
      */
     public function dictionariesAvailabilityAction()
     {
-        $testCases = require __DIR__ . '/../tests/test-cases.php';
+        $testCases = require __DIR__ . '/../tests/cases/availability-tests.php';
         $dictionaries = [];
 
         foreach($this->front->config['dictionaries'] as $dictionaryId => $dictionary) {
-            if (isset($testCases[$dictionaryId])) {
-                $dictionary += $testCases[$dictionaryId];
-            }
-
-            if (! isset($dictionary['availability-test'])) {
+            if (! isset($testCases[$dictionaryId])) {
                 $urls = null;
 
             } elseif ($dictionary['type'] == 'internal') {
                 $dictionaryUrl = isset($dictionary['url']) ? $dictionary['url'] : $dictionaryId;
-                $urls = sprintf('http://www.micmap.org/dicfro/search/%s/%s', $dictionaryUrl, $dictionary['availability-test']);
+                $urls = sprintf('http://www.micmap.org/dicfro/search/%s/%s', $dictionaryUrl, $testCases[$dictionaryId]);
 
             } elseif (! isset($dictionary['search'])) {
                 $urls = null; // to process if there happens to be such a case one day
 
             } elseif (is_string($dictionary['search'])) {
-                $urls = $dictionary['search'] . $dictionary['availability-test'];
+                $urls = $dictionary['search'] . $testCases[$dictionaryId];
 
             } elseif (! isset($dictionary['search']['properties']['url'])) {
                 $urls = null; // to process if there happens to be such a case one day
 
             } elseif (is_string($dictionary['search']['properties']['url'])) {
-                $urls = $dictionary['search']['properties']['url'] . $dictionary['availability-test'];
+                $urls = $dictionary['search']['properties']['url'] . $testCases[$dictionaryId];
 
                 if (isset($dictionary['search']['properties']['suffix'])) {
                     $urls .= $dictionary['search']['properties']['suffix'];
@@ -161,8 +146,8 @@ class Controller_Interface
                 $urls = [];
 
                 foreach ($dictionary['search']['properties']['url'] as $index => $url) {
-                    if (isset($dictionary['availability-test'][$index])) {
-                        $urls[$index] = sprintf($url, $dictionary['availability-test'][$index]);
+                    if (isset($testCases[$dictionaryId][$index])) {
+                        $urls[$index] = sprintf($url, $testCases[$dictionaryId][$index]);
                     } else {
                         $urls[$index] = null;
                     }
@@ -186,7 +171,7 @@ class Controller_Interface
     public function dictionariesPageTestAction()
     {
         $currentDictionary = $this->dictionary;
-        $testCases = require __DIR__ . '/../tests/test-cases.php';
+        $testCases = require __DIR__ . '/../tests/cases/page-tests.php';
         $results = [];
 
         foreach($this->front->config['dictionaries'] as $dictionaryId => $dictionary) {
@@ -194,21 +179,17 @@ class Controller_Interface
                 continue;
             }
 
-            if (isset($testCases[$dictionaryId])) {
-                $dictionary += $testCases[$dictionaryId];
-            }
-
             $this->dictionary = $dictionary;
             $this->setDictionaryDefaults($dictionaryId);
             $search = $this->createSearchObject();
 
-            if (! isset($dictionary['page-test'])) {
+            if (! isset($testCases[$dictionaryId])) {
                 $result = null;
 
             } else {
                 $result = [];
 
-                foreach ($dictionary['page-test'] as $index => $page) {
+                foreach ($testCases[$dictionaryId] as $index => $page) {
                     $volume = isset($page['volume']) ? $page['volume'] : 0;
                     $method = $page['action'];
 
@@ -219,7 +200,7 @@ class Controller_Interface
                 }
             }
 
-            $filename = sprintf('%s/../tests/expected-results/page/%s.php', __DIR__, $dictionaryId);
+            $filename = sprintf('%s/../tests/results/page-tests/%s.php', __DIR__, $dictionaryId);
             $expected = $this->readExpectedTestResults($filename);
 
             if (! $expected and $result) {
@@ -249,7 +230,7 @@ class Controller_Interface
     public function dictionariesSearchTestAction()
     {
         $currentDictionary = $this->dictionary;
-        $testCases = require __DIR__ . '/../tests/test-cases.php';
+        $testCases = require __DIR__ . '/../tests/cases/search-tests.php';
         $results = [];
 
         foreach($this->front->config['dictionaries'] as $dictionaryId => $dictionary) {
@@ -257,27 +238,23 @@ class Controller_Interface
             $this->setDictionaryDefaults($dictionaryId);
             $search = $this->createSearchObject();
 
-            if (isset($testCases[$dictionaryId])) {
-                $dictionary += $testCases[$dictionaryId];
-            }
-
-            if (! isset($dictionary['search-test'])) {
+            if (! isset($testCases[$dictionaryId])) {
                 $result = null;
 
-            } elseif (is_string($dictionary['search-test'])) {
+            } elseif (is_string($testCases[$dictionaryId])) {
                 $result = [[
-                    'id'     => $dictionary['search-test'],
-                    'result' => $search->searchWord($dictionary['search-test']),
+                    'id'     => $testCases[$dictionaryId],
+                    'result' => $search->searchWord($testCases[$dictionaryId]),
                 ]];
 
             } else {
                 $result = [];
 
                 foreach (array_keys($dictionary['search']['properties']['url']) as $index) {
-                    if (isset($dictionary['search-test'][$index])) {
+                    if (isset($testCases[$dictionaryId][$index])) {
                         $result[$index] = [
-                            'id'     => $dictionary['search-test'][$index],
-                            'result' => $search->searchWord($dictionary['search-test'][$index]),
+                            'id'     => $testCases[$dictionaryId][$index],
+                            'result' => $search->searchWord($testCases[$dictionaryId][$index]),
                         ];
                     } else {
                         $result[$index] = null;
@@ -285,7 +262,7 @@ class Controller_Interface
                 }
             }
 
-            $filename = sprintf('%s/../tests/expected-results/search/%s.php', __DIR__, $dictionaryId);
+            $filename = sprintf('%s/../tests/results/search-tests/%s.php', __DIR__, $dictionaryId);
             $expected = $this->readExpectedTestResults($filename);
 
             if (! $expected and $result) {
