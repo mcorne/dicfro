@@ -1,8 +1,26 @@
 <?php
 return array (
+  0 => 
+  array (
+    'method' => 'goToPage',
+    'page' => 0,
+    'comment' => 0,
+    'result' => 
+    array (
+      'definition' => 'dictionary/couronnement-de-louis-glossary/mImg/0000173.gif',
+      'errataImages' => NULL,
+      'errataText' => NULL,
+      'ghostwords' => NULL,
+      'volume' => '',
+      'page' => 173,
+      'firstWord' => 'A',
+    ),
+  ),
   1 => 
   array (
-    'id' => 'goToPage/0',
+    'method' => 'goToPage',
+    'page' => 173,
+    'comment' => 173,
     'result' => 
     array (
       'definition' => 'dictionary/couronnement-de-louis-glossary/mImg/0000173.gif',
@@ -16,21 +34,9 @@ return array (
   ),
   2 => 
   array (
-    'id' => 'goToPage/173',
-    'result' => 
-    array (
-      'definition' => 'dictionary/couronnement-de-louis-glossary/mImg/0000173.gif',
-      'errataImages' => NULL,
-      'errataText' => NULL,
-      'ghostwords' => NULL,
-      'volume' => '',
-      'page' => 173,
-      'firstWord' => 'A',
-    ),
-  ),
-  3 => 
-  array (
-    'id' => 'goToPage/200',
+    'method' => 'goToPage',
+    'page' => 200,
+    'comment' => 200,
     'result' => 
     array (
       'definition' => 'dictionary/couronnement-de-louis-glossary/mImg/0000200.gif',
@@ -42,9 +48,27 @@ return array (
       'firstWord' => 'HALTE',
     ),
   ),
+  3 => 
+  array (
+    'method' => 'goToPage',
+    'page' => 224,
+    'comment' => 224,
+    'result' => 
+    array (
+      'definition' => 'dictionary/couronnement-de-louis-glossary/mImg/0000224.gif',
+      'errataImages' => NULL,
+      'errataText' => NULL,
+      'ghostwords' => NULL,
+      'volume' => '',
+      'page' => 224,
+      'firstWord' => 'VILMENT',
+    ),
+  ),
   4 => 
   array (
-    'id' => 'goToPage/224',
+    'method' => 'goToPage',
+    'page' => 10000,
+    'comment' => 10000,
     'result' => 
     array (
       'definition' => 'dictionary/couronnement-de-louis-glossary/mImg/0000224.gif',
@@ -58,21 +82,9 @@ return array (
   ),
   5 => 
   array (
-    'id' => 'goToPage/10000',
-    'result' => 
-    array (
-      'definition' => 'dictionary/couronnement-de-louis-glossary/mImg/0000224.gif',
-      'errataImages' => NULL,
-      'errataText' => NULL,
-      'ghostwords' => NULL,
-      'volume' => '',
-      'page' => 224,
-      'firstWord' => 'VILMENT',
-    ),
-  ),
-  6 => 
-  array (
-    'id' => 'goToNextPage/173',
+    'method' => 'goToNextPage',
+    'page' => 173,
+    'comment' => 173,
     'result' => 
     array (
       'definition' => 'dictionary/couronnement-de-louis-glossary/mImg/0000174.gif',
@@ -84,9 +96,11 @@ return array (
       'firstWord' => 'ACORCIÉ',
     ),
   ),
-  7 => 
+  6 => 
   array (
-    'id' => 'goToNextPage/224',
+    'method' => 'goToNextPage',
+    'page' => 224,
+    'comment' => 224,
     'result' => 
     array (
       'definition' => 'dictionary/couronnement-de-louis-glossary/mImg/0000224.gif',
@@ -98,9 +112,11 @@ return array (
       'firstWord' => 'VILMENT',
     ),
   ),
-  8 => 
+  7 => 
   array (
-    'id' => 'goToPreviousPage/173',
+    'method' => 'goToPreviousPage',
+    'page' => 173,
+    'comment' => 173,
     'result' => 
     array (
       'definition' => 'dictionary/couronnement-de-louis-glossary/mImg/0000173.gif',
@@ -112,9 +128,11 @@ return array (
       'firstWord' => 'A',
     ),
   ),
-  9 => 
+  8 => 
   array (
-    'id' => 'goToPreviousPage/224',
+    'method' => 'goToPreviousPage',
+    'page' => 224,
+    'comment' => 224,
     'result' => 
     array (
       'definition' => 'dictionary/couronnement-de-louis-glossary/mImg/0000223.gif',

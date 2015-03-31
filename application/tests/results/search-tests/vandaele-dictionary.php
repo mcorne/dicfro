@@ -2,7 +2,7 @@
 return array (
   0 => 
   array (
-    'id' => 'a',
+    'comment' => 'a',
     'result' => 
     array (
       'definition' => 'dictionary/vandaele-dictionary/mImg/0000009.gif',

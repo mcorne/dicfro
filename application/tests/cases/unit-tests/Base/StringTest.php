@@ -7,11 +7,12 @@
  * @license    http://opensource.org/licenses/gpl-3.0.html GNU GPL v3
  */
 
+require_once 'Base/String.php';
 require_once 'Model/UnitTest.php';
 
 class StringTest extends Model_UnitTest
 {
-    public $class = 'Base_Strings';
+    public $class = 'Base_String';
 
     public $testCases = [
         [
@@ -27,7 +28,7 @@ class StringTest extends Model_UnitTest
         [
             'method'  => 'internalToUtf8',
             'args'    => '0',
-            'comment' => 'iso to UTF8',
+            'comment' => 'ISO to UTF8',
         ],
         [
             'method'  => 'internalToUtf8',
@@ -37,22 +38,22 @@ class StringTest extends Model_UnitTest
         [
             'method'  => 'isDos',
             'args'    => ['win', 'cli'],
-            'comment' => 'dos shell lower',
+            'comment' => 'DOS shell lowercase',
         ],
         [
             'method'  => 'isDos',
             'args'    => ['WIN', 'CLI'],
-            'comment' => 'dos shell upper',
+            'comment' => 'DOS shell uppercase',
         ],
         [
             'method'  => 'isDos',
             'args'    => ['xyz', 'cli'],
-            'comment' => 'no dos shell #1',
+            'comment' => 'bad OS',
         ],
         [
             'method'  => 'isDos',
             'args'    => ['win', 'xyz'],
-            'comment' => 'no dos shell #2',
+            'comment' => 'bad SAPI',
         ],
         [
             'method'  => 'removeAccents',
@@ -107,12 +108,12 @@ class StringTest extends Model_UnitTest
         [
             'method'  => 'dash2CamelCase',
             'args'    => ['abc-def-ghi', false],
-            'comment' => 'no uc first',
+            'comment' => 'no UC first',
         ],
         [
             'method'  => 'dash2CamelCase',
             'args'    => ['abc-def-ghi', true],
-            'comment' => 'uc first',
+            'comment' => 'UC first',
         ],
     ];
 }

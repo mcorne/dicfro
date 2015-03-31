@@ -19,10 +19,6 @@ require_once 'Model/Query.php';
  */
 class Controller_Interface
 {
-    /**
-     * List of actions
-     * @var array
-     */
     public $actions = [
         'about'                     => 'information',
         'archives'                  => 'information',
@@ -37,31 +33,15 @@ class Controller_Interface
         'page'                      => true,
         'previous'                  => true,
         'search'                    => true,
+        'unit-test'                 => true,
     ];
 
-    /**
-     * Information on a dictionary
-     * @var array
-     */
     public $dictionary;
+    public $front; // Controller_Front
+    public $view; // Base_View
 
     /**
-     * Front controller
-     * @var object
-     */
-    public $front;
-
-    /**
-     * View object
-     * @var object
-     */
-    public $view;
-
-    /**
-     * Constructor
-     *
-     * @param  object $front the front controller
-     * @return void
+     * @param Controller_Front $front
      */
     public function __construct(Controller_Front $front)
     {
@@ -72,11 +52,8 @@ class Controller_Interface
     }
 
     /**
-     * Calls an action
-     *
-     * @param  string $action    the action name
-     * @param  array  $arguments the list of arguments
-     * @return void
+     * @param string $action
+     * @param array $arguments
      */
     public function __call($action, $arguments)
     {
@@ -91,9 +68,7 @@ class Controller_Interface
     }
 
     /**
-     * Creates the a dictionary search object
-     *
-     * @return object the dictionary search object
+     * @return Model_Search
      * @see Model_Parser::createSearchObject()
      */
     public function createSearchObject()
@@ -165,9 +140,6 @@ class Controller_Interface
         $this->view->noImage = true;
     }
 
-    /**
-     * Tests and validates dictionaries go to page
-     */
     public function dictionariesPageTestAction()
     {
         $currentDictionary = $this->dictionary;
@@ -189,14 +161,18 @@ class Controller_Interface
             } else {
                 $result = [];
 
-                foreach ($testCases[$dictionaryId] as $index => $page) {
-                    $volume = isset($page['volume']) ? $page['volume'] : 0;
-                    $method = $page['action'];
+                foreach ($testCases[$dictionaryId] as $testCase) {
+                    if (isset($testCase['volume'])) {
+                        $testCase['comment'] = sprintf('%s / %s', $testCase['page'], $testCase['volume']);
+                        $volume = $testCase['volume'];
+                    } else {
+                        $testCase['comment'] = $testCase['page'];
+                        $volume = 0;
+                    }
 
-                    $result[$index + 1] = [
-                        'id'     => implode('/', $page),
-                        'result' => $search->$method($volume, $page['page']),
-                    ];
+                    $method = $testCase['method'];
+                    $testCase['result'] = $search->$method($volume, $testCase['page']);
+                    $result[] = $testCase;
                 }
             }
 
@@ -220,13 +196,10 @@ class Controller_Interface
         $this->view->information = "information/test-results.phtml";
         $this->view->noImage = true;
         $this->view->results = $results;
-        $this->view->testDirectory = 'tests/page';
+        $this->view->testDirectory = 'tests/results/page-tests';
         $this->view->title = 'Dictionaries Page Test';
     }
 
-    /**
-     * Tests and validates dictionaries search
-     */
     public function dictionariesSearchTestAction()
     {
         $currentDictionary = $this->dictionary;
@@ -243,8 +216,8 @@ class Controller_Interface
 
             } elseif (is_string($testCases[$dictionaryId])) {
                 $result = [[
-                    'id'     => $testCases[$dictionaryId],
-                    'result' => $search->searchWord($testCases[$dictionaryId]),
+                    'comment' => $testCases[$dictionaryId],
+                    'result'  => $search->searchWord($testCases[$dictionaryId]),
                 ]];
 
             } else {
@@ -253,8 +226,8 @@ class Controller_Interface
                 foreach (array_keys($dictionary['search']['properties']['url']) as $index) {
                     if (isset($testCases[$dictionaryId][$index])) {
                         $result[$index] = [
-                            'id'     => $testCases[$dictionaryId][$index],
-                            'result' => $search->searchWord($testCases[$dictionaryId][$index]),
+                            'comment' => $testCases[$dictionaryId][$index],
+                            'result'  => $search->searchWord($testCases[$dictionaryId][$index]),
                         ];
                     } else {
                         $result[$index] = null;
@@ -282,12 +255,12 @@ class Controller_Interface
         $this->view->information = "information/test-results.phtml";
         $this->view->noImage = true;
         $this->view->results = $results;
-        $this->view->testDirectory = 'tests/search';
+        $this->view->testDirectory = 'tests/results/search-tests';
         $this->view->title = 'Dictionaries Search Test';
     }
 
     /**
-     * Processes the action to display the dictionary list English page
+     * Displays the dictionary list English page
      */
     public function dictlistAction()
     {
@@ -297,8 +270,6 @@ class Controller_Interface
 
     /**
      * Sets the view data after processing an action
-     *
-     * @return void
      */
     public function finish()
     {
@@ -319,9 +290,7 @@ class Controller_Interface
     }
 
     /**
-     * Processes the action to display a dictionary "introduction" page
-     *
-     * @return void
+     * Displays a dictionary "introduction" page
      */
     public function introductionAction()
     {
@@ -336,11 +305,6 @@ class Controller_Interface
         }
     }
 
-    /**
-     * Sets data before processing an action
-     *
-     * @return void
-     */
     public function init()
     {
         $this->setLanguage();
@@ -353,13 +317,11 @@ class Controller_Interface
 
     public function isIE()
     {
-	    return stripos($_SERVER['HTTP_USER_AGENT'], 'msie');
+        return stripos($_SERVER['HTTP_USER_AGENT'], 'msie');
     }
 
     /**
-     * Processes the "go to next page" action
-     *
-     * @return void
+     * Goes to the dictionary next page
      */
     public function nextAction()
     {
@@ -393,9 +355,7 @@ class Controller_Interface
     }
 
     /**
-     * Processes the "go to a page" action
-     *
-     * @return void
+     * Goes to the dictionary page
      */
     public function pageAction($action = 'goToPage')
     {
@@ -419,12 +379,7 @@ class Controller_Interface
     }
 
     /**
-     * Parses an action
-     *
-     * Note: the name of this method must not finish with "Action"
-     * so it is not mistaken with a proper action
-     *
-     * @return string the action parsed
+     * string type
      */
     public function parseActions()
     {
@@ -432,9 +387,7 @@ class Controller_Interface
     }
 
     /**
-     * Processes the "go to previous page" action
-     *
-     * @return void
+     * Goes to the dictionary previous page
      */
     public function previousAction()
     {
@@ -442,9 +395,8 @@ class Controller_Interface
     }
 
     /**
-     * Returns the content of a test file
-     *
-     * @return mixed
+     * @param string $filename
+     * @return array
      */
     public function readExpectedTestResults($filename)
     {
@@ -458,9 +410,7 @@ class Controller_Interface
     }
 
     /**
-     * Processes the "search for a word" action
-     *
-     * @return void
+     * Searches for a word" in the dictionary
      */
     public function searchAction()
     {
@@ -499,10 +449,9 @@ class Controller_Interface
     }
 
     /**
-     * Sets a cookie
      *
      * @param string $name
-     * @param mixed $value
+     * @param string|int $value
      * @param int $days
      */
     public function setcookie($name, $value, $days = 0)
@@ -518,11 +467,6 @@ class Controller_Interface
         }
     }
 
-    /**
-     * Validates and sets the dictionary
-     *
-     * @return void
-     */
     public function setDictionary()
     {
         // attempts to extract the dictionary from the url
@@ -555,12 +499,6 @@ class Controller_Interface
         $this->setDictionaryDefaults($dictionaryId);
     }
 
-    /**
-     * Sets the dictionary defaults
-     *
-     * @return void
-     * @see Model_Parser::setDictionary()
-     */
     public function setDictionaryDefaults($dictionaryId)
     {
         $this->dictionary['id'] = $dictionaryId;
@@ -606,9 +544,6 @@ class Controller_Interface
         }
     }
 
-    /**
-     * Sets the interface language
-     */
     public function setLanguage()
     {
         $language = new Language();
@@ -627,9 +562,6 @@ class Controller_Interface
         $this->setcookie('language', $this->view->language, 30);
     }
 
-    /**
-     * Sets last word in cookies
-     */
     public function setLastWordCookies()
     {
         // escapes cookie delimiters
@@ -645,11 +577,6 @@ class Controller_Interface
         $this->setcookie($cookie, $word);
     }
 
-    /**
-     * Validates and sets the entry hash
-     *
-     * @return void
-     */
     public function setEntryHash()
     {
         foreach($this->front->actionParams as $idx => $param) {
@@ -661,11 +588,6 @@ class Controller_Interface
         }
     }
 
-    /**
-     * Validates and sets the dictionary page
-     *
-     * @return void
-     */
     public function setPage()
     {
         foreach($this->front->actionParams as $idx => $param) {
@@ -678,11 +600,6 @@ class Controller_Interface
         }
     }
 
-    /**
-     * Validates and sets the dictionary volume
-     *
-     * @return void
-     */
     public function setVolume()
     {
         foreach($this->front->actionParams as $idx => $param) {
@@ -695,11 +612,6 @@ class Controller_Interface
         }
     }
 
-    /**
-     * Validates and sets the word to search for
-     *
-     * @return void
-     */
     public function setWord()
     {
         $word = '';
@@ -717,11 +629,45 @@ class Controller_Interface
         $this->view->word = strtr($word, '<>&"', '    ');
     }
 
+    public function unitTestsAction()
+    {
+        $testFilenames = array_merge(
+            glob(__DIR__ . '/../tests/cases/unit-tests/*.php'),
+            glob(__DIR__ . '/../tests/cases/unit-tests/*/*.php')
+        );
+
+        foreach ($testFilenames as $testFilename) {
+            require_once $testFilename;
+            $classname = basename($testFilename, '.php');
+            $unitTest = new $classname();
+            $result = $unitTest->run();
+
+            $resultsFilename = str_replace('/tests/cases/', '/tests/results/', $testFilename);
+            @mkdir(dirname($resultsFilename), 0777, true);
+            $expected = $this->readExpectedTestResults($resultsFilename);
+
+            if (! $expected and $result) {
+                $this->writeTestResult($resultsFilename, $result);
+            }
+
+            $results[] = [
+                'basename' => $classname,
+                'expected' => $expected,
+                'name'     => $classname,
+                'result'   => $result,
+            ];
+        }
+
+        $this->view->information = "information/test-results.phtml";
+        $this->view->noImage = true;
+        $this->view->results = $results;
+        $this->view->testDirectory = 'tests/unit-tests/...';
+        $this->view->title = 'Unit Tests';
+    }
+
     /**
-     * Validates the dictionary
-     *
      * @param string $dictionaryId
-     * @return string
+     * @return boolean
      */
     public function validateDictionary($dictionaryId)
     {
@@ -736,10 +682,8 @@ class Controller_Interface
     }
 
     /**
-     * Writes a test result in a file
-     *
      * @param string $filename
-     * @param mixed $result
+     * @param array $result
      * @throws Exception
      */
     public function writeTestResult($filename, $result)

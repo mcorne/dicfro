@@ -2,7 +2,7 @@
 return array (
   1 => 
   array (
-    'id' => 'a',
+    'comment' => 'a',
     'result' => 
     array (
       'externalDict' => 'http://gallica.bnf.fr/ark:/12148/bpt6k1200532b/f105.highres',
@@ -13,7 +13,7 @@ return array (
   ),
   2 => 
   array (
-    'id' => 'cirage',
+    'comment' => 'cirage',
     'result' => 
     array (
       'externalDict' => 'http://gallica.bnf.fr/ark:/12148/bpt6k1200533r/f9.highres',
@@ -24,7 +24,7 @@ return array (
   ),
   3 => 
   array (
-    'id' => 'ès',
+    'comment' => 'ès',
     'result' => 
     array (
       'externalDict' => 'http://gallica.bnf.fr/ark:/12148/bpt6k12005345/f9.highres',
@@ -35,7 +35,7 @@ return array (
   ),
   4 => 
   array (
-    'id' => 'indatable',
+    'comment' => 'indatable',
     'result' => 
     array (
       'externalDict' => 'http://gallica.bnf.fr/ark:/12148/bpt6k1200535k/f9.highres',
@@ -46,7 +46,7 @@ return array (
   ),
   5 => 
   array (
-    'id' => 'o',
+    'comment' => 'o',
     'result' => 
     array (
       'externalDict' => 'http://gallica.bnf.fr/ark:/12148/bpt6k1200551p/f9.highres',
@@ -57,7 +57,7 @@ return array (
   ),
   6 => 
   array (
-    'id' => 'psoas',
+    'comment' => 'psoas',
     'result' => 
     array (
       'externalDict' => 'http://gallica.bnf.fr/ark:/12148/bpt6k1200556r/f9.highres',
@@ -68,7 +68,7 @@ return array (
   ),
   7 => 
   array (
-    'id' => 'sus',
+    'comment' => 'sus',
     'result' => 
     array (
       'externalDict' => 'http://gallica.bnf.fr/ark:/12148/bpt6k12005590/f9.highres',

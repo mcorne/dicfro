@@ -2,7 +2,7 @@
 return array (
   0 => 
   array (
-    'id' => 'a',
+    'comment' => 'a',
     'result' => 
     array (
       'definition' => 'dictionary/chanson-de-roland-glossary/mImg/0000323.gif',

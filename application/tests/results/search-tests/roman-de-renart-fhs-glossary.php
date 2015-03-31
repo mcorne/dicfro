@@ -2,7 +2,7 @@
 return array (
   0 => 
   array (
-    'id' => 'a',
+    'comment' => 'a',
     'result' => 
     array (
       'definition' => 'dictionary/roman-de-renart-fhs-glossary/mImg/0000507.gif',

@@ -2,7 +2,7 @@
 return array (
   0 => 
   array (
-    'id' => 'a',
+    'comment' => 'a',
     'result' => 
     array (
       'definition' => 'dictionary/godefroy-lexicon/mImg/0000001.gif',

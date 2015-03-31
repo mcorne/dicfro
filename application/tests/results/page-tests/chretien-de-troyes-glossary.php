@@ -1,8 +1,26 @@
 <?php
 return array (
+  0 => 
+  array (
+    'method' => 'goToPage',
+    'page' => 0,
+    'comment' => 0,
+    'result' => 
+    array (
+      'definition' => 'dictionary/chretien-de-troyes-glossary/mImg/0000025.gif',
+      'errataImages' => NULL,
+      'errataText' => NULL,
+      'ghostwords' => NULL,
+      'volume' => '',
+      'page' => 25,
+      'firstWord' => 'A',
+    ),
+  ),
   1 => 
   array (
-    'id' => 'goToPage/0',
+    'method' => 'goToPage',
+    'page' => 25,
+    'comment' => 25,
     'result' => 
     array (
       'definition' => 'dictionary/chretien-de-troyes-glossary/mImg/0000025.gif',
@@ -16,21 +34,9 @@ return array (
   ),
   2 => 
   array (
-    'id' => 'goToPage/25',
-    'result' => 
-    array (
-      'definition' => 'dictionary/chretien-de-troyes-glossary/mImg/0000025.gif',
-      'errataImages' => NULL,
-      'errataText' => NULL,
-      'ghostwords' => NULL,
-      'volume' => '',
-      'page' => 25,
-      'firstWord' => 'A',
-    ),
-  ),
-  3 => 
-  array (
-    'id' => 'goToPage/100',
+    'method' => 'goToPage',
+    'page' => 100,
+    'comment' => 100,
     'result' => 
     array (
       'definition' => 'dictionary/chretien-de-troyes-glossary/mImg/0000100.gif',
@@ -42,9 +48,27 @@ return array (
       'firstWord' => 'DEBONEIRE',
     ),
   ),
+  3 => 
+  array (
+    'method' => 'goToPage',
+    'page' => 281,
+    'comment' => 281,
+    'result' => 
+    array (
+      'definition' => 'dictionary/chretien-de-troyes-glossary/mImg/0000281.gif',
+      'errataImages' => NULL,
+      'errataText' => NULL,
+      'ghostwords' => NULL,
+      'volume' => '',
+      'page' => 281,
+      'firstWord' => 'VOX',
+    ),
+  ),
   4 => 
   array (
-    'id' => 'goToPage/281',
+    'method' => 'goToPage',
+    'page' => 10000,
+    'comment' => 10000,
     'result' => 
     array (
       'definition' => 'dictionary/chretien-de-troyes-glossary/mImg/0000281.gif',
@@ -58,21 +82,9 @@ return array (
   ),
   5 => 
   array (
-    'id' => 'goToPage/10000',
-    'result' => 
-    array (
-      'definition' => 'dictionary/chretien-de-troyes-glossary/mImg/0000281.gif',
-      'errataImages' => NULL,
-      'errataText' => NULL,
-      'ghostwords' => NULL,
-      'volume' => '',
-      'page' => 281,
-      'firstWord' => 'VOX',
-    ),
-  ),
-  6 => 
-  array (
-    'id' => 'goToNextPage/25',
+    'method' => 'goToNextPage',
+    'page' => 25,
+    'comment' => 25,
     'result' => 
     array (
       'definition' => 'dictionary/chretien-de-troyes-glossary/mImg/0000026.gif',
@@ -84,9 +96,11 @@ return array (
       'firstWord' => 'AAGE',
     ),
   ),
-  7 => 
+  6 => 
   array (
-    'id' => 'goToNextPage/281',
+    'method' => 'goToNextPage',
+    'page' => 281,
+    'comment' => 281,
     'result' => 
     array (
       'definition' => 'dictionary/chretien-de-troyes-glossary/mImg/0000281.gif',
@@ -98,9 +112,11 @@ return array (
       'firstWord' => 'VOX',
     ),
   ),
-  8 => 
+  7 => 
   array (
-    'id' => 'goToPreviousPage/25',
+    'method' => 'goToPreviousPage',
+    'page' => 25,
+    'comment' => 25,
     'result' => 
     array (
       'definition' => 'dictionary/chretien-de-troyes-glossary/mImg/0000025.gif',
@@ -112,9 +128,11 @@ return array (
       'firstWord' => 'A',
     ),
   ),
-  9 => 
+  8 => 
   array (
-    'id' => 'goToPreviousPage/281',
+    'method' => 'goToPreviousPage',
+    'page' => 281,
+    'comment' => 281,
     'result' => 
     array (
       'definition' => 'dictionary/chretien-de-troyes-glossary/mImg/0000280.gif',

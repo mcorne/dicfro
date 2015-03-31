@@ -2,7 +2,7 @@
 return array (
   1 => 
   array (
-    'id' => 'Aalto',
+    'comment' => 'Aalto',
     'result' => 
     array (
       'externalDict' => 'http://gallica.bnf.fr/ark:/12148/bpt6k1200512k/f8.highres',
@@ -156,7 +156,7 @@ return array (
   ),
   2 => 
   array (
-    'id' => 'Amiens',
+    'comment' => 'Amiens',
     'result' => 
     array (
       'externalDict' => 'http://gallica.bnf.fr/ark:/12148/bpt6k12005130/f2.highres',
@@ -409,7 +409,7 @@ return array (
   ),
   3 => 
   array (
-    'id' => 'Australie',
+    'comment' => 'Australie',
     'result' => 
     array (
       'externalDict' => 'http://gallica.bnf.fr/ark:/12148/bpt6k1200514d/f2.highres',
@@ -662,7 +662,7 @@ return array (
   ),
   4 => 
   array (
-    'id' => 'Boudin',
+    'comment' => 'Boudin',
     'result' => 
     array (
       'externalDict' => 'http://gallica.bnf.fr/ark:/12148/bpt6k1200515t/f2.highres',
@@ -926,7 +926,7 @@ return array (
   ),
   5 => 
   array (
-    'id' => 'Cétacés',
+    'comment' => 'Cétacés',
     'result' => 
     array (
       'externalDict' => 'http://gallica.bnf.fr/ark:/12148/bpt6k12005167/f2.highres',
@@ -1179,7 +1179,7 @@ return array (
   ),
   6 => 
   array (
-    'id' => 'Compresseur',
+    'comment' => 'Compresseur',
     'result' => 
     array (
       'externalDict' => 'http://gallica.bnf.fr/ark:/12148/bpt6k1200517n/f2.highres',
@@ -1443,7 +1443,7 @@ return array (
   ),
   7 => 
   array (
-    'id' => 'Désinfection',
+    'comment' => 'Désinfection',
     'result' => 
     array (
       'externalDict' => 'http://gallica.bnf.fr/ark:/12148/bpt6k12005182/f2.highres',
@@ -1751,7 +1751,7 @@ return array (
   ),
   8 => 
   array (
-    'id' => 'Épilepsie',
+    'comment' => 'Épilepsie',
     'result' => 
     array (
       'externalDict' => 'http://gallica.bnf.fr/ark:/12148/bpt6k1200519g/f2.highres',
@@ -2004,7 +2004,7 @@ return array (
   ),
   9 => 
   array (
-    'id' => 'France',
+    'comment' => 'France',
     'result' => 
     array (
       'externalDict' => 'http://gallica.bnf.fr/ark:/12148/bpt6k12005204/f2.highres',
@@ -2257,7 +2257,7 @@ return array (
   ),
   10 => 
   array (
-    'id' => 'Guesde',
+    'comment' => 'Guesde',
     'result' => 
     array (
       'externalDict' => 'http://gallica.bnf.fr/ark:/12148/bpt6k1200521j/f2.highres',
@@ -2521,7 +2521,7 @@ return array (
   ),
   11 => 
   array (
-    'id' => 'Initiation',
+    'comment' => 'Initiation',
     'result' => 
     array (
       'externalDict' => 'http://gallica.bnf.fr/ark:/12148/bpt6k1200522z/f2.highres',
@@ -2785,7 +2785,7 @@ return array (
   ),
   12 => 
   array (
-    'id' => 'La Pérouse',
+    'comment' => 'La Pérouse',
     'result' => 
     array (
       'externalDict' => 'http://gallica.bnf.fr/ark:/12148/bpt6k1200523c/f2.highres',
@@ -3049,7 +3049,7 @@ return array (
   ),
   13 => 
   array (
-    'id' => 'Marconi',
+    'comment' => 'Marconi',
     'result' => 
     array (
       'externalDict' => 'http://gallica.bnf.fr/ark:/12148/bpt6k1200524s/f2.highres',
@@ -3324,7 +3324,7 @@ return array (
   ),
   14 => 
   array (
-    'id' => 'Moyen âge',
+    'comment' => 'Moyen âge',
     'result' => 
     array (
       'externalDict' => 'http://gallica.bnf.fr/ark:/12148/bpt6k12005256/f2.highres',
@@ -3588,7 +3588,7 @@ return array (
   ),
   15 => 
   array (
-    'id' => 'Ostrava',
+    'comment' => 'Ostrava',
     'result' => 
     array (
       'externalDict' => 'http://gallica.bnf.fr/ark:/12148/bpt6k1200526m/f2.highres',
@@ -3863,7 +3863,7 @@ return array (
   ),
   16 => 
   array (
-    'id' => 'Plomb',
+    'comment' => 'Plomb',
     'result' => 
     array (
       'externalDict' => 'http://gallica.bnf.fr/ark:/12148/bpt6k12005271/f2.highres',
@@ -4116,7 +4116,7 @@ return array (
   ),
   17 => 
   array (
-    'id' => 'Renan',
+    'comment' => 'Renan',
     'result' => 
     array (
       'externalDict' => 'http://gallica.bnf.fr/ark:/12148/bpt6k1200528f/f2.highres',
@@ -4380,7 +4380,7 @@ return array (
   ),
   18 => 
   array (
-    'id' => 'scintigraphie',
+    'comment' => 'scintigraphie',
     'result' => 
     array (
       'externalDict' => 'http://gallica.bnf.fr/ark:/12148/bpt6k1200529v/f5.highres',
@@ -4633,7 +4633,7 @@ return array (
   ),
   19 => 
   array (
-    'id' => 'Syndrome',
+    'comment' => 'Syndrome',
     'result' => 
     array (
       'externalDict' => 'http://gallica.bnf.fr/ark:/12148/bpt6k1200530h/f2.highres',
@@ -4930,7 +4930,7 @@ return array (
   ),
   20 => 
   array (
-    'id' => 'Tuyau',
+    'comment' => 'Tuyau',
     'result' => 
     array (
       'externalDict' => 'http://gallica.bnf.fr/ark:/12148/bpt6k1200531x/f2.highres',

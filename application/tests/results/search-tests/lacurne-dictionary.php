@@ -2,7 +2,7 @@
 return array (
   0 => 
   array (
-    'id' => 'a',
+    'comment' => 'a',
     'result' => 
     array (
       'definition' => 'dictionary/lacurne-dictionary/mImg/0100001.gif',

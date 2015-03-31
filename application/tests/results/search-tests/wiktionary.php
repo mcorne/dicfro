@@ -2,7 +2,7 @@
 return array (
   0 => 
   array (
-    'id' => 'avid',
+    'comment' => 'avid',
     'result' => 
     array (
       'externalDict' => 'http://en.wiktionary.org/wiki/avid',

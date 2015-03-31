@@ -1,8 +1,25 @@
 <?php
 return array (
+  0 => 
+  array (
+    'method' => 'goToPage',
+    'page' => 0,
+    'volume' => 1,
+    'comment' => '0 / 1',
+    'result' => 
+    array (
+      'externalDict' => 'https://ia801407.us.archive.org/BookReader/BookReaderImages.php?zip=/5/items/chamberssency01lond/chamberssency01lond_jp2.zip&file=chamberssency01lond_jp2/chamberssency01lond_0021.jp2&scale=3&rotate=0',
+      'page' => '9',
+      'volume' => '1',
+      'firstWord' => 'ABD',
+    ),
+  ),
   1 => 
   array (
-    'id' => 'goToPage/0/1',
+    'method' => 'goToPage',
+    'page' => 9,
+    'volume' => 1,
+    'comment' => '9 / 1',
     'result' => 
     array (
       'externalDict' => 'https://ia801407.us.archive.org/BookReader/BookReaderImages.php?zip=/5/items/chamberssency01lond/chamberssency01lond_jp2.zip&file=chamberssency01lond_jp2/chamberssency01lond_0021.jp2&scale=3&rotate=0',
@@ -13,18 +30,10 @@ return array (
   ),
   2 => 
   array (
-    'id' => 'goToPage/9/1',
-    'result' => 
-    array (
-      'externalDict' => 'https://ia801407.us.archive.org/BookReader/BookReaderImages.php?zip=/5/items/chamberssency01lond/chamberssency01lond_jp2.zip&file=chamberssency01lond_jp2/chamberssency01lond_0021.jp2&scale=3&rotate=0',
-      'page' => '9',
-      'volume' => '1',
-      'firstWord' => 'ABD',
-    ),
-  ),
-  3 => 
-  array (
-    'id' => 'goToPage/105/1',
+    'method' => 'goToPage',
+    'page' => 105,
+    'volume' => 1,
+    'comment' => '105 / 1',
     'result' => 
     array (
       'externalDict' => 'https://ia801407.us.archive.org/BookReader/BookReaderImages.php?zip=/5/items/chamberssency01lond/chamberssency01lond_jp2.zip&file=chamberssency01lond_jp2/chamberssency01lond_0121.jp2&scale=3&rotate=0',
@@ -33,9 +42,12 @@ return array (
       'firstWord' => 'AGRIGENTUM',
     ),
   ),
-  4 => 
+  3 => 
   array (
-    'id' => 'goToPage/824/1',
+    'method' => 'goToPage',
+    'page' => 824,
+    'volume' => 1,
+    'comment' => '824 / 1',
     'result' => 
     array (
       'externalDict' => 'https://ia801407.us.archive.org/BookReader/BookReaderImages.php?zip=/5/items/chamberssency01lond/chamberssency01lond_jp2.zip&file=chamberssency01lond_jp2/chamberssency01lond_0860.jp2&scale=3&rotate=0',
@@ -44,9 +56,12 @@ return array (
       'firstWord' => 'BEAUCLERK',
     ),
   ),
-  5 => 
+  4 => 
   array (
-    'id' => 'goToPage/10000/1',
+    'method' => 'goToPage',
+    'page' => 10000,
+    'volume' => 1,
+    'comment' => '10000 / 1',
     'result' => 
     array (
       'externalDict' => 'https://ia601405.us.archive.org/BookReader/BookReaderImages.php?zip=/21/items/chamberssency02lond/chamberssency02lond_jp2.zip&file=chamberssency02lond_jp2/chamberssency02lond_0009.jp2&scale=3&rotate=0',
@@ -55,9 +70,12 @@ return array (
       'firstWord' => 'BEAUGENCY',
     ),
   ),
-  6 => 
+  5 => 
   array (
-    'id' => 'goToNextPage/9/1',
+    'method' => 'goToNextPage',
+    'page' => 9,
+    'volume' => 1,
+    'comment' => '9 / 1',
     'result' => 
     array (
       'externalDict' => 'https://ia801407.us.archive.org/BookReader/BookReaderImages.php?zip=/5/items/chamberssency01lond/chamberssency01lond_jp2.zip&file=chamberssency01lond_jp2/chamberssency01lond_0022.jp2&scale=3&rotate=0',
@@ -66,9 +84,12 @@ return array (
       'firstWord' => 'ABDOMEN',
     ),
   ),
-  7 => 
+  6 => 
   array (
-    'id' => 'goToNextPage/824/1',
+    'method' => 'goToNextPage',
+    'page' => 824,
+    'volume' => 1,
+    'comment' => '824 / 1',
     'result' => 
     array (
       'externalDict' => 'https://ia601405.us.archive.org/BookReader/BookReaderImages.php?zip=/21/items/chamberssency02lond/chamberssency02lond_jp2.zip&file=chamberssency02lond_jp2/chamberssency02lond_0009.jp2&scale=3&rotate=0',
@@ -77,9 +98,12 @@ return array (
       'firstWord' => 'BEAUGENCY',
     ),
   ),
-  8 => 
+  7 => 
   array (
-    'id' => 'goToPreviousPage/9/1',
+    'method' => 'goToPreviousPage',
+    'page' => 9,
+    'volume' => 1,
+    'comment' => '9 / 1',
     'result' => 
     array (
       'externalDict' => 'https://ia801407.us.archive.org/BookReader/BookReaderImages.php?zip=/5/items/chamberssency01lond/chamberssency01lond_jp2.zip&file=chamberssency01lond_jp2/chamberssency01lond_0021.jp2&scale=3&rotate=0',
@@ -88,9 +112,12 @@ return array (
       'firstWord' => 'ABD',
     ),
   ),
-  9 => 
+  8 => 
   array (
-    'id' => 'goToPreviousPage/824/1',
+    'method' => 'goToPreviousPage',
+    'page' => 824,
+    'volume' => 1,
+    'comment' => '824 / 1',
     'result' => 
     array (
       'externalDict' => 'https://ia801407.us.archive.org/BookReader/BookReaderImages.php?zip=/5/items/chamberssency01lond/chamberssency01lond_jp2.zip&file=chamberssency01lond_jp2/chamberssency01lond_0859.jp2&scale=3&rotate=0',
@@ -99,9 +126,12 @@ return array (
       'firstWord' => 'BEATON',
     ),
   ),
-  10 => 
+  9 => 
   array (
-    'id' => 'goToPage/1/2',
+    'method' => 'goToPage',
+    'page' => 1,
+    'volume' => 2,
+    'comment' => '1 / 2',
     'result' => 
     array (
       'externalDict' => 'https://ia601405.us.archive.org/BookReader/BookReaderImages.php?zip=/21/items/chamberssency02lond/chamberssency02lond_jp2.zip&file=chamberssency02lond_jp2/chamberssency02lond_0009.jp2&scale=3&rotate=0',
@@ -110,9 +140,12 @@ return array (
       'firstWord' => 'BEAUGENCY',
     ),
   ),
-  11 => 
+  10 => 
   array (
-    'id' => 'goToPage/100/2',
+    'method' => 'goToPage',
+    'page' => 100,
+    'volume' => 2,
+    'comment' => '100 / 2',
     'result' => 
     array (
       'externalDict' => 'https://ia601405.us.archive.org/BookReader/BookReaderImages.php?zip=/21/items/chamberssency02lond/chamberssency02lond_jp2.zip&file=chamberssency02lond_jp2/chamberssency02lond_0112.jp2&scale=3&rotate=0',
@@ -121,9 +154,26 @@ return array (
       'firstWord' => 'BERNAYS',
     ),
   ),
+  11 => 
+  array (
+    'method' => 'goToPage',
+    'page' => 828,
+    'volume' => 2,
+    'comment' => '828 / 2',
+    'result' => 
+    array (
+      'externalDict' => 'https://ia601405.us.archive.org/BookReader/BookReaderImages.php?zip=/21/items/chamberssency02lond/chamberssency02lond_jp2.zip&file=chamberssency02lond_jp2/chamberssency02lond_0848.jp2&scale=3&rotate=0',
+      'page' => '828',
+      'volume' => '2',
+      'firstWord' => '',
+    ),
+  ),
   12 => 
   array (
-    'id' => 'goToPage/828/2',
+    'method' => 'goToPage',
+    'page' => 10000,
+    'volume' => 2,
+    'comment' => '10000 / 2',
     'result' => 
     array (
       'externalDict' => 'https://ia601405.us.archive.org/BookReader/BookReaderImages.php?zip=/21/items/chamberssency02lond/chamberssency02lond_jp2.zip&file=chamberssency02lond_jp2/chamberssency02lond_0848.jp2&scale=3&rotate=0',
@@ -134,18 +184,10 @@ return array (
   ),
   13 => 
   array (
-    'id' => 'goToPage/10000/2',
-    'result' => 
-    array (
-      'externalDict' => 'https://ia601405.us.archive.org/BookReader/BookReaderImages.php?zip=/21/items/chamberssency02lond/chamberssency02lond_jp2.zip&file=chamberssency02lond_jp2/chamberssency02lond_0848.jp2&scale=3&rotate=0',
-      'page' => '828',
-      'volume' => '2',
-      'firstWord' => '',
-    ),
-  ),
-  14 => 
-  array (
-    'id' => 'goToNextPage/1/2',
+    'method' => 'goToNextPage',
+    'page' => 1,
+    'volume' => 2,
+    'comment' => '1 / 2',
     'result' => 
     array (
       'externalDict' => 'https://ia601405.us.archive.org/BookReader/BookReaderImages.php?zip=/21/items/chamberssency02lond/chamberssency02lond_jp2.zip&file=chamberssency02lond_jp2/chamberssency02lond_0010.jp2&scale=3&rotate=0',
@@ -154,9 +196,12 @@ return array (
       'firstWord' => 'BEAUJOLAIS',
     ),
   ),
-  15 => 
+  14 => 
   array (
-    'id' => 'goToNextPage/828/2',
+    'method' => 'goToNextPage',
+    'page' => 828,
+    'volume' => 2,
+    'comment' => '828 / 2',
     'result' => 
     array (
       'externalDict' => 'https://ia601405.us.archive.org/BookReader/BookReaderImages.php?zip=/21/items/chamberssency02lond/chamberssency02lond_jp2.zip&file=chamberssency02lond_jp2/chamberssency02lond_0848.jp2&scale=3&rotate=0',
@@ -165,9 +210,12 @@ return array (
       'firstWord' => '',
     ),
   ),
-  16 => 
+  15 => 
   array (
-    'id' => 'goToPreviousPage/1/2',
+    'method' => 'goToPreviousPage',
+    'page' => 1,
+    'volume' => 2,
+    'comment' => '1 / 2',
     'result' => 
     array (
       'externalDict' => 'https://ia801407.us.archive.org/BookReader/BookReaderImages.php?zip=/5/items/chamberssency01lond/chamberssency01lond_jp2.zip&file=chamberssency01lond_jp2/chamberssency01lond_0860.jp2&scale=3&rotate=0',
@@ -176,9 +224,12 @@ return array (
       'firstWord' => 'BEAUCLERK',
     ),
   ),
-  17 => 
+  16 => 
   array (
-    'id' => 'goToPreviousPage/828/2',
+    'method' => 'goToPreviousPage',
+    'page' => 828,
+    'volume' => 2,
+    'comment' => '828 / 2',
     'result' => 
     array (
       'externalDict' => 'https://ia601405.us.archive.org/BookReader/BookReaderImages.php?zip=/21/items/chamberssency02lond/chamberssency02lond_jp2.zip&file=chamberssency02lond_jp2/chamberssency02lond_0847.jp2&scale=3&rotate=0',

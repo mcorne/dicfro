@@ -36,7 +36,15 @@
         <?php endif;?>
       </td>
 
-      <td class="nowrap"><?=$result['id'];?></td>
+      <?php if (isset($result['method'])): ?>
+        <td class="nowrap"><?=$result['method'];?></td>
+      <?php endif;?>
+
+      <?php if (isset($result['comment'])): ?>
+        <td class="nowrap"><?=$result['comment'];?></td>
+      <?php else:?>
+        <td></td>
+      <?php endif;?>
 
       <?php if (! $result):?>
         <td class="orange nowrap">Not tested</td>

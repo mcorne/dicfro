@@ -2,7 +2,7 @@
 return array (
   0 => 
   array (
-    'id' => 'pris',
+    'comment' => 'pris',
     'result' => 
     array (
       'tcaf' => 

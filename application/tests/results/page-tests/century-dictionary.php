@@ -1,9 +1,11 @@
 <?php
 return array (
-  1 =>
+  0 => 
   array (
-    'id' =>'goToPage/0',
-    'result' =>
+    'method' => 'goToPage',
+    'page' => 0,
+    'comment' => 0,
+    'result' => 
     array (
       'externalDict' => 'http://ia601409.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/centurydict01whit/centurydict01whit_jp2.zip&file=centurydict01whit_jp2/centurydict01whit_0027.jp2&scale=3&rotate=0',
       'page' => '1',
@@ -11,10 +13,12 @@ return array (
       'firstWord' => 'A',
     ),
   ),
-  2 =>
+  1 => 
   array (
-    'id' => 'goToPage/1',
-    'result' =>
+    'method' => 'goToPage',
+    'page' => 1,
+    'comment' => 1,
+    'result' => 
     array (
       'externalDict' => 'http://ia601409.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/centurydict01whit/centurydict01whit_jp2.zip&file=centurydict01whit_jp2/centurydict01whit_0027.jp2&scale=3&rotate=0',
       'page' => '1',
@@ -22,10 +26,12 @@ return array (
       'firstWord' => 'A',
     ),
   ),
-  3 =>
+  2 => 
   array (
-    'id' => 'goToPage/1000',
-    'result' =>
+    'method' => 'goToPage',
+    'page' => 1000,
+    'comment' => 1000,
+    'result' => 
     array (
       'externalDict' => 'http://ia700400.us.archive.org/BookReader/BookReaderImages.php?zip=/1/items/cu31924091890594/cu31924091890594_jp2.zip&file=cu31924091890594_jp2/cu31924091890594_0131.jp2&scale=3&rotate=0',
       'page' => '1000',
@@ -33,10 +39,12 @@ return array (
       'firstWord' => 'Cidaris',
     ),
   ),
-  4 =>
+  3 => 
   array (
-    'id' =>  'goToPage/7046',
-    'result' =>
+    'method' => 'goToPage',
+    'page' => 7046,
+    'comment' => 7046,
+    'result' => 
     array (
       'externalDict' => 'http://ia600407.us.archive.org/BookReader/BookReaderImages.php?zip=/17/items/cu31924091890651/cu31924091890651_jp2.zip&file=cu31924091890651_jp2/cu31924091890651_0849.jp2&scale=3&rotate=0',
       'page' => '7046',
@@ -44,10 +52,12 @@ return array (
       'firstWord' => 'zygosphene',
     ),
   ),
-  5 =>
+  4 => 
   array (
-    'id' => 'goToPage/10000',
-    'result' =>
+    'method' => 'goToPage',
+    'page' => 10000,
+    'comment' => 10000,
+    'result' => 
     array (
       'externalDict' => 'http://ia600407.us.archive.org/BookReader/BookReaderImages.php?zip=/17/items/cu31924091890651/cu31924091890651_jp2.zip&file=cu31924091890651_jp2/cu31924091890651_0849.jp2&scale=3&rotate=0',
       'page' => '7046',
@@ -55,10 +65,12 @@ return array (
       'firstWord' => 'zygosphene',
     ),
   ),
-  6 =>
+  5 => 
   array (
-    'id' => 'goToNextPage/1',
-    'result' =>
+    'method' => 'goToNextPage',
+    'page' => 1,
+    'comment' => 1,
+    'result' => 
     array (
       'externalDict' => 'http://ia601409.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/centurydict01whit/centurydict01whit_jp2.zip&file=centurydict01whit_jp2/centurydict01whit_0028.jp2&scale=3&rotate=0',
       'page' => '2',
@@ -66,10 +78,12 @@ return array (
       'firstWord' => 'a',
     ),
   ),
-  7 =>
+  6 => 
   array (
-    'id' => 'goToNextPage/7046',
-    'result' =>
+    'method' => 'goToNextPage',
+    'page' => 7046,
+    'comment' => 7046,
+    'result' => 
     array (
       'externalDict' => 'http://ia600407.us.archive.org/BookReader/BookReaderImages.php?zip=/17/items/cu31924091890651/cu31924091890651_jp2.zip&file=cu31924091890651_jp2/cu31924091890651_0849.jp2&scale=3&rotate=0',
       'page' => '7046',
@@ -77,10 +91,12 @@ return array (
       'firstWord' => 'zygosphene',
     ),
   ),
-  8 =>
+  7 => 
   array (
-    'id' => 'goToPreviousPage/1',
-    'result' =>
+    'method' => 'goToPreviousPage',
+    'page' => 1,
+    'comment' => 1,
+    'result' => 
     array (
       'externalDict' => 'http://ia601409.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/centurydict01whit/centurydict01whit_jp2.zip&file=centurydict01whit_jp2/centurydict01whit_0027.jp2&scale=3&rotate=0',
       'page' => '1',
@@ -88,10 +104,12 @@ return array (
       'firstWord' => 'A',
     ),
   ),
-  9 =>
+  8 => 
   array (
-    'id' => 'goToPreviousPage/7046',
-    'result' =>
+    'method' => 'goToPreviousPage',
+    'page' => 7046,
+    'comment' => 7046,
+    'result' => 
     array (
       'externalDict' => 'http://ia600407.us.archive.org/BookReader/BookReaderImages.php?zip=/17/items/cu31924091890651/cu31924091890651_jp2.zip&file=cu31924091890651_jp2/cu31924091890651_0848.jp2&scale=3&rotate=0',
       'page' => '7045',
