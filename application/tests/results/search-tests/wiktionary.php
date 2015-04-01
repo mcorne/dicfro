@@ -1,9 +1,9 @@
 <?php
 return array (
-  0 => 
+  0 =>
   array (
     'comment' => 'avid',
-    'result' => 
+    'result' =>
     array (
       'externalDict' => 'http://en.wiktionary.org/wiki/avid',
     ),

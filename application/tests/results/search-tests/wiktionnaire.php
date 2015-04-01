@@ -1,9 +1,9 @@
 <?php
 return array (
-  0 => 
+  0 =>
   array (
     'comment' => 'avoir',
-    'result' => 
+    'result' =>
     array (
       'externalDict' => 'http://fr.wiktionary.org/wiki/avoir',
     ),

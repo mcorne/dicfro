@@ -1,11 +1,11 @@
 <?php
 return array (
-  0 => 
+  0 =>
   array (
     'method' => 'goToPage',
     'page' => 0,
     'comment' => 0,
-    'result' => 
+    'result' =>
     array (
       'definition' => 'dictionary/chanson-de-roland-glossary/mImg/0000323.gif',
       'errataImages' => NULL,
@@ -16,12 +16,12 @@ return array (
       'firstWord' => 'A',
     ),
   ),
-  1 => 
+  1 =>
   array (
     'method' => 'goToPage',
     'page' => 323,
     'comment' => 323,
-    'result' => 
+    'result' =>
     array (
       'definition' => 'dictionary/chanson-de-roland-glossary/mImg/0000323.gif',
       'errataImages' => NULL,
@@ -32,12 +32,12 @@ return array (
       'firstWord' => 'A',
     ),
   ),
-  2 => 
+  2 =>
   array (
     'method' => 'goToPage',
     'page' => 400,
     'comment' => 400,
-    'result' => 
+    'result' =>
     array (
       'definition' => 'dictionary/chanson-de-roland-glossary/mImg/0000400.gif',
       'errataImages' => NULL,
@@ -48,12 +48,12 @@ return array (
       'firstWord' => 'GUARISUN',
     ),
   ),
-  3 => 
+  3 =>
   array (
     'method' => 'goToPage',
     'page' => 501,
     'comment' => 501,
-    'result' => 
+    'result' =>
     array (
       'definition' => 'dictionary/chanson-de-roland-glossary/mImg/0000501.gif',
       'errataImages' => NULL,
@@ -64,12 +64,12 @@ return array (
       'firstWord' => 'VULEIR',
     ),
   ),
-  4 => 
+  4 =>
   array (
     'method' => 'goToPage',
     'page' => 10000,
     'comment' => 10000,
-    'result' => 
+    'result' =>
     array (
       'definition' => 'dictionary/chanson-de-roland-glossary/mImg/0000501.gif',
       'errataImages' => NULL,
@@ -80,12 +80,12 @@ return array (
       'firstWord' => 'VULEIR',
     ),
   ),
-  5 => 
+  5 =>
   array (
     'method' => 'goToNextPage',
     'page' => 323,
     'comment' => 323,
-    'result' => 
+    'result' =>
     array (
       'definition' => 'dictionary/chanson-de-roland-glossary/mImg/0000324.gif',
       'errataImages' => NULL,
@@ -96,12 +96,12 @@ return array (
       'firstWord' => 'A',
     ),
   ),
-  6 => 
+  6 =>
   array (
     'method' => 'goToNextPage',
     'page' => 501,
     'comment' => 501,
-    'result' => 
+    'result' =>
     array (
       'definition' => 'dictionary/chanson-de-roland-glossary/mImg/0000501.gif',
       'errataImages' => NULL,
@@ -112,12 +112,12 @@ return array (
       'firstWord' => 'VULEIR',
     ),
   ),
-  7 => 
+  7 =>
   array (
     'method' => 'goToPreviousPage',
     'page' => 323,
     'comment' => 323,
-    'result' => 
+    'result' =>
     array (
       'definition' => 'dictionary/chanson-de-roland-glossary/mImg/0000323.gif',
       'errataImages' => NULL,
@@ -128,12 +128,12 @@ return array (
       'firstWord' => 'A',
     ),
   ),
-  8 => 
+  8 =>
   array (
     'method' => 'goToPreviousPage',
     'page' => 501,
     'comment' => 501,
-    'result' => 
+    'result' =>
     array (
       'definition' => 'dictionary/chanson-de-roland-glossary/mImg/0000500.gif',
       'errataImages' => NULL,

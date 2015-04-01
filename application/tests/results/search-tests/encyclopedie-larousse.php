@@ -1,18 +1,18 @@
 <?php
 return array (
-  1 => 
+  1 =>
   array (
     'comment' => 'Aalto',
-    'result' => 
+    'result' =>
     array (
       'externalDict' => 'http://gallica.bnf.fr/ark:/12148/bpt6k1200512k/f8.highres',
       'page' => '3',
       'volume' => '1',
-      'entries' => 
+      'entries' =>
       array (
-        'current' => 
+        'current' =>
         array (
-          0 => 
+          0 =>
           array (
             'ascii' => 'AALTO',
             'fix' => '',
@@ -23,7 +23,7 @@ return array (
             'previous' => '',
             'volume' => '1',
           ),
-          1 => 
+          1 =>
           array (
             'ascii' => 'ABADAN',
             'fix' => '',
@@ -35,12 +35,12 @@ return array (
             'volume' => '1',
           ),
         ),
-        'previous' => 
+        'previous' =>
         array (
         ),
-        'next' => 
+        'next' =>
         array (
-          0 => 
+          0 =>
           array (
             'ascii' => 'ABATTAGE',
             'fix' => '',
@@ -51,7 +51,7 @@ return array (
             'previous' => 'ABADAN',
             'volume' => '1',
           ),
-          1 => 
+          1 =>
           array (
             'ascii' => 'ABATTAGE',
             'fix' => '',
@@ -62,7 +62,7 @@ return array (
             'previous' => 'ABATTAGE',
             'volume' => '1',
           ),
-          2 => 
+          2 =>
           array (
             'ascii' => 'ABATTAGE',
             'fix' => '',
@@ -73,7 +73,7 @@ return array (
             'previous' => 'ABATTAGE',
             'volume' => '1',
           ),
-          3 => 
+          3 =>
           array (
             'ascii' => 'ABATTAGE',
             'fix' => '',
@@ -84,7 +84,7 @@ return array (
             'previous' => 'ABATTAGE',
             'volume' => '1',
           ),
-          4 => 
+          4 =>
           array (
             'ascii' => 'ABATTOIR',
             'fix' => '',
@@ -95,7 +95,7 @@ return array (
             'previous' => 'ABATTAGE',
             'volume' => '1',
           ),
-          5 => 
+          5 =>
           array (
             'ascii' => 'ABATTOIRS',
             'fix' => '',
@@ -106,7 +106,7 @@ return array (
             'previous' => 'ABATTOIR',
             'volume' => '1',
           ),
-          6 => 
+          6 =>
           array (
             'ascii' => 'ABBADIDES',
             'fix' => '',
@@ -117,7 +117,7 @@ return array (
             'previous' => 'ABATTOIRS',
             'volume' => '1',
           ),
-          7 => 
+          7 =>
           array (
             'ascii' => 'ABBAS',
             'fix' => '',
@@ -128,7 +128,7 @@ return array (
             'previous' => 'ABBADIDES',
             'volume' => '1',
           ),
-          8 => 
+          8 =>
           array (
             'ascii' => 'ABBASSIDES',
             'fix' => '',
@@ -139,7 +139,7 @@ return array (
             'previous' => 'ABBAS',
             'volume' => '1',
           ),
-          9 => 
+          9 =>
           array (
             'ascii' => 'ABBAYE',
             'fix' => '',
@@ -154,19 +154,19 @@ return array (
       ),
     ),
   ),
-  2 => 
+  2 =>
   array (
     'comment' => 'Amiens',
-    'result' => 
+    'result' =>
     array (
       'externalDict' => 'http://gallica.bnf.fr/ark:/12148/bpt6k12005130/f2.highres',
       'page' => '539',
       'volume' => '2',
-      'entries' => 
+      'entries' =>
       array (
-        'current' => 
+        'current' =>
         array (
-          0 => 
+          0 =>
           array (
             'ascii' => 'AMIENS',
             'fix' => '',
@@ -178,9 +178,9 @@ return array (
             'volume' => '2',
           ),
         ),
-        'previous' => 
+        'previous' =>
         array (
-          0 => 
+          0 =>
           array (
             'ascii' => 'AMERIQUE',
             'fix' => '',
@@ -191,7 +191,7 @@ return array (
             'previous' => 'AMERIQUE',
             'volume' => '1',
           ),
-          1 => 
+          1 =>
           array (
             'ascii' => 'AMERIQUE',
             'fix' => '',
@@ -202,7 +202,7 @@ return array (
             'previous' => 'AMERIQUE',
             'volume' => '1',
           ),
-          2 => 
+          2 =>
           array (
             'ascii' => 'AMERIQUE',
             'fix' => '',
@@ -213,7 +213,7 @@ return array (
             'previous' => 'AMERIQUE',
             'volume' => '1',
           ),
-          3 => 
+          3 =>
           array (
             'ascii' => 'AMERIQUE',
             'fix' => '',
@@ -224,7 +224,7 @@ return array (
             'previous' => 'AMERIQUE',
             'volume' => '1',
           ),
-          4 => 
+          4 =>
           array (
             'ascii' => 'AMEUBLEMENT',
             'fix' => '',
@@ -235,7 +235,7 @@ return array (
             'previous' => 'AMERIQUE',
             'volume' => '1',
           ),
-          5 => 
+          5 =>
           array (
             'ascii' => 'AMIANTE',
             'fix' => '',
@@ -246,7 +246,7 @@ return array (
             'previous' => 'AMEUBLEMENT',
             'volume' => '1',
           ),
-          6 => 
+          6 =>
           array (
             'ascii' => 'AMIBIASE',
             'fix' => '',
@@ -257,7 +257,7 @@ return array (
             'previous' => 'AMIANTE',
             'volume' => '1',
           ),
-          7 => 
+          7 =>
           array (
             'ascii' => 'AMIBIEN',
             'fix' => '',
@@ -268,7 +268,7 @@ return array (
             'previous' => 'AMIBIASE',
             'volume' => '1',
           ),
-          8 => 
+          8 =>
           array (
             'ascii' => 'AMIDE',
             'fix' => '',
@@ -279,7 +279,7 @@ return array (
             'previous' => 'AMIBIEN',
             'volume' => '1',
           ),
-          9 => 
+          9 =>
           array (
             'ascii' => 'AMIDON',
             'fix' => '',
@@ -291,9 +291,9 @@ return array (
             'volume' => '1',
           ),
         ),
-        'next' => 
+        'next' =>
         array (
-          0 => 
+          0 =>
           array (
             'ascii' => 'AMIENS',
             'fix' => '',
@@ -304,7 +304,7 @@ return array (
             'previous' => 'AMIENS',
             'volume' => '2',
           ),
-          1 => 
+          1 =>
           array (
             'ascii' => 'AMINE',
             'fix' => '',
@@ -315,7 +315,7 @@ return array (
             'previous' => 'AMIENS',
             'volume' => '2',
           ),
-          2 => 
+          2 =>
           array (
             'ascii' => 'AMINOACIDE',
             'fix' => '',
@@ -326,7 +326,7 @@ return array (
             'previous' => 'AMINE',
             'volume' => '2',
           ),
-          3 => 
+          3 =>
           array (
             'ascii' => 'AMINOPHENOL',
             'fix' => '',
@@ -337,7 +337,7 @@ return array (
             'previous' => 'AMINOACIDE',
             'volume' => '2',
           ),
-          4 => 
+          4 =>
           array (
             'ascii' => 'AMIRAL',
             'fix' => '',
@@ -348,7 +348,7 @@ return array (
             'previous' => 'AMINOPHENOL',
             'volume' => '2',
           ),
-          5 => 
+          5 =>
           array (
             'ascii' => 'AMIRAUTE',
             'fix' => '',
@@ -359,7 +359,7 @@ return array (
             'previous' => 'AMIRAL',
             'volume' => '2',
           ),
-          6 => 
+          6 =>
           array (
             'ascii' => 'AMMAN',
             'fix' => '',
@@ -370,7 +370,7 @@ return array (
             'previous' => 'AMIRAUTE',
             'volume' => '2',
           ),
-          7 => 
+          7 =>
           array (
             'ascii' => 'AMMONIAC',
             'fix' => '',
@@ -381,7 +381,7 @@ return array (
             'previous' => 'AMMAN',
             'volume' => '2',
           ),
-          8 => 
+          8 =>
           array (
             'ascii' => 'AMMONITE',
             'fix' => '',
@@ -392,7 +392,7 @@ return array (
             'previous' => 'AMMONIAC',
             'volume' => '2',
           ),
-          9 => 
+          9 =>
           array (
             'ascii' => 'AMNESIE',
             'fix' => '',
@@ -407,19 +407,19 @@ return array (
       ),
     ),
   ),
-  3 => 
+  3 =>
   array (
     'comment' => 'Australie',
-    'result' => 
+    'result' =>
     array (
       'externalDict' => 'http://gallica.bnf.fr/ark:/12148/bpt6k1200514d/f2.highres',
       'page' => '1099',
       'volume' => '3',
-      'entries' => 
+      'entries' =>
       array (
-        'current' => 
+        'current' =>
         array (
-          0 => 
+          0 =>
           array (
             'ascii' => 'AUSTRALIE',
             'fix' => '',
@@ -431,9 +431,9 @@ return array (
             'volume' => '3',
           ),
         ),
-        'previous' => 
+        'previous' =>
         array (
-          0 => 
+          0 =>
           array (
             'ascii' => 'AUGUSTE',
             'fix' => '',
@@ -444,7 +444,7 @@ return array (
             'previous' => 'AUGUSTE',
             'volume' => '2',
           ),
-          1 => 
+          1 =>
           array (
             'ascii' => 'AUGUSTIN',
             'fix' => '',
@@ -455,7 +455,7 @@ return array (
             'previous' => 'AUGUSTE',
             'volume' => '2',
           ),
-          2 => 
+          2 =>
           array (
             'ascii' => 'AUNIS',
             'fix' => '',
@@ -466,7 +466,7 @@ return array (
             'previous' => 'AUGUSTIN',
             'volume' => '2',
           ),
-          3 => 
+          3 =>
           array (
             'ascii' => 'AURELIEN',
             'fix' => '',
@@ -477,7 +477,7 @@ return array (
             'previous' => 'AUNIS',
             'volume' => '2',
           ),
-          4 => 
+          4 =>
           array (
             'ascii' => 'AURILLAC',
             'fix' => '',
@@ -488,7 +488,7 @@ return array (
             'previous' => 'AURELIEN',
             'volume' => '2',
           ),
-          5 => 
+          5 =>
           array (
             'ascii' => 'AUROCH',
             'fix' => '',
@@ -499,7 +499,7 @@ return array (
             'previous' => 'AURILLAC',
             'volume' => '2',
           ),
-          6 => 
+          6 =>
           array (
             'ascii' => 'AURORE',
             'fix' => '',
@@ -510,7 +510,7 @@ return array (
             'previous' => 'AUROCH',
             'volume' => '2',
           ),
-          7 => 
+          7 =>
           array (
             'ascii' => 'AUSCULTATION',
             'fix' => '',
@@ -521,7 +521,7 @@ return array (
             'previous' => 'AURORE',
             'volume' => '2',
           ),
-          8 => 
+          8 =>
           array (
             'ascii' => 'AUSCULTATION',
             'fix' => '',
@@ -532,7 +532,7 @@ return array (
             'previous' => 'AUSCULTATION',
             'volume' => '2',
           ),
-          9 => 
+          9 =>
           array (
             'ascii' => 'AUSTEN',
             'fix' => '',
@@ -544,9 +544,9 @@ return array (
             'volume' => '2',
           ),
         ),
-        'next' => 
+        'next' =>
         array (
-          0 => 
+          0 =>
           array (
             'ascii' => 'AUSTRALIE',
             'fix' => '',
@@ -557,7 +557,7 @@ return array (
             'previous' => 'AUSTRALIE',
             'volume' => '3',
           ),
-          1 => 
+          1 =>
           array (
             'ascii' => 'AUSTRALIE',
             'fix' => '',
@@ -568,7 +568,7 @@ return array (
             'previous' => 'AUSTRALIE',
             'volume' => '3',
           ),
-          2 => 
+          2 =>
           array (
             'ascii' => 'AUTOBIOGRAPHIE',
             'fix' => '',
@@ -579,7 +579,7 @@ return array (
             'previous' => 'AUSTRALIE',
             'volume' => '3',
           ),
-          3 => 
+          3 =>
           array (
             'ascii' => 'AUTOBIOGRAPHIE',
             'fix' => '',
@@ -590,7 +590,7 @@ return array (
             'previous' => 'AUTOBIOGRAPHIE',
             'volume' => '3',
           ),
-          4 => 
+          4 =>
           array (
             'ascii' => 'AUTODROME',
             'fix' => '',
@@ -601,7 +601,7 @@ return array (
             'previous' => 'AUTOBIOGRAPHIE',
             'volume' => '3',
           ),
-          5 => 
+          5 =>
           array (
             'ascii' => 'AUTOFINANCEMENT',
             'fix' => '',
@@ -612,7 +612,7 @@ return array (
             'previous' => 'AUTODROME',
             'volume' => '3',
           ),
-          6 => 
+          6 =>
           array (
             'ascii' => 'AUTOGESTION',
             'fix' => '',
@@ -623,7 +623,7 @@ return array (
             'previous' => 'AUTOFINANCEMENT',
             'volume' => '3',
           ),
-          7 => 
+          7 =>
           array (
             'ascii' => 'AUTOGUIDAGE',
             'fix' => '',
@@ -634,7 +634,7 @@ return array (
             'previous' => 'AUTOGESTION',
             'volume' => '3',
           ),
-          8 => 
+          8 =>
           array (
             'ascii' => 'AUTOGUIDAGE',
             'fix' => '',
@@ -645,7 +645,7 @@ return array (
             'previous' => 'AUTOGUIDAGE',
             'volume' => '3',
           ),
-          9 => 
+          9 =>
           array (
             'ascii' => 'AUTOGUIDAGE',
             'fix' => '',
@@ -660,19 +660,19 @@ return array (
       ),
     ),
   ),
-  4 => 
+  4 =>
   array (
     'comment' => 'Boudin',
-    'result' => 
+    'result' =>
     array (
       'externalDict' => 'http://gallica.bnf.fr/ark:/12148/bpt6k1200515t/f2.highres',
       'page' => '1681',
       'volume' => '4',
-      'entries' => 
+      'entries' =>
       array (
-        'current' => 
+        'current' =>
         array (
-          0 => 
+          0 =>
           array (
             'ascii' => 'BOUDIN',
             'fix' => '',
@@ -683,7 +683,7 @@ return array (
             'previous' => 'BOUDDHISME',
             'volume' => '4',
           ),
-          1 => 
+          1 =>
           array (
             'ascii' => 'BOUE',
             'fix' => '',
@@ -695,9 +695,9 @@ return array (
             'volume' => '4',
           ),
         ),
-        'previous' => 
+        'previous' =>
         array (
-          0 => 
+          0 =>
           array (
             'ascii' => 'BOSTON',
             'fix' => '',
@@ -708,7 +708,7 @@ return array (
             'previous' => 'BOSSUET',
             'volume' => '3',
           ),
-          1 => 
+          1 =>
           array (
             'ascii' => 'BOTANIQUE',
             'fix' => '',
@@ -719,7 +719,7 @@ return array (
             'previous' => 'BOSTON',
             'volume' => '3',
           ),
-          2 => 
+          2 =>
           array (
             'ascii' => 'BOTEV',
             'fix' => '',
@@ -730,7 +730,7 @@ return array (
             'previous' => 'BOTANIQUE',
             'volume' => '3',
           ),
-          3 => 
+          3 =>
           array (
             'ascii' => 'BOTSWANA',
             'fix' => '',
@@ -741,7 +741,7 @@ return array (
             'previous' => 'BOTEV',
             'volume' => '3',
           ),
-          4 => 
+          4 =>
           array (
             'ascii' => 'BOTTICELLI',
             'fix' => '',
@@ -752,7 +752,7 @@ return array (
             'previous' => 'BOTSWANA',
             'volume' => '3',
           ),
-          5 => 
+          5 =>
           array (
             'ascii' => 'BOUCHARDON',
             'fix' => '',
@@ -763,7 +763,7 @@ return array (
             'previous' => 'BOTTICELLI',
             'volume' => '3',
           ),
-          6 => 
+          6 =>
           array (
             'ascii' => 'BOUCHE',
             'fix' => '',
@@ -774,7 +774,7 @@ return array (
             'previous' => 'BOUCHARDON',
             'volume' => '3',
           ),
-          7 => 
+          7 =>
           array (
             'ascii' => 'BOUCHER',
             'fix' => '',
@@ -785,7 +785,7 @@ return array (
             'previous' => 'BOUCHE',
             'volume' => '3',
           ),
-          8 => 
+          8 =>
           array (
             'ascii' => 'BOUCOURECHLIEV',
             'fix' => '',
@@ -796,7 +796,7 @@ return array (
             'previous' => 'BOUCHER',
             'volume' => '3',
           ),
-          9 => 
+          9 =>
           array (
             'ascii' => 'BOUDDHISME',
             'fix' => '',
@@ -808,9 +808,9 @@ return array (
             'volume' => '3',
           ),
         ),
-        'next' => 
+        'next' =>
         array (
-          0 => 
+          0 =>
           array (
             'ascii' => 'BOUES',
             'fix' => '',
@@ -821,7 +821,7 @@ return array (
             'previous' => 'BOUE',
             'volume' => '4',
           ),
-          1 => 
+          1 =>
           array (
             'ascii' => 'BOUES',
             'fix' => '',
@@ -832,7 +832,7 @@ return array (
             'previous' => 'BOUES',
             'volume' => '4',
           ),
-          2 => 
+          2 =>
           array (
             'ascii' => 'BOUES',
             'fix' => '',
@@ -843,7 +843,7 @@ return array (
             'previous' => 'BOUES',
             'volume' => '4',
           ),
-          3 => 
+          3 =>
           array (
             'ascii' => 'BOUES',
             'fix' => '',
@@ -854,7 +854,7 @@ return array (
             'previous' => 'BOUES',
             'volume' => '4',
           ),
-          4 => 
+          4 =>
           array (
             'ascii' => 'BOUES',
             'fix' => '',
@@ -865,7 +865,7 @@ return array (
             'previous' => 'BOUES',
             'volume' => '4',
           ),
-          5 => 
+          5 =>
           array (
             'ascii' => 'BOUFFON',
             'fix' => '',
@@ -876,7 +876,7 @@ return array (
             'previous' => 'BOUES',
             'volume' => '4',
           ),
-          6 => 
+          6 =>
           array (
             'ascii' => 'BOUGAINVILLE',
             'fix' => '',
@@ -887,7 +887,7 @@ return array (
             'previous' => 'BOUFFON',
             'volume' => '4',
           ),
-          7 => 
+          7 =>
           array (
             'ascii' => 'BOUGIE',
             'fix' => '',
@@ -898,7 +898,7 @@ return array (
             'previous' => 'BOUGAINVILLE',
             'volume' => '4',
           ),
-          8 => 
+          8 =>
           array (
             'ascii' => 'BOUKHARINE',
             'fix' => '',
@@ -909,7 +909,7 @@ return array (
             'previous' => 'BOUGIE',
             'volume' => '4',
           ),
-          9 => 
+          9 =>
           array (
             'ascii' => 'BOUKHARINE',
             'fix' => '',
@@ -924,19 +924,19 @@ return array (
       ),
     ),
   ),
-  5 => 
+  5 =>
   array (
     'comment' => 'Cétacés',
-    'result' => 
+    'result' =>
     array (
       'externalDict' => 'http://gallica.bnf.fr/ark:/12148/bpt6k12005167/f2.highres',
       'page' => '2253',
       'volume' => '5',
-      'entries' => 
+      'entries' =>
       array (
-        'current' => 
+        'current' =>
         array (
-          0 => 
+          0 =>
           array (
             'ascii' => 'CETACE',
             'fix' => '',
@@ -948,9 +948,9 @@ return array (
             'volume' => '5',
           ),
         ),
-        'previous' => 
+        'previous' =>
         array (
-          0 => 
+          0 =>
           array (
             'ascii' => 'CERIUM',
             'fix' => '',
@@ -961,7 +961,7 @@ return array (
             'previous' => 'CEREALES',
             'volume' => '4',
           ),
-          1 => 
+          1 =>
           array (
             'ascii' => 'CERVANTES',
             'fix' => '',
@@ -972,7 +972,7 @@ return array (
             'previous' => 'CERIUM',
             'volume' => '4',
           ),
-          2 => 
+          2 =>
           array (
             'ascii' => 'CERVEAU',
             'fix' => '',
@@ -983,7 +983,7 @@ return array (
             'previous' => 'CERVANTES',
             'volume' => '4',
           ),
-          3 => 
+          3 =>
           array (
             'ascii' => 'CERVIDE',
             'fix' => '',
@@ -994,7 +994,7 @@ return array (
             'previous' => 'CERVEAU',
             'volume' => '4',
           ),
-          4 => 
+          4 =>
           array (
             'ascii' => 'CESAR',
             'fix' => '',
@@ -1005,7 +1005,7 @@ return array (
             'previous' => 'CERVIDE',
             'volume' => '4',
           ),
-          5 => 
+          5 =>
           array (
             'ascii' => 'CESAR',
             'fix' => '',
@@ -1016,7 +1016,7 @@ return array (
             'previous' => 'CESAR',
             'volume' => '4',
           ),
-          6 => 
+          6 =>
           array (
             'ascii' => 'CESARIENNE',
             'fix' => '',
@@ -1027,7 +1027,7 @@ return array (
             'previous' => 'CESAR',
             'volume' => '4',
           ),
-          7 => 
+          7 =>
           array (
             'ascii' => 'CESIUM',
             'fix' => '',
@@ -1038,7 +1038,7 @@ return array (
             'previous' => 'CESARIENNE',
             'volume' => '4',
           ),
-          8 => 
+          8 =>
           array (
             'ascii' => 'CESTODE',
             'fix' => '',
@@ -1049,7 +1049,7 @@ return array (
             'previous' => 'CESIUM',
             'volume' => '4',
           ),
-          9 => 
+          9 =>
           array (
             'ascii' => 'CESTODES',
             'fix' => '',
@@ -1061,9 +1061,9 @@ return array (
             'volume' => '4',
           ),
         ),
-        'next' => 
+        'next' =>
         array (
-          0 => 
+          0 =>
           array (
             'ascii' => 'CETONE',
             'fix' => '',
@@ -1074,7 +1074,7 @@ return array (
             'previous' => 'CETACE',
             'volume' => '5',
           ),
-          1 => 
+          1 =>
           array (
             'ascii' => 'CEYLAN',
             'fix' => '',
@@ -1085,7 +1085,7 @@ return array (
             'previous' => 'CETONE',
             'volume' => '5',
           ),
-          2 => 
+          2 =>
           array (
             'ascii' => 'CEYLAN',
             'fix' => '',
@@ -1096,7 +1096,7 @@ return array (
             'previous' => 'CEYLAN',
             'volume' => '5',
           ),
-          3 => 
+          3 =>
           array (
             'ascii' => 'CEZANNE',
             'fix' => '',
@@ -1107,7 +1107,7 @@ return array (
             'previous' => 'CEYLAN',
             'volume' => '5',
           ),
-          4 => 
+          4 =>
           array (
             'ascii' => 'CHABRIER',
             'fix' => '',
@@ -1118,7 +1118,7 @@ return array (
             'previous' => 'CEZANNE',
             'volume' => '5',
           ),
-          5 => 
+          5 =>
           array (
             'ascii' => 'CHACAL',
             'fix' => '',
@@ -1129,7 +1129,7 @@ return array (
             'previous' => 'CHABRIER',
             'volume' => '5',
           ),
-          6 => 
+          6 =>
           array (
             'ascii' => 'CHADWICK',
             'fix' => '',
@@ -1140,7 +1140,7 @@ return array (
             'previous' => 'CHACAL',
             'volume' => '5',
           ),
-          7 => 
+          7 =>
           array (
             'ascii' => 'CHAGALL',
             'fix' => '',
@@ -1151,7 +1151,7 @@ return array (
             'previous' => 'CHADWICK',
             'volume' => '5',
           ),
-          8 => 
+          8 =>
           array (
             'ascii' => 'CHAINE',
             'fix' => '',
@@ -1162,7 +1162,7 @@ return array (
             'previous' => 'CHAGALL',
             'volume' => '5',
           ),
-          9 => 
+          9 =>
           array (
             'ascii' => 'CHALEUR',
             'fix' => '',
@@ -1177,19 +1177,19 @@ return array (
       ),
     ),
   ),
-  6 => 
+  6 =>
   array (
     'comment' => 'Compresseur',
-    'result' => 
+    'result' =>
     array (
       'externalDict' => 'http://gallica.bnf.fr/ark:/12148/bpt6k1200517n/f2.highres',
       'page' => '2829',
       'volume' => '6',
-      'entries' => 
+      'entries' =>
       array (
-        'current' => 
+        'current' =>
         array (
-          0 => 
+          0 =>
           array (
             'ascii' => 'COMPRESSEUR',
             'fix' => '',
@@ -1200,7 +1200,7 @@ return array (
             'previous' => 'COMPOSITION',
             'volume' => '6',
           ),
-          1 => 
+          1 =>
           array (
             'ascii' => 'COMPTABILITE',
             'fix' => '',
@@ -1212,9 +1212,9 @@ return array (
             'volume' => '6',
           ),
         ),
-        'previous' => 
+        'previous' =>
         array (
-          0 => 
+          0 =>
           array (
             'ascii' => 'COMPOSANT',
             'fix' => '',
@@ -1225,7 +1225,7 @@ return array (
             'previous' => 'COMPORTEMENT',
             'volume' => '5',
           ),
-          1 => 
+          1 =>
           array (
             'ascii' => 'COMPOSEE',
             'fix' => '',
@@ -1236,7 +1236,7 @@ return array (
             'previous' => 'COMPOSANT',
             'volume' => '5',
           ),
-          2 => 
+          2 =>
           array (
             'ascii' => 'COMPOSITION',
             'fix' => '',
@@ -1247,7 +1247,7 @@ return array (
             'previous' => 'COMPOSEE',
             'volume' => '5',
           ),
-          3 => 
+          3 =>
           array (
             'ascii' => 'COMPOSITION',
             'fix' => '',
@@ -1258,7 +1258,7 @@ return array (
             'previous' => 'COMPOSITION',
             'volume' => '5',
           ),
-          4 => 
+          4 =>
           array (
             'ascii' => 'COMPOSITION',
             'fix' => '',
@@ -1269,7 +1269,7 @@ return array (
             'previous' => 'COMPOSITION',
             'volume' => '5',
           ),
-          5 => 
+          5 =>
           array (
             'ascii' => 'COMPOSITION',
             'fix' => '',
@@ -1280,7 +1280,7 @@ return array (
             'previous' => 'COMPOSITION',
             'volume' => '5',
           ),
-          6 => 
+          6 =>
           array (
             'ascii' => 'COMPOSITION',
             'fix' => '',
@@ -1291,7 +1291,7 @@ return array (
             'previous' => 'COMPOSITION',
             'volume' => '5',
           ),
-          7 => 
+          7 =>
           array (
             'ascii' => 'COMPOSITION',
             'fix' => '',
@@ -1302,7 +1302,7 @@ return array (
             'previous' => 'COMPOSITION',
             'volume' => '5',
           ),
-          8 => 
+          8 =>
           array (
             'ascii' => 'COMPOSITION',
             'fix' => '',
@@ -1313,7 +1313,7 @@ return array (
             'previous' => 'COMPOSITION',
             'volume' => '5',
           ),
-          9 => 
+          9 =>
           array (
             'ascii' => 'COMPOSITION',
             'fix' => '',
@@ -1325,9 +1325,9 @@ return array (
             'volume' => '5',
           ),
         ),
-        'next' => 
+        'next' =>
         array (
-          0 => 
+          0 =>
           array (
             'ascii' => 'COMPTABILITE',
             'fix' => '',
@@ -1338,7 +1338,7 @@ return array (
             'previous' => 'COMPTABILITE',
             'volume' => '6',
           ),
-          1 => 
+          1 =>
           array (
             'ascii' => 'COMPTABILITE',
             'fix' => '',
@@ -1349,7 +1349,7 @@ return array (
             'previous' => 'COMPTABILITE',
             'volume' => '6',
           ),
-          2 => 
+          2 =>
           array (
             'ascii' => 'COMPTEUR',
             'fix' => '',
@@ -1360,7 +1360,7 @@ return array (
             'previous' => 'COMPTABILITE',
             'volume' => '6',
           ),
-          3 => 
+          3 =>
           array (
             'ascii' => 'COMPTEURS',
             'fix' => '',
@@ -1371,7 +1371,7 @@ return array (
             'previous' => 'COMPTEUR',
             'volume' => '6',
           ),
-          4 => 
+          4 =>
           array (
             'ascii' => 'COMPTEURS',
             'fix' => '',
@@ -1382,7 +1382,7 @@ return array (
             'previous' => 'COMPTEURS',
             'volume' => '6',
           ),
-          5 => 
+          5 =>
           array (
             'ascii' => 'COMPTEURS',
             'fix' => '',
@@ -1393,7 +1393,7 @@ return array (
             'previous' => 'COMPTEURS',
             'volume' => '6',
           ),
-          6 => 
+          6 =>
           array (
             'ascii' => 'COMPTEURS',
             'fix' => '',
@@ -1404,7 +1404,7 @@ return array (
             'previous' => 'COMPTEURS',
             'volume' => '6',
           ),
-          7 => 
+          7 =>
           array (
             'ascii' => 'COMPTEURS',
             'fix' => '',
@@ -1415,7 +1415,7 @@ return array (
             'previous' => 'COMPTEURS',
             'volume' => '6',
           ),
-          8 => 
+          8 =>
           array (
             'ascii' => 'COMPTEURS',
             'fix' => '',
@@ -1426,7 +1426,7 @@ return array (
             'previous' => 'COMPTEURS',
             'volume' => '6',
           ),
-          9 => 
+          9 =>
           array (
             'ascii' => 'COMPTON',
             'fix' => '',
@@ -1441,19 +1441,19 @@ return array (
       ),
     ),
   ),
-  7 => 
+  7 =>
   array (
     'comment' => 'Désinfection',
-    'result' => 
+    'result' =>
     array (
       'externalDict' => 'http://gallica.bnf.fr/ark:/12148/bpt6k12005182/f2.highres',
       'page' => '3415',
       'volume' => '7',
-      'entries' => 
+      'entries' =>
       array (
-        'current' => 
+        'current' =>
         array (
-          0 => 
+          0 =>
           array (
             'ascii' => 'DESINFECTION',
             'fix' => '',
@@ -1464,7 +1464,7 @@ return array (
             'previous' => 'DESIGN',
             'volume' => '7',
           ),
-          1 => 
+          1 =>
           array (
             'ascii' => 'DESINFECTION',
             'fix' => '',
@@ -1475,7 +1475,7 @@ return array (
             'previous' => 'DESINFECTION',
             'volume' => '7',
           ),
-          2 => 
+          2 =>
           array (
             'ascii' => 'DESINFECTION',
             'fix' => '',
@@ -1486,7 +1486,7 @@ return array (
             'previous' => 'DESINFECTION',
             'volume' => '7',
           ),
-          3 => 
+          3 =>
           array (
             'ascii' => 'DESINTOXICATION',
             'fix' => '',
@@ -1497,7 +1497,7 @@ return array (
             'previous' => 'DESINFECTION',
             'volume' => '7',
           ),
-          4 => 
+          4 =>
           array (
             'ascii' => 'DESINTOXICATION',
             'fix' => '',
@@ -1508,7 +1508,7 @@ return array (
             'previous' => 'DESINTOXICATION',
             'volume' => '7',
           ),
-          5 => 
+          5 =>
           array (
             'ascii' => 'DESINTOXICATION',
             'fix' => '',
@@ -1520,9 +1520,9 @@ return array (
             'volume' => '7',
           ),
         ),
-        'previous' => 
+        'previous' =>
         array (
-          0 => 
+          0 =>
           array (
             'ascii' => 'DESCARTES',
             'fix' => '',
@@ -1533,7 +1533,7 @@ return array (
             'previous' => 'DESCARTES',
             'volume' => '6',
           ),
-          1 => 
+          1 =>
           array (
             'ascii' => 'DESEQUILIBRE',
             'fix' => '',
@@ -1544,7 +1544,7 @@ return array (
             'previous' => 'DESCARTES',
             'volume' => '6',
           ),
-          2 => 
+          2 =>
           array (
             'ascii' => 'DESERT',
             'fix' => '',
@@ -1555,7 +1555,7 @@ return array (
             'previous' => 'DESEQUILIBRE',
             'volume' => '6',
           ),
-          3 => 
+          3 =>
           array (
             'ascii' => 'DESERTS',
             'fix' => '',
@@ -1566,7 +1566,7 @@ return array (
             'previous' => 'DESERT',
             'volume' => '6',
           ),
-          4 => 
+          4 =>
           array (
             'ascii' => 'DESERTS',
             'fix' => '',
@@ -1577,7 +1577,7 @@ return array (
             'previous' => 'DESERTS',
             'volume' => '6',
           ),
-          5 => 
+          5 =>
           array (
             'ascii' => 'DESERTS',
             'fix' => '',
@@ -1588,7 +1588,7 @@ return array (
             'previous' => 'DESERTS',
             'volume' => '6',
           ),
-          6 => 
+          6 =>
           array (
             'ascii' => 'DESERTS',
             'fix' => '',
@@ -1599,7 +1599,7 @@ return array (
             'previous' => 'DESERTS',
             'volume' => '6',
           ),
-          7 => 
+          7 =>
           array (
             'ascii' => 'DESERTS',
             'fix' => '',
@@ -1610,7 +1610,7 @@ return array (
             'previous' => 'DESERTS',
             'volume' => '6',
           ),
-          8 => 
+          8 =>
           array (
             'ascii' => 'DESHERBAGE',
             'fix' => '',
@@ -1621,7 +1621,7 @@ return array (
             'previous' => 'DESERTS',
             'volume' => '6',
           ),
-          9 => 
+          9 =>
           array (
             'ascii' => 'DESIGN',
             'fix' => '',
@@ -1633,9 +1633,9 @@ return array (
             'volume' => '6',
           ),
         ),
-        'next' => 
+        'next' =>
         array (
-          0 => 
+          0 =>
           array (
             'ascii' => 'DESNOS',
             'fix' => '',
@@ -1646,7 +1646,7 @@ return array (
             'previous' => 'DESINTOXICATION',
             'volume' => '7',
           ),
-          1 => 
+          1 =>
           array (
             'ascii' => 'DESPIAU',
             'fix' => '',
@@ -1657,7 +1657,7 @@ return array (
             'previous' => 'DESNOS',
             'volume' => '7',
           ),
-          2 => 
+          2 =>
           array (
             'ascii' => 'DESPORTES',
             'fix' => '',
@@ -1668,7 +1668,7 @@ return array (
             'previous' => 'DESPIAU',
             'volume' => '7',
           ),
-          3 => 
+          3 =>
           array (
             'ascii' => 'DESPOTISME',
             'fix' => '',
@@ -1679,7 +1679,7 @@ return array (
             'previous' => 'DESPORTES',
             'volume' => '7',
           ),
-          4 => 
+          4 =>
           array (
             'ascii' => 'DESSALEMENT',
             'fix' => '',
@@ -1690,7 +1690,7 @@ return array (
             'previous' => 'DESPOTISME',
             'volume' => '7',
           ),
-          5 => 
+          5 =>
           array (
             'ascii' => 'DESSIN',
             'fix' => '',
@@ -1701,7 +1701,7 @@ return array (
             'previous' => 'DESSALEMENT',
             'volume' => '7',
           ),
-          6 => 
+          6 =>
           array (
             'ascii' => 'DESULFURATION',
             'fix' => '',
@@ -1712,7 +1712,7 @@ return array (
             'previous' => 'DESSIN',
             'volume' => '7',
           ),
-          7 => 
+          7 =>
           array (
             'ascii' => 'DETENTE',
             'fix' => '',
@@ -1723,7 +1723,7 @@ return array (
             'previous' => 'DESULFURATION',
             'volume' => '7',
           ),
-          8 => 
+          8 =>
           array (
             'ascii' => 'DETENTION',
             'fix' => '',
@@ -1734,7 +1734,7 @@ return array (
             'previous' => 'DETENTE',
             'volume' => '7',
           ),
-          9 => 
+          9 =>
           array (
             'ascii' => 'DETENTION',
             'fix' => '',
@@ -1749,19 +1749,19 @@ return array (
       ),
     ),
   ),
-  8 => 
+  8 =>
   array (
     'comment' => 'Épilepsie',
-    'result' => 
+    'result' =>
     array (
       'externalDict' => 'http://gallica.bnf.fr/ark:/12148/bpt6k1200519g/f2.highres',
       'page' => '4005',
       'volume' => '8',
-      'entries' => 
+      'entries' =>
       array (
-        'current' => 
+        'current' =>
         array (
-          0 => 
+          0 =>
           array (
             'ascii' => 'EPILEPSIE',
             'fix' => '',
@@ -1773,9 +1773,9 @@ return array (
             'volume' => '8',
           ),
         ),
-        'previous' => 
+        'previous' =>
         array (
-          0 => 
+          0 =>
           array (
             'ascii' => 'ENVIRONNEMENT',
             'fix' => '',
@@ -1786,7 +1786,7 @@ return array (
             'previous' => 'ENVIRONNEMENT',
             'volume' => '7',
           ),
-          1 => 
+          1 =>
           array (
             'ascii' => 'ENZYME',
             'fix' => '',
@@ -1797,7 +1797,7 @@ return array (
             'previous' => 'ENVIRONNEMENT',
             'volume' => '7',
           ),
-          2 => 
+          2 =>
           array (
             'ascii' => 'EPARGNE',
             'fix' => '',
@@ -1808,7 +1808,7 @@ return array (
             'previous' => 'ENZYME',
             'volume' => '7',
           ),
-          3 => 
+          3 =>
           array (
             'ascii' => 'EPAULE',
             'fix' => '',
@@ -1819,7 +1819,7 @@ return array (
             'previous' => 'EPARGNE',
             'volume' => '7',
           ),
-          4 => 
+          4 =>
           array (
             'ascii' => 'EPERNAY',
             'fix' => '',
@@ -1830,7 +1830,7 @@ return array (
             'previous' => 'EPAULE',
             'volume' => '7',
           ),
-          5 => 
+          5 =>
           array (
             'ascii' => 'EPHEMERE',
             'fix' => '',
@@ -1841,7 +1841,7 @@ return array (
             'previous' => 'EPERNAY',
             'volume' => '7',
           ),
-          6 => 
+          6 =>
           array (
             'ascii' => 'EPICTETE',
             'fix' => '',
@@ -1852,7 +1852,7 @@ return array (
             'previous' => 'EPHEMERE',
             'volume' => '7',
           ),
-          7 => 
+          7 =>
           array (
             'ascii' => 'EPICURISME',
             'fix' => '',
@@ -1863,7 +1863,7 @@ return array (
             'previous' => 'EPICTETE',
             'volume' => '7',
           ),
-          8 => 
+          8 =>
           array (
             'ascii' => 'EPIDEMIE',
             'fix' => '',
@@ -1874,7 +1874,7 @@ return array (
             'previous' => 'EPICURISME',
             'volume' => '7',
           ),
-          9 => 
+          9 =>
           array (
             'ascii' => 'EPIGRAPHIE',
             'fix' => '',
@@ -1886,9 +1886,9 @@ return array (
             'volume' => '7',
           ),
         ),
-        'next' => 
+        'next' =>
         array (
-          0 => 
+          0 =>
           array (
             'ascii' => 'EPINAL',
             'fix' => '',
@@ -1899,7 +1899,7 @@ return array (
             'previous' => 'EPILEPSIE',
             'volume' => '8',
           ),
-          1 => 
+          1 =>
           array (
             'ascii' => 'EPIPHYTE',
             'fix' => '',
@@ -1910,7 +1910,7 @@ return array (
             'previous' => 'EPINAL',
             'volume' => '8',
           ),
-          2 => 
+          2 =>
           array (
             'ascii' => 'EPIRE',
             'fix' => '',
@@ -1921,7 +1921,7 @@ return array (
             'previous' => 'EPIPHYTE',
             'volume' => '8',
           ),
-          3 => 
+          3 =>
           array (
             'ascii' => 'EPISTEMOLOGIE',
             'fix' => '',
@@ -1932,7 +1932,7 @@ return array (
             'previous' => 'EPIRE',
             'volume' => '8',
           ),
-          4 => 
+          4 =>
           array (
             'ascii' => 'EPITRE',
             'fix' => '',
@@ -1943,7 +1943,7 @@ return array (
             'previous' => 'EPISTEMOLOGIE',
             'volume' => '8',
           ),
-          5 => 
+          5 =>
           array (
             'ascii' => 'EPOPEE',
             'fix' => '',
@@ -1954,7 +1954,7 @@ return array (
             'previous' => 'EPITRE',
             'volume' => '8',
           ),
-          6 => 
+          6 =>
           array (
             'ascii' => 'EPURATION',
             'fix' => '',
@@ -1965,7 +1965,7 @@ return array (
             'previous' => 'EPOPEE',
             'volume' => '8',
           ),
-          7 => 
+          7 =>
           array (
             'ascii' => 'EQUATEUR',
             'fix' => '',
@@ -1976,7 +1976,7 @@ return array (
             'previous' => 'EPURATION',
             'volume' => '8',
           ),
-          8 => 
+          8 =>
           array (
             'ascii' => 'EQUATION',
             'fix' => '',
@@ -1987,7 +1987,7 @@ return array (
             'previous' => 'EQUATEUR',
             'volume' => '8',
           ),
-          9 => 
+          9 =>
           array (
             'ascii' => 'EQUATION',
             'fix' => '',
@@ -2002,19 +2002,19 @@ return array (
       ),
     ),
   ),
-  9 => 
+  9 =>
   array (
     'comment' => 'France',
-    'result' => 
+    'result' =>
     array (
       'externalDict' => 'http://gallica.bnf.fr/ark:/12148/bpt6k12005204/f2.highres',
       'page' => '4571',
       'volume' => '9',
-      'entries' => 
+      'entries' =>
       array (
-        'current' => 
+        'current' =>
         array (
-          0 => 
+          0 =>
           array (
             'ascii' => 'FRANCE',
             'fix' => '',
@@ -2026,9 +2026,9 @@ return array (
             'volume' => '9',
           ),
         ),
-        'previous' => 
+        'previous' =>
         array (
-          0 => 
+          0 =>
           array (
             'ascii' => 'FOURMIS',
             'fix' => '',
@@ -2039,7 +2039,7 @@ return array (
             'previous' => 'FOURMILIER',
             'volume' => '8',
           ),
-          1 => 
+          1 =>
           array (
             'ascii' => 'FOURMIS',
             'fix' => '',
@@ -2050,7 +2050,7 @@ return array (
             'previous' => 'FOURMIS',
             'volume' => '8',
           ),
-          2 => 
+          2 =>
           array (
             'ascii' => 'FOURRAGE',
             'fix' => '',
@@ -2061,7 +2061,7 @@ return array (
             'previous' => 'FOURMIS',
             'volume' => '8',
           ),
-          3 => 
+          3 =>
           array (
             'ascii' => 'FRACTURE',
             'fix' => '',
@@ -2072,7 +2072,7 @@ return array (
             'previous' => 'FOURRAGE',
             'volume' => '8',
           ),
-          4 => 
+          4 =>
           array (
             'ascii' => 'FRAGONARD',
             'fix' => '',
@@ -2083,7 +2083,7 @@ return array (
             'previous' => 'FRACTURE',
             'volume' => '8',
           ),
-          5 => 
+          5 =>
           array (
             'ascii' => 'FRAISAGE',
             'fix' => '',
@@ -2094,7 +2094,7 @@ return array (
             'previous' => 'FRAGONARD',
             'volume' => '8',
           ),
-          6 => 
+          6 =>
           array (
             'ascii' => 'FRAISAGE',
             'fix' => '',
@@ -2105,7 +2105,7 @@ return array (
             'previous' => 'FRAISAGE',
             'volume' => '8',
           ),
-          7 => 
+          7 =>
           array (
             'ascii' => 'FRAISAGE',
             'fix' => '',
@@ -2116,7 +2116,7 @@ return array (
             'previous' => 'FRAISAGE',
             'volume' => '8',
           ),
-          8 => 
+          8 =>
           array (
             'ascii' => 'FRANC',
             'fix' => '',
@@ -2127,7 +2127,7 @@ return array (
             'previous' => 'FRAISAGE',
             'volume' => '8',
           ),
-          9 => 
+          9 =>
           array (
             'ascii' => 'FRANCAIS',
             'fix' => '',
@@ -2139,9 +2139,9 @@ return array (
             'volume' => '8',
           ),
         ),
-        'next' => 
+        'next' =>
         array (
-          0 => 
+          0 =>
           array (
             'ascii' => 'FRANCE',
             'fix' => '',
@@ -2152,7 +2152,7 @@ return array (
             'previous' => 'FRANCE',
             'volume' => '9',
           ),
-          1 => 
+          1 =>
           array (
             'ascii' => 'FRANCE',
             'fix' => '',
@@ -2163,7 +2163,7 @@ return array (
             'previous' => 'FRANCE',
             'volume' => '9',
           ),
-          2 => 
+          2 =>
           array (
             'ascii' => 'FRANCFORT',
             'fix' => '',
@@ -2174,7 +2174,7 @@ return array (
             'previous' => 'FRANCE',
             'volume' => '9',
           ),
-          3 => 
+          3 =>
           array (
             'ascii' => 'FRANCHE',
             'fix' => '',
@@ -2185,7 +2185,7 @@ return array (
             'previous' => 'FRANCFORT',
             'volume' => '9',
           ),
-          4 => 
+          4 =>
           array (
             'ascii' => 'FRANCHET',
             'fix' => '',
@@ -2196,7 +2196,7 @@ return array (
             'previous' => 'FRANCHE',
             'volume' => '9',
           ),
-          5 => 
+          5 =>
           array (
             'ascii' => 'FRANCISCAIN',
             'fix' => '',
@@ -2207,7 +2207,7 @@ return array (
             'previous' => 'FRANCHET',
             'volume' => '9',
           ),
-          6 => 
+          6 =>
           array (
             'ascii' => 'FRANCIUM',
             'fix' => '',
@@ -2218,7 +2218,7 @@ return array (
             'previous' => 'FRANCISCAIN',
             'volume' => '9',
           ),
-          7 => 
+          7 =>
           array (
             'ascii' => 'FRANCK',
             'fix' => '',
@@ -2229,7 +2229,7 @@ return array (
             'previous' => 'FRANCIUM',
             'volume' => '9',
           ),
-          8 => 
+          8 =>
           array (
             'ascii' => 'FRANCO',
             'fix' => '',
@@ -2240,7 +2240,7 @@ return array (
             'previous' => 'FRANCK',
             'volume' => '9',
           ),
-          9 => 
+          9 =>
           array (
             'ascii' => 'FRANCO',
             'fix' => '',
@@ -2255,19 +2255,19 @@ return array (
       ),
     ),
   ),
-  10 => 
+  10 =>
   array (
     'comment' => 'Guesde',
-    'result' => 
+    'result' =>
     array (
       'externalDict' => 'http://gallica.bnf.fr/ark:/12148/bpt6k1200521j/f2.highres',
       'page' => '5143',
       'volume' => '10',
-      'entries' => 
+      'entries' =>
       array (
-        'current' => 
+        'current' =>
         array (
-          0 => 
+          0 =>
           array (
             'ascii' => 'GUESDE',
             'fix' => '',
@@ -2278,7 +2278,7 @@ return array (
             'previous' => 'GUESCLIN',
             'volume' => '10',
           ),
-          1 => 
+          1 =>
           array (
             'ascii' => 'GUESDE',
             'fix' => '',
@@ -2290,9 +2290,9 @@ return array (
             'volume' => '10',
           ),
         ),
-        'previous' => 
+        'previous' =>
         array (
-          0 => 
+          0 =>
           array (
             'ascii' => 'GUATEMALA',
             'fix' => '',
@@ -2303,7 +2303,7 @@ return array (
             'previous' => 'GUADALAJARA',
             'volume' => '9',
           ),
-          1 => 
+          1 =>
           array (
             'ascii' => 'GUAYAQUIL',
             'fix' => '',
@@ -2314,7 +2314,7 @@ return array (
             'previous' => 'GUATEMALA',
             'volume' => '9',
           ),
-          2 => 
+          2 =>
           array (
             'ascii' => 'GUDERIAN',
             'fix' => '',
@@ -2325,7 +2325,7 @@ return array (
             'previous' => 'GUAYAQUIL',
             'volume' => '9',
           ),
-          3 => 
+          3 =>
           array (
             'ascii' => 'GUEPARD',
             'fix' => '',
@@ -2336,7 +2336,7 @@ return array (
             'previous' => 'GUDERIAN',
             'volume' => '9',
           ),
-          4 => 
+          4 =>
           array (
             'ascii' => 'GUEPE',
             'fix' => '',
@@ -2347,7 +2347,7 @@ return array (
             'previous' => 'GUEPARD',
             'volume' => '9',
           ),
-          5 => 
+          5 =>
           array (
             'ascii' => 'GUEPES',
             'fix' => '',
@@ -2358,7 +2358,7 @@ return array (
             'previous' => 'GUEPE',
             'volume' => '9',
           ),
-          6 => 
+          6 =>
           array (
             'ascii' => 'GUERRE',
             'fix' => '',
@@ -2369,7 +2369,7 @@ return array (
             'previous' => 'GUEPES',
             'volume' => '9',
           ),
-          7 => 
+          7 =>
           array (
             'ascii' => 'GUERRE',
             'fix' => '',
@@ -2380,7 +2380,7 @@ return array (
             'previous' => 'GUERRE',
             'volume' => '9',
           ),
-          8 => 
+          8 =>
           array (
             'ascii' => 'GUERRE',
             'fix' => '',
@@ -2391,7 +2391,7 @@ return array (
             'previous' => 'GUERRE',
             'volume' => '9',
           ),
-          9 => 
+          9 =>
           array (
             'ascii' => 'GUESCLIN',
             'fix' => '',
@@ -2403,9 +2403,9 @@ return array (
             'volume' => '9',
           ),
         ),
-        'next' => 
+        'next' =>
         array (
-          0 => 
+          0 =>
           array (
             'ascii' => 'GUEVARA',
             'fix' => '',
@@ -2416,7 +2416,7 @@ return array (
             'previous' => 'GUESDE',
             'volume' => '10',
           ),
-          1 => 
+          1 =>
           array (
             'ascii' => 'GUIDE',
             'fix' => '',
@@ -2427,7 +2427,7 @@ return array (
             'previous' => 'GUEVARA',
             'volume' => '10',
           ),
-          2 => 
+          2 =>
           array (
             'ascii' => 'GUIDE',
             'fix' => '',
@@ -2438,7 +2438,7 @@ return array (
             'previous' => 'GUIDE',
             'volume' => '10',
           ),
-          3 => 
+          3 =>
           array (
             'ascii' => 'GUILLAUME',
             'fix' => '',
@@ -2449,7 +2449,7 @@ return array (
             'previous' => 'GUIDE',
             'volume' => '10',
           ),
-          4 => 
+          4 =>
           array (
             'ascii' => 'GUILLAUME',
             'fix' => '',
@@ -2460,7 +2460,7 @@ return array (
             'previous' => 'GUILLAUME',
             'volume' => '10',
           ),
-          5 => 
+          5 =>
           array (
             'ascii' => 'GUILLAUME',
             'fix' => '',
@@ -2471,7 +2471,7 @@ return array (
             'previous' => 'GUILLAUME',
             'volume' => '10',
           ),
-          6 => 
+          6 =>
           array (
             'ascii' => 'GUILLAUME',
             'fix' => '',
@@ -2482,7 +2482,7 @@ return array (
             'previous' => 'GUILLAUME',
             'volume' => '10',
           ),
-          7 => 
+          7 =>
           array (
             'ascii' => 'GUILLAUME',
             'fix' => '',
@@ -2493,7 +2493,7 @@ return array (
             'previous' => 'GUILLAUME',
             'volume' => '10',
           ),
-          8 => 
+          8 =>
           array (
             'ascii' => 'GUILLAUME',
             'fix' => '',
@@ -2504,7 +2504,7 @@ return array (
             'previous' => 'GUILLAUME',
             'volume' => '10',
           ),
-          9 => 
+          9 =>
           array (
             'ascii' => 'GUILLAUME',
             'fix' => '',
@@ -2519,19 +2519,19 @@ return array (
       ),
     ),
   ),
-  11 => 
+  11 =>
   array (
     'comment' => 'Initiation',
-    'result' => 
+    'result' =>
     array (
       'externalDict' => 'http://gallica.bnf.fr/ark:/12148/bpt6k1200522z/f2.highres',
       'page' => '5723',
       'volume' => '11',
-      'entries' => 
+      'entries' =>
       array (
-        'current' => 
+        'current' =>
         array (
-          0 => 
+          0 =>
           array (
             'ascii' => 'INITIATION',
             'fix' => '',
@@ -2542,7 +2542,7 @@ return array (
             'previous' => 'INGRES',
             'volume' => '11',
           ),
-          1 => 
+          1 =>
           array (
             'ascii' => 'INITIATION',
             'fix' => '',
@@ -2554,9 +2554,9 @@ return array (
             'volume' => '11',
           ),
         ),
-        'previous' => 
+        'previous' =>
         array (
-          0 => 
+          0 =>
           array (
             'ascii' => 'INFORMATIQUE',
             'fix' => '',
@@ -2567,7 +2567,7 @@ return array (
             'previous' => 'INFORMATIQUE',
             'volume' => '10',
           ),
-          1 => 
+          1 =>
           array (
             'ascii' => 'INFORMATIQUE',
             'fix' => '',
@@ -2578,7 +2578,7 @@ return array (
             'previous' => 'INFORMATIQUE',
             'volume' => '10',
           ),
-          2 => 
+          2 =>
           array (
             'ascii' => 'INFRACTION',
             'fix' => '',
@@ -2589,7 +2589,7 @@ return array (
             'previous' => 'INFORMATIQUE',
             'volume' => '10',
           ),
-          3 => 
+          3 =>
           array (
             'ascii' => 'INFRACTIONS',
             'fix' => '',
@@ -2600,7 +2600,7 @@ return array (
             'previous' => 'INFRACTION',
             'volume' => '10',
           ),
-          4 => 
+          4 =>
           array (
             'ascii' => 'INFRACTIONS',
             'fix' => '',
@@ -2611,7 +2611,7 @@ return array (
             'previous' => 'INFRACTIONS',
             'volume' => '10',
           ),
-          5 => 
+          5 =>
           array (
             'ascii' => 'INFRACTIONS',
             'fix' => '',
@@ -2622,7 +2622,7 @@ return array (
             'previous' => 'INFRACTIONS',
             'volume' => '10',
           ),
-          6 => 
+          6 =>
           array (
             'ascii' => 'INFRACTIONS',
             'fix' => '',
@@ -2633,7 +2633,7 @@ return array (
             'previous' => 'INFRACTIONS',
             'volume' => '10',
           ),
-          7 => 
+          7 =>
           array (
             'ascii' => 'INFRACTIONS',
             'fix' => '',
@@ -2644,7 +2644,7 @@ return array (
             'previous' => 'INFRACTIONS',
             'volume' => '10',
           ),
-          8 => 
+          8 =>
           array (
             'ascii' => 'INFRAROUGE',
             'fix' => '',
@@ -2655,7 +2655,7 @@ return array (
             'previous' => 'INFRACTIONS',
             'volume' => '10',
           ),
-          9 => 
+          9 =>
           array (
             'ascii' => 'INGRES',
             'fix' => '',
@@ -2667,9 +2667,9 @@ return array (
             'volume' => '10',
           ),
         ),
-        'next' => 
+        'next' =>
         array (
-          0 => 
+          0 =>
           array (
             'ascii' => 'INJECTION',
             'fix' => '',
@@ -2680,7 +2680,7 @@ return array (
             'previous' => 'INITIATION',
             'volume' => '11',
           ),
-          1 => 
+          1 =>
           array (
             'ascii' => 'INJECTIONS',
             'fix' => '',
@@ -2691,7 +2691,7 @@ return array (
             'previous' => 'INJECTION',
             'volume' => '11',
           ),
-          2 => 
+          2 =>
           array (
             'ascii' => 'INJECTIONS',
             'fix' => '',
@@ -2702,7 +2702,7 @@ return array (
             'previous' => 'INJECTIONS',
             'volume' => '11',
           ),
-          3 => 
+          3 =>
           array (
             'ascii' => 'INNOCENT',
             'fix' => '',
@@ -2713,7 +2713,7 @@ return array (
             'previous' => 'INJECTIONS',
             'volume' => '11',
           ),
-          4 => 
+          4 =>
           array (
             'ascii' => 'INNOVATION',
             'fix' => '',
@@ -2724,7 +2724,7 @@ return array (
             'previous' => 'INNOCENT',
             'volume' => '11',
           ),
-          5 => 
+          5 =>
           array (
             'ascii' => 'INNSBRUCK',
             'fix' => '',
@@ -2735,7 +2735,7 @@ return array (
             'previous' => 'INNOVATION',
             'volume' => '11',
           ),
-          6 => 
+          6 =>
           array (
             'ascii' => 'INQUISITION',
             'fix' => '',
@@ -2746,7 +2746,7 @@ return array (
             'previous' => 'INNSBRUCK',
             'volume' => '11',
           ),
-          7 => 
+          7 =>
           array (
             'ascii' => 'INSECTE',
             'fix' => '',
@@ -2757,7 +2757,7 @@ return array (
             'previous' => 'INQUISITION',
             'volume' => '11',
           ),
-          8 => 
+          8 =>
           array (
             'ascii' => 'INSECTES',
             'fix' => '',
@@ -2768,7 +2768,7 @@ return array (
             'previous' => 'INSECTE',
             'volume' => '11',
           ),
-          9 => 
+          9 =>
           array (
             'ascii' => 'INSECTES',
             'fix' => '',
@@ -2783,19 +2783,19 @@ return array (
       ),
     ),
   ),
-  12 => 
+  12 =>
   array (
     'comment' => 'La Pérouse',
-    'result' => 
+    'result' =>
     array (
       'externalDict' => 'http://gallica.bnf.fr/ark:/12148/bpt6k1200523c/f2.highres',
       'page' => '6299',
       'volume' => '12',
-      'entries' => 
+      'entries' =>
       array (
-        'current' => 
+        'current' =>
         array (
-          0 => 
+          0 =>
           array (
             'ascii' => 'LAPEROUSE',
             'fix' => '',
@@ -2806,7 +2806,7 @@ return array (
             'previous' => 'LAOS',
             'volume' => '12',
           ),
-          1 => 
+          1 =>
           array (
             'ascii' => 'LAPIN',
             'fix' => '',
@@ -2818,9 +2818,9 @@ return array (
             'volume' => '12',
           ),
         ),
-        'previous' => 
+        'previous' =>
         array (
-          0 => 
+          0 =>
           array (
             'ascii' => 'LANGUES',
             'fix' => '',
@@ -2831,7 +2831,7 @@ return array (
             'previous' => 'LANGUES',
             'volume' => '11',
           ),
-          1 => 
+          1 =>
           array (
             'ascii' => 'LANGUES',
             'fix' => '',
@@ -2842,7 +2842,7 @@ return array (
             'previous' => 'LANGUES',
             'volume' => '11',
           ),
-          2 => 
+          2 =>
           array (
             'ascii' => 'LANGUES',
             'fix' => '',
@@ -2853,7 +2853,7 @@ return array (
             'previous' => 'LANGUES',
             'volume' => '11',
           ),
-          3 => 
+          3 =>
           array (
             'ascii' => 'LANGUES',
             'fix' => '',
@@ -2864,7 +2864,7 @@ return array (
             'previous' => 'LANGUES',
             'volume' => '11',
           ),
-          4 => 
+          4 =>
           array (
             'ascii' => 'LANSKOY',
             'fix' => '',
@@ -2875,7 +2875,7 @@ return array (
             'previous' => 'LANGUES',
             'volume' => '11',
           ),
-          5 => 
+          5 =>
           array (
             'ascii' => 'LANTHANE',
             'fix' => '',
@@ -2886,7 +2886,7 @@ return array (
             'previous' => 'LANSKOY',
             'volume' => '11',
           ),
-          6 => 
+          6 =>
           array (
             'ascii' => 'LAO',
             'fix' => '',
@@ -2897,7 +2897,7 @@ return array (
             'previous' => 'LANTHANE',
             'volume' => '11',
           ),
-          7 => 
+          7 =>
           array (
             'ascii' => 'LAON',
             'fix' => '',
@@ -2908,7 +2908,7 @@ return array (
             'previous' => 'LAO',
             'volume' => '11',
           ),
-          8 => 
+          8 =>
           array (
             'ascii' => 'LAON',
             'fix' => '',
@@ -2919,7 +2919,7 @@ return array (
             'previous' => 'LAON',
             'volume' => '11',
           ),
-          9 => 
+          9 =>
           array (
             'ascii' => 'LAOS',
             'fix' => '',
@@ -2931,9 +2931,9 @@ return array (
             'volume' => '11',
           ),
         ),
-        'next' => 
+        'next' =>
         array (
-          0 => 
+          0 =>
           array (
             'ascii' => 'LAPLACE',
             'fix' => '',
@@ -2944,7 +2944,7 @@ return array (
             'previous' => 'LAPIN',
             'volume' => '12',
           ),
-          1 => 
+          1 =>
           array (
             'ascii' => 'LAPLACE',
             'fix' => '',
@@ -2955,7 +2955,7 @@ return array (
             'previous' => 'LAPLACE',
             'volume' => '12',
           ),
-          2 => 
+          2 =>
           array (
             'ascii' => 'LAQUE',
             'fix' => '',
@@ -2966,7 +2966,7 @@ return array (
             'previous' => 'LAPLACE',
             'volume' => '12',
           ),
-          3 => 
+          3 =>
           array (
             'ascii' => 'LARGILLIERE',
             'fix' => '',
@@ -2977,7 +2977,7 @@ return array (
             'previous' => 'LAQUE',
             'volume' => '12',
           ),
-          4 => 
+          4 =>
           array (
             'ascii' => 'LARIONOV',
             'fix' => '',
@@ -2988,7 +2988,7 @@ return array (
             'previous' => 'LARGILLIERE',
             'volume' => '12',
           ),
-          5 => 
+          5 =>
           array (
             'ascii' => 'LARVE',
             'fix' => '',
@@ -2999,7 +2999,7 @@ return array (
             'previous' => 'LARIONOV',
             'volume' => '12',
           ),
-          6 => 
+          6 =>
           array (
             'ascii' => 'LARYNX',
             'fix' => '',
@@ -3010,7 +3010,7 @@ return array (
             'previous' => 'LARVE',
             'volume' => '12',
           ),
-          7 => 
+          7 =>
           array (
             'ascii' => 'LASCARIS',
             'fix' => '',
@@ -3021,7 +3021,7 @@ return array (
             'previous' => 'LARYNX',
             'volume' => '12',
           ),
-          8 => 
+          8 =>
           array (
             'ascii' => 'LASER',
             'fix' => '',
@@ -3032,7 +3032,7 @@ return array (
             'previous' => 'LASCARIS',
             'volume' => '12',
           ),
-          9 => 
+          9 =>
           array (
             'ascii' => 'LASSUS',
             'fix' => '',
@@ -3047,19 +3047,19 @@ return array (
       ),
     ),
   ),
-  13 => 
+  13 =>
   array (
     'comment' => 'Marconi',
-    'result' => 
+    'result' =>
     array (
       'externalDict' => 'http://gallica.bnf.fr/ark:/12148/bpt6k1200524s/f2.highres',
       'page' => '6871',
       'volume' => '13',
-      'entries' => 
+      'entries' =>
       array (
-        'current' => 
+        'current' =>
         array (
-          0 => 
+          0 =>
           array (
             'ascii' => 'MARCONI',
             'fix' => '',
@@ -3070,7 +3070,7 @@ return array (
             'previous' => 'MARCHES',
             'volume' => '13',
           ),
-          1 => 
+          1 =>
           array (
             'ascii' => 'MARCUSE',
             'fix' => '',
@@ -3081,7 +3081,7 @@ return array (
             'previous' => 'MARCONI',
             'volume' => '13',
           ),
-          2 => 
+          2 =>
           array (
             'ascii' => 'MARECHAL',
             'fix' => '',
@@ -3093,9 +3093,9 @@ return array (
             'volume' => '13',
           ),
         ),
-        'previous' => 
+        'previous' =>
         array (
-          0 => 
+          0 =>
           array (
             'ascii' => 'MARCHAND',
             'fix' => '',
@@ -3106,7 +3106,7 @@ return array (
             'previous' => 'MARCEL',
             'volume' => '12',
           ),
-          1 => 
+          1 =>
           array (
             'ascii' => 'MARCHE',
             'fix' => '',
@@ -3117,7 +3117,7 @@ return array (
             'previous' => 'MARCHAND',
             'volume' => '12',
           ),
-          2 => 
+          2 =>
           array (
             'ascii' => 'MARCHE',
             'fix' => '',
@@ -3128,7 +3128,7 @@ return array (
             'previous' => 'MARCHE',
             'volume' => '12',
           ),
-          3 => 
+          3 =>
           array (
             'ascii' => 'MARCHE',
             'fix' => '',
@@ -3139,7 +3139,7 @@ return array (
             'previous' => 'MARCHE',
             'volume' => '12',
           ),
-          4 => 
+          4 =>
           array (
             'ascii' => 'MARCHE',
             'fix' => '',
@@ -3150,7 +3150,7 @@ return array (
             'previous' => 'MARCHE',
             'volume' => '12',
           ),
-          5 => 
+          5 =>
           array (
             'ascii' => 'MARCHE',
             'fix' => '',
@@ -3161,7 +3161,7 @@ return array (
             'previous' => 'MARCHE',
             'volume' => '12',
           ),
-          6 => 
+          6 =>
           array (
             'ascii' => 'MARCHE',
             'fix' => '',
@@ -3172,7 +3172,7 @@ return array (
             'previous' => 'MARCHE',
             'volume' => '12',
           ),
-          7 => 
+          7 =>
           array (
             'ascii' => 'MARCHE',
             'fix' => '',
@@ -3183,7 +3183,7 @@ return array (
             'previous' => 'MARCHE',
             'volume' => '12',
           ),
-          8 => 
+          8 =>
           array (
             'ascii' => 'MARCHE',
             'fix' => '',
@@ -3194,7 +3194,7 @@ return array (
             'previous' => 'MARCHE',
             'volume' => '12',
           ),
-          9 => 
+          9 =>
           array (
             'ascii' => 'MARCHES',
             'fix' => '',
@@ -3206,9 +3206,9 @@ return array (
             'volume' => '12',
           ),
         ),
-        'next' => 
+        'next' =>
         array (
-          0 => 
+          0 =>
           array (
             'ascii' => 'MARECHAL',
             'fix' => '',
@@ -3219,7 +3219,7 @@ return array (
             'previous' => 'MARECHAL',
             'volume' => '13',
           ),
-          1 => 
+          1 =>
           array (
             'ascii' => 'MAREE',
             'fix' => '',
@@ -3230,7 +3230,7 @@ return array (
             'previous' => 'MARECHAL',
             'volume' => '13',
           ),
-          2 => 
+          2 =>
           array (
             'ascii' => 'MAREES',
             'fix' => '',
@@ -3241,7 +3241,7 @@ return array (
             'previous' => 'MAREE',
             'volume' => '13',
           ),
-          3 => 
+          3 =>
           array (
             'ascii' => 'MAREES',
             'fix' => '',
@@ -3252,7 +3252,7 @@ return array (
             'previous' => 'MAREES',
             'volume' => '13',
           ),
-          4 => 
+          4 =>
           array (
             'ascii' => 'MAREES',
             'fix' => '',
@@ -3263,7 +3263,7 @@ return array (
             'previous' => 'MAREES',
             'volume' => '13',
           ),
-          5 => 
+          5 =>
           array (
             'ascii' => 'MARGARINE',
             'fix' => '',
@@ -3274,7 +3274,7 @@ return array (
             'previous' => 'MAREES',
             'volume' => '13',
           ),
-          6 => 
+          6 =>
           array (
             'ascii' => 'MARGUERITE',
             'fix' => '',
@@ -3285,7 +3285,7 @@ return array (
             'previous' => 'MARGARINE',
             'volume' => '13',
           ),
-          7 => 
+          7 =>
           array (
             'ascii' => 'MARI',
             'fix' => '',
@@ -3296,7 +3296,7 @@ return array (
             'previous' => 'MARGUERITE',
             'volume' => '13',
           ),
-          8 => 
+          8 =>
           array (
             'ascii' => 'MARIAGE',
             'fix' => '',
@@ -3307,7 +3307,7 @@ return array (
             'previous' => 'MARI',
             'volume' => '13',
           ),
-          9 => 
+          9 =>
           array (
             'ascii' => 'MARIE',
             'fix' => '',
@@ -3322,19 +3322,19 @@ return array (
       ),
     ),
   ),
-  14 => 
+  14 =>
   array (
     'comment' => 'Moyen âge',
-    'result' => 
+    'result' =>
     array (
       'externalDict' => 'http://gallica.bnf.fr/ark:/12148/bpt6k12005256/f2.highres',
       'page' => '7445',
       'volume' => '14',
-      'entries' => 
+      'entries' =>
       array (
-        'current' => 
+        'current' =>
         array (
-          0 => 
+          0 =>
           array (
             'ascii' => 'MOYEN',
             'fix' => '',
@@ -3345,7 +3345,7 @@ return array (
             'previous' => 'MOUVEMENT',
             'volume' => '14',
           ),
-          1 => 
+          1 =>
           array (
             'ascii' => 'MOYEN',
             'fix' => '',
@@ -3357,9 +3357,9 @@ return array (
             'volume' => '14',
           ),
         ),
-        'previous' => 
+        'previous' =>
         array (
-          0 => 
+          0 =>
           array (
             'ascii' => 'MOULINS',
             'fix' => '',
@@ -3370,7 +3370,7 @@ return array (
             'previous' => 'MOULIN',
             'volume' => '13',
           ),
-          1 => 
+          1 =>
           array (
             'ascii' => 'MOUNTBATTEN',
             'fix' => '',
@@ -3381,7 +3381,7 @@ return array (
             'previous' => 'MOULINS',
             'volume' => '13',
           ),
-          2 => 
+          2 =>
           array (
             'ascii' => 'MOUSSE',
             'fix' => '',
@@ -3392,7 +3392,7 @@ return array (
             'previous' => 'MOUNTBATTEN',
             'volume' => '13',
           ),
-          3 => 
+          3 =>
           array (
             'ascii' => 'MOUSSON',
             'fix' => '',
@@ -3403,7 +3403,7 @@ return array (
             'previous' => 'MOUSSE',
             'volume' => '13',
           ),
-          4 => 
+          4 =>
           array (
             'ascii' => 'MOUSSORGSKI',
             'fix' => '',
@@ -3414,7 +3414,7 @@ return array (
             'previous' => 'MOUSSON',
             'volume' => '13',
           ),
-          5 => 
+          5 =>
           array (
             'ascii' => 'MOUSTIQUE',
             'fix' => '',
@@ -3425,7 +3425,7 @@ return array (
             'previous' => 'MOUSSORGSKI',
             'volume' => '13',
           ),
-          6 => 
+          6 =>
           array (
             'ascii' => 'MOUTARDE',
             'fix' => '',
@@ -3436,7 +3436,7 @@ return array (
             'previous' => 'MOUSTIQUE',
             'volume' => '13',
           ),
-          7 => 
+          7 =>
           array (
             'ascii' => 'MOUTON',
             'fix' => '',
@@ -3447,7 +3447,7 @@ return array (
             'previous' => 'MOUTARDE',
             'volume' => '13',
           ),
-          8 => 
+          8 =>
           array (
             'ascii' => 'MOUVEMENT',
             'fix' => '',
@@ -3458,7 +3458,7 @@ return array (
             'previous' => 'MOUTON',
             'volume' => '13',
           ),
-          9 => 
+          9 =>
           array (
             'ascii' => 'MOUVEMENT',
             'fix' => '',
@@ -3470,9 +3470,9 @@ return array (
             'volume' => '13',
           ),
         ),
-        'next' => 
+        'next' =>
         array (
-          0 => 
+          0 =>
           array (
             'ascii' => 'MOYEN',
             'fix' => '',
@@ -3483,7 +3483,7 @@ return array (
             'previous' => 'MOYEN',
             'volume' => '14',
           ),
-          1 => 
+          1 =>
           array (
             'ascii' => 'MOYEN',
             'fix' => '',
@@ -3494,7 +3494,7 @@ return array (
             'previous' => 'MOYEN',
             'volume' => '14',
           ),
-          2 => 
+          2 =>
           array (
             'ascii' => 'MOYEN',
             'fix' => '',
@@ -3505,7 +3505,7 @@ return array (
             'previous' => 'MOYEN',
             'volume' => '14',
           ),
-          3 => 
+          3 =>
           array (
             'ascii' => 'MOZAMBIQUE',
             'fix' => '',
@@ -3516,7 +3516,7 @@ return array (
             'previous' => 'MOYEN',
             'volume' => '14',
           ),
-          4 => 
+          4 =>
           array (
             'ascii' => 'MOZART',
             'fix' => '',
@@ -3527,7 +3527,7 @@ return array (
             'previous' => 'MOZAMBIQUE',
             'volume' => '14',
           ),
-          5 => 
+          5 =>
           array (
             'ascii' => 'MUE',
             'fix' => '',
@@ -3538,7 +3538,7 @@ return array (
             'previous' => 'MOZART',
             'volume' => '14',
           ),
-          6 => 
+          6 =>
           array (
             'ascii' => 'MULHOUSE',
             'fix' => '',
@@ -3549,7 +3549,7 @@ return array (
             'previous' => 'MUE',
             'volume' => '14',
           ),
-          7 => 
+          7 =>
           array (
             'ascii' => 'MULTIPLICATION',
             'fix' => '',
@@ -3560,7 +3560,7 @@ return array (
             'previous' => 'MULHOUSE',
             'volume' => '14',
           ),
-          8 => 
+          8 =>
           array (
             'ascii' => 'MUNCH',
             'fix' => '',
@@ -3571,7 +3571,7 @@ return array (
             'previous' => 'MULTIPLICATION',
             'volume' => '14',
           ),
-          9 => 
+          9 =>
           array (
             'ascii' => 'MUNICH',
             'fix' => '',
@@ -3586,19 +3586,19 @@ return array (
       ),
     ),
   ),
-  15 => 
+  15 =>
   array (
     'comment' => 'Ostrava',
-    'result' => 
+    'result' =>
     array (
       'externalDict' => 'http://gallica.bnf.fr/ark:/12148/bpt6k1200526m/f2.highres',
       'page' => '8069',
       'volume' => '15',
-      'entries' => 
+      'entries' =>
       array (
-        'current' => 
+        'current' =>
         array (
-          0 => 
+          0 =>
           array (
             'ascii' => 'OSTRAVA',
             'fix' => '',
@@ -3609,7 +3609,7 @@ return array (
             'previous' => 'OSTIE',
             'volume' => '15',
           ),
-          1 => 
+          1 =>
           array (
             'ascii' => 'OSTREICULTURE',
             'fix' => '',
@@ -3620,7 +3620,7 @@ return array (
             'previous' => 'OSTRAVA',
             'volume' => '15',
           ),
-          2 => 
+          2 =>
           array (
             'ascii' => 'OSTROGOTH',
             'fix' => '',
@@ -3632,9 +3632,9 @@ return array (
             'volume' => '15',
           ),
         ),
-        'previous' => 
+        'previous' =>
         array (
-          0 => 
+          0 =>
           array (
             'ascii' => 'OSE',
             'fix' => '',
@@ -3645,7 +3645,7 @@ return array (
             'previous' => 'OSCILLOSCOPE',
             'volume' => '14',
           ),
-          1 => 
+          1 =>
           array (
             'ascii' => 'OSIERICULTURE',
             'fix' => '',
@@ -3656,7 +3656,7 @@ return array (
             'previous' => 'OSE',
             'volume' => '14',
           ),
-          2 => 
+          2 =>
           array (
             'ascii' => 'OSLO',
             'fix' => '',
@@ -3667,7 +3667,7 @@ return array (
             'previous' => 'OSIERICULTURE',
             'volume' => '14',
           ),
-          3 => 
+          3 =>
           array (
             'ascii' => 'OSMIUM',
             'fix' => '',
@@ -3678,7 +3678,7 @@ return array (
             'previous' => 'OSLO',
             'volume' => '14',
           ),
-          4 => 
+          4 =>
           array (
             'ascii' => 'OSSATURE',
             'fix' => '',
@@ -3689,7 +3689,7 @@ return array (
             'previous' => 'OSMIUM',
             'volume' => '14',
           ),
-          5 => 
+          5 =>
           array (
             'ascii' => 'OSSATURE',
             'fix' => '',
@@ -3700,7 +3700,7 @@ return array (
             'previous' => 'OSSATURE',
             'volume' => '14',
           ),
-          6 => 
+          6 =>
           array (
             'ascii' => 'OSSATURE',
             'fix' => '',
@@ -3711,7 +3711,7 @@ return array (
             'previous' => 'OSSATURE',
             'volume' => '14',
           ),
-          7 => 
+          7 =>
           array (
             'ascii' => 'OSSATURE',
             'fix' => '',
@@ -3722,7 +3722,7 @@ return array (
             'previous' => 'OSSATURE',
             'volume' => '14',
           ),
-          8 => 
+          8 =>
           array (
             'ascii' => 'OSTENDE',
             'fix' => '',
@@ -3733,7 +3733,7 @@ return array (
             'previous' => 'OSSATURE',
             'volume' => '14',
           ),
-          9 => 
+          9 =>
           array (
             'ascii' => 'OSTIE',
             'fix' => '',
@@ -3745,9 +3745,9 @@ return array (
             'volume' => '14',
           ),
         ),
-        'next' => 
+        'next' =>
         array (
-          0 => 
+          0 =>
           array (
             'ascii' => 'OSTROVSKI',
             'fix' => '',
@@ -3758,7 +3758,7 @@ return array (
             'previous' => 'OSTROGOTH',
             'volume' => '15',
           ),
-          1 => 
+          1 =>
           array (
             'ascii' => 'OTITE',
             'fix' => '',
@@ -3769,7 +3769,7 @@ return array (
             'previous' => 'OSTROVSKI',
             'volume' => '15',
           ),
-          2 => 
+          2 =>
           array (
             'ascii' => 'OTO',
             'fix' => '',
@@ -3780,7 +3780,7 @@ return array (
             'previous' => 'OTITE',
             'volume' => '15',
           ),
-          3 => 
+          3 =>
           array (
             'ascii' => 'OTTAWA',
             'fix' => '',
@@ -3791,7 +3791,7 @@ return array (
             'previous' => 'OTO',
             'volume' => '15',
           ),
-          4 => 
+          4 =>
           array (
             'ascii' => 'OTTOMAN',
             'fix' => '',
@@ -3802,7 +3802,7 @@ return array (
             'previous' => 'OTTAWA',
             'volume' => '15',
           ),
-          5 => 
+          5 =>
           array (
             'ascii' => 'OTTON',
             'fix' => '',
@@ -3813,7 +3813,7 @@ return array (
             'previous' => 'OTTOMAN',
             'volume' => '15',
           ),
-          6 => 
+          6 =>
           array (
             'ascii' => 'OUATERIE',
             'fix' => '',
@@ -3824,7 +3824,7 @@ return array (
             'previous' => 'OTTON',
             'volume' => '15',
           ),
-          7 => 
+          7 =>
           array (
             'ascii' => 'OUATES',
             'fix' => '',
@@ -3835,7 +3835,7 @@ return array (
             'previous' => 'OUATERIE',
             'volume' => '15',
           ),
-          8 => 
+          8 =>
           array (
             'ascii' => 'OUDRY',
             'fix' => '',
@@ -3846,7 +3846,7 @@ return array (
             'previous' => 'OUATES',
             'volume' => '15',
           ),
-          9 => 
+          9 =>
           array (
             'ascii' => 'OUGANDA',
             'fix' => '',
@@ -3861,19 +3861,19 @@ return array (
       ),
     ),
   ),
-  16 => 
+  16 =>
   array (
     'comment' => 'Plomb',
-    'result' => 
+    'result' =>
     array (
       'externalDict' => 'http://gallica.bnf.fr/ark:/12148/bpt6k12005271/f2.highres',
       'page' => '8687',
       'volume' => '16',
-      'entries' => 
+      'entries' =>
       array (
-        'current' => 
+        'current' =>
         array (
-          0 => 
+          0 =>
           array (
             'ascii' => 'PLOMB',
             'fix' => '',
@@ -3885,9 +3885,9 @@ return array (
             'volume' => '16',
           ),
         ),
-        'previous' => 
+        'previous' =>
         array (
-          0 => 
+          0 =>
           array (
             'ascii' => 'PLATON',
             'fix' => '',
@@ -3898,7 +3898,7 @@ return array (
             'previous' => 'PLATINE',
             'volume' => '15',
           ),
-          1 => 
+          1 =>
           array (
             'ascii' => 'PLATONOV',
             'fix' => '',
@@ -3909,7 +3909,7 @@ return array (
             'previous' => 'PLATON',
             'volume' => '15',
           ),
-          2 => 
+          2 =>
           array (
             'ascii' => 'PLATRE',
             'fix' => '',
@@ -3920,7 +3920,7 @@ return array (
             'previous' => 'PLATONOV',
             'volume' => '15',
           ),
-          3 => 
+          3 =>
           array (
             'ascii' => 'PLAUTE',
             'fix' => '',
@@ -3931,7 +3931,7 @@ return array (
             'previous' => 'PLATRE',
             'volume' => '15',
           ),
-          4 => 
+          4 =>
           array (
             'ascii' => 'PLEBISCITE',
             'fix' => '',
@@ -3942,7 +3942,7 @@ return array (
             'previous' => 'PLAUTE',
             'volume' => '15',
           ),
-          5 => 
+          5 =>
           array (
             'ascii' => 'PLEKHANOV',
             'fix' => '',
@@ -3953,7 +3953,7 @@ return array (
             'previous' => 'PLEBISCITE',
             'volume' => '15',
           ),
-          6 => 
+          6 =>
           array (
             'ascii' => 'PLEURESIE',
             'fix' => '',
@@ -3964,7 +3964,7 @@ return array (
             'previous' => 'PLEKHANOV',
             'volume' => '15',
           ),
-          7 => 
+          7 =>
           array (
             'ascii' => 'PLIAGE',
             'fix' => '',
@@ -3975,7 +3975,7 @@ return array (
             'previous' => 'PLEURESIE',
             'volume' => '15',
           ),
-          8 => 
+          8 =>
           array (
             'ascii' => 'PLINE',
             'fix' => '',
@@ -3986,7 +3986,7 @@ return array (
             'previous' => 'PLIAGE',
             'volume' => '15',
           ),
-          9 => 
+          9 =>
           array (
             'ascii' => 'PLINE',
             'fix' => '',
@@ -3998,9 +3998,9 @@ return array (
             'volume' => '15',
           ),
         ),
-        'next' => 
+        'next' =>
         array (
-          0 => 
+          0 =>
           array (
             'ascii' => 'PLOTIN',
             'fix' => '',
@@ -4011,7 +4011,7 @@ return array (
             'previous' => 'PLOMB',
             'volume' => '16',
           ),
-          1 => 
+          1 =>
           array (
             'ascii' => 'PLUIE',
             'fix' => '',
@@ -4022,7 +4022,7 @@ return array (
             'previous' => 'PLOTIN',
             'volume' => '16',
           ),
-          2 => 
+          2 =>
           array (
             'ascii' => 'PLUTARQUE',
             'fix' => '',
@@ -4033,7 +4033,7 @@ return array (
             'previous' => 'PLUIE',
             'volume' => '16',
           ),
-          3 => 
+          3 =>
           array (
             'ascii' => 'PLUTONIUM',
             'fix' => '',
@@ -4044,7 +4044,7 @@ return array (
             'previous' => 'PLUTARQUE',
             'volume' => '16',
           ),
-          4 => 
+          4 =>
           array (
             'ascii' => 'PLUTONIUM',
             'fix' => '',
@@ -4055,7 +4055,7 @@ return array (
             'previous' => 'PLUTONIUM',
             'volume' => '16',
           ),
-          5 => 
+          5 =>
           array (
             'ascii' => 'PLUTONIUM',
             'fix' => '',
@@ -4066,7 +4066,7 @@ return array (
             'previous' => 'PLUTONIUM',
             'volume' => '16',
           ),
-          6 => 
+          6 =>
           array (
             'ascii' => 'PNEUMATIQUE',
             'fix' => '',
@@ -4077,7 +4077,7 @@ return array (
             'previous' => 'PLUTONIUM',
             'volume' => '16',
           ),
-          7 => 
+          7 =>
           array (
             'ascii' => 'PNEUMOCONIOSE',
             'fix' => '',
@@ -4088,7 +4088,7 @@ return array (
             'previous' => 'PNEUMATIQUE',
             'volume' => '16',
           ),
-          8 => 
+          8 =>
           array (
             'ascii' => 'PNEUMOLOGIE',
             'fix' => '',
@@ -4099,7 +4099,7 @@ return array (
             'previous' => 'PNEUMOCONIOSE',
             'volume' => '16',
           ),
-          9 => 
+          9 =>
           array (
             'ascii' => 'PO',
             'fix' => '',
@@ -4114,19 +4114,19 @@ return array (
       ),
     ),
   ),
-  17 => 
+  17 =>
   array (
     'comment' => 'Renan',
-    'result' => 
+    'result' =>
     array (
       'externalDict' => 'http://gallica.bnf.fr/ark:/12148/bpt6k1200528f/f2.highres',
       'page' => '9337',
       'volume' => '17',
-      'entries' => 
+      'entries' =>
       array (
-        'current' => 
+        'current' =>
         array (
-          0 => 
+          0 =>
           array (
             'ascii' => 'RENAN',
             'fix' => '',
@@ -4137,7 +4137,7 @@ return array (
             'previous' => 'RENAISSANCE',
             'volume' => '17',
           ),
-          1 => 
+          1 =>
           array (
             'ascii' => 'RENARD',
             'fix' => '',
@@ -4149,9 +4149,9 @@ return array (
             'volume' => '17',
           ),
         ),
-        'previous' => 
+        'previous' =>
         array (
-          0 => 
+          0 =>
           array (
             'ascii' => 'RELIGION',
             'fix' => '',
@@ -4162,7 +4162,7 @@ return array (
             'previous' => 'RELIGION',
             'volume' => '16',
           ),
-          1 => 
+          1 =>
           array (
             'ascii' => 'RELIGION',
             'fix' => '',
@@ -4173,7 +4173,7 @@ return array (
             'previous' => 'RELIGION',
             'volume' => '16',
           ),
-          2 => 
+          2 =>
           array (
             'ascii' => 'RELIURE',
             'fix' => '',
@@ -4184,7 +4184,7 @@ return array (
             'previous' => 'RELIGION',
             'volume' => '16',
           ),
-          3 => 
+          3 =>
           array (
             'ascii' => 'REMBRANDT',
             'fix' => '',
@@ -4195,7 +4195,7 @@ return array (
             'previous' => 'RELIURE',
             'volume' => '16',
           ),
-          4 => 
+          4 =>
           array (
             'ascii' => 'REMORA',
             'fix' => '',
@@ -4206,7 +4206,7 @@ return array (
             'previous' => 'REMBRANDT',
             'volume' => '16',
           ),
-          5 => 
+          5 =>
           array (
             'ascii' => 'REMORQUAGE',
             'fix' => '',
@@ -4217,7 +4217,7 @@ return array (
             'previous' => 'REMORA',
             'volume' => '16',
           ),
-          6 => 
+          6 =>
           array (
             'ascii' => 'REMORQUEUR',
             'fix' => '',
@@ -4228,7 +4228,7 @@ return array (
             'previous' => 'REMORQUAGE',
             'volume' => '16',
           ),
-          7 => 
+          7 =>
           array (
             'ascii' => 'REMORQUEURS',
             'fix' => '',
@@ -4239,7 +4239,7 @@ return array (
             'previous' => 'REMORQUEUR',
             'volume' => '16',
           ),
-          8 => 
+          8 =>
           array (
             'ascii' => 'RENAISSANCE',
             'fix' => '',
@@ -4250,7 +4250,7 @@ return array (
             'previous' => 'REMORQUEURS',
             'volume' => '16',
           ),
-          9 => 
+          9 =>
           array (
             'ascii' => 'RENAISSANCE',
             'fix' => '',
@@ -4262,9 +4262,9 @@ return array (
             'volume' => '16',
           ),
         ),
-        'next' => 
+        'next' =>
         array (
-          0 => 
+          0 =>
           array (
             'ascii' => 'RENARD',
             'fix' => '',
@@ -4275,7 +4275,7 @@ return array (
             'previous' => 'RENARD',
             'volume' => '17',
           ),
-          1 => 
+          1 =>
           array (
             'ascii' => 'RENAULT',
             'fix' => '',
@@ -4286,7 +4286,7 @@ return array (
             'previous' => 'RENARD',
             'volume' => '17',
           ),
-          2 => 
+          2 =>
           array (
             'ascii' => 'RENDEMENT',
             'fix' => '',
@@ -4297,7 +4297,7 @@ return array (
             'previous' => 'RENAULT',
             'volume' => '17',
           ),
-          3 => 
+          3 =>
           array (
             'ascii' => 'RENDEMENT',
             'fix' => '',
@@ -4308,7 +4308,7 @@ return array (
             'previous' => 'RENDEMENT',
             'volume' => '17',
           ),
-          4 => 
+          4 =>
           array (
             'ascii' => 'RENE',
             'fix' => '',
@@ -4319,7 +4319,7 @@ return array (
             'previous' => 'RENDEMENT',
             'volume' => '17',
           ),
-          5 => 
+          5 =>
           array (
             'ascii' => 'RENFLOUEMENT',
             'fix' => '',
@@ -4330,7 +4330,7 @@ return array (
             'previous' => 'RENE',
             'volume' => '17',
           ),
-          6 => 
+          6 =>
           array (
             'ascii' => 'RENFLOUEMENT',
             'fix' => '',
@@ -4341,7 +4341,7 @@ return array (
             'previous' => 'RENFLOUEMENT',
             'volume' => '17',
           ),
-          7 => 
+          7 =>
           array (
             'ascii' => 'RENFLOUEMENT',
             'fix' => '',
@@ -4352,7 +4352,7 @@ return array (
             'previous' => 'RENFLOUEMENT',
             'volume' => '17',
           ),
-          8 => 
+          8 =>
           array (
             'ascii' => 'RENFLOUEMENT',
             'fix' => '',
@@ -4363,7 +4363,7 @@ return array (
             'previous' => 'RENFLOUEMENT',
             'volume' => '17',
           ),
-          9 => 
+          9 =>
           array (
             'ascii' => 'RENNE',
             'fix' => '',
@@ -4378,19 +4378,19 @@ return array (
       ),
     ),
   ),
-  18 => 
+  18 =>
   array (
     'comment' => 'scintigraphie',
-    'result' => 
+    'result' =>
     array (
       'externalDict' => 'http://gallica.bnf.fr/ark:/12148/bpt6k1200529v/f5.highres',
       'page' => '9960',
       'volume' => '18',
-      'entries' => 
+      'entries' =>
       array (
-        'current' => 
+        'current' =>
         array (
-          0 => 
+          0 =>
           array (
             'ascii' => 'SCINTIGRAPHIE',
             'fix' => '',
@@ -4402,9 +4402,9 @@ return array (
             'volume' => '18',
           ),
         ),
-        'previous' => 
+        'previous' =>
         array (
-          0 => 
+          0 =>
           array (
             'ascii' => 'SCHUMANN',
             'fix' => '',
@@ -4415,7 +4415,7 @@ return array (
             'previous' => 'SCHUMAN',
             'volume' => '17',
           ),
-          1 => 
+          1 =>
           array (
             'ascii' => 'SCHUMANN',
             'fix' => '',
@@ -4426,7 +4426,7 @@ return array (
             'previous' => 'SCHUMANN',
             'volume' => '17',
           ),
-          2 => 
+          2 =>
           array (
             'ascii' => 'SCHUMPETER',
             'fix' => '',
@@ -4437,7 +4437,7 @@ return array (
             'previous' => 'SCHUMANN',
             'volume' => '17',
           ),
-          3 => 
+          3 =>
           array (
             'ascii' => 'SCHUTZ',
             'fix' => '',
@@ -4448,7 +4448,7 @@ return array (
             'previous' => 'SCHUMPETER',
             'volume' => '17',
           ),
-          4 => 
+          4 =>
           array (
             'ascii' => 'SCHWITTERS',
             'fix' => '',
@@ -4459,7 +4459,7 @@ return array (
             'previous' => 'SCHUTZ',
             'volume' => '17',
           ),
-          5 => 
+          5 =>
           array (
             'ascii' => 'SCIAGE',
             'fix' => '',
@@ -4470,7 +4470,7 @@ return array (
             'previous' => 'SCHWITTERS',
             'volume' => '17',
           ),
-          6 => 
+          6 =>
           array (
             'ascii' => 'SCIATIQUE',
             'fix' => '',
@@ -4481,7 +4481,7 @@ return array (
             'previous' => 'SCIAGE',
             'volume' => '17',
           ),
-          7 => 
+          7 =>
           array (
             'ascii' => 'SCIENCE',
             'fix' => '',
@@ -4492,7 +4492,7 @@ return array (
             'previous' => 'SCIATIQUE',
             'volume' => '17',
           ),
-          8 => 
+          8 =>
           array (
             'ascii' => 'SCIENCE',
             'fix' => '',
@@ -4503,7 +4503,7 @@ return array (
             'previous' => 'SCIENCE',
             'volume' => '17',
           ),
-          9 => 
+          9 =>
           array (
             'ascii' => 'SCIENCE',
             'fix' => '',
@@ -4515,9 +4515,9 @@ return array (
             'volume' => '18',
           ),
         ),
-        'next' => 
+        'next' =>
         array (
-          0 => 
+          0 =>
           array (
             'ascii' => 'SCIPION',
             'fix' => '',
@@ -4528,7 +4528,7 @@ return array (
             'previous' => 'SCINTIGRAPHIE',
             'volume' => '18',
           ),
-          1 => 
+          1 =>
           array (
             'ascii' => 'SCIPION',
             'fix' => '',
@@ -4539,7 +4539,7 @@ return array (
             'previous' => 'SCIPION',
             'volume' => '18',
           ),
-          2 => 
+          2 =>
           array (
             'ascii' => 'SCIPION',
             'fix' => '',
@@ -4550,7 +4550,7 @@ return array (
             'previous' => 'SCIPION',
             'volume' => '18',
           ),
-          3 => 
+          3 =>
           array (
             'ascii' => 'SCITAMINALE',
             'fix' => '',
@@ -4561,7 +4561,7 @@ return array (
             'previous' => 'SCIPION',
             'volume' => '18',
           ),
-          4 => 
+          4 =>
           array (
             'ascii' => 'SCLEROSE',
             'fix' => '',
@@ -4572,7 +4572,7 @@ return array (
             'previous' => 'SCITAMINALE',
             'volume' => '18',
           ),
-          5 => 
+          5 =>
           array (
             'ascii' => 'SCLEROSE',
             'fix' => '',
@@ -4583,7 +4583,7 @@ return array (
             'previous' => 'SCLEROSE',
             'volume' => '18',
           ),
-          6 => 
+          6 =>
           array (
             'ascii' => 'SCLEROSE',
             'fix' => '',
@@ -4594,7 +4594,7 @@ return array (
             'previous' => 'SCLEROSE',
             'volume' => '18',
           ),
-          7 => 
+          7 =>
           array (
             'ascii' => 'SCLEROSE',
             'fix' => '',
@@ -4605,7 +4605,7 @@ return array (
             'previous' => 'SCLEROSE',
             'volume' => '18',
           ),
-          8 => 
+          8 =>
           array (
             'ascii' => 'SCLEROSE',
             'fix' => '',
@@ -4616,7 +4616,7 @@ return array (
             'previous' => 'SCLEROSE',
             'volume' => '18',
           ),
-          9 => 
+          9 =>
           array (
             'ascii' => 'SCOLASTIQUE',
             'fix' => '',
@@ -4631,19 +4631,19 @@ return array (
       ),
     ),
   ),
-  19 => 
+  19 =>
   array (
     'comment' => 'Syndrome',
-    'result' => 
+    'result' =>
     array (
       'externalDict' => 'http://gallica.bnf.fr/ark:/12148/bpt6k1200530h/f2.highres',
       'page' => '10583',
       'volume' => '19',
-      'entries' => 
+      'entries' =>
       array (
-        'current' => 
+        'current' =>
         array (
-          0 => 
+          0 =>
           array (
             'ascii' => 'SYNDROME',
             'fix' => '',
@@ -4654,7 +4654,7 @@ return array (
             'previous' => 'SYNDICAT',
             'volume' => '19',
           ),
-          1 => 
+          1 =>
           array (
             'ascii' => 'SYNDROMES',
             'fix' => '',
@@ -4665,7 +4665,7 @@ return array (
             'previous' => 'SYNDROME',
             'volume' => '19',
           ),
-          2 => 
+          2 =>
           array (
             'ascii' => 'SYNDROMES',
             'fix' => '',
@@ -4676,7 +4676,7 @@ return array (
             'previous' => 'SYNDROMES',
             'volume' => '19',
           ),
-          3 => 
+          3 =>
           array (
             'ascii' => 'SYNDROMES',
             'fix' => '',
@@ -4687,7 +4687,7 @@ return array (
             'previous' => 'SYNDROMES',
             'volume' => '19',
           ),
-          4 => 
+          4 =>
           array (
             'ascii' => 'SYNDROMES',
             'fix' => '',
@@ -4699,9 +4699,9 @@ return array (
             'volume' => '19',
           ),
         ),
-        'previous' => 
+        'previous' =>
         array (
-          0 => 
+          0 =>
           array (
             'ascii' => 'SYMBOLE',
             'fix' => '',
@@ -4712,7 +4712,7 @@ return array (
             'previous' => 'SYMBIOSES',
             'volume' => '18',
           ),
-          1 => 
+          1 =>
           array (
             'ascii' => 'SYMBOLISME',
             'fix' => '',
@@ -4723,7 +4723,7 @@ return array (
             'previous' => 'SYMBOLE',
             'volume' => '18',
           ),
-          2 => 
+          2 =>
           array (
             'ascii' => 'SYMETRIE',
             'fix' => '',
@@ -4734,7 +4734,7 @@ return array (
             'previous' => 'SYMBOLISME',
             'volume' => '18',
           ),
-          3 => 
+          3 =>
           array (
             'ascii' => 'SYMPHONIESYMETRIE',
             'fix' => '',
@@ -4745,7 +4745,7 @@ return array (
             'previous' => 'SYMETRIE',
             'volume' => '18',
           ),
-          4 => 
+          4 =>
           array (
             'ascii' => 'SYMPTOME',
             'fix' => '',
@@ -4756,7 +4756,7 @@ return array (
             'previous' => 'SYMPHONIESYMETRIE',
             'volume' => '18',
           ),
-          5 => 
+          5 =>
           array (
             'ascii' => 'SYNCHROCYCLOTRON',
             'fix' => '',
@@ -4767,7 +4767,7 @@ return array (
             'previous' => 'SYMPTOME',
             'volume' => '18',
           ),
-          6 => 
+          6 =>
           array (
             'ascii' => 'SYNCOPE',
             'fix' => '',
@@ -4778,7 +4778,7 @@ return array (
             'previous' => 'SYNCHROCYCLOTRON',
             'volume' => '18',
           ),
-          7 => 
+          7 =>
           array (
             'ascii' => 'SYNDICALISME',
             'fix' => '',
@@ -4789,7 +4789,7 @@ return array (
             'previous' => 'SYNCOPE',
             'volume' => '18',
           ),
-          8 => 
+          8 =>
           array (
             'ascii' => 'SYNDICALISME',
             'fix' => '',
@@ -4800,7 +4800,7 @@ return array (
             'previous' => 'SYNDICALISME',
             'volume' => '18',
           ),
-          9 => 
+          9 =>
           array (
             'ascii' => 'SYNDICAT',
             'fix' => '',
@@ -4812,9 +4812,9 @@ return array (
             'volume' => '18',
           ),
         ),
-        'next' => 
+        'next' =>
         array (
-          0 => 
+          0 =>
           array (
             'ascii' => 'SYNGE',
             'fix' => '',
@@ -4825,7 +4825,7 @@ return array (
             'previous' => 'SYNDROMES',
             'volume' => '19',
           ),
-          1 => 
+          1 =>
           array (
             'ascii' => 'SYPHILIS',
             'fix' => '',
@@ -4836,7 +4836,7 @@ return array (
             'previous' => 'SYNGE',
             'volume' => '19',
           ),
-          2 => 
+          2 =>
           array (
             'ascii' => 'SYPHILIS',
             'fix' => '',
@@ -4847,7 +4847,7 @@ return array (
             'previous' => 'SYPHILIS',
             'volume' => '19',
           ),
-          3 => 
+          3 =>
           array (
             'ascii' => 'SYPHILIS',
             'fix' => '',
@@ -4858,7 +4858,7 @@ return array (
             'previous' => 'SYPHILIS',
             'volume' => '19',
           ),
-          4 => 
+          4 =>
           array (
             'ascii' => 'SYPHILIS',
             'fix' => '',
@@ -4869,7 +4869,7 @@ return array (
             'previous' => 'SYPHILIS',
             'volume' => '19',
           ),
-          5 => 
+          5 =>
           array (
             'ascii' => 'SYPHILIS',
             'fix' => '',
@@ -4880,7 +4880,7 @@ return array (
             'previous' => 'SYPHILIS',
             'volume' => '19',
           ),
-          6 => 
+          6 =>
           array (
             'ascii' => 'SYPHILIS',
             'fix' => '',
@@ -4891,7 +4891,7 @@ return array (
             'previous' => 'SYPHILIS',
             'volume' => '19',
           ),
-          7 => 
+          7 =>
           array (
             'ascii' => 'SYPHILIS',
             'fix' => '',
@@ -4902,7 +4902,7 @@ return array (
             'previous' => 'SYPHILIS',
             'volume' => '19',
           ),
-          8 => 
+          8 =>
           array (
             'ascii' => 'SYPHILIS',
             'fix' => '',
@@ -4913,7 +4913,7 @@ return array (
             'previous' => 'SYPHILIS',
             'volume' => '19',
           ),
-          9 => 
+          9 =>
           array (
             'ascii' => 'SYRACUSE',
             'fix' => '',
@@ -4928,19 +4928,19 @@ return array (
       ),
     ),
   ),
-  20 => 
+  20 =>
   array (
     'comment' => 'Tuyau',
-    'result' => 
+    'result' =>
     array (
       'externalDict' => 'http://gallica.bnf.fr/ark:/12148/bpt6k1200531x/f2.highres',
       'page' => '11213',
       'volume' => '20',
-      'entries' => 
+      'entries' =>
       array (
-        'current' => 
+        'current' =>
         array (
-          0 => 
+          0 =>
           array (
             'ascii' => 'TUYAU',
             'fix' => '',
@@ -4952,9 +4952,9 @@ return array (
             'volume' => '20',
           ),
         ),
-        'previous' => 
+        'previous' =>
         array (
-          0 => 
+          0 =>
           array (
             'ascii' => 'TURBINE',
             'fix' => '',
@@ -4965,7 +4965,7 @@ return array (
             'previous' => 'TURBINE',
             'volume' => '19',
           ),
-          1 => 
+          1 =>
           array (
             'ascii' => 'TURBOREACTEUR',
             'fix' => '',
@@ -4976,7 +4976,7 @@ return array (
             'previous' => 'TURBINE',
             'volume' => '19',
           ),
-          2 => 
+          2 =>
           array (
             'ascii' => 'TURBULENCE',
             'fix' => '',
@@ -4987,7 +4987,7 @@ return array (
             'previous' => 'TURBOREACTEUR',
             'volume' => '19',
           ),
-          3 => 
+          3 =>
           array (
             'ascii' => 'TURC',
             'fix' => '',
@@ -4998,7 +4998,7 @@ return array (
             'previous' => 'TURBULENCE',
             'volume' => '19',
           ),
-          4 => 
+          4 =>
           array (
             'ascii' => 'TURENNE',
             'fix' => '',
@@ -5009,7 +5009,7 @@ return array (
             'previous' => 'TURC',
             'volume' => '19',
           ),
-          5 => 
+          5 =>
           array (
             'ascii' => 'TURGOT',
             'fix' => '',
@@ -5020,7 +5020,7 @@ return array (
             'previous' => 'TURENNE',
             'volume' => '19',
           ),
-          6 => 
+          6 =>
           array (
             'ascii' => 'TURIN',
             'fix' => '',
@@ -5031,7 +5031,7 @@ return array (
             'previous' => 'TURGOT',
             'volume' => '19',
           ),
-          7 => 
+          7 =>
           array (
             'ascii' => 'TURKMENISTAN',
             'fix' => '',
@@ -5042,7 +5042,7 @@ return array (
             'previous' => 'TURIN',
             'volume' => '19',
           ),
-          8 => 
+          8 =>
           array (
             'ascii' => 'TURNER',
             'fix' => '',
@@ -5053,7 +5053,7 @@ return array (
             'previous' => 'TURKMENISTAN',
             'volume' => '19',
           ),
-          9 => 
+          9 =>
           array (
             'ascii' => 'TURQUIE',
             'fix' => '',
@@ -5065,9 +5065,9 @@ return array (
             'volume' => '19',
           ),
         ),
-        'next' => 
+        'next' =>
         array (
-          0 => 
+          0 =>
           array (
             'ascii' => 'TVARDOVSKI',
             'fix' => '',
@@ -5078,7 +5078,7 @@ return array (
             'previous' => 'TUYAU',
             'volume' => '20',
           ),
-          1 => 
+          1 =>
           array (
             'ascii' => 'TWAIN',
             'fix' => '',
@@ -5089,7 +5089,7 @@ return array (
             'previous' => 'TVARDOVSKI',
             'volume' => '20',
           ),
-          2 => 
+          2 =>
           array (
             'ascii' => 'TYNDALE',
             'fix' => '',
@@ -5100,7 +5100,7 @@ return array (
             'previous' => 'TWAIN',
             'volume' => '20',
           ),
-          3 => 
+          3 =>
           array (
             'ascii' => 'TYPE',
             'fix' => '',
@@ -5111,7 +5111,7 @@ return array (
             'previous' => 'TYNDALE',
             'volume' => '20',
           ),
-          4 => 
+          4 =>
           array (
             'ascii' => 'TYPHOIDE',
             'fix' => '',
@@ -5122,7 +5122,7 @@ return array (
             'previous' => 'TYPE',
             'volume' => '20',
           ),
-          5 => 
+          5 =>
           array (
             'ascii' => 'TYPHUS',
             'fix' => '',
@@ -5133,7 +5133,7 @@ return array (
             'previous' => 'TYPHOIDE',
             'volume' => '20',
           ),
-          6 => 
+          6 =>
           array (
             'ascii' => 'TYPHUS',
             'fix' => '',
@@ -5144,7 +5144,7 @@ return array (
             'previous' => 'TYPHUS',
             'volume' => '20',
           ),
-          7 => 
+          7 =>
           array (
             'ascii' => 'TYPOGRAPHIE',
             'fix' => '',
@@ -5155,7 +5155,7 @@ return array (
             'previous' => 'TYPHUS',
             'volume' => '20',
           ),
-          8 => 
+          8 =>
           array (
             'ascii' => 'TYR',
             'fix' => '',
@@ -5166,7 +5166,7 @@ return array (
             'previous' => 'TYPOGRAPHIE',
             'volume' => '20',
           ),
-          9 => 
+          9 =>
           array (
             'ascii' => 'TYROL',
             'fix' => '',

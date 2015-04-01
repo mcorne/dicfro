@@ -12,6 +12,11 @@ body
     margin: 1.3em 1.3em 0 1em;
 }
 
+.bold
+{
+    font-weight: bold;
+}
+
 .green
 {
     color: green;
@@ -348,6 +353,7 @@ div.options
 table.test-result
 {
     font-size: 1em;
+    margin-bottom: 1em;
 }
 
 table.test-result td
@@ -477,6 +483,16 @@ table.options input[type="radio"]
 table.options input[type="radio"].ie
 {
     margin-top: -3px;
+}
+
+table.test-stats
+{
+    margin-bottom: 1.5em;
+}
+
+table.test-stats td
+{
+    padding-right: 1em;
 }
 
 td.date, td.version

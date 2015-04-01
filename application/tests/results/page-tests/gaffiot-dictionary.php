@@ -1,11 +1,11 @@
 <?php
 return array (
-  0 => 
+  0 =>
   array (
     'method' => 'goToPage',
     'page' => 0,
     'comment' => 0,
-    'result' => 
+    'result' =>
     array (
       'definition' => 'dictionary/gaffiot-dictionary/mImg/0000001.gif',
       'errataImages' => NULL,
@@ -16,12 +16,12 @@ return array (
       'firstWord' => 'A',
     ),
   ),
-  1 => 
+  1 =>
   array (
     'method' => 'goToPage',
     'page' => 1,
     'comment' => 1,
-    'result' => 
+    'result' =>
     array (
       'definition' => 'dictionary/gaffiot-dictionary/mImg/0000001.gif',
       'errataImages' => NULL,
@@ -32,12 +32,12 @@ return array (
       'firstWord' => 'A',
     ),
   ),
-  2 => 
+  2 =>
   array (
     'method' => 'goToPage',
     'page' => 1000,
     'comment' => 1000,
-    'result' => 
+    'result' =>
     array (
       'definition' => 'dictionary/gaffiot-dictionary/mImg/0001000.gif',
       'errataImages' => NULL,
@@ -48,12 +48,12 @@ return array (
       'firstWord' => 'MULTICLINATUM',
     ),
   ),
-  3 => 
+  3 =>
   array (
     'method' => 'goToPage',
     'page' => 1702,
     'comment' => 1702,
-    'result' => 
+    'result' =>
     array (
       'definition' => 'dictionary/gaffiot-dictionary/mImg/0001702.gif',
       'errataImages' => NULL,
@@ -64,12 +64,12 @@ return array (
       'firstWord' => 'ZMINTHA',
     ),
   ),
-  4 => 
+  4 =>
   array (
     'method' => 'goToPage',
     'page' => 10000,
     'comment' => 10000,
-    'result' => 
+    'result' =>
     array (
       'definition' => 'dictionary/gaffiot-dictionary/mImg/0001702.gif',
       'errataImages' => NULL,
@@ -80,12 +80,12 @@ return array (
       'firstWord' => 'ZMINTHA',
     ),
   ),
-  5 => 
+  5 =>
   array (
     'method' => 'goToNextPage',
     'page' => 1,
     'comment' => 1,
-    'result' => 
+    'result' =>
     array (
       'definition' => 'dictionary/gaffiot-dictionary/mImg/0000002.gif',
       'errataImages' => NULL,
@@ -96,12 +96,12 @@ return array (
       'firstWord' => 'A',
     ),
   ),
-  6 => 
+  6 =>
   array (
     'method' => 'goToNextPage',
     'page' => 1702,
     'comment' => 1702,
-    'result' => 
+    'result' =>
     array (
       'definition' => 'dictionary/gaffiot-dictionary/mImg/0001702.gif',
       'errataImages' => NULL,
@@ -112,12 +112,12 @@ return array (
       'firstWord' => 'ZMINTHA',
     ),
   ),
-  7 => 
+  7 =>
   array (
     'method' => 'goToPreviousPage',
     'page' => 1,
     'comment' => 1,
-    'result' => 
+    'result' =>
     array (
       'definition' => 'dictionary/gaffiot-dictionary/mImg/0000001.gif',
       'errataImages' => NULL,
@@ -128,12 +128,12 @@ return array (
       'firstWord' => 'A',
     ),
   ),
-  8 => 
+  8 =>
   array (
     'method' => 'goToPreviousPage',
     'page' => 1702,
     'comment' => 1702,
-    'result' => 
+    'result' =>
     array (
       'definition' => 'dictionary/gaffiot-dictionary/mImg/0001701.gif',
       'errataImages' => NULL,

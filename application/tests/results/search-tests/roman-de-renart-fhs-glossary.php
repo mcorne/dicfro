@@ -1,9 +1,9 @@
 <?php
 return array (
-  0 => 
+  0 =>
   array (
     'comment' => 'a',
-    'result' => 
+    'result' =>
     array (
       'definition' => 'dictionary/roman-de-renart-fhs-glossary/mImg/0000507.gif',
       'errataImages' => NULL,
@@ -12,107 +12,107 @@ return array (
       'volume' => '',
       'page' => 507,
       'firstWord' => 'A',
-      'identifiedWords' => 
+      'identifiedWords' =>
       array (
-        0 => 
+        0 =>
         array (
           'main' => '',
           'variants' => '',
           'pof' => 'm.',
           'lemma' => 'a',
         ),
-        1 => 
+        1 =>
         array (
           'main' => '',
           'variants' => '',
           'pof' => 'prep.',
           'lemma' => 'a',
         ),
-        2 => 
+        2 =>
         array (
           'main' => '',
           'variants' => '',
           'pof' => 'adv.',
           'lemma' => 'a trebuchons',
         ),
-        3 => 
+        3 =>
         array (
           'main' => '',
           'variants' => '',
           'pof' => 'adv.',
           'lemma' => 'sorvers a',
         ),
-        4 => 
+        4 =>
         array (
           'main' => '',
           'variants' => '',
           'pof' => 'm.',
           'lemma' => 'trote a pié',
         ),
-        5 => 
+        5 =>
         array (
           'main' => '',
           'variants' => '',
           'pof' => 'adv.',
           'lemma' => 'vis a vis',
         ),
-        6 => 
+        6 =>
         array (
           'main' => '',
           'variants' => 'ha, ah, ha las!, hai las!, hay!, hé!',
           'pof' => 'interj.',
           'lemma' => 'a',
         ),
-        7 => 
+        7 =>
         array (
           'main' => 'chief',
           'variants' => '',
           'pof' => 'm.',
           'lemma' => 'a chief de foiz',
         ),
-        8 => 
+        8 =>
         array (
           'main' => 'ente (a)',
           'variants' => '',
           'pof' => 'adv.',
           'lemma' => 'a ente',
         ),
-        9 => 
+        9 =>
         array (
           'main' => 'hay!',
           'variants' => '',
           'pof' => 'interj.',
           'lemma' => 'a',
         ),
-        10 => 
+        10 =>
         array (
           'main' => 'keuve leu leu',
           'variants' => '',
           'pof' => '',
           'lemma' => 'keuve a la',
         ),
-        11 => 
+        11 =>
         array (
           'main' => 'main',
           'variants' => '',
           'pof' => 'f.',
           'lemma' => 'main a main',
         ),
-        12 => 
+        12 =>
         array (
           'main' => 'maintas (a)',
           'variants' => '',
           'pof' => 'adv.',
           'lemma' => 'a maint tas',
         ),
-        13 => 
+        13 =>
         array (
           'main' => 'porfin (a la)',
           'variants' => '',
           'pof' => 'adv.',
           'lemma' => 'a la parfin',
         ),
-        14 => 
+        14 =>
         array (
           'main' => 'siques',
           'variants' => '',
@@ -120,23 +120,23 @@ return array (
           'lemma' => 'siques a',
         ),
       ),
-      'identifiedVerbs' => 
+      'identifiedVerbs' =>
       array (
-        0 => 
+        0 =>
         array (
           'original' => 'a',
           'infinitive' => 'AVOIR',
           'tense' => 'ind.prés.',
           'person' => '1',
         ),
-        1 => 
+        1 =>
         array (
           'original' => 'a',
           'infinitive' => 'AVOIR',
           'tense' => 'ind.prés.',
           'person' => '3',
         ),
-        2 => 
+        2 =>
         array (
           'original' => 'a',
           'infinitive' => 'AVOIR',

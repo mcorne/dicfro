@@ -1,9 +1,9 @@
 <?php
 return array (
-  0 => 
+  0 =>
   array (
     'comment' => 'avid',
-    'result' => 
+    'result' =>
     array (
       'externalDict' => 'http://machaut.uchicago.edu/?action=search&resource=Webster%27s&quicksearch=on&word=avid',
     ),

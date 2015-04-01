@@ -1,9 +1,9 @@
 <?php
 return array (
-  0 => 
+  0 =>
   array (
     'comment' => 'abaces',
-    'result' => 
+    'result' =>
     array (
       'externalDict' => 'http://ducange.enc.sorbonne.fr/abaces',
     ),

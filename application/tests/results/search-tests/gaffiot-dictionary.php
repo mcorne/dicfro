@@ -1,9 +1,9 @@
 <?php
 return array (
-  0 => 
+  0 =>
   array (
     'comment' => 'a',
-    'result' => 
+    'result' =>
     array (
       'definition' => 'dictionary/gaffiot-dictionary/mImg/0000001.gif',
       'errataImages' => NULL,
@@ -14,7 +14,7 @@ return array (
       'firstWord' => 'A',
       'identifiedWords' => NULL,
       'identifiedVerbs' => NULL,
-      'identifiedLatinWords' => 
+      'identifiedLatinWords' =>
       array (
         0 => 'a, prep. +abl.',
         1 => 'a, interj.',

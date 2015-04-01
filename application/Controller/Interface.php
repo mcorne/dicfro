@@ -23,8 +23,6 @@ class Controller_Interface
         'about'                     => 'information',
         'archives'                  => 'information',
         'dictionaries'              => 'information',
-        'dictionaries-availability' => true,
-        'dictionaries-search-test'  => true,
         'dictlist'                  => true,
         'home'                      => 'information',
         'introduction'              => true,
@@ -140,11 +138,17 @@ class Controller_Interface
         $this->view->noImage = true;
     }
 
-    public function dictionariesPageTestAction()
+    public function dictionaryPageTestsAction()
     {
         $currentDictionary = $this->dictionary;
         $testCases = require __DIR__ . '/../tests/cases/page-tests.php';
         $results = [];
+        $stats = [
+            'tests-ok'          => 0,
+            'tests-failed'      => 0,
+            'not-tested'        => 0,
+            'tests-to-validate' => 0,
+        ];
 
         foreach($this->front->config['dictionaries'] as $dictionaryId => $dictionary) {
             if ($dictionary['type'] == 'external') {
@@ -155,13 +159,17 @@ class Controller_Interface
             $this->setDictionaryDefaults($dictionaryId);
             $search = $this->createSearchObject();
 
+            $filename = sprintf('%s/../tests/results/page-tests/%s.php', __DIR__, $dictionaryId);
+            $expected = $this->readExpectedTestResults($filename);
+
             if (! isset($testCases[$dictionaryId])) {
                 $result = null;
+                $stats['not-tested']++;
 
             } else {
                 $result = [];
 
-                foreach ($testCases[$dictionaryId] as $testCase) {
+                foreach ($testCases[$dictionaryId] as $index => $testCase) {
                     if (isset($testCase['volume'])) {
                         $testCase['comment'] = sprintf('%s / %s', $testCase['page'], $testCase['volume']);
                         $volume = $testCase['volume'];
@@ -172,12 +180,17 @@ class Controller_Interface
 
                     $method = $testCase['method'];
                     $testCase['result'] = $search->$method($volume, $testCase['page']);
-                    $result[] = $testCase;
+                    $result[$index] = $testCase;
+
+                    if (! isset($expected[$index])) {
+                        $stats['tests-to-validate']++;
+                    } elseif ($result[$index] == $expected[$index]) {
+                        $stats['tests-ok']++;
+                    } else {
+                        $stats['tests-failed']++;
+                    }
                 }
             }
-
-            $filename = sprintf('%s/../tests/results/page-tests/%s.php', __DIR__, $dictionaryId);
-            $expected = $this->readExpectedTestResults($filename);
 
             if (! $expected and $result) {
                 $this->writeTestResult($filename, $result);
@@ -197,28 +210,48 @@ class Controller_Interface
         $this->view->noImage = true;
         $this->view->results = $results;
         $this->view->testDirectory = 'tests/results/page-tests';
-        $this->view->title = 'Dictionaries Page Test';
+        $this->view->title = 'Dictionary Page Tests';
+        $this->view->stats = $stats;
     }
 
-    public function dictionariesSearchTestAction()
+    public function dictionarySearchTestsAction()
     {
         $currentDictionary = $this->dictionary;
         $testCases = require __DIR__ . '/../tests/cases/search-tests.php';
+
         $results = [];
+        $stats = [
+            'tests-ok'          => 0,
+            'tests-failed'      => 0,
+            'not-tested'        => 0,
+            'tests-to-validate' => 0,
+        ];
 
         foreach($this->front->config['dictionaries'] as $dictionaryId => $dictionary) {
             $this->dictionary = $dictionary;
             $this->setDictionaryDefaults($dictionaryId);
             $search = $this->createSearchObject();
 
+            $filename = sprintf('%s/../tests/results/search-tests/%s.php', __DIR__, $dictionaryId);
+            $expected = $this->readExpectedTestResults($filename);
+
             if (! isset($testCases[$dictionaryId])) {
                 $result = null;
+                $stats['not-tested']++;
 
             } elseif (is_string($testCases[$dictionaryId])) {
                 $result = [[
                     'comment' => $testCases[$dictionaryId],
                     'result'  => $search->searchWord($testCases[$dictionaryId]),
                 ]];
+
+                if (! $expected) {
+                    $stats['tests-to-validate']++;
+                } elseif ($result == $expected) {
+                    $stats['tests-ok']++;
+                } else {
+                    $stats['tests-failed']++;
+                }
 
             } else {
                 $result = [];
@@ -229,14 +262,21 @@ class Controller_Interface
                             'comment' => $testCases[$dictionaryId][$index],
                             'result'  => $search->searchWord($testCases[$dictionaryId][$index]),
                         ];
+
+                        if (! isset($expected[$index])) {
+                            $stats['tests-to-validate']++;
+                        } elseif ($result[$index] == $expected[$index]) {
+                            $stats['tests-ok']++;
+                        } else {
+                            $stats['tests-failed']++;
+                        }
+
                     } else {
                         $result[$index] = null;
+                        $stats['not-tested']++;
                     }
                 }
             }
-
-            $filename = sprintf('%s/../tests/results/search-tests/%s.php', __DIR__, $dictionaryId);
-            $expected = $this->readExpectedTestResults($filename);
 
             if (! $expected and $result) {
                 $this->writeTestResult($filename, $result);
@@ -256,7 +296,8 @@ class Controller_Interface
         $this->view->noImage = true;
         $this->view->results = $results;
         $this->view->testDirectory = 'tests/results/search-tests';
-        $this->view->title = 'Dictionaries Search Test';
+        $this->view->title = 'Dictionary Search Tests';
+        $this->view->stats = $stats;
     }
 
     /**
@@ -636,6 +677,13 @@ class Controller_Interface
             glob(__DIR__ . '/../tests/cases/unit-tests/*/*.php')
         );
 
+        $stats = [
+            'tests-ok'          => 0,
+            'tests-failed'      => 0,
+            'not-tested'        => 0,
+            'tests-to-validate' => 0,
+        ];
+
         foreach ($testFilenames as $testFilename) {
             require_once $testFilename;
             $classname = basename($testFilename, '.php');
@@ -648,6 +696,17 @@ class Controller_Interface
 
             if (! $expected and $result) {
                 $this->writeTestResult($resultsFilename, $result);
+                $stats['tests-to-validate'] += count($result);
+            } else {
+                foreach ($result as $index => $subResult) {
+                    if (! isset($expected[$index])) {
+                        $stats['tests-to-validate']++;
+                    } elseif ($subResult == $expected[$index]) {
+                        $stats['tests-ok']++;
+                    } else {
+                        $stats['tests-failed']++;
+                    }
+                }
             }
 
             $results[] = [
@@ -663,6 +722,7 @@ class Controller_Interface
         $this->view->results = $results;
         $this->view->testDirectory = 'tests/unit-tests/...';
         $this->view->title = 'Unit Tests';
+        $this->view->stats = $stats;
     }
 
     /**
@@ -690,6 +750,7 @@ class Controller_Interface
     {
         $php = var_export($result, true);
         $content = sprintf("<?php\nreturn %s;", $php);
+        $content = preg_replace('~ +$~m', '', $content);
 
         if (! file_put_contents($filename, $content)) {
             throw new Exception("cannot write: $filename");

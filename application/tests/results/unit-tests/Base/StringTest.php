@@ -1,30 +1,30 @@
 <?php
 return array (
-  0 => 
+  0 =>
   array (
     'method' => 'expandLigature',
     'args' => 'Æ',
     'comment' => 'AE',
     'result' => 'AE',
   ),
-  1 => 
+  1 =>
   array (
     'method' => 'expandLigature',
     'args' => 'Œ',
     'comment' => 'OE',
     'result' => 'OE',
   ),
-  2 => 
+  2 =>
   array (
     'method' => 'internalToUtf8',
     'args' => '0',
     'comment' => 'ISO to UTF8',
     'result' => '0',
   ),
-  3 => 
+  3 =>
   array (
     'method' => 'internalToUtf8',
-    'args' => 
+    'args' =>
     array (
       0 => '�',
       1 => 'ISO-8859-1',
@@ -32,10 +32,10 @@ return array (
     'comment' => 'internal to UTF8',
     'result' => 'À',
   ),
-  4 => 
+  4 =>
   array (
     'method' => 'isDos',
-    'args' => 
+    'args' =>
     array (
       0 => 'win',
       1 => 'cli',
@@ -43,10 +43,10 @@ return array (
     'comment' => 'DOS shell lowercase',
     'result' => true,
   ),
-  5 => 
+  5 =>
   array (
     'method' => 'isDos',
-    'args' => 
+    'args' =>
     array (
       0 => 'WIN',
       1 => 'CLI',
@@ -54,10 +54,10 @@ return array (
     'comment' => 'DOS shell uppercase',
     'result' => true,
   ),
-  6 => 
+  6 =>
   array (
     'method' => 'isDos',
-    'args' => 
+    'args' =>
     array (
       0 => 'xyz',
       1 => 'cli',
@@ -65,10 +65,10 @@ return array (
     'comment' => 'bad OS',
     'result' => false,
   ),
-  7 => 
+  7 =>
   array (
     'method' => 'isDos',
-    'args' => 
+    'args' =>
     array (
       0 => 'win',
       1 => 'xyz',
@@ -76,40 +76,40 @@ return array (
     'comment' => 'bad SAPI',
     'result' => false,
   ),
-  8 => 
+  8 =>
   array (
     'method' => 'removeAccents',
     'args' => 'ÁÀÂÄÇÉÈÊËÍÌÎÏÑÓÒÔÖÚÙÛÜŸĀĂĒĔĪĬŌŎŪŬ',
     'result' => 'AAAACEEEEIIIINOOOOUUUUYAAEEIIOOUU',
   ),
-  9 => 
+  9 =>
   array (
     'method' => 'toUpper',
     'args' => 'abcdefghijklmnopqrstuvwxyzáàâäçéèêëíìîïñóòôöúùûüÿāăēĕīĭōŏūŭ',
     'result' => 'ABCDEFGHIJKLMNOPQRSTUVWXYZÁÀÂÄÇÉÈÊËÍÌÎÏÑÓÒÔÖÚÙÛÜŸĀĂĒĔĪĬŌŎŪŬ',
   ),
-  10 => 
+  10 =>
   array (
     'method' => 'utf8toASCII',
     'args' => 'áàâäçéèêëíìîïñóòôöúùûüÿāăēĕīĭōŏūŭÆ0123456789,?;.:/!§%*',
     'result' => 'AAAACEEEEIIIINOOOOUUUUYAAEEIIOOUUAE',
   ),
-  11 => 
+  11 =>
   array (
     'method' => 'toLatin',
     'args' => 'áàâäçéèêëíìîïñóòôöúùûüÿāăēĕīĭōŏūŭjuiv',
     'result' => 'AAAACEEEEIIIINOOOOVVVVYAAEEIIOOVVIVIV',
   ),
-  12 => 
+  12 =>
   array (
     'method' => 'utf8toASCIIorDigit',
     'args' => 'áàâäçéèêëíìîïñóòôöúùûüÿāăēĕīĭōŏūŭÆ0123456789,?;.:/!§%*-',
     'result' => 'AAAACEEEEIIIINOOOOUUUUYAAEEIIOOUUAE23456789*-',
   ),
-  13 => 
+  13 =>
   array (
     'method' => 'utf8ToInternalString',
-    'args' => 
+    'args' =>
     array (
       0 => 'Ça',
       1 => NULL,
@@ -118,10 +118,10 @@ return array (
     'comment' => 'UTF8 to DOS',
     'result' => '�a',
   ),
-  14 => 
+  14 =>
   array (
     'method' => 'utf8ToInternalString',
-    'args' => 
+    'args' =>
     array (
       0 => 'Ça',
       1 => 'ISO-8859-1',
@@ -130,10 +130,10 @@ return array (
     'comment' => 'UTF8 to ISO',
     'result' => '�a',
   ),
-  15 => 
+  15 =>
   array (
     'method' => 'utf8ToInternalString',
-    'args' => 
+    'args' =>
     array (
       0 => '0',
       1 => NULL,
@@ -142,42 +142,42 @@ return array (
     'comment' => 'UTF8 to internal',
     'result' => '0',
   ),
-  16 => 
+  16 =>
   array (
     'method' => 'utf8ToInternal',
     'args' => 'abc',
     'comment' => 'string',
     'result' => 'abc',
   ),
-  17 => 
+  17 =>
   array (
     'method' => 'utf8ToInternal',
-    'args' => 
+    'args' =>
     array (
-      0 => 
+      0 =>
       array (
         0 => 'abc',
         1 => 'def',
       ),
     ),
     'comment' => 'array',
-    'result' => 
+    'result' =>
     array (
       0 => 'abc',
       1 => 'def',
     ),
   ),
-  18 => 
+  18 =>
   array (
     'method' => 'dash2CamelCase',
     'args' => 'abc-def-ghi',
     'comment' => 'default',
     'result' => 'abcDefGhi',
   ),
-  19 => 
+  19 =>
   array (
     'method' => 'dash2CamelCase',
-    'args' => 
+    'args' =>
     array (
       0 => 'abc-def-ghi',
       1 => false,
@@ -185,10 +185,10 @@ return array (
     'comment' => 'no UC first',
     'result' => 'abcDefGhi',
   ),
-  20 => 
+  20 =>
   array (
     'method' => 'dash2CamelCase',
-    'args' => 
+    'args' =>
     array (
       0 => 'abc-def-ghi',
       1 => true,

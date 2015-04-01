@@ -1,21 +1,39 @@
 <?php
-
 /**
  * Dicfro
  *
- * PHP 5
- *
- * @category   DicFro
- * @package    View
- * @subpackage Scripts_Information
  * @author     Michel Corne <mcorne@yahoo.com>
  * @copyright  2015 Michel Corne
  * @license    http://opensource.org/licenses/gpl-3.0.html GNU GPL v3
  */
-
 ?>
 
 <h1 class="title"><?=$this->title;?></h1>
+
+<table class="test-stats">
+    <tr class="<?php if ($this->stats['not-tested']):?>orange bold<?php endif;?>">
+        <td>Tests to implement</td>
+        <td><?=$this->stats['not-tested'];?></td>
+    </tr>
+    <tr class="<?php if ($this->stats['tests-to-validate']):?>orange bold<?php endif;?>">
+        <td>Tests to validate</td>
+        <td><?=$this->stats['tests-to-validate'];?></td>
+    </tr>
+    <tr class="<?php if ($this->stats['tests-ok']):?>green bold<?php endif;?>">
+        <td>Tests OK</td>
+        <td><?=$this->stats['tests-ok'];?></td>
+    </tr>
+    <tr class="<?php if ($this->stats['tests-failed']):?>red bold<?php endif;?>">
+        <td>Tests failed</td>
+        <td><?=$this->stats['tests-failed'];?></td>
+    </tr>
+    <tr>
+        <td>Tests total</td>
+        <td>
+          <?=$this->stats['not-tested'] + $this->stats['tests-to-validate'] + $this->stats['tests-ok'] + $this->stats['tests-failed'];?>
+        </td>
+    </tr>
+</table>
 
 <table class="test-result">
 
@@ -47,10 +65,10 @@
       <?php endif;?>
 
       <?php if (! $result):?>
-        <td class="orange nowrap">Not tested</td>
+        <td class="orange nowrap">Test to implement</td>
 
       <?php elseif (! isset($results['expected']) or ! isset($results['expected'][$index])):?>
-        <td class="orange nowrap">Need validation!</td>
+        <td class="orange nowrap">Test to validate</td>
         <td class="nowrap"><a href="javascript:hideOrDisplay('<?=$results['basename'];?>-<?=$index;?>')">See details</a></td>
         <td>
           <span class="orange">Keep or remove <?=$this->testDirectory;?>/<?=$results['basename'];?>.php accordingly</span>
@@ -71,7 +89,7 @@ Test result = Expected result
         </td>
 
       <?php else:?>
-        <td class="nowrap red">Error!</td>
+        <td class="nowrap red">Test failed</td>
         <td class="nowrap"><a href="javascript:hideOrDisplay('<?=$results['basename'];?>-<?=$index;?>')">See details</a></td>
         <td>
           <span class="red">Fix or remove <?=$this->testDirectory;?>/<?=$results['basename'];?>.php accordingly</span>
@@ -93,7 +111,7 @@ Expected result:
     <tr>
       <td class="nowrap"><?=$results['name'];?></td>
       <td></td>
-      <td><span class="orange nowrap">Not tested!</span></td>
+      <td><span class="orange nowrap">Test to implement</span></td>
     </tr>
   <?php endif;?>
 

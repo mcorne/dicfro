@@ -1,20 +1,20 @@
 <?php
 return array (
-  0 => 
+  0 =>
   array (
     'method' => 'goToPage',
     'page' => 0,
     'comment' => 0,
-    'result' => 
+    'result' =>
     array (
       'externalDict' => 'http://gallica.bnf.fr/ark:/12148/bpt6k1200512k/f8.highres',
       'page' => '3',
       'volume' => '1',
-      'entries' => 
+      'entries' =>
       array (
-        'current' => 
+        'current' =>
         array (
-          0 => 
+          0 =>
           array (
             'ascii' => 'AALTO',
             'fix' => '',
@@ -25,7 +25,7 @@ return array (
             'previous' => '',
             'volume' => '1',
           ),
-          1 => 
+          1 =>
           array (
             'ascii' => 'ABADAN',
             'fix' => '',
@@ -37,12 +37,12 @@ return array (
             'volume' => '1',
           ),
         ),
-        'previous' => 
+        'previous' =>
         array (
         ),
-        'next' => 
+        'next' =>
         array (
-          0 => 
+          0 =>
           array (
             'ascii' => 'ABATTAGE',
             'fix' => '',
@@ -53,7 +53,7 @@ return array (
             'previous' => 'ABADAN',
             'volume' => '1',
           ),
-          1 => 
+          1 =>
           array (
             'ascii' => 'ABATTAGE',
             'fix' => '',
@@ -64,7 +64,7 @@ return array (
             'previous' => 'ABATTAGE',
             'volume' => '1',
           ),
-          2 => 
+          2 =>
           array (
             'ascii' => 'ABATTAGE',
             'fix' => '',
@@ -75,7 +75,7 @@ return array (
             'previous' => 'ABATTAGE',
             'volume' => '1',
           ),
-          3 => 
+          3 =>
           array (
             'ascii' => 'ABATTAGE',
             'fix' => '',
@@ -86,7 +86,7 @@ return array (
             'previous' => 'ABATTAGE',
             'volume' => '1',
           ),
-          4 => 
+          4 =>
           array (
             'ascii' => 'ABATTOIR',
             'fix' => '',
@@ -97,7 +97,7 @@ return array (
             'previous' => 'ABATTAGE',
             'volume' => '1',
           ),
-          5 => 
+          5 =>
           array (
             'ascii' => 'ABATTOIRS',
             'fix' => '',
@@ -108,7 +108,7 @@ return array (
             'previous' => 'ABATTOIR',
             'volume' => '1',
           ),
-          6 => 
+          6 =>
           array (
             'ascii' => 'ABBADIDES',
             'fix' => '',
@@ -119,7 +119,7 @@ return array (
             'previous' => 'ABATTOIRS',
             'volume' => '1',
           ),
-          7 => 
+          7 =>
           array (
             'ascii' => 'ABBAS',
             'fix' => '',
@@ -130,7 +130,7 @@ return array (
             'previous' => 'ABBADIDES',
             'volume' => '1',
           ),
-          8 => 
+          8 =>
           array (
             'ascii' => 'ABBASSIDES',
             'fix' => '',
@@ -141,7 +141,7 @@ return array (
             'previous' => 'ABBAS',
             'volume' => '1',
           ),
-          9 => 
+          9 =>
           array (
             'ascii' => 'ABBAYE',
             'fix' => '',
@@ -156,21 +156,21 @@ return array (
       ),
     ),
   ),
-  1 => 
+  1 =>
   array (
     'method' => 'goToPage',
     'page' => 3,
     'comment' => 3,
-    'result' => 
+    'result' =>
     array (
       'externalDict' => 'http://gallica.bnf.fr/ark:/12148/bpt6k1200512k/f8.highres',
       'page' => '3',
       'volume' => '1',
-      'entries' => 
+      'entries' =>
       array (
-        'current' => 
+        'current' =>
         array (
-          0 => 
+          0 =>
           array (
             'ascii' => 'AALTO',
             'fix' => '',
@@ -181,7 +181,7 @@ return array (
             'previous' => '',
             'volume' => '1',
           ),
-          1 => 
+          1 =>
           array (
             'ascii' => 'ABADAN',
             'fix' => '',
@@ -193,12 +193,12 @@ return array (
             'volume' => '1',
           ),
         ),
-        'previous' => 
+        'previous' =>
         array (
         ),
-        'next' => 
+        'next' =>
         array (
-          0 => 
+          0 =>
           array (
             'ascii' => 'ABATTAGE',
             'fix' => '',
@@ -209,7 +209,7 @@ return array (
             'previous' => 'ABADAN',
             'volume' => '1',
           ),
-          1 => 
+          1 =>
           array (
             'ascii' => 'ABATTAGE',
             'fix' => '',
@@ -220,7 +220,7 @@ return array (
             'previous' => 'ABATTAGE',
             'volume' => '1',
           ),
-          2 => 
+          2 =>
           array (
             'ascii' => 'ABATTAGE',
             'fix' => '',
@@ -231,7 +231,7 @@ return array (
             'previous' => 'ABATTAGE',
             'volume' => '1',
           ),
-          3 => 
+          3 =>
           array (
             'ascii' => 'ABATTAGE',
             'fix' => '',
@@ -242,7 +242,7 @@ return array (
             'previous' => 'ABATTAGE',
             'volume' => '1',
           ),
-          4 => 
+          4 =>
           array (
             'ascii' => 'ABATTOIR',
             'fix' => '',
@@ -253,7 +253,7 @@ return array (
             'previous' => 'ABATTAGE',
             'volume' => '1',
           ),
-          5 => 
+          5 =>
           array (
             'ascii' => 'ABATTOIRS',
             'fix' => '',
@@ -264,7 +264,7 @@ return array (
             'previous' => 'ABATTOIR',
             'volume' => '1',
           ),
-          6 => 
+          6 =>
           array (
             'ascii' => 'ABBADIDES',
             'fix' => '',
@@ -275,7 +275,7 @@ return array (
             'previous' => 'ABATTOIRS',
             'volume' => '1',
           ),
-          7 => 
+          7 =>
           array (
             'ascii' => 'ABBAS',
             'fix' => '',
@@ -286,7 +286,7 @@ return array (
             'previous' => 'ABBADIDES',
             'volume' => '1',
           ),
-          8 => 
+          8 =>
           array (
             'ascii' => 'ABBASSIDES',
             'fix' => '',
@@ -297,7 +297,7 @@ return array (
             'previous' => 'ABBAS',
             'volume' => '1',
           ),
-          9 => 
+          9 =>
           array (
             'ascii' => 'ABBAYE',
             'fix' => '',
@@ -312,24 +312,24 @@ return array (
       ),
     ),
   ),
-  2 => 
+  2 =>
   array (
     'method' => 'goToPage',
     'page' => 1000,
     'comment' => 1000,
-    'result' => 
+    'result' =>
     array (
       'externalDict' => 'http://gallica.bnf.fr/ark:/12148/bpt6k12005130/f463.highres',
       'page' => '1000',
       'volume' => '2',
-      'entries' => 
+      'entries' =>
       array (
-        'current' => 
+        'current' =>
         array (
         ),
-        'previous' => 
+        'previous' =>
         array (
-          0 => 
+          0 =>
           array (
             'ascii' => 'ASSOCIATION',
             'fix' => '',
@@ -340,7 +340,7 @@ return array (
             'previous' => 'ASSISTANCE',
             'volume' => '2',
           ),
-          1 => 
+          1 =>
           array (
             'ascii' => 'ASSOCIATION',
             'fix' => '',
@@ -351,7 +351,7 @@ return array (
             'previous' => 'ASSOCIATION',
             'volume' => '2',
           ),
-          2 => 
+          2 =>
           array (
             'ascii' => 'ASSOCIATION',
             'fix' => '',
@@ -362,7 +362,7 @@ return array (
             'previous' => 'ASSOCIATION',
             'volume' => '2',
           ),
-          3 => 
+          3 =>
           array (
             'ascii' => 'ASSOCIATION',
             'fix' => '',
@@ -373,7 +373,7 @@ return array (
             'previous' => 'ASSOCIATION',
             'volume' => '2',
           ),
-          4 => 
+          4 =>
           array (
             'ascii' => 'ASSOLEMENT',
             'fix' => '',
@@ -384,7 +384,7 @@ return array (
             'previous' => 'ASSOCIATION',
             'volume' => '2',
           ),
-          5 => 
+          5 =>
           array (
             'ascii' => 'ASSURANCE',
             'fix' => '',
@@ -395,7 +395,7 @@ return array (
             'previous' => 'ASSOLEMENT',
             'volume' => '2',
           ),
-          6 => 
+          6 =>
           array (
             'ascii' => 'ASSURANCE',
             'fix' => '',
@@ -406,7 +406,7 @@ return array (
             'previous' => 'ASSURANCE',
             'volume' => '2',
           ),
-          7 => 
+          7 =>
           array (
             'ascii' => 'ASSURANCE',
             'fix' => '',
@@ -417,7 +417,7 @@ return array (
             'previous' => 'ASSURANCE',
             'volume' => '2',
           ),
-          8 => 
+          8 =>
           array (
             'ascii' => 'ASSURANCES',
             'fix' => '',
@@ -428,7 +428,7 @@ return array (
             'previous' => 'ASSURANCE',
             'volume' => '2',
           ),
-          9 => 
+          9 =>
           array (
             'ascii' => 'ASSYRIE',
             'fix' => '',
@@ -440,9 +440,9 @@ return array (
             'volume' => '2',
           ),
         ),
-        'next' => 
+        'next' =>
         array (
-          0 => 
+          0 =>
           array (
             'ascii' => 'ASTATE',
             'fix' => '',
@@ -453,7 +453,7 @@ return array (
             'previous' => 'ASSYRIE',
             'volume' => '2',
           ),
-          1 => 
+          1 =>
           array (
             'ascii' => 'ASTERIDE',
             'fix' => '',
@@ -464,7 +464,7 @@ return array (
             'previous' => 'ASTATE',
             'volume' => '2',
           ),
-          2 => 
+          2 =>
           array (
             'ascii' => 'ASTHME',
             'fix' => '',
@@ -475,7 +475,7 @@ return array (
             'previous' => 'ASTERIDE',
             'volume' => '2',
           ),
-          3 => 
+          3 =>
           array (
             'ascii' => 'ASTIGMATISME',
             'fix' => '',
@@ -486,7 +486,7 @@ return array (
             'previous' => 'ASTHME',
             'volume' => '2',
           ),
-          4 => 
+          4 =>
           array (
             'ascii' => 'ASTROLOGIE',
             'fix' => '',
@@ -497,7 +497,7 @@ return array (
             'previous' => 'ASTIGMATISME',
             'volume' => '2',
           ),
-          5 => 
+          5 =>
           array (
             'ascii' => 'ASTRONAUTIQUE',
             'fix' => '',
@@ -508,7 +508,7 @@ return array (
             'previous' => 'ASTROLOGIE',
             'volume' => '2',
           ),
-          6 => 
+          6 =>
           array (
             'ascii' => 'ASTRONOMIE',
             'fix' => '',
@@ -519,7 +519,7 @@ return array (
             'previous' => 'ASTRONAUTIQUE',
             'volume' => '2',
           ),
-          7 => 
+          7 =>
           array (
             'ascii' => 'ASTROPHYSIQUE',
             'fix' => '',
@@ -530,7 +530,7 @@ return array (
             'previous' => 'ASTRONOMIE',
             'volume' => '2',
           ),
-          8 => 
+          8 =>
           array (
             'ascii' => 'ASTURIAS',
             'fix' => '',
@@ -541,7 +541,7 @@ return array (
             'previous' => 'ASTROPHYSIQUE',
             'volume' => '2',
           ),
-          9 => 
+          9 =>
           array (
             'ascii' => 'ASTURIES',
             'fix' => '',
@@ -556,24 +556,24 @@ return array (
       ),
     ),
   ),
-  3 => 
+  3 =>
   array (
     'method' => 'goToPage',
     'page' => 11827,
     'comment' => 11827,
-    'result' => 
+    'result' =>
     array (
       'externalDict' => 'http://gallica.bnf.fr/ark:/12148/bpt6k1200531x/f616.highres',
       'page' => '11827',
       'volume' => '20',
-      'entries' => 
+      'entries' =>
       array (
-        'current' => 
+        'current' =>
         array (
         ),
-        'previous' => 
+        'previous' =>
         array (
-          0 => 
+          0 =>
           array (
             'ascii' => 'ZONA',
             'fix' => '',
@@ -584,7 +584,7 @@ return array (
             'previous' => 'ZOLA',
             'volume' => '20',
           ),
-          1 => 
+          1 =>
           array (
             'ascii' => 'ZOOGEOGRAPHIE',
             'fix' => '',
@@ -595,7 +595,7 @@ return array (
             'previous' => 'ZONA',
             'volume' => '20',
           ),
-          2 => 
+          2 =>
           array (
             'ascii' => 'ZOOLOGIE',
             'fix' => '',
@@ -606,7 +606,7 @@ return array (
             'previous' => 'ZOOGEOGRAPHIE',
             'volume' => '20',
           ),
-          3 => 
+          3 =>
           array (
             'ascii' => 'ZOOLOGISTE',
             'fix' => '',
@@ -617,7 +617,7 @@ return array (
             'previous' => 'ZOOLOGIE',
             'volume' => '20',
           ),
-          4 => 
+          4 =>
           array (
             'ascii' => 'ZOOTECHNIE',
             'fix' => '',
@@ -628,7 +628,7 @@ return array (
             'previous' => 'ZOOLOGISTE',
             'volume' => '20',
           ),
-          5 => 
+          5 =>
           array (
             'ascii' => 'ZOULOU',
             'fix' => '',
@@ -639,7 +639,7 @@ return array (
             'previous' => 'ZOOTECHNIE',
             'volume' => '20',
           ),
-          6 => 
+          6 =>
           array (
             'ascii' => 'ZUIDERZEE',
             'fix' => '',
@@ -650,7 +650,7 @@ return array (
             'previous' => 'ZOULOU',
             'volume' => '20',
           ),
-          7 => 
+          7 =>
           array (
             'ascii' => 'ZURBARAN',
             'fix' => '',
@@ -661,7 +661,7 @@ return array (
             'previous' => 'ZUIDERZEE',
             'volume' => '20',
           ),
-          8 => 
+          8 =>
           array (
             'ascii' => 'ZURICH',
             'fix' => '',
@@ -672,7 +672,7 @@ return array (
             'previous' => 'ZURBARAN',
             'volume' => '20',
           ),
-          9 => 
+          9 =>
           array (
             'ascii' => 'ZWINGLI',
             'fix' => '',
@@ -684,30 +684,30 @@ return array (
             'volume' => '20',
           ),
         ),
-        'next' => 
+        'next' =>
         array (
         ),
       ),
     ),
   ),
-  4 => 
+  4 =>
   array (
     'method' => 'goToPage',
     'page' => 100000,
     'comment' => 100000,
-    'result' => 
+    'result' =>
     array (
       'externalDict' => 'http://gallica.bnf.fr/ark:/12148/bpt6k1200531x/f616.highres',
       'page' => '11827',
       'volume' => '20',
-      'entries' => 
+      'entries' =>
       array (
-        'current' => 
+        'current' =>
         array (
         ),
-        'previous' => 
+        'previous' =>
         array (
-          0 => 
+          0 =>
           array (
             'ascii' => 'ZONA',
             'fix' => '',
@@ -718,7 +718,7 @@ return array (
             'previous' => 'ZOLA',
             'volume' => '20',
           ),
-          1 => 
+          1 =>
           array (
             'ascii' => 'ZOOGEOGRAPHIE',
             'fix' => '',
@@ -729,7 +729,7 @@ return array (
             'previous' => 'ZONA',
             'volume' => '20',
           ),
-          2 => 
+          2 =>
           array (
             'ascii' => 'ZOOLOGIE',
             'fix' => '',
@@ -740,7 +740,7 @@ return array (
             'previous' => 'ZOOGEOGRAPHIE',
             'volume' => '20',
           ),
-          3 => 
+          3 =>
           array (
             'ascii' => 'ZOOLOGISTE',
             'fix' => '',
@@ -751,7 +751,7 @@ return array (
             'previous' => 'ZOOLOGIE',
             'volume' => '20',
           ),
-          4 => 
+          4 =>
           array (
             'ascii' => 'ZOOTECHNIE',
             'fix' => '',
@@ -762,7 +762,7 @@ return array (
             'previous' => 'ZOOLOGISTE',
             'volume' => '20',
           ),
-          5 => 
+          5 =>
           array (
             'ascii' => 'ZOULOU',
             'fix' => '',
@@ -773,7 +773,7 @@ return array (
             'previous' => 'ZOOTECHNIE',
             'volume' => '20',
           ),
-          6 => 
+          6 =>
           array (
             'ascii' => 'ZUIDERZEE',
             'fix' => '',
@@ -784,7 +784,7 @@ return array (
             'previous' => 'ZOULOU',
             'volume' => '20',
           ),
-          7 => 
+          7 =>
           array (
             'ascii' => 'ZURBARAN',
             'fix' => '',
@@ -795,7 +795,7 @@ return array (
             'previous' => 'ZUIDERZEE',
             'volume' => '20',
           ),
-          8 => 
+          8 =>
           array (
             'ascii' => 'ZURICH',
             'fix' => '',
@@ -806,7 +806,7 @@ return array (
             'previous' => 'ZURBARAN',
             'volume' => '20',
           ),
-          9 => 
+          9 =>
           array (
             'ascii' => 'ZWINGLI',
             'fix' => '',
@@ -818,27 +818,27 @@ return array (
             'volume' => '20',
           ),
         ),
-        'next' => 
+        'next' =>
         array (
         ),
       ),
     ),
   ),
-  5 => 
+  5 =>
   array (
     'method' => 'goToNextPage',
     'page' => 3,
     'comment' => 3,
-    'result' => 
+    'result' =>
     array (
       'externalDict' => 'http://gallica.bnf.fr/ark:/12148/bpt6k1200512k/f9.highres',
       'page' => '4',
       'volume' => '1',
-      'entries' => 
+      'entries' =>
       array (
-        'current' => 
+        'current' =>
         array (
-          0 => 
+          0 =>
           array (
             'ascii' => 'ABATTAGE',
             'fix' => '',
@@ -849,7 +849,7 @@ return array (
             'previous' => 'ABADAN',
             'volume' => '1',
           ),
-          1 => 
+          1 =>
           array (
             'ascii' => 'ABATTAGE',
             'fix' => '',
@@ -861,9 +861,9 @@ return array (
             'volume' => '1',
           ),
         ),
-        'previous' => 
+        'previous' =>
         array (
-          0 => 
+          0 =>
           array (
             'ascii' => 'AALTO',
             'fix' => '',
@@ -874,7 +874,7 @@ return array (
             'previous' => '',
             'volume' => '1',
           ),
-          1 => 
+          1 =>
           array (
             'ascii' => 'ABADAN',
             'fix' => '',
@@ -886,9 +886,9 @@ return array (
             'volume' => '1',
           ),
         ),
-        'next' => 
+        'next' =>
         array (
-          0 => 
+          0 =>
           array (
             'ascii' => 'ABATTAGE',
             'fix' => '',
@@ -899,7 +899,7 @@ return array (
             'previous' => 'ABATTAGE',
             'volume' => '1',
           ),
-          1 => 
+          1 =>
           array (
             'ascii' => 'ABATTAGE',
             'fix' => '',
@@ -910,7 +910,7 @@ return array (
             'previous' => 'ABATTAGE',
             'volume' => '1',
           ),
-          2 => 
+          2 =>
           array (
             'ascii' => 'ABATTOIR',
             'fix' => '',
@@ -921,7 +921,7 @@ return array (
             'previous' => 'ABATTAGE',
             'volume' => '1',
           ),
-          3 => 
+          3 =>
           array (
             'ascii' => 'ABATTOIRS',
             'fix' => '',
@@ -932,7 +932,7 @@ return array (
             'previous' => 'ABATTOIR',
             'volume' => '1',
           ),
-          4 => 
+          4 =>
           array (
             'ascii' => 'ABBADIDES',
             'fix' => '',
@@ -943,7 +943,7 @@ return array (
             'previous' => 'ABATTOIRS',
             'volume' => '1',
           ),
-          5 => 
+          5 =>
           array (
             'ascii' => 'ABBAS',
             'fix' => '',
@@ -954,7 +954,7 @@ return array (
             'previous' => 'ABBADIDES',
             'volume' => '1',
           ),
-          6 => 
+          6 =>
           array (
             'ascii' => 'ABBASSIDES',
             'fix' => '',
@@ -965,7 +965,7 @@ return array (
             'previous' => 'ABBAS',
             'volume' => '1',
           ),
-          7 => 
+          7 =>
           array (
             'ascii' => 'ABBAYE',
             'fix' => '',
@@ -976,7 +976,7 @@ return array (
             'previous' => 'ABBASSIDES',
             'volume' => '1',
           ),
-          8 => 
+          8 =>
           array (
             'ascii' => 'ABCES',
             'fix' => '',
@@ -987,7 +987,7 @@ return array (
             'previous' => 'ABBAYE',
             'volume' => '1',
           ),
-          9 => 
+          9 =>
           array (
             'ascii' => 'ABCES',
             'fix' => '',
@@ -1002,24 +1002,24 @@ return array (
       ),
     ),
   ),
-  6 => 
+  6 =>
   array (
     'method' => 'goToNextPage',
     'page' => 11827,
     'comment' => 11827,
-    'result' => 
+    'result' =>
     array (
       'externalDict' => 'http://gallica.bnf.fr/ark:/12148/bpt6k1200531x/f616.highres',
       'page' => '11827',
       'volume' => '20',
-      'entries' => 
+      'entries' =>
       array (
-        'current' => 
+        'current' =>
         array (
         ),
-        'previous' => 
+        'previous' =>
         array (
-          0 => 
+          0 =>
           array (
             'ascii' => 'ZONA',
             'fix' => '',
@@ -1030,7 +1030,7 @@ return array (
             'previous' => 'ZOLA',
             'volume' => '20',
           ),
-          1 => 
+          1 =>
           array (
             'ascii' => 'ZOOGEOGRAPHIE',
             'fix' => '',
@@ -1041,7 +1041,7 @@ return array (
             'previous' => 'ZONA',
             'volume' => '20',
           ),
-          2 => 
+          2 =>
           array (
             'ascii' => 'ZOOLOGIE',
             'fix' => '',
@@ -1052,7 +1052,7 @@ return array (
             'previous' => 'ZOOGEOGRAPHIE',
             'volume' => '20',
           ),
-          3 => 
+          3 =>
           array (
             'ascii' => 'ZOOLOGISTE',
             'fix' => '',
@@ -1063,7 +1063,7 @@ return array (
             'previous' => 'ZOOLOGIE',
             'volume' => '20',
           ),
-          4 => 
+          4 =>
           array (
             'ascii' => 'ZOOTECHNIE',
             'fix' => '',
@@ -1074,7 +1074,7 @@ return array (
             'previous' => 'ZOOLOGISTE',
             'volume' => '20',
           ),
-          5 => 
+          5 =>
           array (
             'ascii' => 'ZOULOU',
             'fix' => '',
@@ -1085,7 +1085,7 @@ return array (
             'previous' => 'ZOOTECHNIE',
             'volume' => '20',
           ),
-          6 => 
+          6 =>
           array (
             'ascii' => 'ZUIDERZEE',
             'fix' => '',
@@ -1096,7 +1096,7 @@ return array (
             'previous' => 'ZOULOU',
             'volume' => '20',
           ),
-          7 => 
+          7 =>
           array (
             'ascii' => 'ZURBARAN',
             'fix' => '',
@@ -1107,7 +1107,7 @@ return array (
             'previous' => 'ZUIDERZEE',
             'volume' => '20',
           ),
-          8 => 
+          8 =>
           array (
             'ascii' => 'ZURICH',
             'fix' => '',
@@ -1118,7 +1118,7 @@ return array (
             'previous' => 'ZURBARAN',
             'volume' => '20',
           ),
-          9 => 
+          9 =>
           array (
             'ascii' => 'ZWINGLI',
             'fix' => '',
@@ -1130,27 +1130,27 @@ return array (
             'volume' => '20',
           ),
         ),
-        'next' => 
+        'next' =>
         array (
         ),
       ),
     ),
   ),
-  7 => 
+  7 =>
   array (
     'method' => 'goToPreviousPage',
     'page' => 3,
     'comment' => 3,
-    'result' => 
+    'result' =>
     array (
       'externalDict' => 'http://gallica.bnf.fr/ark:/12148/bpt6k1200512k/f8.highres',
       'page' => '3',
       'volume' => '1',
-      'entries' => 
+      'entries' =>
       array (
-        'current' => 
+        'current' =>
         array (
-          0 => 
+          0 =>
           array (
             'ascii' => 'AALTO',
             'fix' => '',
@@ -1161,7 +1161,7 @@ return array (
             'previous' => '',
             'volume' => '1',
           ),
-          1 => 
+          1 =>
           array (
             'ascii' => 'ABADAN',
             'fix' => '',
@@ -1173,12 +1173,12 @@ return array (
             'volume' => '1',
           ),
         ),
-        'previous' => 
+        'previous' =>
         array (
         ),
-        'next' => 
+        'next' =>
         array (
-          0 => 
+          0 =>
           array (
             'ascii' => 'ABATTAGE',
             'fix' => '',
@@ -1189,7 +1189,7 @@ return array (
             'previous' => 'ABADAN',
             'volume' => '1',
           ),
-          1 => 
+          1 =>
           array (
             'ascii' => 'ABATTAGE',
             'fix' => '',
@@ -1200,7 +1200,7 @@ return array (
             'previous' => 'ABATTAGE',
             'volume' => '1',
           ),
-          2 => 
+          2 =>
           array (
             'ascii' => 'ABATTAGE',
             'fix' => '',
@@ -1211,7 +1211,7 @@ return array (
             'previous' => 'ABATTAGE',
             'volume' => '1',
           ),
-          3 => 
+          3 =>
           array (
             'ascii' => 'ABATTAGE',
             'fix' => '',
@@ -1222,7 +1222,7 @@ return array (
             'previous' => 'ABATTAGE',
             'volume' => '1',
           ),
-          4 => 
+          4 =>
           array (
             'ascii' => 'ABATTOIR',
             'fix' => '',
@@ -1233,7 +1233,7 @@ return array (
             'previous' => 'ABATTAGE',
             'volume' => '1',
           ),
-          5 => 
+          5 =>
           array (
             'ascii' => 'ABATTOIRS',
             'fix' => '',
@@ -1244,7 +1244,7 @@ return array (
             'previous' => 'ABATTOIR',
             'volume' => '1',
           ),
-          6 => 
+          6 =>
           array (
             'ascii' => 'ABBADIDES',
             'fix' => '',
@@ -1255,7 +1255,7 @@ return array (
             'previous' => 'ABATTOIRS',
             'volume' => '1',
           ),
-          7 => 
+          7 =>
           array (
             'ascii' => 'ABBAS',
             'fix' => '',
@@ -1266,7 +1266,7 @@ return array (
             'previous' => 'ABBADIDES',
             'volume' => '1',
           ),
-          8 => 
+          8 =>
           array (
             'ascii' => 'ABBASSIDES',
             'fix' => '',
@@ -1277,7 +1277,7 @@ return array (
             'previous' => 'ABBAS',
             'volume' => '1',
           ),
-          9 => 
+          9 =>
           array (
             'ascii' => 'ABBAYE',
             'fix' => '',
@@ -1292,24 +1292,24 @@ return array (
       ),
     ),
   ),
-  8 => 
+  8 =>
   array (
     'method' => 'goToPreviousPage',
     'page' => 11827,
     'comment' => 11827,
-    'result' => 
+    'result' =>
     array (
       'externalDict' => 'http://gallica.bnf.fr/ark:/12148/bpt6k1200531x/f615.highres',
       'page' => '11826',
       'volume' => '20',
-      'entries' => 
+      'entries' =>
       array (
-        'current' => 
+        'current' =>
         array (
         ),
-        'previous' => 
+        'previous' =>
         array (
-          0 => 
+          0 =>
           array (
             'ascii' => 'ZONA',
             'fix' => '',
@@ -1320,7 +1320,7 @@ return array (
             'previous' => 'ZOLA',
             'volume' => '20',
           ),
-          1 => 
+          1 =>
           array (
             'ascii' => 'ZOOGEOGRAPHIE',
             'fix' => '',
@@ -1331,7 +1331,7 @@ return array (
             'previous' => 'ZONA',
             'volume' => '20',
           ),
-          2 => 
+          2 =>
           array (
             'ascii' => 'ZOOLOGIE',
             'fix' => '',
@@ -1342,7 +1342,7 @@ return array (
             'previous' => 'ZOOGEOGRAPHIE',
             'volume' => '20',
           ),
-          3 => 
+          3 =>
           array (
             'ascii' => 'ZOOLOGISTE',
             'fix' => '',
@@ -1353,7 +1353,7 @@ return array (
             'previous' => 'ZOOLOGIE',
             'volume' => '20',
           ),
-          4 => 
+          4 =>
           array (
             'ascii' => 'ZOOTECHNIE',
             'fix' => '',
@@ -1364,7 +1364,7 @@ return array (
             'previous' => 'ZOOLOGISTE',
             'volume' => '20',
           ),
-          5 => 
+          5 =>
           array (
             'ascii' => 'ZOULOU',
             'fix' => '',
@@ -1375,7 +1375,7 @@ return array (
             'previous' => 'ZOOTECHNIE',
             'volume' => '20',
           ),
-          6 => 
+          6 =>
           array (
             'ascii' => 'ZUIDERZEE',
             'fix' => '',
@@ -1386,7 +1386,7 @@ return array (
             'previous' => 'ZOULOU',
             'volume' => '20',
           ),
-          7 => 
+          7 =>
           array (
             'ascii' => 'ZURBARAN',
             'fix' => '',
@@ -1397,7 +1397,7 @@ return array (
             'previous' => 'ZUIDERZEE',
             'volume' => '20',
           ),
-          8 => 
+          8 =>
           array (
             'ascii' => 'ZURICH',
             'fix' => '',
@@ -1408,7 +1408,7 @@ return array (
             'previous' => 'ZURBARAN',
             'volume' => '20',
           ),
-          9 => 
+          9 =>
           array (
             'ascii' => 'ZWINGLI',
             'fix' => '',
@@ -1420,7 +1420,7 @@ return array (
             'volume' => '20',
           ),
         ),
-        'next' => 
+        'next' =>
         array (
         ),
       ),

@@ -1,9 +1,9 @@
 <?php
 return array (
-  0 => 
+  0 =>
   array (
     'comment' => 'a',
-    'result' => 
+    'result' =>
     array (
       'externalDict' => 'http://www.prima-elementa.fr/Dico-a01.html#a',
     ),
