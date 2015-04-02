@@ -674,7 +674,8 @@ class Controller_Interface
     {
         $testFilenames = array_merge(
             glob(__DIR__ . '/../tests/cases/unit-tests/*.php'),
-            glob(__DIR__ . '/../tests/cases/unit-tests/*/*.php')
+            glob(__DIR__ . '/../tests/cases/unit-tests/*/*.php'),
+            glob(__DIR__ . '/../tests/cases/unit-tests/*/*/*.php')
         );
 
         $stats = [
@@ -686,9 +687,9 @@ class Controller_Interface
 
         foreach ($testFilenames as $testFilename) {
             require_once $testFilename;
-            $classname = basename($testFilename, '.php');
-            $unitTest = new $classname();
-            $result = $unitTest->run();
+            $testClass = basename($testFilename, '.php');
+            $unitTest = new $testClass();
+            list($result, $class) = $unitTest->run();
 
             $resultsFilename = str_replace('/tests/cases/', '/tests/results/', $testFilename);
             @mkdir(dirname($resultsFilename), 0777, true);
@@ -699,7 +700,9 @@ class Controller_Interface
                 $stats['tests-to-validate'] += count($result);
             } else {
                 foreach ($result as $index => $subResult) {
-                    if (! isset($expected[$index])) {
+                    if (isset($subResult['status']) and $subResult['status'] == 'not-tested') {
+                        $stats['not-tested']++;
+                    } elseif (! isset($expected[$index])) {
                         $stats['tests-to-validate']++;
                     } elseif ($subResult == $expected[$index]) {
                         $stats['tests-ok']++;
@@ -710,9 +713,9 @@ class Controller_Interface
             }
 
             $results[] = [
-                'basename' => $classname,
+                'basename' => $testClass,
                 'expected' => $expected,
-                'name'     => $classname,
+                'name'     => $class,
                 'result'   => $result,
             ];
         }
@@ -720,7 +723,7 @@ class Controller_Interface
         $this->view->information = "information/test-results.phtml";
         $this->view->noImage = true;
         $this->view->results = $results;
-        $this->view->testDirectory = 'tests/unit-tests/...';
+        $this->view->testDirectory = 'tests/results/unit-tests/...';
         $this->view->title = 'Unit Tests';
         $this->view->stats = $stats;
     }

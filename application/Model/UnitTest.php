@@ -10,6 +10,7 @@
 class Model_UnitTest
 {
     public $class;
+    public $object;
     public $testCases;
     public $testResults;
 
@@ -18,11 +19,44 @@ class Model_UnitTest
         $results =  [];
 
         foreach ($this->testCases as $testCase) {
-            $args = isset($testCase['args']) ? (array) $testCase['args'] : [];
-            $testCase['result'] = call_user_func_array([new $this->class, $testCase['method']], $args);
+            if (! isset($testCase['status'])) {
+                $args = isset($testCase['args']) ? (array) $testCase['args'] : [];
+                $object = $this->setObject();
+
+                if (isset($testCase['properties'])) {
+                    $this->setProperties($object, $testCase['properties']);
+                }
+
+                $testCase['result'] = call_user_func_array([$object, $testCase['method']], $args);
+            }
+
             $results[] = $testCase;
         }
 
-        return $results;
+        return [$results, $this->class];
+    }
+
+    public function setObject()
+    {
+        $object = new $this->class();
+
+        return $object;
+    }
+
+    /**
+     * @param object $object
+     * @param array $properties
+     */
+    public function setProperties($object, &$properties)
+    {
+        foreach ($properties as $name => &$value) {
+            if (isset($value['callback'])) {
+                $value = call_user_func([$this, $value['callback']]);
+            }
+
+            $exported = var_export($value, true);
+            $code = sprintf('$object->%s = %s;', $name, $exported);
+            eval($code);
+        }
     }
 }

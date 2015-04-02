@@ -16,6 +16,21 @@ class StringTest extends Model_UnitTest
 
     public $testCases = [
         [
+            'method'  => 'dash2CamelCase',
+            'args'    => 'abc-def-ghi',
+            'comment' => 'default',
+        ],
+        [
+            'method'  => 'dash2CamelCase',
+            'args'    => ['abc-def-ghi', false],
+            'comment' => 'no UC first',
+        ],
+        [
+            'method'  => 'dash2CamelCase',
+            'args'    => ['abc-def-ghi', true],
+            'comment' => 'UC first',
+        ],
+        [
             'method'  => 'expandLigature',
             'args'    => 'Æ',
             'comment' => 'AE',
@@ -58,6 +73,18 @@ class StringTest extends Model_UnitTest
         [
             'method'  => 'removeAccents',
             'args'    => 'ÁÀÂÄÇÉÈÊËÍÌÎÏÑÓÒÔÖÚÙÛÜŸĀĂĒĔĪĬŌŎŪŬ',
+        [
+            'method'  => 'toLatin',
+            'args'    => 'áàâäçéèêëíìîïñóòôöúùûüÿāăēĕīĭōŏūŭjuiv',
+        ],
+        ],
+        [
+            'method'  => 'toLatin',
+            'args'    => 'áàâäçéèêëíìîïñóòôöúùûüÿāăēĕīĭōŏūŭjuiv',
+        ],
+        [
+            'method'  => 'toLatin',
+            'args'    => 'áàâäçéèêëíìîïñóòôöúùûüÿāăēĕīĭōŏūŭjuiv',
         ],
         [
             'method'  => 'toUpper',
@@ -68,12 +95,18 @@ class StringTest extends Model_UnitTest
             'args'    => 'áàâäçéèêëíìîïñóòôöúùûüÿāăēĕīĭōŏūŭÆ0123456789,?;.:/!§%*',
         ],
         [
-            'method'  => 'toLatin',
-            'args'    => 'áàâäçéèêëíìîïñóòôöúùûüÿāăēĕīĭōŏūŭjuiv',
-        ],
-        [
             'method'  => 'utf8toASCIIorDigit',
             'args'    => 'áàâäçéèêëíìîïñóòôöúùûüÿāăēĕīĭōŏūŭÆ0123456789,?;.:/!§%*-',
+        ],
+        [
+            'method'  => 'utf8ToInternal',
+            'args'    => 'abc',
+            'comment' => 'string',
+        ],
+        [
+            'method'  => 'utf8ToInternal',
+            'args'    => [['abc', 'def']],
+            'comment' => 'array',
         ],
         [
             'method'  => 'utf8ToInternalString',
@@ -89,31 +122,6 @@ class StringTest extends Model_UnitTest
             'method'  => 'utf8ToInternalString',
             'args'    => ['0', null, false],
             'comment' => 'UTF8 to internal',
-        ],
-        [
-            'method'  => 'utf8ToInternal',
-            'args'    => 'abc',
-            'comment' => 'string',
-        ],
-        [
-            'method'  => 'utf8ToInternal',
-            'args'    => [['abc', 'def']],
-            'comment' => 'array',
-        ],
-        [
-            'method'  => 'dash2CamelCase',
-            'args'    => 'abc-def-ghi',
-            'comment' => 'default',
-        ],
-        [
-            'method'  => 'dash2CamelCase',
-            'args'    => ['abc-def-ghi', false],
-            'comment' => 'no UC first',
-        ],
-        [
-            'method'  => 'dash2CamelCase',
-            'args'    => ['abc-def-ghi', true],
-            'comment' => 'UC first',
         ],
     ];
 }

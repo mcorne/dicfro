@@ -30,7 +30,7 @@
     <tr>
         <td>Tests total</td>
         <td>
-          <?=$this->stats['not-tested'] + $this->stats['tests-to-validate'] + $this->stats['tests-ok'] + $this->stats['tests-failed'];?>
+          <?=  array_sum($this->stats);?>
         </td>
     </tr>
 </table>
@@ -64,7 +64,7 @@
         <td></td>
       <?php endif;?>
 
-      <?php if (! $result):?>
+      <?php if (! $result or isset($result['status']) and $result['status'] == 'not-tested'):?>
         <td class="orange nowrap">Test to implement</td>
 
       <?php elseif (! isset($results['expected']) or ! isset($results['expected'][$index])):?>
