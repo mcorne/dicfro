@@ -15,7 +15,7 @@ return array (
       0 => 'abc-def-ghi',
       1 => false,
     ),
-    'comment' => 'no UC first',
+    'comment' => 'no uppercase first',
     'result' => 'abcDefGhi',
   ),
   2 =>
@@ -26,7 +26,7 @@ return array (
       0 => 'abc-def-ghi',
       1 => true,
     ),
-    'comment' => 'UC first',
+    'comment' => 'uppercase first',
     'result' => 'AbcDefGhi',
   ),
   3 =>

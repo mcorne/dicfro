@@ -3,75 +3,33 @@ return array (
   0 =>
   array (
     'method' => 'countDictionaries',
-    'status' => 'not-tested',
-  ),
-  1 =>
-  array (
-    'method' => 'countDictionariesByLanguage',
-    'status' => 'not-tested',
-  ),
-  2 =>
-  array (
-    'method' => 'countDictionariesByType',
-    'status' => 'not-tested',
-  ),
-  3 =>
-  array (
-    'method' => 'getDictionaryDescription',
-    'properties' =>
-    array (
-      'view->dictionary' =>
-      array (
-        'description' => 'abc',
-      ),
-    ),
-    'comment' => 'has description',
-    'result' => 'abc',
-  ),
-  4 =>
-  array (
-    'method' => 'getDictionaryDescription',
-    'comment' => 'no description',
-    'result' => NULL,
-  ),
-  5 =>
-  array (
-    'method' => 'getNewDictionaries',
-    'status' => 'not-tested',
-  ),
-  6 =>
-  array (
-    'method' => 'getPageTitle',
-    'status' => 'not-tested',
-  ),
-  7 =>
-  array (
-    'method' => 'groupDictionaries',
-    'args' => 'chambers',
     'properties' =>
     array (
       'view->config' =>
       array (
-        'groups' =>
+        'dictionaries' =>
         array (
-          0 =>
+          'century' =>
           array (
-            'dictionaries' =>
-            array (
-              0 => 'century',
-              1 => 'chambers',
-            ),
-            'language' => 'en',
           ),
-          1 =>
+          'chambers' =>
           array (
-            'dictionaries' =>
-            array (
-              0 => 'godefroy',
-            ),
-            'language' => 'fr',
+          ),
+          'godefroy' =>
+          array (
           ),
         ),
+      ),
+    ),
+    'result' => 3,
+  ),
+  1 =>
+  array (
+    'method' => 'countDictionariesByLanguage',
+    'properties' =>
+    array (
+      'view->config' =>
+      array (
         'dictionaries' =>
         array (
           'century' =>
@@ -93,6 +51,243 @@ return array (
             'description' => 'voici le Godefroy...',
             'description-en' => 'this is the Godefroy',
             'type' => 'internal',
+          ),
+        ),
+        'groups' =>
+        array (
+          0 =>
+          array (
+            'dictionaries' =>
+            array (
+              0 => 'century',
+              1 => 'chambers',
+            ),
+            'language' => 'en',
+          ),
+          1 =>
+          array (
+            'dictionaries' =>
+            array (
+              0 => 'godefroy',
+            ),
+            'language' => 'fr',
+          ),
+        ),
+      ),
+    ),
+    'result' =>
+    array (
+      'en' => 2,
+      'fr' => 1,
+    ),
+  ),
+  2 =>
+  array (
+    'method' => 'countDictionariesByType',
+    'properties' =>
+    array (
+      'view->config' =>
+      array (
+        'dictionaries' =>
+        array (
+          'century' =>
+          array (
+            'type' => 'index',
+          ),
+          'chambers' =>
+          array (
+            'type' => 'index',
+          ),
+          'godefroy' =>
+          array (
+            'type' => 'internal',
+          ),
+        ),
+      ),
+    ),
+    'result' =>
+    array (
+      'index' => 2,
+      'internal' => 1,
+    ),
+  ),
+  3 =>
+  array (
+    'method' => 'getDictionaryDescription',
+    'properties' =>
+    array (
+      'view->dictionary' =>
+      array (
+        'description' => 'this is the Century...',
+      ),
+    ),
+    'comment' => 'has description',
+    'result' => 'this is the Century...',
+  ),
+  4 =>
+  array (
+    'method' => 'getDictionaryDescription',
+    'comment' => 'no description',
+    'result' => NULL,
+  ),
+  5 =>
+  array (
+    'method' => 'getNewDictionaries',
+    'properties' =>
+    array (
+      'view->config' =>
+      array (
+        'dictionaries' =>
+        array (
+          'century' =>
+          array (
+            'created' => '2000-01-01',
+          ),
+        ),
+      ),
+    ),
+    'comment' => 'not new',
+    'result' =>
+    array (
+    ),
+  ),
+  6 =>
+  array (
+    'method' => 'getNewDictionaries',
+    'properties' =>
+    array (
+      'view->config' =>
+      array (
+        'dictionaries' =>
+        array (
+          'chambers' =>
+          array (
+            'created' => '2030-01-01',
+            'name' => 'Chambers',
+            'description' => 'this is the Chambers...',
+            'type' => 'index',
+          ),
+        ),
+      ),
+    ),
+    'comment' => 'new addition',
+    'result' =>
+    array (
+      0 =>
+      array (
+        'text' => 'Chambers',
+        'title' => 'this is the Chambers...',
+        'type' => 'index',
+        'value' => 'chambers',
+      ),
+    ),
+  ),
+  7 =>
+  array (
+    'method' => 'getNewDictionaries',
+    'properties' =>
+    array (
+      'view->config' =>
+      array (
+        'dictionaries' =>
+        array (
+          'godefroy' =>
+          array (
+            'created' => '2000-01-01',
+            'name' => 'Godefroy',
+            'description' => 'this is the Godefroy...',
+            'type' => 'internal',
+            'updated' => '2030-01-01',
+            'url' => 'http://godefroy.com',
+          ),
+        ),
+      ),
+    ),
+    'comment' => 'new update',
+    'result' =>
+    array (
+      0 =>
+      array (
+        'text' => 'Godefroy',
+        'title' => 'this is the Godefroy...',
+        'type' => 'internal',
+        'value' => 'http://godefroy.com',
+      ),
+    ),
+  ),
+  8 =>
+  array (
+    'method' => 'getPageTitle',
+    'properties' =>
+    array (
+      'view->dictionary' =>
+      array (
+        'title' => 'Century',
+      ),
+    ),
+    'result' => 'Century',
+  ),
+  9 =>
+  array (
+    'method' => 'getPageTitle',
+    'properties' =>
+    array (
+      'view->dictionary' =>
+      array (
+        'name' => 'Chambers',
+      ),
+    ),
+    'result' => 'Chambers',
+  ),
+  10 =>
+  array (
+    'method' => 'groupDictionaries',
+    'args' => 'chambers',
+    'properties' =>
+    array (
+      'view->config' =>
+      array (
+        'dictionaries' =>
+        array (
+          'century' =>
+          array (
+            'description' => 'this is the Century...',
+            'name' => 'Century',
+            'type' => 'index',
+          ),
+          'chambers' =>
+          array (
+            'name' => 'Chambers',
+            'description' => 'this is the Chambers...',
+            'type' => 'external',
+            'url' => 'http://century.com',
+          ),
+          'godefroy' =>
+          array (
+            'name' => 'Godefroy',
+            'description' => 'voici le Godefroy...',
+            'description-en' => 'this is the Godefroy',
+            'type' => 'internal',
+          ),
+        ),
+        'groups' =>
+        array (
+          0 =>
+          array (
+            'dictionaries' =>
+            array (
+              0 => 'century',
+              1 => 'chambers',
+            ),
+            'language' => 'en',
+          ),
+          1 =>
+          array (
+            'dictionaries' =>
+            array (
+              0 => 'godefroy',
+            ),
+            'language' => 'fr',
           ),
         ),
       ),
@@ -160,7 +355,7 @@ return array (
       ),
     ),
   ),
-  8 =>
+  11 =>
   array (
     'method' => 'groupDictionaries',
     'args' =>
@@ -172,26 +367,6 @@ return array (
     array (
       'view->config' =>
       array (
-        'groups' =>
-        array (
-          0 =>
-          array (
-            'dictionaries' =>
-            array (
-              0 => 'century',
-              1 => 'chambers',
-            ),
-            'language' => 'en',
-          ),
-          1 =>
-          array (
-            'dictionaries' =>
-            array (
-              0 => 'godefroy',
-            ),
-            'language' => 'fr',
-          ),
-        ),
         'dictionaries' =>
         array (
           'century' =>
@@ -213,6 +388,26 @@ return array (
             'description' => 'voici le Godefroy...',
             'description-en' => 'this is the Godefroy',
             'type' => 'internal',
+          ),
+        ),
+        'groups' =>
+        array (
+          0 =>
+          array (
+            'dictionaries' =>
+            array (
+              0 => 'century',
+              1 => 'chambers',
+            ),
+            'language' => 'en',
+          ),
+          1 =>
+          array (
+            'dictionaries' =>
+            array (
+              0 => 'godefroy',
+            ),
+            'language' => 'fr',
           ),
         ),
       ),

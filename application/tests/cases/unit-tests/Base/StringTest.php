@@ -23,12 +23,12 @@ class StringTest extends Model_UnitTest
         [
             'method'  => 'dash2CamelCase',
             'args'    => ['abc-def-ghi', false],
-            'comment' => 'no UC first',
+            'comment' => 'no uppercase first',
         ],
         [
             'method'  => 'dash2CamelCase',
             'args'    => ['abc-def-ghi', true],
-            'comment' => 'UC first',
+            'comment' => 'uppercase first',
         ],
         [
             'method'  => 'expandLigature',

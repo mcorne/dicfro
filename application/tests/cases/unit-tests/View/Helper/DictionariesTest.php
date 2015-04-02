@@ -18,19 +18,27 @@ class DictionariesTest extends Model_UnitTest
     public $testCases = [
         [
             'method'     => 'countDictionaries',
-            'status'     => 'not-tested',
+            'properties' => ['view->config' => ['dictionaries' => [
+                'century'  => [],
+                'chambers' => [],
+                'godefroy' => [],
+            ]]],
         ],
         [
             'method'     => 'countDictionariesByLanguage',
-            'status'     => 'not-tested',
+            'properties' => ['view->config' => ['callback' => 'setConfig']],
         ],
         [
             'method'     => 'countDictionariesByType',
-            'status'     => 'not-tested',
+            'properties' => ['view->config' => ['dictionaries' => [
+                'century'  => ['type' => 'index'],
+                'chambers' => ['type' => 'index'],
+                'godefroy' => ['type' => 'internal'],
+            ]]],
         ],
         [
             'method'     => 'getDictionaryDescription',
-            'properties' => ['view->dictionary' => ['description' => 'abc'] ],
+            'properties' => ['view->dictionary' => ['description' => 'this is the Century...']],
             'comment'    => 'has description',
         ],
         [
@@ -39,11 +47,40 @@ class DictionariesTest extends Model_UnitTest
         ],
         [
             'method'     => 'getNewDictionaries',
-            'status'     => 'not-tested',
+            'properties' => ['view->config' => ['dictionaries' => [ 'century' => [
+                'created'     => '2000-01-01',
+            ]]]],
+            'comment'    => 'not new',
+        ],
+        [
+            'method'     => 'getNewDictionaries',
+            'properties' => ['view->config' => ['dictionaries' => [ 'chambers' => [
+                'created'     => '2030-01-01',
+                'name'        => 'Chambers',
+                'description' => 'this is the Chambers...',
+                'type'        => 'index',
+            ]]]],
+            'comment'    => 'new addition',
+        ],
+        [
+            'method'     => 'getNewDictionaries',
+            'properties' => ['view->config' => ['dictionaries' => [ 'godefroy' => [
+                'created'     => '2000-01-01',
+                'name'        => 'Godefroy',
+                'description' => 'this is the Godefroy...',
+                'type'        => 'internal',
+                'updated'     => '2030-01-01',
+                'url'         => 'http://godefroy.com',
+            ]]]],
+            'comment'    => 'new update',
         ],
         [
             'method'     => 'getPageTitle',
-            'status'     => 'not-tested',
+            'properties' => ['view->dictionary' => ['title' => 'Century']],
+        ],
+        [
+            'method'     => 'getPageTitle',
+            'properties' => ['view->dictionary' => ['name' => 'Chambers']],
         ],
         [
             'method'     => 'groupDictionaries',
@@ -68,22 +105,6 @@ class DictionariesTest extends Model_UnitTest
     public function setConfig()
     {
         return [
-            'groups' => [
-                 [
-                     'dictionaries' => [
-                         'century',
-                         'chambers',
-                     ],
-                     'language' => 'en',
-                     ],
-                 [
-                     'dictionaries' => [
-                         'godefroy',
-                     ],
-                     'language' => 'fr',
-                 ],
-            ],
-
             'dictionaries' => [
                 'century' => [
                     'description'    => 'this is the Century...',
@@ -102,6 +123,21 @@ class DictionariesTest extends Model_UnitTest
                     'description-en' => 'this is the Godefroy',
                     'type'           => 'internal',
                 ],
+            ],
+            'groups' => [
+                 [
+                     'dictionaries' => [
+                         'century',
+                         'chambers',
+                     ],
+                     'language' => 'en',
+                 ],
+                 [
+                     'dictionaries' => [
+                         'godefroy',
+                     ],
+                     'language' => 'fr',
+                 ],
             ],
         ];
     }

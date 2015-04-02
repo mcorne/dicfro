@@ -64,6 +64,53 @@ class View_Helper_Dictionaries extends View_Helper_Base
     }
 
     /**
+     * @return array
+     */
+    public function getNewDictionaries()
+    {
+        date_default_timezone_set('UTC');
+        $options = [];
+
+        foreach($this->view->config['dictionaries'] as $id => $dictionary) {
+            $date = isset($dictionary['updated']) ? $dictionary['updated'] : $dictionary['created'];
+            list($year, $month, $day) = explode('-', $date);
+            $time = time() - 30 * 24 * 3600;
+
+            if (mktime(0, 0, 0, $month, $day, $year) >= $time) {
+                // dictionary was added less than 30 days ago
+                if (isset($dictionary['url'])) {
+                    $value = $dictionary['url'];
+                } else {
+                    $value =  $id;
+                }
+
+                $options[] = [
+                    'text'  => $dictionary['name'],
+                    'title' => $dictionary['description'],
+                    'type'  => $dictionary['type'],
+                    'value' => $value,
+                ];
+            }
+        }
+
+        return $options;
+    }
+
+    /**
+     * @return string
+     */
+    public function getPageTitle()
+    {
+        if (isset($this->view->dictionary['title'])) {
+            $pageTitle = $this->view->dictionary['title'];
+        } else {
+            $pageTitle = $this->view->dictionary['name'];
+        }
+
+        return $pageTitle;
+    }
+
+    /**
      * @param string $selected
      * @param bool $english
      * @return array
@@ -116,52 +163,5 @@ class View_Helper_Dictionaries extends View_Helper_Base
         }
 
         return $optgroups;
-    }
-
-    /**
-     * @return array
-     */
-    public function getNewDictionaries()
-    {
-        date_default_timezone_set('UTC');
-        $options = [];
-
-        foreach($this->view->config['dictionaries'] as $id => $dictionary) {
-            $date = isset($dictionary['updated']) ? $dictionary['updated'] : $dictionary['created'];
-            list($year, $month, $day) = explode('-', $date);
-            $time = time() - 30 * 24 * 3600;
-
-            if (mktime(0, 0, 0, $month, $day, $year) >= $time) {
-                // dictionary was added less than 30 days ago
-                if (isset($dictionary['url'])) {
-                    $value = $dictionary['url'];
-                } else {
-                    $value =  $id;
-                }
-
-                $options[] = [
-                    'text'  => $dictionary['name'],
-                    'title' => $dictionary['description'],
-                    'type'  => $dictionary['type'],
-                    'value' => $value,
-                ];
-            }
-        }
-
-        return $options;
-    }
-
-    /**
-     * @return string
-     */
-    public function getPageTitle()
-    {
-        if (isset($this->view->dictionary['title'])) {
-            $pageTitle = $this->view->dictionary['title'];
-        } else {
-            $pageTitle = $this->view->dictionary['name'];
-        }
-
-        return $pageTitle;
     }
 }
