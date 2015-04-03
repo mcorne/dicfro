@@ -1,36 +1,17 @@
 <?php
-
 /**
  * Dicfro
  *
- * PHP 5
- *
- * @category   DicFro
- * @package    View
- * @subpackage Helper
  * @author     Michel Corne <mcorne@yahoo.com>
- * @copyright  2008-2013 Michel Corne
+ * @copyright  2008-2015 Michel Corne
  * @license    http://opensource.org/licenses/gpl-3.0.html GNU GPL v3
  */
 
 require_once 'View/Helper/Base.php';
 
-/**
- * Entries View Helper
- *
- * @category   DicFro
- * @package    View
- * @subpackage Helper
- * @author     Michel Corne <mcorne@yahoo.com>
- * @copyright  2008-2013 Michel Corne
- * @license    http://opensource.org/licenses/gpl-3.0.html GNU GPL v3
- */
-
 class View_Helper_Entries extends View_Helper_Base
 {
     /**
-     * Calculates the hash of an entry
-     *
      * @param string $entry
      * @return string
      */
@@ -172,10 +153,8 @@ class View_Helper_Entries extends View_Helper_Base
     }
 
     /**
-     * Sets the option
-     *
      * @param array $entry
-     * @param int $selected
+     * @param bool $selected
      * @return array
      */
     public function setOption($entry, $selected = null)
@@ -190,8 +169,6 @@ class View_Helper_Entries extends View_Helper_Base
     }
 
     /**
-     * Sets the options
-     *
      * @param array $entries
      * @param array $options
      * @param string $selected
