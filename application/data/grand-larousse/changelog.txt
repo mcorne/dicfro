@@ -18,13 +18,13 @@ for each volume, ex volume 3:
 - added first page, last page, first image, last image and last word in "extract-entries.php"
 - added dictionaries/grand-larousse/search/properties/url/3 in config.php to point to a page/image
 
-(repetitive process) 
+(repetitive process)
 - fixed bad entries in 3/index.csv, with the help of the PDF or .txt files
 * ran "php extract-entries.php 3" as many times as necessary
 * updated 3/excluded-entries.php and 3/replaced-entries.php as necessary
 
-(finish process) 
-- ran "php merge-entries.php" 
+(finish process)
+- ran "php merge-entries.php"
 - ran "parse grand-larousse 1", fixed parsing errors
 * ran "php extract-entries.php 3"
 * updated 3/excluded-entries.php and 3/replaced-entries.php as necessary
@@ -36,3 +36,9 @@ format of the files with fixes
 ------------------------------
 - this applies to: excluded-entries.php and replaced-entries.php
 - the format is described in the fix-examples directory
+
+version v1.1
+------------
+- add first word "zygote" page 6528 in "index.csv"
+- ran "parse grand-larousse"
+- run diff of "word.txt" with previous version to verify changes

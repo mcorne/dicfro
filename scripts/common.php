@@ -7,7 +7,7 @@
  * @license   http://www.opensource.org/licenses/gpl-3.0.html GNU GPL v3
  */
 
-$dataDir = realpath(__DIR__ . "/../data");
+$dataDir = realpath(__DIR__ . "/../application/data");
 $dictionaries = glob("$dataDir/*", GLOB_ONLYDIR);
 $dictionaries = array_map('basename', $dictionaries);
 
@@ -16,7 +16,7 @@ if (empty($dictionary) or ! in_array($dictionary, $dictionaries)) {
 }
 
 $applicationDir = __DIR__ . '/../application';
-$config = require __DIR__ . "$applicationDir/config.php";
+$config = require "$applicationDir/config.php";
 $dictionaryConfig = isset($config['dictionaries'][$dictionary]) ? $config['dictionaries'][$dictionary] : [];
 
 set_include_path($applicationDir);

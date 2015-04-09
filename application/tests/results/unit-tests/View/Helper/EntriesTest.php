@@ -9,22 +9,233 @@ return array (
   1 =>
   array (
     'method' => 'getEntries',
-    'status' => 'not-tested',
+    'properties' =>
+    array (
+      'view->entries' =>
+      array (
+        'previous' =>
+        array (
+          0 =>
+          array (
+            'original' => 'abc',
+            'page' => 123,
+            'volume' => 7,
+          ),
+        ),
+        'next' =>
+        array (
+          0 =>
+          array (
+            'original' => 'def',
+            'page' => 456,
+            'volume' => 8,
+          ),
+        ),
+      ),
+    ),
+    'comment' => 'no current',
+    'result' =>
+    array (
+      0 =>
+      array (
+        'selected' => false,
+        'text' => 'abc',
+        'value' => '123/7/891568578',
+      ),
+      1 =>
+      array (
+        'selected' => true,
+        'text' => '--',
+        'value' => NULL,
+      ),
+      2 =>
+      array (
+        'selected' => false,
+        'text' => 'def',
+        'value' => '456/8/214229345',
+      ),
+    ),
   ),
   2 =>
   array (
     'method' => 'getEntries',
-    'status' => 'not-tested',
+    'properties' =>
+    array (
+      'entryHash' => 214229345,
+      'view->entries' =>
+      array (
+        'previous' =>
+        array (
+          0 =>
+          array (
+            'original' => 'abc',
+            'page' => 123,
+            'volume' => 7,
+          ),
+        ),
+        'current' =>
+        array (
+          0 =>
+          array (
+            'original' => 'def',
+            'page' => 456,
+            'volume' => 8,
+          ),
+        ),
+        'next' =>
+        array (
+          0 =>
+          array (
+            'original' => 'ghi',
+            'page' => 789,
+            'volume' => 9,
+          ),
+        ),
+      ),
+    ),
+    'comment' => 'selected hash',
+    'result' =>
+    array (
+      0 =>
+      array (
+        'selected' => false,
+        'text' => 'abc',
+        'value' => '123/7/891568578',
+      ),
+      1 =>
+      array (
+        'selected' => true,
+        'text' => 'def',
+        'value' => '456/8/214229345',
+      ),
+      2 =>
+      array (
+        'selected' => false,
+        'text' => 'ghi',
+        'value' => '789/9/731069668',
+      ),
+    ),
   ),
   3 =>
   array (
     'method' => 'getEntries',
-    'status' => 'not-tested',
+    'properties' =>
+    array (
+      'previousAction' => 'search',
+      'view->entries' =>
+      array (
+        'previous' =>
+        array (
+          0 =>
+          array (
+            'original' => 'abc',
+            'page' => 123,
+            'volume' => 7,
+          ),
+        ),
+        'current' =>
+        array (
+          0 =>
+          array (
+            'original' => 'def',
+            'page' => 456,
+            'volume' => 8,
+          ),
+        ),
+        'next' =>
+        array (
+          0 =>
+          array (
+            'original' => 'ghi',
+            'page' => 789,
+            'volume' => 9,
+          ),
+        ),
+      ),
+      'view->word' => 'def',
+    ),
+    'comment' => 'selected word',
+    'result' =>
+    array (
+      0 =>
+      array (
+        'selected' => false,
+        'text' => 'abc',
+        'value' => '123/7/891568578',
+      ),
+      1 =>
+      array (
+        'selected' => true,
+        'text' => 'def',
+        'value' => '456/8/214229345',
+      ),
+      2 =>
+      array (
+        'selected' => false,
+        'text' => 'ghi',
+        'value' => '789/9/731069668',
+      ),
+    ),
   ),
   4 =>
   array (
     'method' => 'getEntries',
-    'status' => 'not-tested',
+    'properties' =>
+    array (
+      'view->entries' =>
+      array (
+        'previous' =>
+        array (
+          0 =>
+          array (
+            'original' => 'abc',
+            'page' => 123,
+            'volume' => 7,
+          ),
+        ),
+        'current' =>
+        array (
+          0 =>
+          array (
+            'original' => 'def',
+            'page' => 456,
+            'volume' => 8,
+          ),
+        ),
+        'next' =>
+        array (
+          0 =>
+          array (
+            'original' => 'ghi',
+            'page' => 789,
+            'volume' => 9,
+          ),
+        ),
+      ),
+      'view->word' => 'def',
+    ),
+    'comment' => 'none selected',
+    'result' =>
+    array (
+      0 =>
+      array (
+        'selected' => false,
+        'text' => 'abc',
+        'value' => '123/7/891568578',
+      ),
+      1 =>
+      array (
+        'selected' => true,
+        'text' => 'def',
+        'value' => '456/8/214229345',
+      ),
+      2 =>
+      array (
+        'selected' => false,
+        'text' => 'ghi',
+        'value' => '789/9/731069668',
+      ),
+    ),
   ),
   5 =>
   array (

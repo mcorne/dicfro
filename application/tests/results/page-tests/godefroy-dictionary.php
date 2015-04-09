@@ -1414,4 +1414,25 @@ return array (
       'firstWord' => 'ZAROUR',
     ),
   ),
+  65 =>
+  array (
+    'method' => 'goToPage',
+    'page' => 10000,
+    'volume' => 100,
+    'comment' => '10000 / 100',
+    'result' =>
+    array (
+      'definition' => 'dictionary/godefroy-dictionary/mImg/0800344.gif',
+      'errataImages' =>
+      array (
+      ),
+      'errataText' => NULL,
+      'ghostwords' =>
+      array (
+      ),
+      'volume' => 8,
+      'page' => 344,
+      'firstWord' => 'ZIRBE',
+    ),
+  ),
 );

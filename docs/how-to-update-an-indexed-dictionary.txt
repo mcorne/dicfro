@@ -7,3 +7,11 @@ The procedure is described for each dictionary in its change log file, eg applic
 
 Note that some dictionaries have files with fixes used by the entries extractor.
 Their formats are described in the dictionary fix-examples directory, eg application/data/encyclopedie-larousse/fix-examples.
+
+
+As an exemple
+-------------
+- open application/data/grand-larousse/index.csv
+- change the entry, eg replace empty entry with "zygote" for page 6528
+- run "parse grand-larousse" to update the database
+- add a log entry in application/data/grand-larousse/changelog.txt

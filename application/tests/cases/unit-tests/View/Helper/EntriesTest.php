@@ -21,20 +21,49 @@ class EntriesTest extends Model_UnitTest
             'args'   => 'def',
         ],
         [
-            'method' => 'getEntries',
-            'status' => 'not-tested',
+            'method'     => 'getEntries',
+            'properties' => ['view->entries' => [
+                'previous' => [['original' => 'abc', 'page' => 123, 'volume' => 7]],
+                'next'     => [['original' => 'def', 'page' => 456, 'volume' => 8]],
+            ]],
+            'comment' => 'no current',
         ],
         [
             'method' => 'getEntries',
-            'status' => 'not-tested',
+            'properties' => [
+                'entryHash'     => 214229345, // def
+                'view->entries' => [
+                    'previous' => [['original' => 'abc', 'page' => 123, 'volume' => 7]],
+                    'current'  => [['original' => 'def', 'page' => 456, 'volume' => 8]],
+                    'next'     => [['original' => 'ghi', 'page' => 789, 'volume' => 9]],
+                ],
+            ],
+            'comment' => 'selected hash',
         ],
         [
             'method' => 'getEntries',
-            'status' => 'not-tested',
+            'properties' => [
+                'previousAction' => 'search',
+                'view->entries'  => [
+                    'previous' => [['original' => 'abc', 'page' => 123, 'volume' => 7]],
+                    'current'  => [['original' => 'def', 'page' => 456, 'volume' => 8]],
+                    'next'     => [['original' => 'ghi', 'page' => 789, 'volume' => 9]],
+                ],
+                'view->word'     => 'def',
+            ],
+            'comment' => 'selected word',
         ],
         [
             'method' => 'getEntries',
-            'status' => 'not-tested',
+            'properties' => [
+                'view->entries'  => [
+                    'previous' => [['original' => 'abc', 'page' => 123, 'volume' => 7]],
+                    'current'  => [['original' => 'def', 'page' => 456, 'volume' => 8]],
+                    'next'     => [['original' => 'ghi', 'page' => 789, 'volume' => 9]],
+                ],
+                'view->word'     => 'def',
+            ],
+            'comment' => 'none selected',
         ],
         [
             'method'  => 'getSelectedAsciiWord',

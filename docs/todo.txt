@@ -1,11 +1,11 @@
 Things to do
 ------------
 
-- refactor middle and tabs per dictionary
-
 - add panoccitan.org, http://www.etymologie-occitane.fr, http://www.atilf.fr/dect/ ...
 - add lacurne supplement, curiosités etc...
 - scan/add tilander
 
+- refactor middle and tabs per dictionary
 - fix scrolling bar issue for tablets
-- finish or remove unit tests
+- finish unit tests
+- fix missing pages in lacurne, eg 2, 4 etc.
