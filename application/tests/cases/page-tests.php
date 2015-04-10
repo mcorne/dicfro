@@ -361,4 +361,158 @@ return [
 
         ['method' => 'goToPage'        , 'page' => 10000 , 'volume' => 100],
     ],
+
+    'petit-larousse' => [
+        ['method' => 'goToPage'        , 'page' => 0],
+
+        ['method' => 'goToPage'        , 'page' => 1],
+        ['method' => 'goToPage'        , 'page' => 1000],
+        ['method' => 'goToPage'        , 'page' => 1066],
+        ['method' => 'goToPage'        , 'page' => 10000],
+
+        ['method' => 'goToNextPage'    , 'page' => 1],
+        ['method' => 'goToNextPage'    , 'page' => 1066],
+        ['method' => 'goToPreviousPage', 'page' => 1],
+        ['method' => 'goToPreviousPage', 'page' => 1066],
+    ],
+
+    'petit-larousse-np' => [
+        ['method' => 'goToPage'        , 'page' => 0],
+
+        ['method' => 'goToPage'        , 'page' => 1099],
+        ['method' => 'goToPage'        , 'page' => 1500],
+        ['method' => 'goToPage'        , 'page' => 1658],
+        ['method' => 'goToPage'        , 'page' => 10000],
+
+        ['method' => 'goToNextPage'    , 'page' => 1099],
+        ['method' => 'goToNextPage'    , 'page' => 1658],
+        ['method' => 'goToPreviousPage', 'page' => 1099],
+        ['method' => 'goToPreviousPage', 'page' => 1658],
+    ],
+
+    'roman-de-la-rose-glossary' => [
+        ['method' => 'goToPage'        , 'page' => 0],
+
+        ['method' => 'goToPage'        , 'page' => 117],
+        ['method' => 'goToPage'        , 'page' => 200],
+        ['method' => 'goToPage'        , 'page' => 329],
+        ['method' => 'goToPage'        , 'page' => 1000],
+
+        ['method' => 'goToNextPage'    , 'page' => 117],
+        ['method' => 'goToNextPage'    , 'page' => 329],
+        ['method' => 'goToPreviousPage', 'page' => 117],
+        ['method' => 'goToPreviousPage', 'page' => 329],
+    ],
+
+    'roman-de-renart-fhs-glossary' => [
+        ['method' => 'goToPage'        , 'page' => 0],
+
+        ['method' => 'goToPage'        , 'page' => 507],
+        ['method' => 'goToPage'        , 'page' => 520],
+        ['method' => 'goToPage'        , 'page' => 534],
+        ['method' => 'goToPage'        , 'page' => 1000],
+
+        ['method' => 'goToNextPage'    , 'page' => 507],
+        ['method' => 'goToNextPage'    , 'page' => 534],
+        ['method' => 'goToPreviousPage', 'page' => 507],
+        ['method' => 'goToPreviousPage', 'page' => 534],
+    ],
+
+    'roman-de-renart-meon-1-glossary' => [
+        ['method' => 'goToPage'        , 'page' => 0],
+
+        ['method' => 'goToPage'        , 'page' => 359],
+        ['method' => 'goToPage'        , 'page' => 400],
+        ['method' => 'goToPage'        , 'page' => 402],
+        ['method' => 'goToPage'        , 'page' => 1000],
+
+        ['method' => 'goToNextPage'    , 'page' => 359],
+        ['method' => 'goToNextPage'    , 'page' => 402],
+        ['method' => 'goToPreviousPage', 'page' => 359],
+        ['method' => 'goToPreviousPage', 'page' => 402],
+    ],
+
+    'roman-de-renart-meon-2-glossary' => [
+        ['method' => 'goToPage'        , 'page' => 0],
+
+        ['method' => 'goToPage'        , 'page' => 375],
+        ['method' => 'goToPage'        , 'page' => 400],
+        ['method' => 'goToPage'        , 'page' => 422],
+        ['method' => 'goToPage'        , 'page' => 1000],
+
+        ['method' => 'goToNextPage'    , 'page' => 375],
+        ['method' => 'goToNextPage'    , 'page' => 422],
+        ['method' => 'goToPreviousPage', 'page' => 375],
+        ['method' => 'goToPreviousPage', 'page' => 422],
+    ],
+
+    'roman-de-renart-meon-3-glossary' => [
+        ['method' => 'goToPage'        , 'page' => 0],
+
+        ['method' => 'goToPage'        , 'page' => 385],
+        ['method' => 'goToPage'        , 'page' => 400],
+        ['method' => 'goToPage'        , 'page' => 439],
+        ['method' => 'goToPage'        , 'page' => 1000],
+
+        ['method' => 'goToNextPage'    , 'page' => 385],
+        ['method' => 'goToNextPage'    , 'page' => 439],
+        ['method' => 'goToPreviousPage', 'page' => 385],
+        ['method' => 'goToPreviousPage', 'page' => 439],
+    ],
+
+    'roman-de-renart-meon-4-glossary' => [
+        ['method' => 'goToPage'        , 'page' => 0],
+
+        ['method' => 'goToPage'        , 'page' => 463],
+        ['method' => 'goToPage'        , 'page' => 500],
+        ['method' => 'goToPage'        , 'page' => 533],
+        ['method' => 'goToPage'        , 'page' => 1000],
+
+        ['method' => 'goToNextPage'    , 'page' => 463],
+        ['method' => 'goToNextPage'    , 'page' => 533],
+        ['method' => 'goToPreviousPage', 'page' => 463],
+        ['method' => 'goToPreviousPage', 'page' => 533],
+    ],
+
+    'roman-de-tristan-glossary' => [
+        ['method' => 'goToPage'        , 'page' => 0],
+
+        ['method' => 'goToPage'        , 'page' => 145],
+        ['method' => 'goToPage'        , 'page' => 200],
+        ['method' => 'goToPage'        , 'page' => 245],
+        ['method' => 'goToPage'        , 'page' => 1000],
+
+        ['method' => 'goToNextPage'    , 'page' => 145],
+        ['method' => 'goToNextPage'    , 'page' => 245],
+        ['method' => 'goToPreviousPage', 'page' => 145],
+        ['method' => 'goToPreviousPage', 'page' => 245],
+    ],
+
+    'roman-lexicon' => [
+        ['method' => 'goToPage'        , 'page' => 0],
+
+        ['method' => 'goToPage'        , 'page' => 49],
+        ['method' => 'goToPage'        , 'page' => 100],
+        ['method' => 'goToPage'        , 'page' => 555],
+        ['method' => 'goToPage'        , 'page' => 1000],
+
+        ['method' => 'goToNextPage'    , 'page' => 49],
+        ['method' => 'goToNextPage'    , 'page' => 555],
+        ['method' => 'goToPreviousPage', 'page' => 49],
+        ['method' => 'goToPreviousPage', 'page' => 555],
+    ],
+
+    'vandaele-dictionary' => [
+        ['method' => 'goToPage'        , 'page' => 0],
+
+        ['method' => 'goToPage'        , 'page' => 9],
+        ['method' => 'goToPage'        , 'page' => 100],
+        ['method' => 'goToPage'        , 'page' => 536],
+        ['method' => 'goToPage'        , 'page' => 1000],
+
+        ['method' => 'goToNextPage'    , 'page' => 9],
+        ['method' => 'goToNextPage'    , 'page' => 536],
+        ['method' => 'goToPreviousPage', 'page' => 9],
+        ['method' => 'goToPreviousPage', 'page' => 536],
+    ],
 ];

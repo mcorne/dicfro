@@ -151,7 +151,7 @@ class Controller_Interface
         ];
 
         foreach($this->front->config['dictionaries'] as $dictionaryId => $dictionary) {
-            if ($dictionary['type'] == 'external') {
+            if ($dictionary['type'] == 'external' or $dictionaryId == 'tcaf') {
                 continue;
             }
 
