@@ -1,7 +1,7 @@
 /**
  * Dicfro
  *
- * @copyright 2008-2013 Michel Corne
+ * @copyright 2008-2015 Michel Corne
  * @license   http://www.opensource.org/licenses/gpl-3.0.html GNU GPL v3
  */
 
@@ -60,8 +60,8 @@ function base64_encode( data )
 function displayLexromd(actionUrl)
 {
     var image = document.getElementById('lexromd-img'),
-    tome = document.getElementById('tome').value,
-    page = document.getElementById('tome-page').value;
+        tome = document.getElementById('tome').value,
+        page = document.getElementById('tome-page').value;
 
     page = parseInt(page);
     tome = parseInt(tome);
@@ -92,10 +92,9 @@ function getcookie(name)
 }
 
 function getrawcookie(name, toUnescape) {
-    var
-    end,
-    start,
-    value = '';
+    var end,
+        start,
+        value = '';
 
     if (document.cookie.length > 0) {
         start = document.cookie.indexOf(name + "=");
@@ -116,11 +115,11 @@ function getrawcookie(name, toUnescape) {
 
 function getGhostwordNotice(update)
 {
-    var ghostword = document.getElementById('ISIS_SELECT');
+    var ghostwordNotice = document.getElementById('ghostword-notice');
 
-    if (update || !ghostword.value) {
-        ghostword.value = document.getElementById('ghostword-select').value;
-        document.getElementById('ghostword-form').submit();
+    if (update || ! ghostwordNotice.src) {
+        ghostwordNotice.src = 'http://stella.atilf.fr/scripts/fantomes.exe?ADMBASE_BALISE;BALISE=IDF;MENU=menu_base;ISIS=isis_fantomes.txt;IDF='
+                            + encodeURIComponent(document.getElementById('ghostword-select').value);
         setDictionaryHeight('ghostword-notice');
     }
 }
@@ -141,10 +140,10 @@ function getWindowHeight()
 
 function goEntry(action)
 {
-    var
-    entry = document.getElementById('entries'),
-    pageVolume = entry.value.split('/'),
-    page = parseInt(pageVolume[0]);
+    var entry = document.getElementById('entries'),
+        pageVolume = entry.value.split('/'),
+        page = parseInt(pageVolume[0]);
+
     volume = parseInt(pageVolume[1]);
     entryHash = pageVolume[2];
 
@@ -157,9 +156,8 @@ function goEntry(action)
 
 function goPage(action)
 {
-    var
-    page = document.getElementById('page'),
-    volume = document.getElementById('volume');
+    var page = document.getElementById('page'),
+        volume = document.getElementById('volume');
 
     page && (action = action.replace('%s', parseInt(page.value)));
     volume && (action = action.replace('%s', parseInt(volume.value)));
@@ -221,42 +219,40 @@ function json_decode(str_json) {
 
 function onBlur()
 {
-	window.onfocus = onFocus;
+    window.onfocus = onFocus;
 }
 
 function onFocus()
 {
     getcookie('new-tab') && autoSearchLastWord();
 
-	window.onfocus = null;
-	window.onblur = onBlur;
+    window.onfocus = null;
+    window.onblur = onBlur;
 }
 
 function onLoad()
 {
-	window.onblur = onBlur;
-	prevDictionary = document.getElementById('dictionary').selectedIndex;
+    window.onblur = onBlur;
+    prevDictionary = document.getElementById('dictionary').selectedIndex;
 }
 
 function openDictionary(action)
 {
-    var
-	isNewTab = getcookie('new-tab'),
+    var	isNewTab = getcookie('new-tab'),
 	dictionary = document.getElementById('dictionary');
 
-	action = action.replace('%s', dictionary.value);
+    action = action.replace('%s', dictionary.value);
     searchWord(action, null, isNewTab);
 
-	isNewTab && (dictionary.selectedIndex = prevDictionary);
+    isNewTab && (dictionary.selectedIndex = prevDictionary);
 }
 
 function printPage()
 {
-    var
-    child = document.getElementById('middle').firstChild,
-    grandChild,
-    innerHTML,
-    url = '/print.php?content=';
+    var child = document.getElementById('middle').firstChild,
+        grandChild,
+        innerHTML,
+        url = '/print.php?content=';
 
     domainSubpath && (url = '/' + domainSubpath + url);
 
@@ -291,8 +287,7 @@ function printPage()
 
 function searchLastWord(action)
 {
-    var
-	dictionaryLanguage = document.getElementById('dictionary-language').value,
+    var dictionaryLanguage = document.getElementById('dictionary-language').value,
 	lastWord = getcookie('last-word-' + dictionaryLanguage),
 	word = document.getElementById('word').value;
 
@@ -306,17 +301,16 @@ function searchWord(action, word, isNewTab)
 
     if (isNewTab) {
         window.open(action);
-	} else {
+    } else {
         location.assign(action);
-	}
+    }
 }
 
 function setDictionaryHeight(id)
 {
-    var
-    height = getWindowHeight(),
-    bottomMargin = 50,
-    middle;
+    var height = getWindowHeight(),
+        bottomMargin = 50,
+        middle;
 
     if (id ) {
         bottomMargin += 2;
@@ -333,14 +327,13 @@ function setDictionaryHeight(id)
 
 function updateTabContents(target)
 {
-    var
-    sections = ['content'    , 'errata'    , 'ghostwords'    , 'lexromd'    , 'lexromd-help'    , 'debug'     ],
-    tabs     = ['content-tab', 'errata-tab', 'ghostwords-tab', 'lexromd-tab', 'lexromd-help-tab', 'debug-tab' ],
-    sectionId,
-    tabId,
-    section,
-    tab,
-    i;
+    var sections = ['content'    , 'errata'    , 'ghostwords'    , 'lexromd'    , 'lexromd-help'    , 'debug'     ],
+        tabs     = ['content-tab', 'errata-tab', 'ghostwords-tab', 'lexromd-tab', 'lexromd-help-tab', 'debug-tab' ],
+        sectionId,
+        tabId,
+        section,
+        tab,
+        i;
 
     for (i in sections) {
         sectionId = sections[i];

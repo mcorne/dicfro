@@ -22,13 +22,13 @@ require_once 'Model/Parser.php';
  * @package    Model
  * @subpackage Parser
  * @author     Michel Corne <mcorne@yahoo.com>
- * @copyright  2008-2013 Michel Corne
+ * @copyright  2008-2015 Michel Corne
  * @license    http://opensource.org/licenses/gpl-3.0.html GNU GPL v3
  */
 
 class Model_Parser_Ghostwords extends Model_Parser
 {
-    const LINE_TPL = '~value="([^"]+)"~';
+    const LINE_TPL = '~>([^<]+)</a>~';
 
     public $dictionary = 'ghostwords';
     public $sourceFile = 'fantomes.txt';

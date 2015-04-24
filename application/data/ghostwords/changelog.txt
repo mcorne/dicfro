@@ -1,7 +1,7 @@
 version v1
 ----------
 - 17/7/2010
-- ghostword list created manually from 
+- ghostword list created manually from
 http://atilf.atilf.fr/gsouvay/scripts/fantomes.exe?LETTRES_ENTREES;;ISIS=isis_fantomes.txt;MENU=menu_base;OUVRIR_MENU=2;
 click button "Tout"
 copy & paste from Firebug / network / response
@@ -10,9 +10,18 @@ or from google chrome / right click on select box / inspect / resources
 version v2
 ----------
 - 26/3/2011
-- ghostword list created manually from 
+- ghostword list created manually from
 http://atilf.atilf.fr/gsouvay/scripts/fantomes.exe?LETTRES_ENTREES;;ISIS=isis_fantomes.txt;MENU=menu_base;OUVRIR_MENU=2;
 click button "Tout"
 copy & paste from Firebug / network / response
 - renamed txt
+- ran "parse ghostwords" to create database
+
+version v3
+----------
+- 24/4/2015
+- ghostword list created manually from
+http://stella.atilf.fr/scripts/fantomes.exe?LISTE_EXHAUSTIVE;BALISE=IDF;NOMENCLATURE=1;PAGE=*;ISIS=isis_fantomes.txt;MENU=menu_base;OUVRIR_MENU=2;s=s130011f0
+- copied & pasted html source into fantomes.txt
+- split into lines
 - ran "parse ghostwords" to create database
