@@ -133,6 +133,11 @@ class Controller_Interface
             ];
         }
 
+        $dictionaries[] = [
+            'name' => 'Mots Fantômes',
+            'urls' => 'http://stella.atilf.fr/scripts/fantomes.exe?ADMBASE_BALISE;BALISE=IDF;MENU=menu_base;ISIS=isis_fantomes.txt;IDF=AASAER',
+        ];
+
         $this->view->dictionaries = $dictionaries;
         $this->view->information = "information/dictionaries-availability.phtml";
         $this->view->noImage = true;
