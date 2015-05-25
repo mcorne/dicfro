@@ -521,6 +521,18 @@ return [
             'volume'         => 'readonly',
         ],
 
+        'proverbes' => [
+            'created'           => '2015-05-25',
+            'description'       => 'Base de proverbes français, culture.gouv.fr',
+            'description-en'    => 'Database of French proverbs, culture.gouv.fr',
+            'introduction'      => 'http://www.culture.gouv.fr/public/mistral/proverbe_fr?ACTION=RETOUR',
+            'language'          => 'fr',
+            'name'              => 'Proverbes',
+            'search'            => 'http://www.culture.gouv.fr/public/mistral/proverbe_fr?FIELD_1=PROV&ACTION=CHERCHER&MAX3=10000&VALUE_1=',
+            'title'             => 'Proverbes',
+            'type'              => 'external',
+        ],
+
         'roman-de-la-rose-glossary' => [
             'created'        => '2010-08-01',
             'description'    => 'Glossaire du Roman de la Rose, Ernest Langlois, 1914-1924',
@@ -826,6 +838,7 @@ return [
                 'orthonet',
                 'petit-larousse',
                 'petit-larousse-np',
+                'proverbes',
                 'tlfi',
                 'wiktionnaire',
             ],
