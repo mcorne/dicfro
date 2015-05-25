@@ -1,7 +1,7 @@
 Things to do
 ------------
 
-- add panoccitan.org, http://www.atilf.fr/dect/, félibrige ...
+- add panoccitan.org, http://www.atilf.fr/dect/
 - add lacurne supplement, curiosités etc...
 - scan/add tilander
 

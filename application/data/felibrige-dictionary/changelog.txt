@@ -1,0 +1,8 @@
+initial version v1
+------------------
+
+- 9/4/2013
+- downloaded
+  https://archive.org/stream/loutrsordufelibr01mist/loutrsordufelibr01mist_djvu.txt
+  https://archive.org/stream/loutrsordufelibr02mist/loutrsordufelibr02mist_djvu.txt
+- extracted/clean up/fixed first words and pages
