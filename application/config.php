@@ -528,7 +528,12 @@ return [
             'introduction'      => 'http://www.culture.gouv.fr/public/mistral/proverbe_fr?ACTION=RETOUR',
             'language'          => 'fr',
             'name'              => 'Proverbes',
-            'search'            => 'http://www.culture.gouv.fr/public/mistral/proverbe_fr?FIELD_1=PROV&ACTION=CHERCHER&MAX3=10000&VALUE_1=',
+            'search'            => [
+                'properties'    => [
+                    'emptyWord' => 'http://www.culture.gouv.fr/public/mistral/proverbe_fr?ACTION=RETOUR',
+                    'url'       => 'http://www.culture.gouv.fr/public/mistral/proverbe_fr?FIELD_1=PROV&ACTION=CHERCHER&MAX3=10000&VALUE_1=',
+                ],
+            ],
             'title'             => 'Proverbes',
             'type'              => 'external',
         ],
