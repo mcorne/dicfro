@@ -16,6 +16,8 @@ require_once 'Model/Query.php';
  */
 class Model_Query_Index extends Model_Query
 {
+    public $useVolume = false;
+    
     /**
      * Goes to the first page of the dictionary
      *

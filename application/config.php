@@ -300,6 +300,26 @@ return [
             'type'              => 'external',
         ],
 
+        'felibrige-dictionary' => [
+            'created'        => '2015-05-27',
+            'description'    => "Lou Tresor dóu Felibrige ou dictionnaire provençal-français, Frédéric Mistral, 1979",
+            'description-en' => "Provencal-French dictionary, Frédéric Mistral, 1979",
+            'image'          => 'petit-larousse-np.jpg', // TODO: fix
+            'language'       => 'fr',
+            'name'           => 'Felibrige / Dictionnaire',
+            'search'         => [
+                'properties' => [
+                    'url'     => [
+                        1 => 'http://gallica.bnf.fr/ark:/12148/bpt6k74854/f%u.highres',
+                        2 => 'http://gallica.bnf.fr/ark:/12148/bpt6k7486f/f%u.highres',
+                    ],
+                ],
+            ],
+            'title'          => 'D. Felibrige',
+            'type'           => 'index',
+            'volume'         => 'input',
+        ],
+
         'gaffiot-dictionary' => [
             'created'        => '2008-06-27',
             'description'    => 'Dictionnaire latin-français, Félix Gaffiot, 1934',
@@ -837,6 +857,7 @@ return [
                 'conjugueur',
                 'dvlf',
                 'encyclopedie-larousse',
+                'felibrige-dictionary',
                 'grand-larousse',
                 'littre',
                 'dmf',
