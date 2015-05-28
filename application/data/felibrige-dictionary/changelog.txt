@@ -1,9 +1,12 @@
 initial version v1
 ------------------
 
-- 27/5/2013
+- 27/5/2015
 - downloaded
   https://archive.org/stream/loutrsordufelibr01mist/loutrsordufelibr01mist_djvu.txt
   https://archive.org/stream/loutrsordufelibr02mist/loutrsordufelibr02mist_djvu.txt
 - extracted/clean up/fixed first words and pages
-- ran "parse felibrige-dictionary 1" to create database and fix bad words causing bad sort order
+- ran "parse felibrige-dictionary 1" to create database
+- ran "parse felibrige-dictionary" to fix bad words causing bad sort order
+- fixed accents
+- left no more than one blank entry every ten entries (110/2344)

@@ -322,6 +322,7 @@ return array (
       'errataText' => NULL,
       'ghostwords' =>
       array (
+        0 => 'CASTINENT',
       ),
       'volume' => 2,
       'page' => 2,

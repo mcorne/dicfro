@@ -61,6 +61,12 @@ return [
     ],
 
     'etymonline'                      =>  'avid',
+
+    'felibrige-dictionary'            => [
+        1 => '16', // first page = 15
+        2 => '12', // first page = 11
+    ],
+
     'gaffiot-dictionary'              => 'abaris',
     'godefroy-dictionary'             => 'aardoir',
     'godefroy-lexicon'                => 'acorsage',

@@ -113,6 +113,29 @@ return [
         ['method' => 'goToPreviousPage', 'page' => 11827],
     ],
 
+
+    'felibrige-dictionary' => [
+        ['method' => 'goToPage'        , 'page' => 0     , 'volume' => 1],
+
+        ['method' => 'goToPage'        , 'page' => 1     , 'volume' => 1],
+        ['method' => 'goToPage'        , 'page' => 100   , 'volume' => 1],
+        ['method' => 'goToPage'        , 'page' => 1196  , 'volume' => 1],
+        ['method' => 'goToPage'        , 'page' => 10000 , 'volume' => 1],
+        ['method' => 'goToNextPage'    , 'page' => 1     , 'volume' => 1],
+        ['method' => 'goToNextPage'    , 'page' => 1196  , 'volume' => 1],
+        ['method' => 'goToPreviousPage', 'page' => 1     , 'volume' => 1],
+        ['method' => 'goToPreviousPage', 'page' => 1196  , 'volume' => 1],
+
+        ['method' => 'goToPage'        , 'page' => 1     , 'volume' => 2],
+        ['method' => 'goToPage'        , 'page' => 100   , 'volume' => 2],
+        ['method' => 'goToPage'        , 'page' => 1148  , 'volume' => 2],
+        ['method' => 'goToPage'        , 'page' => 10000 , 'volume' => 2],
+        ['method' => 'goToNextPage'    , 'page' => 1     , 'volume' => 2],
+        ['method' => 'goToNextPage'    , 'page' => 1148  , 'volume' => 2],
+        ['method' => 'goToPreviousPage', 'page' => 1     , 'volume' => 2],
+        ['method' => 'goToPreviousPage', 'page' => 1148  , 'volume' => 2],
+    ],
+
     'gaffiot-dictionary' => [
         ['method' => 'goToPage'        , 'page' => 0],
 

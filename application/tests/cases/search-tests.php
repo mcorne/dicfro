@@ -69,6 +69,12 @@ return [
     ],
 
     'etymonline'                      => 'avid',
+
+    'felibrige-dictionary'            => [
+        1  => 'A',
+        2  => 'G',
+    ],
+
     'gaffiot-dictionary'              => 'a',
     'godefroy-dictionary'             => 'a',
     'godefroy-lexicon'                => 'a',

@@ -304,14 +304,14 @@ return [
             'created'        => '2015-05-27',
             'description'    => "Lou Tresor dóu Felibrige ou dictionnaire provençal-français, Frédéric Mistral, 1979",
             'description-en' => "Provencal-French dictionary, Frédéric Mistral, 1979",
-            'image'          => 'petit-larousse-np.jpg', // TODO: fix
+            'image'          => 'felibrige-dictionary.jpg',
             'language'       => 'fr',
             'name'           => 'Felibrige / Dictionnaire',
             'search'         => [
                 'properties' => [
                     'url'     => [
-                        1 => 'http://gallica.bnf.fr/ark:/12148/bpt6k74854/f%u.highres',
-                        2 => 'http://gallica.bnf.fr/ark:/12148/bpt6k7486f/f%u.highres',
+                        1 => 'https://ia700402.us.archive.org/BookReader/BookReaderImages.php?zip=/16/items/loutrsordufelibr01mist/loutrsordufelibr01mist_jp2.zip&file=loutrsordufelibr01mist_jp2/loutrsordufelibr01mist_%04u.jp2&scale=3&rotate=0',
+                        2 => 'https://ia700405.us.archive.org/BookReader/BookReaderImages.php?zip=/16/items/loutrsordufelibr02mist/loutrsordufelibr02mist_jp2.zip&file=loutrsordufelibr02mist_jp2/loutrsordufelibr02mist_%04u.jp2&scale=3&rotate=0',
                     ],
                 ],
             ],
