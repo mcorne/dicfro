@@ -310,8 +310,8 @@ return [
             'search'         => [
                 'properties' => [
                     'url'     => [
-                        1 => 'https://ia700402.us.archive.org/BookReader/BookReaderImages.php?zip=/16/items/loutrsordufelibr01mist/loutrsordufelibr01mist_jp2.zip&file=loutrsordufelibr01mist_jp2/loutrsordufelibr01mist_%04u.jp2&scale=3&rotate=0',
-                        2 => 'https://ia700405.us.archive.org/BookReader/BookReaderImages.php?zip=/16/items/loutrsordufelibr02mist/loutrsordufelibr02mist_jp2.zip&file=loutrsordufelibr02mist_jp2/loutrsordufelibr02mist_%04u.jp2&scale=3&rotate=0',
+                        1 => 'https://ia600206.us.archive.org/BookReader/BookReaderImages.php?zip=/14/items/loutrsordufelibr01mist/loutrsordufelibr01mist_jp2.zip&file=loutrsordufelibr01mist_jp2/loutrsordufelibr01mist_%04u.jp2&scale=3&rotate=0',
+                        2 => 'https://ia800208.us.archive.org/BookReader/BookReaderImages.php?zip=/9/items/loutrsordufelibr02mist/loutrsordufelibr02mist_jp2.zip&file=loutrsordufelibr02mist_jp2/loutrsordufelibr02mist_%04u.jp2&scale=3&rotate=0',
                     ],
                 ],
             ],
