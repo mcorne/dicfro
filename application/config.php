@@ -778,13 +778,13 @@ return [
             'created'        => '2010-09-16',
             'description'    => 'Dictionnaire latin-anglais, William Whitaker, 1997-2007',
             'description-en' => 'Latin-English dictionary, William Whitaker, 1997-2007',
-            'introduction'   => 'http://lysy2.archives.nd.edu/cgi-bin/words.exe',
+            'introduction'   => 'http://archives.nd.edu/cgi-bin/words.exe',
             'language'       => 'la',
             'name'           => 'Whitaker',
             'search'         => [
                 'properties' => [
                     'convert' => 'utf8toASCII',
-                    'url'     => 'http://lysy2.archives.nd.edu/cgi-bin/words.exe?',
+                    'url'     => 'http://archives.nd.edu/cgi-bin/words.exe?',
                 ],
             ],
             'type'           => 'external',
