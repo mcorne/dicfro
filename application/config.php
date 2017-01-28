@@ -226,23 +226,6 @@ return [
             'type'              => 'external',
         ],
 
-        'dvlf' => [
-            'created'        => '2012-06-03',
-            'description'    => 'Dictionnaire vivant de la langue française (DVLF), The ARTFL Project',
-            'description-en' => 'Live dictionary of the French language (DVLF), The ARTFL Project',
-            'introduction'   => 'http://dvlf.uchicago.edu/',
-            'language'       => 'fr',
-            'name'           => 'Dict. vivant de la langue fr.',
-            'search'         => [
-                'properties' => [
-                    'emptyWord' => 'http://dvlf.uchicago.edu/',
-                    'url'       => 'http://dvlf.uchicago.edu/mot/',
-                ],
-            ],
-            'title'          => 'DVLF',
-            'type'           => 'external',
-        ],
-
         'encyclopedie-larousse' => [
             'created'        => '2013-04-03',
             'description'    => 'La Grande encyclopédie Larousse, 1971-1976',
@@ -855,7 +838,6 @@ return [
         [
             'dictionaries' => [
                 'conjugueur',
-                'dvlf',
                 'encyclopedie-larousse',
                 'felibrige-dictionary',
                 'grand-larousse',

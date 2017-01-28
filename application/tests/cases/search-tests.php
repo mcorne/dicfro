@@ -43,7 +43,6 @@ return [
     'couronnement-de-louis-glossary'  => 'a',
     'dmf'                             => 'avoir',
     'ducange'                         => 'abaces',
-    'dvlf'                            => 'avoir',
 
     'encyclopedie-larousse'           => [
         1 => 'Aalto',

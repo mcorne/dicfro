@@ -35,7 +35,6 @@ return [
     'couronnement-de-louis-glossary'  => 'acorcié',
     'dmf'                             => 'avoir',
     'ducange'                         => 'abaces',
-    'dvlf'                            => 'avoir',
 
     'encyclopedie-larousse'           => [
         1  => '8',
