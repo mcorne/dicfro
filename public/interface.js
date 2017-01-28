@@ -157,10 +157,20 @@ function goEntry(action)
 function goPage(action)
 {
     var page = document.getElementById('page'),
-        volume = document.getElementById('volume');
+        volume = document.getElementById('volume'),
+        value;
 
-    page && (action = action.replace('%s', parseInt(page.value)));
-    volume && (action = action.replace('%s', parseInt(volume.value)));
+    if (! page || ! page.value || ! (value = parseInt(page.value))) {
+        value = 1;
+    }
+
+    action = action.replace('%s', value);
+
+    if (! volume || ! volume.value || ! (value = parseInt(volume.value))) {
+        value = 1;
+    }
+
+    action = action.replace('%s', value);
 
     location.assign(action);
 }
