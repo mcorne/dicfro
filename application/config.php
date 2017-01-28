@@ -53,7 +53,7 @@ return [
             'search'       => [
                 'properties' => [
                     'url'     => [
-                        11 => 'http://ia700404.us.archive.org/BookReader/BookReaderImages.php?zip=/4/items/cu31924091890685/cu31924091890685_jp2.zip&file=cu31924091890685_jp2/cu31924091890685_0%03u.jp2&scale=3&rotate=0',
+                        11 => 'http://ia600204.us.archive.org/BookReader/BookReaderImages.php?zip=/7/items/cu31924091890685/cu31924091890685_jp2.zip&file=cu31924091890685_jp2/cu31924091890685_0%03u.jp2&scale=3&rotate=0',
                         12 => 'http://ia902606.us.archive.org/BookReader/BookReaderImages.php?zip=/33/items/centurydictionar12whituoft/centurydictionar12whituoft_jp2.zip&file=centurydictionar12whituoft_jp2/centurydictionar12whituoft_0%03u.jp2&scale=3&rotate=0',
                     ],
                 ],
