@@ -3,7 +3,7 @@
  * Dicfro
  *
  * @author     Michel Corne <mcorne@yahoo.com>
- * @copyright  2008-2015 Michel Corne
+ * @copyright  2008-2017 Michel Corne
  * @license    http://opensource.org/licenses/gpl-3.0.html GNU GPL v3
  */
 
@@ -45,6 +45,7 @@ class View_Helper_Links extends View_Helper_Base
     {
         $arguments = func_get_args();
         array_unshift($arguments, $this->view->baseUrl);
+        $arguments = array_filter($arguments);
 
         return implode('/', $arguments);
     }

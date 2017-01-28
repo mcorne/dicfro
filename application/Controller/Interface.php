@@ -35,8 +35,18 @@ class Controller_Interface
     ];
 
     public $dictionary;
-    public $front; // Controller_Front
-    public $view; // Base_View
+
+    /**
+     *
+     * @var Controller_Front
+     */
+    public $front;
+
+    /**
+     *
+     * @var Base_View
+     */
+    public $view;
 
     /**
      * @param Controller_Front $front
