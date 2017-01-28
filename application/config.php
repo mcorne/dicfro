@@ -792,11 +792,11 @@ return [
 
         'webster' => [
             'created'           => '2012-06-03',
-            'description'       => "Webster's Revised Unabridged Dictionary, 1913, 1828, The ARTFL project",
-            'introduction'      => 'http://machaut.uchicago.edu/websters',
+            'description'       => "Webster's Revised Unabridged Dictionary, 1913, 1828",
+            'introduction'      => 'http://lexicon.x10host.com/?about',
             'language'          => 'en',
             'name'              => 'Webster',
-            'search'            => 'http://machaut.uchicago.edu/?action=search&resource=Webster%27s&quicksearch=on&word=',
+            'search'            => 'http://lexicon.x10host.com/?w=',
             'type'              => 'external',
         ],
 
