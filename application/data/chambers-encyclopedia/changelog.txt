@@ -16,6 +16,6 @@ _ZZZZZ_\3\t\1\n
 - copied & pasted in calc oo
 - fixed numbers
 - removed false entries
-- fixed non letters, checked X, K
+- fixed non letters, eg "[^a-z '-]", checked X, K and spelling
 - merged into "index.csv"
 - ran "parse chambers-encyclopedia 1", fixed errors
