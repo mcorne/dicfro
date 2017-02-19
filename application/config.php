@@ -65,9 +65,9 @@ return [
 
         'chambers-encyclopedia' => [
             'created'      => '2014-05-01',
-            'description'  => "The Chambers's encyclopaedia (A-Ma), a dictionary of universal knowledge, William & Robert Chambers, 1901",
+            'description'  => "The Chambers's encyclopaedia (A-Pe), a dictionary of universal knowledge, William & Robert Chambers, 1901",
             'language'     => 'en',
-            'name'         => "Chambers's Encyclopaedia (A-Ma)",
+            'name'         => "Chambers's Encyclopaedia (A-Pe)",
             'search'       => [
                 'properties' => [
                     'url'     => [
@@ -77,7 +77,7 @@ return [
                         4  => 'https://ia902607.us.archive.org/BookReader/BookReaderImages.php?zip=/31/items/chamberssency04lond/chamberssency04lond_jp2.zip&file=chamberssency04lond_jp2/chamberssency04lond_0%03u.jp2&scale=3&rotate=0',
                         5  => 'https://ia601408.us.archive.org/BookReader/BookReaderImages.php?zip=/20/items/chamberssency05lond/chamberssency05lond_jp2.zip&file=chamberssency05lond_jp2/chamberssency05lond_0%03u.jp2&scale=3&rotate=0',
                         6  => 'https://ia802707.us.archive.org/BookReader/BookReaderImages.php?zip=/30/items/chamberssency06lond/chamberssency06lond_jp2.zip&file=chamberssency06lond_jp2/chamberssency06lond_0%03u.jp2&scale=3&rotate=0',
-                        // 7  => 'https://ia700304.us.archive.org/BookReader/BookReaderImages.php?zip=/24/items/chamberssency07lond/chamberssency07lond_jp2.zip&file=chamberssency07lond_jp2/chamberssency07lond_0%03u.jp2&scale=3&rotate=0',
+                        7  => 'https://ia601408.us.archive.org/BookReader/BookReaderImages.php?zip=/5/items/chamberssency07lond/chamberssency07lond_jp2.zip&file=chamberssency07lond_jp2/chamberssency07lond_0%03u.jp2&scale=3&rotate=0',
                         // 8  => 'https://ia600308.us.archive.org/BookReader/BookReaderImages.php?zip=/25/items/chamberssency08lond/chamberssency08lond_jp2.zip&file=chamberssency08lond_jp2/chamberssency08lond_0%03u.jp2&scale=3&rotate=0',
                         // 9  => 'https://ia600302.us.archive.org/BookReader/BookReaderImages.php?zip=/27/items/chambersencyclop09lond/chambersencyclop09lond_jp2.zip&file=chambersencyclop09lond_jp2/chambersencyclop09lond_0%03u.jp2&scale=3&rotate=0',
                         // 10 => 'https://ia700306.us.archive.org/BookReader/BookReaderImages.php?zip=/17/items/chambersencyclop10lond/chambersencyclop10lond_jp2.zip&file=chambersencyclop10lond_jp2/chambersencyclop10lond_0%03u.jp2&scale=3&rotate=0',
@@ -86,7 +86,7 @@ return [
             ],
             'title'        => 'Chambers E.',
             'type'         => 'index',
-            'updated'      => '2017-02-12',
+            'updated'      => '2017-02-19',
             'volume'       => 'input',
         ],
 
