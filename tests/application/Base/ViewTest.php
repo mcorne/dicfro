@@ -86,8 +86,6 @@ class ViewTest extends PHPUnit_Framework_TestCase
      */
     public function testInit()
     {
-        $this->view->init();
-
         $this->assertSame(
             array(
                 'ghi',
@@ -138,26 +136,6 @@ class ViewTest extends PHPUnit_Framework_TestCase
             'abc',
             $content,
             'rendering view');
-    }
-
-    /**
-     * Tests setActionUrl
-     */
-    public function testSetActionUrl()
-    {
-        $this->view->baseUrl = 'abc';
-
-        $this->assertSame(
-            'abc/',
-            $this->view->setActionUrl(),
-            'set default action URL');
-
-        /**********/
-
-        $this->assertSame(
-            'abc/def',
-            $this->view->setActionUrl('def'),
-            'set action URL');
     }
 
     /**

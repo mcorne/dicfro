@@ -2,8 +2,8 @@ How to test Dicfro
 ------------------
 
 Requirements:
-- install Pear and PHPUnit, see "how-to-install-pear.txt"
-- add the path to PHPUnit in the include path
+- install Pear and PHPUnit, see "how-to-install-pear.txt" or "sudo apt install phpunit" on debian
+- add the path to PHPUnit in the include path, eg "/usr/share/php" on debian
 
 
 1. Test suite
@@ -31,7 +31,7 @@ Note: other options are available, run "runtest -h" to list all the options.
 Notes:
 
 If you have another debugger setup in you php.ini file or if you do not wish to change it,
-simply download the xdebug extension into the PHP extensions directory. 
+simply download the xdebug extension into the PHP extensions directory.
 The test coverage should run just fine.
 
 You may also want to adjust the following constants:
@@ -39,4 +39,3 @@ You may also want to adjust the following constants:
 - Test::PHP_INI_FILE      to override the automatic detection of the PHP ini file
 - Test::PHP_PEAR_BIN_DIR  to override the automatic detection of the Pear binary directory
 - Test::XDEBUG_EXTENSION  to override the automatic detection of the Xdebug extension
- 

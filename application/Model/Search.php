@@ -16,6 +16,7 @@ abstract class Model_Search
     public $dictionaryDir;
     public $query; // Model_Query
     public $queryClass;
+    public $url;
 
     /**
      * @param array $properties

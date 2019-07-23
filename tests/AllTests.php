@@ -60,7 +60,7 @@ class AllTests
      * @param  array $files the files to test
      * @return object  the test suite object
      */
-    public static function suite($files)
+    public static function suite($files = null)
     {
         $suite = new PHPUnit_Framework_TestSuite('DicFro Tests');
 
@@ -77,4 +77,5 @@ class AllTests
     }
 }
 
+isset($files) or $files = null;
 PHPUnit_MAIN_METHOD == 'AllTests::main' and AllTests::main($files);

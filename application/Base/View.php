@@ -93,6 +93,8 @@ class Base_View
 
     public function setBaseUrl()
     {
+        isset($_SERVER['HTTP_HOST']) or $_SERVER['HTTP_HOST'] = null; // TODO: improve (needed for unit testing purposes)
+
         $this->baseUrl = 'http://' . $_SERVER['HTTP_HOST'];
 
         if (! empty($this->config['domain-subpath'])) {
@@ -112,7 +114,40 @@ class Base_View
     }
 
     /**
-     * Shortcut to the translator
+     * Returns an array of properties set dynamically
+     *
+     * Used for unit testing.
+     *
+     * @param  boolean $filter flag to filter out empty properties or not
+     * @param  array   $ignore list of properties to ignore
+     * @return array   the list of properties and their values
+     */
+    public function toArray($filter = false, $ignore = [])
+    {
+        settype($ignore, 'array');
+
+        // extracts the object properties excluding the class default properties
+        $dynamicProperties = array_diff_key(get_object_vars($this), get_class_vars(__CLASS__));
+
+        foreach($dynamicProperties as $key => $value) {
+            if (in_array($key, $ignore)) {
+                // ignores the property
+                unset($dynamicProperties[$key]);
+            }
+        }
+
+        if ($filter) {
+            // filters out empty properties
+            $dynamicProperties = array_filter($dynamicProperties);
+        }
+
+        ksort($dynamicProperties);
+
+        return $dynamicProperties;
+    }
+
+    /**
+     * shortcut to the translator
      *
      * @param string $string
      * @param string $english
