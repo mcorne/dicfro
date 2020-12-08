@@ -1,0 +1,18 @@
+# /etc/apache2/sites-available/dicfro.conf
+Alias /dicfro /home/nice/dicfro/public
+RewriteEngine on
+<Directory "/home/nice/dicfro/public">
+    Options FollowSymLinks MultiViews
+    AllowOverride All
+    Require all granted
+</Directory>
+
+Alias /dicfro-dictionary /home/nice/dicfro-dictionary
+<Directory "/home/nice/dicfro-dictionary">
+    Options FollowSymLinks MultiViews
+    AllowOverride All
+    Require all granted
+</Directory>
+
+sudo a2ensite dicfro
+sudo service apache2 reload

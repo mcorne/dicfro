@@ -207,7 +207,7 @@ return [
             'search'         => [
                 'properties' => [
                     'emptyWord' => 'http://www.atilf.fr/dmf/',
-                    'url'       => 'http://www.atilf.fr/dmf/definition/',
+                    'url'       => 'http://atilf.atilf.fr/scripts/dmfAAA.exe?XMODE=STELLa;AFFICHAGE=0;ISIS=isis_dmf2015.txt;MENU=menu_recherche_dictionnaire;LEM=',
                 ],
             ],
             'title'          => 'DMF',
